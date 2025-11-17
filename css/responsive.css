@@ -1,0 +1,492 @@
+/**
+ * Responsive Styles
+ * Mobile-first media queries for all breakpoints
+ * Breakpoints: sm(640px), md(768px), lg(1024px), xl(1280px), 2xl(1536px)
+ */
+
+/* ==================== */
+/* Small Devices (≥640px) */
+/* ==================== */
+
+@media (min-width: 640px) {
+  /* Typography */
+  h1 {
+    font-size: clamp(2.25rem, 5vw, 2.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.875rem, 4vw, 2rem);
+  }
+
+  /* Container padding */
+  .container {
+    padding-left: var(--spacing-8);
+    padding-right: var(--spacing-8);
+  }
+
+  /* Section spacing */
+  .section {
+    padding-top: var(--spacing-16);
+    padding-bottom: var(--spacing-16);
+  }
+
+  .section-lg {
+    padding-top: var(--spacing-20);
+    padding-bottom: var(--spacing-20);
+  }
+
+  /* Grid responsive columns */
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Flex direction */
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  /* Display utilities */
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  /* Publication card */
+  .publication-card {
+    grid-template-columns: 250px 1fr;
+  }
+}
+
+/* ==================== */
+/* Medium Devices (≥768px) */
+/* ==================== */
+
+@media (min-width: 768px) {
+  /* Typography */
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 2.25rem);
+  }
+
+  h3 {
+    font-size: var(--font-size-2xl);
+  }
+
+  /* Section spacing */
+  .section {
+    padding-top: var(--spacing-16);
+    padding-bottom: var(--spacing-16);
+  }
+
+  .section-lg {
+    padding-top: var(--spacing-24);
+    padding-bottom: var(--spacing-24);
+  }
+
+  /* Grid responsive columns */
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Flex direction */
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  /* Display utilities */
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  /* Text alignment */
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
+  .md\:text-right {
+    text-align: right;
+  }
+
+  /* Navigation adjustments */
+  .navbar {
+    padding: var(--spacing-6) var(--spacing-8);
+  }
+
+  .navbar-nav {
+    gap: var(--spacing-4);
+  }
+}
+
+/* ==================== */
+/* Large Devices (≥1024px) */
+/* ==================== */
+
+@media (min-width: 1024px) {
+  /* Typography */
+  h1 {
+    font-size: var(--font-size-4xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-3xl);
+  }
+
+  /* Section spacing */
+  .section {
+    padding-top: var(--spacing-20);
+    padding-bottom: var(--spacing-20);
+  }
+
+  .section-lg {
+    padding-top: var(--spacing-32);
+    padding-bottom: var(--spacing-32);
+  }
+
+  /* Grid responsive columns */
+  .lg\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Flex direction */
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  /* Display utilities */
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  /* Text alignment */
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-center {
+    text-align: center;
+  }
+
+  .lg\:text-right {
+    text-align: right;
+  }
+}
+
+/* ==================== */
+/* Extra Large Devices (≥1280px) */
+/* ==================== */
+
+@media (min-width: 1280px) {
+  /* Typography */
+  h1 {
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+  }
+
+  h2 {
+    font-size: clamp(1.875rem, 4vw, 2.5rem);
+  }
+
+  /* Grid responsive columns */
+  .xl\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Flex direction */
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
+  /* Display utilities */
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  /* Text alignment */
+  .xl\:text-left {
+    text-align: left;
+  }
+
+  .xl\:text-center {
+    text-align: center;
+  }
+
+  .xl\:text-right {
+    text-align: right;
+  }
+}
+
+/* ==================== */
+/* 2X Large Devices (≥1536px) */
+/* ==================== */
+
+@media (min-width: 1536px) {
+  /* Grid responsive columns */
+  .\32xl\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .\32xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .\32xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .\32xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Flex direction */
+  .\32xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .\32xl\:flex-col {
+    flex-direction: column;
+  }
+
+  /* Display utilities */
+  .\32xl\:block {
+    display: block;
+  }
+
+  .\32xl\:hidden {
+    display: none;
+  }
+}
+
+/* ==================== */
+/* Mobile-Specific      */
+/* ==================== */
+
+@media (max-width: 639px) {
+  /* Force single column on mobile */
+  .mobile-single-column {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Stack publication cards vertically */
+  .publication-card {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-card-image {
+    max-width: 100%;
+  }
+
+  /* Mobile navigation */
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  /* Reduce heading sizes for small screens */
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  h3 {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* ==================== */
+/* Touch Device Optimizations */
+/* ==================== */
+
+@media (hover: none) and (pointer: coarse) {
+  /* Ensure minimum touch target sizes */
+  a,
+  button,
+  .btn,
+  .nav-link {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Remove hover effects on touch devices */
+  .card:hover {
+    transform: none;
+  }
+
+  .btn-primary:hover {
+    transform: none;
+  }
+}
+
+/* ==================== */
+/* Print Styles         */
+/* ==================== */
+
+@media print {
+  /* Hide non-essential elements */
+  .navbar,
+  .nav-link,
+  .btn,
+  button {
+    display: none;
+  }
+
+  /* Optimize for print */
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  /* Remove shadows and effects */
+  .card,
+  .publication-card,
+  .blog-card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+
+  /* Ensure links are visible */
+  a {
+    text-decoration: underline;
+    color: black;
+  }
+
+  /* Page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  .card,
+  .publication-card {
+    page-break-inside: avoid;
+  }
+}
+
+/* ==================== */
+/* High Contrast Mode   */
+/* ==================== */
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #0000ff;
+    --color-primary-dark: #000080;
+  }
+
+  body {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .btn,
+  .card,
+  .form-input {
+    border-width: 2px;
+  }
+}
+
+/* ==================== */
+/* Dark Mode Support (Future) */
+/* ==================== */
+
+@media (prefers-color-scheme: dark) {
+  /* Placeholder for future dark mode implementation */
+  /* Uncomment and adjust when implementing dark mode */
+  
+  /*
+  :root {
+    --color-gray-900: #fafafa;
+    --color-gray-800: #f5f5f5;
+    --color-gray-700: #e5e5e5;
+    --color-gray-600: #cccccc;
+    --color-gray-500: #999999;
+    --color-gray-400: #808080;
+    --color-gray-300: #666666;
+    --color-gray-200: #404040;
+    --color-gray-100: #2d2d2d;
+    --color-gray-50: #1a1a1a;
+    --color-white: #000000;
+    --color-black: #ffffff;
+  }
+  */
+}
