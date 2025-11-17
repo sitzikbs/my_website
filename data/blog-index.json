@@ -1,0 +1,88 @@
+{
+  "posts": [
+    {
+      "id": "2024-11-15-example-blog-post",
+      "title": "Example Blog Post: Getting Started with 3D Computer Vision",
+      "date": "2024-11-15",
+      "updated": "2024-11-15",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "This is an example blog post entry. Replace with actual blog post content from WordPress. The excerpt should be a brief summary (2-3 sentences) that appears on the blog index page.",
+      "content": "/blog/posts/2024-11-15-example-blog-post.html",
+      "categories": [
+        "Tutorial",
+        "Computer Vision"
+      ],
+      "tags": [
+        "3D",
+        "computer vision",
+        "tutorial",
+        "beginner"
+      ],
+      "image": "/assets/images/blog/2024-11-15-example-featured.jpg",
+      "readingTime": 8,
+      "featured": true,
+      "status": "published"
+    },
+    {
+      "id": "2024-10-20-another-example-post",
+      "title": "Example Post: Understanding Point Cloud Neural Networks",
+      "date": "2024-10-20",
+      "updated": "2024-10-21",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Another example blog post to demonstrate the structure. This excerpt provides a preview of the post content and should be engaging enough to encourage readers to click through.",
+      "content": "/blog/posts/2024-10-20-another-example-post.html",
+      "categories": [
+        "Research",
+        "Deep Learning"
+      ],
+      "tags": [
+        "neural networks",
+        "point clouds",
+        "research"
+      ],
+      "image": "/assets/images/blog/2024-10-20-another-featured.jpg",
+      "readingTime": 12,
+      "featured": false,
+      "status": "published"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Tutorial",
+      "slug": "tutorial",
+      "description": "Step-by-step guides and tutorials"
+    },
+    {
+      "name": "Computer Vision",
+      "slug": "computer-vision",
+      "description": "Posts about computer vision research and applications"
+    },
+    {
+      "name": "Research",
+      "slug": "research",
+      "description": "Research updates and insights"
+    },
+    {
+      "name": "Deep Learning",
+      "slug": "deep-learning",
+      "description": "Deep learning techniques and applications"
+    }
+  ],
+  "tags": [
+    "3D",
+    "computer vision",
+    "tutorial",
+    "beginner",
+    "neural networks",
+    "point clouds",
+    "research",
+    "deep learning"
+  ],
+  "_meta": {
+    "description": "Blog post index for personal website",
+    "version": "1.0",
+    "lastUpdated": "2025-11-17",
+    "instructions": "Replace example blog posts with actual data from WordPress. Export all blog posts using WordPress export tool (Tools > Export), then convert each post to HTML/Markdown format. Update this index with metadata for each post. The 'content' field should point to the actual blog post file in /blog/posts/",
+    "postNamingConvention": "YYYY-MM-DD-post-slug.html"
+  }
+}
