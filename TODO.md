@@ -8,24 +8,24 @@ Convert the current WordPress-based personal website (https://itzikbs.com/) to a
 ## Phase 1: Project Setup & Planning ✓
 
 ### 1.1 Repository Structure
-- [ ] Create main project directories:
-  - [ ] `/css` - All stylesheets
-  - [ ] `/js` - JavaScript files
-  - [ ] `/assets` - Images, fonts, icons
-  - [ ] `/blog` - Blog posts (HTML or markdown)
-  - [ ] `/publications` - Publications data and templates
-  - [ ] `/data` - JSON files for dynamic content
-- [ ] Set up `.gitignore` for unnecessary files
-- [ ] Create `package.json` if using build tools (optional)
+- [x] Create main project directories:
+  - [x] `/css` - All stylesheets
+  - [x] `/js` - JavaScript files
+  - [x] `/assets` - Images, fonts, icons
+  - [x] `/blog` - Blog posts (HTML or markdown)
+  - [x] `/publications` - Publications data and templates
+  - [x] `/data` - JSON files for dynamic content
+- [x] Set up `.gitignore` for unnecessary files
+- [x] Create `package.json` if using build tools (optional)
 
 ### 1.2 Documentation
-- [ ] Create comprehensive README.md with:
-  - [ ] Project description and structure
-  - [ ] Local development setup instructions
-  - [ ] How to add new blog posts
-  - [ ] How to add new publications
-  - [ ] How to deploy the site
-  - [ ] Contribution guidelines
+- [x] Create comprehensive README.md with:
+  - [x] Project description and structure
+  - [x] Local development setup instructions
+  - [x] How to add new blog posts
+  - [x] How to add new publications
+  - [x] How to deploy the site
+  - [x] Contribution guidelines
 
 ---
 
