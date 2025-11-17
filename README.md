@@ -181,22 +181,36 @@ You can use any HTTP server of your choice:
 
 ## 🎨 Design System
 
-### Colors
-- Primary: `#333333`
-- Secondary: `#666666`
-- Accent: `#0066cc`
-- Background: `#ffffff`
-- Text: `#1a1a1a`
+For complete design system documentation, see [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md).
 
-### Typography
-- Headings: System font stack
-- Body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif
+### Quick Reference
 
-### Responsive Breakpoints
-- Mobile: < 768px
-- Tablet: 768px - 1024px
-- Desktop: 1024px - 1440px
-- Large Desktop: > 1440px
+**Colors**:
+- Primary: `#2563eb` (Blue) - Links and interactive elements
+- Text: `#1a1a1a` (Near-black) - Primary text
+- Background: `#ffffff` (White) - Page background
+- Gray Scale: `#1a1a1a` to `#fafafa` - Supporting colors
+
+**Typography**:
+- Font Family: System font stack (-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, etc.)
+- Base Size: 16px (1rem)
+- Type Scale: 1.250 ratio (Major Third)
+- Line Height: 1.625 for body text
+
+**Spacing**:
+- Base Unit: 8px (0.5rem)
+- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 48px, 64px, 96px
+
+**Responsive Breakpoints**:
+- Mobile: < 640px
+- Small: 640px - 768px
+- Medium (Tablet): 768px - 1024px
+- Large (Desktop): 1024px - 1280px
+- Extra Large: > 1280px
+
+**Additional Resources**:
+- [Design Decisions & Rationale](docs/DESIGN_DECISIONS.md) - Why we made these choices
+- [Wireframes & Mockups](docs/WIREFRAMES.md) - Visual layout references
 
 ## 🧪 Testing
 
