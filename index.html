@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website and blog">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Home</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-image">
+                        <img src="images/profile.jpg" alt="Profile picture" onerror="this.src='images/placeholder.svg'">
+                    </div>
+                    <div class="hero-text">
+                        <h1>Welcome</h1>
+                        <p class="subtitle">Researcher • Developer • Writer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>
+                        Welcome to my personal website. I am a researcher and developer interested in 
+                        [your research areas]. This website showcases my work, publications, and thoughts 
+                        on various topics in my field.
+                    </p>
+                    <p>
+                        Feel free to explore my publications, read my blog posts, or get in touch if you'd 
+                        like to collaborate or discuss any of my work.
+                    </p>
+                </div>
+
+                <div class="highlights">
+                    <h3>Research Interests</h3>
+                    <ul class="interests-list">
+                        <li>Computer Vision</li>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>3D Reconstruction</li>
+                    </ul>
+                </div>
+
+                <div class="news">
+                    <h3>Recent News</h3>
+                    <ul class="news-list" id="news-list">
+                        <!-- News items will be loaded dynamically -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-work">
+            <div class="container">
+                <h2>Recent Publications</h2>
+                <div id="recent-publications" class="publications-grid">
+                    <!-- Recent publications will be loaded dynamically -->
+                </div>
+                <div class="view-all">
+                    <a href="publications.html" class="btn-primary">View All Publications</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p>&copy; <span id="current-year"></span> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/data-loader.js"></script>
+</body>
+</html>

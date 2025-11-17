@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Getting Started with Machine Learning",
+        "slug": "getting-started-ml",
+        "date": "November 15, 2024",
+        "excerpt": "An introduction to machine learning concepts and how to get started with your first project.",
+        "image": ""
+    },
+    {
+        "title": "Understanding Neural Networks",
+        "slug": "understanding-neural-networks",
+        "date": "October 20, 2024",
+        "excerpt": "A deep dive into how neural networks work and their applications in modern AI.",
+        "image": ""
+    }
+]

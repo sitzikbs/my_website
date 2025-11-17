@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Example Publication: Deep Learning for Computer Vision",
+        "authors": "Author Name, Co-Author Name",
+        "venue": "Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "year": "2024",
+        "abstract": "This is an example publication. Replace this with your actual publication details.",
+        "links": {
+            "paper": "#",
+            "code": "#",
+            "project": "#"
+        }
+    },
+    {
+        "title": "Another Research Paper Title",
+        "authors": "Author Name, Collaborator Name, Another Collaborator",
+        "venue": "International Conference on Machine Learning (ICML)",
+        "year": "2023",
+        "abstract": "Another example publication entry. Add your actual publications here.",
+        "links": {
+            "paper": "#",
+            "code": "#"
+        }
+    }
+]

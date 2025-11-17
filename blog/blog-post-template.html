@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[Brief description of your blog post]">
+    <title>[Your Blog Post Title]</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">Home</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../publications.html">Publications</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-post">
+        <article>
+            <div class="container">
+                <h1>[Your Blog Post Title]</h1>
+                <div class="blog-meta">
+                    <span>Published on [Month Day, Year]</span>
+                </div>
+                
+                <div class="blog-content">
+                    <p>
+                        [Your opening paragraph goes here. Introduce the topic and what readers 
+                        will learn from this post.]
+                    </p>
+
+                    <h2>Main Section 1</h2>
+                    <p>
+                        [Your content for the first section.]
+                    </p>
+
+                    <h3>Subsection</h3>
+                    <p>
+                        [Subsection content if needed.]
+                    </p>
+
+                    <h2>Main Section 2</h2>
+                    <p>
+                        [Content for the second section. You can include:]
+                    </p>
+                    <ul>
+                        <li>Bullet points</li>
+                        <li>Lists of items</li>
+                        <li>Key takeaways</li>
+                    </ul>
+
+                    <h2>Code Examples</h2>
+                    <p>
+                        If you need to include code, use the pre and code tags:
+                    </p>
+                    <pre><code>// Your code example here
+function example() {
+    console.log("Hello, World!");
+}
+</code></pre>
+
+                    <p>
+                        For inline code, use <code>inline code tags</code> like this.
+                    </p>
+
+                    <h2>Images</h2>
+                    <p>
+                        To add images, place them in the images folder and reference them:
+                    </p>
+                    <!-- <img src="../images/your-image.jpg" alt="Description" style="max-width: 100%; height: auto;"> -->
+
+                    <h2>Conclusion</h2>
+                    <p>
+                        [Wrap up your blog post with key takeaways and next steps for readers.]
+                    </p>
+                </div>
+
+                <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e0e0e0;">
+                    <a href="../blog.html" style="color: #3498db;">← Back to Blog</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p>&copy; <span id="current-year"></span> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
