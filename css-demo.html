@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Architecture Demo - Itzik Ben-Shabat</title>
+  
+  <!-- CSS Files in correct loading order -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="/" class="navbar-brand">Itzik Ben-Shabat</a>
+    <ul class="navbar-nav">
+      <li class="navbar-item"><a href="/" class="nav-link active">Home</a></li>
+      <li class="navbar-item"><a href="/publications" class="nav-link">Publications</a></li>
+      <li class="navbar-item"><a href="/blog" class="nav-link">Blog</a></li>
+      <li class="navbar-item"><a href="/about" class="nav-link">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="section section-lg">
+      <div class="container container-lg">
+        <h1>CSS Architecture Demo</h1>
+        <p class="lead">
+          This page demonstrates the modular CSS architecture for the website, 
+          showcasing typography, components, layouts, and responsive design.
+        </p>
+      </div>
+    </section>
+
+    <!-- Typography Section -->
+    <section class="section">
+      <div class="container container-md">
+        <h2>Typography</h2>
+        <p>
+          This is a paragraph with <strong>bold text</strong>, <em>italic text</em>, 
+          and <a href="#">a link</a>. The typography follows the design system with 
+          comfortable line heights and proper spacing.
+        </p>
+        
+        <h3>Heading Level 3</h3>
+        <p>Smaller heading for subsections.</p>
+        
+        <h4>Heading Level 4</h4>
+        <p>Even smaller heading for sub-subsections.</p>
+
+        <ul>
+          <li>Unordered list item 1</li>
+          <li>Unordered list item 2</li>
+          <li>Unordered list item 3</li>
+        </ul>
+
+        <ol>
+          <li>Ordered list item 1</li>
+          <li>Ordered list item 2</li>
+          <li>Ordered list item 3</li>
+        </ol>
+
+        <blockquote>
+          This is a blockquote. It's styled with a left border and italic text.
+        </blockquote>
+
+        <code>Inline code example</code>
+
+        <pre><code>// Code block example
+function hello() {
+  console.log('Hello, World!');
+}</code></pre>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Buttons Section -->
+    <section class="section">
+      <div class="container container-md">
+        <h2>Buttons</h2>
+        <div class="flex flex-wrap gap-4 mt-6">
+          <button class="btn btn-primary">Primary Button</button>
+          <button class="btn btn-secondary">Secondary Button</button>
+          <button class="btn btn-text">Text Button</button>
+        </div>
+        
+        <h3 class="mt-8">Button Sizes</h3>
+        <div class="flex flex-wrap gap-4 mt-6">
+          <button class="btn btn-primary btn-sm">Small</button>
+          <button class="btn btn-primary">Medium (Default)</button>
+          <button class="btn btn-primary btn-lg">Large</button>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Cards Section -->
+    <section class="section">
+      <div class="container container-lg">
+        <h2>Cards</h2>
+        
+        <h3 class="mt-6 mb-4">Basic Cards</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card">
+            <h3 class="card-title">Card Title 1</h3>
+            <p class="card-text">This is a card with some content. Cards have hover effects and are great for displaying grouped information.</p>
+            <div class="card-footer">Card footer</div>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Card Title 2</h3>
+            <p class="card-text">Another card demonstrating the grid layout system. Try resizing your browser to see the responsive behavior.</p>
+            <div class="card-footer">Card footer</div>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Card Title 3</h3>
+            <p class="card-text">A third card to complete the row. On mobile, these stack vertically. On tablet, two columns. On desktop, three columns.</p>
+            <div class="card-footer">Card footer</div>
+          </div>
+        </div>
+
+        <h3 class="mt-8 mb-4">Publication Card</h3>
+        <article class="publication-card">
+          <img src="https://via.placeholder.com/200x150" alt="Publication thumbnail" class="publication-card-image">
+          <div class="publication-card-content">
+            <h3 class="publication-card-title">Example Publication Title: A Novel Approach to Computer Vision</h3>
+            <p class="publication-card-authors">John Doe, Jane Smith, <strong>Itzik Ben-Shabat</strong>, Bob Johnson</p>
+            <p class="publication-card-venue">Conference on Computer Vision and Pattern Recognition (CVPR) 2024</p>
+            <div class="flex gap-2 mt-3">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">3D</span>
+            </div>
+          </div>
+        </article>
+
+        <h3 class="mt-8 mb-4">Blog Cards</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="blog-card">
+            <img src="https://via.placeholder.com/600x200" alt="Blog post thumbnail" class="blog-card-image">
+            <div class="blog-card-content">
+              <h3 class="blog-card-title">Example Blog Post Title</h3>
+              <p class="blog-card-excerpt">This is an excerpt from a blog post. It provides a preview of the content to entice readers to click through.</p>
+              <div class="blog-card-meta">November 17, 2025 · 5 min read</div>
+            </div>
+          </article>
+          <article class="blog-card">
+            <img src="https://via.placeholder.com/600x200" alt="Blog post thumbnail" class="blog-card-image">
+            <div class="blog-card-content">
+              <h3 class="blog-card-title">Another Blog Post</h3>
+              <p class="blog-card-excerpt">Another example blog post card showing the flexible grid layout. These cards have nice hover effects.</p>
+              <div class="blog-card-meta">November 15, 2025 · 3 min read</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Forms Section -->
+    <section class="section">
+      <div class="container container-sm">
+        <h2>Forms</h2>
+        <form class="mt-6">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" class="form-input" placeholder="Enter your name">
+            <small class="form-help">Please enter your full name.</small>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-input" placeholder="your@email.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-textarea" placeholder="Your message here..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Tags & Badges Section -->
+    <section class="section">
+      <div class="container container-md">
+        <h2>Tags & Badges</h2>
+        
+        <h3 class="mt-6 mb-4">Tags</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag">JavaScript</span>
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Computer Vision</span>
+          <span class="tag">3D Graphics</span>
+          <span class="tag">Research</span>
+        </div>
+
+        <h3 class="mt-8 mb-4">Badges</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge">Default</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-error">Error</span>
+          <span class="badge badge-info">Info</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Alerts Section -->
+    <section class="section">
+      <div class="container container-md">
+        <h2>Alert Messages</h2>
+        
+        <div class="alert alert-info mt-6">
+          <strong>Info:</strong> This is an informational alert message.
+        </div>
+        
+        <div class="alert alert-success">
+          <strong>Success:</strong> Operation completed successfully!
+        </div>
+        
+        <div class="alert alert-warning">
+          <strong>Warning:</strong> Please be cautious with this action.
+        </div>
+        
+        <div class="alert alert-error">
+          <strong>Error:</strong> Something went wrong. Please try again.
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Layout Examples Section -->
+    <section class="section">
+      <div class="container container-lg">
+        <h2>Layout Examples</h2>
+        
+        <h3 class="mt-6 mb-4">Flexbox Layout</h3>
+        <div class="flex justify-between items-center p-6" style="border: 2px dashed var(--color-gray-300);">
+          <div>Left Content</div>
+          <div>Center Content</div>
+          <div>Right Content</div>
+        </div>
+
+        <h3 class="mt-8 mb-4">Grid Layout - Responsive Columns</h3>
+        <p class="mb-4">Resize your browser to see the responsive behavior:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="p-6 text-center" style="background: var(--color-gray-100); border-radius: var(--radius-md);">1</div>
+          <div class="p-6 text-center" style="background: var(--color-gray-100); border-radius: var(--radius-md);">2</div>
+          <div class="p-6 text-center" style="background: var(--color-gray-100); border-radius: var(--radius-md);">3</div>
+          <div class="p-6 text-center" style="background: var(--color-gray-100); border-radius: var(--radius-md);">4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section" style="background: var(--color-gray-50); border-top: 1px solid var(--color-gray-200);">
+      <div class="container container-lg text-center">
+        <p>&copy; 2025 Itzik Ben-Shabat. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
