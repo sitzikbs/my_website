@@ -6,15 +6,30 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Editor Files
-.vscode/
-.idea/
 *.swp
 *.swo
 *~
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
 .project
 .settings/
+
+# Temporary files
+/tmp/
+*.tmp
+*.log
+
+# Environment files
+.env
+.env.local
+
+# Backup files
+*.bak
+*.backup
 
 # Node.js (if using build tools)
 node_modules/
@@ -23,34 +38,3 @@ yarn-debug.log
 yarn-error.log
 package-lock.json
 yarn.lock
-
-# Build Output
-dist/
-build/
-*.min.js
-*.min.css
-
-# Temporary Files
-tmp/
-temp/
-*.tmp
-
-# Logs
-logs/
-*.log
-
-# Environment Variables
-.env
-.env.local
-.env.*.local
-
-# Backup Files
-*.bak
-*.backup
-*~
-
-# Archive Files
-*.zip
-*.tar
-*.tar.gz
-*.rar
