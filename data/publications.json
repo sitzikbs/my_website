@@ -1,84 +1,25 @@
-{
-  "publications": [
+[
     {
-      "id": "example-pub-2024",
-      "title": "Example Publication: Deep Learning for 3D Point Cloud Processing",
-      "authors": [
-        "Itzik Ben-Shabat",
-        "Collaborator A",
-        "Collaborator B"
-      ],
-      "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
-      "venueType": "conference",
-      "year": 2024,
-      "month": "June",
-      "pages": "1234-1243",
-      "abstract": "This is an example publication entry. Replace with actual abstract from WordPress. The abstract should provide a concise summary of the research contribution, methodology, and key findings. In this work, we present a novel approach to 3D point cloud processing using deep learning techniques.",
-      "keywords": [
-        "computer vision",
-        "deep learning",
-        "3D reconstruction",
-        "point clouds"
-      ],
-      "links": {
-        "paper": "/assets/documents/papers/example-2024.pdf",
-        "project": "https://example-project.com",
-        "code": "https://github.com/sitzikbs/example-project",
-        "video": "https://youtube.com/watch?v=example",
-        "doi": "https://doi.org/10.1109/CVPR.2024.00001",
-        "arxiv": "https://arxiv.org/abs/2024.00001"
-      },
-      "image": "/assets/images/publications/example-2024-thumb.jpg",
-      "bibtex": "@inproceedings{benshabat2024example,\n  title={Example Publication: Deep Learning for 3D Point Cloud Processing},\n  author={Ben-Shabat, Itzik and Collaborator, A and Collaborator, B},\n  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n  year={2024},\n  pages={1234--1243}\n}",
-      "featured": true,
-      "awards": [
-        "Best Paper Award"
-      ],
-      "tags": [
-        "computer vision",
-        "deep learning",
-        "3D"
-      ]
+        "title": "Example Publication: Deep Learning for Computer Vision",
+        "authors": "Author Name, Co-Author Name",
+        "venue": "Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "year": "2024",
+        "abstract": "This is an example publication. Replace this with your actual publication details.",
+        "links": {
+            "paper": "#",
+            "code": "#",
+            "project": "#"
+        }
     },
     {
-      "id": "example-pub-2023",
-      "title": "Example Journal Article: Neural Networks for Point Cloud Analysis",
-      "authors": [
-        "Itzik Ben-Shabat",
-        "Research Partner"
-      ],
-      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
-      "venueType": "journal",
-      "year": 2023,
-      "month": "September",
-      "volume": "45",
-      "issue": "9",
-      "pages": "10234-10247",
-      "abstract": "Example journal article entry. This should be replaced with actual content from WordPress. Journal articles typically provide more comprehensive coverage of research topics with detailed methodology, extensive experiments, and thorough analysis.",
-      "keywords": [
-        "neural networks",
-        "point clouds",
-        "3D vision"
-      ],
-      "links": {
-        "paper": "/assets/documents/papers/example-2023.pdf",
-        "code": "https://github.com/sitzikbs/example-2023",
-        "doi": "https://doi.org/10.1109/TPAMI.2023.00001"
-      },
-      "image": "/assets/images/publications/example-2023-thumb.jpg",
-      "bibtex": "@article{benshabat2023neural,\n  title={Example Journal Article: Neural Networks for Point Cloud Analysis},\n  author={Ben-Shabat, Itzik and Partner, Research},\n  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},\n  volume={45},\n  number={9},\n  pages={10234--10247},\n  year={2023},\n  publisher={IEEE}\n}",
-      "featured": false,
-      "awards": [],
-      "tags": [
-        "neural networks",
-        "3D vision"
-      ]
+        "title": "Another Research Paper Title",
+        "authors": "Author Name, Collaborator Name, Another Collaborator",
+        "venue": "International Conference on Machine Learning (ICML)",
+        "year": "2023",
+        "abstract": "Another example publication entry. Add your actual publications here.",
+        "links": {
+            "paper": "#",
+            "code": "#"
+        }
     }
-  ],
-  "_meta": {
-    "description": "Publications data for personal website",
-    "version": "1.0",
-    "lastUpdated": "2025-11-17",
-    "instructions": "Replace example publications with actual data from WordPress. Follow the schema shown in the examples above. Each publication should include all available metadata, links, and a properly formatted BibTeX citation."
-  }
-}
+]

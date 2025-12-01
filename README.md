@@ -1,253 +1,100 @@
-# Personal Website - Itzik Ben-Shabat
+# Personal Website
 
-A modern, lightweight personal website built with pure HTML, CSS, and JavaScript. This site showcases research publications, blog posts, and professional information without relying on WordPress or other heavy content management systems.
+A clean, responsive, static website built with pure HTML, CSS, and JavaScript. No WordPress dependency required!
 
-## 🌐 Live Website
+## Features
 
-Visit the live site at: [https://itzikbs.com/](https://itzikbs.com/)
+- 🎨 Clean, modern design inspired by academic/researcher websites
+- 📱 Fully responsive (mobile, tablet, desktop)
+- 🚀 Fast loading - pure static HTML/CSS/JS
+- 📝 Easy content management via JSON files
+- 📚 Publications page
+- ✍️ Blog with individual post pages
+- 📧 Contact page with form
+- 🎯 No build process required - just edit and deploy
 
-## 📁 Project Structure
+## Structure
 
 ```
-my_website/
-├── css/                    # All stylesheets
-│   ├── reset.css          # Browser normalization
-│   ├── variables.css      # CSS custom properties
-│   ├── base.css           # Global styles
-│   ├── layout.css         # Layout utilities
-│   ├── components.css     # Component styles
-│   └── responsive.css     # Media queries
-├── js/                     # JavaScript files
-│   ├── navigation.js      # Navigation functionality
-│   ├── publications.js    # Publications rendering
-│   └── blog.js            # Blog functionality
-├── assets/                 # Static assets
-│   ├── images/            # Image files
-│   ├── fonts/             # Custom fonts
-│   └── icons/             # Icon files
-├── blog/                   # Blog posts
-│   ├── index.html         # Blog listing page
-│   └── posts/             # Individual blog posts
-├── publications/           # Publications section
-│   └── index.html         # Publications page
-├── data/                   # JSON data files
+├── index.html              # Homepage with bio and recent work
+├── publications.html       # Full publications list
+├── blog.html              # Blog posts grid
+├── contact.html           # Contact information and form
+├── css/
+│   └── style.css          # All styles (includes responsive design)
+├── js/
+│   ├── main.js            # Navigation and general functionality
+│   ├── data-loader.js     # Loads data for homepage
+│   ├── publications-loader.js  # Loads publications
+│   ├── blog-loader.js     # Loads blog posts
+│   └── contact.js         # Contact form handling
+├── data/
 │   ├── publications.json  # Publications data
-│   └── blog-index.json    # Blog post metadata
-├── index.html             # Homepage
-├── package.json           # Project metadata
-└── README.md              # This file
+│   ├── blog.json         # Blog posts metadata
+│   └── news.json         # News/updates
+├── blog/
+│   └── [post-name].html  # Individual blog post pages
+└── images/
+    └── profile.jpg       # Profile picture (add your own)
 ```
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Safari, or Edge)
-- Python 3 (for local development server) or any other HTTP server
-
-### Local Development Setup
+## Quick Start
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/sitzikbs/my_website.git
+   git clone https://github.com/yourusername/my_website.git
    cd my_website
    ```
 
-2. **Start a local development server:**
-   ```bash
-   npm run dev
-   # or
-   python3 -m http.server 8000
-   ```
+2. **Customize the content:**
+   - Edit `index.html` for your bio and introduction.
+   - Update `data/publications.json` with your papers.
+   - Add blog posts to `data/blog.json` and create HTML files in `blog/`.
+   - Replace `images/profile.jpg` with your photo.
 
-3. **Open your browser:**
-   Navigate to `http://localhost:8000`
-
-### Alternative Servers
-
-You can use any HTTP server of your choice:
-- **Node.js:** `npx http-server`
-- **PHP:** `php -S localhost:8000`
-- **Ruby:** `ruby -run -ehttpd . -p8000`
-
-## ✍️ Adding New Content
-
-### Adding a New Blog Post
-
-1. **Create a new HTML file** in the `blog/posts/` directory:
-   ```
-   blog/posts/YYYY-MM-DD-post-title.html
-   ```
-
-2. **Use the blog post template** with proper structure:
-   ```html
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Post Title - Itzik Ben-Shabat</title>
-       <link rel="stylesheet" href="../../css/base.css">
-   </head>
-   <body>
-       <!-- Navigation -->
-       <!-- Post content -->
-   </body>
-   </html>
-   ```
-
-3. **Update blog index** in `data/blog-index.json`:
-   ```json
-   {
-     "id": "post-slug",
-     "title": "Post Title",
-     "date": "2024-01-01",
-     "excerpt": "Brief description...",
-     "tags": ["tag1", "tag2"],
-     "image": "path/to/image.jpg"
-   }
-   ```
-
-### Adding a New Publication
-
-1. **Add publication data** to `data/publications.json`:
-   ```json
-   {
-     "id": "unique-id",
-     "title": "Publication Title",
-     "authors": ["Author 1", "Author 2"],
-     "venue": "Conference/Journal Name",
-     "year": 2024,
-     "abstract": "Abstract text...",
-     "links": {
-       "paper": "url-to-pdf",
-       "project": "url-to-project-page",
-       "code": "url-to-github",
-       "video": "url-to-video"
-     },
-     "image": "assets/images/publications/thumbnail.jpg",
-     "bibtex": "BibTeX citation...",
-     "featured": true
-   }
-   ```
-
-2. **Add images** to `assets/images/publications/`
-
-3. The publication will automatically appear on the publications page
-
-### Adding Images
-
-1. Place images in appropriate subdirectories:
-   - Blog images: `assets/images/blog/`
-   - Publication images: `assets/images/publications/`
-   - Profile/general images: `assets/images/`
-
-2. Optimize images before adding:
-   - Compress images (use tools like TinyPNG, ImageOptim)
-   - Use appropriate formats (WebP with JPG/PNG fallbacks)
-   - Consider responsive image sizes
-
-## 🚢 Deployment
-
-### GitHub Pages
-
-1. Push your changes to the `main` branch
-2. Go to repository Settings > Pages
-3. Select `main` branch as source
-4. Your site will be available at `https://[username].github.io/my_website/`
-
-### Netlify
-
-1. Connect your GitHub repository to Netlify
-2. Set build command: (leave empty for static site)
-3. Set publish directory: `/`
-4. Deploy!
-
-### Custom Domain
-
-1. Add your custom domain in hosting platform settings
-2. Update DNS records:
-   ```
-   Type: A
-   Name: @
-   Value: [hosting provider IP]
+3. **Run locally:**
+   Since it's a static site, you can just open `index.html` in your browser.
    
-   Type: CNAME
-   Name: www
-   Value: [hosting provider domain]
+   For a better experience (and to avoid CORS issues with JSON loading), use a simple local server:
+   
+   ```bash
+   # Python 3
+   python3 -m http.server
+   
+   # Node.js
+   npx serve
    ```
 
-3. Enable HTTPS/SSL (usually automatic)
+## Customization
 
-## 🎨 Design System
+### Colors and Fonts
+Edit `css/style.css` to change the CSS variables at the top of the file:
 
-For complete design system documentation, see [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md).
+```css
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    /* ... */
+}
+```
 
-### Quick Reference
+### Adding Blog Posts
+1. Create a new HTML file in `blog/` (copy an existing one as a template).
+2. Add an entry to `data/blog.json`:
+   ```json
+   {
+       "title": "My New Post",
+       "date": "2024-03-20",
+       "excerpt": "Short summary...",
+       "url": "blog/my-new-post.html",
+       "tags": ["research", "update"]
+   }
+   ```
 
-**Colors**:
-- Primary: `#2563eb` (Blue) - Links and interactive elements
-- Text: `#1a1a1a` (Near-black) - Primary text
-- Background: `#ffffff` (White) - Page background
-- Gray Scale: `#1a1a1a` to `#fafafa` - Supporting colors
+## Deployment
 
-**Typography**:
-- Font Family: System font stack (-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, etc.)
-- Base Size: 16px (1rem)
-- Type Scale: 1.250 ratio (Major Third)
-- Line Height: 1.625 for body text
-
-**Spacing**:
-- Base Unit: 8px (0.5rem)
-- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 48px, 64px, 96px
-
-**Responsive Breakpoints**:
-- Mobile: < 640px
-- Small: 640px - 768px
-- Medium (Tablet): 768px - 1024px
-- Large (Desktop): 1024px - 1280px
-- Extra Large: > 1280px
-
-**Additional Resources**:
-- [Design Decisions & Rationale](docs/DESIGN_DECISIONS.md) - Why we made these choices
-- [Wireframes & Mockups](docs/WIREFRAMES.md) - Visual layout references
-
-## 🧪 Testing
-
-### Before Deployment
-- [ ] Test all internal links
-- [ ] Test all external links
-- [ ] Verify responsive design on multiple devices
-- [ ] Check cross-browser compatibility
-- [ ] Run Lighthouse audit (aim for 90+ score)
-- [ ] Validate HTML (W3C Validator)
-- [ ] Check accessibility (WAVE, axe DevTools)
-
-## 🤝 Contributing
-
-This is a personal website, but suggestions and bug reports are welcome!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add some improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 📧 Contact
-
-- Website: [https://itzikbs.com/](https://itzikbs.com/)
-- GitHub: [@sitzikbs](https://github.com/sitzikbs)
-
-## 🙏 Acknowledgments
-
-- Design inspiration from [Vincent Sitzmann's website](https://www.vincentsitzmann.com/)
-- Built with semantic HTML5, modern CSS3, and vanilla JavaScript
-
----
-
-**Status:** In Development
-**Last Updated:** 2025-11-17
+You can deploy this site for free on:
+- **GitHub Pages**: Go to Settings > Pages > Source: Main branch.
+- **Netlify**: Drag and drop the folder.
+- **Vercel**: Import the repository.
