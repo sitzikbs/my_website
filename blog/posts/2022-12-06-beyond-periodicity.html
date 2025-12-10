@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>Beyond Periodicity: Towards a Unifying Framework for Activations in Coordinate-MLPs</h1>
+                <div class="post-meta">
+                    <time datetime="2022-12-06">2022-12-06</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted Sameera Ranasinghe. We had a great chat about his paper “<a href="https://arxiv.org/pdf/2111.15135.pdf" rel="noreferrer noopener" target="_blank">Beyond Periodicity: Towards a Unifying Framework for Activations in Coordinate-MLPs</a>”, published in ECCV 2022 as an oral presentation. </p>
+<p>In this paper, they propose a new family of activation functions for coordinate MLPs and provide a theoretical analysis of their effectiveness. Their main proposition is that the stable rank is a good measure and design tool for such activation functions. They show that their proposed activations outperform the traditional ReLU and Sine activations for image parametrization and novel view synthesis. They further show that while the proposed family of activations does not require positional encoding they can benefit from using it by reducing the number of layers significantly.</p>
+<p>Sameera is currently an applied scientist at Amazon and the CTO and co-founder of <a href="https://conscient.ai/" rel="noreferrer noopener" target="_blank">ConscientAI</a>. His research focus is theoretical machine learning and computer vision. This work was done when he was a postdoc at the Australian Institute of Machine Learning (AIML). He completed his PhD at the Australian National University (ANU). We first met back in 2019 when I was a research fellow at ANU and he was still doing his PhD. I immediately noticed we share research interests and after a short period of time, I flagged him as a rising star in the field. It was a pleasure to chat with Sameera and I am looking forward to reading his future papers. </p>
+<p></p>
+<div id="buzzsprout-player-11693097"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/11693097-beyond-periodicity-sameera-ramasinghe.js?container_id=buzzsprout-player-11693097&amp;player=small" type="text/javascript"></script>
+<h3 class="wp-block-heading" id="authors">AUTHORS</h3>
+<p id="stephen-gould-richard-hartleydylan-campbell"><em>Sameera Ramasinghe, Simon Lucey</em></p>
+<p> </p>
+<h3 class="wp-block-heading" id="abstract">ABSTRACT</h3>
+<p>Neural implicit fields have recently emerged as a useful representation for 3D shapes. These fields are Coordinate-based networks have emerged as a powerful tool for 3D representation and scene reconstruction. These networks are trained to map continuous input coordinates to the value of a signal at each point. Still, current architectures are black boxes: their spectral characteristics cannot be easily Image-based volumetric humans using pixel-aligned features promise generalization to unseen poses and identities. Prior work leverages global spatial encodings and multi-view geometric consistency to Coordinate-MLPs are emerging as an effective tool for modeling multidimensional continuous signals, overcoming many drawbacks associated with discrete grid-based approximations. However, coordinate-MLPs with ReLU activations, in their rudimentary form, demonstrate poor performance in representing signals with high fidelity, promoting the need for positional embedding layers. Recently, Sitzmann et al. proposed a sinusoidal activation function that has the capacity to omit positional embedding from coordinate-MLPs while still preserving high signal fidelity. Despite its potential, ReLUs are still dominating the space of coordinate-MLPs; we speculate that this is due to the hyper-sensitivity of networks — that employ such sinusoidal activations — to the initialization schemes. In this paper, we attempt to broaden the current understanding of the effect of activations in coordinate-MLPs, and show that there exists a broader class of activations that are suitable for encoding signals. We affirm that sinusoidal activations are only a single example in this class, and propose several non-periodic functions that empirically demonstrate more robust performance against random initializations than sinusoids. Finally, we advocate for a shift towards coordinate-MLPs that employ these non-traditional activation functions due to their high performance and simplicity.</p>
+<p> </p>
+<p></p>
+<h3 class="wp-block-heading" id="related-papers">RELATED PAPERS</h3>
+<p>📚</p>
+<p>📚</p>
+<p>📚”<a href="https://proceedings.neurips.cc/paper/2020/hash/55053683268957697aa39fba6f231c68-Abstract.html" rel="noreferrer noopener" target="_blank">Fourier Features Let Networks Learn High-Frequency Functions in Low Dimensional Domains</a>” </p>
+<p>📚<a href="http://proceedings.mlr.press/v97/rahaman19a.html" rel="noreferrer noopener" target="_blank">On the Spectral Bias of Neural Networks</a></p>
+<p></p>
+<p></p>
+<p></p>
+<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<p>📚 <a href="https://arxiv.org/pdf/2111.15135.pdf">Paper</a></p>
+<p>💻<a href="https://github.com/samgregoost/Beyond_periodicity" rel="noreferrer noopener" target="_blank">Code</a></p>
+<p></p>
+<p></p>
+<p>To stay up to date with Marko’s latest research, follow him on:</p>
+<p>🐦<a href="https://twitter.com/SameeraRamasin1" rel="noreferrer noopener" target="_blank">Twitter</a></p>
+<p>👨🏻‍🎓<a href="https://scholar.google.com.au/citations?view_op=list_works&amp;hl=en&amp;hl=en&amp;user=-j0m9aMAAAAJ" rel="noreferrer noopener" target="_blank">Google Scholar</a></p>
+<p>👨🏻‍🎓<a href="https://www.linkedin.com/in/sameeraramasinghe/" rel="noreferrer noopener" target="_blank">LinkedIn</a></p>
+<p></p>
+<p></p>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3hbkBMPxWqs?feature=oembed" title="Beyond Periodicity (ECCV 2022 oral) with Sameera Ramasinghe  on Talking papers" width="800"></iframe>
+</div></figure>
+<p>Recorded on November 14th 2022.</p>
+<h3 class="wp-block-heading"><br/>CONTACT</h3>
+<p>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="e397828f888a8d84cd938293869190cd938c8780829097a3848e828a8fcd808c8e" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
+<p></p>
+<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
+<p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
+<p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
+<p>🎥YouTube Channel: </p>
+<p></p>
+<p></p>
+<p></p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

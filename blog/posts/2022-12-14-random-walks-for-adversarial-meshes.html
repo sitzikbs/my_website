@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>Random Walks for Adversarial Meshes</h1>
+                <div class="post-meta">
+                    <time datetime="2022-12-14">2022-12-14</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, we hosted <a href="https://www.linkedin.com/in/amir-belder-89889b103/" rel="noreferrer noopener" target="_blank">Amir Belder</a>. We had a great chat about his paper “<a href="https://arxiv.org/abs/2202.07453">Random Walks for Adversarial Meshes</a>”, published in SIGGRAPH 2022. </p>
+<p>In this paper, they take on the task of creating an adversarial attack for triangle meshes. This is a non-trivial task since meshes are irregular. To solve the irregularity they use random walks instead of the raw mesh. On top of that, they trained an imitating network that mimics the predictions of the attacked network and used the gradients to perturb the input points. </p>
+<p></p>
+<p>Amir is currently a PhD student at the <a href="https://cgm.technion.ac.il/" rel="noreferrer noopener" target="_blank">Computer Graphics and Multimedia Lab at the Technion Israel Institute of Technology</a>.  His research focus is on computer graphics and geometric processing and machine learning. We spend a lot of time together at the lab and chat often about science, papers and where the field is headed. Having this paper published was a great opportunity to share one of these conversations with you.</p>
+<p></p>
+<p></p>
+<div id="buzzsprout-player-11869506"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/11869506-random-walks-for-adversarial-meshes-amir-belder.js?container_id=buzzsprout-player-11869506&amp;player=small" type="text/javascript"></script>
+<h3 class="wp-block-heading" id="authors">AUTHORS</h3>
+<p>Amir Belder<a href="https://dl.acm.org/profile/99660532511"></a>, Gal Yefet<a href="https://dl.acm.org/profile/99660533514"></a>, Ran Ben-Itzhak<a href="https://dl.acm.org/profile/99660533358"></a>, Ayellet Tal<a href="https://dl.acm.org/profile/81100507022"></a></p>
+<p><br/></p>
+<h3 class="wp-block-heading" id="abstract">ABSTRACT</h3>
+<p> </p>
+<p>Neural implicit fields have recently emerged as a useful representation for 3D shapes. These fields are We A polygonal mesh is the most-commonly used representation of surfaces in computer graphics. Therefore, it is not surprising that a number of mesh classification networks have recently been proposed. However, while adversarial attacks are wildly researched in 2D, the field of adversarial meshes is under explored. This paper proposes a novel, unified, and general adversarial attack, which leads to misclassification of several state-of-the-art mesh classification neural networks. Our attack approach is black-box, i.e. it has access only to the network’s predictions, but not to the network’s full architecture or gradients. The key idea is to train a network to imitate a given classification network. This is done by utilizing random walks along the mesh surface, which gather geometric information. These walks provide insight onto the regions of the mesh that are important for the correct prediction of the given classification network. These mesh regions are then modified more than other regions in order to attack the network in a manner that is barely visible to the naked eye.</p>
+<p> </p>
+<p></p>
+<h3 class="wp-block-heading" id="related-papers">RELATED PAPERS</h3>
+<p>📚<a href="https://arxiv.org/abs/1412.6572" rel="noreferrer noopener" target="_blank">Explaining and Harnessing Adversarial Examples</a></p>
+<p>📚</p>
+<p><br/></p>
+<p></p>
+<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<p>📚 <a href="https://arxiv.org/abs/2202.07453">Paper</a></p>
+<p>💻<a href="https://github.com/amirbelder/Random-Walks-for-Adversarial-Meshes">Code</a></p>
+<p></p>
+<p></p>
+<p>To stay up to date with Amir’s latest research, follow him on:</p>
+<p>🐦<a href="https://twitter.com/amir_belder" rel="noreferrer noopener" target="_blank">Twitter</a></p>
+<p>👨🏻‍🎓<a href="https://scholar.google.com/citations?user=d30gRrcAAAAJ&amp;hl=en&amp;oi=ao" rel="noreferrer noopener" target="_blank">Google Scholar</a></p>
+<p>👨🏻‍🎓<a href="https://www.linkedin.com/in/amir-belder-89889b103/">LinkedI</a><a href="https://www.linkedin.com/in/silvia-gonzalez-sellan-870525189/">n</a></p>
+<p></p>
+<p></p>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/pzWFE6F-4bI?feature=oembed" title="Random Walks for Adversarial Meshes (SIGGRAPH 2022) with Amir Belder on Talking papers" width="800"></iframe>
+</div></figure>
+<p>Recorded on November 23rd 2022.</p>
+<h3 class="wp-block-heading"><br/>CONTACT</h3>
+<p>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="3145505d5a585f561f4150415443421f415e555250424571565c50585d1f525e5c" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
+<p></p>
+<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
+<p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
+<p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
+<p>🎥YouTube Channel: </p>
+<p></p>
+<p></p>
+<p></p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>
