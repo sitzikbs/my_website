@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>Talking Papers Podcast – The Beginning</h1>
+                <div class="post-meta">
+                    <time datetime="2022-01-15">2022-01-15</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>I am very excited to finally share something that I have been working on for quite a while and is finally ready to come out. <br/><br/>Do you know that pile of papers that just lies at the edge of your desk (or in a folder on your computer) labelled “To read when I get the time”?  Remember how you never get the time? I know this problem very well and found a creative way to solve it and help others in the process. </p>
+<p>I am proud to introduce my new podcast: The Talking Papers Podcast.</p>
+<p>It is a podcast by researchers for researchers (and students or professionals) that aims to be a new medium for disseminating cutting edge research. Particularly focusing on the field of computer vision, machine learning, artificial intelligence, deep learning, 3D vision, graphics, robotics and anything in between. </p>
+<p></p>
+<p>Each episode is 20-30 minutes long and structured like an academic paper, with chapters including an abstract, motivation, prior work, the proposed method, results, and conclusions. At the end of each episode, there is even a bonus section titled “What did reviewer #2 say?” where authors share their war stories from the review process. The episode’s description includes links to references and resources related to the paper, including the project page, code etc. </p>
+<p></p>
+<p>When I started working on the podcast, I thought this could be very useful for researchers that have a long commute and allow them to catch up on their reading. Today, after COVID hit planet earth, I think it can be a great excuse to go on a walk, get some fresh air, stretch your legs and still be able to tell yourself you got some work done. It is a win-win. </p>
+<p><br/>The podcast can be particularly useful for PhD students (and even Masters students) at the beginning of their academic journey. A point in your career where you are usually still unsure what are the big problems in the field have yet to be solved. In the conclusion section, the authors share their thoughts about open problems and ideas for follow-up works. </p>
+<p>If you are a researcher and recently published your work in top tier venues (CVPR, ICCV, ECCV, NeuRIPS, ICML, ICLR etc.) I would love to host you as a guest on the podcast. </p>
+<p>To stay up to date with the latest episodes, subscribe to your favourite feed: </p>
+<ul class="wp-block-list"><li>YouTube channel: </li><li>Podcast RSS feed: <a href="https://talking.papers.podcast.itzikbs.com/?fbclid=IwAR1FRwFDzZrd_9DuGCjii4rgNHnHXBS--4l1CVu-uai0gx14HK-8_TWUigA" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></li><li>Twitter: <a href="https://twitter.com/talking_papers?fbclid=IwAR1bK-ipEOgTiwtphpi7AA9FRbtGlweUdtPp07_geQyzrpbklWkxHFlH2k0" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></li></ul>
+<p></p>
+<p>At the time of writing this blog post, only two episodes came out. Episodes are published weekly. </p>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img alt="Talking Papers Podcast" class="wp-image-1567" data-attachment-id="1567" data-comments-opened="0" data-image-caption="&lt;p&gt;Cover image for the talking papers podcast&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="Talking_papers_cover" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/01/Talking_papers_cover.png?fit=800%2C266&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/01/Talking_papers_cover.png?fit=300%2C100&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/01/Talking_papers_cover.png?fit=1500%2C500&amp;ssl=1" data-orig-size="1500,500" data-permalink="https://www.itzikbs.com/the-talking-papers-podcast/talking_papers_cover" data-recalc-dims="1" decoding="async" fetchpriority="high" height="266" sizes="(max-width: 800px) 100vw, 800px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/01/Talking_papers_cover.png?resize=800%2C266&amp;ssl=1" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/01/Talking_papers_cover.png?resize=1024%2C341&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/01/Talking_papers_cover.png?resize=300%2C100&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/01/Talking_papers_cover.png?resize=768%2C256&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/01/Talking_papers_cover.png?w=1500&amp;ssl=1 1500w" width="800"/></figure></div>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

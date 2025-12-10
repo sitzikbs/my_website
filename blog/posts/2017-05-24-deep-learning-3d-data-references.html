@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>Deep Learning on 3D Data – References</h1>
+                <div class="post-meta">
+                    <time datetime="2017-05-24">2017-05-24</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>Deep learning (DL) using convolution neural networks (CNN) architectures is now a standard for solving classification tasks in images. When dealing with 3D data the problem becomes more complex. First, 3D data may be represented using various structures which include:</p>
+<ol>
+<li>Voxel grid</li>
+<li>Point clouds</li>
+<li>Multi-view</li>
+<li>Depth map</li>
+</ol>
+<p>For the case of Multi-view and depth maps, the problem is converted into using 2D CNNs on multiple images. A Voxel grid can use extensions of the 2D CNN into 3D by simply defining 3D convolution kernels. However, for the case of 3D point clouds, it is not clear how to apply DL tools.</p>
+<p>Second, the available data for images is still much larger (although, recently there is an increase in 3D datasets – more on that in a later post).  However, for the 3D case, synthetic data may be generated easily.</p>
+<p>Attached below are a list of papers which used DL tools on 3D data</p>
+<ol>
+<li>  Voxel Grid – Volumetric CNN:
+<ul>
+<li><a href="http://ieeexplore.ieee.org/abstract/document/7353481/">Voxnet: A 3D convolutional neural network for real-time object classification</a></li>
+<li><a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Qi_Volumetric_and_Multi-View_CVPR_2016_paper.html">Volumetric and multi-view CNNs for object classification on 3d data </a>– compared volumetric CNNs to Multi-view CNNs for object classification. They showed that the multi-view approach performs better, however, the resolution of the volumetric model was limited</li>
+<li><a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Wu_3D_ShapeNets_A_2015_CVPR_paper.html">3D shapenetes: A deep representation for volumetric shapes</a></li>
+</ul>
+</li>
+<li>  Multi-View CNNs:
+<ul>
+<li><a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Qi_Volumetric_and_Multi-View_CVPR_2016_paper.html">Volumetric and multi-view CNNs for object classification on 3d data</a></li>
+<li><a href="http://www.cv-foundation.org/openaccess/content_iccv_2015/html/Su_Multi-View_Convolutional_Neural_ICCV_2015_paper.html">Multi-View Convolutional Neural Networks for 3D Shape Recognition</a></li>
+</ul>
+</li>
+<li>Point clouds:
+<ul>
+<li> <a href="https://arxiv.org/abs/1612.00593">Pointnet: Deep learning on point sets for 3d classification and segmentation</a> – In this work they applied a convolution kernel on each point separately, creating a higher dimensional representation of each point and then max-pooling over the entire point set (max pooling used as a symmetric function) to get invariance to permutations of the input cloud (since there is no geometrical significance to the point order).</li>
+</ul>
+</li>
+<li>Hand-crafted features + DNN :
+<ul>
+<li><a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Fang_3D_Deep_Shape_2015_CVPR_paper.html" target="_blank">3D  deep shape descriptor</a> – fed heat kernel signatures (HKS) descriptor into an NN to get an Eigen-shape descriptor and a Fischer shape descriptor.</li>
+</ul>
+</li>
+</ol>
+<p> </p>
+<p> </p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

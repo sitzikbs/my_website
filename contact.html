@@ -1,90 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact information">
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/style.css?v=4">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="index.html">Home</a>
-            </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="index.html">About</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Contact information" name="description"/>
+  <title>
+   Contact
+  </title>
+  <link href="css/style.css?v=4" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="main-nav"></div>
+  <main>
+   <section class="page-header">
+    <div class="container">
+     <h1>
+      Contact
+     </h1>
+     <p class="page-subtitle">
+      Get in touch
+     </p>
+    </div>
+   </section>
+   <section class="contact">
+    <div class="container">
+     <div class="contact-content">
+      <div class="contact-info" style="margin: 0 auto; max-width: 600px; text-align: center;">
+       <h2>
+        Contact Information
+       </h2>
+       <div class="contact-item" style="justify-content: center;">
+        <i class="fas fa-envelope">
+        </i>
+        <div>
+         <h3>
+          Email
+         </h3>
+         <p>
+          <a href="mailto:sitzikbs@gmail.com">
+           sitzikbs@gmail.com
+          </a>
+         </p>
         </div>
-    </nav>
-
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Contact</h1>
-                <p class="page-subtitle">Get in touch</p>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="container">
-                <div class="contact-content">
-                    <div class="contact-info" style="margin: 0 auto; max-width: 600px; text-align: center;">
-                        <h2>Contact Information</h2>
-                        <div class="contact-item" style="justify-content: center;">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3>Email</h3>
-                                <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item" style="justify-content: center;">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h3>Location</h3>
-                                <p>City, Country</p>
-                            </div>
-                        </div>
-                        <div class="social-links-large">
-                            <h3>Connect</h3>
-                            <div class="links" style="align-items: center;">
-                                <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i> Scholar</a>
-                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
-                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-                <p>&copy; <span id="current-year"></span> All rights reserved.</p>
-            </div>
+       </div>
+       <div class="social-links-large">
+        <h3>
+         Connect
+        </h3>
+        <div class="links" style="align-items: center;">
+         <a aria-label="GitHub" href="https://github.com/sitzikbs" target="_blank">
+          <i class="fab fa-github">
+          </i>
+          GitHub
+         </a>
+         <a aria-label="LinkedIn" href="https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/" target="_blank">
+          <i class="fab fa-linkedin">
+          </i>
+          LinkedIn
+         </a>
+         <a aria-label="Twitter" href="https://twitter.com/sitzikbs" target="_blank">
+          <i class="fab fa-twitter">
+          </i>
+          Twitter
+         </a>
+         <a aria-label="YouTube" href="https://www.youtube.com/channel/UCAvd5SJkGaI6lf54pLUioMA" target="_blank">
+          <i class="fab fa-youtube">
+          </i>
+          YouTube
+         </a>
         </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
+       </div>
+       <div class="social-links" style="margin-top: 2rem; display: flex; justify-content: center; gap: 1.5rem;">
+        <a class="social-link" href="https://twitter.com/sitzikbs" style="font-size: 1.5rem; color: var(--text-color);" target="_blank">
+         <i class="fab fa-twitter">
+         </i>
+        </a>
+        <a class="social-link" href="https://www.youtube.com/channel/UCAvd5SJkGaI6lf54pLUioMA" style="font-size: 1.5rem; color: var(--text-color);" target="_blank">
+         <i class="fab fa-youtube">
+         </i>
+        </a>
+        <a class="social-link" href="https://github.com/sitzikbs" style="font-size: 1.5rem; color: var(--text-color);" target="_blank">
+         <i class="fab fa-github">
+         </i>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/" style="font-size: 1.5rem; color: var(--text-color);" target="_blank">
+         <i class="fab fa-linkedin">
+         </i>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <div class="container">
+    <div class="footer-content">
+     <div class="social-links">
+      <a aria-label="Email" href="mailto:sitzikbs@gmail.com">
+       <i class="fas fa-envelope">
+       </i>
+      </a>
+      <a aria-label="GitHub" href="https://github.com/sitzikbs" target="_blank">
+       <i class="fab fa-github">
+       </i>
+      </a>
+      <a aria-label="LinkedIn" href="https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/" target="_blank">
+       <i class="fab fa-linkedin">
+       </i>
+      </a>
+      <a aria-label="Twitter" href="https://twitter.com/sitzikbs" target="_blank">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+     </div>
+     <p>
+      ©
+      <span id="current-year">
+      </span>
+      All rights reserved.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script src="js/navigation.js">
+  </script>
+  <script src="js/main.js">
+  </script>
+ </body>
 </html>

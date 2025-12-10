@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>VLN BERT:  A Recurrent Vision-and-Language BERT for Navigation</h1>
+                <div class="post-meta">
+                    <time datetime="2022-02-24">2022-02-24</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted<a href="http://www.yiconghong.me/" rel="noreferrer noopener" target="_blank"> Yicong Hong</a> to chat about his paper “VLN BERT: A Recurrent Vision-and-Language BERT for Navigation”, published in CVPR 2021. In this paper, they take on the task of vision and language navigation (VLN) and propose a time-aware recurrent BERT model. The recurrent function maintains the cross-modal state information for the agent, enabling them to achieve state-of-the-art results. When I started my postdoc position at ANU, Yicong was in the first year of his PhD. Since then, it was a delight to see him grow as a researcher. One of the things I love most about his style is his relentlessness, he won’t let it go until he figures it out (reminds me of someone…). Yicong is a great early career researcher (soon to complete his PhD) and it was a pleasure recording this episode with him.</p>
+<div id="buzzsprout-player-10091519"> </div>
+<p><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10091519-yicong-hong-vln-bert.js?container_id=buzzsprout-player-10091519&amp;player=small" type="text/javascript"></script></p>
+<h3 class="wp-block-heading" id="authors">AUTHORS</h3>
+<p id="stephen-gould-richard-hartleydylan-campbell">Yicong Hong, Qi Wu, Yuankai Qi, Cristian Rodriguez-Opazo, Stephen Gould</p>
+<p> </p>
+<h3 class="wp-block-heading" id="abstract">ABSTRACT</h3>
+<p>Accuracy of many visiolinguistic tasks has benefited significantly from the application of vision-and-language (V&amp;L) BERT. However, its application for the task of vision-and-language navigation (VLN) remains limited. One reason for this is the difficulty adapting the BERT architecture to the partially observable Markov decision process present in VLN, requiring history-dependent attention and decision making. In this paper, we propose a recurrent BERT model that is time-aware for use in VLN. Specifically, we equip the BERT model with a recurrent function that maintains cross-modal state information for the agent. Through extensive experiments on R2R and REVERIE we demonstrate that our model can replace more complex encoder-decoder models to achieve state-of-the-art results. Moreover, our approach can be generalised to other transformer-based architectures, supports pre-training, and is capable of solving navigation and referring expression tasks simultaneously.</p>
+<p> </p>
+<h3 class="wp-block-heading" id="related-papers">RELATED PAPERS</h3>
+<p>📚 <a href="https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf" rel="noreferrer noopener" target="_blank">Attention is All You Need</a></p>
+<p>📚 <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Hao_Towards_Learning_a_Generic_Agent_for_Vision-and-Language_Navigation_via_Pre-Training_CVPR_2020_paper.html" rel="noreferrer noopener" target="_blank">Towards learning a generic agent for vision-and-language navigation via pre-training</a></p>
+<h3 class="wp-block-heading" id="links-and-resources">LINKS AND RESOURCES</h3>
+<p>💻 Project Page and CODE: <a href="https://github.com/YicongHong/Recurrent-VLN-BERT" rel="noreferrer noopener" target="_blank">https://github.com/YicongHong/Recurrent-VLN-BERT</a></p>
+<p>📚 <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Hong_VLN_BERT_A_Recurrent_Vision-and-Language_BERT_for_Navigation_CVPR_2021_paper.pdf" rel="noreferrer noopener" target="_blank">Paper</a></p>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ecwurlUBAkc?feature=oembed" title="Talking Papers Podcast with Yicong Hong - VLN BERT" width="800"></iframe>
+</div></figure>
+<p> </p>
+<p>This episode was recorded on April, 16th 2021.</p>
+<p> </p>
+<h3 class="wp-block-heading" id="contact">CONTACT</h3>
+<p>If you would like to be a guest, sponsor or just share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="cbbfaaa7a0a2a5ace5bbaabbaeb9b8e5bba4afa8aab8bf8baca6aaa2a7e5a8a4a6" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
+<h3 class="wp-block-heading" id="subscribe-and-follow"><br/>SUBSCRIBE AND FOLLOW</h3>
+<p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
+<p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
+<p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
+<p>🎥YouTube Channel: </p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>
