@@ -12,8 +12,9 @@ async function loadBlogPosts() {
     if (!container) return;
     
     try {
-        const response = await fetch('data/blog.json');
-        allPosts = await response.json();
+        const response = await fetch('data/blog-index.json');
+        const data = await response.json();
+        allPosts = data.posts || [];
         
         renderPosts(allPosts);
     } catch (error) {
@@ -35,11 +36,11 @@ function renderPosts(posts) {
         <div class="blog-card">
             ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-card-image">` : ''}
             <div class="blog-card-content">
-                <span class="blog-category">${post.category || 'General'}</span>
+                <span class="blog-category">${(post.categories && post.categories.length > 0) ? post.categories[0] : 'General'}</span>
                 <h3>${post.title}</h3>
                 <p class="blog-date">${post.date}</p>
-                <p class="blog-excerpt">${post.excerpt}</p>
-                <a href="blog/${post.slug}.html" class="read-more">Read more →</a>
+                <p class="blog-excerpt">${post.excerpt || ''}</p>
+                <a href="${post.content.replace(/^\//, '')}" class="read-more">Read more →</a>
             </div>
         </div>
     `).join('');
@@ -61,7 +62,9 @@ function setupFilters() {
             if (filter === 'all') {
                 renderPosts(allPosts);
             } else {
-                const filtered = allPosts.filter(post => post.category === filter);
+                const filtered = allPosts.filter(post => 
+                    post.categories && post.categories.includes(filter)
+                );
                 renderPosts(filtered);
             }
         });

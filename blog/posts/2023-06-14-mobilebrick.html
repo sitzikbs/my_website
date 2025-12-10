@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>MobileBrick: Building LEGO for 3D Reconstruction on Mobile Devices</h1>
+                <div class="post-meta">
+                    <time datetime="2023-06-14">2023-06-14</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted Kejie Li to chat about his CVPR 2023 paper “MobileBrick: Building LEGO for 3D Reconstruction on Mobile Devices”.</p>
+<p>In this paper, they proposed a new dataset and paradigm for evaluating 3D object reconstruction. It is very difficult to create a digital twin of 3D objects, even with expensive sensors. They introduce a new RGBD dataset, captured from a mobile device. The nice trick to obtaining the ground truth is that they used LEGO bricks that have an exact CAD model. There are two very interesting finds here. First, NeRF and NeuS work great and second, you shouldn’t use low-quality depth if you have high-resolution RGB. </p>
+<p></p>
+<p>Kejie is currently a research scientist at ByteDance/ TikTok. When writing this paper he was a postdoc at Kejie is currently a research scientist at ByteDance/ TikTok. When writing this paper he was a postdoc at Oxford, working with Professor Philip Torr and Professor Victor Prisacariu. Prior to this, he successfully obtained his PhD from the University of Adelaide, under the guidance of Professor Ian Reid. Although we hadn’t crossed paths until this episode, we both have some common ground in our CVs, having been affiliated with different nodes of the ACRV (Adelaide for him and ANU for me). I’m excited to see what he comes up with next, and eagerly await his future endeavours.</p>
+<p></p>
+<p></p>
+<div id="buzzsprout-player-13033756"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/13033756-mobilebrick-kejie-li.js?container_id=buzzsprout-player-13033756&amp;player=small" type="text/javascript"></script>
+<h3 class="wp-block-heading" id="authors">AUTHORS</h3>
+<p id="stephen-gould-richard-hartleydylan-campbell"><em>Kejie Li, Jia-Wang Bian, Robert Castle, Philip H.S. Torr, Victor Adrian Prisacariu</em></p>
+<p></p>
+<h3 class="wp-block-heading" id="abstract">ABSTRACT</h3>
+<p> </p>
+<p>High-quality 3D ground-truth shapes are critical for 3D object reconstruction evaluation. However, it is difficult to create a replica of an object in reality, and even 3D reconstructions generated by 3D scanners have artefacts that cause biases in evaluation. To address this issue, we introduce a novel multi-view RGBD dataset captured using a mobile device, which includes highly precise 3D ground-truth annotations for 153 object models featuring a diverse set of 3D structures. We obtain precise 3D ground-truth shape without relying on high-end 3D scanners by utilising LEGO models with known geometry as the 3D structures for image capture. The distinct data modality offered by high-resolution RGB images and low-resolution depth maps captured on a mobile device, when combined with precise 3D geometry annotations, presents a unique opportunity for future research on high-fidelity 3D reconstruction. Furthermore, we evaluate a range of 3D reconstruction algorithms on the proposed dataset.</p>
+<p> </p>
+<p></p>
+<h3 class="wp-block-heading" id="related-papers">RELATED PAPERS</h3>
+<p>📚<a href="https://colmap.github.io/" rel="noreferrer noopener" target="_blank">COLMAP</a></p>
+<p>📚<a href="https://www.matthewtancik.com/nerf" rel="noreferrer noopener" target="_blank">NeRF</a></p>
+<p>📚<a href="https://lingjie0206.github.io/papers/NeuS/" rel="noreferrer noopener" target="_blank">NeuS</a></p>
+<p>📚<a href="https://ai.facebook.com/datasets/CO3D-dataset/" rel="noreferrer noopener" target="_blank">CO3D</a></p>
+<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<p>📚 <a href="https://arxiv.org/abs/2303.01932">Paper</a></p>
+<p>💻<a href="https://code.active.vision/MobileBrick/" rel="noreferrer noopener" target="_blank">Project page</a></p>
+<p>💻<a href="https://github.com/ActiveVisionLab/MobileBrick" rel="noreferrer noopener" target="_blank">Code</a></p>
+<p>To stay up to date with Jiahao’s latest research, follow him on:</p>
+<p>👨🏻‍🎓<a href="https://likojack.github.io/kejieli/#/home" rel="noreferrer noopener" target="_blank">Personal page</a></p>
+<p>👨🏻‍🎓<a href="https://scholar.google.com.au/citations?user=JBwsoCUAAAAJ&amp;hl=en" rel="noreferrer noopener" target="_blank">Google Scholar</a></p>
+<p>🐦<a href="https://twitter.com/kejie_li" rel="noreferrer noopener" target="_blank">Twitter</a></p>
+<p></p>
+<p></p>
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mpQiLEm955s?feature=oembed" title="MobileBrick  (CVPR 2023) with Kejie Li on Talking papers" width="800"></iframe>
+</div></figure>
+<p>Recorded on May 8th 2023.</p>
+<h3 class="wp-block-heading">SPONSOR</h3>
+<p>This episode was sponsored by YOOM. YOOM is an Israeli startup dedicated to volumetric video creation. They were voted as the 2022 best start-up to work for by Dun’s 100.<br/><a href="https://www.yoom.com/careers" rel="noreferrer noopener" target="_blank">Join their team</a> that works on geometric deep learning research, implicit representations of 3D humans, NeRFs, and 3D/4D generative models.</p>
+<p><br/>Visit <a href="https://www.yoom.com/" rel="noreferrer noopener" target="_blank">YOOM.com</a>.</p>
+<h3 class="wp-block-heading"><br/>CONTACT</h3>
+<p>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: talking (dor) papers (dot) podcast(at) gmail (dot) com</p>
+<p></p>
+<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
+<p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
+<p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
+<p>🎥YouTube Channel: </p>
+<p></p>
+<p></p>
+<p></p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

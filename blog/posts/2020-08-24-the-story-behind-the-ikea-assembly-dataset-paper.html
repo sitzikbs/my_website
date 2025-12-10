@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>The story behind the “IKEA Assembly dataset” paper</h1>
+                <div class="post-meta">
+                    <time datetime="2020-08-24">2020-08-24</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>Every paper has a story behind it. That story is like a cake. It usually has a few layers of science, several layers of people, a lot of emotions mixed into the batter, and the frosting on top is the acceptance, publication and recognition it gets. Good papers don’t always feel like they are going to end up like that, even if you think the recipe is good, you always wonder what will come out of the oven. This is the first in a series of “behind the paper” war stories – sharing the mess in the kitchen behind the sweet taste of my publications. </p>
+<p>Paper: <a href="https://arxiv.org/abs/2007.00394">https://arxiv.org/abs/2007.00394</a> (accepted to WACV 2021<s> in Hawaii </s>online 🙁 )<br/>Project website: <a href="https://ikeaasm.github.io/">https://ikeaasm.github.io/</a></p>
+<h3 class="wp-block-heading">How it all began</h3>
+<p>The story begins in July 2019. I just arrived in Australia with my wife and two kids (2yo, 6yo), fresh out of my PhD at the Technion (Isreal). I was super excited and motivated to start my first “grown-up” job as a research fellow at the <a href="https://www.anu.edu.au/" rel="noreferrer noopener" target="_blank">ANU </a>node of <a href="https://www.roboticvision.org/" rel="noreferrer noopener" target="_blank">ACRV</a>.  I met Steve (<a href="http://users.cecs.anu.edu.au/~sgould/" rel="noreferrer noopener" target="_blank">Prof. Stephen Gould</a>), my supervisor, and we walked to the campus outdoor coffee shop. It was freezing but I was fired up from the project he described. We were going to build a perception system that will help people assemble IKEA furniture. At the time, I  had a few IKEA furniture in my apartment that I had to put together more than once because I put one of the pieces the wrong way, so it was an easy sell.   The general idea was to create something holistic that will capture and extract as much information as we can – multi-view RGB images, Depth images, 3D point clouds, human poses, hand poses, part poses, geometry, actions, CAD models,  human-object interactions, track everything and everyone<s>, estimate what they had for breakfast and why are they so grumpy</s>. I’m sure Steve’s list was shorter and well defined, this is how it felt in my head. I was about to be overwhelmed with the amount of work coming my way when Steve mentioned the team.   </p>
+<p></p>
+<h3 class="wp-block-heading">Meeting the team</h3>
+<p>The team includes Xin (<a href="https://cecs.anu.edu.au/people/xin-yu" rel="noreferrer noopener" target="_blank">Dr. Xin Yu</a>), Fatemeh (<a href="https://fatemeh-slh.github.io/" rel="noreferrer noopener" target="_blank">Dr. Fatemeh Saleh</a>), Dylan (<a href="https://sites.google.com/view/djcampbell" rel="noreferrer noopener" target="_blank">Dr. Dylan Campbell</a>), Cristian (soon to officially be <a href="https://crodriguezo.github.io/" rel="noreferrer noopener" target="_blank">Dr. Cristian Rodriguez</a>), Hongdong (<a href="http://users.cecs.anu.edu.au/~hongdong/" rel="noreferrer noopener" target="_blank">Prof. Hongdong Li</a>), and Steve (<a href="http://users.cecs.anu.edu.au/~sgould/" rel="noreferrer noopener" target="_blank">Prof. Stephen Gould</a>). The first time we all were in one room was the first “Human, Robots, and Actions” project meetings, but, mostly we were two doors away from each other. </p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img alt="" class="wp-image-1187" data-attachment-id="1187" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="ikea_asm_dataset_team" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/ikea_asm_dataset_team.png?fit=800%2C509&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/ikea_asm_dataset_team.png?fit=300%2C191&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/ikea_asm_dataset_team.png?fit=1003%2C638&amp;ssl=1" data-orig-size="1003,638" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/ikea_asm_dataset_team" data-recalc-dims="1" decoding="async" fetchpriority="high" height="323" sizes="(max-width: 509px) 100vw, 509px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/ikea_asm_dataset_team.png?resize=509%2C323&amp;ssl=1" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/ikea_asm_dataset_team.png?w=1003&amp;ssl=1 1003w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/ikea_asm_dataset_team.png?resize=300%2C191&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/ikea_asm_dataset_team.png?resize=768%2C489&amp;ssl=1 768w" width="509"/></figure></div>
+<p>Before I arrived in Australia, the team decided to use the Kinect V2, it is almost like they thought, which sensor Itzik likes best? (the Kinect V2 creates really good point clouds for its price tag). It had an IR sensor that we though about utilizing for automatic labelling using IR ink. The idea was to have something invisible to the human eye (i.e. RGB camera) but visible to the IR sensor so we will be able to label the parts automatically. Well, that didn’t really work. Introducing exhibit A: </p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img alt="" class="wp-image-1168" data-attachment-id="1168" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"1.7","credit":"","camera":"ONEPLUS A5010","caption":"","created_timestamp":"1565790209","copyright":"","focal_length":"4.103","iso":"320","shutter_speed":"0.02","title":"","orientation":"1"}' data-image-title="IMG_20190814_134329" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190814_134329-scaled.jpg?fit=768%2C1024&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190814_134329-scaled.jpg?fit=225%2C300&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190814_134329-scaled.jpg?fit=1920%2C2560&amp;ssl=1" data-orig-size="1920,2560" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/img_20190814_134329" data-recalc-dims="1" decoding="async" height="388" loading="lazy" sizes="(max-width: 291px) 100vw, 291px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190814_134329.jpg?resize=291%2C388&amp;ssl=1" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190814_134329-scaled.jpg?resize=768%2C1024&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190814_134329-scaled.jpg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190814_134329-scaled.jpg?resize=1152%2C1536&amp;ssl=1 1152w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190814_134329-scaled.jpg?resize=1536%2C2048&amp;ssl=1 1536w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190814_134329-scaled.jpg?w=1920&amp;ssl=1 1920w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190814_134329-scaled.jpg?w=1600&amp;ssl=1 1600w" width="291"/><figcaption>Exhibit A: me, holding an IKEA Lack table leg that has a black and white fiducial and a strip of IR ink above it. Can you see the strip?</figcaption></figure></div>
+<p>So, we decided to manually label it later. </p>
+<p>In my first month into the project, Xin and I were inseparable. We were leading the charge of collecting the data. </p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img alt="" class="wp-image-1203" data-attachment-id="1203" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"2","credit":"","camera":"ONEPLUS A5010","caption":"","created_timestamp":"1565616518","copyright":"","focal_length":"3.519","iso":"320","shutter_speed":"0.02","title":"","orientation":"1"}' data-image-title="IMG_20190812_132838" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190812_132838-scaled.jpg?fit=768%2C1024&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190812_132838-scaled.jpg?fit=225%2C300&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190812_132838-scaled.jpg?fit=1920%2C2560&amp;ssl=1" data-orig-size="1920,2560" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/img_20190812_132838" data-recalc-dims="1" decoding="async" height="539" loading="lazy" sizes="(max-width: 404px) 100vw, 404px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190812_132838.jpg?resize=404%2C539&amp;ssl=1" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190812_132838-scaled.jpg?resize=768%2C1024&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190812_132838-scaled.jpg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190812_132838-scaled.jpg?resize=1152%2C1536&amp;ssl=1 1152w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190812_132838-scaled.jpg?resize=1536%2C2048&amp;ssl=1 1536w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190812_132838-scaled.jpg?w=1920&amp;ssl=1 1920w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20190812_132838-scaled.jpg?w=1600&amp;ssl=1 1600w" width="404"/><figcaption>The IKEA dataset guys</figcaption></figure></div>
+<p>We became “The IKEA Dataset guys” – the superheroes that will tap on your shoulder and get you to assemble furniture on camera.  It really felt like a superpower when we got Prof. Richard Hartley to assemble one: </p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img alt="" class="wp-image-1169" data-attachment-id="1169" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="richard_hartley_ikea" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/richard_hartley_ikea.jpg?fit=480%2C270&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/richard_hartley_ikea.jpg?fit=300%2C169&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/richard_hartley_ikea.jpg?fit=480%2C270&amp;ssl=1" data-orig-size="480,270" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/richard_hartley_ikea" data-recalc-dims="1" decoding="async" height="322" loading="lazy" sizes="(max-width: 572px) 100vw, 572px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/richard_hartley_ikea.jpg?resize=572%2C322&amp;ssl=1" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/richard_hartley_ikea.jpg?w=480&amp;ssl=1 480w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/richard_hartley_ikea.jpg?resize=300%2C169&amp;ssl=1 300w" width="572"/><figcaption>Richard Hartley assembling IKEA furniture</figcaption></figure></div>
+<p></p>
+<p>The capturing set up was simple yet annoying. It included a huge tripod with 2 Kinects (top and front view) and an additional tripod with another Kinect (side view) and Xin’s computer. Sounds like not too bad. but in practice, there were so many cables.   Speaking of annoying, we initially wanted to use Microsoft’s SDK but soon discovered that it is impossible to capture feeds from multiple sensors symultaniousely so moved on to using <a href="https://github.com/OpenKinect/libfreenect2" rel="noreferrer noopener" target="_blank">libfreenect</a>2 that didn’t have all of the SDK features implemented. We also wanted to capture at a high frame so we prioritized most of the processing to be done off-line.</p>
+<p> Xin and I checked the file names, frame rate, camera feeds, pushed to git, fixed bugs, did more trial runs, pushed to git, fixed some more issues, pushed to git, scheduled people to assemble, documented, pushed to git (Steve loves git). Fatemeh, Dylan and Cristian helped us pre-assemble fasteners, carry the capturing setup and furniture parts around the building, and disassemble the furniture (someone had to disassemble all of the furniture that people assembled). Sometimes I think we could have also created the “IKEA furniture disassembly dataset” at no additional cost. </p>
+<p>We were finally ready. We spent the next two weeks collecting about 200 furniture assembly videos. We collected all day every day. We even collected data at the ACRV’s major events like <a href="https://www.roboticvision.org/rvss-2020/" rel="noreferrer noopener" target="_blank">RVSS </a>and <a href="https://www.roboticvision.org/rv_event/robovis-2019/">RoboVis</a>, where we got all of the big Profs to assemble furniture (even <a href="https://staff.qut.edu.au/staff/peter.corke" rel="noreferrer noopener" target="_blank">Prof. Peter Corke</a>, the centre’s director). </p>
+<h3 class="wp-block-heading">The highest high and the lowest low</h3>
+<p> The climax of the data collection extravaganza was when Steve invited everyone (team+student assemblers) to his house for a grand finale of collecting as much data as we can while munching pizza. </p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img alt="" class="wp-image-1173" data-attachment-id="1173" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"1.8","credit":"","camera":"iPhone XS","caption":"","created_timestamp":"1567000387","copyright":"","focal_length":"4.25","iso":"125","shutter_speed":"0.016666666666667","title":"","orientation":"1"}' data-image-title="IMG_9466" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_9466-scaled.jpg?fit=800%2C600&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_9466-scaled.jpg?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_9466-scaled.jpg?fit=2560%2C1920&amp;ssl=1" data-orig-size="2560,1920" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/img_9466" data-recalc-dims="1" decoding="async" height="331" loading="lazy" sizes="(max-width: 442px) 100vw, 442px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_9466.jpg?resize=442%2C331&amp;ssl=1" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_9466-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_9466-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_9466-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_9466-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_9466-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_9466-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_9466-scaled.jpg?w=2400&amp;ssl=1 2400w" width="442"/><figcaption>Pizza is always a great motivator to collecot more data</figcaption></figure></div>
+<p>The sheer amount of people around and the fact that we could set up 3 unique scenes within that single space allowed us to capture an additional 170 assemblies in one day.</p>
+<p>We had Steve and his kids assemble. We had my kids assemble. We had a dinosaur assemble. Everyone had a lot of fun.</p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img alt="" class="wp-image-1172" data-attachment-id="1172" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="dinosaur_ikea_assembly" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/dinosaur_ikea_assembly.jpg?fit=480%2C270&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/dinosaur_ikea_assembly.jpg?fit=300%2C169&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/dinosaur_ikea_assembly.jpg?fit=480%2C270&amp;ssl=1" data-orig-size="480,270" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/dinosaur_ikea_assembly" data-recalc-dims="1" decoding="async" height="323" loading="lazy" sizes="(max-width: 574px) 100vw, 574px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/dinosaur_ikea_assembly.jpg?resize=574%2C323&amp;ssl=1" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/dinosaur_ikea_assembly.jpg?w=480&amp;ssl=1 480w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/dinosaur_ikea_assembly.jpg?resize=300%2C169&amp;ssl=1 300w" width="574"/><figcaption>A dinosaur assembling IKEA furniture</figcaption></figure></div>
+<p>Later that afternoon we loaded up the cars and returned all of the gear back to ANU. Everyone was tired but satisfied, it was one of those moments when you could just feel that things are going the right way.  </p>
+<div class="wp-block-jetpack-tiled-gallery aligncenter is-style-columns" data-carousel-extra='{"blog_id":1,"permalink":"https:\/\/www.itzikbs.com\/the-story-behind-the-ikea-assembly-dataset-paper"}'><div class="tiled-gallery__gallery"><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:18.007233754656767%"><figure class="tiled-gallery__item"><img alt="" aria-label="Open image 1 of 6 in full-screen" data-attachment-id="1175" data-comments-opened="0" data-height="1707" data-id="1175" data-image-caption="&lt;p&gt;The IKEA dataset guys&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"4.5","credit":"SADEGH ALIAKBARIAN","camera":"Canon EOS 6D Mark II","caption":"","created_timestamp":"1566995514","copyright":"","focal_length":"45","iso":"800","shutter_speed":"0.01","title":"","orientation":"1"}' data-image-title="IMG_8508" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8508-scaled.jpg?fit=800%2C534&amp;ssl=1" data-link="http://www.itzikbs.com/?attachment_id=1175" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8508-scaled.jpg?fit=300%2C200&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8508-scaled.jpg?fit=2560%2C1707&amp;ssl=1" data-orig-size="2560,1707" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/img_8508" data-url="https://www.itzikbs.com/wp-content/uploads/2020/08/IMG_8508-scaled.jpg" data-width="2560" decoding="async" layout="responsive" role="button" src="https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8508-scaled.jpg?ssl=1" srcset="https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8508-scaled.jpg?strip=info&amp;w=600&amp;ssl=1 600w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8508-scaled.jpg?strip=info&amp;w=900&amp;ssl=1 900w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8508-scaled.jpg?strip=info&amp;w=1200&amp;ssl=1 1200w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8508-scaled.jpg?strip=info&amp;w=1500&amp;ssl=1 1500w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8508-scaled.jpg?strip=info&amp;w=1800&amp;ssl=1 1800w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8508-scaled.jpg?strip=info&amp;w=2000&amp;ssl=1 2000w" tabindex="0"/></figure><figure class="tiled-gallery__item"><img alt="" aria-label="Open image 2 of 6 in full-screen" data-attachment-id="1177" data-comments-opened="0" data-height="1707" data-id="1177" data-image-caption="&lt;p&gt;Professors assemble furniture too&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"4","credit":"SADEGH ALIAKBARIAN","camera":"Canon EOS 6D Mark II","caption":"","created_timestamp":"1566992368","copyright":"","focal_length":"35","iso":"250","shutter_speed":"0.0125","title":"","orientation":"1"}' data-image-title="IMG_8418" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8418-scaled.jpg?fit=800%2C534&amp;ssl=1" data-link="http://www.itzikbs.com/?attachment_id=1177" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8418-scaled.jpg?fit=300%2C200&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8418-scaled.jpg?fit=2560%2C1707&amp;ssl=1" data-orig-size="2560,1707" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/img_8418" data-url="https://www.itzikbs.com/wp-content/uploads/2020/08/IMG_8418-scaled.jpg" data-width="2560" decoding="async" layout="responsive" role="button" src="https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8418-scaled.jpg?ssl=1" srcset="https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8418-scaled.jpg?strip=info&amp;w=600&amp;ssl=1 600w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8418-scaled.jpg?strip=info&amp;w=900&amp;ssl=1 900w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8418-scaled.jpg?strip=info&amp;w=1200&amp;ssl=1 1200w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8418-scaled.jpg?strip=info&amp;w=1500&amp;ssl=1 1500w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8418-scaled.jpg?strip=info&amp;w=1800&amp;ssl=1 1800w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8418-scaled.jpg?strip=info&amp;w=2000&amp;ssl=1 2000w" tabindex="0"/></figure><figure class="tiled-gallery__item"><img alt="" aria-label="Open image 3 of 6 in full-screen" data-attachment-id="1181" data-comments-opened="0" data-height="1707" data-id="1181" data-image-caption="&lt;p&gt;Behind the scenes&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"4","credit":"SADEGH ALIAKBARIAN","camera":"Canon EOS 6D Mark II","caption":"","created_timestamp":"1566995189","copyright":"","focal_length":"24","iso":"200","shutter_speed":"0.016666666666667","title":"","orientation":"1"}' data-image-title="IMG_8505" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8505-scaled.jpg?fit=800%2C534&amp;ssl=1" data-link="http://www.itzikbs.com/?attachment_id=1181" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8505-scaled.jpg?fit=300%2C200&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8505-scaled.jpg?fit=2560%2C1707&amp;ssl=1" data-orig-size="2560,1707" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/img_8505" data-url="https://www.itzikbs.com/wp-content/uploads/2020/08/IMG_8505-scaled.jpg" data-width="2560" decoding="async" layout="responsive" role="button" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8505-scaled.jpg?ssl=1" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8505-scaled.jpg?strip=info&amp;w=600&amp;ssl=1 600w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8505-scaled.jpg?strip=info&amp;w=900&amp;ssl=1 900w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8505-scaled.jpg?strip=info&amp;w=1200&amp;ssl=1 1200w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8505-scaled.jpg?strip=info&amp;w=1500&amp;ssl=1 1500w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8505-scaled.jpg?strip=info&amp;w=1800&amp;ssl=1 1800w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8505-scaled.jpg?strip=info&amp;w=2000&amp;ssl=1 2000w" tabindex="0"/></figure></div><div class="tiled-gallery__col" style="flex-basis:27.202893501862707%"><figure class="tiled-gallery__item"><img alt="" aria-label="Open image 4 of 6 in full-screen" data-attachment-id="1183" data-comments-opened="0" data-height="1707" data-id="1183" data-image-caption="&lt;p&gt;Collecting data is fun&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"2.8","credit":"SADEGH ALIAKBARIAN","camera":"Canon EOS 6D Mark II","caption":"","created_timestamp":"1566992434","copyright":"","focal_length":"50","iso":"125","shutter_speed":"0.01","title":"","orientation":"1"}' data-image-title="IMG_8421" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8421-1-scaled.jpg?fit=800%2C534&amp;ssl=1" data-link="http://www.itzikbs.com/?attachment_id=1183" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8421-1-scaled.jpg?fit=300%2C200&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8421-1-scaled.jpg?fit=2560%2C1707&amp;ssl=1" data-orig-size="2560,1707" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/img_8421-2" data-url="https://www.itzikbs.com/wp-content/uploads/2020/08/IMG_8421-1-scaled.jpg" data-width="2560" decoding="async" layout="responsive" role="button" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8421-1-scaled.jpg?ssl=1" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8421-1-scaled.jpg?strip=info&amp;w=600&amp;ssl=1 600w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8421-1-scaled.jpg?strip=info&amp;w=900&amp;ssl=1 900w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8421-1-scaled.jpg?strip=info&amp;w=1200&amp;ssl=1 1200w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8421-1-scaled.jpg?strip=info&amp;w=1500&amp;ssl=1 1500w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8421-1-scaled.jpg?strip=info&amp;w=1800&amp;ssl=1 1800w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8421-1-scaled.jpg?strip=info&amp;w=2000&amp;ssl=1 2000w" tabindex="0"/></figure><figure class="tiled-gallery__item"><img alt="" aria-label="Open image 5 of 6 in full-screen" data-attachment-id="1184" data-comments-opened="0" data-height="1707" data-id="1184" data-image-caption="&lt;p&gt;Three RGB views&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"4","credit":"SADEGH ALIAKBARIAN","camera":"Canon EOS 6D Mark II","caption":"","created_timestamp":"1566992664","copyright":"","focal_length":"24","iso":"100","shutter_speed":"0.0125","title":"","orientation":"1"}' data-image-title="IMG_8432" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8432-1-scaled.jpg?fit=800%2C534&amp;ssl=1" data-link="http://www.itzikbs.com/?attachment_id=1184" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8432-1-scaled.jpg?fit=300%2C200&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8432-1-scaled.jpg?fit=2560%2C1707&amp;ssl=1" data-orig-size="2560,1707" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/img_8432-2" data-url="https://www.itzikbs.com/wp-content/uploads/2020/08/IMG_8432-1-scaled.jpg" data-width="2560" decoding="async" layout="responsive" role="button" src="https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8432-1-scaled.jpg?ssl=1" srcset="https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8432-1-scaled.jpg?strip=info&amp;w=600&amp;ssl=1 600w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8432-1-scaled.jpg?strip=info&amp;w=900&amp;ssl=1 900w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8432-1-scaled.jpg?strip=info&amp;w=1200&amp;ssl=1 1200w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8432-1-scaled.jpg?strip=info&amp;w=1500&amp;ssl=1 1500w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8432-1-scaled.jpg?strip=info&amp;w=1800&amp;ssl=1 1800w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8432-1-scaled.jpg?strip=info&amp;w=2000&amp;ssl=1 2000w" tabindex="0"/></figure></div><div class="tiled-gallery__col" style="flex-basis:54.78987274348054%"><figure class="tiled-gallery__item"><img alt="" aria-label="Open image 6 of 6 in full-screen" data-attachment-id="1185" data-comments-opened="0" data-height="1707" data-id="1185" data-image-caption="&lt;p&gt;Is that a bug or a feature?&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"4","credit":"SADEGH ALIAKBARIAN","camera":"Canon EOS 6D Mark II","caption":"","created_timestamp":"1566992684","copyright":"","focal_length":"85","iso":"2500","shutter_speed":"0.005","title":"","orientation":"1"}' data-image-title="IMG_8435" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg?fit=800%2C534&amp;ssl=1" data-link="http://www.itzikbs.com/?attachment_id=1185" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg?fit=300%2C200&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg?fit=2560%2C1707&amp;ssl=1" data-orig-size="2560,1707" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/img_8435-2" data-url="https://www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg" data-width="2560" decoding="async" layout="responsive" role="button" src="https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg?ssl=1" srcset="https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg?strip=info&amp;w=600&amp;ssl=1 600w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg?strip=info&amp;w=900&amp;ssl=1 900w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg?strip=info&amp;w=1200&amp;ssl=1 1200w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg?strip=info&amp;w=1500&amp;ssl=1 1500w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg?strip=info&amp;w=1800&amp;ssl=1 1800w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg?strip=info&amp;w=2000&amp;ssl=1 2000w" tabindex="0"/></figure></div></div></div></div>
+<p></p>
+<p>A few hours later, I got the text. </p>
+<p>My eyes teared up when I read it. I went through all of the stages of greaf. First I was in denial, I thought someone is playing a prank. Then I was angry, mostly at myself – how did we miss it? Finally, I accepted reality – due to a glitch in the capture setup we were only able to capture one depth stream instead of three. It was the lowest low. </p>
+<p> I vividly remember the next morning. Steve came into my office. Clearly, he didn’t know yet. He was still smiling. I told him. He was still smiling and said “Come on… really?” (denial). He skipped the angry stage (as far as I could tell) and after a few questions of trying to understand how it happened and what we do have, he accepted it. I know one thing. The way Steve responded to the bad news was an inspiration to us all. Its like he knew how badly we all felt and understood that the right thing to do was to pick up the pieces. A true leader (I know he is probably reading this. I am not kissing ass. It was truly a special moment).       </p>
+<p>The team’s reaction was also amazing. No one blamed anyone. Everyone was supportive. I remember thinking how lucky I was to be a part of this amazing team. The decision was to accept the imperfection and continue with what we have to the next step.</p>
+<h3 class="wp-block-heading">Put a label on it</h3>
+<p>The next months were focused on labelling the data. Dylan was in charge of human pose, Fatemeh on segmentation and tracking, and I took on the action annotations. Cristian was the teams “go-to mechanical turk” extraordinaire, and Xin got a position at UTS in Sydney (bye Xin, we still miss you!).</p>
+<p> Labelling took a lot of time. We built labelling tools, got students to label, screened turkers, validating annotations, creating pseudo ground truths by overfitting the data, corrected labels, validated again, until… </p>
+<p>It was finally ready. </p>
+<div class="wp-block-jetpack-tiled-gallery aligncenter is-style-square" data-carousel-extra='{"blog_id":1,"permalink":"https:\/\/www.itzikbs.com\/the-story-behind-the-ikea-assembly-dataset-paper"}'><div class="tiled-gallery__gallery"><div class="tiled-gallery__row columns-3"><div class="tiled-gallery__col"><figure class="tiled-gallery__item"><img alt="" aria-label="Open image 1 of 3 in full-screen" data-attachment-id="1188" data-comments-opened="0" data-height="1080" data-id="1188" data-image-caption="&lt;p&gt;Part segmentation&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="segmentation_example" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/segmentation_example.jpg?fit=800%2C450&amp;ssl=1" data-link="http://www.itzikbs.com/?attachment_id=1188" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/segmentation_example.jpg?fit=300%2C169&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/segmentation_example.jpg?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/segmentation_example" data-url="https://www.itzikbs.com/wp-content/uploads/2020/08/segmentation_example.jpg" data-width="1920" decoding="async" layout="responsive" role="button" src="https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/segmentation_example.jpg?ssl=1&amp;resize=1080%2C1080" srcset="https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/segmentation_example.jpg?resize=600%2C600&amp;strip=info&amp;ssl=1 600w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/segmentation_example.jpg?resize=900%2C900&amp;strip=info&amp;ssl=1 900w,https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/segmentation_example.jpg?resize=1080%2C1080&amp;strip=info&amp;ssl=1 1080w" tabindex="0"/></figure></div><div class="tiled-gallery__col"><figure class="tiled-gallery__item"><img alt="" aria-label="Open image 2 of 3 in full-screen" data-attachment-id="1189" data-comments-opened="0" data-height="1080" data-id="1189" data-image-caption="&lt;p&gt;Actions&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="action_example" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/action_example.jpg?fit=800%2C450&amp;ssl=1" data-link="http://www.itzikbs.com/?attachment_id=1189" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/action_example.jpg?fit=300%2C169&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/action_example.jpg?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/action_example" data-url="https://www.itzikbs.com/wp-content/uploads/2020/08/action_example.jpg" data-width="1920" decoding="async" layout="responsive" role="button" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/action_example.jpg?ssl=1&amp;resize=1080%2C1080" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/action_example.jpg?resize=600%2C600&amp;strip=info&amp;ssl=1 600w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/action_example.jpg?resize=900%2C900&amp;strip=info&amp;ssl=1 900w,https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/action_example.jpg?resize=1080%2C1080&amp;strip=info&amp;ssl=1 1080w" tabindex="0"/></figure></div><div class="tiled-gallery__col"><figure class="tiled-gallery__item"><img alt="" aria-label="Open image 3 of 3 in full-screen" data-attachment-id="1190" data-comments-opened="0" data-height="1080" data-id="1190" data-image-caption="&lt;p&gt;Poses&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="pose_example" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/pose_example.jpg?fit=800%2C450&amp;ssl=1" data-link="http://www.itzikbs.com/?attachment_id=1190" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/pose_example.jpg?fit=300%2C169&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/pose_example.jpg?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/pose_example" data-url="https://www.itzikbs.com/wp-content/uploads/2020/08/pose_example.jpg" data-width="1920" decoding="async" layout="responsive" role="button" src="https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/pose_example.jpg?ssl=1&amp;resize=1080%2C1080" srcset="https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/pose_example.jpg?resize=600%2C600&amp;strip=info&amp;ssl=1 600w,https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/pose_example.jpg?resize=900%2C900&amp;strip=info&amp;ssl=1 900w,https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/pose_example.jpg?resize=1080%2C1080&amp;strip=info&amp;ssl=1 1080w" tabindex="0"/></figure></div></div></div></div>
+<p>We set a goal to submit to WACV 2021 (who doesn’t want a fully-funded trip to Hawaii?). I created a shared overleaf latex document and everyone poured their content in. </p>
+<p>We subdivided the dataset into train-test sets. We trained SOTA models as benchmarks. Then we subdivided it again (after realizing that my subdivision code had a bug in it). Then we trained the models again, and then again (to fix the parameters to be as reported in the papers). I really wanted to squeeze in a new action recognition method that can use all of the data streams together, there was just not enough time.   </p>
+<p>We submitted the paper. </p>
+<p>I remember the relief I felt when clicking the “submit” button. At that point, I couldn’t see the beauty and contribution in the dataset, only its compromises and flaws. </p>
+<h3 class="wp-block-heading">Every end is a new beggining</h3>
+<p>I think one of the things I enjoyed most about this project is the comradery and bonding that happened between the members of the team. Personally, it was also a great way to get to know everyone – no need for a conversation starter if you can simply ask “Hey, did I get you to assemble some furniture yet?”. It was clear to me that the submission of the paper was one of those “every end is a new beginning” moments. The IKEA ASM dataset paper was done, but it was the starting point for (hopefully) many more papers to come. </p>
+<p></p>
+<p>The paper was accepted.</p>
+<p></p>
+<p>Remember: Your papers are like your children, even if they are annoying sometimes you love them all.</p>
+<p><strong>Bonus memory</strong>: <br/>Kids make research more… interesting (Keshet, my 2yo joining the assembly, while Shaked, my 6yo is a dinosaur in the background).</p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img alt="" class="wp-image-1202" data-attachment-id="1202" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="kids_make_research_more_interesting" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/kids_make_research_more_interesting.png?fit=800%2C447&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/kids_make_research_more_interesting.png?fit=300%2C168&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/kids_make_research_more_interesting.png?fit=1495%2C835&amp;ssl=1" data-orig-size="1495,835" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/kids_make_research_more_interesting" data-recalc-dims="1" decoding="async" height="254" loading="lazy" sizes="(max-width: 456px) 100vw, 456px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/kids_make_research_more_interesting.png?resize=456%2C254&amp;ssl=1" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/kids_make_research_more_interesting.png?resize=1024%2C572&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/kids_make_research_more_interesting.png?resize=300%2C168&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/kids_make_research_more_interesting.png?resize=768%2C429&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/kids_make_research_more_interesting.png?w=1495&amp;ssl=1 1495w" width="456"/></figure></div>
+<p><strong>Whats next? </strong></p>
+<p>Working on a live demo (with a robot!): </p>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img alt="" class="wp-image-1205" data-attachment-id="1205" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"2","credit":"","camera":"ONEPLUS A5010","caption":"","created_timestamp":"1584705590","copyright":"","focal_length":"3.519","iso":"500","shutter_speed":"0.03030303030303","title":"","orientation":"1"}' data-image-title="IMG_20200320_115950-1" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20200320_115950-1-scaled.jpg?fit=512%2C1024&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20200320_115950-1-scaled.jpg?fit=150%2C300&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20200320_115950-1-scaled.jpg?fit=1280%2C2560&amp;ssl=1" data-orig-size="1280,2560" data-permalink="https://www.itzikbs.com/the-story-behind-the-ikea-assembly-dataset-paper/img_20200320_115950-1" data-recalc-dims="1" decoding="async" height="550" loading="lazy" sizes="(max-width: 275px) 100vw, 275px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20200320_115950-1.jpg?resize=275%2C550&amp;ssl=1" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20200320_115950-1-scaled.jpg?resize=512%2C1024&amp;ssl=1 512w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20200320_115950-1-scaled.jpg?resize=150%2C300&amp;ssl=1 150w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20200320_115950-1-scaled.jpg?resize=768%2C1536&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20200320_115950-1-scaled.jpg?resize=1024%2C2048&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_20200320_115950-1-scaled.jpg?w=1280&amp;ssl=1 1280w" width="275"/></figure></div>
+<p>Photo credit: <a href="https://sadegh-aa.github.io" rel="noreferrer noopener" target="_blank">Sadegh Aliakbarian</a>, <a href="https://sites.google.com/view/djcampbell" rel="noreferrer noopener" target="_blank">Dylan Campbell</a>, and <a href="https://www.roboticvision.org/rv_person/yicong-hong/" rel="noreferrer noopener" target="_blank">Yicong Hong</a></p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

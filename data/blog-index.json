@@ -1,88 +1,1011 @@
 {
   "posts": [
     {
-      "id": "2024-11-15-example-blog-post",
-      "title": "Example Blog Post: Getting Started with 3D Computer Vision",
-      "date": "2024-11-15",
-      "updated": "2024-11-15",
+      "id": "why-i-left-social-media-and-what-brought-me-back",
+      "title": "Why I Left Social Media, and What Brought Me Back",
+      "date": "2025-10-14",
+      "updated": "2025-10-14",
       "author": "Itzik Ben-Shabat",
-      "excerpt": "This is an example blog post entry. Replace with actual blog post content from WordPress. The excerpt should be a brief summary (2-3 sentences) that appears on the blog index page.",
-      "content": "/blog/posts/2024-11-15-example-blog-post.html",
+      "excerpt": "If you’ve followed me for a while, you might have noticed I’ve been quiet on Twitter and Bluesky over the past year. That’s unusual for me. I used to be very active, but things changed. I want to share why I stepped back and why I’m coming back now.",
+      "content": "/blog/posts/2025-10-14-why-i-left-social-media-and-what-brought-me-back.html",
       "categories": [
-        "Tutorial",
-        "Computer Vision"
+        "Personal"
       ],
-      "tags": [
-        "3D",
-        "computer vision",
-        "tutorial",
-        "beginner"
-      ],
-      "image": "/assets/images/blog/2024-11-15-example-featured.jpg",
-      "readingTime": 8,
-      "featured": true,
-      "status": "published"
+      "tags": []
     },
     {
-      "id": "2024-10-20-another-example-post",
-      "title": "Example Post: Understanding Point Cloud Neural Networks",
-      "date": "2024-10-20",
-      "updated": "2024-10-21",
+      "id": "phd-guide-advisor-hunt",
+      "title": "The PhD Advisor Hunt: Secrets to a Thriving (or Grueling) Journey",
+      "date": "2025-02-17",
+      "updated": "2025-02-17",
       "author": "Itzik Ben-Shabat",
-      "excerpt": "Another example blog post to demonstrate the structure. This excerpt provides a preview of the post content and should be engaging enough to encourage readers to click through.",
-      "content": "/blog/posts/2024-10-20-another-example-post.html",
+      "excerpt": "In this episode ofTalking Papers, we take a break from our usual deep dives to focus on a challenge every PhD student faces: finding the right advisor. The relationship with your advisor plays a crucial role in shaping your academic and professional path. Our guest,Derek Liu, returnsto share his ins...",
+      "content": "/blog/posts/2025-02-17-phd-guide-advisor-hunt.html",
       "categories": [
-        "Research",
-        "Deep Learning"
+        "Talking Papers Podcast"
       ],
-      "tags": [
-        "neural networks",
-        "point clouds",
-        "research"
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2025/02/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "3dpaintbrush",
+      "title": "3D Paintbrush: Local Stylization of 3D Shapes with Cascaded Score Distillation",
+      "date": "2024-07-12",
+      "updated": "2024-07-12",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "I am thrilled to share the latest episode of the Talking Papers Podcast where I had the pleasure of hosting Dale Decatur, a brilliant 3rd year PhD student from the University of Chicago’s 3DL lab. Together, we delved into the intricate details of his paper titled “3D Paintbrush: Local Stylization of...",
+      "content": "/blog/posts/2024-07-12-3dpaintbrush.html",
+      "categories": [
+        "Talking Papers Podcast"
       ],
-      "image": "/assets/images/blog/2024-10-20-another-featured.jpg",
-      "readingTime": 12,
-      "featured": false,
-      "status": "published"
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2024/07/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "cvpr2024",
+      "title": "Highlights and Insights from CVPR 2024",
+      "date": "2024-06-26",
+      "updated": "2024-06-26",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "My first day at CVPR started off on a less-than-ideal note. Due to some unexpected delays at the airport, I missed all of the lectures I had planned to attend. By the time I arrived, the only thing left to do was pick up my badge. Despite this rocky start, the day took a turn for the better.",
+      "content": "/blog/posts/2024-06-26-cvpr2024.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2024/06/GQnCrcMbwAAsM-M.jpeg"
+    },
+    {
+      "id": "career_update_2024",
+      "title": "Personal update! I will be joining…",
+      "date": "2024-06-16",
+      "updated": "2024-06-16",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "I’ve been eager to share this update for a while now. It’s a professional life update with many personal elements intertwined.",
+      "content": "/blog/posts/2024-06-16-career_update_2024.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2024/06/Default_a_roblox_avatar_portrait_in_an_inspiring_pose_a_resear_0.jpg"
+    },
+    {
+      "id": "3dinaction",
+      "title": "3DInAction: Understanding Human Actions in 3D Point Clouds",
+      "date": "2024-06-03",
+      "updated": "2024-06-03",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In the latest episode of Talking Papers Podcast, we had the incredible opportunity to have an AI avatar host Yizhak (Itzik) Ben-Shabat (our usual host), a research fellow at the Technion and visiting the Australian National University and a recent Marie-Sklodowska Curie Fellow. We delved into his pi...",
+      "content": "/blog/posts/2024-06-03-3dinaction.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2024/06/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "cameras-as-rays",
+      "title": "Cameras as Rays: Pose Estimation via Ray Diffusion",
+      "date": "2024-03-14",
+      "updated": "2024-03-14",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In the latest episode of Talking Papers Podcast, I had the immense pleasure of hosting Jason Zhang, who’s currently cutting a dynamic path as a PhD student at the Robotics Institute at Carnegie Mellon University. Our conversation revolved around his captivating paper, “Cameras as Rays: Pose Estimati...",
+      "content": "/blog/posts/2024-03-14-cameras-as-rays.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2024/03/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "instant3d",
+      "title": "Instant3D: Fast Text-to-3D with Sparse-View Generation and Large Reconstruction Model",
+      "date": "2024-02-16",
+      "updated": "2024-02-16",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In the latest episode of the Talking Papers Podcast, I had the pleasure of hosting Jiahao Li, a talented PhD student at Toyota Technological Institute at Chicago (TTIC). Our conversation centered around his paper titled “Instant3D: Fast Text-to-3D with Sparse-View Generation and Large Reconstruction...",
+      "content": "/blog/posts/2024-02-16-instant3d.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2024/02/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "wacv2024",
+      "title": "WACV 2024 : Waikoloa Hawaii",
+      "date": "2024-01-10",
+      "updated": "2024-01-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Nestled in Waikoloa, Hawaii, theIEEE/CVF Winter Conference on Applications of Computer Vision(WACV) 2024 conference brought together the best minds in computer vision for a week of insightful discussions and groundbreaking research. The organizers’ choice to kick off each day after 1 PM allowed atte...",
+      "content": "/blog/posts/2024-01-10-wacv2024.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2024/01/GDYdcKJXEAA_mPB.jpeg"
+    },
+    {
+      "id": "variational-barycentric-coordinates",
+      "title": "Variational Barycentric Coordinates",
+      "date": "2023-12-14",
+      "updated": "2023-12-14",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In the latest episode of Talking Papers Podcast, we dive into the world of geometry and neural networks with the guidance of insightful early-career researcher, Ana Dodik. An MIT second-year Ph.D. student, Ana sheds light on her latest paper titled “Variational Barycentric Coordinates”, freshly publ...",
+      "content": "/blog/posts/2023-12-14-variational-barycentric-coordinates.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/12/Youtube-Cover-Talking-Papers.png?fit=1920%2C1080&ssl=1"
+    },
+    {
+      "id": "revenge_ssl",
+      "title": "Reverse Engineering Self-Supervised Learning",
+      "date": "2023-11-22",
+      "updated": "2023-11-22",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In the latest episode of the Talking Papers Podcast, I had the pleasure of hosting Ravid Shwartz-Ziv, a brilliant early career academic, to discuss his recent research paper titled “Reverse Engineering Self-Supervised Learning,” which was published at NeurIPS 2023. Coming from a background in machin...",
+      "content": "/blog/posts/2023-11-22-revenge_ssl.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/11/Youtube-Cover-Talking-Papers-1.png?fit=1920%2C1080&ssl=1"
+    },
+    {
+      "id": "csg_on_nsdf",
+      "title": "Constructive Solid Geometry on Neural Signed Distance Fields",
+      "date": "2023-11-09",
+      "updated": "2023-11-09",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In our latest episode of the Talking Papers Podcast, I had the pleasure of hosting Zoë Marschner, a first-year PhD student at Carnegie Mellon University. We delved into her research paper titled “Constructive Solid Geometry on Neural Signed Distance Fields,” which was published in SIGGRAPH Asia 2023...",
+      "content": "/blog/posts/2023-11-09-csg_on_nsdf.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2023/11/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "hmdnemo",
+      "title": "HMD-NeMo: Online 3D Avatar Motion Generation From Sparse Observations",
+      "date": "2023-11-01",
+      "updated": "2023-11-01",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Welcome back to the Talking Papers Podcast! In our latest episode, we had the privilege of hosting the brilliant Sadegh Aliakbarian to delve into his groundbreaking ICCV 2023 paper, “HMD-NeMo: Online 3D Avatar Motion Generation From Sparse Observations” . Sadegh will take us on a journey through thi...",
+      "content": "/blog/posts/2023-11-01-hmdnemo.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2023/09/Youtube-Cover-Talking-Papers-2.png"
+    },
+    {
+      "id": "cc3d",
+      "title": "CC3D: Layout-Conditioned Generation of Compositional 3D Scenes",
+      "date": "2023-09-28",
+      "updated": "2023-09-28",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Welcome back to the Talking Papers Podcast! In our latest episode, we had the privilege of hosting the brilliant Jeong Joon Park to delve into his groundbreaking paper, “CC3D: Layout-Conditioned Generation of Compositional 3D Scenes,” freshly published in ICCV 2023.",
+      "content": "/blog/posts/2023-09-28-cc3d.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/09/Youtube-Cover-Talking-Papers-1.png?fit=1920%2C1080&ssl=1"
+    },
+    {
+      "id": "nerf-det",
+      "title": "NeRF-Det: Learning Geometry-Aware Volumetric Representation for Multi-View 3D Object Detection",
+      "date": "2023-09-07",
+      "updated": "2023-09-07",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hosted Chenfeng Xu. We had a great chat about his paper “NeRF-Det: Learning Geometry-Aware Volumetric Representation for Multi-View 3D Object Detection”, published in ICCV 2023.",
+      "content": "/blog/posts/2023-09-07-nerf-det.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2023/09/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "magicpony",
+      "title": "🎠 MagicPony: Learning Articulated 3D Animals in the Wild",
+      "date": "2023-08-10",
+      "updated": "2023-08-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hosted Tomas Jakab. We had a great chat about his paper “MagicPony: Learning Articulated 3D Animals in the Wild”, published in CVPR 2023.",
+      "content": "/blog/posts/2023-08-10-magicpony.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/08/Youtube-Cover-Talking-Papers.png?fit=1920%2C1080&ssl=1"
+    },
+    {
+      "id": "word_as_image",
+      "title": "Word-As-Image for Semantic Typography",
+      "date": "2023-07-20",
+      "updated": "2023-07-20",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hosted Shir Iluz. We had a great chat about her paper “Word-As-Image for Semantic Typography”, SIGGRAPH 2023 Honorable Mention award winner.",
+      "content": "/blog/posts/2023-07-20-word_as_image.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2023/07/Shir-Iluz-Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "cvpr-2023",
+      "title": "CVPR 2023",
+      "date": "2023-07-19",
+      "updated": "2023-07-19",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this blog post, I endeavoured to recreate the past glory of theCVPR 2019andCVPR 2022blog posts by sharing the essence of my CVPR 2023 experience with you. From arriving early to fix jetlag and skip queues, to crafting a strategic schedule that maximized my learning potential, to indulging in culi...",
+      "content": "/blog/posts/2023-07-19-cvpr-2023.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2023/06/CVPR_2023-1024x686.png"
+    },
+    {
+      "id": "panoptic-lifting",
+      "title": "Panoptic Lifting for 3D Scene Understanding with Neural Fields",
+      "date": "2023-07-10",
+      "updated": "2023-07-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hosted Yawar Siddiqui to chat about his CVPR 2023 highlight paper “Panoptic Lifting for 3D Scene Understanding with Neural Fields”.",
+      "content": "/blog/posts/2023-07-10-panoptic-lifting.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2023/07/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "mobilebrick",
+      "title": "MobileBrick: Building LEGO for 3D Reconstruction on Mobile Devices",
+      "date": "2023-06-14",
+      "updated": "2023-06-14",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hosted Kejie Li to chat about his CVPR 2023 paper “MobileBrick: Building LEGO for 3D Reconstruction on Mobile Devices”.",
+      "content": "/blog/posts/2023-06-14-mobilebrick.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2023/06/mobilebrick-Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "iaw_dataset",
+      "title": "Aligning Step-by-Step Instructional Diagrams to Video Demonstrations",
+      "date": "2023-05-17",
+      "updated": "2023-05-17",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hosted Jiahao Zhang to chat about our CVPR 2023 paper “Aligning Step-by-Step Instructional Diagrams to Video Demonstrations”.",
+      "content": "/blog/posts/2023-05-17-iaw_dataset.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2023/05/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "clipasso",
+      "title": "CLIPasso: Semantically-Aware Object Sketching",
+      "date": "2023-03-29",
+      "updated": "2023-03-29",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedYael Vinker. We had a great chat about her paper “CLIPasso: Semantically-Aware Object Sketching”, SIGGRAPH 2022 best paper award winner.",
+      "content": "/blog/posts/2023-03-29-clipasso.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2023/03/Youtube-Cover-Talking-Papers-CLIPAsso.png"
+    },
+    {
+      "id": "inr2vec",
+      "title": "INR2Vec: Deep Learning on Implicit Neural Representations of Shapes",
+      "date": "2023-03-29",
+      "updated": "2023-03-29",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedLuca De Luigi. We had a great chat about his paper “Deep Learning on Implicit Neural Representations of Shapes”, AKA INR2Vec published in ICLR 2023.",
+      "content": "/blog/posts/2023-03-29-inr2vec.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2023/03/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "random-walks-for-adversarial-meshes",
+      "title": "Random Walks for Adversarial Meshes",
+      "date": "2022-12-14",
+      "updated": "2022-12-14",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, we hostedAmir Belder. We had a great chat about his paper “Random Walks for Adversarial Meshes”, published in SIGGRAPH 2022.",
+      "content": "/blog/posts/2022-12-14-random-walks-for-adversarial-meshes.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/12/Youtube-Cover-Talking-Papers-1.png"
+    },
+    {
+      "id": "spsr",
+      "title": "Stochastic Poisson Surface Reconstruction",
+      "date": "2022-12-13",
+      "updated": "2022-12-13",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedSilvia Sellán. We had a great chat about her paper “Stochastic Poisson Surface Reconstruction”, published in SIGGRAPH Asia 2022.",
+      "content": "/blog/posts/2022-12-13-spsr.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/12/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "beyond-periodicity",
+      "title": "Beyond Periodicity: Towards a Unifying Framework for Activations in Coordinate-MLPs",
+      "date": "2022-12-06",
+      "updated": "2022-12-06",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hosted Sameera Ranasinghe. We had a great chat about his paper “Beyond Periodicity: Towards a Unifying Framework for Activations in Coordinate-MLPs”, published in ECCV 2022 as an oral presentation.",
+      "content": "/blog/posts/2022-12-06-beyond-periodicity.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/11/Youtube-Cover-Talking-Papers-Sameera.png"
+    },
+    {
+      "id": "keypointnerf",
+      "title": "KeypointNeRF: Generalizing Image-based Volumetric Avatars using Relative Spatial Encoding of Keypoints",
+      "date": "2022-10-19",
+      "updated": "2022-10-19",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedMarkoMihajlovic. We had a great chat about his paper “KeypointNeRF: Generalizing Image-based Volumetric Avatars using Relative Spatial Encoding of Keypoints”, published in ECCV 2022.",
+      "content": "/blog/posts/2022-10-19-keypointnerf.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/10/Youtube-Cover-Talking-Papers-Marko.png?fit=1920%2C1080&ssl=1"
+    },
+    {
+      "id": "bacon",
+      "title": "BACON: Band-Limited Coordinate Networks for Multiscale Scene Representation",
+      "date": "2022-08-09",
+      "updated": "2022-08-09",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedDavid B. Lindellto chat about his paper “BACON: Band-Limited Coordinate Networks for Multiscale Scene Representation”, published in CVPR 2022.",
+      "content": "/blog/posts/2022-08-09-bacon.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/07/Youtube-Cover-Talking-Papers-1.png"
+    },
+    {
+      "id": "lipschitz-mlp",
+      "title": "Learning Smooth Neural Functions via Lipschitz Regularization",
+      "date": "2022-07-29",
+      "updated": "2022-07-29",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedHsueh-Ti Derek Liuto chat about his paper “Learning Smooth Neural Functions via Lipschitz Regularization”, published in SIGGRAPH 2022.",
+      "content": "/blog/posts/2022-07-29-lipschitz-mlp.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/07/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "cvpr-2022",
+      "title": "CVPR 2022",
+      "date": "2022-07-21",
+      "updated": "2022-07-21",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In 2019 I hit a career goal and had a paper published in CVPR. Today, 3 years and several papers later, I found that theblog post I madeback then is so valuable for me and the readers of this blog. Therefore, in this blog post I will try to recreate past glory and share my CVPR 2022 experience.",
+      "content": "/blog/posts/2022-07-21-cvpr-2022.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/06/20220619_0743072-scaled.jpg"
+    },
+    {
+      "id": "digs",
+      "title": "DiGS: Divergence guided shape implicit neural representation for unoriented point clouds",
+      "date": "2022-07-18",
+      "updated": "2022-07-18",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedChamin Hewa Koneputugodageto chat about OUR paper “DiGS: Divergence guided shape implicit neural representation for unoriented point clouds”, published in CVPR 2022.",
+      "content": "/blog/posts/2022-07-18-digs.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/06/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "neural-rgb-d-surface-reconstruction",
+      "title": "Neural RGB-D Surface Reconstruction",
+      "date": "2022-07-18",
+      "updated": "2022-07-18",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedDejan Azinovićto chat about his paper “Neural RGB-D Surface Reconstruction”, published in CVPR 2022.",
+      "content": "/blog/posts/2022-07-18-neural-rgb-d-surface-reconstruction.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/05/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "icon-implicit-clothed-humans-obtained-from-normals",
+      "title": "ICON: Implicit Clothed humans Obtained from Normals",
+      "date": "2022-07-18",
+      "updated": "2022-07-18",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedYuliang Xiuto chat about his paper “ICON: Implicit Clothed humans Obtained from Normals”, published in CVPR 2022.",
+      "content": "/blog/posts/2022-07-18-icon-implicit-clothed-humans-obtained-from-normals.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/04/ICON_Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "samplenet-differentiable-point-cloud-sampling",
+      "title": "SampleNet: Differentiable Point Cloud Sampling",
+      "date": "2022-07-18",
+      "updated": "2022-07-18",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedItai Langto chat about his paper “SampleNet: Differentiable Point Cloud Sampling”, published in CVPR 2020.",
+      "content": "/blog/posts/2022-07-18-samplenet-differentiable-point-cloud-sampling.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/03/Wordpress-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "panoptic-3d-scene-reconstruction-from-a-single-rgb-image",
+      "title": "Panoptic 3D Scene Reconstruction From a Single RGB Image",
+      "date": "2022-07-18",
+      "updated": "2022-07-18",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedManuel Dahnertto chat about his paper “Panoptic 3D Scene Reconstruction From a Single RGB Image”, published in NeurIPS 2021.",
+      "content": "/blog/posts/2022-07-18-panoptic-3d-scene-reconstruction-from-a-single-rgb-image.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/02/Youtube-Cover-Talking-Papers-Manuel.png"
+    },
+    {
+      "id": "shape-as-points-a-differentiable-poisson-solver",
+      "title": "Shape As Points: A Differentiable Poisson Solver",
+      "date": "2022-07-18",
+      "updated": "2022-07-18",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedSongyou Pengto chat about his paper “Shape As Points: A Differentiable Poisson Solver”, published in NeurIPS 2021. In this paper, they take on the task of surface reconstruction and propose a hybrid representation that unifies explicit and implic...",
+      "content": "/blog/posts/2022-07-18-shape-as-points-a-differentiable-poisson-solver.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/02/Youtube-Cover-Talking-Papers_Songyou_peng.png"
+    },
+    {
+      "id": "vln-bert-a-recurrent-vision-and-language-bert-for-navigation",
+      "title": "VLN BERT:  A Recurrent Vision-and-Language BERT for Navigation",
+      "date": "2022-02-24",
+      "updated": "2022-02-24",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedYicong Hongto chat about his paper “VLN BERT: A Recurrent Vision-and-Language BERT for Navigation”, published in CVPR 2021. In this paper, they take on the task of vision and language navigation (VLN) and propose a time-aware recurrent BERT model...",
+      "content": "/blog/posts/2022-02-24-vln-bert-a-recurrent-vision-and-language-bert-for-navigation.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/02/Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "neural-parts-learning-expressive-3d-shape-abstractions-with-invertible-neural-networks",
+      "title": "Neural Parts: Learning Expressive 3D Shape Abstractions with Invertible Neural Networks",
+      "date": "2022-02-11",
+      "updated": "2022-02-11",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hostedDespoina Paschalidouto chat about her paper “Neural Parts: Learning Expressive 3D Shape Abstractions with Invertible Neural Networks”, published in CVPR 2021. Neural Parts learns to parse geometrically accurate and semantically consistent part ar...",
+      "content": "/blog/posts/2022-02-11-neural-parts-learning-expressive-3d-shape-abstractions-with-invertible-neural-networks.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/02/Despi_Youtube_Cover_Talking_Papers.png"
+    },
+    {
+      "id": "deep-declarative-networks",
+      "title": "Deep Declarative Networks",
+      "date": "2022-02-05",
+      "updated": "2022-02-05",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hosted Dylan Campbell to chat about his paper “Deep Declarative Networks – A New Hope”, published in TPAMI. DDN is a general name for injecting and solving an optimization problem within a neural network. They are particularly useful if you need to enf...",
+      "content": "/blog/posts/2022-02-05-deep-declarative-networks.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/02/Dylan_Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "dori-discovering-object-relationships-for-moment-localization-of-a-natural-language-query-in-a-video",
+      "title": "DORi: Discovering Object Relationships for Moment Localization of a Natural Language Query in a Video",
+      "date": "2022-02-05",
+      "updated": "2022-02-05",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In this episode of theTalking Papers Podcast, I hosted Cristian Rodriguez-Opazo to chat about his paper “DORi: Discovering Object Relationships for Moment Localization of a Natural Language Query in a Video”, published in WACV 2021. Cristian is currently a Research Fellow at the Australian Institute...",
+      "content": "/blog/posts/2022-02-05-dori-discovering-object-relationships-for-moment-localization-of-a-natural-language-query-in-a-video.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/02/Cristian_Youtube-Cover-Talking-Papers.png"
+    },
+    {
+      "id": "the-talking-papers-podcast",
+      "title": "Talking Papers Podcast – The Beginning",
+      "date": "2022-01-15",
+      "updated": "2022-01-15",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "I am very excited to finally share something that I have been working on for quite a while and is finally ready to come out.Do you know that pile of papers that just lies at the edge of your desk (or in a folder on your computer) labelled “To read when I get the time”?  Remember how you never get th...",
+      "content": "/blog/posts/2022-01-15-the-talking-papers-podcast.html",
+      "categories": [
+        "Talking Papers Podcast"
+      ],
+      "tags": [],
+      "image": "https://www.itzikbs.com/wp-content/uploads/2022/01/Logo-final_new.png"
+    },
+    {
+      "id": "how-to-pronounce-my-name",
+      "title": "How to pronounce my name?",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "TL;DR: Do you know the “Itsy bitsy spider” song? so it is like the Itsy part, with a k’ at the end: Itsy+k.",
+      "content": "/blog/posts/2021-03-10-how-to-pronounce-my-name.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2021/03/Itzik-Ben-Shabat.gif?fit=350%2C377&ssl=1"
+    },
+    {
+      "id": "3-things-you-should-know-about-artificial-intelligence",
+      "title": "3 Things you should know about Artificial Intelligence",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Artificial intelligence, or AI, has become a commonly used buzz word in the past few years. When I talk about AI with friends and family, the first thought that comes to everyone’s mind is SkyNet from theTerminatorfranchise. While Terminator is an iconic movie, it is not about AI, it is about AGI – ...",
+      "content": "/blog/posts/2021-03-10-3-things-you-should-know-about-artificial-intelligence.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/AI_teaser.jpg?fit=1024%2C819&ssl=1"
+    },
+    {
+      "id": "how-to-stand-out-academically-during-covid-19",
+      "title": "How to stand out (in academia) during COVID-19?",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "I am now in the middle of my first year of post-doc at ANU. COVID-19 has changed the world as we knew it. Even more so the academic world – no classes, no conferences and no research (for some. luckily, one of the advantages of being a computer nerd is that I was able to do research). Due to my chro...",
+      "content": "/blog/posts/2021-03-10-how-to-stand-out-academically-during-covid-19.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/Itzik_Portrait_befoer_and_after_v2.jpg?fit=707%2C532&ssl=1"
+    },
+    {
+      "id": "technion-challange-2017-beach-volleyball-winners",
+      "title": "Technion Challange 2017 – Beach Volleyball Winners",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "This story starts when my teaching assistant (Tzabar) came to a scheduled course staff meeting and said:",
+      "content": "/blog/posts/2021-03-10-technion-challange-2017-beach-volleyball-winners.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/Technion_Challange_Winners.jpg?fit=2182%2C1452&ssl=1"
+    },
+    {
+      "id": "purim-2017-phd-creativity",
+      "title": "Purim – PhD in creativity",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Update: I changed the post to recurrently update. I will (hopefully) upload every year’s costumes.",
+      "content": "/blog/posts/2021-03-10-purim-2017-phd-creativity.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2017/03/Shaked_Dinosaur_costume_1.jpg?fit=4000%2C6000&ssl=1"
+    },
+    {
+      "id": "nesti-net-normal-estimation-for-3d-point-clouds",
+      "title": "Nesti-Net: Normal estimation for 3D Point Clouds",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Important links:  [paper], [code], [video],[poster]",
+      "content": "/blog/posts/2021-03-10-nesti-net-normal-estimation-for-3d-point-clouds.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2019/03/NestiNet_pipeline-01_for_web.jpg?fit=1024%2C361&ssl=1"
+    },
+    {
+      "id": "3dmfv-net-3d-point-cloud-classification-using-cnns",
+      "title": "3DmFV-Net – 3D Point Cloud Classification in Real time using 3DmFV and CNNs",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Recently we published a paper on 3D point cloud classification (and segmentation) using our proposed 3D modified Fisher Vector (3DmFV) representation and convolutional neural networks (CNNs).  The preprint isavailable on ArXivand the final version is available inRobotics and Automation Letters (RA-L...",
+      "content": "/blog/posts/2021-03-10-3dmfv-net-3d-point-cloud-classification-using-cnns.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_pc_3models.png?fit=961%2C568&ssl=1"
+    },
+    {
+      "id": "what-is-3d-modified-fisher-vector-3dmfv-representation-for-3d-point-clouds",
+      "title": "What is 3D modified Fisher Vector (3DmFV) representation for 3D point clouds",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Recently we published a paper about 3D point cloud classification (and segmentation) using our proposed 3D modified Fisher Vector (3DmFV) representation and convolutional neural networks (CNNs).  The preprint isavailable on ArXivand the final version is available inRobotics and Automation Letters (R...",
+      "content": "/blog/posts/2021-03-10-what-is-3d-modified-fisher-vector-3dmfv-representation-for-3d-point-clouds.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_3d_model.png?fit=960%2C720&ssl=1"
+    },
+    {
+      "id": "fisher-vector-for-3d-point-clouds-classification-primer",
+      "title": "What is a Fisher Vector for 3D point clouds – 3D Point Cloud Classification Primer",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Recently we published a paper about 3d point cloud classification (and segmentation) using our proposed 3D modified Fisher Vector (3DmFV) representation and convolutional neural networks (CNNs).  The preprint isavailable on ArXivand the final version is available inRobotics and Automation Letters (R...",
+      "content": "/blog/posts/2021-03-10-fisher-vector-for-3d-point-clouds-classification-primer.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_34.png?fit=640%2C480&ssl=1"
+    },
+    {
+      "id": "3d-point-cloud-classification-segmentation-using-modified-fisher-vector-cnn-omek-3d-academia-conference",
+      "title": "3D Point Cloud Classification and Segmentation using Modified Fisher Vector for CNN – Omek 3D Academia Conference",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "This Wednesday (27.12.17) I gave a talk in theOmek-3Dacademia conference about my work on 3D point cloud classification.  The conference took place at Daniel Hotel in Herzliya, Israel.",
+      "content": "/blog/posts/2021-03-10-3d-point-cloud-classification-segmentation-using-modified-fisher-vector-cnn-omek-3d-academia-conference.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_1.jpg?fit=860%2C645&ssl=1"
+    },
+    {
+      "id": "gaussian-mixture-model-gmm-3d-point-cloud-classification-primer",
+      "title": "What is a Gaussian Mixture Model (GMM) – 3D Point Cloud Classification Primer",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Recently we finished a paper about 3d point cloud classification and segmentation using our proposed 3D modified Fisher Vector (3DmFV) representation and convolutional neural networks (CNNs).  It is currentlyavailable on ArXiv.  I believe in making research accessible to everyone and I realized that...",
+      "content": "/blog/posts/2021-03-10-gaussian-mixture-model-gmm-3d-point-cloud-classification-primer.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/3D_GMM_demonstration.png?fit=800%2C800&ssl=1"
+    },
+    {
+      "id": "3d-point-cloud-classification-using-deep-learning",
+      "title": "3D Point Cloud Classification using Deep Learning – Recent Works",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Last week I gave a talk in theOmek-3Dforum. The title of the talk was (the same as the title of this post) “3D Point Cloud Classification using Deep Learning“.",
+      "content": "/blog/posts/2021-03-10-3d-point-cloud-classification-using-deep-learning.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/modelnet40_classes.png?fit=560%2C384&ssl=1"
+    },
+    {
+      "id": "part-validation-dan-and-raz",
+      "title": "Part Validation using Kinect and Augmented Reality",
+      "date": "2021-03-10",
+      "updated": "2021-03-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "As a PhD student, time is my most valuable resource. Unfortunately, there is never enough of it to do all the things I wish I could. Sometimes I get crazy project ideas but balancing research, teaching and family I never get the time to work on them.",
+      "content": "/blog/posts/2021-03-10-part-validation-dan-and-raz.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2017/08/poster_dan_raz.jpg?fit=2327%2C1440&ssl=1"
+    },
+    {
+      "id": "how-to-improve-your-online-content-creation-quality-for-academics",
+      "title": "How to improve your online content creation quality? (for academics)",
+      "date": "2020-11-29",
+      "updated": "2020-11-29",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "COVID hit planet earth a few months ago and everything has gone online. Research group meetings, reading group meetings, tutorials, and even conferences are all conducted in some form of virtual format (mostly via zoom).  I was creating online content since before the pandemic as an extra way to mak...",
+      "content": "/blog/posts/2020-11-29-how-to-improve-your-online-content-creation-quality-for-academics.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/09/Edfp1jGUcAAhM2w-1.jpg?fit=955%2C937&ssl=1"
+    },
+    {
+      "id": "the-story-behind-the-ikea-assembly-dataset-paper",
+      "title": "The story behind the “IKEA Assembly dataset” paper",
+      "date": "2020-08-24",
+      "updated": "2020-08-24",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Every paper has a story behind it. That story is like a cake. It usually has a few layers of science, several layers of people, a lot of emotions mixed into the batter, and the frosting on top is the acceptance, publication and recognition it gets. Good papers don’t always feel like they are going t...",
+      "content": "/blog/posts/2020-08-24-the-story-behind-the-ikea-assembly-dataset-paper.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/08/IMG_8435-1-scaled.jpg?fit=2560%2C1707&ssl=1"
+    },
+    {
+      "id": "surface-fitting-for-3d-point-cloud-deepfit",
+      "title": "Surface fitting for 3D Point Cloud : DeepFit",
+      "date": "2020-07-27",
+      "updated": "2020-07-27",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "We propose a method for 3D point cloud surface fitting. This method, called DeepFit, incorporates a neural network to learn point-wise weights for weighted least squares polynomial surface fitting. The learned weights act as a soft selection for the neighborhood of surface points thus avoiding the s...",
+      "content": "/blog/posts/2020-07-27-surface-fitting-for-3d-point-cloud-deepfit.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?fit=2009%2C805&ssl=1"
+    },
+    {
+      "id": "cvpr-2019",
+      "title": "CVPR 2019",
+      "date": "2019-06-25",
+      "updated": "2019-06-25",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "About three months ago, I hit one of my first career goals – have a paper accepted to CVPR (achievement unlocked ! ). Last week I  had the privilege to present a poster of our work onnormal estimation for unstructured 3D point clouds using CNNsat CVPR 2019 in Long Beach California (16-20.6.19).In th...",
+      "content": "/blog/posts/2019-06-25-cvpr-2019.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2019/06/IMG_20190620_082711.jpg?fit=4368%2C2352&ssl=1"
+    },
+    {
+      "id": "israel-machine-vision-conference-imvc-2019",
+      "title": "Israel Machine Vision Conference (IMVC) 2019",
+      "date": "2019-05-02",
+      "updated": "2019-05-02",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "This was my first visit to IMVC which just celebrated 10 years of activity.  I found it to be a very interesting combination of academia and industry work which provides a great platform for disseminating knowledge and fostering future collaborations. Personally, I presented a poster on our recent p...",
+      "content": "/blog/posts/2019-05-02-israel-machine-vision-conference-imvc-2019.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/3DmFV_Pitch.jpeg?fit=2048%2C1365&ssl=1"
+    },
+    {
+      "id": "how-to-visualize-normal-vectors-on-3d-point-clouds",
+      "title": "How to Visualize Normal Vectors on 3D Point Clouds",
+      "date": "2019-04-11",
+      "updated": "2019-04-11",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "This post will show you a good way to visualize normal vectors on 3D point clouds.",
+      "content": "/blog/posts/2019-04-11-how-to-visualize-normal-vectors-on-3d-point-clouds.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?fit=1469%2C841&ssl=1"
+    },
+    {
+      "id": "robotic-vision-summer-school-rvss-2019",
+      "title": "Robotic Vision Summer School (RVSS) 2019",
+      "date": "2019-02-10",
+      "updated": "2019-02-10",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "I recently accepted a research fellow position at the ANU node of the Australian Centre for Robotic Vision (ACRV) under the supervision of Prof. Stephen Gould (starting July 2019). Shortly after, he invited me to attend theRobotic Vision Summer School (RVSS) 2019, which is an annual event, organized...",
+      "content": "/blog/posts/2019-02-10-robotic-vision-summer-school-rvss-2019.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/02/group_photo_edited_small.jpg?fit=1200%2C645&ssl=1"
+    },
+    {
+      "id": "reasearch-visit-in-germany",
+      "title": "Reasearch visit in Germany – Prof. Matthias Niessner’s Visual Computing Group (TUM)",
+      "date": "2018-10-19",
+      "updated": "2018-10-19",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "When I started writing this post I thought it would be a chronologically ordered technical documentation of my research visit. Eventually, I found it much more coherent when divided into major events and it came out much less technical than I immagined.",
+      "content": "/blog/posts/2018-10-19-reasearch-visit-in-germany.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/img.jpg?fit=1241%2C866&ssl=1"
+    },
+    {
+      "id": "3d-point-cloud-classification-a-summary-of-useful-links",
+      "title": "3D point cloud classification – a summary of useful links",
+      "date": "2018-10-01",
+      "updated": "2018-10-01",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "This post aims to gather all of the useful links spread across multiple posts on the topic of 3D point cloud classification.",
+      "content": "/blog/posts/2018-10-01-3d-point-cloud-classification-a-summary-of-useful-links.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": []
+    },
+    {
+      "id": "write-paper-using-latex",
+      "title": "How to write a paper using LaTeX",
+      "date": "2018-09-08",
+      "updated": "2018-09-08",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "*UPDATE(8.9.18)  – I recently discovered a wonderful online LaTex writing tool calledoverleaf.I strongly recommend it over TeXMaker (presented below). It offers a nice and clean user interface along with a great platform for collaborating with coauthors which includes change tracking,  .git, and mor...",
+      "content": "/blog/posts/2018-09-08-write-paper-using-latex.html",
+      "categories": [
+        "Research"
+      ],
+      "tags": [],
+      "image": "http://www.itzikbs.com/wp-content/uploads/2017/11/built_in_option.jpg"
+    },
+    {
+      "id": "first-steps-deep-learning-using-tensorflow",
+      "title": "First Steps in Deep Learning Using TensorFlow",
+      "date": "2018-02-11",
+      "updated": "2018-02-11",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "In the past year, there was this phrase that kept popping up everywhere – “Deep learning”. It created the impression that you can do everything with it. Therefore, I have decided to investigate that the fuss is all about.",
+      "content": "/blog/posts/2018-02-11-first-steps-deep-learning-using-tensorflow.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "http://www.itzikbs.com/wp-content/uploads/2017/02/TensorFlow-Logo-300x54.png"
+    },
+    {
+      "id": "feature-aggregatoin-using-vlad-netvlad",
+      "title": "Feature aggregation using VLAD and netVLAD",
+      "date": "2017-06-17",
+      "updated": "2017-06-17",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Before the age of deep learning, hand-crafted features such as SIFT ruled the computer vision world. These features combined with Bag of Features (BOF) methods were very popular in indexing and categorization tasks. Their main advantage was getting a very discriminative higher dimensional representa...",
+      "content": "/blog/posts/2017-06-17-feature-aggregatoin-using-vlad-netvlad.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "http://www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture-1024x197.png"
+    },
+    {
+      "id": "deep-learning-3d-data-references",
+      "title": "Deep Learning on 3D Data – References",
+      "date": "2017-05-24",
+      "updated": "2017-05-24",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Deep learning (DL) using convolution neural networks (CNN) architectures is now a standard for solving classification tasks in images. When dealing with 3D data the problem becomes more complex. First, 3D data may be represented using various structures which include:",
+      "content": "/blog/posts/2017-05-24-deep-learning-3d-data-references.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": []
+    },
+    {
+      "id": "tensorflow-deep-mnist-experts-tutorial",
+      "title": "TensorFlow – Deep MNIST for Experts tutorial",
+      "date": "2017-02-16",
+      "updated": "2017-02-16",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "The second step in my quest for deep learning for 3D point clouds was to try recognizing MNIST digits using a deep convolutional network (The first step can be foundhere).",
+      "content": "/blog/posts/2017-02-16-tensorflow-deep-mnist-experts-tutorial.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": []
+    },
+    {
+      "id": "the-1st-winter-school-in-computer-science-and-engineering-on-computer-vision",
+      "title": "The 1st Winter School in Computer Science and Engineering on Computer Vision",
+      "date": "2017-01-30",
+      "updated": "2017-01-30",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "As the title implies, on 8-13 of January 2017 I attended “The 1st Winter School in Computer Science and Engineering on Computer Vision” At theIsrael Institute for Advanced Studiesin Givat Ram Campus in Jerusalem, Israel.",
+      "content": "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and-engineering-on-computer-vision.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/20170108_161943.jpg?fit=3264%2C1836&ssl=1"
+    },
+    {
+      "id": "mlcoursecompletion",
+      "title": "Completed Stanford’s Machine Learning Course on Coursera",
+      "date": "2017-01-30",
+      "updated": "2017-01-30",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Just finished my first online course on Machine Learning ! ! !",
+      "content": "/blog/posts/2017-01-30-mlcoursecompletion.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": [],
+      "image": "http://www.itzikbs.com/wp-content/uploads/2016/12/Capture-1024x380.jpg"
+    },
+    {
+      "id": "helping-out-a-friend-with-processing",
+      "title": "Helping out a friend with Processing",
+      "date": "2017-01-30",
+      "updated": "2017-01-30",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "My best friend’s girlfriend studies design. As part of her studies, they learned some programming usingProcessing.  As a designer (and not a programmer) she had a hard time getting things to work. Even though I don’t know processing at all I figured my experience in programming might come in handy.",
+      "content": "/blog/posts/2017-01-30-helping-out-a-friend-with-processing.html",
+      "categories": [
+        "Personal"
+      ],
+      "tags": []
     }
   ],
   "categories": [
-    {
-      "name": "Tutorial",
-      "slug": "tutorial",
-      "description": "Step-by-step guides and tutorials"
-    },
-    {
-      "name": "Computer Vision",
-      "slug": "computer-vision",
-      "description": "Posts about computer vision research and applications"
-    },
     {
       "name": "Research",
       "slug": "research",
       "description": "Research updates and insights"
     },
     {
-      "name": "Deep Learning",
-      "slug": "deep-learning",
-      "description": "Deep learning techniques and applications"
+      "name": "Personal",
+      "slug": "personal",
+      "description": "Personal updates and reflections"
+    },
+    {
+      "name": "Talking Papers Podcast",
+      "slug": "talking-papers-podcast",
+      "description": "Episodes from the Talking Papers Podcast"
     }
   ],
-  "tags": [
-    "3D",
-    "computer vision",
-    "tutorial",
-    "beginner",
-    "neural networks",
-    "point clouds",
-    "research",
-    "deep learning"
-  ],
-  "_meta": {
-    "description": "Blog post index for personal website",
-    "version": "1.0",
-    "lastUpdated": "2025-11-17",
-    "instructions": "Replace example blog posts with actual data from WordPress. Export all blog posts using WordPress export tool (Tools > Export), then convert each post to HTML/Markdown format. Update this index with metadata for each post. The 'content' field should point to the actual blog post file in /blog/posts/",
-    "postNamingConvention": "YYYY-MM-DD-post-slug.html"
-  }
+  "tags": []
 }

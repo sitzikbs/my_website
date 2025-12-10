@@ -1,0 +1,51 @@
+{
+    "about": "<div class=\"elementor-widget-container\">\n<p>I am a dedicated researcher with a passion for advancing the field of computer vision, machine learning, and geometric algorithms. My current focus is on leveraging deep learning techniques to extract meaningful insights from 3D point clouds. My work encompasses a range of applications, including surface reconstruction, normal estimation, classification, detection, and action recognition.</p><p>One of my proudest achievements is the creation of the Talking Papers Podcast. This podcast, which I host, provides a platform for early career academics and PhD students to discuss their latest research. By making knowledge freely accessible to anyone with a computer and an internet connection, I aim to not only impact the technological world but also empower individuals to change their lives through education and information.</p><p>I am driven by a mission to develop practical and accessible algorithms that have a tangible impact on society. My ultimate goal is to contribute to advancements that shape our daily lives and the world around us.</p><p>I received my PhD in 2019 from the <a href=\"http://www.technion.ac.il/en/\">Technion \u2013 Israel Institute of Technology</a>, where I also earned my B.Sc (Cum Laude 2008) and M.Sc (Summa Cum Laude 2015). Throughout my academic journey, I had the privilege of working under the guidance of Prof. Anath Fischer (ME) and Prof. Michael Lindenbaum (CS).</p><p>This website serves as a comprehensive repository of my contributions to the world. Here, you can explore my research\u00a0<a href=\"https://www.itzikbs.com/category/research-blog\" rel=\"noopener\" target=\"_blank\">blog</a>, subscribe to my\u00a0<a href=\"https://talking.papers.podcast.itzikbs.com/\" rel=\"noopener\" target=\"_blank\">podcast</a>, access my academic\u00a0<a href=\"https://www.itzikbs.com/code/\" rel=\"noopener\" target=\"_blank\">code</a>\u00a0(for non-commercial use, please\u00a0<a href=\"https://www.itzikbs.com/contact/\" rel=\"noopener\" target=\"_blank\">contact me</a>), explore my\u00a0<a href=\"https://www.itzikbs.com/publications/\" rel=\"noopener\" target=\"_blank\">publications</a>, learn more about my background and achievements, or simply enjoy some\u00a0<a href=\"https://www.itzikbs.com/category/just-4-fun/\" rel=\"noopener\" target=\"_blank\">light-hearted posts</a>, such as a guide on\u00a0<a href=\"https://www.itzikbs.com/publications/\" rel=\"noopener\" target=\"_blank\">how to pronounce my name</a>.</p><p>Please feel free to reach out to me with any questions regarding my code, publications, or anything else. Your curiosity and engagement are always welcome!</p> </div>",
+    "news": [
+        {
+            "date": "07/25",
+            "content": " GEOPARD , StyleMotif , and Less is More accepted to ICCV 2025! Congrats Pradyumn, Ziyu, and Jin!"
+        },
+        {
+            "date": "10/24",
+            "content": "Neural Experts accepted to NeurIPS 2024!"
+        },
+        {
+            "date": "02/24",
+            "content": "Two Papers accepted to CVPR 2024! Congrats Chamin."
+        },
+        {
+            "date": "10/23",
+            "content": "IKEA Ego 3D Dataset accepted to WACV!"
+        },
+        {
+            "date": "02/23",
+            "content": "Three Papers accepted to CVPR 2023! Congrats to Oren, Jiahao, and Chamin."
+        }
+    ],
+    "profile_image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/07/Itzik_Ben_Shabat_portrait.jpg?fit=500%2C500&ssl=1",
+    "contact": {
+        "email": "",
+        "social": [
+            {
+                "name": "Twitter",
+                "url": "https://twitter.com/sitzikbs",
+                "icon": "fab fa-twitter"
+            },
+            {
+                "name": "YouTube",
+                "url": "https://www.youtube.com/channel/UCAvd5SJkGaI6lf54pLUioMA",
+                "icon": "fab fa-youtube"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/sitzikbs",
+                "icon": "fab fa-github"
+            },
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/",
+                "icon": "fab fa-linkedin"
+            }
+        ]
+    }
+}

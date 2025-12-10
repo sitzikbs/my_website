@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>Panoptic 3D Scene Reconstruction From a Single RGB Image</h1>
+                <div class="post-meta">
+                    <time datetime="2022-07-18">2022-07-18</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted <em><a href="http://manuel-dahnert.com/" rel="noreferrer noopener" target="_blank">Manuel Dahnert</a></em> to chat about his paper “Panoptic 3D Scene Reconstruction From a Single RGB Image”, published in NeurIPS 2021. </p>
+<p>In this paper, they unify the task of reconstruction, semantic segmentation and instance segmentation in 3D from a single RGB image. They propose a holistic approach to lift the 2D features into a 3D grid. </p>
+<p>Manuel is a good friend and colleague. We first met in my <a href="https://www.itzikbs.com/reasearch-visit-in-germany" rel="noreferrer noopener" target="_blank">research visit at TUM during my PhD</a>, we spent some long evenings together at the office. We have both come a long way since then and I am really looking forward to seeing what he will cook up next. I have a feeling it is not his last visit in the podcast. </p>
+<div id="buzzsprout-player-10202187"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10202187-manuel-dahnert-panoptic-3d-scene-reconstruction.js?container_id=buzzsprout-player-10202187&amp;player=small" type="text/javascript"></script>
+<h3 class="wp-block-heading" id="authors">AUTHORS</h3>
+<p id="stephen-gould-richard-hartleydylan-campbell"><em>Manuel Dahnert, Ji Hou, Matthias Niessner, Angela Dai</em></p>
+<p> </p>
+<h3 class="wp-block-heading" id="abstract">ABSTRACT</h3>
+<p>In recent years, neural implicit representations gained popularity in 3D reconstruction due to their expressiveness and flexibility. However, the implicit nature of neural implicit representations results in Richly segmented 3D scene reconstructions are an integral basis for many high-level scene understanding tasks, such as for robotics, motion planning, or augmented reality. Existing works in 3D perception from a single RGB image tend to focus on geometric reconstruction only, or geometric reconstruction with semantic segmentation or instance segmentation. Inspired by 2D panoptic segmentation, we propose to unify the tasks of geometric reconstruction, 3D semantic segmentation, and 3D instance segmentation into the task of panoptic 3D scene reconstruction — from a single RGB image, predicting the complete geometric reconstruction of the scene in the camera frustum of the image, along with semantic and instance segmentations. We propose a new approach for holistic 3D scene understanding from a single RGB image which learns to lift and propagate 2D features from an input image to a 3D volumetric scene representation. Our panoptic 3D reconstruction metric evaluates both geometric reconstruction quality as well as panoptic segmentation. Our experiments demonstrate that our approach for panoptic 3D scene reconstruction outperforms alternative approaches for this task.</p>
+<p> </p>
+<h3 class="wp-block-heading" id="related-papers">RELATED PAPERS</h3>
+<p>📚 </p>
+<p>📚 </p>
+<p>📚</p>
+<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<p>💻Project Page: </p>
+<p>💻<a href="https://github.com/xheon/panoptic-reconstruction" rel="noreferrer noopener" target="_blank">Code</a></p>
+<p>📚 </p>
+<p>🤐 <a href="https://openreview.net/forum?id=BwzggTWi8bM" rel="noreferrer noopener" target="_blank">Peer Review</a></p>
+<p></p>
+<p>To stay up to date with Manuel’s latest research, check out <a href="http://manuel-dahnert.com/" rel="noreferrer noopener" target="_blank">his personal page</a> and follow him on:</p>
+<p>🎓<a href="https://scholar.google.com/citations?user=eNypkO0AAAAJ" rel="noreferrer noopener" target="_blank">Google Scholar</a></p>
+<p>🐦<a href="https://twitter.com/manuel_dahnert" rel="noreferrer noopener" target="_blank">Twitter</a></p>
+<p></p>
+<p></p>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PomlbdBmFMU?feature=oembed" title="Talking Papers Podcast: Manuel Dahnert  - Panoptic 3D Scene Reconstruction From a Single RGB Image" width="800"></iframe>
+</div></figure>
+<p>Recorded on February 11th 2022.</p>
+<h3 class="wp-block-heading"><br/>CONTACT</h3>
+<p>If you would like to be a guest, sponsor or just share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="89fde8e5e2e0e7eea7f9e8f9ecfbfaa7f9e6edeae8fafdc9eee4e8e0e5a7eae6e4" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
+<p></p>
+<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<p>🎧Subscribe on your favorite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
+<p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
+<p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
+<p>🎥YouTube Channel: </p>
+<p></p>
+<p></p>
+<p></p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>
