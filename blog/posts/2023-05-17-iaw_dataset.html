@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>Aligning Step-by-Step Instructional Diagrams to Video Demonstrations</h1>
+                <div class="post-meta">
+                    <time datetime="2023-05-17">2023-05-17</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted Jiahao Zhang to chat about our CVPR 2023 paper “Aligning Step-by-Step Instructional Diagrams to Video Demonstrations”.</p>
+<p>In this paper we proposed a new task, aligning instructional videos and manual images of an IKEA furniture assembly diagram. To do that, we collected and annotated a brand new dataset: “IKEA Assembly in the Wild” where we aligned YouTube videos with IKEA’s instruction manuals. Our approach to addressing this task proposes several supervised contrastive losses that contrast between video and diagram, video and manual, and internal manual images. </p>
+<p></p>
+<p>Jiahao is currently a PhD student at the Australian National University. His research focus is on human action recognition and multi-modal representation alignment. We first met (virtually) when Jiahao did his Honours project, where he developed an amazing (and super useful) video annotation tool <a href="https://github.com/anucvml/vidat" rel="noreferrer noopener" target="_blank">ViDaT</a>. His strong software engineering and web development background gives him a strong advantage when working on his research projects. Even though we never met in person (yet), we are actively collaborating and I already know what he is cooking up next. I hope to share it with the world soon.</p>
+<p></p>
+<p></p>
+<div id="buzzsprout-player-12858311"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/12858311-iaw-dataset-jiahao-zhang.js?container_id=buzzsprout-player-12858311&amp;player=small" type="text/javascript"></script>
+<h3 class="wp-block-heading" id="authors">AUTHORS</h3>
+<p id="stephen-gould-richard-hartleydylan-campbell"><em>Jiahao Zhang, Anoop Cherian, Yanbin Liu, Yizhak Ben-Shabat, Cristian Rodriguez, Stephen Gould</em></p>
+<p><br/></p>
+<h3 class="wp-block-heading" id="abstract">ABSTRACT</h3>
+<p> </p>
+<p>Abstraction is at the heart of sketching due to the simple and minimal nature of line drawings. Abstraction entails identifying the essential visual properties of an object or scene, which requires Implicit Neural Representations (INRs) have emerged in the last few years as a powerful tool to encode Multimodal alignment facilitates the retrieval of instances from one modality when queried using another. In this paper, we consider a novel setting where such an alignment is between (i) instruction steps that are depicted as assembly diagrams (commonly seen in Ikea assembly manuals) and (ii) video segments from in-the-wild videos; these videos comprising an enactment of the assembly actions in the real world. To learn this alignment, we introduce a novel supervised contrastive learning method that learns to align videos with the subtle details in the assembly diagrams, guided by a set of novel losses. To study this problem and demonstrate the effectiveness of our method, we introduce a novel dataset: IAW—for Ikea assembly in the wild—consisting of 183 hours of videos from diverse furniture assembly collections and nearly 8,300 illustrations from their associated instruction manuals and annotated for their ground truth alignments. We define two tasks on this dataset: First, nearest neighbor retrieval between video segments and illustrations, and, second, alignment of instruction steps and the segments for each video. Extensive experiments on IAW demonstrate superior performances of our approach against alternatives.</p>
+<p> </p>
+<p></p>
+<h3 class="wp-block-heading" id="related-papers">RELATED PAPERS</h3>
+<p>📚<a href="https://ikeaasm.github.io/" rel="noreferrer noopener" target="_blank">IKEA ASM dataset</a></p>
+<p>📚<a href="https://arxiv.org/abs/2103.00020" rel="noreferrer noopener" target="_blank">CLIP</a></p>
+<p>📚<a href="https://arxiv.org/abs/1812.03982" rel="noreferrer noopener" target="_blank">SlowFast </a></p>
+<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<p>📚 <a href="https://arxiv.org/pdf/2303.13800.pdf" rel="noreferrer noopener" target="_blank">Paper</a></p>
+<p>💻<a href="https://academic.davidz.cn/en/publication/zhang-cvpr-2023/" rel="noreferrer noopener" target="_blank">Project page</a></p>
+<p>💻<a href="https://iaw.davidz.cn/" rel="noreferrer noopener" target="_blank">Dataset page</a></p>
+<p>💻<a href="https://github.com/DavidZhang73/AssemblyVideoManualAlignment">Code</a></p>
+<p>To stay up to date with Jiahao’s latest research, follow him on:</p>
+<p>👨🏻‍🎓<a href="https://scholar.google.com/citations?user=PpHLOpQAAAAJ&amp;hl=it" rel="noreferrer noopener" target="_blank">personal pag</a><a href="https://academic.davidz.cn/en/">e</a></p>
+<p>👨🏻‍🎓<a href="https://scholar.google.com/citations?user=PpHLOpQAAAAJ&amp;hl=it" rel="noreferrer noopener" target="_blank">Google Schola</a><a href="https://scholar.google.co.uk/citations?user=r040KUgAAAAJ" rel="noreferrer noopener" target="_blank">r</a></p>
+<p>👨🏻‍🎓<a href="https://github.com/DavidZhang73" rel="noreferrer noopener" target="_blank">Github</a></p>
+<p></p>
+<p></p>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/CIkLsrTC7eY?feature=oembed" title="IAW Dataset (CVPR 2023) with Jiahao Zhang on Talking papers" width="800"></iframe>
+</div></figure>
+<p>Recorded on May 1st 2023.</p>
+<h3 class="wp-block-heading">SPONSOR</h3>
+<p>This episode was sponsored by YOOM. YOOM is an Israeli startup dedicated to volumetric video creation. They were voted as the 2022 best start-up to work for by Dun’s 100.<br/><a href="https://www.yoom.com/careers" rel="noreferrer noopener" target="_blank">Join their team</a> that works on geometric deep learning research, implicit representations of 3D humans, NeRFs, and 3D/4D generative models.</p>
+<p><br/>Visit <a href="https://www.yoom.com/" rel="noreferrer noopener" target="_blank">YOOM.com</a>.</p>
+<h3 class="wp-block-heading"><br/>CONTACT</h3>
+<p>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: talking (dor) papers (dot) podcast(at) gmail (dot) com</p>
+<p></p>
+<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
+<p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
+<p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
+<p>🎥YouTube Channel: </p>
+<p></p>
+<p></p>
+<p></p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

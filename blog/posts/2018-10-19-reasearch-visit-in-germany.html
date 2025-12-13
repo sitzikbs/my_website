@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>Reasearch visit in Germany – Prof. Matthias Niessner’s Visual Computing Group (TUM)</h1>
+                <div class="post-meta">
+                    <time datetime="2018-10-19">2018-10-19</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<h2><img alt="" class="aligncenter wp-image-866 size-large" data-attachment-id="866" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"2.4","credit":"","camera":"SM-G960F","caption":"","created_timestamp":"1535894465","copyright":"","focal_length":"4.3","iso":"50","shutter_speed":"0.0032258064516129","title":"","orientation":"1"}' data-image-title="img" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/img.jpg?fit=800%2C559&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/img.jpg?fit=300%2C209&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/img.jpg?fit=1241%2C866&amp;ssl=1" data-orig-size="1241,866" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/img" data-recalc-dims="1" decoding="async" fetchpriority="high" height="559" sizes="(max-width: 800px) 100vw, 800px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/img-1024x715.jpg?resize=800%2C559" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/img.jpg?resize=1024%2C715&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/img.jpg?resize=300%2C209&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/img.jpg?resize=768%2C536&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/img.jpg?w=1241&amp;ssl=1 1241w" width="800"/></h2>
+<p> </p>
+<p>When I started writing this post I thought it would be a chronologically ordered technical documentation of my research visit. Eventually, I found it much more coherent when divided into major events and it came out much less technical than I immagined.</p>
+<h2>How it all came to be?</h2>
+<p>It was a series of lucky coincidences that led to this research visit. I was searching for potential post-doc advisors and <a href="http://niessnerlab.org/members/matthias_niessner/profile.html" rel="noopener" target="_blank">Prof. Matthias Niessner</a>‘s name came up. I obviously knew the name from his work at Stanford but I wasn’t aware (at that time) that he was building his new research group in TUM. I immediately added his name to my long and meticulously organized list of potential supervisors and moved on to other things. The very next day  Prof. Fischer ( my PhD. supervisor) casually informed me of a funding opportunity to do a short research visit in Germany. It felt like fate. I immediately sent Matthias an email and with the huge help of Marianne Krueger-Jungnickel from the <a href="http://www.life-science-net.de/" rel="noopener" target="_blank">Life Science Network</a>  (and after some interviews and skype calls) we set it up.</p>
+<p>I visited the <a href="http://niessnerlab.org/" rel="noopener" target="_blank">Visual Computing group</a> (Department of Informatics, Technical University of Munich) for 4 weeks (28.8-25.9) as the kick-off of an ongoing collaboration.</p>
+<p><img alt="" class="alignnone size-medium wp-image-855 aligncenter" data-attachment-id="855" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"2","credit":"","camera":"ONEPLUS A5010","caption":"","created_timestamp":"1535530877","copyright":"","focal_length":"3.519","iso":"125","shutter_speed":"0.0011494252873563","title":"","orientation":"0"}' data-image-title="tume research visit first photo" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_082115.jpg?fit=768%2C1024&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_082115.jpg?fit=225%2C300&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_082115.jpg?fit=3456%2C4608&amp;ssl=1" data-orig-size="3456,4608" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/img_20180829_082115" data-recalc-dims="1" decoding="async" height="300" sizes="(max-width: 225px) 100vw, 225px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_082115-225x300.jpg?resize=225%2C300" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_082115.jpg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_082115.jpg?resize=768%2C1024&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_082115.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_082115.jpg?w=2400&amp;ssl=1 2400w" width="225"/></p>
+<h2>The people</h2>
+<p>During my visit, I had the privilege to get to know so many amazing people (hopefully the following links won’t break as time goes by and they move on to bigger and better things). The first to greet me was<a href="http://niessnerlab.org/members/andreas_roessler/profile.html" rel="noopener" target="_blank"> Andreas Rössler</a> who turned out to be my “go to guy” whenever I had a question about anything. Make sure to check out his <a href="http://niessnerlab.org/projects/roessler2018faceforensics.html" rel="noopener" target="_blank">FaceForensics</a> work.</p>
+<p>I was so excited to get a temporary office with these names on the door:</p>
+<p><img alt="" class="size-medium wp-image-856 aligncenter" data-attachment-id="856" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"1.7","credit":"","camera":"ONEPLUS A5010","caption":"","created_timestamp":"1535539520","copyright":"","focal_length":"4.103","iso":"400","shutter_speed":"0.01","title":"","orientation":"1"}' data-image-title="First offfice" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_104519.jpg?fit=800%2C520&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_104519.jpg?fit=300%2C195&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_104519.jpg?fit=4020%2C2616&amp;ssl=1" data-orig-size="4020,2616" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/img_20180829_104519" data-recalc-dims="1" decoding="async" height="195" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_104519-300x195.jpg?resize=300%2C195" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_104519.jpg?resize=300%2C195&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_104519.jpg?resize=768%2C500&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_104519.jpg?resize=1024%2C666&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_104519.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/IMG_20180829_104519.jpg?w=2400&amp;ssl=1 2400w" width="300"/></p>
+<p>My new office-mates were <a href="http://niessnerlab.org/members/manuel_dahnert/profile.html" rel="noopener" target="_blank">Manuel Dahnert</a> (who just returned from a vacation and gave a talk about his research on 3D model retrieval the next day) and Yu-Shiang Wong who was visiting from University College London (supervised by <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/" rel="noopener" target="_blank">Niloy Mitra</a>).</p>
+<p>This group is composed of truly amazing people from all around the world:  from Bosnia (<a href="http://niessnerlab.org/members/dejan_azinovic/profile.html">Dejan Azinović</a> working on inverse rendering), Slovenia (<a href="http://niessnerlab.org/members/aljaz_bozic/profile.html">Aljaž Božič </a>working on tracking and reconstructing non-rigidly deforming objects in dynamic environments), and China (<a href="http://niessnerlab.org/members/ji_hou/profile.html">Ji Hou</a> working on 3D scene understanding).  From Germany, there is also <a href="http://niessnerlab.org/members/armen_avetisyan/profile.html">Armen Avetisya</a> working on 3D Alignment and Object retrieval between Scan and CAD, but he has the temperament of an Israeli.  Other visitors include <a href="http://niessnerlab.org/team.html">Lei Han, </a><a href="http://niessnerlab.org/team.html">Xiaochen Fan, </a>and <a href="http://stanford.edu/~jingweih/">Jingwei Huang</a>.</p>
+<p>That week I also met the group’s postdocs:<a href="https://cs.stanford.edu/people/adai/" rel="noopener" target="_blank"> Angela Dai</a> (which I occasionally disturbed with questions about her amazing <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Dai_ScanNet_Richly-Annotated_3D_CVPR_2017_paper.pdf" rel="noopener" target="_blank">ScanNet</a> dataset), and <a href="http://niessnerlab.org/members/justus_thies/profile.html" rel="noopener" target="_blank">Justus Thies</a> (commonly known as the<a href="http://niessnerlab.org/projects/thies2016face.html" rel="noopener" target="_blank"> Face2Face</a> guy), I am sure they will become great professors one day (if they choose to be).</p>
+<p>During my visit, I also met <a href="http://msavva.github.io/" rel="noopener" target="_blank">Manolis Savaa</a>, and <a href="https://ge.in.tum.de/">Nills Thuerey </a>(we shared some lunchtime together). In addition, I had the privilege to get to know <a href="https://angelxuanchang.github.io/">Angel X. Chang</a> as she gracefully agreed to share her office with me.</p>
+<p>Even though the visit was relatively short we all became good friends. and I am sure it was just the beginning of some great friendships. We even went to an escape room together! (which was very different from the Israeli escape rooms… mainly because, they let us loose…)</p>
+<p><img alt="" class="size-medium wp-image-865 aligncenter" data-attachment-id="865" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"1.7","credit":"","camera":"ONEPLUS A5010","caption":"","created_timestamp":"1537824508","copyright":"","focal_length":"4.103","iso":"2000","shutter_speed":"0.04","title":"","orientation":"0"}' data-image-title="IMG_20180924_212827" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180924_212827.jpg?fit=800%2C600&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180924_212827.jpg?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180924_212827.jpg?fit=4608%2C3456&amp;ssl=1" data-orig-size="4608,3456" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/img_20180924_212827" data-recalc-dims="1" decoding="async" height="225" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180924_212827-300x225.jpg?resize=300%2C225" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180924_212827.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180924_212827.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180924_212827.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180924_212827.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180924_212827.jpg?w=2400&amp;ssl=1 2400w" width="300"/></p>
+<h2>The Retreat</h2>
+<p>When an average person reads an email about a weekend retreat at a village near the Austrian border he probably imagines long hikes across wooded areas, some social, team building activities, and a lot of free time to get to know one another…  There is nothing average about this group. The “don’t forget to bring your laptops” message gave it away immediately.  The retreat was essentially a CVPR submission Bootcamp, and it was a great one! Even though I already published several papers (unfortunately no CVPR… yet…), I learned a lot. The retreat included hands-on workshops like paper speed-reading, CVPR drafts overview, and “How to present your (friend’s) work” where we had an hour to prepare a 5-minute presentation about someone else’s work. We also went on a hike and some drinks (does anyone remember where we put the tiger?) 🙂</p>
+<p><img alt="" class="size-medium wp-image-873 aligncenter" data-attachment-id="873" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"1"}' data-image-title="retreat" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/retreat.jpg?fit=682%2C511&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/retreat.jpg?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/retreat.jpg?fit=682%2C511&amp;ssl=1" data-orig-size="682,511" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/retreat" data-recalc-dims="1" decoding="async" height="225" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/retreat-300x225.jpg?resize=300%2C225" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/retreat.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/retreat.jpg?w=682&amp;ssl=1 682w" width="300"/></p>
+<p style="text-align: center;"><img alt="" class="size-medium wp-image-872 alignnone" data-attachment-id="872" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="austria" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/austria.jpg?fit=633%2C844&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/austria.jpg?fit=225%2C300&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/austria.jpg?fit=633%2C844&amp;ssl=1" data-orig-size="633,844" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/austria" data-recalc-dims="1" decoding="async" height="300" loading="lazy" sizes="(max-width: 225px) 100vw, 225px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/austria-225x300.jpg?resize=225%2C300" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/austria.jpg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/austria.jpg?w=633&amp;ssl=1 633w" width="225"/> <img alt="" class="size-medium wp-image-869 alignnone" data-attachment-id="869" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="IMG_20180901_095247" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180901_095247.jpg?fit=633%2C844&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180901_095247.jpg?fit=225%2C300&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180901_095247.jpg?fit=633%2C844&amp;ssl=1" data-orig-size="633,844" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/img_20180901_095247" data-recalc-dims="1" decoding="async" height="300" loading="lazy" sizes="(max-width: 225px) 100vw, 225px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180901_095247-225x300.jpg?resize=225%2C300" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180901_095247.jpg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180901_095247.jpg?w=633&amp;ssl=1 633w" width="225"/></p>
+<h2></h2>
+<p> </p>
+<h2>ECCV 2018</h2>
+<p>ECCV 2018 was conveniently located in Munich during my stay. I could not lose a full week of work but I was able to attend some very interesting talks and workshops.</p>
+<p>The first one was on <a href="https://eccv18-vlease.github.io/" rel="noopener" target="_blank">Visual Learning and Embodied Agents in Simulation Environments</a>, where the speakers discussed the pros, cons, and challenges of using simulated data vs real date. My takeaway from this talk was that ultimately it will probably be a mix of both. My favorite talk was <a href="http://www.cs.cmu.edu/~abhinavg/" rel="noopener" target="_blank">Abhinav Gupta</a> which presented how they <a href="https://arxiv.org/pdf/1704.05588.pdf" rel="noopener" target="_blank">trained a quadcopter to avoid walls</a> by, well…. letting him crash against the wall and penalizing whenever that happened. In addition, he talked about how they <a href="https://arxiv.org/pdf/1807.07049.pdf" rel="noopener" target="_blank">collect real-world environments by placing their low-cost robot</a> in cheap Airbnb apartments in Pitsburg (nice to know that it is only 70$ a night :)).</p>
+<p>Next, I attended an inspiring talk by <a href="https://people.eecs.berkeley.edu/~efros/" rel="noopener" target="_blank">Alyosha Efros</a> which introduced the <a href="http://openaccess.thecvf.com/content_cvpr_2017_workshops/w5/papers/Pathak_Curiosity-Driven_Exploration_by_CVPR_2017_paper.pdf" rel="noopener" target="_blank">concept of curiosity-driven</a> exploration. Instead of engineering dense rewards into a reinforcement learning they simply let the agent “wander aimlessly around the world” and try to predict its next state given the current state and an executive action.  Their method was able to train a Mario (from Nintendo Super Mario Brothers) to advance levels without ever explicitly rewarding the agent for that. Truly an amazing work. Here is a link to the <a href="https://www.youtube.com/watch?v=J3FHOyhUn3A" rel="noopener" target="_blank">video</a>.</p>
+<p>Finally, I attended the<a href="https://sites.google.com/site/deepgeometry2018/" rel="noopener" target="_blank"> Geometry Meets Deep Learning</a> workshop. I really liked <a href="https://arxiv.org/abs/1611.05705" rel="noopener" target="_blank">Differential RANSAC</a> presented by <a href="https://hci.iwr.uni-heidelberg.de/vislearn/people/eric-brachmann/" rel="noopener" target="_blank">Erich Brachman</a>, and <a href="https://arxiv.org/abs/1801.07829" rel="noopener" target="_blank">Dynamic Graph CNN </a>presented by <a href="https://people.lu.usi.ch/bronstem/" rel="noopener" target="_blank">Michael Bronstein</a> and of course the PointNet (and other) deep learning on point clouds methods presented by<a href="https://geometry.stanford.edu/member/guibas/" rel="noopener" target="_blank"> Leonidas Guibas</a>.</p>
+<p>I also attended some social events where I met <a href="https://web.stanford.edu/~zollhoef/" rel="noopener" target="_blank">Michael Zollhöfer</a> where we “demonstrated Face2Face in real life” 😉</p>
+<p>I even bumped into <a href="https://www.seas.upenn.edu/~allec/" rel="noopener" target="_blank">Christine Allen-Blanchette</a>, an old friend from <a href="https://www.itzikbs.com/the-1st-winter-school-in-computer-science-and-engineering-on-computer-vision" rel="noopener" target="_blank">the first winter school on computer vision.</a>  It was so good to catch up and realize we are both interested in similar research questions. Make sure to check out her work on <a href="https://arxiv.org/abs/1711.06721" rel="noopener" target="_blank">3D object classification using spherical </a>CNNs (She rocks with equivariance). Her supervisor, <a href="http://www.cis.upenn.edu/~kostas/" rel="noopener" target="_blank">Kotas Daniilidis</a>, gave an interesting, tutorial-style overview of equivariance.</p>
+<p>We even got a selfie together :</p>
+<p><img alt="" class="size-medium wp-image-879 aligncenter" data-attachment-id="879" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"2","credit":"","camera":"ONEPLUS A5010","caption":"","created_timestamp":"1536927907","copyright":"","focal_length":"3.519","iso":"125","shutter_speed":"0.0014124293785311","title":"","orientation":"0"}' data-image-title="christine and me" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180914_122506.jpg?fit=800%2C600&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180914_122506.jpg?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180914_122506.jpg?fit=4608%2C3456&amp;ssl=1" data-orig-size="4608,3456" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/img_20180914_122506" data-recalc-dims="1" decoding="async" height="225" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180914_122506-300x225.jpg?resize=300%2C225" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180914_122506.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180914_122506.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180914_122506.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180914_122506.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180914_122506.jpg?w=2400&amp;ssl=1 2400w" width="300"/></p>
+<h2>Rosh Hashanah</h2>
+<p>September is known to include three major Jewish holidays :</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Rosh_Hashanah" rel="noopener" target="_blank">Rosh Hashanah</a> – The Hebrew new years</li>
+<li><a href="https://en.wikipedia.org/wiki/Yom_Kippur" rel="noopener" target="_blank">Yom Kipur</a> – Day of atonement</li>
+<li><a href="https://en.wikipedia.org/wiki/Sukkot" rel="noopener" target="_blank">Sukkot</a> – Feast of Tabernacles (lets build a hut outside holiday 🙂 )</li>
+</ul>
+<p>I  was lucky to have some Israeli friends around for Rosh Hashanah to have some traditional apple with honey with me (and beer).</p>
+<div align="center"><img alt="" class="alignnone size-medium wp-image-881" data-attachment-id="881" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="IMG-20180909-WA0012" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0012.jpg?fit=800%2C600&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0012.jpg?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0012.jpg?fit=1600%2C1200&amp;ssl=1" data-orig-size="1600,1200" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/img-20180909-wa0012" data-recalc-dims="1" decoding="async" height="225" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0012-300x225.jpg?resize=300%2C225" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0012.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0012.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0012.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0012.jpg?w=1600&amp;ssl=1 1600w" width="300"/> <img alt="" class="alignnone size-medium wp-image-882" data-attachment-id="882" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="IMG-20180909-WA0014" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0014.jpg?fit=800%2C600&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0014.jpg?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0014.jpg?fit=1600%2C1200&amp;ssl=1" data-orig-size="1600,1200" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/img-20180909-wa0014" data-recalc-dims="1" decoding="async" height="225" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0014-300x225.jpg?resize=300%2C225" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0014.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0014.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0014.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG-20180909-WA0014.jpg?w=1600&amp;ssl=1 1600w" width="300"/></div>
+<h2>Oktoberfest</h2>
+<p>During my stay I took only one full day off, it was the Sunday I visited the Oktoberfest (which had the opening ceremony the day before). It was the perfect time to meet my old friend<a href="https://www.linkedin.com/in/dan-weimer/" rel="noopener" target="_blank"> Daniel Weimer, </a>and his better half Beate. Daniel is now Head of Artificial Intelligence at Volkswagen Group in the Americas region. He recently moved to the US and happened to come to Munich for some final arrangements. Daniel spent 8 months at our lab 3 years ago. He is actually the guy who introduced the field of deep learning to me (more precisely, he introduced its amazing strengths and results on images).  After a few beers, we realized the butterfly effect some people have on your life. Daniel is one of those butterfly people for me. Thank you, my friend, hope we meet again soon.</p>
+<div align="center"><img alt="" class="alignnone size-medium wp-image-885" data-attachment-id="885" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="IMG_20180923_171414" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_171414.jpg?fit=679%2C905&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_171414.jpg?fit=225%2C300&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_171414.jpg?fit=679%2C905&amp;ssl=1" data-orig-size="679,905" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/img_20180923_171414" data-recalc-dims="1" decoding="async" height="300" loading="lazy" sizes="(max-width: 225px) 100vw, 225px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_171414-225x300.jpg?resize=225%2C300" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_171414.jpg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_171414.jpg?w=679&amp;ssl=1 679w" width="225"/><img alt="" class="alignnone size-medium wp-image-886" data-attachment-id="886" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="IMG_20180923_203528" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_203528.jpg?fit=800%2C600&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_203528.jpg?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_203528.jpg?fit=1125%2C844&amp;ssl=1" data-orig-size="1125,844" data-permalink="https://www.itzikbs.com/reasearch-visit-in-germany/img_20180923_203528" data-recalc-dims="1" decoding="async" height="225" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_203528-300x225.jpg?resize=300%2C225" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_203528.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_203528.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_203528.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/10/IMG_20180923_203528.jpg?w=1125&amp;ssl=1 1125w" width="300"/></div>
+<h2>Research</h2>
+<p>This section will be filled in detail after publication 🙂 I can just say that the topic is super interesting and I can’t wait to share it.</p>
+<h2>Summary</h2>
+<p>My research visit was a very educating experience. I met so many interesting people and worked with the best of the best. I would like to thank several people who had an integral part in the success of this visit :</p>
+<p>First and foremost, I would like to thank Prof.  Matthias Niessner for having me. Matthias’s time is his most valuable resource and I really appreciate him investing it in me.</p>
+<p>Second, I would like to thank Marianne Krueger-Jungnickel from the Life Science Network who kickstarted this whole experience. I don’t think this would have been possible without her support.</p>
+<p>Saving the best for last – I would like to thank my strong and supportive wife Anna for making it possible and taking care of Shaked and Keshet for 4 weeks… during the holidays… by herself… Only someone with kids can understand that she did the heavy lifting here 🙂</p>
+<p> </p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>TensorFlow – Deep MNIST for Experts tutorial</h1>
+                <div class="post-meta">
+                    <time datetime="2017-02-16">2017-02-16</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>The second step in my quest for deep learning for 3D point clouds was to try recognizing MNIST digits using a deep convolutional network (The first step can be found <a href="https://www.itzikbs.com/first-steps-deep-learning-using-tensorflow" target="_blank">here</a>).</p>
+<p>I followed<a href="https://www.tensorflow.org/tutorials/mnist/pros/" target="_blank"> google’s tutorial</a>. I found it very well explained. My final code can be downloaded <a href="https://github.com/sitzikbs/TensorFlow-Tutorials/blob/master/MNIST4ExpertsNoExport.py" target="_blank">here</a>.</p>
+<p>Using this code I managed to get a recognition accuracy of about 99.2%.</p>
+<p>However, the accuracy wasn’t the thing that troubled me the most. At this point, I realized there are several things I wish to know how to do</p>
+<ol>
+<li>Export/import the final model</li>
+<li>Track the training progress</li>
+<li>Visualize the neural net</li>
+</ol>
+<p>For these tasks, I did not find a single good tutorial. Therefore I decided to summarize my findings. In this post, I will cover export/import the final model and the other two will be covered in future posts.</p>
+<p><strong>Export the final model </strong></p>
+<p>It turns out that exporting the model is rather simple. It requires about 3 lines of code:<br/>
+Two lines before the training loop</p>
+<pre><code class="language-python">saver = tf.train.Saver(max_to_keep=3)
+CeckPointFilename = "path to where you wish to save the checkpoints"
+</code></pre>
+<p>I defined to keep the model of the last 3 training iteration (more precisely 300 iterations because I saved once every 100 iterations) because there are a lot of these files and I don’t want it to take too much memory on my hard drive.</p>
+<p>Another line in the training loop (or after it, depends if you want the final model or several models throughout the training process):</p>
+<pre><code class="language-python">saver.save(sess, CeckPointFilename , global_step = i )
+</code></pre>
+<p>However, this turned out to be not quite enough. If we wish to make use of our model we should also insert the input and output into a collection so we can use them once the model is restored.</p>
+<pre><code class="language-python">tf.add_to_collection("keep_prob", keep_prob)
+tf.add_to_collection("x", x)
+tf.add_to_collection("y_", y_)
+tf.add_to_collection("y_conv", y_conv)
+</code></pre>
+<p><strong>Loading the model</strong></p>
+<p>I found <a href="http://stackoverflow.com/questions/33759623/tensorflow-how-to-restore-a-previously-saved-model-python" target="_blank">this </a>Stack-overflow thread useful. It referenced <a href="https://www.tensorflow.org/api_docs/python/state_ops/exporting_and_importing_meta_graphs" target="_blank">this </a>Tensorflow documentation.</p>
+<p>In order to load the model you should change the following lines of code to include the name and path to your model.</p>
+<pre><code class="language-python">sess = tf.Session()
+new_saver = tf.train.import_meta_graph("PathToModelDir/ModelName.meta")
+new_saver.restore(sess, "PathToModelDir/ModelName")
+</code></pre>
+<p>Once you imported the model you can extract the input and output which we added to the collection</p>
+<pre><code class="language-python">y_conv = tf.get_collection("y_conv")[0]
+x = tf.get_collection("x")[0]
+y_ = tf.get_collection("y_")[0]
+keep_prob =  tf.get_collection("keep_prob")[0]
+</code></pre>
+<p>Now we just need to apply the model to an input image and make a class prediction</p>
+<pre><code class="language-python">ImageIndex = 3
+InputImage = mnist.test.images[ImageIndex].reshape(1,784)
+CorrectLabel = mnist.test.labels[ImageIndex].reshape(1,10)
+
+logit = sess.run(y_conv,feed_dict={ x: InputImage, y_: CorrectLabel, keep_prob: 1.0})
+prediction = sess.run(tf.argmax(logit,1))
+digit = sess.run(tf.argmax(CorrectLabel,1))
+print("Prediction : %d, Actual : %d"% (prediction, digit))
+</code></pre>
+<p>I’m not sure if this is the best way of doing this but it works. The final version (with exporting) can be found <a href="https://github.com/sitzikbs/TensorFlow-Tutorials/blob/master/MNIST4Experts.py" target="_blank">here</a> and the importing code can be found <a href="https://github.com/sitzikbs/TensorFlow-Tutorials/blob/master/ImportModel.py" target="_blank">here</a>.</p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

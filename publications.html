@@ -9,24 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="index.html">Home</a>
-            </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="index.html">About</a></li>
-                <li><a href="publications.html" class="active">Publications</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="main-nav"></div>
 
     <main>
         <section class="page-header">
@@ -38,6 +21,10 @@
 
         <section class="publications">
             <div class="container">
+                <div class="publications-filter" style="margin-bottom: 2rem;">
+                    <input type="text" id="pub-filter" placeholder="Search publications by title, author, or venue..." 
+                           style="width: 100%; padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--radius); font-size: 1rem;">
+                </div>
                 <div id="publications-container" class="publications-list">
                     <!-- Publications will be loaded dynamically -->
                 </div>
@@ -49,17 +36,17 @@
         <div class="container">
             <div class="footer-content">
                 <div class="social-links">
-                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:sitzikbs@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/sitzikbs" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/sitzikbs" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
                 <p>&copy; <span id="current-year"></span> All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/navigation.js"></script>
     <script src="js/main.js"></script>
     <script src="js/publications-loader.js"></script>
 </body>
