@@ -301,6 +301,9 @@ a:hover {
 }
 
 .publication-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
     background-color: var(--bg-color);
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
@@ -315,11 +318,27 @@ a:hover {
     transform: translateY(-2px);
 }
 
+.publication-image {
+    flex: 0 0 200px;
+}
+
+.publication-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.publication-content {
+    flex: 1;
+}
+
 .publication-item h3 {
     font-size: 1.25rem;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
     line-height: 1.4;
+    margin-top: 0;
 }
 
 .publication-authors {
@@ -794,6 +813,15 @@ footer p {
     .publications-grid,
     .blog-grid {
         grid-template-columns: 1fr;
+    }
+
+    .publication-item {
+        flex-direction: column;
+    }
+
+    .publication-image {
+        flex: 0 0 auto;
+        width: 100%;
     }
 
     .contact-content {
