@@ -1,5 +1,35 @@
 [
     {
+        "title": "VI3NR: Variance Informed Initialization for Implicit Neural Representations",
+        "authors": "Chamin Hewa Koneputugodage, Yizhak Ben-Shabat, Sameera Ramasinghe, Stephen Gould",
+        "venue": "CVPR",
+        "year": "2025",
+        "links": [
+            {
+                "name": "paper",
+                "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Koneputugodage_VI3NR_Variance_Informed_Initialization_for_Implicit_Neural_Representations_CVPR_2025_paper.pdf"
+            },
+            {
+                "name": "preprint",
+                "url": "https://arxiv.org/abs/2504.19270"
+            },
+            {
+                "name": "project page",
+                "url": "https://chumbyte.github.io/vi3nr-site/"
+            },
+            {
+                "name": "code",
+                "url": "https://github.com/Chumbyte/vi3nr"
+            },
+            {
+                "name": "video",
+                "url": "https://youtu.be/md6q-zAjmSU"
+            }
+        ],
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2025/07/viner_appeoach.png?fit=800%2C150&ssl=1",
+        "highlighted": true
+    },
+    {
         "title": "GEOPARD: Geometric Pretraining for Articulation Prediction in 3D Shapes",
         "authors": "Pradyumn Goyal, Dmitry Petrov, Sheldon Andrews, Yizhak Ben-Shabat, Hsueh-Ti Derek Liu, Evangelos Kalogerakis",
         "venue": "ICCV",
@@ -14,7 +44,8 @@
                 "url": "https://github.com/DavidZhang73/TDGV"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2025/07/geopard_teaser.png?fit=800%2C177&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2025/07/geopard_teaser.png?fit=800%2C177&ssl=1",
+        "highlighted": false
     },
     {
         "title": "StyleMotif: Multi-Modal Motion Stylization using Style-Content Cross Fusion",
@@ -31,7 +62,8 @@
                 "url": "https://stylemotif.github.io/"
             }
         ],
-        "image": "https://i0.wp.com/arxiv.org/html/2503.21775v1/x1.png?w=800&ssl=1"
+        "image": "https://i0.wp.com/arxiv.org/html/2503.21775v1/x1.png?w=800&ssl=1",
+        "highlighted": false
     },
     {
         "title": "Less is More: Improving Motion Diffusion Models with Sparse Keyframes",
@@ -48,7 +80,8 @@
                 "url": "https://github.com/DavidZhang73/TDGV"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2025/07/less-is-more-teaser.png?fit=800%2C478&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2025/07/less-is-more-teaser.png?fit=800%2C478&ssl=1",
+        "highlighted": false
     },
     {
         "title": "Neural Experts: Mixture of Experts for Implicit Neural Representations",
@@ -77,7 +110,8 @@
                 "url": "https://github.com/sitzikbs/Neural-Experts"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2025/01/Neural_Experts_arch.png?fit=800%2C450&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2025/01/Neural_Experts_arch.png?fit=800%2C450&ssl=1",
+        "highlighted": true
     },
     {
         "title": "Temporally Grounding Instructional Diagrams in Unconstrained Videos",
@@ -98,7 +132,8 @@
                 "url": "https://github.com/DavidZhang73/TDGV"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2025/01/jiahao_grounding_teaser.webp?fit=800%2C266&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2025/01/jiahao_grounding_teaser.webp?fit=800%2C266&ssl=1",
+        "highlighted": false
     },
     {
         "title": "3DInAction: Understanding Human Actions in 3D Point Clouds",
@@ -127,7 +162,8 @@
                 "url": "https://www.youtube.com/watch?v=MU_ZlhvOOsw"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2024/03/3dinaction_teaser.png?fit=800%2C450&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2024/03/3dinaction_teaser.png?fit=800%2C450&ssl=1",
+        "highlighted": true
     },
     {
         "title": "Small Steps and Level Sets: Fitting Neural Surface Models with Point Guidance",
@@ -148,7 +184,8 @@
                 "url": "https://github.com/Chumbyte/PG-SDF"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2024/03/pgsdf_teaser.png?fit=800%2C513&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2024/03/pgsdf_teaser.png?fit=800%2C513&ssl=1",
+        "highlighted": false
     },
     {
         "title": "IKEA Ego 3D Dataset: Understanding furniture assembly actions from ego-view 3D Point Clouds",
@@ -169,7 +206,8 @@
                 "url": "https://drive.google.com/drive/folders/1_DHUUzmQtHuflQRsENrbxtpH4ahU9yG8?usp=sharing"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2024/03/ikeaego3d_teaser.png?fit=800%2C455&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2024/03/ikeaego3d_teaser.png?fit=800%2C455&ssl=1",
+        "highlighted": true
     },
     {
         "title": "Aligning Step-by-Step Instructional Diagrams to Video Demonstrations",
@@ -190,7 +228,8 @@
                 "url": "https://github.com/DavidZhang73/IKEAAssemblyInTheWildDataset"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/03/ikea_alignment_teaser.png?fit=800%2C355&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/03/ikea_alignment_teaser.png?fit=800%2C355&ssl=1",
+        "highlighted": false
     },
     {
         "title": "GraVoS: Voxel Selection for 3D Point-Cloud Detection",
@@ -215,7 +254,8 @@
                 "url": "https://github.com/oshrout/GraVoS"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/03/GraVoS_teaser.png?fit=800%2C420&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/03/GraVoS_teaser.png?fit=800%2C420&ssl=1",
+        "highlighted": false
     },
     {
         "title": "Octree Guided Unoriented Surface Reconstruction",
@@ -240,7 +280,8 @@
                 "url": "https://youtu.be/Kh4Qohl2Zr8"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/03/OGINR_TEASER_new-3.png?fit=800%2C400&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/03/OGINR_TEASER_new-3.png?fit=800%2C400&ssl=1",
+        "highlighted": false
     },
     {
         "title": "GoferBot: A Visual Guided Human-Robot Collaborative Assembly System",
@@ -257,7 +298,8 @@
                 "url": "https://www.youtube.com/watch?v=Fo5XI5OJ4QQ&ab_channel=ZheyuZhuang"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/03/GoferBot_teaser.png?fit=800%2C450&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/03/GoferBot_teaser.png?fit=800%2C450&ssl=1",
+        "highlighted": false
     },
     {
         "title": "CloudWalker: Random walks for 3D point cloud shape analysis",
@@ -278,7 +320,42 @@
                 "url": "https://github.com/adimesika1/CloudWalker"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/07/teaser_siggraph.jpg?fit=800%2C533&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/07/teaser_siggraph.jpg?fit=800%2C533&ssl=1",
+        "highlighted": false
+    },
+    {
+        "title": "DiGS: Divergence Guided Shape Implicit Neural Representation for Unoriented Point Clouds",
+        "authors": "Yizhak Ben-Shabat*, Chamin Hewa Koneputugodage*, Stephen Gould",
+        "venue": "CVPR",
+        "year": "2022",
+        "links": [
+            {
+                "name": "paper",
+                "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Ben-Shabat_DiGS_Divergence_Guided_Shape_Implicit_Neural_Representation_for_Unoriented_Point_CVPR_2022_paper.html"
+            },
+            {
+                "name": "preprint",
+                "url": "https://arxiv.org/abs/2106.10811"
+            },
+            {
+                "name": "project website",
+                "url": "https://chumbyte.github.io/DiGS-Site/"
+            },
+            {
+                "name": "full video",
+                "url": "https://www.youtube.com/watch?v=bQWpRyM9wYM&list=PLD-7XrNHCcFLDQ6KH7w2xFLe0JWvalYfr&index=4&ab_channel=anucvml"
+            },
+            {
+                "name": "code",
+                "url": "https://github.com/Chumbyte/DiGS"
+            },
+            {
+                "name": "podcast",
+                "url": "https://www.itzikbs.com/digs"
+            }
+        ],
+        "image": "",
+        "highlighted": true
     },
     {
         "title": "The IKEA ASM Dataset: Understanding People Assembling Furniture through Actions, Objects and Pose",
@@ -303,7 +380,8 @@
                 "url": "https://github.com/IkeaASM/ikea_asm_dataset"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2021/01/ikea_dataset_teaser.jpg?fit=656%2C333&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2021/01/ikea_dataset_teaser.jpg?fit=656%2C333&ssl=1",
+        "highlighted": true
     },
     {
         "title": "DPDist : Comparing Point Clouds Using Deep Point Cloud Distance",
@@ -320,7 +398,8 @@
                 "url": "https://youtu.be/jwZDU6hVUzA"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DPDist_intuition-scaled.jpg?fit=800%2C334&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DPDist_intuition-scaled.jpg?fit=800%2C334&ssl=1",
+        "highlighted": false
     },
     {
         "title": "DeepFit: 3D Surface Fitting via Neural Network Weighted Least Squares",
@@ -345,7 +424,8 @@
                 "url": "https://github.com/sitzikbs/DeepFit"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?fit=800%2C320&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?fit=800%2C320&ssl=1",
+        "highlighted": true
     },
     {
         "title": "Nesti-Net: Normal Estimation for Unstructured 3D Point Clouds using Convolutional Neural Networks",
@@ -370,7 +450,8 @@
                 "url": "https://github.com/"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/03/NestiNet_pipeline-01.jpg?fit=800%2C282&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/03/NestiNet_pipeline-01.jpg?fit=800%2C282&ssl=1",
+        "highlighted": true
     },
     {
         "title": "3DmFV: 3D Point Cloud Classification in Real-Time using Convolutional Neural Networks",
@@ -399,7 +480,8 @@
                 "url": "https://github.com/sitzikbs/3DmFV-Net"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2016/08/3dmfv_thumb_1.png?fit=500%2C294&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2016/08/3dmfv_thumb_1.png?fit=500%2C294&ssl=1",
+        "highlighted": true
     },
     {
         "title": "Graph Based Over-Segmentation Methods for 3D Point Clouds",
@@ -412,7 +494,8 @@
                 "url": "https://doi.org/10.1016/j.cviu.2018.06.004"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2016/08/StateOfTheArtComparison.png?fit=800%2C402&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2016/08/StateOfTheArtComparison.png?fit=800%2C402&ssl=1",
+        "highlighted": false
     },
     {
         "title": "Geometric Analysis of Porous Structures Based on Hough Transform and Genetic Algorithms for Additive Manufacturing",
@@ -425,28 +508,31 @@
                 "url": "http://www.tandfonline.com/doi/abs/10.1080/17452759.2016.1174434"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2016/08/Porous_paper_thumb-e1529517127435.jpg?fit=800%2C388&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2016/08/Porous_paper_thumb-e1529517127435.jpg?fit=800%2C388&ssl=1",
+        "highlighted": false
     },
     {
-        "title": "Graph Based\u00a0Over-segmentation of 3D Point Cloud Representation of Urban Scenes",
+        "title": "Graph Based Over-segmentation of 3D Point Cloud Representation of Urban Scenes",
         "authors": "Yizhak Ben-Shabat, Tamar Avraham, Gil Elbaz, Anath Fischer, Michael Lindenbaum",
         "venue": "ICME Conference",
         "year": "2016",
         "links": [],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/Geosim-over-segmentation.png?fit=494%2C371&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/Geosim-over-segmentation.png?fit=494%2C371&ssl=1",
+        "highlighted": false
     },
     {
-        "title": "Graph Based\u00a0Over-segmentation of Bone Porous Micro-structure",
+        "title": "Graph Based Over-segmentation of Bone Porous Micro-structure",
         "authors": "Yizhak Ben-Shabat, Gil Elbaz, AnathFischer",
-        "venue": "the 14 th International Symposium on Biomechanics and Biomedical\u00a0Engineering",
+        "venue": "the 14 th International Symposium on Biomechanics and Biomedical Engineering",
         "year": "2016",
         "links": [],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/Bone-OverSegmentaiton.png?fit=563%2C477&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/Bone-OverSegmentaiton.png?fit=563%2C477&ssl=1",
+        "highlighted": false
     },
     {
         "title": "Design of Adaptive Porous Micro-structures using Curvature Analysis for Additive Manufacturing",
         "authors": "Yizhak Ben-Shabat, Anath Fischer",
-        "venue": "the 25 th CIRP Design\u00a0Conference",
+        "venue": "the 25 th CIRP Design Conference",
         "year": "2015",
         "links": [
             {
@@ -454,7 +540,8 @@
                 "url": "http://www.sciencedirect.com/science/article/pii/S221282711500431X"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/Bone-Curvature-Analysis.png?fit=800%2C770&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/Bone-Curvature-Analysis.png?fit=800%2C770&ssl=1",
+        "highlighted": false
     },
     {
         "title": "Design of Adaptive Porous Micro-structures for Additive Manufacturing",
@@ -467,7 +554,8 @@
                 "url": "http://www.sciencedirect.com/science/article/pii/S2212827114007446"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/Adaptive-Bone.png?fit=800%2C800&ssl=1"
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/Adaptive-Bone.png?fit=800%2C800&ssl=1",
+        "highlighted": false
     },
     {
         "title": "Multi-Sensor Multi-Resolution Data Fusion Modeling",
@@ -480,23 +568,7 @@
                 "url": "http://www.sciencedirect.com/science/article/pii/S221282711400763X"
             }
         ],
-        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/CIRP-Dima.png?fit=548%2C482&ssl=1"
-    },
-    {
-        "title": "If you found this interesting, you might also like my awards and CV pages.",
-        "authors": "",
-        "venue": "",
-        "year": "Unknown",
-        "links": [
-            {
-                "name": "awards",
-                "url": "https://www.itzikbs.com/awards"
-            },
-            {
-                "name": "CV",
-                "url": "https://www.itzikbs.com/about-cv"
-            }
-        ],
-        "image": ""
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/CIRP-Dima.png?fit=548%2C482&ssl=1",
+        "highlighted": false
     }
 ]

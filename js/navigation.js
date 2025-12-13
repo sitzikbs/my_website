@@ -18,7 +18,7 @@ function initNavigation() {
                     <span></span>
                 </button>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="${currentPage === 'index.html' || currentPage === '' ? 'active' : ''}">About</a></li>
+                    <li><a href="about.html" class="${currentPage === 'about.html' ? 'active' : ''}">About</a></li>
                     <li><a href="publications.html" class="${currentPage === 'publications.html' ? 'active' : ''}">Publications</a></li>
                     <li><a href="podcast.html" class="${currentPage === 'podcast.html' ? 'active' : ''}">Podcast</a></li>
                     <li><a href="blog.html" class="${currentPage === 'blog.html' ? 'active' : ''}">Blog</a></li>
