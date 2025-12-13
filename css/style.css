@@ -256,7 +256,7 @@ a:hover {
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 .publications-grid {

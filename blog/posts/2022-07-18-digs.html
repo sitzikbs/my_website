@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>DiGS: Divergence guided shape implicit neural representation for unoriented point clouds</h1>
+                <div class="post-meta">
+                    <time datetime="2022-07-18">2022-07-18</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted <a href="https://www.linkedin.com/in/chamin-hewa-koneputugodage-b3ba17148/" rel="noreferrer noopener" target="_blank">Chamin Hewa Koneputugodage</a> to chat about OUR paper “<a href="Divergence guided shape implicit neural representation for unoriented point clouds" rel="noreferrer noopener" target="_blank">DiGS: Divergence guided shape implicit neural representation for unoriented point clouds</a>”, published in CVPR 2022. </p>
+<p>In this paper, we took on the task of surface reconstruction using a novel divergence-guided approach.  Unlike previous methods, we do not use normal vectors for supervision. To compensate for that, we add a divergence minimization loss as a regularize to get a coarse shape and then anneal it as training progresses to get finer detail. Additionally, we propose two new geometric initialization for SIREN-based networks that enable learning shape spaces.  </p>
+<p>I first met Chamin when he was still doing his honours. He would come to Steve’s group meetings and report his progress on vision and language. After he started his PhD and I saw he was looking for his next project I opened the door to 3D.  The true story behind this paper is that it started off as my baby but because I had to move back to Israel, I recruited Chamin to help out with a few experiments (Thanks Steve!!!). After a short time, where Chamin worked out most of the maths for the initialization, ran all of the experiments for shape space, and had as much understanding and contribution as I had in the project, it became his baby as much as mine. I am proud to share this brain child with him. </p>
+<div id="buzzsprout-player-10790195"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10790195-digs-chamin-hewa-koneputugodage.js?container_id=buzzsprout-player-10790195&amp;player=small" type="text/javascript"></script>
+<h3 class="wp-block-heading" id="authors">AUTHORS</h3>
+<p id="stephen-gould-richard-hartleydylan-campbell"><a href="https://www.itzikbs.com/" rel="noreferrer noopener" target="_blank">Yizhak Ben-Shabat</a>, Chamin Hewa Koneputugodage, <a href="http://users.cecs.anu.edu.au/~sgould/" rel="noreferrer noopener" target="_blank">Stephen Gould</a></p>
+<p> </p>
+<h3 class="wp-block-heading" id="abstract">ABSTRACT</h3>
+<p>Shape implicit neural representations (INR) have recently shown to be effective in shape analysis and reconstruction tasks. Existing INRs require point coordinates to learn the implicit level sets of the shape. When a normal vector is available for each point, a higher fidelity representation can be learned, however normal vectors are often not provided as raw data. Furthermore, the method’s initialization has been shown to play a crucial role for surface reconstruction. In this paper, we propose a divergence guided shape representation learning approach that does not require normal vectors as input. We show that incorporating a soft constraint on the divergence of the distance function favours smooth solutions that reliably orients gradients to match the unknown normal at each point, in some cases even better than approaches that use ground truth normal vectors directly. Additionally, we introduce a novel geometric initialization method for sinusoidal INRs that further improves convergence to the desired solution. We evaluate the effectiveness of our approach on the task of surface reconstruction and shape space learning and show SOTA performance compared to other unoriented methods.</p>
+<p> </p>
+<h3 class="wp-block-heading" id="related-papers">RELATED PAPERS</h3>
+<p>📚</p>
+<p>📚<a href="https://www.vincentsitzmann.com/siren/" rel="noreferrer noopener" target="_blank">SIREN</a></p>
+<p></p>
+<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<p>💻<a href="https://chumbyte.github.io/DiGS-Site/" rel="noreferrer noopener" target="_blank">DiGS Project website</a></p>
+<p>💻<a href="https://github.com/Chumbyte/DiGS" rel="noreferrer noopener" target="_blank">Code</a></p>
+<p>📚 <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Ben-Shabat_DiGS_Divergence_Guided_Shape_Implicit_Neural_Representation_for_Unoriented_Point_CVPR_2022_paper.pdf" rel="noreferrer noopener" target="_blank">Paper</a></p>
+<p>🎥<a href="https://youtu.be/bQWpRyM9wYM" rel="noreferrer noopener" target="_blank">Video</a></p>
+<p></p>
+<p>To stay up to date with Chamin’s latest research, follow him on:</p>
+<p>🐦<a href="https://twitter.com/ChaminHewa" rel="noreferrer noopener" target="_blank">Twitter</a></p>
+<p>👨🏻‍🎓<a href="https://www.linkedin.com/in/chamin-hewa-koneputugodage-b3ba17148/" rel="noreferrer noopener" target="_blank">LinkedIn</a></p>
+<p></p>
+<p></p>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/w2xC2JluMlk?feature=oembed" title="DiGS: Divergence Guided Shape Implicit Neural Representation (CVPR 2022) - on Talking Papers" width="800"></iframe>
+</div></figure>
+<p>Recorded on April 1st 2022.</p>
+<h3 class="wp-block-heading"><br/>CONTACT</h3>
+<p>If you would like to be a guest, sponsor or just share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="295d48454240474e075948594c5b5a0759464d4a485a5d694e44484045074a4644" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
+<p></p>
+<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
+<p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
+<p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
+<p>🎥YouTube Channel: </p>
+<p></p>
+<p></p>
+<p></p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

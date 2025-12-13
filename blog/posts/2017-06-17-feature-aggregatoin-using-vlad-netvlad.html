@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>Feature aggregation using VLAD and netVLAD</h1>
+                <div class="post-meta">
+                    <time datetime="2017-06-17">2017-06-17</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>Before the age of deep learning, hand-crafted features such as SIFT ruled the computer vision world. These features combined with Bag of Features (BOF) methods were very popular in indexing and categorization tasks. Their main advantage was getting a very discriminative higher dimensional representation of the image. The best one was the <a href="http://image.ntua.gr/iva/files/PerronninDance_CVPR2007%20-%20Fisher%20Kernels%20on%20Visual%20Vocabularies%20for%20Image%20categorization.pdf" rel="noopener" target="_blank">Fisher Vectors</a> (FV) kernel which uses a Gaussian Mixture Model (GMM) and their derivatives to approximate the feature distribution in the image. They had excellent performance in various tasks but their main drawback was a very (sometimes too) high dimensionality.</p>
+<p>Inspired by BOF and FV  arose <a href="https://hal.inria.fr/file/index/docid/548637/filename/jegou_compactimagerepresentation.pdf" rel="noopener" target="_blank">VLAD </a>– Vector of Locally Aggregated Descriptors.  VLAD had performance similar to FV while having a much lower dimensionality.</p>
+<p>The main idea behind VLAD is:</p>
+<ul>
+<li>Compute k centers of features (using kmeans).</li>
+<li>Assign features to their closest center.</li>
+<li>Sum over the residual between the features and their corresponding center.</li>
+<li>Flatten the matrix into a vector and normalize (L2)</li>
+</ul>
+<p>Mathematically, it looks like this:</p>
+<p style="text-align: center;"><img alt="{{v}_{ij}}=\sum\limits_{x\,such\,that\,NN(x)={{c}_{i}}}{\left( {{x}_{i}}-{{c}_{ij}} \right)}" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=%7B%7Bv%7D_%7Bij%7D%7D%3D%5Csum%5Climits_%7Bx%5C%2Csuch%5C%2Cthat%5C%2CNN%28x%29%3D%7B%7Bc%7D_%7Bi%7D%7D%7D%7B%5Cleft%28+%7B%7Bx%7D_%7Bi%7D%7D-%7B%7Bc%7D_%7Bij%7D%7D+%5Cright%29%7D&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/></p>
+<p>Here, <img alt="v_{ij}" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=v_%7Bij%7D&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> is the VLAD representation, <img alt="x" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=x&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> is the input and <img alt="c" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=c&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> are the centers.</p>
+<p> </p>
+<p>In the age of deep learning, the question arises – can we learn this representation?</p>
+<p>The short answer is – YES.</p>
+<p>I found the <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Arandjelovic_NetVLAD_CNN_Architecture_CVPR_2016_paper.pdf" rel="noopener" target="_blank">netVLAD </a>paper (the<a href="https://github.com/Relja/netvlad" rel="noopener" target="_blank"> original code</a> is available on Github and uses MATLAB and MatConvNet). The general idea is the same as the original VLAD with two main difference:</p>
+<ol>
+<li>netVLAD uses a learned softmax for the assignment (because it is differentiable).</li>
+<li>netVLAD performs intra-normalization (presented the paper<a href="http://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Arandjelovic_All_About_VLAD_2013_CVPR_paper.pdf" rel="noopener" target="_blank"> All about VLAD</a>) before the normalization over the entire VLAD vector.</li>
+</ol>
+<p style="text-align: center;"><img alt="{{v}_{ij}}=\sum\limits_{i=1}^{N}{\frac{{{e}^{w_{k}^{T}{{x}_{i}}+{{b}_{k}}}}}{\sum\limits_{k'}{{{e}^{w_{k}^{T}{{x}_{i}}+{{b}_{k}}}}}}}\left( {{x}_{ij}}-{{c}_{kj}} \right)" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=%7B%7Bv%7D_%7Bij%7D%7D%3D%5Csum%5Climits_%7Bi%3D1%7D%5E%7BN%7D%7B%5Cfrac%7B%7B%7Be%7D%5E%7Bw_%7Bk%7D%5E%7BT%7D%7B%7Bx%7D_%7Bi%7D%7D%2B%7B%7Bb%7D_%7Bk%7D%7D%7D%7D%7D%7B%5Csum%5Climits_%7Bk%27%7D%7B%7B%7Be%7D%5E%7Bw_%7Bk%7D%5E%7BT%7D%7B%7Bx%7D_%7Bi%7D%7D%2B%7B%7Bb%7D_%7Bk%7D%7D%7D%7D%7D%7D%7D%5Cleft%28+%7B%7Bx%7D_%7Bij%7D%7D-%7B%7Bc%7D_%7Bkj%7D%7D+%5Cright%29&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/></p>
+<p>Here, <img alt="w_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=w_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/>, <img alt="b_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=b_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/>, <img alt="c_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=c_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> are parameters learned by the network.</p>
+<p>The netVLAD architecture is presented below</p>
+<p> </p>
+<figure aria-describedby="caption-attachment-451" class="wp-caption aligncenter" id="attachment_451" style="width: 1024px"><img alt="" class="wp-image-451 size-large" data-attachment-id="451" data-comments-opened="0" data-image-caption="&lt;p&gt;netVLAD architecture as presented in the original netVALD papre by  R. Arandjelovic&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="netVLAD_Architecture" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?fit=800%2C154&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?fit=300%2C58&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?fit=2099%2C404&amp;ssl=1" data-orig-size="2099,404" data-permalink="https://www.itzikbs.com/feature-aggregatoin-using-vlad-netvlad/netvlad_architecture" data-recalc-dims="1" decoding="async" fetchpriority="high" height="154" sizes="(max-width: 800px) 100vw, 800px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture-1024x197.png?resize=800%2C154" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?resize=1024%2C197&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?resize=300%2C58&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?resize=768%2C148&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?w=1600&amp;ssl=1 1600w" width="800"/><figcaption class="wp-caption-text" id="caption-attachment-451"><span style="color: #999999;"><em><span style="color: #999999;">netVLAD architecture as presented in the original <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Arandjelovic_NetVLAD_CNN_Architecture_CVPR_2016_paper.pdf" rel="noopener" target="_blank">netVALD </a>paper </span></em><em>by R. Arandjelovic et al.</em></span></figcaption></figure>
+<p> </p>
+<p>In the original paper, they stated that the centers and weights should be initialized to some pre-trained value (using kmeans on features learned without the VLAD layer). However, I experienced no change in performance while just using the standard truncated normal distribution initialization or Xavier.</p>
+<p> </p>
+<p>And now for my contribution to the community (and the world) – I implemented the VLAD orderless pooling layer in Tensorflow 1.0.  The code is available on my <a href="https://github.com/sitzikbs/netVLAD" rel="noopener" target="_blank">Github</a>.</p>
+<p> </p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

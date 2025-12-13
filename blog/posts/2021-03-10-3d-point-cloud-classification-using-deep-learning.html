@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>3D Point Cloud Classification using Deep Learning – Recent Works</h1>
+                <div class="post-meta">
+                    <time datetime="2021-03-10">2021-03-10</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>Last week I gave a talk in the <a href="https://www.omek3d.org/about-omek">Omek-3D</a> forum. The title of the talk was (the same as the title of this post) “<strong>3D Point Cloud Classification using Deep Learning</strong>“.</p>
+<p>Here is a short summary ( that came out a little longer than expected) about what I presented there.</p>
+<p><strong>UPDATE 1</strong> (February 2018): We recently uploaded to arXiv a new paper on <a href="https://arxiv.org/abs/1711.08241" rel="noopener" target="_blank">3D point cloud classification</a>. Check it out, we introduced a new representation which enables using CNNs. Our code will be available after publication. I am also working on additional posts on this subject.</p>
+<p><strong>UPDATE 2</strong> (April 2018): I am starting to actively search for a post-doc position (to start summer 2019). If you know a professor that might be looking for someone that knows his way around deep learning applied to point clouds (preferably with a robotics / CAD/engineering orientation), please<a href="https://www.itzikbs.com/contact"> contact me</a>.</p>
+<p><strong>UPDATE 3</strong> (April 2018): A fellow scholar recently referred me to a few papers I wasn’t familiar with which are a great contribution to this post. They are added below.</p>
+<h5>Introduction</h5>
+<p>Deep learning on 2D images has been vastly researched in the past few years. It achieves excellent results on classification tasks thanks to two main things</p>
+<ol>
+<li>Convolutional neural networks.</li>
+<li>Data – tons of image data is available.</li>
+</ol>
+<p>For 3D, data is now growing rapidly. Whether it originated from a  human designed CAD model or a scanned point cloud from a LiDAR sensor or an RGBD camera – point clouds are everywhere.  In addition, most systems acquire 3D directly (rather than take images and process them).</p>
+<p>Therefore, one of the expected next steps in research is how can we apply these amazing deep learning tools, that work so well for images, on 3D point clouds?</p>
+<h5>Challenges</h5>
+<p>It turns out that it is not that simple. I subdivide the challenges into two main categories:  the ‘new’ challenges related to the learning process and ‘old’ challenges related to data corruptions.</p>
+<p>Neural Network Challenges:</p>
+<ol>
+<li>Unstructured data (no grid): point clouds are XYZ points distributed in space. There is no structured grid to help us for the CNN filters.</li>
+<li>Invariance to permutations: a point cloud is essentially a long list of points (nx3 matrix where n is the number of points). Geometrically, the order of the points doesn’t matter however in the underlying matrix structure it does, e.g. the same point cloud can be represented by two very different matrices. (the image below illustrates this point).</li>
+<li>The number of points changes:  In images, the number of pixels is a given constant and depends on the camera. The number of points, however, may vary dramatically, depending on the sensor.</li>
+</ol>
+<figure aria-describedby="caption-attachment-546" class="wp-caption aligncenter" id="attachment_546" style="width: 279px"><img alt="" class="wp-image-546 size-medium" data-attachment-id="546" data-comments-opened="0" data-image-caption="&lt;p&gt;Permutation Invariance challenge visualized&lt;/p&gt;
+" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="Point Cloud Challanges" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/PCchallanges_web.png?fit=382%2C411&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/PCchallanges_web.png?fit=279%2C300&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/PCchallanges_web.png?fit=382%2C411&amp;ssl=1" data-orig-size="382,411" data-permalink="https://www.itzikbs.com/3d-point-cloud-classification-using-deep-learning/pcchallanges_web" data-recalc-dims="1" decoding="async" fetchpriority="high" height="300" sizes="(max-width: 279px) 100vw, 279px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/PCchallanges_web-279x300.png?resize=279%2C300" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/PCchallanges_web.png?resize=279%2C300&amp;ssl=1 279w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/PCchallanges_web.png?w=382&amp;ssl=1 382w" width="279"/><figcaption class="wp-caption-text" id="caption-attachment-546">Permutation Invariance problem</figcaption></figure>
+<p>Data Challenges:</p>
+<ol>
+<li>Missing data: The scanned models are usually occluded and parts of the data are missing.</li>
+<li>Noise: All sensors are noisy. There are a few types of noise which include point perturbations and outliers. It means that a point has some probability to be within a sphere of a certain radius around the place it was sampled (perturbations) or it may appear in a random position in space (outliers).</li>
+<li>Rotation: a car turning left and the same car turning right will have different point clouds that represent the same car, right?</li>
+</ol>
+<p>The straightforward approach to applying deep learning on point clouds is to convert the data into a volumetric representation. e.g a voxel grid. This way we can train a CNN with 3D filters without the NN  issues ( the grid provides structure, the conversion to the grid solves the permutation problem and the number of voxels is constant). However, there are some downsides to this. Volumetric data can become very big, very fast. Lets think of a typical image size of 256×256 = 65536 pixels, now lets add a dimension 256x256x256 =16777216 voxels. This is a lot of data (even though GPU memory is growing every day). This also means very slow processing time. Therefore, usually, we need to compromise and take a lower resolution ( some methods use 64x64x64)  but it comes at the cost of quantization errors.</p>
+<p>Sooooooooooo, the desired solution is a deep learning method that will work <strong>directly</strong> on the points.</p>
+<h5>The Dataset</h5>
+<p>Like every vision task, if you want to prove that your method works you have to use a benchmark.</p>
+<p>I focused on Princeton’s Modelnet40 dataset. It contains approximately 12311 CAD models of 40 object categories (such as airplanes, tables, plants etc.) represented as triangle meshes. The data is split into 9843 models for training and 2468 for testing. I did some visualization of the dataset using the <a href="https://github.com/charlesq34/pointnet" rel="noopener" target="_blank">GitHub code for PointNet </a>(thanks <a href="https://web.stanford.edu/~rqi/" rel="noopener" target="_blank">Charles</a>!).</p>
+<figure aria-describedby="caption-attachment-562" class="wp-caption aligncenter" id="attachment_562" style="width: 560px"><img alt="" class="wp-image-562 size-full" data-attachment-id="562" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="modelnet40_classes" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/modelnet40_classes.png?fit=560%2C384&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/modelnet40_classes.png?fit=300%2C206&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/modelnet40_classes.png?fit=560%2C384&amp;ssl=1" data-orig-size="560,384" data-permalink="https://www.itzikbs.com/3d-point-cloud-classification-using-deep-learning/modelnet40_classes" data-recalc-dims="1" decoding="async" height="384" sizes="(max-width: 560px) 100vw, 560px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/modelnet40_classes.png?resize=560%2C384" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/modelnet40_classes.png?w=560&amp;ssl=1 560w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/modelnet40_classes.png?resize=300%2C206&amp;ssl=1 300w" width="560"/><figcaption class="wp-caption-text" id="caption-attachment-562">Modelnet40 objects</figcaption></figure>
+<h5>Related Work</h5>
+<p>In the talk, I surveyed three recent papers that did just that (apply deep learning on point clouds). But before I get into that I wanted to show a nice bar-plot that summarizes the latest accuracy results on the dataset. It shows the type of data each method is working on. You can see that in 2015 most methods worked on multi-view data (which is a short way of saying – let’s take a few pictures of the 3D model and process them using 2D methods), in 2016 more methods used volumetric representation with the pioneer of point cloud learnings and 2017 has a large increase in point-based methods.</p>
+<figure aria-describedby="caption-attachment-551" class="wp-caption aligncenter" id="attachment_551" style="width: 734px"><img alt="" class="wp-image-551 size-full" data-attachment-id="551" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="method_barchart_4web" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/method_barchart_4web.png?fit=734%2C400&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/method_barchart_4web.png?fit=300%2C163&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/method_barchart_4web.png?fit=734%2C400&amp;ssl=1" data-orig-size="734,400" data-permalink="https://www.itzikbs.com/3d-point-cloud-classification-using-deep-learning/method_barchart_4web" data-recalc-dims="1" decoding="async" height="400" sizes="(max-width: 734px) 100vw, 734px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/method_barchart_4web.png?resize=734%2C400" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/method_barchart_4web.png?w=734&amp;ssl=1 734w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/method_barchart_4web.png?resize=300%2C163&amp;ssl=1 300w" width="734"/><figcaption class="wp-caption-text" id="caption-attachment-551">3D classification accuracy publications (accuracy, years and data type)</figcaption></figure>
+<p>*All images below were taken from the original papers linked in the title ( credit to the authors )</p>
+<p><a href="https://arxiv.org/abs/1612.00593" rel="noopener" target="_blank"><strong>Pointnet (CVPR2017)</strong></a></p>
+<p><del>The pioneers! (from Stanford, no surprise there) They were the first to take on this challenge (The deletion is because a similar paper was published at around the same time. I don’t want to step on anyone’s toes).</del> The paper was posted on arXiv in 2016 and immediately got a lot of attention.  They did something surprisingly simple and proved why it works well they trained an MLP on each point separately (with shared weights across points). Each point was ‘projected’ to a 1024 dimension space. Then, they solved the order problem using a symmetric function (max-pool) over the points. This yielded a 1 x 1024 global feature for every point cloud which they fed into a nonlinear classifier.  They also solved the rotation problem using a ‘mini-network’ they called T-net.  It learns a transformation matrix over the points (3 x 3) and over mid-level features (64 x 64). Calling it ‘mini’ is a bit misleading since it is actually about the size of the main network. In addition, because of the large increase in the number of parameters they introduced a loss term to constraint the  64 x 64 matrix to be close to orthogonal.</p>
+<p>They also used a similar network for part segmentation.</p>
+<p>Oh, and they also did scene semantic segmentation.</p>
+<p>Oh, and they also did normal vector estimation.</p>
+<p>Great work! I highly recommend the read (or you can watch the presentation <a href="https://www.youtube.com/watch?v=Cge-hot0Oc0" rel="noopener" target="_blank">video </a>too).</p>
+<p>This paper had a great 89.2% accuracy on the ModelNet40 dataset.</p>
+<figure aria-describedby="caption-attachment-570" class="wp-caption alignnone" id="attachment_570" style="width: 600px"><img alt="" class="wp-image-570" data-attachment-id="570" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="pointnet_classification_architecture" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet_classification_architecture.png?fit=800%2C291&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet_classification_architecture.png?fit=300%2C109&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet_classification_architecture.png?fit=1194%2C434&amp;ssl=1" data-orig-size="1194,434" data-permalink="https://www.itzikbs.com/3d-point-cloud-classification-using-deep-learning/pointnet_classification_architecture" data-recalc-dims="1" decoding="async" height="218" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet_classification_architecture-1024x372.png?resize=600%2C218" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet_classification_architecture.png?resize=1024%2C372&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet_classification_architecture.png?resize=300%2C109&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet_classification_architecture.png?resize=768%2C279&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet_classification_architecture.png?w=1194&amp;ssl=1 1194w" width="600"/><figcaption class="wp-caption-text" id="caption-attachment-570">PointNet classification architecture</figcaption></figure>
+<p> </p>
+<p>Cite: Charles R. Qi, Hao Su, Kaichun Mo, and Leonidas J. Guibas. Pointnet: Deep learning on point sets for 3d classication and segmentation. In The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), July 2017.</p>
+<p>The code is available on GitHub: <a href="https://github.com/charlesq34/pointnet" rel="noopener" target="_blank">PointNet code </a></p>
+<p><strong>Deep sets (<a href="https://papers.nips.cc/paper/6931-deep-sets.pdf" rel="noopener" target="_blank">NIPS2017 </a>/ <a href="https://arxiv.org/pdf/1611.04500.pdf" rel="noopener" target="_blank">ICLR2017</a>)</strong></p>
+<p>These guys from CMU posted <a href="https://arxiv.org/pdf/1611.04500.pdf" rel="noopener" target="_blank">this work</a> a few weeks before PointNet. The general idea is quite similar (not taking sides on who was first 🙂 ). While PointNet focus is mainly on the architecture, Deep sets focus is primarily to produce a layer similar to convolution for sets – the “permutation equivariance”  (PE) layer which has linear time complexity in the size of the set. They claim that the PE layer is the most expressive form of parameter sharing for its purpose. Experiments show better results for point-cloud classification (90%).</p>
+<p>They also predicted the sum of MNIST digits.</p>
+<p>They also did a set anomaly detection.</p>
+<p>Very interesting work, I highly recommend it for machine/deep learning-oriented readers.</p>
+<p>Cite: Ravanbakhsh, Siamak, Jeff Schneider, and Barnabas Poczos. “Deep learning with sets and point clouds.” <i>arXiv preprint arXiv:1611.04500</i> (2016).</p>
+<p>Zaheer, M., Kottur, S., Ravanbakhsh, S., Poczos, B., Salakhutdinov, R. R., &amp; Smola, A. J. (2017). Deep sets. In <i>Advances in Neural Information Processing Systems</i> (pp. 3394-3404).</p>
+<p>The code is available on GitHub: <a href="https://github.com/manzilzaheer/DeepSets" rel="noopener" target="_blank">Deep sets code</a></p>
+<p><a href="https://arxiv.org/abs/1706.02413" rel="noopener" target="_blank"><strong>Pointnet++  (NIPS 2017)</strong></a></p>
+<p>When I first read the PointNet paper, there was one thing that bothered me the most – why are they not using local neighborhoods of points?  So, I guess it bothered them too because not long after PointNet, they introduced  Pointnet++. It is essentially a hierarchical version of PointNet. Each layer has three sub stages: sampling, grouping, and PointNeting. In the first stage, they select centroids and in the second stage, they take their surrounding neighboring points (within a given radius) to create multiple sub-point clouds. Then they feed them to a PointNet and get a higher dimensional representation of these sub-point clouds. Then, they repeat the process (sample centroids, find their neighbors and Pointnet on their higher order representation to get an even higher one). They reported using 3 of these layers. They also tested some different aggregation methods for the different hierarchy levels in order to overcome differences in sampling density (which is known to be a big issue for most sensors = sample densely when objects are near and sparsely when they are far away).</p>
+<p>They got an improvement on the original PointNet with a 90.7% accuracy on ModelNet40. (It got even better scores when they incorporated additional features).</p>
+<figure aria-describedby="caption-attachment-568" class="wp-caption aligncenter" id="attachment_568" style="width: 600px"><img alt="" class="wp-image-568" data-attachment-id="568" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"1"}' data-image-title="pointnet++" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet.jpg?fit=800%2C334&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet.jpg?fit=300%2C125&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet.jpg?fit=1165%2C486&amp;ssl=1" data-orig-size="1165,486" data-permalink="https://www.itzikbs.com/3d-point-cloud-classification-using-deep-learning/pointnet" data-recalc-dims="1" decoding="async" height="250" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet-1024x427.jpg?resize=600%2C250" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet.jpg?resize=1024%2C427&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet.jpg?resize=300%2C125&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet.jpg?resize=768%2C320&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/pointnet.jpg?w=1165&amp;ssl=1 1165w" width="600"/><figcaption class="wp-caption-text" id="caption-attachment-568">Pointnet++ architecture</figcaption></figure>
+<p> </p>
+<p>Cite: Charles R Qi, Li Yi, Hao Su, and Leonidas J Guibas. Pointnet++: Deep hierarchical feature learning on point sets in a metric space. arXiv preprint arXiv:1706.02413, 2017.</p>
+<p> </p>
+<p><a href="https://arxiv.org/abs/1704.01222" rel="noopener" target="_blank"><strong>Kd-Network (ICCV 2017)</strong></a></p>
+<p>This paper uses the well-known <a href="https://en.wikipedia.org/wiki/K-d_tree" rel="noopener" target="_blank">Kd-tree</a> to create some order in the point cloud. Once the point cloud is structured they learned weights for each node in the tree (which represents a subdivision along a specific axis). The weights are shared for each axis across a single tree level (so all the greens in the image below have shared weights because they subdivided the data along the x dimension ). They tested random and deterministic subdivisions of space and reported that the random version works best. They report some drawbacks. It is sensitive to rotations (since it changes the tree structure) and to noise (if it changes the tree structure).  I found another drawback – for every number of input points you either need to upsample, downsample or train a new model.</p>
+<p>They report a 90.6% accuracy dataset for 1024 points (depth 10 tree) and 91.8% for ~32K points (depth 15 tree) on the Modelnet40 .</p>
+<p>Despite its drawbacks, I find the approach very interesting. It also seems that there is some additional work to be done (like try other tree types as they suggested).</p>
+<p>Oh, and they also did part segmentation.</p>
+<p>Oh, and they also did shape retrieval.</p>
+<figure aria-describedby="caption-attachment-575" class="wp-caption aligncenter" id="attachment_575" style="width: 300px"><img alt="" class="wp-image-575" data-attachment-id="575" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="kdnetwork" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/kdnetwork.png?fit=800%2C407&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/kdnetwork.png?fit=300%2C153&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/kdnetwork.png?fit=873%2C444&amp;ssl=1" data-orig-size="873,444" data-permalink="https://www.itzikbs.com/3d-point-cloud-classification-using-deep-learning/kdnetwork" data-recalc-dims="1" decoding="async" height="153" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/kdnetwork.png?resize=300%2C153" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/kdnetwork.png?w=873&amp;ssl=1 873w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/kdnetwork.png?resize=300%2C153&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/kdnetwork.png?resize=768%2C391&amp;ssl=1 768w" width="300"/><figcaption class="wp-caption-text" id="caption-attachment-575">Kd-Network subdivisions and color coded shared weights</figcaption></figure>
+<p> </p>
+<p>Cite: Roman Klokov and Victor Lempitsky. Escape from cells: Deep kd-networks for the recognition of 3d point cloud models. arXiv preprint arXiv:1704.01222, 2017.</p>
+<h6>Summary</h6>
+<p>In the vision community, scores are really important so let’s line them up</p>
+<p><img alt="" class="size-medium wp-image-578 aligncenter" data-attachment-id="578" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="final_scores" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/final_scores.png?fit=398%2C102&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/final_scores.png?fit=300%2C77&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/final_scores.png?fit=398%2C102&amp;ssl=1" data-orig-size="398,102" data-permalink="https://www.itzikbs.com/3d-point-cloud-classification-using-deep-learning/final_scores" data-recalc-dims="1" decoding="async" height="77" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/final_scores-300x77.png?resize=300%2C77" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/final_scores.png?resize=300%2C77&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/final_scores.png?w=398&amp;ssl=1 398w" width="300"/></p>
+<p>Since the scores are so close to each other and could be affected by a lot of parameters I find great interest in the different approaches. Pointnet and Pointnet++ used a symmetric function to solve the order problem while kd-Network used the Kd-tree. The Kd-tree also solved the structure problem while in the PointNets the MLP was trained on each point separately.</p>
+<p>I have a method of my own to solve the point cloud classification task cooking up. I’ll post it after it’s published and link to it. (Here is the <a href="https://arxiv.org/abs/1711.08241" rel="noopener" target="_blank">link </a>again if you missed the update at the top)</p>
+<p>I just hope no one will publish it before me 🙂</p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>How to Visualize Normal Vectors on 3D Point Clouds</h1>
+                <div class="post-meta">
+                    <time datetime="2019-04-11">2019-04-11</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>This post will show you a good way to visualize normal vectors on 3D point clouds. </p>
+<p>At the beginning of my master’s degree, I was working on a project where I used normal vectors on 3D point clouds to perform 3D point cloud over-segmentation. </p>
+<p>One of the first things I did was to try and visualize the normal vectors and the point clouds. As a mechanical engineer, my first go-to programming language for such tasks is MATLAB, so I was happy to see that it has a nice function for plotting vectors:</p>
+<pre class="wp-block-code"><code>quiver3(x,y,z,u,v,w)</code></pre>
+<p>Here <code>x,y,z</code> are the point coordinates and <code>u,v,w</code> are the vector components. </p>
+<h4 class="wp-block-heading">The problem</h4>
+<p>The problem was that for complex 3D point clouds (like from the NYU Depth V2 dataset) this visualization is not very informative (it is very hard to see where the little arrows are pointing). </p>
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img alt="3D point clouds with normal vectors  visualization as arrows" class="wp-image-998" data-attachment-id="998" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"1"}' data-image-title="nyu_v2_quiver" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?fit=800%2C520&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?fit=300%2C195&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?fit=1140%2C742&amp;ssl=1" data-orig-size="1140,742" data-permalink="https://www.itzikbs.com/how-to-visualize-normal-vectors-on-3d-point-clouds/nyu_v2_quiver" data-recalc-dims="1" decoding="async" fetchpriority="high" height="248" sizes="(max-width: 383px) 100vw, 383px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver-1024x666.jpg?resize=383%2C248" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?resize=1024%2C666&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?resize=300%2C195&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?resize=768%2C500&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?w=1140&amp;ssl=1 1140w" width="383"/><figcaption>Normal vector visualization using <code>quiver3</code> of a scene from NYU Depth V2  </figcaption></figure></div>
+<h4 class="wp-block-heading">The solution</h4>
+<p>Therefore, I created a nice function that maps a vector to the RGB cube: </p>
+<pre class="wp-block-code"><code>[RGB] = Sphere2RGBCube(V)</code></pre>
+<p> It is available for download on MATLAB file exchange, <a aria-label="here (opens in a new tab)" href="https://www.mathworks.com/matlabcentral/fileexchange/71178-normal-vector-to-rgb" rel="noreferrer noopener" target="_blank">here</a>. It also includes a short demo and an even more comprehensive demonstration of how the color mapping is performed. </p>
+<p>For the comprehensive demonstration simply run </p>
+<pre class="wp-block-code"><code>TestSphere2CubeMapping();</code></pre>
+<p>And you will get the following interface :</p>
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img alt="" class="wp-image-992" data-attachment-id="992" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="Point_loud_rgb_color_conversion" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?fit=800%2C458&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?fit=300%2C172&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?fit=1469%2C841&amp;ssl=1" data-orig-size="1469,841" data-permalink="https://www.itzikbs.com/how-to-visualize-normal-vectors-on-3d-point-clouds/point_loud_rgb_color_conversion" decoding="async" height="255" sizes="(max-width: 447px) 100vw, 447px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?fit=1024%2C586" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?w=1469&amp;ssl=1 1469w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?resize=300%2C172&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?resize=768%2C440&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?resize=1024%2C586&amp;ssl=1 1024w" width="447"/><figcaption>Normal Vector color mapping comprehensive demonstration</figcaption></figure></div>
+<p>In the top left, you can see the RGB cube. At the bottom left, you can see the unit sphere with the mapped colors. Both include a small red dot which you can move using the arrow keys. To the right, you can see the color and its corresponding RGB values of the red dot. This illustrates what the mapping function does – it takes a unit vector (a point on the sphere), finds where it intersects the RGB cube, and uses that color as the vector representation. </p>
+<p>Note that there are actually two mapping functions:</p>
+<pre class="wp-block-code"><code>[RGB] = Sphere2RGBCube(V)
+[RGB] = Sphere2RGBCube_accurate(V)</code></pre>
+<p>The main difference between the two is that the “accurate” version generates RGB colors on the cube planes. When plotting a sphere, for example, it is evident that the color mapping is not as smooth as one may want. Therefore, the “non-accurate” version creates a smoother color mapping (basically a sphere encapsulated within the RGB cube). </p>
+<p>Finally, here is an example of the same point cloud as before, but this time with color mapping:  </p>
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img alt="3D point clouds with normal vectors color mapped visualization" class="wp-image-994" data-attachment-id="994" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="nyu_v2_1" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?fit=800%2C600&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?fit=875%2C656&amp;ssl=1" data-orig-size="875,656" data-permalink="https://www.itzikbs.com/how-to-visualize-normal-vectors-on-3d-point-clouds/nyu_v2_1" data-recalc-dims="1" decoding="async" height="296" loading="lazy" sizes="(max-width: 396px) 100vw, 396px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?resize=396%2C296" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?w=875&amp;ssl=1 875w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?resize=768%2C576&amp;ssl=1 768w" width="396"/><figcaption>Normal vector visualization using RGB mapping of a scene from NYU Depth V2 <br/></figcaption></figure></div>
+<p>This code was used in our recent paper on <a aria-label="normal estimation for 3D point clouds (opens in a new tab)" href="https://www.itzikbs.com/nesti-net-normal-estimation-for-3d-point-clouds" rel="noreferrer noopener" target="_blank">normal estimation for 3D point clouds</a>. If you find this post and code useful, please cite it 🙂 </p>
+<p></p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>
