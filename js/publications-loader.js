@@ -9,17 +9,56 @@ let allPublications = [];
 
 async function loadPublications() {
     const container = document.getElementById('publications-container');
+    const highlightsContainer = document.getElementById('publication-highlights');
     if (!container) return;
     
     try {
         const response = await fetch('data/publications.json');
         allPublications = await response.json();
         
+        // Render highlighted publications if container exists
+        if (highlightsContainer) {
+            const highlighted = allPublications.filter(pub => pub.highlighted === true);
+            renderHighlights(highlighted);
+        }
+        
+        // Render all publications
         renderPublications(allPublications);
     } catch (error) {
         console.error('Error loading publications:', error);
         container.innerHTML = '<p>Error loading publications. Please check back later.</p>';
     }
+}
+
+function renderHighlights(publications) {
+    const container = document.getElementById('publication-highlights');
+    if (!container || publications.length === 0) return;
+
+    // Sort by year (descending)
+    publications.sort((a, b) => parseInt(b.year) - parseInt(a.year));
+
+    const html = publications.map(pub => `
+        <div class="publication-item" style="display: flex; gap: 20px; margin-bottom: 2rem; align-items: start;">
+            ${pub.image ? `
+                <div class="publication-image" style="flex: 0 0 200px;">
+                    <img src="${pub.image}" alt="${pub.title}" style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                </div>
+            ` : ''}
+            <div class="publication-content" style="flex: 1;">
+                <h3 style="margin-top: 0; font-size: 1.1rem;">${pub.title}</h3>
+                <p class="publication-authors" style="font-style: italic; margin-bottom: 0.3rem; font-size: 0.9rem;">${pub.authors}</p>
+                <p class="publication-venue" style="font-weight: 500; margin-bottom: 0.3rem; font-size: 0.9rem;">${pub.venue}, ${pub.year}</p>
+                
+                <div class="publication-links" style="margin-top: 0.75rem;">
+                    ${pub.links ? pub.links.map(link => 
+                        `<a href="${link.url}" target="_blank" class="btn-link" style="display: inline-block; margin-right: 10px; padding: 4px 8px; background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 4px; text-decoration: none; font-size: 0.85rem;">[${link.name}]</a>`
+                    ).join('') : ''}
+                </div>
+            </div>
+        </div>
+    `).join('');
+    
+    container.innerHTML = html;
 }
 
 function renderPublications(publications) {
