@@ -596,7 +596,7 @@
       "excerpt": "Artificial intelligence, or AI, has become a commonly used buzz word in the past few years. When I talk about AI with friends and family, the first thought that comes to everyone’s mind is SkyNet from theTerminatorfranchise. While Terminator is an iconic movie, it is not about AI, it is about AGI – ...",
       "content": "/blog/posts/2021-03-10-3-things-you-should-know-about-artificial-intelligence.html",
       "categories": [
-        "Personal"
+        "Research"
       ],
       "tags": [],
       "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/AI_teaser.jpg?fit=1024%2C819&ssl=1"
@@ -733,10 +733,10 @@
       "date": "2021-03-10",
       "updated": "2021-03-10",
       "author": "Itzik Ben-Shabat",
-      "excerpt": "Last week I gave a talk in theOmek-3Dforum. The title of the talk was (the same as the title of this post) “3D Point Cloud Classification using Deep Learning“.",
+      "excerpt": "Last week I gave a talk in the Omek-3Dforum. The title of the talk was (the same as the title of this post) “3D Point Cloud Classification using Deep Learning“.",
       "content": "/blog/posts/2021-03-10-3d-point-cloud-classification-using-deep-learning.html",
       "categories": [
-        "Personal"
+        "Research"
       ],
       "tags": [],
       "image": "https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2017/09/modelnet40_classes.png?fit=560%2C384&ssl=1"
@@ -792,7 +792,7 @@
       "excerpt": "We propose a method for 3D point cloud surface fitting. This method, called DeepFit, incorporates a neural network to learn point-wise weights for weighted least squares polynomial surface fitting. The learned weights act as a soft selection for the neighborhood of surface points thus avoiding the s...",
       "content": "/blog/posts/2020-07-27-surface-fitting-for-3d-point-cloud-deepfit.html",
       "categories": [
-        "Personal"
+        "Research"
       ],
       "tags": [],
       "image": "https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?fit=2009%2C805&ssl=1"
@@ -834,7 +834,7 @@
       "excerpt": "This post will show you a good way to visualize normal vectors on 3D point clouds.",
       "content": "/blog/posts/2019-04-11-how-to-visualize-normal-vectors-on-3d-point-clouds.html",
       "categories": [
-        "Personal"
+        "Research"
       ],
       "tags": [],
       "image": "https://i1.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?fit=1469%2C841&ssl=1"
@@ -876,7 +876,7 @@
       "excerpt": "This post aims to gather all of the useful links spread across multiple posts on the topic of 3D point cloud classification.",
       "content": "/blog/posts/2018-10-01-3d-point-cloud-classification-a-summary-of-useful-links.html",
       "categories": [
-        "Personal"
+        "Research"
       ],
       "tags": []
     },
@@ -917,7 +917,7 @@
       "excerpt": "Before the age of deep learning, hand-crafted features such as SIFT ruled the computer vision world. These features combined with Bag of Features (BOF) methods were very popular in indexing and categorization tasks. Their main advantage was getting a very discriminative higher dimensional representa...",
       "content": "/blog/posts/2017-06-17-feature-aggregatoin-using-vlad-netvlad.html",
       "categories": [
-        "Personal"
+        "Research"
       ],
       "tags": [],
       "image": "http://www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture-1024x197.png"
@@ -931,7 +931,7 @@
       "excerpt": "Deep learning (DL) using convolution neural networks (CNN) architectures is now a standard for solving classification tasks in images. When dealing with 3D data the problem becomes more complex. First, 3D data may be represented using various structures which include:",
       "content": "/blog/posts/2017-05-24-deep-learning-3d-data-references.html",
       "categories": [
-        "Personal"
+        "Research"
       ],
       "tags": []
     },
@@ -944,7 +944,7 @@
       "excerpt": "The second step in my quest for deep learning for 3D point clouds was to try recognizing MNIST digits using a deep convolutional network (The first step can be foundhere).",
       "content": "/blog/posts/2017-02-16-tensorflow-deep-mnist-experts-tutorial.html",
       "categories": [
-        "Personal"
+        "Research"
       ],
       "tags": []
     },
@@ -957,7 +957,7 @@
       "excerpt": "As the title implies, on 8-13 of January 2017 I attended “The 1st Winter School in Computer Science and Engineering on Computer Vision” At theIsrael Institute for Advanced Studiesin Givat Ram Campus in Jerusalem, Israel.",
       "content": "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and-engineering-on-computer-vision.html",
       "categories": [
-        "Personal"
+        "Research"
       ],
       "tags": [],
       "image": "https://i2.wp.com/www.itzikbs.com/wp-content/uploads/2017/01/20170108_161943.jpg?fit=3264%2C1836&ssl=1"

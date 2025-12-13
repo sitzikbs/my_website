@@ -102,7 +102,7 @@ async function loadRecentBlogPosts() {
     console.log('Loading blog posts...');
     
     try {
-        const response = await fetch('data/blog-index.json');
+        const response = await fetch('data/blog-index.json?v=' + Date.now());
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -156,7 +156,7 @@ async function loadRecentPodcastEpisodes() {
     console.log('Loading podcast episodes...');
     
     try {
-        const response = await fetch('data/blog-index.json');
+        const response = await fetch('data/blog-index.json?v=' + Date.now());
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
