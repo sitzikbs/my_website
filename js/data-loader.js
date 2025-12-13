@@ -65,15 +65,22 @@ async function loadRecentPublications() {
         const recentPubs = publications.slice(0, 3);
         const pubsHTML = recentPubs.map(pub => `
             <div class="publication-item">
-                <h3>${pub.title}</h3>
-                <p class="publication-authors">${pub.authors}</p>
-                <p class="publication-venue">${pub.venue}</p>
-                <p class="publication-year">${pub.year}</p>
-                ${pub.links ? `
-                    <div class="publication-links">
-                        ${pub.links.map(link => `<a href="${link.url}" target="_blank">${link.name}</a>`).join('')}
+                ${pub.image ? `
+                    <div class="publication-image">
+                        <img src="${pub.image}" alt="${pub.title}">
                     </div>
                 ` : ''}
+                <div class="publication-content">
+                    <h3>${pub.title}</h3>
+                    <p class="publication-authors">${pub.authors}</p>
+                    <p class="publication-venue">${pub.venue}</p>
+                    <p class="publication-year">${pub.year}</p>
+                    ${pub.links ? `
+                        <div class="publication-links">
+                            ${pub.links.map(link => `<a href="${link.url}" target="_blank">${link.name}</a>`).join('')}
+                        </div>
+                    ` : ''}
+                </div>
             </div>
         `).join('');
         
