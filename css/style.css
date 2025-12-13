@@ -260,9 +260,9 @@ a:hover {
 }
 
 .publications-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
@@ -376,18 +376,22 @@ a:hover {
 }
 
 .blog-card {
+    display: block;
     background-color: var(--bg-color);
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     overflow: hidden;
     box-shadow: none;
     transition: var(--transition);
+    text-decoration: none;
+    color: inherit;
 }
 
 .blog-card:hover {
     border-color: var(--secondary-color);
     box-shadow: var(--shadow);
     transform: translateY(-2px);
+    color: inherit;
 }
 
 .blog-category {
