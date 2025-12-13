@@ -2,8 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', async function() {
     await loadNews();
-    await loadRecentPublications();
     await loadRecentBlogPosts();
+    await loadRecentPodcastEpisodes();
+    await loadRecentPublications();
 });
 
 async function loadNews() {
@@ -118,16 +119,16 @@ async function loadRecentBlogPosts() {
         
         recentPosts = recentPosts.slice(0, 3);
         const postsHTML = recentPosts.map(post => `
-            <div class="blog-card">
+            <a href="${post.content.replace(/^\//, '')}" class="blog-card">
                 ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-card-image">` : ''}
                 <div class="blog-card-content">
                     <span class="blog-category">${(post.categories && post.categories.length > 0) ? post.categories[0] : 'General'}</span>
                     <h3>${post.title}</h3>
                     <p class="blog-date">${post.date}</p>
                     <p class="blog-excerpt">${post.excerpt || ''}</p>
-                    <a href="${post.content.replace(/^\//, '')}" class="read-more">Read more →</a>
+                    <span class="read-more">Read more →</span>
                 </div>
-            </div>
+            </a>
         `).join('');
         
         container.innerHTML = postsHTML;
@@ -135,5 +136,58 @@ async function loadRecentBlogPosts() {
     } catch (error) {
         console.error('Blog data error:', error);
         container.innerHTML = '<p>No blog posts available yet.</p>';
+    }
+}
+
+async function loadRecentPodcastEpisodes() {
+    const container = document.getElementById('recent-podcast-episodes');
+    if (!container) {
+        console.error('Podcast episodes container not found!');
+        return;
+    }
+    
+    console.log('Loading podcast episodes...');
+    
+    try {
+        const response = await fetch('data/blog-index.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        const posts = data.posts || [];
+        
+        console.log('Podcast data loaded, filtering for podcast episodes');
+        
+        // Filter for Talking Papers Podcast category only
+        let podcastEpisodes = posts.filter(post => 
+            post.categories && post.categories.includes('Talking Papers Podcast')
+        );
+        
+        console.log('Filtered podcast episodes:', podcastEpisodes.length);
+        
+        if (podcastEpisodes.length === 0) {
+            container.innerHTML = '<p>No podcast episodes available yet.</p>';
+            return;
+        }
+        
+        podcastEpisodes = podcastEpisodes.slice(0, 3);
+        const episodesHTML = podcastEpisodes.map(post => `
+            <a href="${post.content.replace(/^\//, '')}" class="blog-card">
+                ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-card-image">` : ''}
+                <div class="blog-card-content">
+                    <span class="blog-category">Podcast</span>
+                    <h3>${post.title}</h3>
+                    <p class="blog-date">${post.date}</p>
+                    <p class="blog-excerpt">${post.excerpt || ''}</p>
+                    <span class="read-more">Listen now →</span>
+                </div>
+            </a>
+        `).join('');
+        
+        container.innerHTML = episodesHTML;
+        console.log('Podcast episodes rendered successfully');
+    } catch (error) {
+        console.error('Podcast data error:', error);
+        container.innerHTML = '<p>No podcast episodes available yet.</p>';
     }
 }
