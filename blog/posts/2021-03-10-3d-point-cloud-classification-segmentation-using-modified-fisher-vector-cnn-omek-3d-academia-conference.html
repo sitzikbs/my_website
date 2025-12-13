@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>3D Point Cloud Classification and Segmentation using Modified Fisher Vector for CNN – Omek 3D Academia Conference</h1>
+                <div class="post-meta">
+                    <time datetime="2021-03-10">2021-03-10</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>This Wednesday (27.12.17) I gave a talk in the  <a href="https://www.omek3d.org/about-omek">Omek-3D</a> academia conference about my work on 3D point cloud classification.  The conference took place at Daniel Hotel in Herzliya, Israel.</p>
+<p>In a previous Omek-3D classification forum I presented some <a href="https://www.itzikbs.com/3d-point-cloud-classification-using-deep-learning" rel="noopener" target="_blank">recent work</a> on point cloud classification using deep learning, this time I presented our (<a href="https://meeng.technion.ac.il/members/anath-fischer/" rel="noopener" target="_blank">Prof. Anath Fischer</a>, <a href="http://www.cs.technion.ac.il/~mic/" rel="noopener" target="_blank">Prof. Michael Lindenbaum</a> and me) approach on the subject. This talk included a short primer about Gaussian Mixture Models (GMMs), also available <a href="https://www.itzikbs.com/gaussian-mixture-model-gmm-3d-point-cloud-classification-primer" rel="noopener" target="_blank">here,</a>  a primer about Fisher Vectors (FV), which will also be available here soon, and a short description of our method which includes the 3DmFV representation, 3D point cloud classification network (3DmFV-Net), and part-segmentation extension. Our approach is presented in detail in <a href="https://arxiv.org/abs/1711.08241" rel="noopener" target="_blank">our paper</a> “3D Point Cloud Classification and Segmentation using 3D Modified Fisher Vector Representation for Convolutional Neural Networks”. Luckily, the amazing Ronit Schneor took some pictures exactly in the right slides (where I am presenting 3DmFV and 3DmFV-Net – see my hands ? ).</p>
+<p style="text-align: center;">
+<p style="text-align: center;"><img alt="" class="alignnone size-full wp-image-677" data-attachment-id="677" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"1.7","credit":"","camera":"SM-G950F","caption":"","created_timestamp":"1514377635","copyright":"","focal_length":"4.2","iso":"200","shutter_speed":"0.016666666666667","title":"","orientation":"1"}' data-image-title="point_cloud_dl_omek_3d_2_" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_2_.jpg?fit=360%2C270&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_2_.jpg?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_2_.jpg?fit=360%2C270&amp;ssl=1" data-orig-size="360,270" data-permalink="https://www.itzikbs.com/3d-point-cloud-classification-segmentation-using-modified-fisher-vector-cnn-omek-3d-academia-conference/point_cloud_dl_omek_3d_2_" data-recalc-dims="1" decoding="async" fetchpriority="high" height="270" sizes="(max-width: 360px) 100vw, 360px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_2_.jpg?resize=360%2C270" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_2_.jpg?w=360&amp;ssl=1 360w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_2_.jpg?resize=300%2C225&amp;ssl=1 300w" width="360"/> <img alt="" class="alignnone size-full wp-image-676" data-attachment-id="676" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"1.7","credit":"","camera":"SM-G950F","caption":"","created_timestamp":"1514377642","copyright":"","focal_length":"4.2","iso":"160","shutter_speed":"0.016666666666667","title":"","orientation":"1"}' data-image-title="point_cloud_dl_omek_3d_1_" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_1_.jpg?fit=360%2C270&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_1_.jpg?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_1_.jpg?fit=360%2C270&amp;ssl=1" data-orig-size="360,270" data-permalink="https://www.itzikbs.com/3d-point-cloud-classification-segmentation-using-modified-fisher-vector-cnn-omek-3d-academia-conference/point_cloud_dl_omek_3d_1_" data-recalc-dims="1" decoding="async" height="270" sizes="(max-width: 360px) 100vw, 360px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_1_.jpg?resize=360%2C270" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_1_.jpg?w=360&amp;ssl=1 360w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/point_cloud_dl_omek_3d_1_.jpg?resize=300%2C225&amp;ssl=1 300w" width="360"/></p>
+<p>The conference had many great talks. I personally liked the following talks</p>
+<ul>
+<li>“Modifying Non-Local Variations Across Multiple Views”  given by the always fascinating <a href="http://lihi.eew.technion.ac.il/" rel="noopener" target="_blank">Prof. Lihi Zelnik-Manor</a> from Technion IIT.</li>
+<li>“Convolutional Neural Nets on Surfaces” given by <a href="http://www.weizmann.ac.il/math/meirav/" rel="noopener" target="_blank">Dr. Meirav Galun</a> from Weizmann Institute (<a href="http://www.wisdom.weizmann.ac.il/~haggaim/projects/geometry_learning/paper_low_res.pdf" rel="noopener" target="_blank">link to paper</a>).</li>
+<li>“Point Cloud Registration using Large Triangles” given by <a href="https://is-web.hevra.haifa.ac.il/index.php/en/website-ilan-shimshoni" rel="noopener" target="_blank">Prof. Ilan Shimshoni</a> From Haifa University (<a href="https://is-web.hevra.haifa.ac.il/images/lecturers_files/ishimshoni_files/3dV_15.pdf" rel="noopener" target="_blank">link to paper</a>).</li>
+</ul>
+<p>We signed off the day with an amazing view of a Mediterranean sunset.</p>
+<p><img alt="" class="aligncenter wp-image-656" data-attachment-id="656" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"2.4","credit":"","camera":"Nexus 5","caption":"","created_timestamp":"1514390308","copyright":"","focal_length":"3.97","iso":"100","shutter_speed":"0.00087323","title":"","orientation":"1"}' data-image-title="Hertzelia_Daniel_hotel_sunset" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/Hertzelia_Daniel_hotel_sunset.jpg?fit=800%2C600&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/Hertzelia_Daniel_hotel_sunset.jpg?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/Hertzelia_Daniel_hotel_sunset.jpg?fit=3264%2C2448&amp;ssl=1" data-orig-size="3264,2448" data-permalink="https://www.itzikbs.com/3d-point-cloud-classification-segmentation-using-modified-fisher-vector-cnn-omek-3d-academia-conference/hertzelia_daniel_hotel_sunset" data-recalc-dims="1" decoding="async" height="270" sizes="(max-width: 360px) 100vw, 360px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/Hertzelia_Daniel_hotel_sunset-300x225.jpg?resize=360%2C270" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/Hertzelia_Daniel_hotel_sunset.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/Hertzelia_Daniel_hotel_sunset.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/Hertzelia_Daniel_hotel_sunset.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/Hertzelia_Daniel_hotel_sunset.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/12/Hertzelia_Daniel_hotel_sunset.jpg?w=2400&amp;ssl=1 2400w" width="360"/></p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </p></div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

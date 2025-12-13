@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
+    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Blog post specific styles */
+        .blog-post { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 2rem 1.5rem; 
+        }
+        
+        .post-header { 
+            margin-bottom: 3rem; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 1.5rem; 
+        }
+        
+        .post-header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: var(--primary-color); 
+            line-height: 1.2;
+        }
+        
+        .post-meta { 
+            color: var(--text-light); 
+            font-size: 0.95rem; 
+        }
+        
+        .post-meta time { 
+            margin-right: 1rem; 
+        }
+        
+        /* Content styling */
+        .post-content { 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+        
+        .post-content h2,
+        .post-content h3.wp-block-heading {
+            margin-top: 2.5rem; 
+            margin-bottom: 1.25rem; 
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .post-content h2 {
+            font-size: 1.75rem;
+        }
+        
+        .post-content h3,
+        .post-content h3.wp-block-heading { 
+            font-size: 1.4rem;
+        }
+        
+        .post-content p { 
+            margin-bottom: 1.25rem; 
+        }
+        
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Images and figures */
+        .post-content img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .post-content .wp-block-image,
+        .post-content .wp-block-gallery {
+            margin: 2rem 0;
+        }
+        
+        .post-content .wp-block-image.aligncenter,
+        .post-content figure.aligncenter {
+            text-align: center;
+        }
+        
+        .post-content .wp-block-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .post-content .wp-block-gallery figure {
+            flex: 1 1 300px;
+            max-width: 450px;
+            margin: 0;
+        }
+        
+        /* Lists */
+        .post-content ul, 
+        .post-content ol,
+        .post-content .wp-block-list { 
+            margin-bottom: 1.5rem; 
+            padding-left: 2rem; 
+        }
+        
+        .post-content li { 
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .post-content ul {
+            list-style-type: disc;
+        }
+        
+        /* Links */
+        .post-content a { 
+            color: var(--secondary-color); 
+            text-decoration: none; 
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .post-content a:hover { 
+            border-bottom-color: var(--secondary-color);
+        }
+        
+        /* Code blocks */
+        .post-content blockquote { 
+            border-left: 4px solid var(--secondary-color); 
+            padding-left: 1.5rem; 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+        }
+        
+        .post-content code { 
+            background-color: var(--bg-light); 
+            padding: 0.2rem 0.5rem; 
+            border-radius: 4px; 
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre { 
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            padding: 1.5rem; 
+            border-radius: var(--radius); 
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .post-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        /* WordPress specific cleanup */
+        .elementor-widget-container {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1rem;
+            }
+            
+            .post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../../index.html">Itzik Ben-Shabat</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>3D point cloud classification – a summary of useful links</h1>
+                <div class="post-meta">
+                    <time datetime="2018-10-01">2018-10-01</time>
+                    <span class="author">By Itzik Ben-Shabat</span>
+                </div>
+            </header>
+            <div class="post-content">
+                <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>This post aims to gather all of the useful links spread across multiple posts on the topic of 3D point cloud classification.</p>
+<p>Recently we published a paper about 3D point cloud classification using our 3D modified Fisher Vector (3DmFV) representation and convolutional neural networks (CNNs).  I believe in making research accessible to everyone, therefore,  I wrote several posts on the subject. For everyone’s convenience (especially mine) here they all are in a bunch:</p>
+<ol>
+<li><a href="https://www.itzikbs.com/3d-point-cloud-classification-using-deep-learning" rel="noopener" target="_blank">3D point cloud classification overview (recent work, September 2017)</a></li>
+<li><a href="https://www.itzikbs.com/3dmfv-net-3d-point-cloud-lassification-in-real-time-using-3dmfv-and-cnns" rel="noopener" target="_blank">3D point cloud classification using 3D modified Fisher Vectors – 3DmFV-Net.</a></li>
+<li><a href="https://www.itzikbs.com/what-is-3d-modified-fisher-vector-3dmfv-representation-for-3d-point-clouds" rel="noopener" target="_blank">3D modified Fisher Vectors (3DmFV) for 3D point clouds</a></li>
+<li><a href="https://www.itzikbs.com/what-is-a-fisher-vector-for-3d-point-clouds-3d-point-cloud-classification-primer" rel="noopener" target="_blank">What are Fisher Vectors (FV) for 3D point clouds?</a></li>
+<li><a href="https://www.itzikbs.com/gaussian-mixture-model-gmm-3d-point-cloud-classification-primer" rel="noopener" target="_blank">What is a Gaussian Mixture Model (GMM)? </a></li>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/8394990/" rel="noopener" target="_blank">3DmFV-Net paper</a></li>
+<li><a href="https://arxiv.org/abs/1711.08241" rel="noopener" target="_blank">3DmFV-Net preprint</a></li>
+<li><a href="https://github.com/sitzikbs/3DmFV-Net" rel="noopener" target="_blank">Code for 3DmFV-Net</a></li>
+</ol>
+<p>Video:</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/jLNxXNChwdk?start=180&amp;feature=oembed" title="3DmFV: 3D Point Cloud Classification in Real-Time using Convolutional Neural Networks" width="800"></iframe></p>
+<p>I hope you find the information brought here useful. Don’t forget to cite my paper 🙂</p>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+</div>
+            </div>
+        </article>
+    </main>
+    <script src="../../js/main.js"></script>
+</body>
+</html>
