@@ -33,16 +33,16 @@ function renderPosts(posts) {
     }
     
     const postsHTML = posts.map(post => `
-        <div class="blog-card">
+        <a href="${post.content.replace(/^\//, '')}" class="blog-card">
             ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-card-image">` : ''}
             <div class="blog-card-content">
                 <span class="blog-category">${(post.categories && post.categories.length > 0) ? post.categories[0] : 'General'}</span>
                 <h3>${post.title}</h3>
                 <p class="blog-date">${post.date}</p>
                 <p class="blog-excerpt">${post.excerpt || ''}</p>
-                <a href="${post.content.replace(/^\//, '')}" class="read-more">Read more →</a>
+                <span class="read-more">Read more →</span>
             </div>
-        </div>
+        </a>
     `).join('');
     
     container.innerHTML = postsHTML;
