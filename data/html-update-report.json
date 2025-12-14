@@ -1,0 +1,414 @@
+{
+  "summary": {
+    "total_files": 81,
+    "files_updated": 1,
+    "total_image_replacements": 9
+  },
+  "details": [
+    {
+      "file": "about.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2017-01-30-helping-out-a-friend-with-processing.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2017-01-30-mlcoursecompletion.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and-engineering-on-computer-vision.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2017-02-16-tensorflow-deep-mnist-experts-tutorial.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2017-05-24-deep-learning-3d-data-references.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2017-06-17-feature-aggregatoin-using-vlad-netvlad.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2018-02-11-first-steps-deep-learning-using-tensorflow.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2018-09-08-write-paper-using-latex.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2018-10-01-3d-point-cloud-classification-a-summary-of-useful-links.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2018-10-19-reasearch-visit-in-germany.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2019-02-10-robotic-vision-summer-school-rvss-2019.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2019-04-11-how-to-visualize-normal-vectors-on-3d-point-clouds.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2019-05-02-israel-machine-vision-conference-imvc-2019.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2019-06-25-cvpr-2019.html",
+      "updated": true,
+      "image_replacements": 9
+    },
+    {
+      "file": "blog/posts/2020-07-27-surface-fitting-for-3d-point-cloud-deepfit.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2020-08-24-the-story-behind-the-ikea-assembly-dataset-paper.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2020-11-29-how-to-improve-your-online-content-creation-quality-for-academics.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-3-things-you-should-know-about-artificial-intelligence.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-3d-point-cloud-classification-segmentation-using-modified-fisher-vector-cnn-omek-3d-academia-conference.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-3d-point-cloud-classification-using-deep-learning.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-3dmfv-net-3d-point-cloud-classification-using-cnns.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-fisher-vector-for-3d-point-clouds-classification-primer.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-gaussian-mixture-model-gmm-3d-point-cloud-classification-primer.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-how-to-pronounce-my-name.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-how-to-stand-out-academically-during-covid-19.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-nesti-net-normal-estimation-for-3d-point-clouds.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-part-validation-dan-and-raz.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-purim-2017-phd-creativity.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-technion-challange-2017-beach-volleyball-winners.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2021-03-10-what-is-3d-modified-fisher-vector-3dmfv-representation-for-3d-point-clouds.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-01-15-the-talking-papers-podcast.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-02-05-deep-declarative-networks.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-02-05-dori-discovering-object-relationships-for-moment-localization-of-a-natural-language-query-in-a-video.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-02-11-neural-parts-learning-expressive-3d-shape-abstractions-with-invertible-neural-networks.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-02-24-vln-bert-a-recurrent-vision-and-language-bert-for-navigation.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-07-18-digs.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-07-18-icon-implicit-clothed-humans-obtained-from-normals.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-07-18-neural-rgb-d-surface-reconstruction.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-07-18-panoptic-3d-scene-reconstruction-from-a-single-rgb-image.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-07-18-samplenet-differentiable-point-cloud-sampling.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-07-18-shape-as-points-a-differentiable-poisson-solver.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-07-21-cvpr-2022.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-07-29-lipschitz-mlp.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-08-09-bacon.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-10-19-keypointnerf.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-12-06-beyond-periodicity.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-12-13-spsr.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2022-12-14-random-walks-for-adversarial-meshes.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-03-29-clipasso.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-03-29-inr2vec.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-05-17-iaw_dataset.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-06-14-mobilebrick.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-07-10-panoptic-lifting.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-07-19-cvpr-2023.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-07-20-word_as_image.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-08-10-magicpony.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-09-07-nerf-det.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-09-28-cc3d.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-11-01-hmdnemo.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-11-09-csg_on_nsdf.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-11-22-revenge_ssl.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2023-12-14-variational-barycentric-coordinates.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2024-01-10-wacv2024.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2024-02-16-instant3d.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2024-03-14-cameras-as-rays.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2024-06-03-3dinaction.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2024-06-16-career_update_2024.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2024-06-26-cvpr2024.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2024-07-11-3dpaintbrush.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2024-07-12-3dpaintbrush.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2024-10-20-another-example-post.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2024-11-15-example-blog-post.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2025-02-17-phd-guide-advisor-hunt.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog/posts/2025-10-14-why-i-left-social-media-and-what-brought-me-back.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "blog.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "code.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "contact.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "index.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "podcast.html",
+      "updated": false,
+      "image_replacements": 0
+    },
+    {
+      "file": "publications.html",
+      "updated": false,
+      "image_replacements": 0
+    }
+  ]
+}

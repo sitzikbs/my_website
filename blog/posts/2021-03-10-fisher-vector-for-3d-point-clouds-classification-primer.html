@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
-    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="../../css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Blog post specific styles */
@@ -245,11 +245,17 @@
 <h2 class="wp-block-heading">The Intuition</h2>
 <p>It is much easier to understand the FV for points with some nice visualizations.</p>
 <p>Let’s take a single 2D point in a single Gaussian and show its FV next to it. In the image below, the Gaussian is qualitatively visualized with a dashed circle with a radius of a single standard deviation.</p>
-<div class="wp-block-image"><figure class="aligncenter"><img alt="Point fisher vector example" class="wp-image-776" data-attachment-id="776" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="fv_0" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_0.png?fit=640%2C480&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_0.png?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_0.png?fit=640%2C480&amp;ssl=1" data-orig-size="640,480" data-permalink="https://www.itzikbs.com/fisher-vector-for-3d-point-clouds-classification-primer/fv_0" data-recalc-dims="1" decoding="async" fetchpriority="high" height="225" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_0-300x225.png?resize=300%2C225" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_0.png?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_0.png?w=640&amp;ssl=1 640w" width="300"/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter"><picture>
+  <source srcset="assets/images/blog/fv_0-300x225-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/fv_0-300x225.png" alt="Point fisher vector example" class="wp-image-776" width="300" height="225" loading="lazy">
+</picture></figure></div>
 <p>Now let’s see what happens when we move the point (hint FV changes)</p>
-<div class="wp-block-image"><figure class="aligncenter"><img alt="Point fisher vector example" class="wp-image-777" data-attachment-id="777" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="fv_34" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_34.png?fit=640%2C480&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_34.png?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_34.png?fit=640%2C480&amp;ssl=1" data-orig-size="640,480" data-permalink="https://www.itzikbs.com/fisher-vector-for-3d-point-clouds-classification-primer/fv_34" data-recalc-dims="1" decoding="async" height="225" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_34-300x225.png?resize=300%2C225" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_34.png?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_34.png?w=640&amp;ssl=1 640w" width="300"/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter"><picture>
+  <source srcset="assets/images/blog/fv_34-300x225-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/fv_34-300x225.png" alt="Point fisher vector example" class="wp-image-777" width="300" height="225" loading="lazy">
+</picture></figure></div>
 <p>Finally, we can see what happens when we move the point all around.</p>
-<div class="wp-block-image"><figure class="aligncenter"><img alt="Point fisher vector animation" class="wp-image-800" data-attachment-id="800" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="fv_smaller-compressor" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_smaller-compressor.gif?fit=496%2C352&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_smaller-compressor.gif?fit=300%2C213&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_smaller-compressor.gif?fit=496%2C352&amp;ssl=1" data-orig-size="496,352" data-permalink="https://www.itzikbs.com/fisher-vector-for-3d-point-clouds-classification-primer/fv_smaller-compressor" data-recalc-dims="1" decoding="async" height="352" loading="lazy" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_smaller-compressor.gif?resize=496%2C352" width="496"/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter"><img src="assets/images/blog/fv_smaller-compressor.gif" alt="Point fisher vector animation" class="wp-image-800" width="496" height="352" loading="lazy"></figure></div>
 <h2 class="wp-block-heading">The Code</h2>
 <p>A great implementation of fisher vectors is available in <a href="https://gist.github.cnsom/danoneata/9927923" rel="noopener noreferrer" target="_blank">this link </a></p>
 <p>In order to recreate the images above you can use my repository for this <a href="https://github.com/sitzikbs/3DmFV-Tutorial" rel="noopener noreferrer" target="_blank">FV tutorial on my GitHub</a>.</p>
@@ -261,6 +267,6 @@
             </div>
         </article>
     </main>
-    <script src="../../js/main.js"></script>
+    <script src="../../js/main.min.js".replace(".js", ".min.js")></script>
 </body>
 </html>
