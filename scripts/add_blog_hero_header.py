@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Dict, List
 
 # Talking Papers podcast logo
-PODCAST_LOGO = "../../assets/images/publications/Talking_papers_cover-400.webp"
+PODCAST_LOGO = "../../assets/images/icons/talking-papers-logo.webp"
 # Author portrait
 AUTHOR_PORTRAIT = "../../assets/images/profile/Itzik_Ben_Shabat_portrait.jpg"
 AUTHOR_NAME = "Itzik Ben-Shabat"
