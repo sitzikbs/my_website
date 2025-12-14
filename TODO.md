@@ -262,6 +262,7 @@ Convert the current WordPress-based personal website (https://itzikbs.com/) to a
   - [ ] Check accessibility score
   - [ ] Verify SEO score
   - [ ] Check best practices
+  - [ ] **NOTE:** Previous attempt failed with Chrome connection errors - needs troubleshooting
 - [ ] Test page load times
 - [ ] Verify mobile performance
 - [ ] Check cross-browser compatibility:
