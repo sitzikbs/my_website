@@ -1,0 +1,17 @@
+# robots.txt for itzikbs.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin/private areas
+Disallow: /scripts/
+Disallow: /reports/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /data/image-mapping.json
+
+# Sitemap location
+Sitemap: https://itzikbs.com/sitemap.xml
+
+# Crawl delay (optional, for politeness)
+Crawl-delay: 1

@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Resource Hints for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
-    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="../../css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Blog post specific styles */
@@ -235,11 +240,20 @@
 <p>So, install <a href="http://www.xm1math.net/texmaker/download.html" rel="noopener">Texmaker</a>.</p>
 <p>After you install it I recommend doing the following:</p>
 <ol>
-<li>Create a build subdirectory automatically:  Options -&gt; Configure Texmaker – &gt;  check the box “use a “build” subdirectory for output files”.   When you compile a TeX file it creates the pdf file but it also creates some other files and it becomes a mess very fast. working with a build subdirectory will automatically put the pdf (and the other files) there.<img alt="" class="wp-image-592 aligncenter" data-attachment-id="592" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"Itzik","camera":"","caption":"","created_timestamp":"1510780894","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="built_in_option" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/built_in_option.jpg?fit=294%2C38&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/built_in_option.jpg?fit=294%2C38&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/built_in_option.jpg?fit=294%2C38&amp;ssl=1" data-orig-size="294,38" data-permalink="https://www.itzikbs.com/write-paper-using-latex/built_in_option" data-recalc-dims="1" decoding="async" height="32" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/built_in_option.jpg?resize=248%2C32" width="248"/></li>
+<li>Create a build subdirectory automatically:  Options -&gt; Configure Texmaker – &gt;  check the box “use a “build” subdirectory for output files”.   When you compile a TeX file it creates the pdf file but it also creates some other files and it becomes a mess very fast. working with a build subdirectory will automatically put the pdf (and the other files) there.<picture>
+  <source srcset="assets/images/blog/built_in_option-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/built_in_option.jpg" alt="" class="wp-image-592 aligncenter" width="248" height="32" loading="lazy">
+</picture></li>
 <li>Built-in pdf viewer:  If you are working with one screen you will find the embedded built-in viewer very efficient. If you are working with two screens (like me) then make sure that the “embed” checkbox is unchecked and drag the viewer window to the secondary screen.<br/>
-<img alt="" class="wp-image-593 aligncenter" data-attachment-id="593" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"Itzik","camera":"","caption":"","created_timestamp":"1510781000","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="pdf_viewer" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/pdf_viewer.jpg?fit=379%2C207&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/pdf_viewer.jpg?fit=300%2C164&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/pdf_viewer.jpg?fit=379%2C207&amp;ssl=1" data-orig-size="379,207" data-permalink="https://www.itzikbs.com/write-paper-using-latex/pdf_viewer" data-recalc-dims="1" decoding="async" height="121" sizes="(max-width: 221px) 100vw, 221px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/pdf_viewer-300x164.jpg?resize=221%2C121" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/pdf_viewer.jpg?resize=300%2C164&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/pdf_viewer.jpg?w=379&amp;ssl=1 379w" width="221"/></li>
+<picture>
+  <source srcset="assets/images/blog/pdf_viewer-300x164-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/pdf_viewer-300x164.jpg" alt="" class="wp-image-593 aligncenter" width="221" height="121" loading="lazy">
+</picture></li>
 <li>External viewer: If you want to preview your pdf using an external viewer, and you followed step 1, you need to change the external viewer path to ” “Path to your viewer” .\build\%.pdf”. I use Adobe pdf reader so for me its :   “C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe” .\build\%.pdf. Just remember to close it before you recompile the document (you will get an error unless you use a reader that allows updates and refreshes)<br/>
-<img alt="" class="wp-image-594 aligncenter" data-attachment-id="594" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"Itzik","camera":"","caption":"","created_timestamp":"1510781580","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="built_in_viewer" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/built_in_viewer.jpg?fit=382%2C156&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/built_in_viewer.jpg?fit=300%2C123&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/built_in_viewer.jpg?fit=382%2C156&amp;ssl=1" data-orig-size="382,156" data-permalink="https://www.itzikbs.com/write-paper-using-latex/built_in_viewer" data-recalc-dims="1" decoding="async" height="94" sizes="(max-width: 229px) 100vw, 229px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/built_in_viewer-300x123.jpg?resize=229%2C94" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/built_in_viewer.jpg?resize=300%2C123&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/built_in_viewer.jpg?w=382&amp;ssl=1 382w" width="229"/></li>
+<picture>
+  <source srcset="assets/images/blog/built_in_viewer-300x123-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/built_in_viewer-300x123.jpg" alt="" class="wp-image-594 aligncenter" width="229" height="94" loading="lazy">
+</picture></li>
 <li>Adjust font size:   options -&gt; Configure Texmaker,-&gt;  editor (on the left) -&gt;  editor font size. I like 11.</li>
 </ol>
 <h2>Step 2:  The Paper</h2>
@@ -386,6 +400,6 @@ year={2017}
             </div>
         </article>
     </main>
-    <script src="../../js/main.js"></script>
+    <script src="../../js/main.min.js".replace(".js", ".min.js")></script>
 </body>
 </html>
