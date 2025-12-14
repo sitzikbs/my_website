@@ -33,6 +33,75 @@
     <link rel="stylesheet" href="../../css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Hero Header Styles */
+        .blog-hero {
+            max-width: 900px;
+            margin: 3rem auto 3rem;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+        
+        .blog-hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .blog-hero-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--border-color);
+        }
+        
+        .blog-hero-byline {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+        
+        .blog-hero-author {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .blog-hero-author:hover {
+            text-decoration: underline;
+        }
+        
+        .blog-hero-date {
+            font-size: 0.9rem;
+        }
+        
+        .blog-hero-title {
+            font-size: 2.5rem;
+            margin: 1rem 0 0 0;
+            color: var(--primary-color);
+            line-height: 1.2;
+            max-width: 800px;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-hero {
+                margin: 2rem auto;
+            }
+            
+            .blog-hero-avatar {
+                width: 64px;
+                height: 64px;
+            }
+            
+            .blog-hero-title {
+                font-size: 1.75rem;
+            }
+        }
+        
+
         /* Blog post specific styles */
         .blog-post { 
             max-width: 900px; 
@@ -262,15 +331,19 @@
         </div>
     </nav>
     <main>
-        <article class="blog-post">
-            <header class="post-header">
-                <h1>Nesti-Net: Normal estimation for 3D Point Clouds</h1>
-                <div class="post-meta">
-                    <time datetime="2021-03-10">2021-03-10</time>
-                    <span class="author">By Itzik Ben-Shabat</span>
-                </div>
-            </header>
-            <div class="post-content">
+          <div class="blog-hero">
+    <div class="blog-hero-content">
+      <img src="../../assets/images/profile/Itzik_Ben_Shabat_portrait.jpg" alt="Itzik Ben-Shabat" class="blog-hero-avatar">
+      <div class="blog-hero-byline">
+        <a href="../../index.html" class="blog-hero-author">Itzik Ben-Shabat</a>
+        <time class="blog-hero-date" datetime="2021-03-10">March 10, 2021</time>
+      </div>
+      <h1 class="blog-hero-title">Nesti-Net: Normal estimation for 3D Point Clouds</h1>
+    </div>
+  </div>
+  
+<article class="blog-post">
+<div class="post-content">
                 <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
 <div class="elementor-widget-container">
 <p>Important links:  [<a href="https://arxiv.org/abs/1812.00709" rel="noopener noreferrer" target="_blank">paper</a>], [<a href="https://github.com/sitzikbs/Nesti-Net" rel="noopener noreferrer" target="_blank">code</a>], [<a href="https://www.youtube.com/watch?v=E7PudeA4XvM" rel="noopener noreferrer" target="_blank">video</a>],[<a aria-label="poster (opens in a new tab)" href="https://www.itzikbs.com/wp-content/uploads/2019/06/Nesti-Net_poster.pdf" rel="noreferrer noopener" target="_blank">poster</a>]</p>
