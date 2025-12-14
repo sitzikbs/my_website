@@ -8,9 +8,8 @@ import re
 from pathlib import Path
 
 
-# TODO: Replace this with your actual GA4 Measurement ID
-# You can find this in Google Analytics Admin > Data Streams > choose your stream > Measurement ID
-GA4_MEASUREMENT_ID = "G-XXXXXXXXXX"  # Replace with your actual ID
+# GA4 Measurement ID from the original WordPress site (using MonsterInsights plugin)
+GA4_MEASUREMENT_ID = "G-EJRL17R9NE"
 
 
 def get_ga4_code(measurement_id: str) -> str:
