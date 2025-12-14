@@ -284,10 +284,11 @@ Convert the current WordPress-based personal website (https://itzikbs.com/) to a
   - [x] Twitter Card tags - ✅ COMPLETE
 - [x] Create `sitemap.xml` (81 URLs with proper priorities and lastmod dates)
 - [x] Create `robots.txt` (configured with proper allow/disallow rules)
-- [ ] Implement schema.org structured data (NEXT):
-  - [ ] Person schema for homepage
-  - [ ] Article schema for blog posts
-  - [ ] ScholarlyArticle for publications (optional)
+- [x] Implement schema.org structured data - ✅ COMPLETE:
+  - [x] Person schema for homepage (job title, affiliation, social profiles)
+  - [x] BlogPosting schema for blog posts (headline, author, dates, description)
+  - [x] WebSite schema for other pages
+  - [x] Applied to 81 HTML files
 - [x] Add canonical URLs - ✅ COMPLETE
 - [ ] Implement proper heading hierarchy (h1, h2, h3, etc.) - needs review
 
