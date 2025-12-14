@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
-    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="../../css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Blog post specific styles */
@@ -242,9 +242,15 @@
 <p>We can imagine a more intuitive (and adventurous) problem:</p>
 <p>Once upon a time, there was a rich man with a lot of gold in his pockets. He also had a hole in one of them and whenever he walked around his garden some coins fell to the ground. What you want to do is draw a treasure map for adventurers and let them know where are they most likely to find gold.</p>
 <p>In the image below you can see the coins that fell out as points ( each coin has a different color corresponding to the Gaussian that was used to generate it) and a treasure map overlay that shows four different areas to finding gold (the lines transparency indicates the probability – close to the center of each Gaussian the probability is higher to find gold and as you go farther away it reduces.</p>
-<p><img alt="2D Gaussian Mixrure Model example" class="alignnone size-medium wp-image-638 aligncenter" data-attachment-id="638" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="2D_GMM_demonstration" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/2D_GMM_demonstration.png?fit=800%2C800&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/2D_GMM_demonstration.png?fit=300%2C300&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/2D_GMM_demonstration.png?fit=800%2C800&amp;ssl=1" data-orig-size="800,800" data-permalink="https://www.itzikbs.com/gaussian-mixture-model-gmm-3d-point-cloud-classification-primer/2d_gmm_demonstration" data-recalc-dims="1" decoding="async" fetchpriority="high" height="300" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/2D_GMM_demonstration-300x300.png?resize=300%2C300" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/2D_GMM_demonstration.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/2D_GMM_demonstration.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/2D_GMM_demonstration.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/2D_GMM_demonstration.png?w=800&amp;ssl=1 800w" width="300"/></p>
+<p><picture>
+  <source srcset="assets/images/blog/2D_GMM_demonstration-300x300-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/2D_GMM_demonstration-300x300.png" alt="2D Gaussian Mixrure Model example" class="alignnone size-medium wp-image-638 aligncenter" width="300" height="300" loading="lazy">
+</picture></p>
 <p>We can do something very similar for 3D points (abandoning the rich man example). In the image below you can see the generated 3D points and a semi-transparent surface representing the Gaussian location and scale ( 3 standard deviations in each axis).</p>
-<p><img alt="3D GMM example" class="size-medium wp-image-640 aligncenter" data-attachment-id="640" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="3D_GMM_demonstration" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/3D_GMM_demonstration.png?fit=800%2C800&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/3D_GMM_demonstration.png?fit=300%2C300&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/3D_GMM_demonstration.png?fit=800%2C800&amp;ssl=1" data-orig-size="800,800" data-permalink="https://www.itzikbs.com/gaussian-mixture-model-gmm-3d-point-cloud-classification-primer/3d_gmm_demonstration" data-recalc-dims="1" decoding="async" height="300" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/3D_GMM_demonstration-300x300.png?resize=300%2C300" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/3D_GMM_demonstration.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/3D_GMM_demonstration.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/3D_GMM_demonstration.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/3D_GMM_demonstration.png?w=800&amp;ssl=1 800w" width="300"/></p>
+<p><picture>
+  <source srcset="assets/images/blog/3D_GMM_demonstration-300x300-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/3D_GMM_demonstration-300x300.png" alt="3D GMM example" class="size-medium wp-image-640 aligncenter" width="300" height="300" loading="lazy">
+</picture></p>
 <p> </p>
 <p>You can see how we can basically represent all of these 4000 points using only 4 Gaussians.  Each points gets a likelihood value (<img alt="u_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=u_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/>) for each Gaussian.  In our paper, we show that we can use a GMM with Gaussians on a grid (and not using EM algorithm) to represent 3D point clouds for the classification and part segmentation task. But, more on that in a later post.</p>
 <p> </p>
@@ -317,6 +323,6 @@ elif D == 3:
             </div>
         </article>
     </main>
-    <script src="../../js/main.js"></script>
+    <script src="../../js/main.min.js".replace(".js", ".min.js")></script>
 </body>
 </html>

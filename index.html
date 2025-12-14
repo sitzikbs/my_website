@@ -7,7 +7,7 @@
   <title>
    Personal Website
   </title>
-  <link href="css/style.css?v=5" rel="stylesheet"/>
+  <link href="css/style.min.css?v=5" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
  </head>
  <body>
@@ -17,7 +17,11 @@
     <div class="container">
      <div class="hero-content">
       <div class="profile-image">
-       <img alt="Profile picture" onerror="this.src='images/placeholder.svg'" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/07/Itzik_Ben_Shabat_portrait.jpg?fit=500%2C500&amp;ssl=1"/>
+       <picture>
+  <source srcset="assets/images/profile/Itzik_Ben_Shabat_portrait-400.webp" type="image/webp" media="(min-width: 400px)">
+  <source srcset="assets/images/profile/Itzik_Ben_Shabat_portrait-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/profile/Itzik_Ben_Shabat_portrait.jpg" alt="Profile picture" width="500" height="500" loading="lazy">
+</picture>
       </div>
       <div class="hero-text">
        <h1>
@@ -233,11 +237,11 @@
     </div>
    </div>
   </footer>
-  <script src="js/navigation.js">
+  <script src="js/navigation.min.js">
   </script>
-  <script src="js/main.js">
+  <script src="js/main.min.js">
   </script>
-  <script src="js/data-loader.js">
+  <script src="js/data-loader.min.js">
   </script>
  </body>
 </html>
