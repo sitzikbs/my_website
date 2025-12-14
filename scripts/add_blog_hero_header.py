@@ -118,7 +118,7 @@ def add_hero_styles(html_path: Path) -> bool:
         /* Hero Header Styles */
         .blog-hero {
             max-width: 900px;
-            margin: 3rem auto 3rem;
+            margin: 3rem auto 1.5rem;
             padding: 0 1.5rem;
             text-align: center;
         }
@@ -131,8 +131,8 @@ def add_hero_styles(html_path: Path) -> bool:
         }
         
         .blog-hero-avatar {
-            width: 80px;
-            height: 80px;
+            width: 96px;
+            height: 96px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid var(--border-color);
@@ -170,12 +170,12 @@ def add_hero_styles(html_path: Path) -> bool:
         
         @media (max-width: 768px) {
             .blog-hero {
-                margin: 2rem auto;
+                margin: 2rem auto 1rem;
             }
             
             .blog-hero-avatar {
-                width: 64px;
-                height: 64px;
+                width: 77px;
+                height: 77px;
             }
             
             .blog-hero-title {
