@@ -127,7 +127,7 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    padding: 4rem 0 2rem;
+    padding: 2.5rem 0 1.5rem;
 }
 
 .hero-content {
@@ -162,27 +162,27 @@ a:hover {
 
 /* About Section */
 .about {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .about h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
-}
-
-.about-content {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 2rem;
-}
-
-.about-content p {
     margin-bottom: 1rem;
 }
 
+.about-content {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+}
+
+.about-content p {
+    margin-bottom: 0.75rem;
+}
+
 .highlights {
-    margin: 3rem 0;
+    margin: 2rem 0 1.5rem 0;
 }
 
 .highlights h3 {
@@ -218,13 +218,13 @@ a:hover {
 
 /* News Section */
 .news {
-    margin: 3rem 0;
+    margin: 1.5rem 0 2rem 0;
 }
 
 .news h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .news-list {
@@ -232,7 +232,7 @@ a:hover {
 }
 
 .news-list li {
-    padding: 0.5rem 0;
+    padding: 0.6rem 0;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -248,25 +248,25 @@ a:hover {
 
 /* Recent Blog Section */
 .recent-blog {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
     background-color: var(--bg-light);
 }
 
 /* Recent Podcast Section */
 .recent-podcast {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
 }
 
 /* Recent Work Section */
 .recent-work {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
     background-color: var(--bg-light);
 }
 
 .recent-work h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: var(--primary-color);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     text-align: left;
 }
 
