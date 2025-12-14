@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
 <!-- Resource Hints for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -272,7 +283,7 @@
                 <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
 <div class="elementor-widget-container">
 <p></p>
-<h3 class="wp-block-heading">Abstract </h3>
+<h2 class="wp-block-heading">ABSTRACT</h2>
 <p>We propose a method for 3D point cloud surface fitting. This method, called DeepFit, incorporates a neural network to learn point-wise weights for weighted least squares polynomial surface fitting. The learned weights act as a soft selection for the neighborhood of surface points thus avoiding the scale selection required of previous methods. To train the network we propose a novel surface consistency loss that improves point weight estimation. The method enables extracting normal vectors and other geometrical properties, such as principal curvatures, the latter were not presented as ground truth during training. We achieve state-of-the-art results on a benchmark normal and curvature estimation dataset, demonstrate robustness to noise, outliers and density variations, and show its application on noise removal.</p>
 <figure class="wp-block-image size-large"><picture>
   <source srcset="assets/images/blog/DeepFit_Pipeline-1024x410-400.webp" type="image/webp" media="(min-width: 400px)">
@@ -301,7 +312,7 @@
 <p></p>
 <p>To stay up to date with my latest research: Follow me on <a aria-label="undefined (opens in a new tab)" href="https://twitter.com/sitzikbs" rel="noreferrer noopener" target="_blank">twitter</a> and subscribe to my <a aria-label="undefined (opens in a new tab)" href="https://www.youtube.com/channel/UCAvd5SJkGaI6lf54pLUioMA" rel="noreferrer noopener" target="_blank">YouTube channel</a>.</p>
 <div class="jp-relatedposts" id="jp-relatedposts">
-<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<h2 class="jp-relatedposts-headline"><em>Related</em></h2>
 </div> </div>
 </div>
             </div>

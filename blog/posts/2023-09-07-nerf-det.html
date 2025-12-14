@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
 <!-- Resource Hints for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -277,18 +288,18 @@
 <p>Chenfeng is currently a Ph.D. candidate at UC Berkeley, collaborating with Prof. Masayoshi Tomizuka and Prof. Kurt Keutzer. His affiliations include Berkeley DeepDrive (BDD) and Berkeley AI Research (BAIR), along with the MSC lab and PALLAS. His research endeavors revolve around enhancing computational and data efficiency in machine perception, with a primary focus on temporal-3D scenes and their downstream applications. He brings together traditionally separate approaches from geometric computing and deep learning to establish both theoretical frameworks and practical algorithms for temporal-3D representations. His work spans a wide range of applications, including autonomous driving, robotics, AR/VR, and consistently demonstrates remarkable efficiency through extensive experimentation. I am eagerly looking forward to see his upcoming research papers. </p>
 <p><br/></p>
 <div id="buzzsprout-player-13543293"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/13543293-nerf-det-chenfeng-xu.js?container_id=buzzsprout-player-13543293&amp;player=small" type="text/javascript"></script>
-<h3 class="wp-block-heading" id="authors">AUTHORS</h3>
+<h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p>Chenfeng Xu, Bichen Wu, Ji Hou, Sam Tsai, Ruilong Li, Jialiang Wang, Wei Zhan, Zijian He, Peter Vajda, Kurt Keutzer, Masayoshi Tomizuka<br/></p>
-<h3 class="wp-block-heading" id="abstract">ABSTRACT</h3>
+<h2 class="wp-block-heading" id="abstract">ABSTRACT</h2>
 <p> We consider the problem of learning a function that can estimate the 3D shape, articulation, viewpoint, texture, and lighting of an articulated animal like a horse, given a single test image. We present a new method, dubbed MagicPony, that learns this function purely from in-the-wild single-view images of the object category, with minimal assumptions about the topology of deformation. At its core is an implicit-explicit representation of articulated shape and appearance, combining the strengths of neural fields and meshes. In order to help the model understand an object’s shape and pose, we distil the knowledge captured by an off-the-shelf self-supervised vision transformer and fuse it into the 3D model. To NeRF-Det is a novel method for 3D detection with posed RGB images as input. Our method makes novel use of NeRF in an end-to-end manner to explicitly estimate 3D geometry, thereby improving 3D detection performance. Specifically, to avoid the significant extra latency associated with per-scene optimization of NeRF, we introduce sufficient geometry priors to enhance the generalizability of NeRF-MLP. We subtly connect the detection and NeRF branches through a shared MLP, enabling an efficient adaptation of NeRF to detection and yielding geometry-aware volumetric representations for 3D detection. As a result of our joint-training design, NeRF-Det is able to generalize well to unseen scenes for object detection, view synthesis, and depth estimation tasks without per-scene optimization.</p>
 <p> </p>
 <p></p>
-<h3 class="wp-block-heading" id="related-papers">RELATED PAPERS</h3>
+<h2 class="wp-block-heading" id="related-papers">RELATED (WORKS|PAPERS)</h2>
 <p>📚<a href="https://www.matthewtancik.com/nerf" rel="noreferrer noopener" target="_blank">NeRF</a></p>
 <p>📚<a href="https://openaccess.thecvf.com/content/WACV2022/papers/Rukhovich_ImVoxelNet_Image_to_Voxels_Projection_for_Monocular_and_Multi-View_General-Purpose_WACV_2022_paper.pdf" rel="noreferrer noopener" target="_blank">ImageVoxelNet</a></p>
 <p></p>
 <p></p>
-<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<h2 class="wp-block-heading">LINKS AND RESOURCES</h2>
 <p>📚 <a href="https://arxiv.org/abs/2307.14620">Paper</a></p>
 <p>💻<a href="https://chenfengxu714.github.io/nerfdet/">Project page</a></p>
 <p>💻<a href="https://github.com/facebookresearch/NeRF-Det">Code</a></p>
@@ -306,7 +317,7 @@
 <p><br/><br/>CONTACT</p>
 <p>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="4c382d202725222b623c2d3c293e3f623c23282f2d3f380c2b212d2520622f2321" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
 <p></p>
-<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<h2 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h2>
 <p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
 <p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
 <p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
@@ -315,7 +326,7 @@
 <p></p>
 <p></p>
 <div class="jp-relatedposts" id="jp-relatedposts">
-<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<h2 class="jp-relatedposts-headline"><em>Related</em></h2>
 </div> </div>
 </div>
             </div>

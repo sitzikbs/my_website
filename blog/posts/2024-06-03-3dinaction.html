@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
 <!-- Resource Hints for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -275,15 +286,15 @@
 <p>In the latest episode of Talking Papers Podcast, we had the incredible opportunity to have an AI avatar host Yizhak (Itzik) Ben-Shabat (our usual host), a research fellow at the Technion and visiting the Australian National University and a recent Marie-Sklodowska Curie Fellow. We delved into his pioneering paper titled “3DInAction: Understanding Human Actions in 3D Point Clouds,” which was published in CVPR 2024. The paper presents a novel method for recognizing human actions within 3D point clouds, addressing the previously under-explored challenges inherent in this data modality, such as lack of structure, permutation invariance, and varying numbers of points. Itzik’s work brings forward the 3DInAction pipeline, featuring t-patches and a hierarchical architecture for learning informative spatio-temporal representations, achieving marked improvements on datasets like DFAUST and IKEA ASM.</p>
 <p>One of the main contributions highlighted in Itzik’s paper is the concept of t-patches, which move through time and serve as fundamental building blocks for understanding human actions in 3D spaces. Since embarking on this journey, Itzik faced the challenge of a largely uncharted territory—very few studies attempted 3D action recognition using point cloud data. As we see a growing interest in this area, his work stands out not only for its novelty but also for setting a new benchmark, pushing the frontier further. The 3DInAction pipeline, with its hierarchical and spatio-temporal learning architecture, exemplifies the innovative spirit driving the field of computer vision and pattern recognition forward.</p>
 <p>This episode also carries a personal connection. The title of Itzik’s paper, “3DInAction,” is the same as the title of his fellowship, signifying a rewarding conclusion to three years of intensive and inspiring research. This time, our conversation was animated by an AI avatar from Synthesia, bringing a unique flavor to the episode—an idea Itzik was keen to explore just for the sheer excitement of it! Reflecting on our chat, it feels like the end of an era but also the beginning of new prospects. Itzik’s dedication and creativity have always stood out to me, and I can’t wait to see where his research journey will take him next. Tune in for an intellectually stimulating discussion and dive deeper into the exciting world of 3D point cloud action recognition!</p>
-<h3 class="wp-block-heading">AUTHORS</h3>
+<h2 class="wp-block-heading">AUTHORS</h2>
 <p><br/>Yizhak Ben-Shabat, Oren Shrout, Stephen Gould</p>
-<h3 class="wp-block-heading">ABSTRACT</h3>
+<h2 class="wp-block-heading">ABSTRACT</h2>
 <p><br/>We propose a novel method for 3D point cloud action recognition. Understanding human actions in RGB videos has been widely studied in recent years, however, its 3D point cloud counterpart remains under-explored. This is mostly due to the inherent limitation of the point cloud data modality—lack of structure, permutation invariance, and varying number of points—which makes it difficult to learn a spatio-temporal representation. To address this limitation, we propose the 3DinAction pipeline that first estimates patches moving in time (t-patches) as a key building block, alongside a hierarchical architecture that learns an informative spatio-temporal representation. We show that our method achieves improved performance on existing datasets, including DFAUST and IKEA ASM.</p>
-<h3 class="wp-block-heading">RELATED WORKS</h3>
+<h2 class="wp-block-heading">RELATED (WORKS|PAPERS)</h2>
 <p>📚<a href="https://github.com/charlesq34/pointnet" rel="noreferrer noopener" target="_blank">PointNet</a></p>
 <p>📚<a href="https://github.com/charlesq34/pointnet2" rel="noreferrer noopener" target="_blank">PointNet++</a></p>
 <p>📚<a href="https://arxiv.org/abs/2205.13713" rel="noreferrer noopener" target="_blank">PSTNet</a></p>
-<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<h2 class="wp-block-heading">LINKS AND RESOURCES</h2>
 <p>📚<a href="https://arxiv.org/abs/2303.06346" rel="noreferrer noopener" target="_blank">Preprint</a></p>
 <p>💻<a href="https://sitzikbs.github.io/3dinaction.github.io/" rel="noreferrer noopener" target="_blank">Project page</a></p>
 <p>💻<a href="https://github.com/sitzikbs/3dincaction" rel="noreferrer noopener" target="_blank">Code</a></p>
@@ -296,15 +307,15 @@
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5ZIbMSIcfLc?feature=oembed" title="3DInAction (CVPR 2024) with Yizhak Ben-Shabat on Talking Papers Podcast" width="800"></iframe>
 </div></figure>
 <p>This episode was recorded on June 2nd 2024</p>
-<h3 class="wp-block-heading">CONTACT</h3>
+<h2 class="wp-block-heading">CONTACT</h2>
 <p><br/>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="1d697c717674737a336d7c6d786f6e336d72797e7c6e695d7a707c7471337e7270" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
-<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<h2 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h2>
 <p><br/>🎧Subscribe on your favourite <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">podcast app</a></p>
 <p>📧Subscribe to our <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">mailing list</a></p>
 <p>🐦Follow us on <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">Twitter</a></p>
 <p>🎥Subscribe to our <a href="https://bit.ly/3eQOgwP" rel="noreferrer noopener" target="_blank">YouTube channel</a></p>
 <div class="jp-relatedposts" id="jp-relatedposts">
-<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<h2 class="jp-relatedposts-headline"><em>Related</em></h2>
 </div> </div>
 </div>
             </div>

@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
 <!-- Resource Hints for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -279,20 +290,20 @@
 <p><br/></p>
 <p></p>
 <div id="buzzsprout-player-12427776"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/12427776-clipasso-yael-vinker.js?container_id=buzzsprout-player-12427776&amp;player=small" type="text/javascript"></script>
-<h3 class="wp-block-heading" id="authors">AUTHORS</h3>
+<h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><em><a href="https://yaelvi116.wixsite.com/mysite" rel="noreferrer noopener" target="_blank">Yael Vinker</a>, <a href="https://pajouheshgar.github.io/" rel="noreferrer noopener" target="_blank">Ehsan Pajouheshgar</a>, <a href="https://jessica-bo.github.io/" rel="noreferrer noopener" target="_blank">Jessica Y. Bo</a>, <a href="https://roman-bachmann.github.io/" rel="noreferrer noopener" target="_blank">Roman Bachmann</a>, <a href="https://www.cs.tau.ac.il/~amberman/" rel="noreferrer noopener" target="_blank">Amit Haim Bermano</a>, <a href="https://danielcohenor.com/" rel="noreferrer noopener" target="_blank">Daniel Cohen-Or</a>, <a href="https://vilab.epfl.ch/zamir/" rel="noreferrer noopener" target="_blank">Amir Zamir</a>, <a href="https://faculty.idc.ac.il/arik/site/index.asp" rel="noreferrer noopener" target="_blank">Ariel Shamir</a></em></p>
 <p><br/></p>
-<h3 class="wp-block-heading" id="abstract">ABSTRACT</h3>
+<h2 class="wp-block-heading" id="abstract">ABSTRACT</h2>
 <p> </p>
 <p>Abstraction is at the heart of sketching due to the simple and minimal nature of line drawings. Abstraction entails identifying the essential visual properties of an object or scene, which requires semantic understanding and prior knowledge of high-level concepts. Abstract depictions are therefore challenging for artists, and even more so for machines. We present an object sketching method that can achieve different levels of abstraction, guided by geometric and semantic simplifications. While sketch generation methods often rely on explicit sketch datasets for training, we utilize the remarkable ability of CLIP (Contrastive-Language-Image-Pretraining) to distil semantic concepts from sketches and images alike. We define a sketch as a set of Bézier curves and use a differentiable rasterizer to optimize the parameters of the curves directly with respect to a CLIP-based perceptual loss. The abstraction degree is controlled by varying the number of strokes. The generated sketches demonstrate multiple levels of abstraction while maintaining recognizability, underlying structure, and essential visual components of the subject drawn.</p>
 <p> </p>
 <p></p>
-<h3 class="wp-block-heading" id="related-papers">RELATED PAPERS</h3>
+<h2 class="wp-block-heading" id="related-papers">RELATED (WORKS|PAPERS)</h2>
 <p>📚<a href="https://openai.com/research/clip">CLIP: Connecting Text and Images</a></p>
 <p>📚<a href="https://people.csail.mit.edu/tzumao/diffvg/" rel="noreferrer noopener" target="_blank">Differentiable Vector Graphics Rasterization for Editing and Learning</a></p>
 <p></p>
 <p></p>
-<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<h2 class="wp-block-heading">LINKS AND RESOURCES</h2>
 <p>📚 <a href="https://arxiv.org/pdf/2202.05822.pdf" rel="noreferrer noopener" target="_blank">Paper</a></p>
 <p>💻<a href="https://clipasso.github.io/clipasso/" rel="noreferrer noopener" target="_blank">Project page</a></p>
 <p></p>
@@ -311,10 +322,10 @@
 <h3 class="wp-block-heading">SPONSOR</h3>
 <p>This episode was sponsored by YOOM. YOOM is an Israeli startup dedicated to volumetric video creation. They were voted as the 2022 best start-up to work for by Dun’s 100.<br/><a href="https://www.yoom.com/careers" rel="noreferrer noopener" target="_blank">Join their team</a> that works on geometric deep learning research, implicit representations of 3D humans, NeRFs, and 3D/4D generative models.</p>
 <p><br/>Visit <a href="https://www.yoom.com/" rel="noreferrer noopener" target="_blank">YOOM.com</a>.</p>
-<h3 class="wp-block-heading"><br/>CONTACT</h3>
+<h2 class="wp-block-heading"><br/>CONTACT</h2>
 <p>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="97e3f6fbfcfef9f0b9e7f6e7f2e5e4b9e7f8f3f4f6e4e3d7f0faf6fefbb9f4f8fa" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
 <p></p>
-<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<h2 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h2>
 <p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
 <p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
 <p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
@@ -323,7 +334,7 @@
 <p></p>
 <p></p>
 <div class="jp-relatedposts" id="jp-relatedposts">
-<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<h2 class="jp-relatedposts-headline"><em>Related</em></h2>
 </div> </div>
 </div>
             </div>
