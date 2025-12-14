@@ -4,8 +4,17 @@
   "description": "Personal website and blog for Itzik Ben-Shabat",
   "main": "index.html",
   "scripts": {
+    "build:css": "csso css/style.css -o css/style.min.css",
+    "build:js": "terser js/main.js -o js/main.min.js -c -m && terser js/navigation.js -o js/navigation.min.js -c -m && terser js/data-loader.js -o js/data-loader.min.js -c -m && terser js/publications-loader.js -o js/publications-loader.min.js -c -m && terser js/blog-loader.js -o js/blog-loader.min.js -c -m && terser js/podcast-loader.js -o js/podcast-loader.min.js -c -m",
+    "build:sitemap": "uv run python scripts/generate_sitemap.py",
+    "build": "npm run build:css && npm run build:js && npm run build:sitemap",
+    "watch:css": "csso css/style.css -o css/style.min.css --watch",
     "dev": "python3 -m http.server 8000",
-    "serve": "python3 -m http.server 8000"
+    "serve": "python3 -m http.server 8000",
+    "test:performance": "npx lighthouse http://localhost:8000/index.html --output=html --output-path=./reports/index-performance.html",
+    "test:accessibility": "npx axe http://localhost:8000/index.html",
+    "prebuild": "echo '🔨 Starting build process...'",
+    "postbuild": "echo '✅ Build complete!'"
   },
   "repository": {
     "type": "git",
@@ -19,5 +28,12 @@
   ],
   "author": "Itzik Ben-Shabat",
   "license": "MIT",
-  "homepage": "https://itzikbs.com"
+  "homepage": "https://itzikbs.com",
+  "devDependencies": {
+    "@axe-core/cli": "^4.11.0",
+    "csso-cli": "^4.0.2",
+    "lighthouse": "^12.8.2",
+    "pa11y": "^9.0.1",
+    "terser": "^5.44.1"
+  }
 }
