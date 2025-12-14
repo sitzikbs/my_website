@@ -3,6 +3,14 @@
 ## Overview
 Convert the current WordPress-based personal website (https://itzikbs.com/) to a modern, lightweight, pure HTML/CSS/JavaScript implementation. The goal is to eliminate WordPress dependencies while maintaining all existing content and improving the design inspired by clean academic websites like https://www.vincentsitzmann.com/.
 
+## 🎯 Current Status
+- **Phase 1-6:** ✅ COMPLETE (Setup, Design, Content, Features, Styling)
+- **Phase 7:** ✅ COMPLETE (Performance Optimization - 78.3% image reduction, asset minification)
+- **Phase 8:** 🔄 IN PROGRESS (SEO & Accessibility - sitemap & robots.txt done)
+- **Phase 9-10:** ⏳ PENDING (Deployment, Testing, Security)
+
+**Latest Achievement:** Performance optimizations merged! See `docs/PERFORMANCE_SUMMARY.md` for metrics.
+
 ---
 
 ## Phase 1: Project Setup & Planning ✓
@@ -248,7 +256,7 @@ Convert the current WordPress-based personal website (https://itzikbs.com/) to a
   - [x] Removed render-blocking @import from CSS
   - [x] Implemented font-display: swap (in Google Fonts URL)
 
-### 7.2 Performance Testing
+### 7.2 Performance Testing (NEXT PRIORITY)
 - [ ] Test with Lighthouse:
   - [ ] Aim for 90+ performance score
   - [ ] Check accessibility score
@@ -265,7 +273,7 @@ Convert the current WordPress-based personal website (https://itzikbs.com/) to a
 
 ---
 
-## Phase 8: SEO & Accessibility
+## Phase 8: SEO & Accessibility (IN PROGRESS)
 
 ### 8.1 SEO Implementation
 - [ ] Add meta tags to all pages:
