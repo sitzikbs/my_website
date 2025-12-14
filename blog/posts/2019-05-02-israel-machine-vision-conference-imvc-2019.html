@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
 <!-- Resource Hints for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -315,7 +326,7 @@
 <p>Elad Richardson from the Israeli defense community presented their work on text detection which finds a common scale for all text elements in an image and mitigates the advantages of multi-scale approach (accurate but slow) and single scale approach (fast but not very accurate)</p>
 <p>Finally, <a href="https://chechiklab.biu.ac.il/~gal/" rel="noopener noreferrer" target="_blank">Prof. Gal Chechik</a> presented several works on extracting meaningful concepts without explicit supervision.</p>
 <div class="jp-relatedposts" id="jp-relatedposts">
-<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<h2 class="jp-relatedposts-headline"><em>Related</em></h2>
 </div> </div>
 </div>
             </div>

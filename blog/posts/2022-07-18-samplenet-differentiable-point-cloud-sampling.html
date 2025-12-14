@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
 <!-- Resource Hints for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -275,16 +286,16 @@
 <p>In this paper, they propose a point soft-projection to allow differentiating through the sampling operation and enable learning task-specific point sampling. Combined with their regularization and task-specific losses, they can reduce the number of points to 3% of the original samples with a very low impact on task performance. </p>
 <p>I met Itai for the first time <a href="https://www.itzikbs.com/cvpr-2019" rel="noreferrer noopener" target="_blank">at CVPR 2019</a>.  Being a point-cloud guy myself, I have been following his research work ever since. It is amazing how much progress he has made and I can’t wait to see what he comes up with next. It was a pleasure hosting him on the podcast. </p>
 <div id="buzzsprout-player-10330506"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10330506-itai-lang-samplenet.js?container_id=buzzsprout-player-10330506&amp;player=small" type="text/javascript"></script>
-<h3 class="wp-block-heading" id="authors">AUTHORS</h3>
+<h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><em>Itai Lang, Asaf Manor, Shai Avidan</em></p>
 <p> </p>
-<h3 class="wp-block-heading" id="abstract">ABSTRACT</h3>
+<h2 class="wp-block-heading" id="abstract">ABSTRACT</h2>
 <p>There is a growing number of tasks that work directly on point clouds. As the size of the point cloud grows, so do the computational demands of these tasks. A possible solution is to sample the point cloud first. Classic sampling approaches, such as farthest point sampling (FPS), do not consider the downstream task. A recent work showed that learning a task-specific sampling can improve results significantly. However, the proposed technique did not deal with the non-differentiability of the sampling operation and offered a workaround instead. We introduce a novel differentiable relaxation for point cloud sampling that approximates sampled points as a mixture of points in the primary input cloud. Our approximation scheme leads to consistently good results on classification and geometry reconstruction applications. We also show that the proposed sampling method can be used as a front to a point cloud registration network. This is a challenging task since sampling must be consistent across two different point clouds for a shared downstream task. In all cases, our approach outperforms existing non-learned and learned sampling alternatives. Our code is publicly available.</p>
 <p> </p>
-<h3 class="wp-block-heading" id="related-papers">RELATED PAPERS</h3>
+<h2 class="wp-block-heading" id="related-papers">RELATED (WORKS|PAPERS)</h2>
 <p>📚 <a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Dovrat_Learning_to_Sample_CVPR_2019_paper.html">Learning to Sample</a></p>
 <p>📚 </p>
-<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<h2 class="wp-block-heading">LINKS AND RESOURCES</h2>
 <p>💻</p>
 <p>📚 </p>
 <p></p>
@@ -298,10 +309,10 @@
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/NgpYkumkTAc?feature=oembed" title="SampleNet : Differentiable Point Cloud Sampling -  Itai Lang on the Talking Papers Podcast" width="800"></iframe>
 </div></figure>
 <p>Recorded on February 15th 2022.</p>
-<h3 class="wp-block-heading"><br/>CONTACT</h3>
+<h2 class="wp-block-heading"><br/>CONTACT</h2>
 <p>If you would like to be a guest, sponsor or just share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="e99d88858280878ec79988998c9b9ac799868d8a889a9da98e84888085c78a8684" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
 <p></p>
-<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<h2 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h2>
 <p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
 <p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
 <p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
@@ -310,7 +321,7 @@
 <p></p>
 <p></p>
 <div class="jp-relatedposts" id="jp-relatedposts">
-<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<h2 class="jp-relatedposts-headline"><em>Related</em></h2>
 </div> </div>
 </div>
             </div>
