@@ -290,7 +290,10 @@ Convert the current WordPress-based personal website (https://itzikbs.com/) to a
   - [x] WebSite schema for other pages
   - [x] Applied to 81 HTML files
 - [x] Add canonical URLs - ✅ COMPLETE
-- [ ] Implement proper heading hierarchy (h1, h2, h3, etc.) - needs review
+- [x] Implement proper heading hierarchy (h1, h2, h3, etc.) - ✅ IMPROVED
+  - [x] Fixed 273 heading issues across 71 blog posts
+  - [x] Reduced files with issues from 61 to 10
+  - [x] Changed h3 sections to h2 for proper semantic structure
 
 ### 8.2 Accessibility (WCAG 2.1 AA)
 - [ ] Semantic HTML throughout
@@ -330,8 +333,20 @@ Convert the current WordPress-based personal website (https://itzikbs.com/) to a
   - [ ] Image optimization
   - [ ] Asset copying
 
-### 9.3 Backup & Version Control
-- [ ] Ensure all content is in Git
+### 9.3 Analytics & Monitoring
+- [x] Google Analytics 4 setup - ✅ COMPLETE
+  - [x] GA4 tracking code added to all 81 HTML files
+  - [x] Privacy-compliant settings (anonymize_ip, secure cookies)
+  - [ ] **TODO**: Update GA4_MEASUREMENT_ID in scripts/add_google_analytics.py with actual ID
+  - [ ] Set up Google Analytics property at https://analytics.google.com
+  - [ ] Verify tracking in GA4 Real-time reports after deployment
+- [ ] Google Search Console (after deployment):
+  - [ ] Add property and verify ownership
+  - [ ] Submit sitemap.xml
+  - [ ] Monitor indexation status
+
+### 9.4 Backup & Version Control
+- [x] Ensure all content is in Git
 - [ ] Document backup procedures
 - [ ] Set up automated backups (if using external services)
 
