@@ -665,27 +665,31 @@
 <p>It is much easier to understand the 3DmFV for points with some nice visualizations.</p>
 <p>Let’s take a single 3D point in a single Gaussian and show its 3DmFV (here the grid is  basically 1x1x1):</p>
 <p style="text-align: center;"><picture>
-  <source srcset="../../assets/images/blog/fv_3d000-300x225-200.webp" type="image/webp" media="(max-width: 399px)">
+  <source srcset="../../assets/images/blog/fv_3d000-300x225-200.webp" type="image/webp">
   <img src="../../assets/images/blog/fv_3d000-300x225.png" alt="" class="alignnone size-medium wp-image-790" width="300" height="225" loading="lazy">
+</picture>
 </picture></p>
 <p>Now let’s see what happens when we move the point (hint 3DmFV changes)</p>
 <p style="text-align: center;"><picture>
-  <source srcset="../../assets/images/blog/fv_3d0.500-300x225-200.webp" type="image/webp" media="(max-width: 399px)">
+  <source srcset="../../assets/images/blog/fv_3d0.500-300x225-200.webp" type="image/webp">
   <img src="../../assets/images/blog/fv_3d0.500-300x225.png" alt="" class="alignnone size-medium wp-image-791" width="300" height="225" loading="lazy">
+</picture>
 </picture></p>
 <p>Next, we can see what happens when we move the point all around (the .gif file might take a few seconds to load).</p>
 <p style="text-align: center;"><img src="../../assets/images/blog/3d_fv_smaller-compressor.gif" alt="" class="alignnone size-full wp-image-801" width="350" height="329" loading="lazy"></p>
 <p>Finally, let’s see how the 3DmFV looks like when we take multiple points on a GMM of 2x2x2:</p>
 <p style="text-align: center;"><picture>
-  <source srcset="../../assets/images/blog/fv_3d_model-200.webp" type="image/webp" media="(max-width: 399px)">
+  <source srcset="../../assets/images/blog/fv_3d_model-200.webp" type="image/webp">
   <img src="../../assets/images/blog/fv_3d_model.png" alt="" class="alignnone wp-image-792 size-full" width="300" height="225" loading="lazy">
+</picture>
 </picture></p>
 <h2>Reconstruction from 3DmFV</h2>
 <p>Some may argue that 3DmFV is simply another handcrafted feature. However, we argue that it is simply another form to represent the data and therefore, the process is reversible. It is possible to show analytically that for simple cases it is reversible (single point, single Gaussian, points on a plane in a Gaussian). It gets a bit more complex in the general case when more points and more Gaussians are present. Therefore, we trained a simple 3DmFV decoder that is able to take a 3DmFV representation as input and produce a 3D point cloud as output.</p>
 <p>Here is an image of a reconstructed point cloud of an airplane:</p>
 <p><picture>
-  <source srcset="../../assets/images/blog/decoder_original_vs_reconstruction-01-200.webp" type="image/webp" media="(max-width: 399px)">
+  <source srcset="../../assets/images/blog/decoder_original_vs_reconstruction-01-200.webp" type="image/webp">
   <img src="../../assets/images/blog/decoder_original_vs_reconstruction-01.png" alt="" class="size-full wp-image-830 aligncenter" width="300" height="98" loading="lazy">
+</picture>
 </picture></p>
 <h2>The Code</h2>
 <p>In order to recreate the images above you can use my repository for this <a href="https://github.com/sitzikbs/3DmFV-Tutorial" rel="noopener" target="_blank">3DmFV tutorial on my GitHub</a>.</p>
