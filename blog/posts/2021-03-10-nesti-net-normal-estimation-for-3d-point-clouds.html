@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
 <!-- Resource Hints for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -272,7 +283,7 @@
                 <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
 <div class="elementor-widget-container">
 <p>Important links:  [<a href="https://arxiv.org/abs/1812.00709" rel="noopener noreferrer" target="_blank">paper</a>], [<a href="https://github.com/sitzikbs/Nesti-Net" rel="noopener noreferrer" target="_blank">code</a>], [<a href="https://www.youtube.com/watch?v=E7PudeA4XvM" rel="noopener noreferrer" target="_blank">video</a>],[<a aria-label="poster (opens in a new tab)" href="https://www.itzikbs.com/wp-content/uploads/2019/06/Nesti-Net_poster.pdf" rel="noreferrer noopener" target="_blank">poster</a>]</p>
-<h3 class="wp-block-heading">Abstract</h3>
+<h2 class="wp-block-heading">ABSTRACT</h2>
 <p>We propose a normal estimation method for unstructured 3D point clouds. This method, called Nesti-Net, builds on a new local point cloud representation which consists of multi-scale point statistics (MuPS), estimated on a local coarse Gaussian grid. This representation is suitable input to a CNN architecture. The normals are estimated using a mixture-of-experts (MoE) architecture, which relies on a data-driven approach for selecting the optimal scale around each point and encourages sub-network specialization. Interesting insights into the network’s resource distribution are provided. The scale prediction significantly improves robustness to different noise levels, point density variations and different levels of detail. We achieve state-of-the-art results on a benchmark synthetic dataset and present qualitative results on real scanned scenes.  </p>
 <p>Code and trained models are available on <a href="https://github.com/sitzikbs/Nesti-Net"> https://github.com/sitzikbs/Nesti-Net</a>.</p>
 <div class="wp-block-image"><figure class="aligncenter is-resized"><picture>
@@ -297,7 +308,7 @@ year={2019} }</code></pre>
 <p>Additional tutorials: </p>
 <p><a aria-label="How to visualize normal vectors on 3D point clouds ? (opens in a new tab)" href="https://www.itzikbs.com/how-to-visualize-normal-vectors-on-3d-point-clouds" rel="noreferrer noopener" target="_blank">How to visualize normal vectors on 3D point clouds ?</a></p>
 <div class="jp-relatedposts" id="jp-relatedposts">
-<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<h2 class="jp-relatedposts-headline"><em>Related</em></h2>
 </div> </div>
 </div>
             </div>

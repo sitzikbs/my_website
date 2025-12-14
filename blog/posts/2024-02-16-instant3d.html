@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
 <!-- Resource Hints for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -277,15 +288,15 @@
 <p>I must say that the results are truly impressive, especially given the remarkable speed at which they are generated. As someone with a strong inclination towards 3D, the notion of going through a 2D projection initially felt peculiar to me. However, I can’t argue with the visually striking outputs that Instant3D produces. This research underscores the importance of obtaining more and better 3D data, further pushing the boundaries of text-to-3D conversion.</p>
 <p>It’s worth mentioning that I was introduced to Jiahao through Yicong Hong, another guest on the podcast who coincidentally happens to be a co-author on this paper as well. Yicong was aPhD student at the Australian National University (ANU) while I was doing my postdoc there, also interned at Adobe with Jiahao. It’s always interesting to see connections and collaborations come full circle in the research community.</p>
 <p>While I regret that the Instant3D model is not made public, I understand Adobe’s decision, considering the substantial computational resources required to train such models and copyright issues. Nevertheless, I am excited to see what future research Jiahao and his collaborators will bring to the field of text-to-3D conversion. Stay tuned for more exciting episodes of the Talking Papers Podcast, where we continue to delve into the latest research and discoveries in academia.</p>
-<h3 class="wp-block-heading">AUTHORS</h3>
+<h2 class="wp-block-heading">AUTHORS</h2>
 <p><br/>Jiahao Li, Hao Tan, Kai Zhang, Zexiang Xu, Fujun Luan, Yinghao Xu, Yicong Hong, Kalyan Sunkavalli, Greg Shakhnarovich, Sai Bi</p>
-<h3 class="wp-block-heading">ABSTRACT</h3>
+<h2 class="wp-block-heading">ABSTRACT</h2>
 <p><br/>Text-to-3D with diffusion models has achieved remarkable progress in recent years. However, existing methods either rely on score distillation-based optimization which suffer from slow inference, low diversity and Janus problems, or are feed-forward methods that generate low-quality results due to the scarcity of 3D training data. In this paper, we propose Instant3D, a novel method that generates high-quality and diverse 3D assets from text prompts in a feed-forward manner. We adopt a two-stage paradigm, which first generates a sparse set of four structured and consistent views from text in one shot with a fine-tuned 2D text-to-image diffusion model, and then directly regresses the NeRF from the generated images with a novel transformer-based sparse-view reconstructor. Through extensive experiments, we demonstrate that our method can generate diverse 3D assets of high visual quality within 20 seconds, which is two orders of magnitude faster than previous optimization-based methods that can take 1 to 10 hours. Our project webpage: this https URL.</p>
-<h3 class="wp-block-heading">RELATED WORKS</h3>
+<h2 class="wp-block-heading">RELATED (WORKS|PAPERS)</h2>
 <p>📚<a href="https://dreamfusion3d.github.io/" rel="noreferrer noopener" target="_blank">DreamFusion</a></p>
 <p>📚<a href="https://github.com/openai/shap-e" rel="noreferrer noopener" target="_blank">Shape-E</a></p>
 <p>📚<a href="https://ml.cs.tsinghua.edu.cn/prolificdreamer/" rel="noreferrer noopener" target="_blank">Prolific Dreamer</a></p>
-<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<h2 class="wp-block-heading">LINKS AND RESOURCES</h2>
 <p>📚<a href="https://arxiv.org/abs/2311.06214" rel="noreferrer noopener" target="_blank">Preprint</a></p>
 <p>💻<a href="https://jiahao.ai/instant3d/" rel="noreferrer noopener" target="_blank">Project page</a></p>
 <p>To stay up to date with his latest research, follow on:</p>
@@ -300,15 +311,15 @@
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8Wr4wsSPM20?feature=oembed" title="Instant3D (ICLR, 2024) with Jiahao Li on Talking Papers Podcast" width="800"></iframe>
 </div></figure>
 <p>This episode was recorded on January 24th 2024</p>
-<h3 class="wp-block-heading">CONTACT</h3>
+<h2 class="wp-block-heading">CONTACT</h2>
 <p><br/>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="aedacfc2c5c7c0c980decfdecbdcdd80dec1cacdcfdddaeec9c3cfc7c280cdc1c3" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
-<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<h2 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h2>
 <p><br/>🎧Subscribe on your favourite <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">podcast app</a></p>
 <p>📧Subscribe to our <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">mailing list</a></p>
 <p>🐦Follow us on <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">Twitter</a></p>
 <p>🎥Subscribe to our </p>
 <div class="jp-relatedposts" id="jp-relatedposts">
-<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<h2 class="jp-relatedposts-headline"><em>Related</em></h2>
 </div> </div>
 </div>
             </div>

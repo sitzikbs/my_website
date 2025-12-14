@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
 <!-- Resource Hints for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -274,14 +285,14 @@
 <p>In this paper, they tackled the question of how to train a coordinate network? They do this by introducing a new type of neural network architecture that has an analytical Fourier spectrum. This allows them to do things like multi-scale signal representation, and, it gives an interpretable architecture, with an explicitly controllable bandwidth.<br/> </p>
 <p>David recently completed his Postdoc at Stanford and will join the University of Toronto as an Assistant Professor. During our chat, I got to know a stellar academic with a unique view of the field and where it is going. We even got to <a href="https://www.itzikbs.com/cvpr-2022" rel="noreferrer noopener" target="_blank">meet in person at CVPR</a>. I am looking forward to seeing what he comes up with next. It was a pleasure having him on the podcast.</p>
 <div id="buzzsprout-player-11080450"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/11080450-bacon-david-lindell.js?container_id=buzzsprout-player-11080450&amp;player=small" type="text/javascript"></script>
-<h3 class="wp-block-heading" id="authors">AUTHORS</h3>
+<h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><em>David B. Lindell, Dave Van Veen, Jeong Joon Park, Gordon Wetzstein</em></p>
 <p> </p>
-<h3 class="wp-block-heading" id="abstract">ABSTRACT</h3>
+<h2 class="wp-block-heading" id="abstract">ABSTRACT</h2>
 <p>Neural implicit fields have recently emerged as a useful representation for 3D shapes. These fields are Coordinate-based networks have emerged as a powerful tool for 3D representation and scene reconstruction. These networks are trained to map continuous input coordinates to the value of a signal at each point. Still, current architectures are black boxes: their spectral characteristics cannot be easily analyzed, and their behavior at unsupervised points is difficult to predict. Moreover, these networks are typically trained to represent a signal at a single scale, so naive downsampling or upsampling results in artifacts. We introduce band-limited coordinate networks (BACON), a network architecture with an analytical Fourier spectrum. BACON has constrained behavior at unsupervised points, can be designed based on the spectral characteristics of the represented signal, and can represent signals at multiple scales without per-scale supervision. We demonstrate BACON for multiscale neural representation of images, radiance fields, and 3D scenes using signed distance functions and show that it outperforms conventional single-scale coordinate networks in terms of interpretability and quality.</p>
 <p> </p>
 <p></p>
-<h3 class="wp-block-heading" id="related-papers">RELATED PAPERS</h3>
+<h2 class="wp-block-heading" id="related-papers">RELATED (WORKS|PAPERS)</h2>
 <p>📚</p>
 <p>📚<a href="https://bmild.github.io/fourfeat/">Fourier Features Networks (FFN)</a></p>
 <p>📚<a href="http://proceedings.mlr.press/v97/anil19a.html" rel="noreferrer noopener" target="_blank">Multiplicative Filter Networks (MFN)</a></p>
@@ -289,7 +300,7 @@
 <p>📚<a href="https://arxiv.org/abs/2206.00746" rel="noreferrer noopener" target="_blank">Followup work: Residual MFN</a></p>
 <p></p>
 <p></p>
-<h3 class="wp-block-heading">LINKS AND RESOURCES</h3>
+<h2 class="wp-block-heading">LINKS AND RESOURCES</h2>
 <p>💻<a href="https://davidlindell.com/publications/bacon">Project website</a></p>
 <p>📚 <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Lindell_BACON_Band-Limited_Coordinate_Networks_for_Multiscale_Scene_Representation_CVPR_2022_paper.pdf">Paper</a></p>
 <p>💻<a href="https://github.com/computational-imaging/bacon">Code</a></p>
@@ -306,10 +317,10 @@
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zWxX_KDrFAU?feature=oembed" title="BACON: Band-Limited Coordinate Networks ... (CVPR 2022) David Lindell on Talking Papers" width="800"></iframe>
 </div></figure>
 <p>Recorded on June 15th 2022.</p>
-<h3 class="wp-block-heading"><br/>CONTACT</h3>
+<h2 class="wp-block-heading"><br/>CONTACT</h2>
 <p>If you would like to be a guest, sponsor or just share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="8cf8ede0e7e5e2eba2fcedfce9feffa2fce3e8efedfff8ccebe1ede5e0a2efe3e1" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
 <p></p>
-<h3 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h3>
+<h2 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h2>
 <p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
 <p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
 <p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
@@ -318,7 +329,7 @@
 <p></p>
 <p></p>
 <div class="jp-relatedposts" id="jp-relatedposts">
-<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<h2 class="jp-relatedposts-headline"><em>Related</em></h2>
 </div> </div>
 </div>
             </div>
