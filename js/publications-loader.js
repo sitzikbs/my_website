@@ -38,7 +38,7 @@ function renderHighlights(publications) {
     publications.sort((a, b) => parseInt(b.year) - parseInt(a.year));
 
     const html = publications.map(pub => `
-        <div class="publication-item" style="display: flex; gap: 20px; margin-bottom: 2rem; align-items: start;">
+        <div class="publication-item" style="display: flex; gap: 1.5rem; margin-bottom: 0.5rem; align-items: start;">
             ${pub.image ? `
                 <div class="publication-image" style="flex: 0 0 200px;">
                     <img src="${pub.image}" alt="${pub.title}" style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
@@ -51,7 +51,7 @@ function renderHighlights(publications) {
                 
                 <div class="publication-links" style="margin-top: 0.75rem;">
                     ${pub.links ? pub.links.map(link => 
-                        `<a href="${link.url}" target="_blank" class="btn-link" style="display: inline-block; margin-right: 10px; padding: 4px 8px; background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 4px; text-decoration: none; font-size: 0.85rem;">[${link.name}]</a>`
+                        `<a href="${link.url}" target="_blank" class="btn-link" style="display: inline-block; margin-right: 10px; padding: 4px 8px; background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 4px; text-decoration: none; font-size: 0.85rem;">${link.name}</a>`
                     ).join('') : ''}
                 </div>
             </div>
@@ -89,7 +89,7 @@ function renderPublications(publications) {
         html += `<h2 class="year-heading" style="color: var(--primary-color); margin: 2rem 0 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem;">${year}</h2>`;
         
         html += pubsByYear[year].map((pub, index) => `
-            <div class="publication-item" style="display: flex; gap: 20px; margin-bottom: 2rem; align-items: start;">
+            <div class="publication-item" style="display: flex; gap: 1.5rem; margin-bottom: 0.5rem; align-items: start;">
                 ${pub.image ? `
                     <div class="publication-image" style="flex: 0 0 200px;">
                         <img src="${pub.image}" alt="${pub.title}" style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
