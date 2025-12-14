@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Resource Hints for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
-    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="../../css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Blog post specific styles */
@@ -223,7 +228,11 @@
 <p></p>
 <h3 class="wp-block-heading">Abstract </h3>
 <p>We propose a method for 3D point cloud surface fitting. This method, called DeepFit, incorporates a neural network to learn point-wise weights for weighted least squares polynomial surface fitting. The learned weights act as a soft selection for the neighborhood of surface points thus avoiding the scale selection required of previous methods. To train the network we propose a novel surface consistency loss that improves point weight estimation. The method enables extracting normal vectors and other geometrical properties, such as principal curvatures, the latter were not presented as ground truth during training. We achieve state-of-the-art results on a benchmark normal and curvature estimation dataset, demonstrate robustness to noise, outliers and density variations, and show its application on noise removal.</p>
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-1093" data-attachment-id="1093" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="DeepFit_Pipeline" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?fit=800%2C320&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?fit=300%2C120&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?fit=2009%2C805&amp;ssl=1" data-orig-size="2009,805" data-permalink="https://www.itzikbs.com/deepfit_pipeline" data-recalc-dims="1" decoding="async" fetchpriority="high" height="320" sizes="(max-width: 800px) 100vw, 800px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline-1024x410.png?resize=800%2C320" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?resize=1024%2C410&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?resize=300%2C120&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?resize=768%2C308&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?resize=1536%2C615&amp;ssl=1 1536w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?w=2009&amp;ssl=1 2009w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/DeepFit_Pipeline.png?w=1600&amp;ssl=1 1600w" width="800"/><figcaption>DeepFit 3D point cloud surface fitting pipeline </figcaption></figure>
+<figure class="wp-block-image size-large"><picture>
+  <source srcset="assets/images/blog/DeepFit_Pipeline-1024x410-400.webp" type="image/webp" media="(min-width: 400px)">
+  <source srcset="assets/images/blog/DeepFit_Pipeline-1024x410-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/DeepFit_Pipeline-1024x410.png" alt="" class="wp-image-1093" width="799" height="320" loading="lazy">
+</picture><figcaption>DeepFit 3D point cloud surface fitting pipeline </figcaption></figure>
 <h3 class="wp-block-heading">Cite</h3>
 <p>arXiv (preprint):</p>
 <pre class="wp-block-code"><code>@article{ben2020deepfit,
@@ -252,6 +261,6 @@
             </div>
         </article>
     </main>
-    <script src="../../js/main.js"></script>
+    <script src="../../js/main.min.js".replace(".js", ".min.js")></script>
 </body>
 </html>

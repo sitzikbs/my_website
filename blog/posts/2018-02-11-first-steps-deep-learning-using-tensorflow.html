@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Resource Hints for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
-    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="../../css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Blog post specific styles */
@@ -236,7 +241,10 @@
 </ul>
 <p>When I felt that I had a better understanding of this “magic” I immediately wanted to apply it to my engineering problems – a relatively unharvested field of research. I found (based on recommendations from several colleagues) that the best tool for implementation would be to use Google’s <a href="https://www.tensorflow.org/" rel="noopener" target="_blank">TensorFlow</a> with <a href="https://www.python.org/" rel="noopener" target="_blank">Python</a>.</p>
 <p> </p>
-<p><img alt="TensorFlow logo - Library includes Neural Network tools" class="size-medium wp-image-368 aligncenter" data-attachment-id="368" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="TensorFlow Logo" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/02/TensorFlow-Logo.png?fit=432%2C78&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/02/TensorFlow-Logo.png?fit=300%2C54&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/02/TensorFlow-Logo.png?fit=432%2C78&amp;ssl=1" data-orig-size="432,78" data-permalink="https://www.itzikbs.com/first-steps-deep-learning-using-tensorflow/tensorflow-logo" data-recalc-dims="1" decoding="async" height="54" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/02/TensorFlow-Logo-300x54.png?resize=300%2C54" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/02/TensorFlow-Logo.png?resize=300%2C54&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/02/TensorFlow-Logo.png?w=432&amp;ssl=1 432w" width="300"/></p>
+<p><picture>
+  <source srcset="assets/images/blog/TensorFlow-Logo-300x54-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/TensorFlow-Logo-300x54.png" alt="TensorFlow logo - Library includes Neural Network tools" class="size-medium wp-image-368 aligncenter" width="300" height="54" loading="lazy">
+</picture></p>
 <p> </p>
 <p>Confession: I have not worked with python before + I work on a windows machine.</p>
 <p>However, learning python for an experienced programmer like myself proved to be relatively easy (once you get used to all of these indentations instead of brackets) and setting it up on a windows machine took a few hours (TensorFlow currently supports python 3.5 on windows machines so I had to <a href="https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/" rel="noopener" target="_blank">create a virtual environment</a> on my anaconda ).</p>
@@ -286,6 +294,6 @@ print(test_Accuracy)
             </div>
         </article>
     </main>
-    <script src="../../js/main.js"></script>
+    <script src="../../js/main.min.js".replace(".js", ".min.js")></script>
 </body>
 </html>

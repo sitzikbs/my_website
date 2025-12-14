@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Resource Hints for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
-    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="../../css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Blog post specific styles */
@@ -244,8 +249,11 @@
 <p>Here, <img alt="w_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=w_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/>, <img alt="b_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=b_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/>, <img alt="c_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=c_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> are parameters learned by the network.</p>
 <p>The netVLAD architecture is presented below</p>
 <p> </p>
-<figure aria-describedby="caption-attachment-451" class="wp-caption aligncenter" id="attachment_451" style="width: 1024px"><img alt="" class="wp-image-451 size-large" data-attachment-id="451" data-comments-opened="0" data-image-caption="&lt;p&gt;netVLAD architecture as presented in the original netVALD papre by  R. Arandjelovic&lt;/p&gt;
-" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="netVLAD_Architecture" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?fit=800%2C154&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?fit=300%2C58&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?fit=2099%2C404&amp;ssl=1" data-orig-size="2099,404" data-permalink="https://www.itzikbs.com/feature-aggregatoin-using-vlad-netvlad/netvlad_architecture" data-recalc-dims="1" decoding="async" fetchpriority="high" height="154" sizes="(max-width: 800px) 100vw, 800px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture-1024x197.png?resize=800%2C154" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?resize=1024%2C197&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?resize=300%2C58&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?resize=768%2C148&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture.png?w=1600&amp;ssl=1 1600w" width="800"/><figcaption class="wp-caption-text" id="caption-attachment-451"><span style="color: #999999;"><em><span style="color: #999999;">netVLAD architecture as presented in the original <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Arandjelovic_NetVLAD_CNN_Architecture_CVPR_2016_paper.pdf" rel="noopener" target="_blank">netVALD </a>paper </span></em><em>by R. Arandjelovic et al.</em></span></figcaption></figure>
+<figure aria-describedby="caption-attachment-451" class="wp-caption aligncenter" id="attachment_451" style="width: 1024px"><picture>
+  <source srcset="assets/images/blog/netVLAD_Architecture-1024x197-400.webp" type="image/webp" media="(min-width: 400px)">
+  <source srcset="assets/images/blog/netVLAD_Architecture-1024x197-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/netVLAD_Architecture-1024x197.png" alt="" class="wp-image-451 size-large" width="800" height="154" loading="lazy">
+</picture><figcaption class="wp-caption-text" id="caption-attachment-451"><span style="color: #999999;"><em><span style="color: #999999;">netVLAD architecture as presented in the original <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Arandjelovic_NetVLAD_CNN_Architecture_CVPR_2016_paper.pdf" rel="noopener" target="_blank">netVALD </a>paper </span></em><em>by R. Arandjelovic et al.</em></span></figcaption></figure>
 <p> </p>
 <p>In the original paper, they stated that the centers and weights should be initialized to some pre-trained value (using kmeans on features learned without the VLAD layer). However, I experienced no change in performance while just using the standard truncated normal distribution initialization or Xavier.</p>
 <p> </p>
@@ -258,6 +266,6 @@
             </div>
         </article>
     </main>
-    <script src="../../js/main.js"></script>
+    <script src="../../js/main.min.js".replace(".js", ".min.js")></script>
 </body>
 </html>
