@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Resource Hints for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
-    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="../../css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Blog post specific styles */
@@ -227,7 +232,10 @@
 <p>Here <code>x,y,z</code> are the point coordinates and <code>u,v,w</code> are the vector components. </p>
 <h4 class="wp-block-heading">The problem</h4>
 <p>The problem was that for complex 3D point clouds (like from the NYU Depth V2 dataset) this visualization is not very informative (it is very hard to see where the little arrows are pointing). </p>
-<div class="wp-block-image"><figure class="aligncenter is-resized"><img alt="3D point clouds with normal vectors  visualization as arrows" class="wp-image-998" data-attachment-id="998" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"1"}' data-image-title="nyu_v2_quiver" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?fit=800%2C520&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?fit=300%2C195&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?fit=1140%2C742&amp;ssl=1" data-orig-size="1140,742" data-permalink="https://www.itzikbs.com/how-to-visualize-normal-vectors-on-3d-point-clouds/nyu_v2_quiver" data-recalc-dims="1" decoding="async" fetchpriority="high" height="248" sizes="(max-width: 383px) 100vw, 383px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver-1024x666.jpg?resize=383%2C248" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?resize=1024%2C666&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?resize=300%2C195&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?resize=768%2C500&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_quiver.jpg?w=1140&amp;ssl=1 1140w" width="383"/><figcaption>Normal vector visualization using <code>quiver3</code> of a scene from NYU Depth V2  </figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter is-resized"><picture>
+  <source srcset="assets/images/blog/nyu_v2_quiver-1024x666-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/nyu_v2_quiver-1024x666.jpg" alt="3D point clouds with normal vectors  visualization as arrows" class="wp-image-998" width="383" height="248" loading="lazy">
+</picture><figcaption>Normal vector visualization using <code>quiver3</code> of a scene from NYU Depth V2  </figcaption></figure></div>
 <h4 class="wp-block-heading">The solution</h4>
 <p>Therefore, I created a nice function that maps a vector to the RGB cube: </p>
 <pre class="wp-block-code"><code>[RGB] = Sphere2RGBCube(V)</code></pre>
@@ -235,14 +243,22 @@
 <p>For the comprehensive demonstration simply run </p>
 <pre class="wp-block-code"><code>TestSphere2CubeMapping();</code></pre>
 <p>And you will get the following interface :</p>
-<div class="wp-block-image"><figure class="aligncenter is-resized"><img alt="" class="wp-image-992" data-attachment-id="992" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="Point_loud_rgb_color_conversion" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?fit=800%2C458&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?fit=300%2C172&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?fit=1469%2C841&amp;ssl=1" data-orig-size="1469,841" data-permalink="https://www.itzikbs.com/how-to-visualize-normal-vectors-on-3d-point-clouds/point_loud_rgb_color_conversion" decoding="async" height="255" sizes="(max-width: 447px) 100vw, 447px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?fit=1024%2C586" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?w=1469&amp;ssl=1 1469w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?resize=300%2C172&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?resize=768%2C440&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/Point_loud_rgb_color_conversion.png?resize=1024%2C586&amp;ssl=1 1024w" width="447"/><figcaption>Normal Vector color mapping comprehensive demonstration</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter is-resized"><picture>
+  <source srcset="assets/images/blog/Point_loud_rgb_color_conversion-800.webp" type="image/webp" media="(min-width: 800px)">
+  <source srcset="assets/images/blog/Point_loud_rgb_color_conversion-400.webp" type="image/webp" media="(min-width: 400px)">
+  <source srcset="assets/images/blog/Point_loud_rgb_color_conversion-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/Point_loud_rgb_color_conversion.png" alt="" class="wp-image-992" width="1024" height="586" loading="lazy">
+</picture><figcaption>Normal Vector color mapping comprehensive demonstration</figcaption></figure></div>
 <p>In the top left, you can see the RGB cube. At the bottom left, you can see the unit sphere with the mapped colors. Both include a small red dot which you can move using the arrow keys. To the right, you can see the color and its corresponding RGB values of the red dot. This illustrates what the mapping function does – it takes a unit vector (a point on the sphere), finds where it intersects the RGB cube, and uses that color as the vector representation. </p>
 <p>Note that there are actually two mapping functions:</p>
 <pre class="wp-block-code"><code>[RGB] = Sphere2RGBCube(V)
 [RGB] = Sphere2RGBCube_accurate(V)</code></pre>
 <p>The main difference between the two is that the “accurate” version generates RGB colors on the cube planes. When plotting a sphere, for example, it is evident that the color mapping is not as smooth as one may want. Therefore, the “non-accurate” version creates a smoother color mapping (basically a sphere encapsulated within the RGB cube). </p>
 <p>Finally, here is an example of the same point cloud as before, but this time with color mapping:  </p>
-<div class="wp-block-image"><figure class="aligncenter is-resized"><img alt="3D point clouds with normal vectors color mapped visualization" class="wp-image-994" data-attachment-id="994" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="nyu_v2_1" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?fit=800%2C600&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?fit=300%2C225&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?fit=875%2C656&amp;ssl=1" data-orig-size="875,656" data-permalink="https://www.itzikbs.com/how-to-visualize-normal-vectors-on-3d-point-clouds/nyu_v2_1" data-recalc-dims="1" decoding="async" height="296" loading="lazy" sizes="(max-width: 396px) 100vw, 396px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?resize=396%2C296" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?w=875&amp;ssl=1 875w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/04/nyu_v2_1.png?resize=768%2C576&amp;ssl=1 768w" width="396"/><figcaption>Normal vector visualization using RGB mapping of a scene from NYU Depth V2 <br/></figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter is-resized"><picture>
+  <source srcset="assets/images/blog/nyu_v2_1-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/nyu_v2_1.png" alt="3D point clouds with normal vectors color mapped visualization" class="wp-image-994" width="300" height="225" loading="lazy">
+</picture><figcaption>Normal vector visualization using RGB mapping of a scene from NYU Depth V2 <br/></figcaption></figure></div>
 <p>This code was used in our recent paper on <a aria-label="normal estimation for 3D point clouds (opens in a new tab)" href="https://www.itzikbs.com/nesti-net-normal-estimation-for-3d-point-clouds" rel="noreferrer noopener" target="_blank">normal estimation for 3D point clouds</a>. If you find this post and code useful, please cite it 🙂 </p>
 <p></p>
 <div class="jp-relatedposts" id="jp-relatedposts">
@@ -252,6 +268,6 @@
             </div>
         </article>
     </main>
-    <script src="../../js/main.js"></script>
+    <script src="../../js/main.min.js".replace(".js", ".min.js")></script>
 </body>
 </html>

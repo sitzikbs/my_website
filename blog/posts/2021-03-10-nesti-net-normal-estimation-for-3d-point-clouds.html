@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Resource Hints for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
-    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="../../css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Blog post specific styles */
@@ -224,7 +229,11 @@
 <h3 class="wp-block-heading">Abstract</h3>
 <p>We propose a normal estimation method for unstructured 3D point clouds. This method, called Nesti-Net, builds on a new local point cloud representation which consists of multi-scale point statistics (MuPS), estimated on a local coarse Gaussian grid. This representation is suitable input to a CNN architecture. The normals are estimated using a mixture-of-experts (MoE) architecture, which relies on a data-driven approach for selecting the optimal scale around each point and encourages sub-network specialization. Interesting insights into the network’s resource distribution are provided. The scale prediction significantly improves robustness to different noise levels, point density variations and different levels of detail. We achieve state-of-the-art results on a benchmark synthetic dataset and present qualitative results on real scanned scenes.  </p>
 <p>Code and trained models are available on <a href="https://github.com/sitzikbs/Nesti-Net"> https://github.com/sitzikbs/Nesti-Net</a>.</p>
-<div class="wp-block-image"><figure class="aligncenter is-resized"><img alt="Nesti-Net normal estimation from unstructured 3D point clouds pipeline" class="wp-image-945" data-attachment-id="945" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="NestiNet_pipeline-01_for_web" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/03/NestiNet_pipeline-01_for_web.jpg?fit=800%2C282&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/03/NestiNet_pipeline-01_for_web.jpg?fit=300%2C106&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/03/NestiNet_pipeline-01_for_web.jpg?fit=1024%2C361&amp;ssl=1" data-orig-size="1024,361" data-permalink="https://www.itzikbs.com/?attachment_id=945" data-recalc-dims="1" decoding="async" fetchpriority="high" height="174" sizes="(max-width: 495px) 100vw, 495px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/03/NestiNet_pipeline-01_for_web-1024x361.jpg?resize=495%2C174" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/03/NestiNet_pipeline-01_for_web.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/03/NestiNet_pipeline-01_for_web.jpg?resize=300%2C106&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/03/NestiNet_pipeline-01_for_web.jpg?resize=768%2C271&amp;ssl=1 768w" width="495"/><figcaption>Nesti-Net normal estimation pipeline</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter is-resized"><picture>
+  <source srcset="assets/images/blog/NestiNet_pipeline-01_for_web-1024x361-400.webp" type="image/webp" media="(min-width: 400px)">
+  <source srcset="assets/images/blog/NestiNet_pipeline-01_for_web-1024x361-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/NestiNet_pipeline-01_for_web-1024x361.jpg" alt="Nesti-Net normal estimation from unstructured 3D point clouds pipeline" class="wp-image-945" width="495" height="174" loading="lazy">
+</picture><figcaption>Nesti-Net normal estimation pipeline</figcaption></figure></div>
 <h3 class="wp-block-heading"><strong>Cite</strong>:</h3>
 <p>arXiv (preprint):</p>
 <pre class="wp-block-code"><code>@article{ben2018nesti,   
@@ -248,6 +257,6 @@ year={2019} }</code></pre>
             </div>
         </article>
     </main>
-    <script src="../../js/main.js"></script>
+    <script src="../../js/main.min.js".replace(".js", ".min.js")></script>
 </body>
 </html>

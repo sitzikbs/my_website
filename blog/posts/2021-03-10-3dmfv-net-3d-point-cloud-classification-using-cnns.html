@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Resource Hints for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yizhak Ben-Shabat (Itzik), PhD - Itzik Ben-Shabat</title>
-    <link rel="stylesheet" href="../../css/style.css?v=5">
+    <link rel="stylesheet" href="../../css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Blog post specific styles */
@@ -229,14 +234,21 @@
 <h2 class="wp-block-heading">3DmFV Representation</h2>
 <p>Recall that the 3DmFV representation converts the 3D point cloud  (which is unstructured, unordered and may have a variable number of points) into a special kind of statistical representation on a 3D grid of Gaussians with constant size.</p>
 <p>The image below shows a visualization (in 2D, the representation is actually 4D: 3D grid with 20 channels) of the 3DmFV representation for several 3D point clouds. Each column in the image represents a single Gaussian and each row represents a symmetric function over derivative with respects to a Gaussian parameter over the points.</p>
-<div class="wp-block-image"><figure class="aligncenter"><img alt="Visualization of the 3DmFV representation and its corresponding 3D point clouds" class="wp-image-820" data-attachment-id="820" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="fv_pc_3models" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_pc_3models.png?fit=800%2C473&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_pc_3models.png?fit=300%2C177&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_pc_3models.png?fit=961%2C568&amp;ssl=1" data-orig-size="961,568" data-permalink="https://www.itzikbs.com/3dmfv-net-3d-point-cloud-classification-using-cnns/fv_pc_3models" data-recalc-dims="1" decoding="async" fetchpriority="high" height="177" sizes="(max-width: 300px) 100vw, 300px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_pc_3models-300x177.png?resize=300%2C177" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_pc_3models.png?resize=300%2C177&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_pc_3models.png?resize=768%2C454&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/fv_pc_3models.png?w=961&amp;ssl=1 961w" width="300"/><figcaption>3D point clouds  and their corresponding 3DmFV visualizations</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter"><picture>
+  <source srcset="assets/images/blog/fv_pc_3models-300x177-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/fv_pc_3models-300x177.png" alt="Visualization of the 3DmFV representation and its corresponding 3D point clouds" class="wp-image-820" width="300" height="177" loading="lazy">
+</picture><figcaption>3D point clouds  and their corresponding 3DmFV visualizations</figcaption></figure></div>
 <h2 class="wp-block-heading">The Architecture</h2>
 <p>Input:  A 3D point cloud (a matrix with n rows and 3 columns representing the XYZ coordinates.</p>
 <p>Output: Classification score</p>
 <p>The method consists of two main modules:</p>
 <ol class="wp-block-list"><li>3DmFV module – converting the 3D point cloud into the 3DmFV representation on a 3D grid.</li><li>Network module – consisting of multiple 3D CNN layers (inspired by inception) followed by several fully connected layers.</li></ol>
 <p>The image below summarizes the architecture details.</p>
-<div class="wp-block-image"><figure class="aligncenter"><img alt="3DmFV-Net - 3D point clouds classification network architecture" class="wp-image-822" data-attachment-id="822" data-comments-opened="0" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="3DmFV_Network_Architecture" data-large-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/3DmFV_Network_Architecture.png?fit=800%2C155&amp;ssl=1" data-medium-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/3DmFV_Network_Architecture.png?fit=300%2C58&amp;ssl=1" data-orig-file="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/3DmFV_Network_Architecture.png?fit=1940%2C377&amp;ssl=1" data-orig-size="1940,377" data-permalink="https://www.itzikbs.com/3dmfv-net-3d-point-cloud-classification-using-cnns/3dmfv_network_architecture" data-recalc-dims="1" decoding="async" height="155" sizes="(max-width: 800px) 100vw, 800px" src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/3DmFV_Network_Architecture-1024x199.png?resize=800%2C155" srcset="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/3DmFV_Network_Architecture.png?resize=1024%2C199&amp;ssl=1 1024w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/3DmFV_Network_Architecture.png?resize=300%2C58&amp;ssl=1 300w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/3DmFV_Network_Architecture.png?resize=768%2C149&amp;ssl=1 768w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/3DmFV_Network_Architecture.png?w=1940&amp;ssl=1 1940w, https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2018/09/3DmFV_Network_Architecture.png?w=1600&amp;ssl=1 1600w" width="800"/><figcaption>3DmFV-Net Architecture</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter"><picture>
+  <source srcset="assets/images/blog/3DmFV_Network_Architecture-1024x199-400.webp" type="image/webp" media="(min-width: 400px)">
+  <source srcset="assets/images/blog/3DmFV_Network_Architecture-1024x199-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/blog/3DmFV_Network_Architecture-1024x199.png" alt="3DmFV-Net - 3D point clouds classification network architecture" class="wp-image-822" width="800" height="155" loading="lazy">
+</picture><figcaption>3DmFV-Net Architecture</figcaption></figure></div>
 <p>We train and test on the <a href="http://modelnet.cs.princeton.edu/" rel="noopener noreferrer" target="_blank">ModelNet40 /ModelNet10 datasets from Princeton</a>.  It includes 40/10 classes divided into 9843/3991 point clouds for training and 2468/908 point clouds for testing.</p>
 <h2 class="wp-block-heading">The Results</h2>
 <p>I will not include the charts and tables, if you are interested, make sure to read <a href="https://ieeexplore.ieee.org/abstract/document/8394990/" rel="noopener noreferrer" target="_blank">our 3D point cloud classification paper</a>.  However, I will summarize:</p>
@@ -250,6 +262,6 @@
             </div>
         </article>
     </main>
-    <script src="../../js/main.js"></script>
+    <script src="../../js/main.min.js".replace(".js", ".min.js")></script>
 </body>
 </html>

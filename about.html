@@ -1,11 +1,16 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+<!-- Resource Hints for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="About Yizhak (Itzik) Ben-Shabat - Academic background, research, awards, and CV">
     <title>About & CV - Yizhak Ben-Shabat</title>
-    <link rel="stylesheet" href="css/style.css?v=5">
+    <link rel="stylesheet" href="css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -36,9 +41,11 @@
             <div class="container">
                 <div style="display: flex; gap: 2rem; align-items: start; flex-wrap: wrap;">
                     <div style="flex: 0 0 250px;">
-                        <img src="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2023/07/Itzik_Ben_Shabat_portrait.jpg?w=500&ssl=1" 
-                             alt="Itzik Ben Shabat" 
-                             style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <picture>
+  <source srcset="assets/images/profile/Itzik_Ben_Shabat_portrait-400.webp" type="image/webp" media="(min-width: 400px)">
+  <source srcset="assets/images/profile/Itzik_Ben_Shabat_portrait-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="assets/images/profile/Itzik_Ben_Shabat_portrait.jpg" alt="Itzik Ben Shabat" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" width="500" height="500" loading="lazy">
+</picture>
                         <div style="margin-top: 1rem; text-align: center;">
                             <a href="assets/documents/cv/Yizhak-Ben-Shabat-CV-academic-research-March-2025.pdf" 
                                class="btn-primary" 
@@ -228,7 +235,7 @@
         </div>
     </footer>
 
-    <script src="js/navigation.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/navigation.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
