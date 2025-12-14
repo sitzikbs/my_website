@@ -32,10 +32,6 @@
     <title>Code - Itzik Ben-Shabat</title>
     <link rel="stylesheet" href="css/style.min.css?v=4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .page-content { max-width: 800px; margin: 0 auto; padding: 2rem; }
-        .page-content img { max-width: 100%; height: auto; }
-    </style>
 
   <!-- Structured Data (Schema.org) -->
   <script type="application/ld+json">
@@ -53,24 +49,7 @@
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="index.html">Home</a>
-            </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="index.html">About</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="main-nav"></div>
 
     <main>
         <section class="page-header">
@@ -144,5 +123,6 @@
             </div>
         </section>
     </main>
+    <script src="js/navigation.min.js"></script>
 </body>
 </html>
