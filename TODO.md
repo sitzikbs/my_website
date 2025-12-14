@@ -337,9 +337,9 @@ Convert the current WordPress-based personal website (https://itzikbs.com/) to a
 - [x] Google Analytics 4 setup - ✅ COMPLETE
   - [x] GA4 tracking code added to all 81 HTML files
   - [x] Privacy-compliant settings (anonymize_ip, secure cookies)
-  - [ ] **TODO**: Update GA4_MEASUREMENT_ID in scripts/add_google_analytics.py with actual ID
-  - [ ] Set up Google Analytics property at https://analytics.google.com
-  - [ ] Verify tracking in GA4 Real-time reports after deployment
+  - [x] **Actual Measurement ID configured**: G-EJRL17R9NE (extracted from WordPress site)
+  - [x] All 81 files updated with real tracking ID (replaced placeholder)
+  - [ ] Verify tracking in GA4 Real-time reports after deployment (uses same ID as WordPress site)
 - [ ] Google Search Console (after deployment):
   - [ ] Add property and verify ownership
   - [ ] Submit sitemap.xml
