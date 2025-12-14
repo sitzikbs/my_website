@@ -33,6 +33,75 @@
     <link rel="stylesheet" href="../../css/style.min.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Hero Header Styles */
+        .blog-hero {
+            max-width: 900px;
+            margin: 3rem auto 3rem;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+        
+        .blog-hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .blog-hero-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--border-color);
+        }
+        
+        .blog-hero-byline {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+        
+        .blog-hero-author {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .blog-hero-author:hover {
+            text-decoration: underline;
+        }
+        
+        .blog-hero-date {
+            font-size: 0.9rem;
+        }
+        
+        .blog-hero-title {
+            font-size: 2.5rem;
+            margin: 1rem 0 0 0;
+            color: var(--primary-color);
+            line-height: 1.2;
+            max-width: 800px;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-hero {
+                margin: 2rem auto;
+            }
+            
+            .blog-hero-avatar {
+                width: 64px;
+                height: 64px;
+            }
+            
+            .blog-hero-title {
+                font-size: 1.75rem;
+            }
+        }
+        
+
         /* Blog post specific styles */
         .blog-post { 
             max-width: 900px; 
@@ -262,15 +331,19 @@
         </div>
     </nav>
     <main>
-        <article class="blog-post">
-            <header class="post-header">
-                <h1>CLIPasso: Semantically-Aware Object Sketching</h1>
-                <div class="post-meta">
-                    <time datetime="2023-03-29">2023-03-29</time>
-                    <span class="author">By Itzik Ben-Shabat</span>
-                </div>
-            </header>
-            <div class="post-content">
+          <div class="blog-hero">
+    <div class="blog-hero-content">
+      <img src="../../assets/images/publications/Talking_papers_cover-400.webp" alt="Talking Papers Podcast Logo" class="blog-hero-avatar">
+      <div class="blog-hero-byline">
+        <a href="../../index.html" class="blog-hero-author">Itzik Ben-Shabat</a>
+        <time class="blog-hero-date" datetime="2023-03-29">March 29, 2023</time>
+      </div>
+      <h1 class="blog-hero-title">CLIPasso: Semantically-Aware Object Sketching</h1>
+    </div>
+  </div>
+  
+<article class="blog-post">
+<div class="post-content">
                 <div class="elementor-element elementor-element-2719b3f elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="2719b3f" data-widget_type="theme-post-content.default">
 <div class="elementor-widget-container">
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted <a href="https://yael-vinker.github.io/website/index.html">Yael Vinker</a>. We had a great chat about her paper “<a href="https://clipasso.github.io/clipasso/" rel="noreferrer noopener" target="_blank">CLIPasso: Semantically-Aware Object Sketching</a>”, SIGGRAPH 2022 best paper award winner. </p>
