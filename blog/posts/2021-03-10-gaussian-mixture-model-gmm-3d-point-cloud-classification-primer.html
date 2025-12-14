@@ -670,12 +670,12 @@
 <p>In the image below you can see the coins that fell out as points ( each coin has a different color corresponding to the Gaussian that was used to generate it) and a treasure map overlay that shows four different areas to finding gold (the lines transparency indicates the probability – close to the center of each Gaussian the probability is higher to find gold and as you go farther away it reduces.</p>
 <p><picture>
   <source srcset="assets/images/blog/2D_GMM_demonstration-300x300-200.webp" type="image/webp" media="(min-width: 200px)">
-  <img src="assets/images/blog/2D_GMM_demonstration-300x300.png" alt="2D Gaussian Mixrure Model example" class="alignnone size-medium wp-image-638 aligncenter" width="300" height="300" loading="lazy">
+  <img src="../../assets/images/blog/2D_GMM_demonstration-300x300.png" alt="2D Gaussian Mixrure Model example" class="alignnone size-medium wp-image-638 aligncenter" width="300" height="300" loading="lazy">
 </picture></p>
 <p>We can do something very similar for 3D points (abandoning the rich man example). In the image below you can see the generated 3D points and a semi-transparent surface representing the Gaussian location and scale ( 3 standard deviations in each axis).</p>
 <p><picture>
   <source srcset="assets/images/blog/3D_GMM_demonstration-300x300-200.webp" type="image/webp" media="(min-width: 200px)">
-  <img src="assets/images/blog/3D_GMM_demonstration-300x300.png" alt="3D GMM example" class="size-medium wp-image-640 aligncenter" width="300" height="300" loading="lazy">
+  <img src="../../assets/images/blog/3D_GMM_demonstration-300x300.png" alt="3D GMM example" class="size-medium wp-image-640 aligncenter" width="300" height="300" loading="lazy">
 </picture></p>
 <p> </p>
 <p>You can see how we can basically represent all of these 4000 points using only 4 Gaussians.  Each points gets a likelihood value (<img alt="u_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=u_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/>) for each Gaussian.  In our paper, we show that we can use a GMM with Gaussians on a grid (and not using EM algorithm) to represent 3D point clouds for the classification and part segmentation task. But, more on that in a later post.</p>
