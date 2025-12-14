@@ -27,7 +27,7 @@
             }
         ],
         "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2025/07/viner_appeoach.png?fit=800%2C150&ssl=1",
-        "highlighted": true
+        "highlighted": false
     },
     {
         "title": "GEOPARD: Geometric Pretraining for Articulation Prediction in 3D Shapes",
@@ -85,8 +85,8 @@
     },
     {
         "title": "Neural Experts: Mixture of Experts for Implicit Neural Representations",
-        "authors": "Yizhak Ben-Shabat, Chamin Hewa Koneputugodage, Sameera Ramasinghe",
-        "venue": "Stephen Gould. NeurIPS",
+        "authors": "Yizhak Ben-Shabat, Chamin Hewa Koneputugodage, Sameera Ramasinghe, Stephen Gould",
+        "venue": " NeurIPS",
         "year": "2024",
         "links": [
             {
@@ -354,7 +354,7 @@
                 "url": "https://www.itzikbs.com/digs"
             }
         ],
-        "image": "",
+        "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2022/07/TEASER_FOR_WEBSITE-1.png?w=956&ssl=1",
         "highlighted": true
     },
     {
