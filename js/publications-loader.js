@@ -49,9 +49,9 @@ function renderHighlights(publications) {
                 <p class="publication-authors" style="font-style: italic; margin-bottom: 0.3rem; font-size: 0.9rem;">${pub.authors}</p>
                 <p class="publication-venue" style="font-weight: 500; margin-bottom: 0.3rem; font-size: 0.9rem;">${pub.venue}, ${pub.year}</p>
                 
-                <div class="publication-links" style="margin-top: 0.75rem;">
+                <div class="publication-links">
                     ${pub.links ? pub.links.map(link => 
-                        `<a href="${link.url}" target="_blank" class="btn-link" style="display: inline-block; margin-right: 10px; padding: 4px 8px; background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 4px; text-decoration: none; font-size: 0.85rem;">${link.name}</a>`
+                        `<a href="${link.url}" target="_blank" class="btn-link">${link.name}</a>`
                     ).join('') : ''}
                 </div>
             </div>
@@ -101,11 +101,11 @@ function renderPublications(publications) {
                     <p class="publication-venue" style="font-weight: bold; margin-bottom: 0.5rem;">${pub.venue}</p>
                     ${pub.abstract ? `<p class="publication-abstract" style="margin-top: 1rem;">${pub.abstract}</p>` : ''}
                     
-                    <div class="publication-links" style="margin-top: 1rem;">
+                    <div class="publication-links">
                         ${pub.links ? pub.links.map(link => 
-                            `<a href="${link.url}" target="_blank" class="btn-link" style="display: inline-block; margin-right: 10px; padding: 4px 8px; background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 4px; text-decoration: none; font-size: 0.9rem;">${link.name}</a>`
+                            `<a href="${link.url}" target="_blank" class="btn-link">${link.name}</a>`
                         ).join('') : ''}
-                        ${pub.bibtex ? `<button class="btn-bibtex" onclick="toggleBibtex(this)" style="background: none; border: 1px solid var(--border-color); padding: 0.4rem 0.8rem; border-radius: 4px; cursor: pointer; font-size: 0.85rem; color: var(--text-color);">BibTeX</button>` : ''}
+                        ${pub.bibtex ? `<button class="btn-bibtex" onclick="toggleBibtex(this)">BibTeX</button>` : ''}
                     </div>
                     
                     ${pub.bibtex ? `
