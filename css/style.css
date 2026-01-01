@@ -375,23 +375,36 @@ a:hover {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-.publication-links a {
-    padding: 0.4rem 0.8rem;
+.publication-links a,
+.publication-links button,
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
     background-color: var(--bg-light);
     color: var(--text-color);
     border: 1px solid var(--border-color);
     border-radius: 4px;
-    font-size: 0.85rem;
+    font-size: 0.875rem;
     font-weight: 500;
+    text-decoration: none;
     transition: var(--transition);
+    cursor: pointer;
+    line-height: 1.2;
+    min-height: 36px;
 }
 
-.publication-links a:hover {
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
+.publication-links a:hover,
+.publication-links button:hover,
+.btn-link:hover {
+    background-color: var(--secondary-color);
+    color: var(--color-white);
+    border-color: var(--secondary-color);
+    text-decoration: none;
 }
 
 /* Blog */
