@@ -1,322 +1,247 @@
 # Deployment Guide
 
-This guide will help you deploy your new static website to various hosting platforms.
+This guide covers deploying your Eleventy (11ty) static site to production.
 
 ## Prerequisites
 
-Before deploying, make sure to:
-1. **Build the site:** Run `npm run build` to generate the `_site` directory
-2. Replace `assets/images/profile/` images with your actual profile pictures
-3. Update personal information in the 11ty templates (`_includes/layouts/`)
-4. Update social media links in templates
-5. Add your publications to `data/publications.json`
-6. Add blog posts as Markdown files in `blog/posts-md/`
-7. Update `data/news.json` with your news
+Before deploying:
+1. **Build locally:** Run `npm run build` to ensure the site builds without errors
+2. **Test locally:** Run `npm run serve` and test at http://localhost:8000
+3. **Commit changes:** Ensure all changes are committed to git
+4. **Update data:** Verify `data/publications.json`, `data/news.json`, etc. are current
+5. **Check assets:** Ensure all images and assets are properly placed in `assets/`
 
-## Deployment Options
+---
 
-**Important:** After the 11ty migration, your site requires a build step. See the note about Cloudflare Pages below for the recommended deployment approach.
+## 📦 Build Configuration
 
-### 1. GitHub Pages (Free)
+This site uses **Eleventy (11ty) static site generator** with automated build process:
 
-GitHub Pages is perfect for static websites and integrates directly with your repository.
+- **Build command:** `npm run build`
+- **Output directory:** `_site/`
+- **Node version:** 18 or later (LTS recommended)
 
-**Steps:**
-1. Go to your repository on GitHub
-2. Click on "Settings"
-3. Scroll down to "Pages" in the left sidebar
-4. Under "Source", select the branch you want to deploy (usually `main`)
-5. Select `/` (root) as the folder
-6. Click "Save"
-7. Wait a few minutes for deployment
+The build process runs:
+1. CSS minification (`csso`)
+2. JavaScript minification (`terser`)
+3. 11ty static site generation
+4. All assets copied to `_site/`
 
-**Note for 11ty sites:** You'll need to either:
-- **Option A:** Build locally and commit `_site/` folder, then set GitHub Pages to serve from `_site/`
-- **Option B:** Use GitHub Actions to auto-build (requires workflow configuration)
-- **Recommended:** Use Cloudflare Pages instead for automatic builds
+---
 
-Your site will be available at: `https://[username].github.io/[repository-name]`
+## ⭐ Cloudflare Pages (Recommended)
 
-**Custom Domain:**
-- Add a file named `CNAME` to the root with your domain name
-- Configure your domain's DNS settings to point to GitHub Pages
+Cloudflare Pages is the **recommended platform** for this 11ty site. It provides:
+- Automatic builds on git push
+- Edge network (fast global delivery)
+- Free SSL/HTTPS
+- Unlimited bandwidth
+- Preview deployments for branches
 
-### 2. Netlify (Free, Very Easy)
+### Setup Steps:
 
-Netlify offers continuous deployment and excellent features.
+1. **Sign up** at [pages.cloudflare.com](https://pages.cloudflare.com)
 
-**Steps:**
-1. Sign up at [netlify.com](https://www.netlify.com)
-2. Click "Add new site" → "Import an existing project"
-3. Connect your GitHub account
-4. Select your repository
-5. Deploy settings:
-   - **Build command:** `npm run build`
-   - **Publish directory:** `_site`
-6. Click "Deploy site"
+2. **Create a project:**
+   - Click "Create a project"
+   - Connect your GitHub account
+   - Select your repository
 
-Your site will be live in seconds with a custom Netlify URL. You can add a custom domain later.
-
-**Features:**
-- Automatic deployments on git push
-- Free SSL certificates
-- Contact form handling (add `netlify` attribute to form)
-- Instant rollbacks
-
-### 3. Vercel (Free, Fast)
-
-Vercel is another excellent option with great performance.
-
-**Steps:**
-1. Sign up at [vercel.com](https://vercel.com)
-2. Click "New Project"
-3. Import your GitHub repository
-4. Framework Preset: Select "Other" or "11ty"
-5. Build settings:
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `_site`
-6. Click "Deploy"
-
-Your site will be deployed with a Vercel URL. Add a custom domain in settings.
-
-### 4. Cloudflare Pages (Recommended) ⭐
-
-**This site uses Eleventy (11ty) static site generator.** Cloudflare Pages is the recommended deployment option for automatic builds.
-
-**Steps:**
-1. Sign up at [pages.cloudflare.com](https://pages.cloudflare.com)
-2. Click "Create a project"
-3. Connect your GitHub account
-4. Select your repository
-5. Build settings:
+3. **Configure build settings:**
    - **Framework preset:** Eleventy
    - **Build command:** `npm run build`
    - **Build output directory:** `_site`
    - **Root directory:** (leave empty)
-   - **Environment variables:** 
-     - `NODE_VERSION` = `18` (or latest LTS)
-6. Click "Save and Deploy"
 
-**Benefits:**
-- ✅ Automatic deployments on every push to main
-- ✅ Branch preview deployments (test before merging!)
-- ✅ Free SSL, unlimited bandwidth
-- ✅ Global CDN for fast loading worldwide
-- ✅ Build logs for debugging
-- ✅ Instant rollbacks if needed
+4. **Environment variables:**
+   - Add: `NODE_VERSION` = `18`
 
-**Custom Domain:**
-1. Go to your Cloudflare Pages project
-2. Navigate to "Custom domains"
-3. Add your domain (e.g., itzikbs.com)
-4. Follow DNS configuration instructions
-5. SSL certificate automatically provisioned
+5. **Deploy:**
+   - Click "Save and Deploy"
+   - Wait for first build (usually 1-2 minutes)
 
-**Deployment Workflow:**
-```bash
-# Make changes to templates, blog posts, or data
-git add .
-git commit -m "Add new blog post"
-git push origin main
+6. **Custom domain:**
+   - Go to "Custom domains" tab
+   - Add your domain (e.g., itzikbs.com)
+   - Update DNS records as instructed
+   - SSL certificate will be automatically provisioned
 
-# Cloudflare automatically:
-# 1. Detects push
-# 2. Runs npm install
-# 3. Runs npm run build (11ty builds your site)
-# 4. Deploys _site/ folder to CDN
-# 5. Site live in ~1-2 minutes!
-```
+### Automatic Deployments
 
-**Local Development:**
-```bash
-# Install dependencies
-npm install
+After setup, Cloudflare Pages will:
+- **Automatically build and deploy** when you push to `main` branch
+- Create **preview deployments** for other branches/PRs
+- Provide unique URLs for testing before merging
 
-# Run dev server with hot reload
-npm run serve
-# Site available at http://localhost:8080
+---
 
-# Build for production
-npm run build
-# Output in _site/ directory
-```
+## Alternative Platforms
 
-### 5. Traditional Web Hosting
+### Netlify
 
-For traditional hosting (shared hosting, VPS, etc.):
+Excellent alternative with similar features:
 
-1. **Export your files:**
-   ```bash
-   # Create a zip of all files (excluding .git)
-   zip -r website.zip . -x "*.git*" "*.DS_Store" "node_modules/*"
-   ```
+1. Sign up at [netlify.com](https://www.netlify.com)
+2. Click "Add new site" → "Import an existing project"
+3. Connect GitHub and select repository
+4. Build settings:
+   - **Build command:** `npm run build`
+   - **Publish directory:** `_site`
+   - **Node version:** 18 (in environment variables)
+5. Deploy
 
-2. **Upload via FTP/SFTP:**
-   - Use FileZilla, Cyberduck, or your hosting provider's file manager
-   - Upload all files to your `public_html` or `www` directory
+**Features:**
+- Free SSL certificates
+- Automatic deployments
+- Form handling with `netlify` attribute
+- Serverless functions support
 
-3. **Configure:**
-   - Ensure your hosting supports static files (it should!)
-   - Set your index page to `index.html`
+### Vercel
+
+Another popular option:
+
+1. Sign up at [vercel.com](https://vercel.com)
+2. Import repository from GitHub
+3. Framework: Select "Other" or "11ty"
+4. Build settings:
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `_site`
+5. Deploy
+
+---
+
+## GitHub Pages (Not Recommended for 11ty)
+
+GitHub Pages **doesn't natively support build processes**. Options:
+
+**Option A:** Build locally and commit `_site/`
+- Not recommended (bloats repository with build artifacts)
+
+**Option B:** Use GitHub Actions
+- Requires workflow configuration
+- More complex setup
+
+**Recommendation:** Use Cloudflare Pages or Netlify instead for automatic builds.
+
+---
 
 ## Post-Deployment Checklist
 
-After deploying, verify:
+After deploying:
 
-- [ ] All pages load correctly
-- [ ] Navigation works on all pages
-- [ ] Images display properly
-- [ ] Links work (internal and external)
-- [ ] Contact form is configured (if using a service)
-- [ ] Mobile responsiveness works
-- [ ] Social media links point to correct profiles
-- [ ] Custom domain is configured (if applicable)
-- [ ] SSL/HTTPS is enabled
-- [ ] Test all interactive elements
+- [ ] **Test live site:** Verify all pages load correctly
+- [ ] **Check HTTPS:** Ensure SSL certificate is active
+- [ ] **Test forms:** If using contact forms, verify they work
+- [ ] **Verify analytics:** Check Google Analytics 4 (ID: G-EJRL17R9NE) is tracking
+- [ ] **Test links:** Verify internal and external links work
+- [ ] **Mobile testing:** Test on mobile devices
+- [ ] **Performance:** Run Lighthouse audit
+- [ ] **SEO setup:**
+  - [ ] Add property to Google Search Console
+  - [ ] Submit sitemap.xml (`https://yourdomain.com/sitemap.xml`)
+  - [ ] Verify robots.txt is accessible
 
-## Configure Contact Form
+---
 
-The contact form needs a backend service to work. Choose one:
+## Updating Content
 
-### Option 1: Formspree (Recommended)
+### Blog Posts
 
-1. Sign up at [formspree.io](https://formspree.io)
-2. Create a new form
-3. Get your form endpoint URL
-4. Edit `js/contact.js`:
-   - Uncomment the Formspree integration code (lines ~40-50)
-   - Replace `YOUR_FORM_ID` with your actual form ID
-5. Commit and push changes
-
-### Option 2: Netlify Forms
-
-If hosting on Netlify:
-1. Edit `contact.html`
-2. Add `netlify` attribute to the `<form>` tag:
-   ```html
-   <form id="contact-form" class="contact-form" netlify>
+1. Create new Markdown file in `blog/posts-md/`:
+   ```bash
+   # Format: YYYY-MM-DD-title.md
+   touch blog/posts-md/2026-01-15-my-new-post.md
    ```
-3. Add a hidden input for spam protection:
-   ```html
-   <input type="hidden" name="form-name" value="contact-form">
+
+2. Add frontmatter and content:
+   ```yaml
+   ---
+   title: "My New Post"
+   date: 2026-01-15
+   excerpt: "Brief description"
+   image: "/assets/images/blog/image.jpg"
+   ---
+   
+   Post content here...
    ```
-4. Deploy - Netlify automatically handles submissions
 
-### Option 3: Custom Backend
+3. Commit and push:
+   ```bash
+   git add blog/posts-md/2026-01-15-my-new-post.md
+   git commit -m "feat: add new blog post"
+   git push
+   ```
 
-If you have your own backend:
-1. Create an API endpoint to handle form submissions
-2. Edit `js/contact.js` to post to your endpoint
-3. Handle CORS if needed
+4. Site will automatically rebuild and deploy!
+
+### Publications
+
+1. Edit `data/publications.json`
+2. Add new publication entry
+3. Commit and push - site rebuilds automatically
+
+### News Items
+
+1. Edit `data/news.json`
+2. Add new news entry
+3. Commit and push
+
+---
+
+## Build Troubleshooting
+
+### Build Fails
+
+1. **Check logs** in hosting platform dashboard
+2. **Test locally:** Run `npm run build` and fix any errors
+3. **Verify Node version:** Ensure environment uses Node 18+
+4. **Check dependencies:** Run `npm install` locally
+
+### Site Not Updating
+
+1. **Verify deployment succeeded** in hosting dashboard
+2. **Clear browser cache** (Ctrl+Shift+R or Cmd+Shift+R)
+3. **Check CDN cache** - may take a few minutes to propagate
+4. **Verify commit was pushed** to correct branch
+
+### Missing Assets
+
+1. **Check file paths** are correct (relative from site root)
+2. **Verify files exist** in `assets/` directory
+3. **Check .eleventy.js** passthrough copy configuration
+4. **Rebuild:** Sometimes `npm run build` again fixes it
+
+---
 
 ## Performance Optimization
 
-After deployment, consider:
+The site is already optimized with:
+- ✅ WebP images with responsive sizes
+- ✅ CSS minification
+- ✅ JavaScript minification
+- ✅ Lazy loading images
+- ✅ Google Fonts optimization
 
-1. **Enable Compression:** Most hosting platforms do this automatically
-2. **Use a CDN:** Cloudflare, etc. (often included with hosts)
-3. **Optimize Images:** 
-   - Use WebP format where possible
-   - Compress images before uploading
-   - Use appropriate sizes
-4. **Add Caching Headers:** Configure via hosting platform
+For further optimization:
+- Enable **Cloudflare CDN caching** (automatic with Cloudflare Pages)
+- Use **Cloudflare Analytics** for detailed metrics
+- Monitor **Core Web Vitals** in Google Search Console
 
-## SEO Configuration
+---
 
-1. **Update meta tags** in each HTML file:
-   ```html
-   <meta name="description" content="Your actual description">
-   <meta name="keywords" content="your, keywords, here">
-   <meta name="author" content="Your Name">
-   ```
+## Security
 
-2. **Create a sitemap.xml:**
-   ```xml
-   <?xml version="1.0" encoding="UTF-8"?>
-   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-     <url>
-       <loc>https://yourdomain.com/</loc>
-       <priority>1.0</priority>
-     </url>
-     <url>
-       <loc>https://yourdomain.com/publications.html</loc>
-       <priority>0.8</priority>
-     </url>
-     <!-- Add more pages -->
-   </urlset>
-   ```
+Ensure these security measures:
+- ✅ HTTPS/SSL enabled (automatic with modern hosts)
+- ✅ Security headers configured
+- ✅ Dependencies updated: Run `npm audit` regularly
+- ✅ Secrets in environment variables (never commit)
 
-3. **Add robots.txt:**
-   ```
-   User-agent: *
-   Allow: /
-   
-   Sitemap: https://yourdomain.com/sitemap.xml
-   ```
+---
 
-4. **Submit to search engines:**
-   - Google Search Console
-   - Bing Webmaster Tools
+## Support & Resources
 
-## Analytics (Optional)
-
-Add Google Analytics or other analytics:
-
-1. Sign up for Google Analytics
-2. Get your tracking code
-3. Add before `</head>` in all HTML files:
-   ```html
-   <!-- Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-   <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-     gtag('config', 'GA_MEASUREMENT_ID');
-   </script>
-   ```
-
-## Maintenance
-
-**Regular Updates:**
-- Add new publications to `data/publications.json`
-- Add blog posts by creating HTML files and updating `data/blog.json`
-- Update news in `data/news.json`
-- Keep your profile and bio up to date
-
-**Version Control:**
-- Always commit changes to git
-- Use meaningful commit messages
-- Deployments will happen automatically (with Netlify/Vercel/etc.)
-
-## Troubleshooting
-
-**Pages not loading:**
-- Check that all file paths are correct (case-sensitive on Linux servers)
-- Verify index.html exists in root
-
-**Images not showing:**
-- Check image paths are relative (not absolute)
-- Ensure images are in the correct directory
-- Check image file extensions match
-
-**CSS/JS not loading:**
-- Verify paths in HTML are correct
-- Check browser console for errors
-- Clear browser cache
-
-**Contact form not working:**
-- Ensure you've configured a form handler (Formspree, etc.)
-- Check browser console for JavaScript errors
-- Verify CORS settings if using custom backend
-
-## Support
-
-If you encounter issues:
-1. Check browser console for errors (F12)
-2. Verify all file paths are correct
-3. Test locally first: `python -m http.server 8000`
-4. Check hosting platform's documentation
-5. Review the README.md for configuration details
-
-Happy deploying! 🚀
+- **11ty Documentation:** https://www.11ty.dev/docs/
+- **Cloudflare Pages Docs:** https://developers.cloudflare.com/pages/
+- **Netlify Docs:** https://docs.netlify.com/
+- **Repository:** https://github.com/sitzikbs/my_website
