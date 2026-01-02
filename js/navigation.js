@@ -41,7 +41,8 @@ function initMobileMenu() {
     const navMenu = document.querySelector('.nav-menu');
     
     if (navToggle && navMenu) {
-        navToggle.addEventListener('click', () => {
+        navToggle.addEventListener('click', (event) => {
+            event.stopPropagation();
             navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
         });
