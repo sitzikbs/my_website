@@ -34,7 +34,7 @@ function renderPodcastEpisodes(episodes) {
     }
     
     const episodesHTML = episodes.map(episode => `
-        <a href="${episode.content.replace(/^\//, '')}" class="blog-card">
+        <a href="${episode.content}" class="blog-card">
             ${episode.image ? `<img src="${episode.image}" alt="${episode.title}" class="blog-card-image">` : ''}
             <div class="blog-card-content">
                 <span class="blog-category"><i class="fas fa-microphone"></i> Podcast</span>
