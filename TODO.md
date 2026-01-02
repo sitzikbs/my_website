@@ -35,24 +35,30 @@ Personal website built with Eleventy (11ty) static site generator. Successfully 
 
 ## ⏳ Outstanding Tasks
 
-### Phase 9: Deployment (NEXT PRIORITY)
+### Phase 9: Deployment ✅ COMPLETE
 
 #### 9.1 Cloudflare Pages Deployment
-- [ ] Connect GitHub repository to Cloudflare Pages
-- [ ] Configure build settings:
+- [x] Connect GitHub repository to Cloudflare Pages
+- [x] Configure build settings:
   - Build command: `npm run build`
   - Output directory: `_site`
   - Environment: `NODE_VERSION = 18`
-- [ ] Enable automatic deployments from main branch
-- [ ] Set up custom domain (itzikbs.com)
-- [ ] Verify HTTPS/SSL configuration
-- [ ] Test deployment and verify site functionality
+- [x] Enable automatic deployments from main branch
+- [x] Set up custom domain (itzikbs.com)
+- [x] Verify HTTPS/SSL configuration
+- [x] Test deployment and verify site functionality
 
 #### 9.2 Post-Deployment Verification
 - [ ] Verify Google Analytics 4 tracking (ID: G-EJRL17R9NE)
 - [ ] Submit sitemap.xml to Google Search Console
 - [ ] Monitor indexation status
-- [ ] Test all pages and functionality live
+- [x] Test all pages and functionality live
+
+#### 9.3 Issue #36: Buzzsprout Custom Domain ✅ RESOLVED
+- [x] Added CNAME record in Cloudflare DNS: `talking.papers.podcast` → `app.buzzsprout.com`
+- [x] Set proxy status to "DNS only" (gray cloud)
+- [x] Verified domain works: `https://talking.papers.podcast.itzikbs.com`
+- **Status:** Working! 🎙️
 
 ---
 
