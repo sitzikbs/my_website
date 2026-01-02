@@ -39,6 +39,14 @@ yarn-error.log
 package-lock.json
 yarn.lock
 
+# Python virtual environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
 # 11ty output
 _site/
 
