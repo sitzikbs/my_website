@@ -49,7 +49,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("sitemap.xml");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("_headers");
-  eleventyConfig.addPassthroughCopy(".well-known");
 
   // Watch for changes in CSS and JS during development
   eleventyConfig.addWatchTarget("./css/");
