@@ -44,6 +44,11 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- Structured Data (Schema.org) -->
+    {% if customSchema %}
+    <script type="application/ld+json">
+    {{ customSchema | safe }}
+    </script>
+    {% else %}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -56,6 +61,7 @@
       }
     }
     </script>
+    {% endif %}
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>

@@ -1,84 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-  <title>Itzik Ben Shabat - 3D Computer Vision Research</title>  <script src="js/analytics.min.js"></script>
-
-  <meta charset="utf-8"/>
-<!-- Resource Hints for Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Personal website and blog">
-  <meta name="author" content="Itzik Ben-Shabat">
-  <link rel="canonical" href="https://www.itzikbs.com/">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.itzikbs.com/">
-  <meta property="og:title" content="
-   Personal Website
-  ">
-  <meta property="og:description" content="Personal website and blog">
-  <meta property="og:image" content="https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg">
-  <meta property="og:site_name" content="Itzik Ben-Shabat">
-  
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://www.itzikbs.com/">
-  <meta name="twitter:title" content="
-   Personal Website
-  ">
-  <meta name="twitter:description" content="Personal website and blog">
-  <meta name="twitter:image" content="https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg">
-  <meta content="Personal website and blog" name="description"/>
-  <title>
-   Personal Website
-  </title>
-  <link href="css/style.min.css?v=6" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
- 
-  <!-- Structured Data (Schema.org) -->
-  <script type="application/ld+json">
+---
+layout: layouts/base.njk
+title: Itzik Ben-Shabat - 3D Computer Vision Research
+description: Personal website and blog
+canonicalUrl: https://www.itzikbs.com/
+customSchema: |
   {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Itzik Ben-Shabat",
-  "url": "https://www.itzikbs.com",
-  "image": "https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg",
-  "jobTitle": "Research Scientist",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Australian National University"
-  },
-  "alumniOf": [
-    {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Itzik Ben-Shabat",
+    "url": "https://www.itzikbs.com",
+    "image": "https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg",
+    "jobTitle": "Research Scientist",
+    "worksFor": {
       "@type": "Organization",
-      "name": "Technion - Israel Institute of Technology"
-    }
-  ],
-  "sameAs": [
-    "https://github.com/sitzikbs",
-    "https://twitter.com/sitzikbs",
-    "https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/"
-  ]
-}
-  </script>
+      "name": "Roblox"
+    },
+    "alumniOf": [
+      {
+        "@type": "Organization",
+        "name": "Technion - Israel Institute of Technology"
+      }
+    ],
+    "sameAs": [
+      "https://github.com/sitzikbs",
+      "https://twitter.com/sitzikbs",
+      "https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/"
+    ]
+  }
+---
 
-    <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-</head>
- <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <div id="main-nav"></div>
-  <main>
-   <section class="hero">
+<section class="hero">
     <div class="container">
      <div class="hero-content">
       <div class="profile-image">
@@ -222,42 +173,7 @@ I'm a Research Scientist at Roblox, where I work on avatars and animation. My br
      </div>
     </div>
    </section>
-  </main>
-  <footer>
-   <div class="container">
-    <div class="footer-content">
-     <div class="social-links">
-      <a aria-label="Email" href="mailto:sitzikbs@gmail.com">
-       <i class="fas fa-envelope">
-       </i>
-      </a>
-      <a aria-label="GitHub" href="https://github.com/sitzikbs" target="_blank">
-       <i class="fab fa-github">
-       </i>
-      </a>
-      <a aria-label="LinkedIn" href="https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/" target="_blank">
-       <i class="fab fa-linkedin">
-       </i>
-      </a>
-      <a aria-label="Twitter" href="https://twitter.com/sitzikbs" target="_blank">
-       <i class="fab fa-twitter">
-       </i>
-      </a>
-     </div>
-     <p>
-      ©
-      <span id="current-year">
-      </span>
-      All rights reserved.
-     </p>
-    </div>
-   </div>
-  </footer>
-  <script src="js/navigation.min.js?v=6">
-  </script>
-  <script src="js/main.min.js?v=6">
-  </script>
-  <script src="js/data-loader.min.js?v=6">
-  </script>
- </body>
-</html>
+
+{% block scripts %}
+<script src="/js/data-loader.min.js?v=6"></script>
+{% endblock %}

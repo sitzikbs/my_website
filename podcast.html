@@ -1,66 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>  <script src="js/analytics.min.js"></script>
+---
+layout: layouts/base.njk
+title: Talking Papers Podcast - Itzik Ben-Shabat
+description: Podcast episodes discussing research papers
+---
 
-<!-- Resource Hints for Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Personal website and blog">
-  <meta name="author" content="Itzik Ben-Shabat">
-  <link rel="canonical" href="https://www.itzikbs.com/podcast.html">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.itzikbs.com/podcast.html">
-  <meta property="og:title" content="Talking Papers Podcast - Itzik Ben-Shabat">
-  <meta property="og:description" content="Personal website and blog">
-  <meta property="og:image" content="https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg">
-  <meta property="og:site_name" content="Itzik Ben-Shabat">
-  
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://www.itzikbs.com/podcast.html">
-  <meta name="twitter:title" content="Talking Papers Podcast - Itzik Ben-Shabat">
-  <meta name="twitter:description" content="Personal website and blog">
-  <meta name="twitter:image" content="https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Talking Papers Podcast - Deep dives into research papers">
-    <title>Talking Papers Podcast - Itzik Ben-Shabat</title>
-    <link rel="stylesheet" href="css/style.min.css?v=5">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Structured Data (Schema.org) -->
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Itzik Ben-Shabat",
-  "url": "https://www.itzikbs.com",
-  "author": {
-    "@type": "Person",
-    "name": "Itzik Ben-Shabat"
-  }
-}
-  </script>
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-    <div id="main-nav"></div>
-
-    <main>
-        <section class="page-header">
+<section class="page-header">
             <div class="container">
                 <h1><i class="fas fa-microphone"></i> Talking Papers Podcast</h1>
                 <p class="page-subtitle">Deep dives into cutting-edge research papers with their authors</p>
@@ -74,25 +18,7 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="mailto:sitzikbs@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/sitzikbs" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/sitzikbs" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/@TalkingPapersPodcast" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
-                <p>&copy; <span id="current-year"></span> All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/navigation.min.js"></script>
-    <script src="js/main.min.js"></script>
-    <script src="js/podcast-loader.min.js"></script>
-</body>
-</html>
+{% block scripts %}
+<script src="/js/data-loader.min.js?v=6"></script>
+{% endblock %}
