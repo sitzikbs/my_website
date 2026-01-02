@@ -5,12 +5,13 @@ This guide will help you deploy your new static website to various hosting platf
 ## Prerequisites
 
 Before deploying, make sure to:
-1. Replace `images/profile.jpg` with your actual profile picture
-2. Update all personal information (name, email, location, etc.) in HTML files
-3. Update social media links in all HTML files
-4. Add your actual publications to `data/publications.json`
-5. Update `data/news.json` with your news
-6. Customize the content in the About section
+1. **Build the site:** Run `npm run build` to generate the `_site` directory
+2. Replace `assets/images/profile/` images with your actual profile pictures
+3. Update personal information in the 11ty templates (`_includes/layouts/`)
+4. Update social media links in templates
+5. Add your publications to `data/publications.json`
+6. Add blog posts as Markdown files in `blog/posts-md/`
+7. Update `data/news.json` with your news
 
 ## Deployment Options
 
@@ -78,9 +79,9 @@ Vercel is another excellent option with great performance.
 
 Your site will be deployed with a Vercel URL. Add a custom domain in settings.
 
-### 4. Cloudflare Pages (Recommended for 11ty Sites) ⭐
+### 4. Cloudflare Pages (Recommended) ⭐
 
-**Note:** After migrating to 11ty, Cloudflare Pages is the recommended deployment option for automatic builds.
+**This site uses Eleventy (11ty) static site generator.** Cloudflare Pages is the recommended deployment option for automatic builds.
 
 **Steps:**
 1. Sign up at [pages.cloudflare.com](https://pages.cloudflare.com)
@@ -88,11 +89,12 @@ Your site will be deployed with a Vercel URL. Add a custom domain in settings.
 3. Connect your GitHub account
 4. Select your repository
 5. Build settings:
-   - **Framework preset:** None (or select "11ty" if available)
+   - **Framework preset:** Eleventy
    - **Build command:** `npm run build`
    - **Build output directory:** `_site`
-   - **Root directory:** Leave empty
-   - **Environment variables:** NODE_VERSION = 18 (or latest LTS)
+   - **Root directory:** (leave empty)
+   - **Environment variables:** 
+     - `NODE_VERSION` = `18` (or latest LTS)
 6. Click "Save and Deploy"
 
 **Benefits:**
@@ -112,17 +114,31 @@ Your site will be deployed with a Vercel URL. Add a custom domain in settings.
 
 **Deployment Workflow:**
 ```bash
-# Make changes
+# Make changes to templates, blog posts, or data
 git add .
-git commit -m "Update blog post"
+git commit -m "Add new blog post"
 git push origin main
 
 # Cloudflare automatically:
 # 1. Detects push
 # 2. Runs npm install
-# 3. Runs npm run build
-# 4. Deploys _site/ folder
-# 5. Site live in ~1 minute!
+# 3. Runs npm run build (11ty builds your site)
+# 4. Deploys _site/ folder to CDN
+# 5. Site live in ~1-2 minutes!
+```
+
+**Local Development:**
+```bash
+# Install dependencies
+npm install
+
+# Run dev server with hot reload
+npm run serve
+# Site available at http://localhost:8080
+
+# Build for production
+npm run build
+# Output in _site/ directory
 ```
 
 ### 5. Traditional Web Hosting
