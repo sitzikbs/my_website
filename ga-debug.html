@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GA Debug Test</title>
+</head>
+<body>
+    <h1>GA4 Debug Test</h1>
+    <button id="testBtn">Send Test Event</button>
+    <div id="status"></div>
+    
+    <script>
+        const GA4_MEASUREMENT_ID = 'G-EJRL17R9NE';
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`;
+        document.head.appendChild(script);
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', GA4_MEASUREMENT_ID, {
+            'debug_mode': true
+        });
+        
+        document.getElementById('testBtn').addEventListener('click', () => {
+            gtag('event', 'button_click', {
+                'event_category': 'engagement',
+                'event_label': 'test_button'
+            });
+            document.getElementById('status').innerHTML = '<p style="color: green;">Event sent! Check Network tab for google-analytics.com/g/collect</p>';
+        });
+    </script>
+</body>
+</html>
