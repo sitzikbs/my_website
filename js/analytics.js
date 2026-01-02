@@ -18,8 +18,11 @@
   // Initialize dataLayer and gtag function
   window.dataLayer = window.dataLayer || [];
   function gtag() {
-    dataLayer.push(arguments);
+    window.dataLayer.push(arguments);
   }
+  
+  // Make gtag available globally FIRST
+  window.gtag = gtag;
   
   // Configure GA4
   gtag('js', new Date());
@@ -27,7 +30,4 @@
     anonymize_ip: true,
     cookie_flags: 'SameSite=None;Secure'
   });
-  
-  // Make gtag available globally
-  window.gtag = gtag;
 })();
