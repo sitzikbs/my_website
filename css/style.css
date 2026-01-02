@@ -456,6 +456,7 @@ a:hover {
     max-height: 250px;
     object-fit: contain;
     background-color: var(--bg-light);
+    padding: 1rem;
 }
 
 .blog-card-content {
