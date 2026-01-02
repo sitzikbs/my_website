@@ -5,6 +5,7 @@ date: 2026-01-02
 author: Itzik Ben-Shabat
 excerpt: "Testing the new blog post template with Markdown"
 tags: [test, 11ty, migration]
+permalink: "/blog/posts/2026-01-02-test-blog-post.html"
 ---
 
 ## Testing the Blog Post Template
