@@ -9,12 +9,6 @@
   // GA4 Measurement ID
   const GA4_MEASUREMENT_ID = 'G-0EC0BTHZ23';
   
-  // Load Google Analytics script
-  const script = document.createElement('script');
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`;
-  document.head.appendChild(script);
-  
   // Initialize dataLayer and gtag function
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -25,7 +19,9 @@
   gtag('js', new Date());
   gtag('config', GA4_MEASUREMENT_ID, {
     anonymize_ip: true,
-    cookie_flags: 'SameSite=None;Secure'
+    cookie_flags: 'SameSite=None;Secure',
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
   });
   
   // Make gtag available globally
