@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/js/analytics.min.js"></script>
+
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ description or 'Personal website and research portfolio of Itzik Ben-Shabat' }}">
+    <meta name="author" content="Itzik Ben-Shabat">
+    <link rel="canonical" href="{{ canonicalUrl or 'https://www.itzikbs.com' }}{{ page.url }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ canonicalUrl or 'https://www.itzikbs.com' }}{{ page.url }}">
+    <meta property="og:title" content="{{ title or 'Itzik Ben-Shabat - Researcher • Educator • Engineer' }}">
+    <meta property="og:description" content="{{ description or 'Personal website and research portfolio' }}">
+    <meta property="og:image" content="https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg">
+    <meta property="og:site_name" content="Itzik Ben-Shabat">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ canonicalUrl or 'https://www.itzikbs.com' }}{{ page.url }}">
+    <meta name="twitter:title" content="{{ title or 'Itzik Ben-Shabat - Researcher • Educator • Engineer' }}">
+    <meta name="twitter:description" content="{{ description or 'Personal website and research portfolio' }}">
+    <meta name="twitter:image" content="https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg">
+
+    <title>{{ title or 'Itzik Ben-Shabat - Researcher • Educator • Engineer' }}</title>
+    
+    <link rel="stylesheet" href="/css/style.min.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Itzik Ben-Shabat",
+      "url": "https://www.itzikbs.com",
+      "author": {
+        "@type": "Person",
+        "name": "Itzik Ben-Shabat"
+      }
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    {% include "partials/nav.njk" %}
+    
+    <main id="main-content">
+        {{ content | safe }}
+    </main>
+    
+    {% include "partials/footer.njk" %}
+    
+    <script src="/js/main.min.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

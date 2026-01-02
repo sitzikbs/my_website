@@ -1,0 +1,21 @@
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-brand">
+            <a href="/">Itzik Ben-Shabat</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
+            <li><a href="/about.html" {% if page.url == "/about.html" %}class="active"{% endif %}>About</a></li>
+            <li><a href="/publications.html" {% if page.url == "/publications.html" %}class="active"{% endif %}>Publications</a></li>
+            <li><a href="/podcast.html" {% if page.url == "/podcast.html" %}class="active"{% endif %}>Podcast</a></li>
+            <li><a href="/blog.html" {% if page.url == "/blog.html" %}class="active"{% endif %}>Blog</a></li>
+            <li><a href="/code.html" {% if page.url == "/code.html" %}class="active"{% endif %}>Code</a></li>
+            <li><a href="/contact.html" {% if page.url == "/contact.html" %}class="active"{% endif %}>Contact</a></li>
+        </ul>
+    </div>
+</nav>
