@@ -15,10 +15,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.ignores.add("README.md");
   eleventyConfig.ignores.add("TODO.md");
   eleventyConfig.ignores.add("DEPLOYMENT.md");
-  eleventyConfig.ignores.add("DESIGN_SYSTEM.md");
-  eleventyConfig.ignores.add("AUDIT_2026-01-01.md");
-  eleventyConfig.ignores.add("ISSUE_CLOSING_SUMMARIES.md");
-  eleventyConfig.ignores.add("GITHUB_ISSUES_ACTIONS.md");
   
   // Add date filter for formatting dates
   eleventyConfig.addFilter("formatDate", (date, format) => {
