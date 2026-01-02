@@ -6,8 +6,8 @@
 (function() {
   'use strict';
   
-  // GA4 Measurement ID (from original WordPress site using MonsterInsights)
-  const GA4_MEASUREMENT_ID = 'G-EJRL17R9NE';
+  // GA4 Measurement ID
+  const GA4_MEASUREMENT_ID = 'G-0EC0BTHZ23';
   
   // Load Google Analytics script
   const script = document.createElement('script');
