@@ -20,6 +20,22 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.ignores.add("ISSUE_CLOSING_SUMMARIES.md");
   eleventyConfig.ignores.add("GITHUB_ISSUES_ACTIONS.md");
   
+  // Add date filter for formatting dates
+  eleventyConfig.addFilter("formatDate", (date, format) => {
+    const d = new Date(date);
+    if (format === "long") {
+      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+    return d.toISOString().split('T')[0]; // YYYY-MM-DD
+  });
+  
+  // Create blog posts collection
+  eleventyConfig.addCollection("blogPosts", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("blog/posts-md/*.md").sort((a, b) => {
+      return b.date - a.date; // Sort by date, newest first
+    });
+  });
+  
   // Copy static assets to output
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
@@ -48,8 +64,8 @@ module.exports = function(eleventyConfig) {
       data: "_data",        // Directory for global data files
       output: "_site"       // Output directory for built site
     },
-    templateFormats: ["html", "njk", "11ty.js"],  // Removed "md" to prevent markdown processing
+    templateFormats: ["html", "njk", "md", "11ty.js"],
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk"
+    markdownTemplateEngine: "liquid"  // Use Liquid for markdown to avoid Nunjucks conflicts
   };
 };

@@ -1,0 +1,94 @@
+---
+layout: layouts/base.njk
+---
+
+<style>
+    /* Blog Hero Header Styles */
+    .blog-hero {
+        max-width: 900px;
+        margin: 3rem auto 1.5rem;
+        padding: 0 1.5rem;
+        text-align: center;
+    }
+    
+    .blog-hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .blog-hero-avatar {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid var(--border-color);
+    }
+    
+    .blog-hero-byline {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        font-size: 0.95rem;
+        color: var(--text-light);
+    }
+    
+    .blog-hero-author {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .blog-hero-author:hover {
+        text-decoration: underline;
+    }
+    
+    .blog-hero-date {
+        font-size: 0.9rem;
+    }
+    
+    .blog-hero-title {
+        font-size: 2.5rem;
+        margin: 1rem 0 0 0;
+        color: var(--primary-color);
+        line-height: 1.2;
+        max-width: 800px;
+    }
+    
+    @media (max-width: 768px) {
+        .blog-hero {
+            margin: 2rem auto 1rem;
+        }
+        
+        .blog-hero-avatar {
+            width: 77px;
+            height: 77px;
+        }
+        
+        .blog-hero-title {
+            font-size: 1.75rem;
+        }
+    }
+</style>
+
+<div class="blog-hero">
+    <div class="blog-hero-content">
+        <img src="/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg" 
+             alt="{% if author %}{{ author }}{% else %}Itzik Ben-Shabat{% endif %}" 
+             class="blog-hero-avatar">
+        <div class="blog-hero-byline">
+            <a href="/" class="blog-hero-author">{% if author %}{{ author }}{% else %}Itzik Ben-Shabat{% endif %}</a>
+            <time class="blog-hero-date" datetime="{{ date | formatDate }}">
+                {{ date | formatDate("long") }}
+            </time>
+        </div>
+        <h1 class="blog-hero-title">{{ title }}</h1>
+    </div>
+</div>
+
+<article class="blog-post">
+    <div class="post-content">
+        {{ content | safe }}
+    </div>
+</article>
