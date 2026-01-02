@@ -826,5 +826,23 @@
     </main>
     <script src="../../js/main.min.js".replace(".js", ".min.js")></script>
     <script src="../../js/navigation.min.js"></script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="mailto:sitzikbs@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/sitzikbs" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/sitzikbs" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p>&copy; <span id="current-year"></span> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
