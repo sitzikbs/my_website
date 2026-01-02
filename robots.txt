@@ -3,12 +3,20 @@
 User-agent: *
 Allow: /
 
-# Disallow admin/private areas
+# Disallow sensitive/private areas
 Disallow: /scripts/
 Disallow: /reports/
 Disallow: /.git/
 Disallow: /node_modules/
+Disallow: /_site/
 Disallow: /data/image-mapping.json
+Disallow: /.github/
+Disallow: /.vscode/
+Disallow: /.idea/
+Disallow: /tmp/
+Disallow: /_headers
+Disallow: /_redirects
+Disallow: /test-*.html
 
 # Sitemap location
 Sitemap: https://itzikbs.com/sitemap.xml
