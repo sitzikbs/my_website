@@ -2,9 +2,17 @@
 
 This directory contains utility scripts for maintaining and improving the website.
 
+## 📁 Directory Structure
+
+- **`/scripts/`** - Active, reusable maintenance scripts
+- **`/scripts/archive/`** - One-time scripts (migration, fixes) - see archive/README.md
+
+---
+
 ## Active Utility Scripts
 
 ### Accessibility & Quality
+
 - **`check_accessibility.py`** - WCAG 2.1 AA compliance checker
   - Validates all HTML files for accessibility issues
   - Checks: skip links, main landmarks, alt text, h1 presence, lang attribute, etc.
@@ -26,22 +34,26 @@ This directory contains utility scripts for maintaining and improving the websit
   - Checks for required fields and data integrity
   - Usage: `uv run python scripts/validate-content.py`
 
-### Performance
-- **`convert_to_webp.py`** - Image optimization
-  - Converts JPEG/PNG images to WebP format
-  - Reduces file sizes while maintaining quality
-  - Usage: `uv run python scripts/convert_to_webp.py`
-
-- **`download_images.py`** - Asset management
-  - Downloads images from remote URLs
-  - Organizes assets in local directory structure
-  - Usage: `uv run python scripts/download_images.py`
-
 ### SEO
+
 - **`generate_sitemap.py`** - Sitemap generator
   - Creates XML sitemap from all HTML pages
   - Sets priority and lastmod dates
   - Usage: `uv run python scripts/generate_sitemap.py`
+  - **Note:** May need updates for 11ty build structure
+
+---
+
+## Archived Scripts
+
+See **`archive/README.md`** for information about:
+- Migration scripts (11ty conversion)
+- Image optimization scripts (initial setup)
+- One-time fixes and updates
+
+These scripts are preserved for reference but are no longer needed for regular maintenance.
+
+---
 
 ## Python Environment
 
@@ -56,3 +68,4 @@ uv run python scripts/<script_name>.py
 - All scripts are designed to be run from the repository root
 - Scripts modify files in place - review changes before committing
 - Use version control to track script-generated changes
+- After 11ty migration, some scripts may need path updates (check `_site/` output)

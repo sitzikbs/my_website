@@ -41,3 +41,11 @@ yarn.lock
 
 # 11ty output
 _site/
+
+# Build artifacts
+*.min.css.map
+*.min.js.map
+
+# Archives (kept in git for reference but marked)
+# scripts/archive/
+# docs/archive/
