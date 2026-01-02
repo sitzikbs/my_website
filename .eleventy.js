@@ -66,6 +66,6 @@ module.exports = function(eleventyConfig) {
     },
     templateFormats: ["html", "njk", "md", "11ty.js"],
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "liquid"  // Use Liquid for markdown to avoid Nunjucks conflicts
+    markdownTemplateEngine: false  // Don't process markdown with template engine
   };
 };

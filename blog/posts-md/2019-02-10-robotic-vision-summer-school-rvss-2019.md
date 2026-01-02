@@ -1,0 +1,75 @@
+---
+layout: layouts/blog-post.njk
+title: "Robotic Vision Summer School (RVSS) 2019"
+date: 2019-02-10
+author: Itzik Ben-Shabat
+permalink: "/blog/posts/2019-02-10-robotic-vision-summer-school-rvss-2019.html"
+---
+
+<div class="post-content">
+
+
+<p> </p>
+<p>I recently accepted a research fellow position at the ANU node of the Australian Centre for Robotic Vision (ACRV) under the supervision of Prof. Stephen Gould (starting July 2019). Shortly after, he invited me to attend the <a href="https://www.roboticvision.org/rvss2019/" rel="noopener" target="_blank">Robotic Vision Summer School (RVSS) 2019</a>, which is an annual event, organized by the center. I was very excited to attend RVSS, especially because I knew I will get to meet all of the people who are involved in the center’s activity. This post aims to summarize RVSS’s technical content and my personal impressions.</p>
+<figure aria-describedby="caption-attachment-928" class="wp-caption aligncenter" id="attachment_928" style="width: 1024px"><picture>
+<source media="(min-width: 400px)" srcset="../../assets/images/blog/group_photo_edited_small-1024x550-400.webp" type="image/webp"/>
+<source media="(max-width: 399px)" srcset="../../assets/images/blog/group_photo_edited_small-1024x550-200.webp" type="image/webp"/>
+<img alt="RVSS 2019" class="wp-image-928 size-large" height="430" loading="lazy" src="../../assets/images/blog/group_photo_edited_small-1024x550.jpg" width="800"/>
+</picture>
+<figcaption class="wp-caption-text" id="caption-attachment-928">RVSS 2019 group photo (yes, Prof. Hartley and Hutchinson were photoshopped in… but they were there, just not in the group photo…)</figcaption></figure>
+<h4><strong>Day 1</strong> :</h4>
+<p>(Technically day 2 because day 1 was mostly arriving, settling in and trivia night)</p>
+<p>We started the day with an inspiring talk by <a href="https://scholar.google.co.il/citations?user=wnePPc4AAAAJ&amp;hl=en&amp;oi=ao">Prof. Peter cork</a> who demonstrated how our vision system can fool us but at the same time how important it is. In his talk, he introduced the pinhole camera model and the perspective projection.  Next, <a href="https://scholar.google.co.il/citations?user=6sWGL5wAAAAJ&amp;hl=en">Prof. Tom Drummond</a> talked about the central projection model in the context of SLAM problems. After lunch, <a href="https://scholar.google.com.au/citations?user=ATkNLcQAAAAJ&amp;hl=en">Prof. Ian Reid</a> Surveyed some traditional vision algorithms like viola &amp; Jones, Hog, etc. Next, <a href="https://scholar.google.com.au/citations?user=-WEzhyEAAAAJ&amp;hl=en">Michelle (Mike) Sesdelli</a> gave a brief overview of neural networks.</p>
+<p>One of the nicest activities of the day (and the entire summer school) was the workshop held by <a href="https://scholar.google.com.au/citations?user=Lzs8CuEAAAAJ&amp;hl=en">Feras Dayoub</a> and his team where we had to ‘teach” a robot to follow a line using a neural network (classification or regression – choose your own adventure). I got to learn PyTorch (which has been on my “to do list” for a while).<br/>
+In the evening we chilled by the fire. One of the special things about Australia in general and specifically to Kioloa is the wildlife, today I encountered 3 Kangaroos, a possum, and a pack of Galahs.</p>
+<p>Quote of the day: “We are all equal and we are all here to learn”, Peter Corke</p>
+<h4><strong>Day 2</strong>:</h4>
+<p>The day started with Prof. <a href="https://scholar.google.co.il/citations?user=wnePPc4AAAAJ&amp;hl=en">Corke </a>which finished his talk from yesterday on optical flow and the delay between vision and action. Next, <a href="https://cecs.anu.edu.au/people/robert-mahony">Prof. Robert Mahoney</a> talked about real-time state estimation and the event camera which captures a series of events in each pixel and not a “regular” image and therefore enables faster capture and response. After that, <u><a href="https://scholar.google.co.il/citations?user=zN_dE1wAAAAJ&amp;hl=en&amp;oi=sra">Thanuja</a><a href="https://scholar.google.co.il/citations?user=zN_dE1wAAAAJ&amp;hl=en&amp;oi=sra"> Dharmasiri</a></u> presented their <a href="https://arxiv.org/pdf/1807.08931.pdf">CReaM </a>paper about real-time (30fps) structure prediction (estimating depth, normals, and curvatures). After lunch, <a href="https://scholar.google.co.il/citations?user=ptAR7tUAAAAJ&amp;hl=en">Miaomiao Liu</a> presented two papers – <u><a href="https://infoscience.epfl.ch/record/221129/files/LiuHeSalzmannECCV16.pdf">depth completion from context </a></u>and <u><a href="https://arxiv.org/pdf/1804.06008.pdf">single image view synthesis</a></u>.</p>
+<p>The first “deep dive” was given by Prof. <u><a href="https://scholar.google.co.il/citations?user=tT2TC-UAAAAJ&amp;hl=en&amp;oi=ao">Laurel Leal-</a><a href="https://scholar.google.co.il/citations?user=tT2TC-UAAAAJ&amp;hl=en&amp;oi=ao">Taixe</a></u>  (which I recently met in Munich) and was split into two parts, the first was about Similarity learning in the context of tracking and detection and the second focused on learning visual localization, this was a great talk that really got me into this topic which I was just familiar with until  that point. Concluding the talkers for the day was Prof.<u><a href="https://scholar.google.co.il/citations?user=5y3JZZ4AAAAJ&amp;hl=en"> Tarek Hamel</a></u> with a technical session about deterministic observer design for homography estimation from points, lines, and conics.</p>
+<p>After that, we had another great workshop session where my team and I got our pet penguinPi robot to autonomously follow a line for the first time ( after collecting data and training on a rather simple regression NN ). The day closed with a great Q &amp; A panel with all of the professors, where they gave their personal view on several interesting topics – career, Ph.D. mistakes and how to (or not to) write a good paper.</p>
+<p>Quote of the day: “How fast Is real time?” Robert Mahoney</p>
+<p><picture>
+<source srcset="../../assets/images/blog/panel-300x225-200.webp" type="image/webp"/>
+<img alt="Panel" class="aligncenter wp-image-918 size-medium" height="225" loading="lazy" src="../../assets/images/blog/panel-300x225.jpg" width="300"/>
+</picture>
+</p>
+<p> </p>
+<h4><strong>Day 3</strong>:</h4>
+<p>The first talk of the day was a “deep dive”  by<a href="https://scholar.google.com.au/citations?user=scoMbR8AAAAJ&amp;hl=en&amp;oi=ao"> Prof. Jose Neira</a> who presented his and others’  work on Simultaneous Localization and Mapping (SLAM) including ORB-SLAM and Dyna-SLAM. Next, <a href="https://scholar.google.com.au/citations?user=0zujL5MAAAAJ&amp;hl=en&amp;oi=ao">Ben Harwood</a> gave a technical talk about accelerating visual systems using the nearest neighbor search where we learned that there are no free lunches. Next, Silver Bonnabel gave a technical talk about invariant Kalman filtering for visual SLAM.  After that we grabbed a packed lunch and went on a bush walk, it was a bit challenging but definitely worth it.</p>
+<p> </p>
+<p><center><br/>
+<picture>
+<source srcset="../../assets/images/blog/pretty-beach-300x225-200.webp" type="image/webp"/>
+<img alt="Pretty beach" class="alignnone wp-image-919 size-medium" height="225" loading="lazy" src="../../assets/images/blog/pretty-beach-300x225.jpg" width="300"/>
+</picture>
+ <picture>
+<source srcset="../../assets/images/blog/drive_to_pretty_beach-300x225-200.webp" type="image/webp"/>
+<img alt="Drive to mount Durras" class="alignnone wp-image-920 size-medium" height="225" loading="lazy" src="../../assets/images/blog/drive_to_pretty_beach-300x225.jpg" width="300"/>
+</picture>
+</center> </p>
+<p>On the walk, I got to talk to <a href="https://scholar.google.com.au/citations?user=mzZy2NMAAAAJ&amp;hl=en">Juxi Leitner</a> who, up until recently I only knew from his <a href="https://twitter.com/Juxi">twitter account.</a> After we got back and had a nice dinner, I had my first real conversation with my future supervisor <a href="http://users.cecs.anu.edu.au/~sgould/" rel="noopener" target="_blank">Stephen Gould</a>. We started off with research topics and then continued to invaluable info and advice for moving to Canberra with my family and accelerating my academic career. I can’t wait to start working with him.</p>
+<p>Quote of the day: “Everything should be as simple as possible but not simpler”, Albert Einstein (as part of Jose’s talk, Albi wasn’t really there… )</p>
+<h4><strong>Day 4</strong>:</h4>
+<p>The day started with a talk on Semantics and objects in SLAM – how can we use semantics to do\improve SLAM?  Next, several speakers took the stage, one after the other, starting from Prof. Corke who had a live demo of his<a href="https://petercorke.com/wordpress/toolboxes/robotics-toolbox"> MATLAB robotics toolbox</a>, Feras who talked about reliable machine learning in robotics, <a href="https://scholar.google.com.au/citations?user=WnKjfFEAAAAJ&amp;hl=en&amp;oi=ao">Niko Sunderhauf</a> who presented the robotic vision challenge, Juxi who talked about manipulation and vision and how they won the Amazon picking challenge in 2017, and finally Prof. Mahoney who talked about visual control for aerial robotics. Next, Prof. Reid talked about visual learning and some open problems in vision – open world/ set, interactivity, data fusion from different sources and incorporating prior or expert knowledge into a learning framework.</p>
+<p>The next deep dive was given by <a href="https://scholar.google.com.au/citations?user=-JPZ21IAAAAJ&amp;hl=en">Prof. Seth Hutchinson</a> on visual servo control where he talked about vision-based control methods. Next, Niko and Feras shared the hour where Niko gave a technical talk about QuadricSLAM and the importance of semantics and Feras talked about remotely benchmarking robotic vision on real robots. The day ended with a workshop where we collected a lot more training data and tried ( not so successfully) to further optimize our robot.</p>
+<h4><strong>Day 5</strong> :</h4>
+<p>(last day)</p>
+<p>The day started with some crazy rainbow lorikeets who were relentless to get an apple.</p>
+<p><picture>
+<source srcset="../../assets/images/blog/rainbow-lorikeet-200.webp" type="image/webp"/>
+<img alt="Rainbow lorikeet" class="aligncenter wp-image-921 size-full" height="218" loading="lazy" src="../../assets/images/blog/rainbow-lorikeet.jpg" width="291"/>
+</picture>
+</p>
+<p>After that little show, the robot steering competition began.  The best robots were definitely the ones with the most creative solutions. First place included reducing the latency by hacking the robot image capturing setup, and second place an 11 class classification method. Out robot was ranked somewhere in the middle.</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0D_0ulzdu-M?feature=oembed" title="RVSS 2019 - steerNet performance" width="800"></iframe></p>
+<p>The day ended with a talk by Qi Wu on reinforcement learning in vision and language.</p>
+<p>Then, we all got on the bus and drove back to Canberra.</p>
+<p>Quote of the day: “Don’t worry if you didn’t understand everything that was presented, networking is also a very important part of your professional life”, Peter Corke.</p>
+<h4>Summary</h4>
+<p>I enjoyed my time at RVSS 2019 a lot! The tutorials, technical talks, and deep dives were just in the right dosage. The workshop was a great experience to learn through play and collaboration.  Most importantly I got to meet new people who share my passion for vision and robotics.</p>
+<p>I would like to thank all of the people involved with organizing RVSS and especially to Prof. Gould for hosting me.</p>
+<p>I am very excited to join this amazing center in a few months.</p>
+<p> </p>
+ 
+
+</div>
