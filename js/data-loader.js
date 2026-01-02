@@ -12,7 +12,7 @@ async function loadNews() {
     if (!newsContainer) return;
     
     try {
-        const response = await fetch('data/news.json');
+        const response = await fetch('/data/news.json');
         const news = await response.json();
         
         if (news.length === 0) {
@@ -49,7 +49,7 @@ async function loadRecentPublications() {
     console.log('Loading publications...');
     
     try {
-        const response = await fetch('data/publications.json');
+        const response = await fetch('/data/publications.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -102,7 +102,7 @@ async function loadRecentBlogPosts() {
     console.log('Loading blog posts...');
     
     try {
-        const response = await fetch('data/blog-index.json?v=' + Date.now());
+        const response = await fetch('/data/blog-index.json?v=' + Date.now());
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -156,7 +156,7 @@ async function loadRecentPodcastEpisodes() {
     console.log('Loading podcast episodes...');
     
     try {
-        const response = await fetch('data/blog-index.json?v=' + Date.now());
+        const response = await fetch('/data/blog-index.json?v=' + Date.now());
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }

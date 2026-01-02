@@ -13,7 +13,7 @@ async function loadPublications() {
     if (!container) return;
     
     try {
-        const response = await fetch('data/publications.json');
+        const response = await fetch('/data/publications.json');
         allPublications = await response.json();
         
         // Render highlighted publications if container exists
