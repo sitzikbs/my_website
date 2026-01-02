@@ -14,7 +14,9 @@ Before deploying, make sure to:
 
 ## Deployment Options
 
-### 1. GitHub Pages (Free, Recommended)
+**Important:** After the 11ty migration, your site requires a build step. See the note about Cloudflare Pages below for the recommended deployment approach.
+
+### 1. GitHub Pages (Free)
 
 GitHub Pages is perfect for static websites and integrates directly with your repository.
 
@@ -26,6 +28,11 @@ GitHub Pages is perfect for static websites and integrates directly with your re
 5. Select `/` (root) as the folder
 6. Click "Save"
 7. Wait a few minutes for deployment
+
+**Note for 11ty sites:** You'll need to either:
+- **Option A:** Build locally and commit `_site/` folder, then set GitHub Pages to serve from `_site/`
+- **Option B:** Use GitHub Actions to auto-build (requires workflow configuration)
+- **Recommended:** Use Cloudflare Pages instead for automatic builds
 
 Your site will be available at: `https://[username].github.io/[repository-name]`
 
@@ -43,8 +50,8 @@ Netlify offers continuous deployment and excellent features.
 3. Connect your GitHub account
 4. Select your repository
 5. Deploy settings:
-   - **Build command:** Leave empty (no build needed)
-   - **Publish directory:** `/` or `.`
+   - **Build command:** `npm run build`
+   - **Publish directory:** `_site`
 6. Click "Deploy site"
 
 Your site will be live in seconds with a custom Netlify URL. You can add a custom domain later.
@@ -63,13 +70,17 @@ Vercel is another excellent option with great performance.
 1. Sign up at [vercel.com](https://vercel.com)
 2. Click "New Project"
 3. Import your GitHub repository
-4. Framework Preset: Select "Other"
-5. No build configuration needed
+4. Framework Preset: Select "Other" or "11ty"
+5. Build settings:
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `_site`
 6. Click "Deploy"
 
 Your site will be deployed with a Vercel URL. Add a custom domain in settings.
 
-### 4. Cloudflare Pages (Free)
+### 4. Cloudflare Pages (Recommended for 11ty Sites) ⭐
+
+**Note:** After migrating to 11ty, Cloudflare Pages is the recommended deployment option for automatic builds.
 
 **Steps:**
 1. Sign up at [pages.cloudflare.com](https://pages.cloudflare.com)
@@ -77,9 +88,42 @@ Your site will be deployed with a Vercel URL. Add a custom domain in settings.
 3. Connect your GitHub account
 4. Select your repository
 5. Build settings:
-   - **Build command:** Leave empty
-   - **Build output directory:** `/`
+   - **Framework preset:** None (or select "11ty" if available)
+   - **Build command:** `npm run build`
+   - **Build output directory:** `_site`
+   - **Root directory:** Leave empty
+   - **Environment variables:** NODE_VERSION = 18 (or latest LTS)
 6. Click "Save and Deploy"
+
+**Benefits:**
+- ✅ Automatic deployments on every push to main
+- ✅ Branch preview deployments (test before merging!)
+- ✅ Free SSL, unlimited bandwidth
+- ✅ Global CDN for fast loading worldwide
+- ✅ Build logs for debugging
+- ✅ Instant rollbacks if needed
+
+**Custom Domain:**
+1. Go to your Cloudflare Pages project
+2. Navigate to "Custom domains"
+3. Add your domain (e.g., itzikbs.com)
+4. Follow DNS configuration instructions
+5. SSL certificate automatically provisioned
+
+**Deployment Workflow:**
+```bash
+# Make changes
+git add .
+git commit -m "Update blog post"
+git push origin main
+
+# Cloudflare automatically:
+# 1. Detects push
+# 2. Runs npm install
+# 3. Runs npm run build
+# 4. Deploys _site/ folder
+# 5. Site live in ~1 minute!
+```
 
 ### 5. Traditional Web Hosting
 
