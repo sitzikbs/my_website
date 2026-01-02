@@ -126,7 +126,7 @@ async function loadRecentBlogPosts() {
         
         recentPosts = recentPosts.slice(0, 3);
         const postsHTML = recentPosts.map(post => `
-            <a href="${post.content.replace(/^\//, '')}" class="blog-card">
+            <a href="${post.content}" class="blog-card">
                 ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-card-image">` : ''}
                 <div class="blog-card-content">
                     <span class="blog-category">${(post.categories && post.categories.length > 0) ? post.categories[0] : 'General'}</span>
@@ -179,7 +179,7 @@ async function loadRecentPodcastEpisodes() {
         
         podcastEpisodes = podcastEpisodes.slice(0, 3);
         const episodesHTML = podcastEpisodes.map(post => `
-            <a href="${post.content.replace(/^\//, '')}" class="blog-card">
+            <a href="${post.content}" class="blog-card">
                 ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-card-image">` : ''}
                 <div class="blog-card-content">
                     <span class="blog-category">Podcast</span>
