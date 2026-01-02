@@ -105,7 +105,7 @@ a:hover {
 .nav-menu a:hover,
 .nav-menu a.active {
     color: var(--primary-color);
-    border-bottom-color: var(--secondary-color);
+    border-bottom-color: var(--primary-color); /* Changed from blue to black */
 }
 
 .nav-toggle {
@@ -211,9 +211,9 @@ a:hover {
 }
 
 .interests-list li:hover {
-    border-color: var(--secondary-color);
-    color: var(--secondary-color);
-    background-color: #eff6ff; /* Light blue tint */
+    border-color: var(--primary-color); /* Changed from blue to black */
+    color: var(--primary-color);
+    background-color: #f5f5f5; /* Changed from light blue to gray */
 }
 
 /* News Section */
@@ -319,13 +319,13 @@ a:hover {
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 1.25rem;
-    box-shadow: none; /* Removed default shadow */
+    box-shadow: var(--shadow-sm); /* Added subtle shadow for better definition */
     transition: var(--transition);
 }
 
 .publication-item:hover {
-    border-color: var(--secondary-color);
-    box-shadow: var(--shadow);
+    border-color: var(--primary-color); /* Changed from blue to black */
+    box-shadow: var(--shadow-lg); /* More prominent shadow on hover */
     transform: translateY(-2px);
 }
 
@@ -431,8 +431,8 @@ a:hover {
 }
 
 .blog-card:hover {
-    border-color: var(--secondary-color);
-    box-shadow: var(--shadow);
+    border-color: var(--primary-color); /* Changed from blue to black */
+    box-shadow: var(--shadow-lg); /* More prominent shadow */
     transform: translateY(-2px);
     color: inherit;
 }
@@ -602,7 +602,7 @@ a:hover {
 }
 
 .contact-item:hover {
-    border-color: var(--secondary-color);
+    border-color: var(--primary-color); /* Changed from blue to black */
     box-shadow: var(--shadow);
 }
 
@@ -699,8 +699,8 @@ a:hover {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    border-color: var(--primary-color); /* Changed from blue to black */
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1); /* Changed to subtle black shadow */
 }
 
 .form-message {
