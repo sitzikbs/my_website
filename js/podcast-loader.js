@@ -9,7 +9,7 @@ async function loadPodcastEpisodes() {
     if (!container) return;
     
     try {
-        const response = await fetch('data/blog-index.json?v=' + Date.now());
+        const response = await fetch('/data/blog-index.json?v=' + Date.now());
         const data = await response.json();
         
         // Filter for Talking Papers Podcast category

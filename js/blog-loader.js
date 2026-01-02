@@ -12,7 +12,7 @@ async function loadBlogPosts() {
     if (!container) return;
     
     try {
-        const response = await fetch('data/blog-index.json?v=' + Date.now());
+        const response = await fetch('/data/blog-index.json?v=' + Date.now());
         const data = await response.json();
         allPosts = data.posts || [];
         
