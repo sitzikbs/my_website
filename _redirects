@@ -1,0 +1,8 @@
+# Cloudflare Pages redirects
+# Ensure trailing slashes work correctly
+/publications /publications/ 301
+/about /about/ 301
+/blog /blog/ 301
+/podcast /podcast/ 301
+/code /code/ 301
+/contact /contact/ 301
