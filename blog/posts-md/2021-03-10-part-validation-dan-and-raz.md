@@ -13,13 +13,9 @@ permalink: "/blog/posts/2021-03-10-part-validation-dan-and-raz.html"
 <p>Luckily, every once in a while I tell my idea to a student or two and I see a spark in their eyes and every once in a blue moon they actually take it on themselves and create something new and exciting that exceeds my expectations.</p>
 <p> </p>
 <p>This post is about one of these unique cases where <a href="https://www.linkedin.com/in/dan-nabel-b29151124/" rel="noopener" target="_blank">Dan Nabel </a>and Raz Kochavi created their “<strong>Part Validation using Kinect and Augmented Reality</strong>”  project which received the “best poster” award in the Technion’s mechanical engineering undergraduate projects competition.</p>
-<p>You can view the poster <a href="https://www.itzikbs.com/wp-content/uploads/2017/08/Poster-raz-and-dan.pdf" rel="noopener" target="_blank">here </a>(Hebrew).</p>
+<p>You can view the poster <a href="/assets/images/blog/Poster-raz-and-dan.pdf" rel="noopener" target="_blank">here </a>(Hebrew).</p>
 <p>*The work was done under the supervision of <a href="https://meeng.technion.ac.il/members/anath-fischer/" rel="noopener" target="_blank">Prof. Anath Fischer</a></p>
-<p><picture>
-<source media="(min-width: 400px)" srcset="../../assets/images/blog/poster_dan_raz-1024x634-400.webp" type="image/webp"/>
-<source media="(max-width: 399px)" srcset="../../assets/images/blog/poster_dan_raz-1024x634-200.webp" type="image/webp"/>
-<img alt="" class="aligncenter wp-image-512" height="371" loading="lazy" src="../../assets/images/blog/poster_dan_raz-1024x634.jpg" width="600"/>
-</picture>
+<p>{% responsiveImage "assets/images/blog/2017-08-poster_dan_raz.jpg", "" %}
 </p>
 <p> </p>
 <p><strong>Intro</strong> (mostly for non- mechanical engineers): The design of a new product encapsulates many stages, from characterizing the customer’s requirements, creating a detailed specification, conceptual design, detailed mechanical design,  manufacturing, assembly and evaluation testing. Between the manufacturing and assembly stages, there is an internal stage called “validation”. In this stage, the manufacturer ( and usually the client too) inspects and measures the manufactured part in order to check if it meets the design specification.  In a perfect world, every manufacturer will supply every single part exactly as the CAD model and sketch specify. However, we don’t live in a perfect world.  The process of validation and inspection is something that takes time (and money). Sometimes there is a person that stands and manually measures the part with a caliper and sometimes there is a very big, very expensive, very calibrated machine that does it automatically for a subset of the manufactured parts. One of the hardest cases to validate are free-form surfaces.  Their unique geometry is usually so complex that traditional measuring instruments are just not enough.</p>
@@ -48,19 +44,12 @@ permalink: "/blog/posts/2021-03-10-part-validation-dan-and-raz.html"
 <p> </p>
 <p>Once the two point clouds are aligned we compute the distances between every two closest points between the two point clouds. To do this efficiently we use a <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm" rel="noopener" target="_blank">K nearest neighbor algorithm</a> (K=1 in this case) which uses the<a href="https://en.wikipedia.org/wiki/K-d_tree" rel="noopener" target="_blank"> K-d tree data structure.</a>  If there are no manufacturing errors all of the computed distances should be zero (or a very small number) but, if there is a defect the distance will spike. For <em>visualization</em> purposes, we now map all of the distances to a color map (from blue=acurate to red=high error).    Next, we project these points onto a plane and display it on screen. At this point we realized that just looking at it on the screen is simply not enough anymore (in the world where augmented reality is a great buzz word) so we connected a projector and projected the error map onto the part (I still want to get an <a href="https://www.oculus.com/rift/" rel="noopener" target="_blank">Oculus Rift </a>or a <a href="https://www.microsoft.com/en-us/hololens" rel="noopener" target="_blank">Microsoft HoloLen</a>s for it) .  Now we could really see the errors on the part.</p>
 <p> </p>
-<p>The approach is summarized visually in the flowchart below (click on it to see full-size).  For further details, you can read their full report <a href="https://www.itzikbs.com/wp-content/uploads/2017/08/Part-Validation-Dan-and-Raz.pdf" rel="noopener" target="_blank">here </a>(Hebrew)</p>
-<p><a href="https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/08/FLOW-CHART.png" rel="noopener" target="_blank"><picture>
-<source media="(min-width: 400px)" srcset="../../assets/images/blog/FLOW-CHART-254x300-400.webp" type="image/webp"/>
-<source media="(max-width: 399px)" srcset="../../assets/images/blog/FLOW-CHART-254x300-200.webp" type="image/webp"/>
-<img alt="" class="aligncenter wp-image-524" height="480" loading="lazy" src="../../assets/images/blog/FLOW-CHART-254x300.png" width="407"/>
-</picture>
+<p>The approach is summarized visually in the flowchart below (click on it to see full-size).  For further details, you can read their full report <a href="/assets/images/blog/Part-Validation-Dan-and-Raz.pdf" rel="noopener" target="_blank">here </a>(Hebrew)</p>
+<p><a href="assets/images/blog/FLOW-CHART.png" rel="noopener" target="_blank">{% responsiveImage "assets/images/blog/FLOW-CHART.png", "" %}
 </a></p>
 <p> </p>
 <p>In the image below you can see the <strong>results</strong> of visualization on a test part.  We took a big chunk of Plasticine and placed it on the part (right) and the projected visualization (left). The system shows the expected high errors on the Plasticine. (Note that even though the part is shiny and red the projection is seen well)</p>
-<p><picture>
-<source srcset="../../assets/images/blog/Error-Map-200.webp" type="image/webp"/>
-<img alt="" class="size-full wp-image-536 aligncenter" height="96" loading="lazy" src="../../assets/images/blog/Error-Map.jpg" width="300"/>
-</picture>
+<p>{% responsiveImage "assets/images/blog/Error-Map.jpg", "" %}
 </p>
 <p> </p>
 <p>Remember how a picture is worth a thousand words? So how many words is a demo?</p>
@@ -69,7 +58,7 @@ permalink: "/blog/posts/2021-03-10-part-validation-dan-and-raz.html"
 <p> </p>
 <p>Disclaimer: I must say that Dan and Raz built a great prototype but, as in any other system, there are some drawbacks. We all agreed that the overall accuracy of the system can be improved. Each of the steps contributes to inaccuracy, starting from the Kinect itself which has a limited depth resolution and ending with the registration that may be inaccurate (especially in scenarios of high deformation).  In addition, when projecting the error map on the part some manual alignment is performed. All of these issues are solvable but when squeezed into an undergraduate project we just didn’t get to them ( future work anyone?).</p>
 <p> </p>
-<p>You can download their source code <a href="https://www.itzikbs.com/wp-content/uploads/2017/08/PartsValidator.zip">here</a>. It contains MATLAB files and some sample STL files (the package also contains its dependencies like <a href="https://www.mathworks.com/matlabcentral/fileexchange/29276-dragzoom-drag-and-zoom-tool" rel="noopener" target="_blank">Dragzoom</a>).</p>
+<p>You can download their source code <a href="/assets/images/blog/PartsValidator.zip">here</a>. It contains MATLAB files and some sample STL files (the package also contains its dependencies like <a href="https://www.mathworks.com/matlabcentral/fileexchange/29276-dragzoom-drag-and-zoom-tool" rel="noopener" target="_blank">Dragzoom</a>).</p>
 <p> </p>
 <p>In <strong>summary</strong>, I think Dan and Raz did a great job. They created a new low-cost, portable system for mechanical parts validation.  Most importantly, they learned a lot in the process and had some fun, I know I did.</p>
  

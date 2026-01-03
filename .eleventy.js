@@ -1,4 +1,11 @@
+const responsiveImageShortcode = require("./_includes/shortcodes/responsiveImage.js");
+
 module.exports = function(eleventyConfig) {
+  
+  // Register responsive image shortcode
+  eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", responsiveImageShortcode);
+  eleventyConfig.addLiquidShortcode("responsiveImage", responsiveImageShortcode);
+  eleventyConfig.addJavaScriptFunction("responsiveImage", responsiveImageShortcode);
   
   // Ignore unnecessary directories and files
   eleventyConfig.ignores.add("blog/posts/**");
@@ -64,6 +71,6 @@ module.exports = function(eleventyConfig) {
     },
     templateFormats: ["html", "njk", "md", "11ty.js"],
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: false  // Don't process markdown with template engine
+    markdownTemplateEngine: "njk"  // Re-enabled after fixing LaTeX formula conflicts with {% raw %} tags
   };
 };

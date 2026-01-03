@@ -10,10 +10,7 @@ permalink: "/blog/posts/2021-03-10-3-things-you-should-know-about-artificial-int
 
 
 <p>Artificial intelligence, or AI, has become a commonly used buzz word in the past few years. When I talk about AI with friends and family, the first thought that comes to everyone’s mind is SkyNet from the <a aria-label="undefined (opens in a new tab)" href="https://en.wikipedia.org/wiki/Terminator_(franchise)" rel="noreferrer noopener" target="_blank">Terminator </a>franchise. While Terminator is an iconic movie, it is not about AI, it is about AGI – the G is for General (more about that later). Today, AGI is still science fiction, despite all of the computer power and progress in the field. With that said, we are witnessing the integration of different AI’s (no G) into our lives, whether its personal assistants like <a href="https://www.apple.com/au/siri/">Siri</a>, <a href="https://www.amazon.com/b?ie=UTF8&amp;node=17934671011">Alexa</a>, <a href="https://www.techrepublic.com/article/google-assistant-the-smart-persons-guide/">Google assistant</a> or even my Gmail’s autocompleting feature that knows how to finish my sente*(hit tab)*ces. The main point to understand is that, like all of the revolutions that came before it, the AI revolution is inevitable and aims at improving our lives.</p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><picture>
-<source media="(max-width: 399px)" srcset="../../assets/images/publications/AI_teaser-200.webp" type="image/webp"/>
-<img alt="" class="wp-image-1141" height="240" loading="lazy" src="../../assets/images/publications/AI_teaser.jpg" width="300"/>
-</picture></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized">{% responsiveImage "assets/images/publications/AI_teaser.jpg", "" %}</figure></div>
 <h3 class="wp-block-heading">AI is not what you think it is</h3>
 <p>Let’s start with the basics – What is AI?</p>
 <p> Plainly, AI is a branch of computer science that focuses on creating a machine or computer that can perceive its environment (with a camera or microphone for example) and take action that maximizes its chance of successfully achieving its goals.</p>

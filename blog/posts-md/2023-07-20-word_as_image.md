@@ -15,10 +15,7 @@ permalink: "/blog/posts/2023-07-20-word_as_image.html"
 <p>Shir, a dedicated Masters student at Tel Aviv University, has embarked on a groundbreaking project in collaboration with Yael Vinker, both making equal contributions to this remarkable endeavor. You may know Yael from her prior appearance as a guest on the podcast (<a href="https://www.itzikbs.com/clipasso" rel="noreferrer noopener" target="_blank">CLIPasso episode</a>). Their work carries immense potential, promising to revolutionize the creative processes of artists and designers. Rather than commencing from a traditional blank canvas or plain font, this innovative approach enables individuals to initiate their logo design journey by transforming a word into a captivating image. The implications of this novel technique hold the power to reshape the very workflow of artistic expression, opening up exciting new possibilities for visual communication and design aesthetics.</p>
 <p>I am eagerly anticipating the next set of papers she will sketch out (pun intended).</p>
 <p><br/>Check out this result for the word “Podcast” with the semantic context of “Headphones”. I like it. </p>
-<div class="wp-block-image"><figure class="aligncenter size-full"><picture>
-<source srcset="../../assets/images/blog/LuckiestGuy-Regular_PODCAST_A-200.webp" type="image/webp"/>
-<img alt="" class="wp-image-2083" height="63" loading="lazy" src="../../assets/images/blog/LuckiestGuy-Regular_PODCAST_A.png" width="300"/>
-</picture>
+<div class="wp-block-image"><figure class="aligncenter size-full">{% responsiveImage "assets/images/blog/LuckiestGuy-Regular_PODCAST_A.png", "" %}
 </figure></div>
 <div id="buzzsprout-player-13251083"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/13251083-word-as-image-shir-iluz.js?container_id=buzzsprout-player-13251083&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
