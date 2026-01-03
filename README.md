@@ -56,8 +56,23 @@ A clean, responsive academic website built with Eleventy (11ty) static site gene
 
 ## Quick Start
 
+### Prerequisites
+
+- **Git LFS**: This repository uses Git LFS to manage image files. Install it before cloning:
+  ```bash
+  # Ubuntu/Debian
+  sudo apt-get install git-lfs
+  
+  # macOS
+  brew install git-lfs
+  
+  # Windows
+  # Download from https://git-lfs.github.com/
+  ```
+
 1. **Clone the repository:**
    ```bash
+   git lfs install  # Initialize Git LFS
    git clone https://github.com/yourusername/my_website.git
    cd my_website
    ```
@@ -72,6 +87,7 @@ A clean, responsive academic website built with Eleventy (11ty) static site gene
    npm run serve
    # Site available at http://localhost:8080
    # Auto-reloads on file changes
+   # Note: First build generates responsive image variants (may take 1-2 minutes)
    ```
 
 4. **Customize the content:**
@@ -84,6 +100,7 @@ A clean, responsive academic website built with Eleventy (11ty) static site gene
    ```bash
    npm run build
    # Output in _site/ directory
+   # Includes generated responsive image variants in assets/images/generated/
    ```
 
 ## NPM Scripts
