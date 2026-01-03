@@ -130,6 +130,36 @@ This document describes the performance optimizations implemented to improve Cor
 
 ---
 
+## Integration with Eleventy Image Plugin
+
+After these optimizations were implemented, the main branch added an Eleventy Image plugin that automatically generates responsive images with WebP format and multiple sizes. This plugin is **complementary** to our performance optimizations.
+
+### Eleventy Image Plugin Features
+- Generates responsive images at 400px, 800px, and 1200px widths
+- Creates WebP versions alongside originals for better compression
+- Uses `<picture>` elements with proper srcset
+- Outputs to `assets/images/generated/` directory
+
+### Performance Enhancement to Plugin
+The `responsiveImage.js` shortcode was enhanced to accept an optional `loading` parameter:
+
+```javascript
+// Default behavior (lazy loading for below-fold images)
+{% responsiveImage "path.jpg", "Alt text" %}
+
+// For LCP elements (above-the-fold, critical images)
+{% responsiveImage "path.jpg", "Alt text", "(min-width: 800px) 800px, 100vw", "eager" %}
+```
+
+**Key Change:** When `loading="eager"` is specified, the shortcode also adds `fetchpriority="high"` to prioritize the LCP element.
+
+### Integration Notes
+- **Homepage profile image:** Uses manual `<picture>` element (not shortcode) with `fetchpriority="high"` for optimal LCP
+- **Blog post images:** Use the `responsiveImage` shortcode with default `loading="lazy"`
+- **Above-the-fold hero images:** Should use `loading="eager"` parameter
+
+---
+
 ## Performance Metrics Target
 
 ### Before Optimization
@@ -181,12 +211,13 @@ This document describes the performance optimizations implemented to improve Cor
 ## Files Modified
 
 1. `_includes/layouts/base.njk` - Main template with font, analytics, and CSS optimizations
-2. `index.html` - Profile image optimization
-3. `js/data-loader.js` - Lazy loading for dynamic content
-4. `js/publications-loader.js` - Lazy loading for publications
-5. `js/blog-loader.js` - Lazy loading for blog posts
-6. `js/podcast-loader.js` - Lazy loading for podcast episodes
-7. All corresponding `.min.js` files - Rebuilt with optimizations
+2. `_includes/shortcodes/responsiveImage.js` - Enhanced with configurable loading attribute for LCP optimization
+3. `index.html` - Profile image optimization
+4. `js/data-loader.js` - Lazy loading for dynamic content
+5. `js/publications-loader.js` - Lazy loading for publications
+6. `js/blog-loader.js` - Lazy loading for blog posts
+7. `js/podcast-loader.js` - Lazy loading for podcast episodes
+8. All corresponding `.min.js` files - Rebuilt with optimizations
 
 ---
 

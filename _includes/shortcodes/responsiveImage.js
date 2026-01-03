@@ -10,8 +10,12 @@ const path = require("path");
  * 
  * Optional third parameter for sizes attribute:
  * {% responsiveImage "path.jpg", "Alt", "(min-width: 1200px) 1200px, 100vw" %}
+ * 
+ * Optional fourth parameter for loading strategy (default: "lazy"):
+ * {% responsiveImage "path.jpg", "Alt", "(min-width: 800px) 800px, 100vw", "eager" %}
+ * Use "eager" for above-the-fold images (especially LCP candidates) to improve performance
  */
-async function responsiveImageShortcode(src, alt = "", sizes = "(min-width: 800px) 800px, 100vw") {
+async function responsiveImageShortcode(src, alt = "", sizes = "(min-width: 800px) 800px, 100vw", loading = "lazy") {
   // Handle relative paths
   let imagePath = src;
   
@@ -56,8 +60,8 @@ async function responsiveImageShortcode(src, alt = "", sizes = "(min-width: 800p
       width="${highsrc.width}"
       height="${highsrc.height}"
       alt="${alt}"
-      loading="lazy"
-      decoding="async">
+      loading="${loading}"
+      decoding="async"${loading === "eager" ? '\n      fetchpriority="high"' : ""}>
   </picture>`;
 }
 
