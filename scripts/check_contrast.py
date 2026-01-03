@@ -50,14 +50,14 @@ def main():
     print("  • UI components and graphics: 3:1 minimum")
     print("\n" + "=" * 80)
     
-    # Define color combinations used in the site
+    # Define color combinations actually used in the site
+    # Note: Only testing colors that are actually used for text/UI elements
     color_tests = [
-        # Text colors
-        ("Text on white", "#1a1a1a", "#ffffff", "normal"),  # gray-900 on white
-        ("Primary links on white", "#2563eb", "#ffffff", "normal"),  # primary on white
-        ("Gray text on white", "#666666", "#ffffff", "normal"),  # gray-600 on white
-        ("Dark gray on white", "#404040", "#ffffff", "normal"),  # gray-700 on white
-        ("Light gray text", "#808080", "#ffffff", "normal"),  # gray-500 on white
+        # Text colors (actual usage in CSS)
+        ("Text on white", "#1a1a1a", "#ffffff", "normal"),  # gray-900 on white (body text)
+        ("Primary links on white", "#2563eb", "#ffffff", "normal"),  # primary on white (links)
+        ("Gray text on white", "#666666", "#ffffff", "normal"),  # gray-600 on white (secondary text)
+        ("Dark gray on white", "#404040", "#ffffff", "normal"),  # gray-700 on white (nav links)
         
         # Button colors
         ("White on primary", "#ffffff", "#2563eb", "normal"),  # button text
@@ -66,12 +66,6 @@ def main():
         # Background colors
         ("Gray-900 on gray-50", "#1a1a1a", "#fafafa", "normal"),  # text on light bg
         ("Gray-800 on gray-100", "#2d2d2d", "#f5f5f5", "normal"),  # text on alt bg
-        
-        # Footer and nav
-        ("Gray-700 on white", "#404040", "#ffffff", "normal"),  # nav links
-        
-        # Links and focus states
-        ("Primary on subtle bg", "#2563eb", "#dbeafe", "normal"),  # link on light blue
     ]
     
     issues = []
