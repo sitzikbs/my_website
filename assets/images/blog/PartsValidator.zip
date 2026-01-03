@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EC0BTHZ23"></script>
+    <script src="/js/analytics.min.js"></script>
+
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website and blog">
+    <meta name="author" content="Itzik Ben-Shabat">
+    <link rel="canonical" href="https://www.itzikbs.com//">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.itzikbs.com//">
+    <meta property="og:title" content="Itzik Ben-Shabat - 3D Computer Vision Research">
+    <meta property="og:description" content="Personal website and blog">
+    <meta property="og:image" content="https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg">
+    <meta property="og:site_name" content="Itzik Ben-Shabat">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.itzikbs.com//">
+    <meta name="twitter:title" content="Itzik Ben-Shabat - 3D Computer Vision Research">
+    <meta name="twitter:description" content="Personal website and blog">
+    <meta name="twitter:image" content="https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg">
+
+    <title>Itzik Ben-Shabat - 3D Computer Vision Research</title>
+    
+    <link rel="stylesheet" href="/css/style.min.css?v=5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Structured Data (Schema.org) -->
+    
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Itzik Ben-Shabat",
+  "url": "https://www.itzikbs.com",
+  "image": "https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg",
+  "jobTitle": "Research Scientist",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Roblox"
+  },
+  "alumniOf": [
+    {
+      "@type": "Organization",
+      "name": "Technion - Israel Institute of Technology"
+    }
+  ],
+  "sameAs": [
+    "https://github.com/sitzikbs",
+    "https://twitter.com/sitzikbs",
+    "https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/"
+  ]
+}
+
+    </script>
+    
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <nav class="navbar">
+    <div class="container">
+        <div class="nav-brand">
+            <a href="/">Itzik Ben-Shabat</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/about/" >About</a></li>
+            <li><a href="/publications/" >Publications</a></li>
+            <li><a href="/podcast/" >Podcast</a></li>
+            <li><a href="/blog/" >Blog</a></li>
+            <li><a href="/code/" >Code</a></li>
+            <li><a href="/contact/" >Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    
+    <main id="main-content">
+        
+<section class="hero">
+    <div class="container">
+     <div class="hero-content">
+      <div class="profile-image">
+       <picture>
+  <source srcset="/assets/images/profile/Itzik_Ben_Shabat_portrait-400.webp" type="image/webp" media="(min-width: 400px)">
+  <source srcset="/assets/images/profile/Itzik_Ben_Shabat_portrait-200.webp" type="image/webp" media="(min-width: 200px)">
+  <img src="/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg" alt="Profile picture" width="500" height="500" loading="lazy">
+</picture>
+      </div>
+      <div class="hero-text">
+       <h1>
+        Hi, I'm Itzik!
+       </h1>
+       <p class="subtitle">
+        Researcher • Educator • Engineer
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="about">
+    <div class="container">
+     <h2>
+      About Me
+     </h2>
+     <div class="about-content">
+      <div class="elementor-widget-container">
+       <p>
+I'm a Research Scientist at Roblox, where I work on avatars and animation. My broader research focuses on 3D computer vision, point cloud processing, and deep learning for 3D understanding. I believe in making research accessible—publishing open-source code and hosting conversations with researchers. PhD from the Technion (plus B.Sc Cum Laude, M.Sc Summa Cum Laude).
+        </p>
+        <p>
+         <strong>Wondering</strong> <a href="blog/posts/2021-03-10-how-to-pronounce-my-name.html"><strong>how to say my name</strong></a><strong>? I got you covered.</strong>
+                </p>
+        <p>
+         In my spare time, I host the <a href="https://talking.papers.podcast.itzikbs.com/" rel="noopener" target="_blank">Talking Papers Podcast</a>, providing a platform for early career academics to discuss their latest research. Here you can explore my <a href="https://www.itzikbs.com/publications/" rel="noopener" target="_blank">publications</a>, <a href="https://www.itzikbs.com/code/" rel="noopener" target="_blank">code</a>, and <a href="https://www.itzikbs.com/category/research-blog" rel="noopener" target="_blank">blog</a>. Feel free to <a href="https://www.itzikbs.com/contact/" rel="noopener" target="_blank">contact me</a> with any questions!
+        </p>
+      </div>
+     </div>
+     <div class="highlights">
+      <h3>
+       Research Interests
+      </h3>
+      <ul class="interests-list">
+       <li>
+        Computer Vision
+       </li>
+       <li>
+        Machine Learning
+       </li>
+       <li>
+        Deep Learning
+       </li>
+       <li>
+        3D Reconstruction
+       </li>
+      </ul>
+     </div>
+     <div class="news">
+      <h3>
+       Recent News
+      </h3>
+      <ul class="news-list" id="news-list">
+       <li>
+        <span class="news-date">
+         07/25
+        </span>
+        <span class="news-content">
+         GEOPARD , StyleMotif , and Less is More accepted to ICCV 2025! Congrats Pradyumn, Ziyu, and Jin!
+        </span>
+       </li>
+       <li>
+        <span class="news-date">
+         10/24
+        </span>
+        <span class="news-content">
+         Neural Experts accepted to NeurIPS 2024!
+        </span>
+       </li>
+       <li>
+        <span class="news-date">
+         07/24
+        </span>
+        <span class="news-content">
+         Joined Roblox as a Research Scientist!
+        </span>
+       </li>
+       <li>
+        <span class="news-date">
+         02/24
+        </span>
+        <span class="news-content">
+         Two Papers accepted to CVPR 2024! Congrats Chamin.
+        </span>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </section>
+   <section class="recent-work">
+    <div class="container">
+     <h2>
+      Recent Publications
+     </h2>
+     <div class="publications-grid" id="recent-publications">
+      <!-- Recent publications will be loaded dynamically -->
+     </div>
+     <div class="view-all">
+      <a class="btn-primary" href="/publications/">
+       View All Publications
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="recent-podcast">
+    <div class="container">
+     <h2>
+      Recent Podcast Episodes
+     </h2>
+     <div class="blog-grid" id="recent-podcast-episodes">
+      <!-- Recent podcast episodes will be loaded dynamically -->
+     </div>
+     <div class="view-all">
+      <a class="btn-primary" href="/podcast/">
+       View All Episodes
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="recent-blog">
+    <div class="container">
+     <h2>
+      Recent Blog Posts
+     </h2>
+     <div class="blog-grid" id="recent-blog-posts">
+      <!-- Recent blog posts will be loaded dynamically -->
+     </div>
+     <div class="view-all">
+      <a class="btn-primary" href="/blog/">
+       View All Posts
+      </a>
+     </div>
+    </div>
+   </section>
+
+
+<script src="/js/data-loader.min.js?v=6"></script>
+
+
+    </main>
+    
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="/cdn-cgi/l/email-protection#04776d707e6d6f6677446369656d682a676b69" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/sitzikbs" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/sitzikbs" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; <span id="current-year"></span> All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+
+    
+    <script src="/js/security-utils.min.js"></script>
+    <script src="/js/main.min.js"></script>
+    <script src="/js/navigation.min.js"></script>
+    
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"293cbe7735334e628e659b2c61a214a2","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

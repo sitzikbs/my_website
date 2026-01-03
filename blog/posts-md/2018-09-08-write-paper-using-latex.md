@@ -46,9 +46,9 @@ permalink: "/blog/posts/2018-09-08-write-paper-using-latex.html"
 <h2>Step 2:  The Paper</h2>
 <p>Now that you have everything set up you can start working on your paper.</p>
 <p>Before you do, I highly recommend watching these<a href="https://www.youtube.com/watch?v=SoDv0qhyysQ&amp;list=PL1D4EAB31D3EBC449" rel="noopener"> youtube tutorials </a>by Michelle Krummel. It will help you understand the basics.</p>
-<p>Now that you know the basics you can simply download <a href="https://www.itzikbs.com/wp-content/uploads/2017/11/LaTeX-General-Template.zip" rel="noopener">this template</a> and read the following explanations without actually having to do anything.</p>
+<p>Now that you know the basics you can simply download <a href="/assets/images/blog/LaTeX-General-Template.zip" rel="noopener">this template</a> and read the following explanations without actually having to do anything.</p>
 <ol>
-<li>Download <a href="https://www.itzikbs.com/wp-content/uploads/2017/11/LaTeX-General-Template.zip" rel="noopener">this template</a>.</li>
+<li>Download <a href="/assets/images/blog/LaTeX-General-Template.zip" rel="noopener">this template</a>.</li>
 <li>Extract the template files into your working directory (keep the zip file for future papers).</li>
 <li>Open “<em>main.tex</em>” in TexMaker.</li>
 <li>Run a quick build.</li>
@@ -177,7 +177,7 @@ year={2017}
 <ul>
 <li>Install <a href="https://miktex.org/download" rel="noopener" target="_blank">MiKTeX.</a></li>
 <li>Install <a href="http://www.xm1math.net/texmaker/download.html" rel="noopener" target="_blank">TexMaker.</a></li>
-<li>Download the <a href="https://www.itzikbs.com/wp-content/uploads/2017/11/LaTeX-General-Template.zip" rel="noopener" target="_blank">template</a>.</li>
+<li>Download the <a href="/assets/images/blog/LaTeX-General-Template.zip" rel="noopener" target="_blank">template</a>.</li>
 <li>Good luck!</li>
 </ul>
  
