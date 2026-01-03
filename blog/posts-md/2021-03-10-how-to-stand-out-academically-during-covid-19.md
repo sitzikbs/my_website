@@ -26,7 +26,7 @@ permalink: "/blog/posts/2021-03-10-how-to-stand-out-academically-during-covid-19
 <br/>
 <p><br/>The first thing I did was to enrol into the online courses in  <br/>LinkedIn Learning. There is a lot to choose from! So I set a goal – I will increase the production quality of my academic online content. I saw too many youtube videos with bad sound, bad videos and bad presentations and I decided to be on the exact opposite side of this spectrum. In order to do that, I needed some tools – Adobe Photoshop,  Adobe Premiere Pro, Adobe After effects, and more. I am still making my way through the courses but I already integrated some of the things I learned into our latest research and created a website I am really proud of (check out <a aria-label="the IKEA assembly dataset (opens in a new tab)" href="https://ikeaasm.github.io/" rel="noreferrer noopener" target="_blank">the IKEA assembly dataset</a> page).   I also never liked my profile picture and “improved” it a bit: <br/><br/></p>
 <div class="wp-block-image"><figure class="aligncenter is-resized">{% endraw %}
-{% responsiveImage "../../assets/images/profile/Itzik_Ben_Shabat_portrait.jpg", "" %}
+{% responsiveImage "../../assets/images/blog/Itzik_Portrait_befoer_and_after_v2.jpg", "" %}
 {% raw %}
 
 
