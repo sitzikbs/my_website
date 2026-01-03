@@ -41,7 +41,7 @@ function renderHighlights(publications) {
         <div class="publication-item" style="display: flex; gap: 1.5rem; margin-bottom: 0.5rem; align-items: start;">
             ${pub.image ? `
                 <div class="publication-image" style="flex: 0 0 200px;">
-                    <img src="${pub.image}" alt="${pub.title}" style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <img src="${pub.image}" alt="${pub.title}" loading="lazy" width="200" height="150" style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                 </div>
             ` : ''}
             <div class="publication-content" style="flex: 1;">
@@ -92,7 +92,7 @@ function renderPublications(publications) {
             <div class="publication-item" style="display: flex; gap: 1.5rem; margin-bottom: 0.5rem; align-items: start;">
                 ${pub.image ? `
                     <div class="publication-image" style="flex: 0 0 200px;">
-                        <img src="${pub.image}" alt="${pub.title}" style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <img src="${pub.image}" alt="${pub.title}" loading="lazy" width="200" height="150" style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                     </div>
                 ` : ''}
                 <div class="publication-content" style="flex: 1;">

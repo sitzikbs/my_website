@@ -34,7 +34,7 @@ function renderPosts(posts) {
     
     const postsHTML = posts.map(post => `
         <a href="${post.content}" class="blog-card">
-            ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-card-image">` : ''}
+            ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-card-image" loading="lazy" width="400" height="250">` : ''}
             <div class="blog-card-content">
                 <span class="blog-category">${(post.categories && post.categories.length > 0) ? post.categories[0] : 'General'}</span>
                 <h3>${post.title}</h3>
