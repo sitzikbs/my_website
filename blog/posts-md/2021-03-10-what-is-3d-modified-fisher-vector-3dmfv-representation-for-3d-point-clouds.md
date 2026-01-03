@@ -27,32 +27,20 @@ permalink: "/blog/posts/2021-03-10-what-is-3d-modified-fisher-vector-3dmfv-repre
 <h2>The Intuition</h2>
 <p>It is much easier to understand the 3DmFV for points with some nice visualizations.</p>
 <p>Let’s take a single 3D point in a single Gaussian and show its 3DmFV (here the grid is  basically 1x1x1):</p>
-<p style="text-align: center;"><picture>
-<source srcset="../../assets/images/blog/fv_3d000-300x225-200.webp" type="image/webp"/>
-<img alt="" class="alignnone size-medium wp-image-790" height="225" loading="lazy" src="../../assets/images/blog/fv_3d000-300x225.png" width="300"/>
-</picture>
+<p style="text-align: center;">{% responsiveImage "assets/images/blog/fv_3d000.png", "" %}
 </p>
 <p>Now let’s see what happens when we move the point (hint 3DmFV changes)</p>
-<p style="text-align: center;"><picture>
-<source srcset="../../assets/images/blog/fv_3d0.500-300x225-200.webp" type="image/webp"/>
-<img alt="" class="alignnone size-medium wp-image-791" height="225" loading="lazy" src="../../assets/images/blog/fv_3d0.500-300x225.png" width="300"/>
-</picture>
+<p style="text-align: center;">{% responsiveImage "assets/images/blog/fv_3d0.500.png", "" %}
 </p>
 <p>Next, we can see what happens when we move the point all around (the .gif file might take a few seconds to load).</p>
-<p style="text-align: center;"><img alt="" class="alignnone size-full wp-image-801" height="329" loading="lazy" src="../../assets/images/blog/3d_fv_smaller-compressor.gif" width="350"/></p>
+<p style="text-align: center;">{% responsiveImage "assets/images/blog/3d_fv_smaller-compressor.gif", "" %}</p>
 <p>Finally, let’s see how the 3DmFV looks like when we take multiple points on a GMM of 2x2x2:</p>
-<p style="text-align: center;"><picture>
-<source srcset="../../assets/images/blog/fv_3d_model-200.webp" type="image/webp"/>
-<img alt="" class="alignnone wp-image-792 size-full" height="225" loading="lazy" src="../../assets/images/blog/fv_3d_model.png" width="300"/>
-</picture>
+<p style="text-align: center;">{% responsiveImage "assets/images/blog/2018-09-fv_3d_model.png", "" %}
 </p>
 <h2>Reconstruction from 3DmFV</h2>
 <p>Some may argue that 3DmFV is simply another handcrafted feature. However, we argue that it is simply another form to represent the data and therefore, the process is reversible. It is possible to show analytically that for simple cases it is reversible (single point, single Gaussian, points on a plane in a Gaussian). It gets a bit more complex in the general case when more points and more Gaussians are present. Therefore, we trained a simple 3DmFV decoder that is able to take a 3DmFV representation as input and produce a 3D point cloud as output.</p>
 <p>Here is an image of a reconstructed point cloud of an airplane:</p>
-<p><picture>
-<source srcset="../../assets/images/blog/decoder_original_vs_reconstruction-01-200.webp" type="image/webp"/>
-<img alt="" class="size-full wp-image-830 aligncenter" height="98" loading="lazy" src="../../assets/images/blog/decoder_original_vs_reconstruction-01.png" width="300"/>
-</picture>
+<p>{% responsiveImage "assets/images/blog/decoder_original_vs_reconstruction.png", "" %}
 </p>
 <h2>The Code</h2>
 <p>In order to recreate the images above you can use my repository for this <a href="https://github.com/sitzikbs/3DmFV-Tutorial" rel="noopener" target="_blank">3DmFV tutorial on my GitHub</a>.</p>

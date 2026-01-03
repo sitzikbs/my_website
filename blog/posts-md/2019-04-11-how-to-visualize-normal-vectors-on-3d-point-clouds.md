@@ -16,10 +16,7 @@ permalink: "/blog/posts/2019-04-11-how-to-visualize-normal-vectors-on-3d-point-c
 <p>Here <code>x,y,z</code> are the point coordinates and <code>u,v,w</code> are the vector components. </p>
 <h4 class="wp-block-heading">The problem</h4>
 <p>The problem was that for complex 3D point clouds (like from the NYU Depth V2 dataset) this visualization is not very informative (it is very hard to see where the little arrows are pointing). </p>
-<div class="wp-block-image"><figure class="aligncenter is-resized"><picture>
-<source srcset="../../assets/images/blog/nyu_v2_quiver-1024x666-200.webp" type="image/webp"/>
-<img alt="3D point clouds with normal vectors  visualization as arrows" class="wp-image-998" height="248" loading="lazy" src="../../assets/images/blog/nyu_v2_quiver-1024x666.jpg" width="383"/>
-</picture>
+<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "assets/images/blog/nyu_v2_quiver.jpg", "3D point clouds with normal vectors  visualization as arrows" %}
 <figcaption>Normal vector visualization using <code>quiver3</code> of a scene from NYU Depth V2  </figcaption></figure></div>
 <h4 class="wp-block-heading">The solution</h4>
 <p>Therefore, I created a nice function that maps a vector to the RGB cube: </p>
@@ -28,12 +25,7 @@ permalink: "/blog/posts/2019-04-11-how-to-visualize-normal-vectors-on-3d-point-c
 <p>For the comprehensive demonstration simply run </p>
 <pre class="wp-block-code"><code>TestSphere2CubeMapping();</code></pre>
 <p>And you will get the following interface :</p>
-<div class="wp-block-image"><figure class="aligncenter is-resized"><picture>
-<source media="(min-width: 800px)" srcset="../../assets/images/blog/Point_loud_rgb_color_conversion-800.webp" type="image/webp"/>
-<source media="(max-width: 799px)" srcset="../../assets/images/blog/Point_loud_rgb_color_conversion-400.webp" type="image/webp"/>
-<source media="(max-width: 399px)" srcset="../../assets/images/blog/Point_loud_rgb_color_conversion-200.webp" type="image/webp"/>
-<img alt="" class="wp-image-992" height="586" loading="lazy" src="../../assets/images/blog/Point_loud_rgb_color_conversion.png" width="1024"/>
-</picture>
+<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "assets/images/blog/2019-04-Point_loud_rgb_color_conversion.png", "" %}
 <figcaption>Normal Vector color mapping comprehensive demonstration</figcaption></figure></div>
 <p>In the top left, you can see the RGB cube. At the bottom left, you can see the unit sphere with the mapped colors. Both include a small red dot which you can move using the arrow keys. To the right, you can see the color and its corresponding RGB values of the red dot. This illustrates what the mapping function does – it takes a unit vector (a point on the sphere), finds where it intersects the RGB cube, and uses that color as the vector representation. </p>
 <p>Note that there are actually two mapping functions:</p>
@@ -41,10 +33,7 @@ permalink: "/blog/posts/2019-04-11-how-to-visualize-normal-vectors-on-3d-point-c
 [RGB] = Sphere2RGBCube_accurate(V)</code></pre>
 <p>The main difference between the two is that the “accurate” version generates RGB colors on the cube planes. When plotting a sphere, for example, it is evident that the color mapping is not as smooth as one may want. Therefore, the “non-accurate” version creates a smoother color mapping (basically a sphere encapsulated within the RGB cube). </p>
 <p>Finally, here is an example of the same point cloud as before, but this time with color mapping:  </p>
-<div class="wp-block-image"><figure class="aligncenter is-resized"><picture>
-<source srcset="../../assets/images/blog/nyu_v2_1-200.webp" type="image/webp"/>
-<img alt="3D point clouds with normal vectors color mapped visualization" class="wp-image-994" height="225" loading="lazy" src="../../assets/images/blog/nyu_v2_1.png" width="300"/>
-</picture>
+<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "assets/images/blog/nyu_v2_1.png", "3D point clouds with normal vectors color mapped visualization" %}
 <figcaption>Normal vector visualization using RGB mapping of a scene from NYU Depth V2 <br/></figcaption></figure></div>
 <p>This code was used in our recent paper on <a aria-label="normal estimation for 3D point clouds (opens in a new tab)" href="https://www.itzikbs.com/nesti-net-normal-estimation-for-3d-point-clouds" rel="noreferrer noopener" target="_blank">normal estimation for 3D point clouds</a>. If you find this post and code useful, please cite it 🙂 </p>
 <p></p>
