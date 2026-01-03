@@ -75,8 +75,12 @@ permalink: "/blog/posts/2020-08-24-the-story-behind-the-ikea-assembly-dataset-pa
 </figure></div>
 <p><strong>Whats next? </strong></p>
 <p>Working on a live demo (with a robot!): </p>
+{% raw %}
+<!-- TODO: Restore robot demo image (IMG_20200320_115950-1.jpg) - file was removed during cleanup
 <div class="wp-block-image"><figure class="aligncenter size-large is-resized">{% responsiveImage "assets/images/blog/IMG_20200320_115950-1.jpg", "" %}
 </figure></div>
+-->
+{% endraw %}
 <p>Photo credit: <a href="https://sadegh-aa.github.io" rel="noreferrer noopener" target="_blank">Sadegh Aliakbarian</a>, <a href="https://sites.google.com/view/djcampbell" rel="noreferrer noopener" target="_blank">Dylan Campbell</a>, and <a href="https://www.roboticvision.org/rv_person/yicong-hong/" rel="noreferrer noopener" target="_blank">Yicong Hong</a></p>
  
 
