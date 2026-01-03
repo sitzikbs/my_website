@@ -35,7 +35,7 @@ permalink: "/blog/posts/2021-03-10-what-is-3d-modified-fisher-vector-3dmfv-repre
 <p>Next, we can see what happens when we move the point all around (the .gif file might take a few seconds to load).</p>
 <p style="text-align: center;">{% responsiveImage "assets/images/blog/3d_fv_smaller-compressor.gif", "" %}</p>
 <p>Finally, let’s see how the 3DmFV looks like when we take multiple points on a GMM of 2x2x2:</p>
-<p style="text-align: center;">{% responsiveImage "assets/images/blog/fv_3d_model.png", "" %}
+<p style="text-align: center;">{% responsiveImage "assets/images/blog/2018-09-fv_3d_model.png", "" %}
 </p>
 <h2>Reconstruction from 3DmFV</h2>
 <p>Some may argue that 3DmFV is simply another handcrafted feature. However, we argue that it is simply another form to represent the data and therefore, the process is reversible. It is possible to show analytically that for simple cases it is reversible (single point, single Gaussian, points on a plane in a Gaussian). It gets a bit more complex in the general case when more points and more Gaussians are present. Therefore, we trained a simple 3DmFV decoder that is able to take a 3DmFV representation as input and produce a 3D point cloud as output.</p>

@@ -31,12 +31,37 @@ def get_actual_image_path(referenced_path):
     if base_path.exists():
         return f"{directory}/{base_filename}"
     
+    # Try with date prefix pattern YYYY-MM-filename
+    # Extract date from filename if it starts with date pattern
+    date_match = re.match(r'^(\d{4})(\d{2})(\d{2})', base_filename)
+    if date_match:
+        year = date_match.group(1)
+        month = date_match.group(2)
+        day = date_match.group(3)
+        # Try YYYY-MM-YYYYMMDDfilename pattern
+        dated_filename = f"{year}-{month}-{base_filename}"
+        dated_path = Path(f"{directory}/{dated_filename}")
+        if dated_path.exists():
+            return f"{directory}/{dated_filename}"
+    
     # If not, try without any date prefix or variant
     # Extract just the core name
-    core_name = re.sub(r'^\d{4}-\d{2}(-\d{2})?-', '', base_filename)
+    core_name = re.sub(r'^\d{4}-?\d{2}-?(\d{2})?-?', '', base_filename)
     core_path = Path(f"{directory}/{core_name}")
     if core_path.exists():
         return f"{directory}/{core_name}"
+    
+    # Try looking for any file with similar name in directory
+    dir_path = Path(directory)
+    if dir_path.exists():
+        # Extract the core identifier from filename
+        core_identifier = re.sub(r'[-\d]+\.', '.', base_filename)
+        core_identifier = re.sub(r'^\d+', '', core_identifier).lstrip('_-')
+        
+        # Search for files containing this identifier
+        for file in dir_path.glob('*'):
+            if core_identifier and core_identifier in file.name:
+                return f"{directory}/{file.name}"
     
     # Return original if we can't find a match
     print(f"⚠️  Could not find image for: {referenced_path}")

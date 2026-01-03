@@ -9,7 +9,7 @@ permalink: "/blog/posts/2018-10-19-reasearch-visit-in-germany.html"
 <div class="post-content">
 
 
-<h2>{% responsiveImage "assets/images/blog/img-1024x715.jpg", "" %}
+<h2>{% responsiveImage "assets/images/blog/2018-10-img.jpg", "" %}
 </h2>
 <p> </p>
 <p>When I started writing this post I thought it would be a chronologically ordered technical documentation of my research visit. Eventually, I found it much more coherent when divided into major events and it came out much less technical than I immagined.</p>

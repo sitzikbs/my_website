@@ -28,7 +28,7 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 <p>After lunch, there was a great panel which presented classic papers in computer vision. The panel included the legendary <a href="http://www.ri.cmu.edu/person.html?person_id=136">Takeo Kanade</a> from Carnegie Mellon (which later came to talk to me about my poster and gave me some great ideas), <a href="http://www.cs.columbia.edu/~nayar/">Shree K. Nayar</a> from Columbia and <a href="http://www.wisdom.weizmann.ac.il/mathusers/irani/">Michal Irani</a> from <a href="http://www.weizmann.ac.il/">The Weizmann Institute of Science</a>.</p>
 <p>On this day I presented my poster, including a short spotlight presentation ( 5 minutes).</p>
 <p>{% responsiveImage "assets/images/blog/20170108_161315.jpg", "20170108_161315" %}
- {% responsiveImage "assets/images/blog/20170108_161943-300x169.jpg", "20170108_161943" %}
+ {% responsiveImage "assets/images/blog/2017-01-20170108_161943.jpg", "20170108_161943" %}
 {% responsiveImage "assets/images/blog/IMG_20170108_174806.jpg", "img_20170108_174806" %}
 </p>
 <p>Best poster of the day (in my opinion) was <a href="http://people.eecs.berkeley.edu/~shiry/">Shiry Ginosar</a> “<a href="https://people.eecs.berkeley.edu/~shiry/projects/yearbooks/yearbooks.html">Century of Portraits: A Visual Historical Record of American High School Yearbooks</a>“. Here is a small teaser: she made an Afro haircut classifier (those who knew me during 2001-2002 know why this is very <a href="/assets/images/blog/ItzikAfro.jpg" target="_blank">sentimental </a>🙂 ).</p>

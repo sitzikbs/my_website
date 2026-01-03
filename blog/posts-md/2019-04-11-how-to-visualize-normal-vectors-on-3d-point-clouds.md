@@ -25,7 +25,7 @@ permalink: "/blog/posts/2019-04-11-how-to-visualize-normal-vectors-on-3d-point-c
 <p>For the comprehensive demonstration simply run </p>
 <pre class="wp-block-code"><code>TestSphere2CubeMapping();</code></pre>
 <p>And you will get the following interface :</p>
-<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "assets/images/blog/Point_loud_rgb_color_conversion.png", "" %}
+<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "assets/images/blog/2019-04-Point_loud_rgb_color_conversion.png", "" %}
 <figcaption>Normal Vector color mapping comprehensive demonstration</figcaption></figure></div>
 <p>In the top left, you can see the RGB cube. At the bottom left, you can see the unit sphere with the mapped colors. Both include a small red dot which you can move using the arrow keys. To the right, you can see the color and its corresponding RGB values of the red dot. This illustrates what the mapping function does – it takes a unit vector (a point on the sphere), finds where it intersects the RGB cube, and uses that color as the vector representation. </p>
 <p>Note that there are actually two mapping functions:</p>
