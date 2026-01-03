@@ -27,10 +27,10 @@ permalink: "/blog/posts/2021-03-10-what-is-3d-modified-fisher-vector-3dmfv-repre
 <h2>The Intuition</h2>
 <p>It is much easier to understand the 3DmFV for points with some nice visualizations.</p>
 <p>Let’s take a single 3D point in a single Gaussian and show its 3DmFV (here the grid is  basically 1x1x1):</p>
-<p style="text-align: center;">{% responsiveImage "assets/images/blog/fv_3d000-300x225.png", "" %}
+<p style="text-align: center;">{% responsiveImage "assets/images/blog/fv_3d000.png", "" %}
 </p>
 <p>Now let’s see what happens when we move the point (hint 3DmFV changes)</p>
-<p style="text-align: center;">{% responsiveImage "assets/images/blog/fv_3d0.500-300x225.png", "" %}
+<p style="text-align: center;">{% responsiveImage "assets/images/blog/fv_3d0.500.png", "" %}
 </p>
 <p>Next, we can see what happens when we move the point all around (the .gif file might take a few seconds to load).</p>
 <p style="text-align: center;">{% responsiveImage "assets/images/blog/3d_fv_smaller-compressor.gif", "" %}</p>

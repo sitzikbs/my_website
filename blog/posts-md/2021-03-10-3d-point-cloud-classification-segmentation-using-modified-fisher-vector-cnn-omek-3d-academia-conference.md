@@ -22,7 +22,7 @@ permalink: "/blog/posts/2021-03-10-3d-point-cloud-classification-segmentation-us
 <li>“Point Cloud Registration using Large Triangles” given by <a href="https://is-web.hevra.haifa.ac.il/index.php/en/website-ilan-shimshoni" rel="noopener" target="_blank">Prof. Ilan Shimshoni</a> From Haifa University (<a href="https://is-web.hevra.haifa.ac.il/images/lecturers_files/ishimshoni_files/3dV_15.pdf" rel="noopener" target="_blank">link to paper</a>).</li>
 </ul>
 <p>We signed off the day with an amazing view of a Mediterranean sunset.</p>
-<p>{% responsiveImage "assets/images/blog/Hertzelia_Daniel_hotel_sunset-300x225.jpg", "" %}
+<p>{% responsiveImage "assets/images/blog/Hertzelia_Daniel_hotel_sunset.jpg", "" %}
 </p>
  </p>
 

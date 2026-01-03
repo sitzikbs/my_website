@@ -16,7 +16,7 @@ permalink: "/blog/posts/2019-04-11-how-to-visualize-normal-vectors-on-3d-point-c
 <p>Here <code>x,y,z</code> are the point coordinates and <code>u,v,w</code> are the vector components. </p>
 <h4 class="wp-block-heading">The problem</h4>
 <p>The problem was that for complex 3D point clouds (like from the NYU Depth V2 dataset) this visualization is not very informative (it is very hard to see where the little arrows are pointing). </p>
-<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "assets/images/blog/nyu_v2_quiver-1024x666.jpg", "3D point clouds with normal vectors  visualization as arrows" %}
+<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "assets/images/blog/nyu_v2_quiver.jpg", "3D point clouds with normal vectors  visualization as arrows" %}
 <figcaption>Normal vector visualization using <code>quiver3</code> of a scene from NYU Depth V2  </figcaption></figure></div>
 <h4 class="wp-block-heading">The solution</h4>
 <p>Therefore, I created a nice function that maps a vector to the RGB cube: </p>

@@ -10,7 +10,7 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 
 
 <p>As the title implies, on 8-13 of January 2017 I attended “<a href="http://ias.huji.ac.il/cse">The 1st Winter School in Computer Science and Engineering on Computer Vision</a>” At the<a href="https://www.google.com/maps/place/The+Institute+for+Advanced+Studies/"> Israel Institute for Advanced Studies</a> in Givat Ram Campus in Jerusalem, Israel.</p>
-<p>{% responsiveImage "assets/images/blog/IMG_20170108_091832-300x221.jpg", "img_20170108_091832" %}
+<p>{% responsiveImage "assets/images/blog/IMG_20170108_091832.jpg", "img_20170108_091832" %}
 </p>
 <p>This conference was very interesting, inspiring and motivating.They had a dream team of speakers from the vision community. I wrote a lot of notes but here is a brief summary.</p>
 <p>The goal of this post is to summarize the contents and provide a source for all of the useful links from the winter school.</p>
@@ -27,9 +27,9 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 <p>Selected quote: ” Its not about the parameters, Its about the depth”</p>
 <p>After lunch, there was a great panel which presented classic papers in computer vision. The panel included the legendary <a href="http://www.ri.cmu.edu/person.html?person_id=136">Takeo Kanade</a> from Carnegie Mellon (which later came to talk to me about my poster and gave me some great ideas), <a href="http://www.cs.columbia.edu/~nayar/">Shree K. Nayar</a> from Columbia and <a href="http://www.wisdom.weizmann.ac.il/mathusers/irani/">Michal Irani</a> from <a href="http://www.weizmann.ac.il/">The Weizmann Institute of Science</a>.</p>
 <p>On this day I presented my poster, including a short spotlight presentation ( 5 minutes).</p>
-<p>{% responsiveImage "assets/images/blog/20170108_161315-300x169.jpg", "20170108_161315" %}
+<p>{% responsiveImage "assets/images/blog/20170108_161315.jpg", "20170108_161315" %}
  {% responsiveImage "assets/images/blog/20170108_161943-300x169.jpg", "20170108_161943" %}
-{% responsiveImage "assets/images/blog/IMG_20170108_174806-222x300.jpg", "img_20170108_174806" %}
+{% responsiveImage "assets/images/blog/IMG_20170108_174806.jpg", "img_20170108_174806" %}
 </p>
 <p>Best poster of the day (in my opinion) was <a href="http://people.eecs.berkeley.edu/~shiry/">Shiry Ginosar</a> “<a href="https://people.eecs.berkeley.edu/~shiry/projects/yearbooks/yearbooks.html">Century of Portraits: A Visual Historical Record of American High School Yearbooks</a>“. Here is a small teaser: she made an Afro haircut classifier (those who knew me during 2001-2002 know why this is very <a href="/assets/images/blog/ItzikAfro.jpg" target="_blank">sentimental </a>🙂 ).</p>
 <h2><strong>Day 2</strong></h2>
@@ -95,14 +95,14 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 <p>What I found fascinating most about this talk is the way he looked at problems differently (Generating images through shadows rather than light)</p>
 <p>Selected quote: “I want to take a picture of the earth by looking at the moon” (using a satellite is cheating!)</p>
 <p>After lunch, we went on a tour of the old city of Jerusalem and took a great photo near the Kotel \ Western wall\ Wailing wall (There were a lot of other great photos but i think this one was the best one)</p>
-<p>{% responsiveImage "assets/images/blog/CSE_OldCityofJerusalemPhoto-300x225.jpg", "Old City of Jerusalem 1st winter school" %}
+<p>{% responsiveImage "assets/images/blog/CSE_OldCityofJerusalemPhoto.jpg", "Old City of Jerusalem 1st winter school" %}
 </p>
 <p> </p>
 <p>After the tour, we went to visit Intel in the Perceptual computing group. They presented fun demos of applications that use their <a href="http://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html">RealSense </a>RGBD camera. The demos included<a href="https://zenbo.asus.com/"> Asus zenbo</a>, <a href="https://newsroom.intel.com/chip-shots/intel-unveils-project-alloy/">Project alloy</a> (which I didn’t get to try because the line was sooooo long, I can only guess how awesome it was) and a fun balloon popping game using <a href="https://www3.oculus.com/en-us/rift/">oculus Rift</a>. Here is a picture of me trying to pop some balloons:</p>
-<p>{% responsiveImage "assets/images/blog/OculusRiftRealSenseDemo-225x300.jpg", "Intel Oculus Rift Realsense Demo" %}
+<p>{% responsiveImage "assets/images/blog/OculusRiftRealSenseDemo.jpg", "Intel Oculus Rift Realsense Demo" %}
 </p>
 <p>Finally, we all went out to Machne Yehuda and drank some beer as it was the last night together for most of us.</p>
-<p>{% responsiveImage "assets/images/blog/Machne-Yehuda-Beer-300x169.jpg", "All the students driniking beer in Machneyehuda" %}
+<p>{% responsiveImage "assets/images/blog/Machne-Yehuda-Beer.jpg", "All the students driniking beer in Machneyehuda" %}
 </p>
 <h2><strong>Day 5</strong></h2>
 <p>The day started with a talk by<a href="http://szeliski.org/RichardSzeliski.htm"> Richard (Rick) Szeliski</a> (which is literally the guy who wrote the <a href="http://szeliski.org/Book/">book </a>on computer vision) titled “3D Reconstruction for <del>Image Based Rendering</del> Computational photography. He talked about</p>

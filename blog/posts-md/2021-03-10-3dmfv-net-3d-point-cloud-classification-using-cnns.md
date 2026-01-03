@@ -26,7 +26,7 @@ permalink: "/blog/posts/2021-03-10-3dmfv-net-3d-point-cloud-classification-using
 <p>The method consists of two main modules:</p>
 <ol class="wp-block-list"><li>3DmFV module – converting the 3D point cloud into the 3DmFV representation on a 3D grid.</li><li>Network module – consisting of multiple 3D CNN layers (inspired by inception) followed by several fully connected layers.</li></ol>
 <p>The image below summarizes the architecture details.</p>
-<div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "assets/images/blog/3DmFV_Network_Architecture-1024x199.png", "3DmFV-Net - 3D point clouds classification network architecture" %}
+<div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "assets/images/blog/3DmFV_Network_Architecture.png", "3DmFV-Net - 3D point clouds classification network architecture" %}
 <figcaption>3DmFV-Net Architecture</figcaption></figure></div>
 <p>We train and test on the <a href="http://modelnet.cs.princeton.edu/" rel="noopener noreferrer" target="_blank">ModelNet40 /ModelNet10 datasets from Princeton</a>.  It includes 40/10 classes divided into 9843/3991 point clouds for training and 2468/908 point clouds for testing.</p>
 <h2 class="wp-block-heading">The Results</h2>
