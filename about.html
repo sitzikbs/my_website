@@ -29,11 +29,9 @@ permalink: /about/
             <div class="container">
                 <div style="display: flex; gap: 2rem; align-items: start; flex-wrap: wrap;">
                     <div style="flex: 0 0 250px;">
-                        <picture>
-  <source srcset="/assets/images/profile/Itzik_Ben_Shabat_portrait-400.webp" type="image/webp" media="(min-width: 400px)">
-  <source srcset="/assets/images/profile/Itzik_Ben_Shabat_portrait-200.webp" type="image/webp" media="(min-width: 200px)">
-  <img src="/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg" alt="Itzik Ben Shabat" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" width="500" height="500" loading="lazy">
-</picture>
+                        <div style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden;">
+                            {% responsiveImage "assets/images/profile/Itzik_Ben_Shabat_portrait.jpg", "Itzik Ben Shabat" %}
+                        </div>
                         <div style="margin-top: 1rem; text-align: center;">
                             <a href="/assets/documents/cv/Yizhak-Ben-Shabat-CV-academic-research-March-2025.pdf" 
                                class="btn-primary" 
