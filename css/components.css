@@ -517,6 +517,11 @@ select:focus-visible {
   margin: 0 auto;
 }
 
+/* Center paragraphs containing only responsive images */
+p:has(.responsive-image) {
+  text-align: center;
+}
+
 /* Ensure sufficient touch target sizes (WCAG 2.1 AA) */
 a, button, input[type="submit"], input[type="button"] {
   min-height: 44px;
