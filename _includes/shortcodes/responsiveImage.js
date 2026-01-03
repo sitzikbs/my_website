@@ -41,7 +41,7 @@ async function responsiveImageShortcode(src, alt = "", sizes = "(min-width: 800p
   let highsrc = metadata.webp[metadata.webp.length - 1];
   
   // Generate picture element with sources
-  return `<picture>
+  return `<picture class="responsive-image">
     ${Object.values(metadata)
       // Generate source tags for each format
       .map(imageFormat => {

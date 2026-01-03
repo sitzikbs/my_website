@@ -499,6 +499,24 @@ select:focus-visible {
   outline-offset: 2px;
 }
 
+/* ==================== */
+/* Responsive Images    */
+/* ==================== */
+
+.responsive-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.responsive-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 /* Ensure sufficient touch target sizes (WCAG 2.1 AA) */
 a, button, input[type="submit"], input[type="button"] {
   min-height: 44px;
