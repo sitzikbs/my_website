@@ -2,6 +2,31 @@
 
 This directory contains all static assets for the website including images, documents, and videos.
 
+## Important: Git LFS
+
+**All image files in this directory are tracked with Git LFS (Large File Storage).**
+
+- Image files (`.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`) are stored as lightweight pointers in git
+- Actual image data is stored in LFS and downloaded on-demand
+- This keeps the repository fast and clone times reasonable
+
+### Setting Up Git LFS
+
+If you're a new contributor, install Git LFS before cloning:
+
+```bash
+# Ubuntu/Debian
+sudo apt-get install git-lfs
+
+# macOS
+brew install git-lfs
+
+# Windows - Download from https://git-lfs.github.com/
+
+# Initialize in your repository
+git lfs install
+```
+
 ## Directory Structure
 
 ```
@@ -9,14 +34,42 @@ assets/
 ├── images/
 │   ├── profile/          # Profile photos and headshots
 │   ├── publications/     # Publication thumbnails and figures
-│   ├── blog/            # Blog post images (featured and inline)
+│   ├── blog/            # Blog post images (source images only)
 │   ├── general/         # Site-wide images (logo, backgrounds, etc.)
-│   └── icons/           # Icons and small graphics
+│   ├── icons/           # Icons and small graphics
+│   └── generated/       # Responsive image variants (build-time generated, gitignored)
 ├── documents/
 │   ├── cv/              # CV and resume files
 │   └── papers/          # Publication PDFs and supplementary materials
 └── videos/              # Video files (if hosted locally)
 ```
+
+## Image Workflow
+
+### Source Images (Committed to Git via LFS)
+- Store only **source/original** images in `assets/images/[category]/`
+- These are tracked by Git LFS and committed to the repository
+- Keep images optimized (target < 500KB where possible)
+
+### Generated Variants (Not Committed)
+- Responsive image variants are **auto-generated at build time** by `@11ty/eleventy-img`
+- Generated files are stored in `assets/images/generated/` (gitignored)
+- Variants include multiple sizes (400px, 800px, 1200px) and formats (WebP + fallback)
+- Never commit files in the `generated/` directory
+
+### Using Images in Blog Posts
+
+Use the `{% responsiveImage %}` shortcode in Markdown:
+
+```markdown
+{% responsiveImage "assets/images/blog/my-photo.jpg", "Alt text description" %}
+```
+
+This automatically:
+- Generates responsive sizes (400px, 800px, 1200px widths)
+- Creates WebP versions with fallbacks
+- Outputs proper `<picture>` element with srcset
+- Lazy loads images for performance
 
 ## File Naming Conventions
 
