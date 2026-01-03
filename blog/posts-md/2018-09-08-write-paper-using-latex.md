@@ -84,7 +84,9 @@ permalink: "/blog/posts/2018-09-08-write-paper-using-latex.html"
 <h2>Assets</h2>
 <p>Assets are valuable things (by definition). In our case, it usually refers to images and figures but can include any other type of file that your .tex file uses.  In the template, I created an assets folder. You can simply place all your images in it.</p>
 <p>The line</p>
+{% raw %}
 <pre>\graphicspath{{assets/}}</pre>
+{% endraw %}
 <p>makes sure that the compiler will know where to find our images.</p>
 <h2>Figures and Tables</h2>
 <p>To insert a figure into the document you can use :</p>
@@ -119,7 +121,9 @@ permalink: "/blog/posts/2018-09-08-write-paper-using-latex.html"
 	\label{table:example_table}
 \end{table}</pre>
 <p>Make sure that you have the following line in the preamble</p>
+{% raw %}
 <pre>\newcolumntype{M}[1]{&gt;{\centering\arraybackslash}m{#1}}</pre>
+{% endraw %}
 <p>I won’t go into detail here. I refer the interested reader<a href="https://en.wikibooks.org/wiki/LaTeX/Tables" rel="noopener"> to this page</a>.</p>
 <p>If you find yourself lost, you can try this <a href="https://www.tablesgenerator.com/" rel="noopener">online LaTeX table generator</a>.</p>
 <h2>Math</h2>

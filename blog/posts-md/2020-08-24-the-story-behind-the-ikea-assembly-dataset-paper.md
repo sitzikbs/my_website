@@ -41,9 +41,14 @@ permalink: "/blog/posts/2020-08-24-the-story-behind-the-ikea-assembly-dataset-pa
 <div class="wp-block-image"><figure class="aligncenter size-large is-resized">{% responsiveImage "assets/images/blog/dinosaur_ikea_assembly.jpg", "" %}
 <figcaption>A dinosaur assembling IKEA furniture</figcaption></figure></div>
 <p>Later that afternoon we loaded up the cars and returned all of the gear back to ANU. Everyone was tired but satisfied, it was one of those moments when you could just feel that things are going the right way.  </p>
+{% raw %}
+<!-- TODO: Restore tiled gallery images - these files (IMG_8508, IMG_8418, IMG_8505, IMG_8421, IMG_8432, IMG_8435) 
+     were removed during cleanup. Need to recover from WordPress backup or remove this gallery section.
 <div class="wp-block-jetpack-tiled-gallery aligncenter is-style-columns" data-carousel-extra='{"blog_id":1,"permalink":"https:\/\/www.itzikbs.com\/the-story-behind-the-ikea-assembly-dataset-paper"}'><div class="tiled-gallery__gallery"><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:18.007233754656767%"><figure class="tiled-gallery__item">{% responsiveImage "/assets/images/blog/IMG_8508-scaled.jpg", "" %}</figure><figure class="tiled-gallery__item">{% responsiveImage "/assets/images/blog/IMG_8418-scaled.jpg", "" %}</figure><figure class="tiled-gallery__item">{% responsiveImage "assets/images/blog/IMG_8505-scaled.jpg", "" %}
 </figure></div><div class="tiled-gallery__col" style="flex-basis:27.202893501862707%"><figure class="tiled-gallery__item">{% responsiveImage "assets/images/blog/IMG_8421-1-scaled.jpg", "" %}
 </figure><figure class="tiled-gallery__item">{% responsiveImage "/assets/images/blog/IMG_8432-1-scaled.jpg", "" %}</figure></div><div class="tiled-gallery__col" style="flex-basis:54.78987274348054%"><figure class="tiled-gallery__item">{% responsiveImage "/assets/images/blog/IMG_8435-1-scaled.jpg", "" %}</figure></div></div></div></div>
+-->
+{% endraw %}
 <p></p>
 <p>A few hours later, I got the text. </p>
 <p>My eyes teared up when I read it. I went through all of the stages of greaf. First I was in denial, I thought someone is playing a prank. Then I was angry, mostly at myself – how did we miss it? Finally, I accepted reality – due to a glitch in the capture setup we were only able to capture one depth stream instead of three. It was the lowest low. </p>

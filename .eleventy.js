@@ -71,6 +71,6 @@ module.exports = function(eleventyConfig) {
     },
     templateFormats: ["html", "njk", "md", "11ty.js"],
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: false  // Temporarily disabled due to LaTeX conflicts - fix LaTeX escaping later
+    markdownTemplateEngine: "njk"  // Re-enabled after fixing LaTeX formula conflicts with {% raw %} tags
   };
 };

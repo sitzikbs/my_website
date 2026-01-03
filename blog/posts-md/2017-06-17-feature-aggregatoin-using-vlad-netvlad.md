@@ -20,10 +20,8 @@ permalink: "/blog/posts/2017-06-17-feature-aggregatoin-using-vlad-netvlad.html"
 </ul>
 <p>Mathematically, it looks like this:</p>
 {% raw %}
-{% raw %}
 <p style="text-align: center;"><img alt="{{v}_{ij}}=\sum\limits_{x\,such\,that\,NN(x)={{c}_{i}}}{\left( {{x}_{i}}-{{c}_{ij}} \right)}" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=%7B%7Bv%7D_%7Bij%7D%7D%3D%5Csum%5Climits_%7Bx%5C%2Csuch%5C%2Cthat%5C%2CNN%28x%29%3D%7B%7Bc%7D_%7Bi%7D%7D%7D%7B%5Cleft%28+%7B%7Bx%7D_%7Bi%7D%7D-%7B%7Bc%7D_%7Bij%7D%7D+%5Cright%29%7D&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/></p>
 <p>Here, <img alt="v_{ij}" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=v_%7Bij%7D&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> is the VLAD representation, <img alt="x" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=x&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> is the input and <img alt="c" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=c&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> are the centers.</p>
-{% endraw %}
 {% endraw %}
 <p> </p>
 <p>In the age of deep learning, the question arises – can we learn this representation?</p>
