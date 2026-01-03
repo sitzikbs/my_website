@@ -71,6 +71,6 @@ module.exports = function(eleventyConfig) {
     },
     templateFormats: ["html", "njk", "md", "11ty.js"],
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: false  // Don't process markdown with template engine
+    markdownTemplateEngine: "njk"  // Process markdown with Nunjucks for shortcodes
   };
 };

@@ -9,55 +9,33 @@ permalink: "/blog/posts/2018-10-19-reasearch-visit-in-germany.html"
 <div class="post-content">
 
 
-<h2><picture>
-<source media="(min-width: 400px)" srcset="../../assets/images/blog/img-1024x715-400.webp" type="image/webp"/>
-<source media="(max-width: 399px)" srcset="../../assets/images/blog/img-1024x715-200.webp" type="image/webp"/>
-<img alt="" class="aligncenter wp-image-866 size-large" height="559" loading="lazy" src="../../assets/images/blog/img-1024x715.jpg" width="800"/>
-</picture>
+<h2>{% responsiveImage "assets/images/blog/img-1024x715.jpg", "" %}
 </h2>
 <p> </p>
 <p>When I started writing this post I thought it would be a chronologically ordered technical documentation of my research visit. Eventually, I found it much more coherent when divided into major events and it came out much less technical than I immagined.</p>
 <h2>How it all came to be?</h2>
 <p>It was a series of lucky coincidences that led to this research visit. I was searching for potential post-doc advisors and <a href="http://niessnerlab.org/members/matthias_niessner/profile.html" rel="noopener" target="_blank">Prof. Matthias Niessner</a>‘s name came up. I obviously knew the name from his work at Stanford but I wasn’t aware (at that time) that he was building his new research group in TUM. I immediately added his name to my long and meticulously organized list of potential supervisors and moved on to other things. The very next day  Prof. Fischer ( my PhD. supervisor) casually informed me of a funding opportunity to do a short research visit in Germany. It felt like fate. I immediately sent Matthias an email and with the huge help of Marianne Krueger-Jungnickel from the <a href="http://www.life-science-net.de/" rel="noopener" target="_blank">Life Science Network</a>  (and after some interviews and skype calls) we set it up.</p>
 <p>I visited the <a href="http://niessnerlab.org/" rel="noopener" target="_blank">Visual Computing group</a> (Department of Informatics, Technical University of Munich) for 4 weeks (28.8-25.9) as the kick-off of an ongoing collaboration.</p>
-<p><picture>
-<source srcset="../../assets/images/blog/IMG_20180829_082115-225x300-200.webp" type="image/webp"/>
-<img alt="" class="alignnone size-medium wp-image-855 aligncenter" height="300" loading="lazy" src="../../assets/images/blog/IMG_20180829_082115-225x300.jpg" width="225"/>
-</picture>
+<p>{% responsiveImage "assets/images/blog/IMG_20180829_082115-225x300.jpg", "" %}
 </p>
 <h2>The people</h2>
 <p>During my visit, I had the privilege to get to know so many amazing people (hopefully the following links won’t break as time goes by and they move on to bigger and better things). The first to greet me was<a href="http://niessnerlab.org/members/andreas_roessler/profile.html" rel="noopener" target="_blank"> Andreas Rössler</a> who turned out to be my “go to guy” whenever I had a question about anything. Make sure to check out his <a href="http://niessnerlab.org/projects/roessler2018faceforensics.html" rel="noopener" target="_blank">FaceForensics</a> work.</p>
 <p>I was so excited to get a temporary office with these names on the door:</p>
-<p><picture>
-<source srcset="../../assets/images/blog/IMG_20180829_104519-300x195-200.webp" type="image/webp"/>
-<img alt="" class="size-medium wp-image-856 aligncenter" height="195" loading="lazy" src="../../assets/images/blog/IMG_20180829_104519-300x195.jpg" width="300"/>
-</picture>
+<p>{% responsiveImage "assets/images/blog/IMG_20180829_104519-300x195.jpg", "" %}
 </p>
 <p>My new office-mates were <a href="http://niessnerlab.org/members/manuel_dahnert/profile.html" rel="noopener" target="_blank">Manuel Dahnert</a> (who just returned from a vacation and gave a talk about his research on 3D model retrieval the next day) and Yu-Shiang Wong who was visiting from University College London (supervised by <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/" rel="noopener" target="_blank">Niloy Mitra</a>).</p>
 <p>This group is composed of truly amazing people from all around the world:  from Bosnia (<a href="http://niessnerlab.org/members/dejan_azinovic/profile.html">Dejan Azinović</a> working on inverse rendering), Slovenia (<a href="http://niessnerlab.org/members/aljaz_bozic/profile.html">Aljaž Božič </a>working on tracking and reconstructing non-rigidly deforming objects in dynamic environments), and China (<a href="http://niessnerlab.org/members/ji_hou/profile.html">Ji Hou</a> working on 3D scene understanding).  From Germany, there is also <a href="http://niessnerlab.org/members/armen_avetisyan/profile.html">Armen Avetisya</a> working on 3D Alignment and Object retrieval between Scan and CAD, but he has the temperament of an Israeli.  Other visitors include <a href="http://niessnerlab.org/team.html">Lei Han, </a><a href="http://niessnerlab.org/team.html">Xiaochen Fan, </a>and <a href="http://stanford.edu/~jingweih/">Jingwei Huang</a>.</p>
 <p>That week I also met the group’s postdocs:<a href="https://cs.stanford.edu/people/adai/" rel="noopener" target="_blank"> Angela Dai</a> (which I occasionally disturbed with questions about her amazing <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Dai_ScanNet_Richly-Annotated_3D_CVPR_2017_paper.pdf" rel="noopener" target="_blank">ScanNet</a> dataset), and <a href="http://niessnerlab.org/members/justus_thies/profile.html" rel="noopener" target="_blank">Justus Thies</a> (commonly known as the<a href="http://niessnerlab.org/projects/thies2016face.html" rel="noopener" target="_blank"> Face2Face</a> guy), I am sure they will become great professors one day (if they choose to be).</p>
 <p>During my visit, I also met <a href="http://msavva.github.io/" rel="noopener" target="_blank">Manolis Savaa</a>, and <a href="https://ge.in.tum.de/">Nills Thuerey </a>(we shared some lunchtime together). In addition, I had the privilege to get to know <a href="https://angelxuanchang.github.io/">Angel X. Chang</a> as she gracefully agreed to share her office with me.</p>
 <p>Even though the visit was relatively short we all became good friends. and I am sure it was just the beginning of some great friendships. We even went to an escape room together! (which was very different from the Israeli escape rooms… mainly because, they let us loose…)</p>
-<p><picture>
-<source srcset="../../assets/images/blog/IMG_20180924_212827-300x225-200.webp" type="image/webp"/>
-<img alt="" class="size-medium wp-image-865 aligncenter" height="225" loading="lazy" src="../../assets/images/blog/IMG_20180924_212827-300x225.jpg" width="300"/>
-</picture>
+<p>{% responsiveImage "assets/images/blog/IMG_20180924_212827-300x225.jpg", "" %}
 </p>
 <h2>The Retreat</h2>
 <p>When an average person reads an email about a weekend retreat at a village near the Austrian border he probably imagines long hikes across wooded areas, some social, team building activities, and a lot of free time to get to know one another…  There is nothing average about this group. The “don’t forget to bring your laptops” message gave it away immediately.  The retreat was essentially a CVPR submission Bootcamp, and it was a great one! Even though I already published several papers (unfortunately no CVPR… yet…), I learned a lot. The retreat included hands-on workshops like paper speed-reading, CVPR drafts overview, and “How to present your (friend’s) work” where we had an hour to prepare a 5-minute presentation about someone else’s work. We also went on a hike and some drinks (does anyone remember where we put the tiger?) 🙂</p>
-<p><picture>
-<source srcset="../../assets/images/blog/retreat-300x225-200.webp" type="image/webp"/>
-<img alt="" class="size-medium wp-image-873 aligncenter" height="225" loading="lazy" src="../../assets/images/blog/retreat-300x225.jpg" width="300"/>
-</picture>
+<p>{% responsiveImage "assets/images/blog/retreat-300x225.jpg", "" %}
 </p>
-<p style="text-align: center;"><picture>
-<source srcset="../../assets/images/blog/austria-225x300-200.webp" type="image/webp"/>
-<img alt="" class="size-medium wp-image-872 alignnone" height="300" loading="lazy" src="../../assets/images/blog/austria-225x300.jpg" width="225"/>
-</picture>
- <picture>
-<source srcset="../../assets/images/blog/IMG_20180901_095247-225x300-200.webp" type="image/webp"/>
-<img alt="" class="size-medium wp-image-869 alignnone" height="300" loading="lazy" src="../../assets/images/blog/IMG_20180901_095247-225x300.jpg" width="225"/>
-</picture>
+<p style="text-align: center;">{% responsiveImage "assets/images/blog/austria-225x300.jpg", "" %}
+ {% responsiveImage "assets/images/blog/IMG_20180901_095247-225x300.jpg", "" %}
 </p>
 <h2></h2>
 <p> </p>
@@ -69,10 +47,7 @@ permalink: "/blog/posts/2018-10-19-reasearch-visit-in-germany.html"
 <p>I also attended some social events where I met <a href="https://web.stanford.edu/~zollhoef/" rel="noopener" target="_blank">Michael Zollhöfer</a> where we “demonstrated Face2Face in real life” 😉</p>
 <p>I even bumped into <a href="https://www.seas.upenn.edu/~allec/" rel="noopener" target="_blank">Christine Allen-Blanchette</a>, an old friend from <a href="https://www.itzikbs.com/the-1st-winter-school-in-computer-science-and-engineering-on-computer-vision" rel="noopener" target="_blank">the first winter school on computer vision.</a>  It was so good to catch up and realize we are both interested in similar research questions. Make sure to check out her work on <a href="https://arxiv.org/abs/1711.06721" rel="noopener" target="_blank">3D object classification using spherical </a>CNNs (She rocks with equivariance). Her supervisor, <a href="http://www.cis.upenn.edu/~kostas/" rel="noopener" target="_blank">Kotas Daniilidis</a>, gave an interesting, tutorial-style overview of equivariance.</p>
 <p>We even got a selfie together :</p>
-<p><picture>
-<source srcset="../../assets/images/blog/IMG_20180914_122506-300x225-200.webp" type="image/webp"/>
-<img alt="" class="size-medium wp-image-879 aligncenter" height="225" loading="lazy" src="../../assets/images/blog/IMG_20180914_122506-300x225.jpg" width="300"/>
-</picture>
+<p>{% responsiveImage "assets/images/blog/IMG_20180914_122506-300x225.jpg", "" %}
 </p>
 <h2>Rosh Hashanah</h2>
 <p>September is known to include three major Jewish holidays :</p>
@@ -82,25 +57,13 @@ permalink: "/blog/posts/2018-10-19-reasearch-visit-in-germany.html"
 <li><a href="https://en.wikipedia.org/wiki/Sukkot" rel="noopener" target="_blank">Sukkot</a> – Feast of Tabernacles (lets build a hut outside holiday 🙂 )</li>
 </ul>
 <p>I  was lucky to have some Israeli friends around for Rosh Hashanah to have some traditional apple with honey with me (and beer).</p>
-<div align="center"><picture>
-<source srcset="../../assets/images/blog/IMG-20180909-WA0012-300x225-200.webp" type="image/webp"/>
-<img alt="" class="alignnone size-medium wp-image-881" height="225" loading="lazy" src="../../assets/images/blog/IMG-20180909-WA0012-300x225.jpg" width="300"/>
-</picture>
- <picture>
-<source srcset="../../assets/images/blog/IMG-20180909-WA0014-300x225-200.webp" type="image/webp"/>
-<img alt="" class="alignnone size-medium wp-image-882" height="225" loading="lazy" src="../../assets/images/blog/IMG-20180909-WA0014-300x225.jpg" width="300"/>
-</picture>
+<div align="center">{% responsiveImage "assets/images/blog/IMG-20180909-WA0012-300x225.jpg", "" %}
+ {% responsiveImage "assets/images/blog/IMG-20180909-WA0014-300x225.jpg", "" %}
 </div>
 <h2>Oktoberfest</h2>
 <p>During my stay I took only one full day off, it was the Sunday I visited the Oktoberfest (which had the opening ceremony the day before). It was the perfect time to meet my old friend<a href="https://www.linkedin.com/in/dan-weimer/" rel="noopener" target="_blank"> Daniel Weimer, </a>and his better half Beate. Daniel is now Head of Artificial Intelligence at Volkswagen Group in the Americas region. He recently moved to the US and happened to come to Munich for some final arrangements. Daniel spent 8 months at our lab 3 years ago. He is actually the guy who introduced the field of deep learning to me (more precisely, he introduced its amazing strengths and results on images).  After a few beers, we realized the butterfly effect some people have on your life. Daniel is one of those butterfly people for me. Thank you, my friend, hope we meet again soon.</p>
-<div align="center"><picture>
-<source srcset="../../assets/images/blog/IMG_20180923_171414-225x300-200.webp" type="image/webp"/>
-<img alt="" class="alignnone size-medium wp-image-885" height="300" loading="lazy" src="../../assets/images/blog/IMG_20180923_171414-225x300.jpg" width="225"/>
-</picture>
-<picture>
-<source srcset="../../assets/images/blog/IMG_20180923_203528-300x225-200.webp" type="image/webp"/>
-<img alt="" class="alignnone size-medium wp-image-886" height="225" loading="lazy" src="../../assets/images/blog/IMG_20180923_203528-300x225.jpg" width="300"/>
-</picture>
+<div align="center">{% responsiveImage "assets/images/blog/IMG_20180923_171414-225x300.jpg", "" %}
+{% responsiveImage "assets/images/blog/IMG_20180923_203528-300x225.jpg", "" %}
 </div>
 <h2>Research</h2>
 <p>This section will be filled in detail after publication 🙂 I can just say that the topic is super interesting and I can’t wait to share it.</p>
