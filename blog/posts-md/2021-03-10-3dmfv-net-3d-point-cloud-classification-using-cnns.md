@@ -18,10 +18,7 @@ permalink: "/blog/posts/2021-03-10-3dmfv-net-3d-point-cloud-classification-using
 <h2 class="wp-block-heading">3DmFV Representation</h2>
 <p>Recall that the 3DmFV representation converts the 3D point cloud  (which is unstructured, unordered and may have a variable number of points) into a special kind of statistical representation on a 3D grid of Gaussians with constant size.</p>
 <p>The image below shows a visualization (in 2D, the representation is actually 4D: 3D grid with 20 channels) of the 3DmFV representation for several 3D point clouds. Each column in the image represents a single Gaussian and each row represents a symmetric function over derivative with respects to a Gaussian parameter over the points.</p>
-<div class="wp-block-image"><figure class="aligncenter"><picture>
-<source srcset="../../assets/images/blog/fv_pc_3models-300x177-200.webp" type="image/webp"/>
-<img alt="Visualization of the 3DmFV representation and its corresponding 3D point clouds" class="wp-image-820" height="177" loading="lazy" src="../../assets/images/blog/fv_pc_3models-300x177.png" width="300"/>
-</picture>
+<div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "../../assets/images/blog/fv_pc_3models.png", "Visualization of the 3DmFV representation and its corresponding 3D point clouds" %}
 <figcaption>3D point clouds  and their corresponding 3DmFV visualizations</figcaption></figure></div>
 <h2 class="wp-block-heading">The Architecture</h2>
 <p>Input:  A 3D point cloud (a matrix with n rows and 3 columns representing the XYZ coordinates.</p>
@@ -29,11 +26,7 @@ permalink: "/blog/posts/2021-03-10-3dmfv-net-3d-point-cloud-classification-using
 <p>The method consists of two main modules:</p>
 <ol class="wp-block-list"><li>3DmFV module – converting the 3D point cloud into the 3DmFV representation on a 3D grid.</li><li>Network module – consisting of multiple 3D CNN layers (inspired by inception) followed by several fully connected layers.</li></ol>
 <p>The image below summarizes the architecture details.</p>
-<div class="wp-block-image"><figure class="aligncenter"><picture>
-<source media="(min-width: 400px)" srcset="../../assets/images/blog/3DmFV_Network_Architecture-1024x199-400.webp" type="image/webp"/>
-<source media="(max-width: 399px)" srcset="../../assets/images/blog/3DmFV_Network_Architecture-1024x199-200.webp" type="image/webp"/>
-<img alt="3DmFV-Net - 3D point clouds classification network architecture" class="wp-image-822" height="155" loading="lazy" src="../../assets/images/blog/3DmFV_Network_Architecture-1024x199.png" width="800"/>
-</picture>
+<div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "../../assets/images/blog/3DmFV_Network_Architecture.png", "3DmFV-Net - 3D point clouds classification network architecture" %}
 <figcaption>3DmFV-Net Architecture</figcaption></figure></div>
 <p>We train and test on the <a href="http://modelnet.cs.princeton.edu/" rel="noopener noreferrer" target="_blank">ModelNet40 /ModelNet10 datasets from Princeton</a>.  It includes 40/10 classes divided into 9843/3991 point clouds for training and 2468/908 point clouds for testing.</p>
 <h2 class="wp-block-heading">The Results</h2>

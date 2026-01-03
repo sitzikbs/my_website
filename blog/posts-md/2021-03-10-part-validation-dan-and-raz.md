@@ -15,11 +15,7 @@ permalink: "/blog/posts/2021-03-10-part-validation-dan-and-raz.html"
 <p>This post is about one of these unique cases where <a href="https://www.linkedin.com/in/dan-nabel-b29151124/" rel="noopener" target="_blank">Dan Nabel </a>and Raz Kochavi created their “<strong>Part Validation using Kinect and Augmented Reality</strong>”  project which received the “best poster” award in the Technion’s mechanical engineering undergraduate projects competition.</p>
 <p>You can view the poster <a href="/assets/images/blog/Poster-raz-and-dan.pdf" rel="noopener" target="_blank">here </a>(Hebrew).</p>
 <p>*The work was done under the supervision of <a href="https://meeng.technion.ac.il/members/anath-fischer/" rel="noopener" target="_blank">Prof. Anath Fischer</a></p>
-<p><picture>
-<source media="(min-width: 400px)" srcset="../../assets/images/blog/poster_dan_raz-1024x634-400.webp" type="image/webp"/>
-<source media="(max-width: 399px)" srcset="../../assets/images/blog/poster_dan_raz-1024x634-200.webp" type="image/webp"/>
-<img alt="" class="aligncenter wp-image-512" height="371" loading="lazy" src="../../assets/images/blog/poster_dan_raz-1024x634.jpg" width="600"/>
-</picture>
+<p>{% responsiveImage "../../assets/images/blog/poster_dan_raz.jpg", "" %}
 </p>
 <p> </p>
 <p><strong>Intro</strong> (mostly for non- mechanical engineers): The design of a new product encapsulates many stages, from characterizing the customer’s requirements, creating a detailed specification, conceptual design, detailed mechanical design,  manufacturing, assembly and evaluation testing. Between the manufacturing and assembly stages, there is an internal stage called “validation”. In this stage, the manufacturer ( and usually the client too) inspects and measures the manufactured part in order to check if it meets the design specification.  In a perfect world, every manufacturer will supply every single part exactly as the CAD model and sketch specify. However, we don’t live in a perfect world.  The process of validation and inspection is something that takes time (and money). Sometimes there is a person that stands and manually measures the part with a caliper and sometimes there is a very big, very expensive, very calibrated machine that does it automatically for a subset of the manufactured parts. One of the hardest cases to validate are free-form surfaces.  Their unique geometry is usually so complex that traditional measuring instruments are just not enough.</p>
@@ -49,18 +45,11 @@ permalink: "/blog/posts/2021-03-10-part-validation-dan-and-raz.html"
 <p>Once the two point clouds are aligned we compute the distances between every two closest points between the two point clouds. To do this efficiently we use a <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm" rel="noopener" target="_blank">K nearest neighbor algorithm</a> (K=1 in this case) which uses the<a href="https://en.wikipedia.org/wiki/K-d_tree" rel="noopener" target="_blank"> K-d tree data structure.</a>  If there are no manufacturing errors all of the computed distances should be zero (or a very small number) but, if there is a defect the distance will spike. For <em>visualization</em> purposes, we now map all of the distances to a color map (from blue=acurate to red=high error).    Next, we project these points onto a plane and display it on screen. At this point we realized that just looking at it on the screen is simply not enough anymore (in the world where augmented reality is a great buzz word) so we connected a projector and projected the error map onto the part (I still want to get an <a href="https://www.oculus.com/rift/" rel="noopener" target="_blank">Oculus Rift </a>or a <a href="https://www.microsoft.com/en-us/hololens" rel="noopener" target="_blank">Microsoft HoloLen</a>s for it) .  Now we could really see the errors on the part.</p>
 <p> </p>
 <p>The approach is summarized visually in the flowchart below (click on it to see full-size).  For further details, you can read their full report <a href="/assets/images/blog/Part-Validation-Dan-and-Raz.pdf" rel="noopener" target="_blank">here </a>(Hebrew)</p>
-<p><a href="assets/images/blog/FLOW-CHART.png" rel="noopener" target="_blank"><picture>
-<source media="(min-width: 400px)" srcset="../../assets/images/blog/FLOW-CHART-254x300-400.webp" type="image/webp"/>
-<source media="(max-width: 399px)" srcset="../../assets/images/blog/FLOW-CHART-254x300-200.webp" type="image/webp"/>
-<img alt="" class="aligncenter wp-image-524" height="480" loading="lazy" src="../../assets/images/blog/FLOW-CHART-254x300.png" width="407"/>
-</picture>
+<p><a href="assets/images/blog/FLOW-CHART.png" rel="noopener" target="_blank">{% responsiveImage "../../assets/images/blog/FLOW-CHART.png", "" %}
 </a></p>
 <p> </p>
 <p>In the image below you can see the <strong>results</strong> of visualization on a test part.  We took a big chunk of Plasticine and placed it on the part (right) and the projected visualization (left). The system shows the expected high errors on the Plasticine. (Note that even though the part is shiny and red the projection is seen well)</p>
-<p><picture>
-<source srcset="../../assets/images/blog/Error-Map-200.webp" type="image/webp"/>
-<img alt="" class="size-full wp-image-536 aligncenter" height="96" loading="lazy" src="../../assets/images/blog/Error-Map.jpg" width="300"/>
-</picture>
+<p>{% responsiveImage "../../assets/images/blog/Error-Map.jpg", "" %}
 </p>
 <p> </p>
 <p>Remember how a picture is worth a thousand words? So how many words is a demo?</p>
