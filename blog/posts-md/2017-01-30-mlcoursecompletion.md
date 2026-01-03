@@ -10,11 +10,7 @@ permalink: "/blog/posts/2017-01-30-mlcoursecompletion.html"
 
 
 <p>Just finished my first online course on Machine Learning ! ! !</p>
-<p><picture>
-<source media="(min-width: 400px)" srcset="../../assets/images/blog/Capture-1024x380-400.webp" type="image/webp"/>
-<source media="(max-width: 399px)" srcset="../../assets/images/blog/Capture-1024x380-200.webp" type="image/webp"/>
-<img alt="Machine Learning Course cetrtificate" class="aligncenter wp-image-47 size-large" height="297" loading="lazy" src="../../assets/images/blog/Capture-1024x380.jpg" width="800"/>
-</picture>
+<p>{% responsiveImage "../../assets/images/blog/Capture.jpg", "Machine Learning Course cetrtificate" %}
 </p>
 <p> </p>
 <p>If you are new to this topic or find it interesting I totally recommend it.</p>

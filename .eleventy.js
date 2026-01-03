@@ -16,6 +16,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.ignores.add("TODO.md");
   eleventyConfig.ignores.add("DEPLOYMENT.md");
   
+  // Register responsive image shortcode
+  eleventyConfig.addAsyncShortcode("responsiveImage", require("./_includes/shortcodes/responsiveImage.js"));
+  
   // Add date filter for formatting dates
   eleventyConfig.addFilter("formatDate", (date, format) => {
     const d = new Date(date);
