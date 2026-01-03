@@ -7,6 +7,9 @@ permalink: "/blog/posts/2025-10-14-why-i-left-social-media-and-what-brought-me-b
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>If you’ve followed me for a while, you might have noticed I’ve been quiet on Twitter and Bluesky over the past year. That’s unusual for me. I used to be very active, but things changed. I want to share why I stepped back and why I’m coming back now.</p>
@@ -38,4 +41,5 @@ permalink: "/blog/posts/2025-10-14-why-i-left-social-media-and-what-brought-me-b
 <p>I hope you’ll join me on this new journey. Follow along and retweet if you feel inspired. Let’s make the world a better place, together.</p>
  
 
+{% endraw %}
 </div>

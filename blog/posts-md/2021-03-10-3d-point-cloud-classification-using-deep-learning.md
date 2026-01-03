@@ -7,6 +7,9 @@ permalink: "/blog/posts/2021-03-10-3d-point-cloud-classification-using-deep-lear
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>Last week I gave a talk in the <a href="https://www.omek3d.org/about-omek">Omek-3D</a> forum. The title of the talk was (the same as the title of this post) “<strong>3D Point Cloud Classification using Deep Learning</strong>“.</p>
@@ -30,7 +33,11 @@ permalink: "/blog/posts/2021-03-10-3d-point-cloud-classification-using-deep-lear
 <li>Invariance to permutations: a point cloud is essentially a long list of points (nx3 matrix where n is the number of points). Geometrically, the order of the points doesn’t matter however in the underlying matrix structure it does, e.g. the same point cloud can be represented by two very different matrices. (the image below illustrates this point).</li>
 <li>The number of points changes:  In images, the number of pixels is a given constant and depends on the camera. The number of points, however, may vary dramatically, depending on the sensor.</li>
 </ol>
-<figure aria-describedby="caption-attachment-546" class="wp-caption aligncenter" id="attachment_546" style="width: 279px">{% responsiveImage "../../assets/images/blog/PCchallanges_web.png", "" %}
+<figure aria-describedby="caption-attachment-546" class="wp-caption aligncenter" id="attachment_546" style="width: 279px">{% endraw %}
+{% responsiveImage "../../assets/images/blog/PCchallanges_web.png", "" %}
+{% raw %}
+
+
 <figcaption class="wp-caption-text" id="caption-attachment-546">Permutation Invariance problem</figcaption></figure>
 <p>Data Challenges:</p>
 <ol>
@@ -43,11 +50,19 @@ permalink: "/blog/posts/2021-03-10-3d-point-cloud-classification-using-deep-lear
 <h5>The Dataset</h5>
 <p>Like every vision task, if you want to prove that your method works you have to use a benchmark.</p>
 <p>I focused on Princeton’s Modelnet40 dataset. It contains approximately 12311 CAD models of 40 object categories (such as airplanes, tables, plants etc.) represented as triangle meshes. The data is split into 9843 models for training and 2468 for testing. I did some visualization of the dataset using the <a href="https://github.com/charlesq34/pointnet" rel="noopener" target="_blank">GitHub code for PointNet </a>(thanks <a href="https://web.stanford.edu/~rqi/" rel="noopener" target="_blank">Charles</a>!).</p>
-<figure aria-describedby="caption-attachment-562" class="wp-caption aligncenter" id="attachment_562" style="width: 560px">{% responsiveImage "../../assets/images/blog/modelnet40_classes.png", "" %}
+<figure aria-describedby="caption-attachment-562" class="wp-caption aligncenter" id="attachment_562" style="width: 560px">{% endraw %}
+{% responsiveImage "../../assets/images/blog/2017-09-modelnet40_classes.png", "" %}
+{% raw %}
+
+
 <figcaption class="wp-caption-text" id="caption-attachment-562">Modelnet40 objects</figcaption></figure>
 <h5>Related Work</h5>
 <p>In the talk, I surveyed three recent papers that did just that (apply deep learning on point clouds). But before I get into that I wanted to show a nice bar-plot that summarizes the latest accuracy results on the dataset. It shows the type of data each method is working on. You can see that in 2015 most methods worked on multi-view data (which is a short way of saying – let’s take a few pictures of the 3D model and process them using 2D methods), in 2016 more methods used volumetric representation with the pioneer of point cloud learnings and 2017 has a large increase in point-based methods.</p>
-<figure aria-describedby="caption-attachment-551" class="wp-caption aligncenter" id="attachment_551" style="width: 734px">{% responsiveImage "../../assets/images/blog/method_barchart_4web.png", "" %}
+<figure aria-describedby="caption-attachment-551" class="wp-caption aligncenter" id="attachment_551" style="width: 734px">{% endraw %}
+{% responsiveImage "../../assets/images/blog/method_barchart_4web.png", "" %}
+{% raw %}
+
+
 <figcaption class="wp-caption-text" id="caption-attachment-551">3D classification accuracy publications (accuracy, years and data type)</figcaption></figure>
 <p>*All images below were taken from the original papers linked in the title ( credit to the authors )</p>
 <p><a href="https://arxiv.org/abs/1612.00593" rel="noopener" target="_blank"><strong>Pointnet (CVPR2017)</strong></a></p>
@@ -57,7 +72,11 @@ permalink: "/blog/posts/2021-03-10-3d-point-cloud-classification-using-deep-lear
 <p>Oh, and they also did normal vector estimation.</p>
 <p>Great work! I highly recommend the read (or you can watch the presentation <a href="https://www.youtube.com/watch?v=Cge-hot0Oc0" rel="noopener" target="_blank">video </a>too).</p>
 <p>This paper had a great 89.2% accuracy on the ModelNet40 dataset.</p>
-<figure aria-describedby="caption-attachment-570" class="wp-caption alignnone" id="attachment_570" style="width: 600px">{% responsiveImage "../../assets/images/blog/pointnet_classification_architecture.png", "" %}
+<figure aria-describedby="caption-attachment-570" class="wp-caption alignnone" id="attachment_570" style="width: 600px">{% endraw %}
+{% responsiveImage "../../assets/images/blog/pointnet_classification_architecture.png", "" %}
+{% raw %}
+
+
 <figcaption class="wp-caption-text" id="caption-attachment-570">PointNet classification architecture</figcaption></figure>
 <p> </p>
 <p>Cite: Charles R. Qi, Hao Su, Kaichun Mo, and Leonidas J. Guibas. Pointnet: Deep learning on point sets for 3d classication and segmentation. In The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), July 2017.</p>
@@ -73,7 +92,11 @@ permalink: "/blog/posts/2021-03-10-3d-point-cloud-classification-using-deep-lear
 <p><a href="https://arxiv.org/abs/1706.02413" rel="noopener" target="_blank"><strong>Pointnet++  (NIPS 2017)</strong></a></p>
 <p>When I first read the PointNet paper, there was one thing that bothered me the most – why are they not using local neighborhoods of points?  So, I guess it bothered them too because not long after PointNet, they introduced  Pointnet++. It is essentially a hierarchical version of PointNet. Each layer has three sub stages: sampling, grouping, and PointNeting. In the first stage, they select centroids and in the second stage, they take their surrounding neighboring points (within a given radius) to create multiple sub-point clouds. Then they feed them to a PointNet and get a higher dimensional representation of these sub-point clouds. Then, they repeat the process (sample centroids, find their neighbors and Pointnet on their higher order representation to get an even higher one). They reported using 3 of these layers. They also tested some different aggregation methods for the different hierarchy levels in order to overcome differences in sampling density (which is known to be a big issue for most sensors = sample densely when objects are near and sparsely when they are far away).</p>
 <p>They got an improvement on the original PointNet with a 90.7% accuracy on ModelNet40. (It got even better scores when they incorporated additional features).</p>
-<figure aria-describedby="caption-attachment-568" class="wp-caption aligncenter" id="attachment_568" style="width: 600px">{% responsiveImage "../../assets/images/blog/pointnet.jpg", "" %}
+<figure aria-describedby="caption-attachment-568" class="wp-caption aligncenter" id="attachment_568" style="width: 600px">{% endraw %}
+{% responsiveImage "../../assets/images/blog/pointnet.jpg", "" %}
+{% raw %}
+
+
 <figcaption class="wp-caption-text" id="caption-attachment-568">Pointnet++ architecture</figcaption></figure>
 <p> </p>
 <p>Cite: Charles R Qi, Li Yi, Hao Su, and Leonidas J Guibas. Pointnet++: Deep hierarchical feature learning on point sets in a metric space. arXiv preprint arXiv:1706.02413, 2017.</p>
@@ -84,17 +107,26 @@ permalink: "/blog/posts/2021-03-10-3d-point-cloud-classification-using-deep-lear
 <p>Despite its drawbacks, I find the approach very interesting. It also seems that there is some additional work to be done (like try other tree types as they suggested).</p>
 <p>Oh, and they also did part segmentation.</p>
 <p>Oh, and they also did shape retrieval.</p>
-<figure aria-describedby="caption-attachment-575" class="wp-caption aligncenter" id="attachment_575" style="width: 300px">{% responsiveImage "../../assets/images/blog/kdnetwork.png", "" %}
+<figure aria-describedby="caption-attachment-575" class="wp-caption aligncenter" id="attachment_575" style="width: 300px">{% endraw %}
+{% responsiveImage "../../assets/images/blog/kdnetwork.png", "" %}
+{% raw %}
+
+
 <figcaption class="wp-caption-text" id="caption-attachment-575">Kd-Network subdivisions and color coded shared weights</figcaption></figure>
 <p> </p>
 <p>Cite: Roman Klokov and Victor Lempitsky. Escape from cells: Deep kd-networks for the recognition of 3d point cloud models. arXiv preprint arXiv:1704.01222, 2017.</p>
 <h6>Summary</h6>
 <p>In the vision community, scores are really important so let’s line them up</p>
-<p>{% responsiveImage "../../assets/images/blog/final_scores.png", "" %}
+<p>{% endraw %}
+{% responsiveImage "../../assets/images/blog/final_scores.png", "" %}
+{% raw %}
+
+
 </p>
 <p>Since the scores are so close to each other and could be affected by a lot of parameters I find great interest in the different approaches. Pointnet and Pointnet++ used a symmetric function to solve the order problem while kd-Network used the Kd-tree. The Kd-tree also solved the structure problem while in the PointNets the MLP was trained on each point separately.</p>
 <p>I have a method of my own to solve the point cloud classification task cooking up. I’ll post it after it’s published and link to it. (Here is the <a href="https://arxiv.org/abs/1711.08241" rel="noopener" target="_blank">link </a>again if you missed the update at the top)</p>
 <p>I just hope no one will publish it before me 🙂</p>
  
 
+{% endraw %}
 </div>

@@ -7,6 +7,9 @@ permalink: "/blog/posts/2018-10-01-3d-point-cloud-classification-a-summary-of-us
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>This post aims to gather all of the useful links spread across multiple posts on the topic of 3D point cloud classification.</p>
@@ -26,4 +29,5 @@ permalink: "/blog/posts/2018-10-01-3d-point-cloud-classification-a-summary-of-us
 <p>I hope you find the information brought here useful. Don’t forget to cite my paper 🙂</p>
  
 
+{% endraw %}
 </div>

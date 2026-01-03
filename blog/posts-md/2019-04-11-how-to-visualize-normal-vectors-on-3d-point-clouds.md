@@ -7,6 +7,9 @@ permalink: "/blog/posts/2019-04-11-how-to-visualize-normal-vectors-on-3d-point-c
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>This post will show you a good way to visualize normal vectors on 3D point clouds. </p>
@@ -16,8 +19,13 @@ permalink: "/blog/posts/2019-04-11-how-to-visualize-normal-vectors-on-3d-point-c
 <p>Here <code>x,y,z</code> are the point coordinates and <code>u,v,w</code> are the vector components. </p>
 <h4 class="wp-block-heading">The problem</h4>
 <p>The problem was that for complex 3D point clouds (like from the NYU Depth V2 dataset) this visualization is not very informative (it is very hard to see where the little arrows are pointing). </p>
-<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "../../assets/images/blog/nyu_v2_quiver.jpg", "3D point clouds with normal vectors  visualization as arrows" %}
-<figcaption>Normal vector visualization using <code>quiver3</code> of a scene from NYU Depth V2  </figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter is-resized">{% endraw %}
+{% responsiveImage "../../assets/images/blog/nyu_v2_quiver.jpg", "3D point clouds with normal vectors  visualization as arrows" %}
+{% raw %}
+
+
+<figcaption>Normal vector visualization using <code>quiver3</code> of a scene from NYU Depth V2  </figcaption></figure>{% endraw %}
+</div>
 <h4 class="wp-block-heading">The solution</h4>
 <p>Therefore, I created a nice function that maps a vector to the RGB cube: </p>
 <pre class="wp-block-code"><code>[RGB] = Sphere2RGBCube(V)</code></pre>
@@ -25,7 +33,7 @@ permalink: "/blog/posts/2019-04-11-how-to-visualize-normal-vectors-on-3d-point-c
 <p>For the comprehensive demonstration simply run </p>
 <pre class="wp-block-code"><code>TestSphere2CubeMapping();</code></pre>
 <p>And you will get the following interface :</p>
-<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "../../assets/images/blog/Point_loud_rgb_color_conversion.png", "" %}
+<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "../../assets/images/blog/2019-04-Point_loud_rgb_color_conversion.png", "" %}
 <figcaption>Normal Vector color mapping comprehensive demonstration</figcaption></figure></div>
 <p>In the top left, you can see the RGB cube. At the bottom left, you can see the unit sphere with the mapped colors. Both include a small red dot which you can move using the arrow keys. To the right, you can see the color and its corresponding RGB values of the red dot. This illustrates what the mapping function does – it takes a unit vector (a point on the sphere), finds where it intersects the RGB cube, and uses that color as the vector representation. </p>
 <p>Note that there are actually two mapping functions:</p>

@@ -7,6 +7,9 @@ permalink: "/blog/posts/2017-06-17-feature-aggregatoin-using-vlad-netvlad.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>Before the age of deep learning, hand-crafted features such as SIFT ruled the computer vision world. These features combined with Bag of Features (BOF) methods were very popular in indexing and categorization tasks. Their main advantage was getting a very discriminative higher dimensional representation of the image. The best one was the <a href="http://image.ntua.gr/iva/files/PerronninDance_CVPR2007%20-%20Fisher%20Kernels%20on%20Visual%20Vocabularies%20for%20Image%20categorization.pdf" rel="noopener" target="_blank">Fisher Vectors</a> (FV) kernel which uses a Gaussian Mixture Model (GMM) and their derivatives to approximate the feature distribution in the image. They had excellent performance in various tasks but their main drawback was a very (sometimes too) high dimensionality.</p>
@@ -33,7 +36,11 @@ permalink: "/blog/posts/2017-06-17-feature-aggregatoin-using-vlad-netvlad.html"
 <p>Here, <img alt="w_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=w_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/>, <img alt="b_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=b_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/>, <img alt="c_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=c_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> are parameters learned by the network.</p>
 <p>The netVLAD architecture is presented below</p>
 <p> </p>
-<figure aria-describedby="caption-attachment-451" class="wp-caption aligncenter" id="attachment_451" style="width: 1024px">{% responsiveImage "../../assets/images/blog/netVLAD_Architecture.png", "" %}
+<figure aria-describedby="caption-attachment-451" class="wp-caption aligncenter" id="attachment_451" style="width: 1024px">{% endraw %}
+{% responsiveImage "../../assets/images/blog/netVLAD_Architecture.png", "" %}
+{% raw %}
+
+
 <figcaption class="wp-caption-text" id="caption-attachment-451"><span style="color: #999999;"><em><span style="color: #999999;">netVLAD architecture as presented in the original <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Arandjelovic_NetVLAD_CNN_Architecture_CVPR_2016_paper.pdf" rel="noopener" target="_blank">netVALD </a>paper </span></em><em>by R. Arandjelovic et al.</em></span></figcaption></figure>
 <p> </p>
 <p>In the original paper, they stated that the centers and weights should be initialized to some pre-trained value (using kmeans on features learned without the VLAD layer). However, I experienced no change in performance while just using the standard truncated normal distribution initialization or Xavier.</p>
@@ -42,4 +49,5 @@ permalink: "/blog/posts/2017-06-17-feature-aggregatoin-using-vlad-netvlad.html"
 <p> </p>
  
 
+{% endraw %}
 </div>

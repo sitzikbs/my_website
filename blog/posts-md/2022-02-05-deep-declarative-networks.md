@@ -7,10 +7,14 @@ permalink: "/blog/posts/2022-02-05-deep-declarative-networks.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted Dylan Campbell to chat about his paper “Deep Declarative Networks – A New Hope”, published in TPAMI. DDN is a general name for injecting and solving an optimization problem within a neural network. They are particularly useful if you need to enforce constraints or get some guarantees for the solution. Dylan is currently a postdoc at the Visual Geometry Group (VGG) in Oxford and this work was done back when he was still a Research Fellow in The Australian Centre for Robotic Vision (ACRV) at the Australian National University (ANU) Node. Dylan has a unique perspective on optimization, in particular in applications involving geometry. He is a great researcher and a good friend and it was a pleasure recording this episode with him.</p>
-<div id="buzzsprout-player-9879802"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/9879802-dylan-campbell-deep-declarative-networks.js?container_id=buzzsprout-player-9879802&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-9879802">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/9879802-dylan-campbell-deep-declarative-networks.js?container_id=buzzsprout-player-9879802&amp;player=small" type="text/javascript"></script>
 <p></p>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><a href="http://users.cecs.anu.edu.au/~sgould/" rel="noreferrer noopener" target="_blank">Stephen Gould</a>, Richard Hartley, Dylan Campbell</p>

@@ -7,12 +7,16 @@ permalink: "/blog/posts/2022-07-18-icon-implicit-clothed-humans-obtained-from-no
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted <a href="https://xiuyuliang.cn/" rel="noreferrer noopener" target="_blank">Yuliang Xiu</a> to chat about his paper “<a href="Implicit Clothed humans Obtained from Normals" rel="noreferrer noopener" target="_blank">ICON: Implicit Clothed humans Obtained from Normals</a>”, published in CVPR 2022. </p>
 <p>In this paper, they take on the task of reconstructing an animatable human avatar from multiple images. Their key ideas are to use local features which are more robust to pose estimation error and exploit the SMPL(-X) body model to infer clothed humans (conditioned on the normals).  Additionally, they propose an inference-time feedback loop that alternates between refining the body’s normals and the shape. </p>
 <p>I am looking forward to meeting Yuliang in person at CVPR 2022. It was a pleasure hosting him on the podcast. </p>
-<div id="buzzsprout-player-10466744"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10466744-yuliang-xiu-icon.js?container_id=buzzsprout-player-10466744&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-10466744">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10466744-yuliang-xiu-icon.js?container_id=buzzsprout-player-10466744&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><em>Yuliang Xiu, Jinlong Yang, Dimitrios Tzionas, Michael J. Black</em></p>
 <p> </p>

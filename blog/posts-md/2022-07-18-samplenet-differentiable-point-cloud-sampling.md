@@ -7,12 +7,16 @@ permalink: "/blog/posts/2022-07-18-samplenet-differentiable-point-cloud-sampling
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted <em><a href="http://manuel-dahnert.com/" rel="noreferrer noopener" target="_blank">Itai Lang</a></em> to chat about his paper “SampleNet: Differentiable Point Cloud Sampling”, published in CVPR 2020. </p>
 <p>In this paper, they propose a point soft-projection to allow differentiating through the sampling operation and enable learning task-specific point sampling. Combined with their regularization and task-specific losses, they can reduce the number of points to 3% of the original samples with a very low impact on task performance. </p>
 <p>I met Itai for the first time <a href="https://www.itzikbs.com/cvpr-2019" rel="noreferrer noopener" target="_blank">at CVPR 2019</a>.  Being a point-cloud guy myself, I have been following his research work ever since. It is amazing how much progress he has made and I can’t wait to see what he comes up with next. It was a pleasure hosting him on the podcast. </p>
-<div id="buzzsprout-player-10330506"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10330506-itai-lang-samplenet.js?container_id=buzzsprout-player-10330506&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-10330506">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10330506-itai-lang-samplenet.js?container_id=buzzsprout-player-10330506&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><em>Itai Lang, Asaf Manor, Shai Avidan</em></p>
 <p> </p>

@@ -7,6 +7,9 @@ permalink: "/blog/posts/2018-02-11-first-steps-deep-learning-using-tensorflow.ht
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In the past year, there was this phrase that kept popping up everywhere – “Deep learning”. It created the impression that you can do everything with it. Therefore, I have decided to investigate that the fuss is all about.</p>
@@ -25,7 +28,11 @@ permalink: "/blog/posts/2018-02-11-first-steps-deep-learning-using-tensorflow.ht
 </ul>
 <p>When I felt that I had a better understanding of this “magic” I immediately wanted to apply it to my engineering problems – a relatively unharvested field of research. I found (based on recommendations from several colleagues) that the best tool for implementation would be to use Google’s <a href="https://www.tensorflow.org/" rel="noopener" target="_blank">TensorFlow</a> with <a href="https://www.python.org/" rel="noopener" target="_blank">Python</a>.</p>
 <p> </p>
-<p>{% responsiveImage "../../assets/images/blog/TensorFlow-Logo.png", "TensorFlow logo - Library includes Neural Network tools" %}
+<p>{% endraw %}
+{% responsiveImage "../../assets/images/blog/TensorFlow-Logo.png", "TensorFlow logo - Library includes Neural Network tools" %}
+{% raw %}
+
+
 </p>
 <p> </p>
 <p>Confession: I have not worked with python before + I work on a windows machine.</p>
@@ -71,4 +78,5 @@ print(test_Accuracy)
 <p>In the next tutorial (and post) I’m going to use a deep convolutional network to improve this result.</p>
  
 
+{% endraw %}
 </div>

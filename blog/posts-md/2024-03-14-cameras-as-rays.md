@@ -7,9 +7,13 @@ permalink: "/blog/posts/2024-03-14-cameras-as-rays.html"
 ---
 
 <div class="post-content">
+{% raw %}
 
 
-<div id="buzzsprout-player-14686846"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/14686846.js?container_id=buzzsprout-player-14686846&amp;player=small" type="text/javascript"></script>
+
+
+<div id="buzzsprout-player-14686846">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/14686846.js?container_id=buzzsprout-player-14686846&amp;player=small" type="text/javascript"></script>
 <p>In the latest episode of Talking Papers Podcast, I had the immense pleasure of hosting Jason Zhang, who’s currently cutting a dynamic path as a PhD student at the Robotics Institute at Carnegie Mellon University. Our conversation revolved around his captivating paper, “Cameras as Rays: Pose Estimation via Ray Diffusion,” which was recently accepted to ICLR 2024 as an oral presentation. This work is a game-changing twist in the arena of camera pose estimation, where they estimate camera poses by treating a camera as a bundle of rays rather than the standard practice of predicting global parametrizations of camera extrinsics. This unique representation, linked tightly with spatial image features, elevates the precision aspect of the pose.</p>
 <p>Zhang’s work is a profound reflection of out-of-the-box thinking, an attribute I always advocate for in research. The idea of camera pose estimation embodied as a combination of rays opens up an entirely new vista. While further exploring this avenue, both regression and diffusion models are deployed that seemed to robustly work in harmony with this representation. The outcome? Even with the bare minimum of views, the results are staggeringly impressive, hinting at a breakthrough in the realm of camera pose estimation. The paper escalates to demonstrate state-of-the-art performance, attaining a notable landmark in CO3D applications while being versatile enough to fit into unseen object categories and in-the-wild captures.</p>
 <p>It’s interesting how these professional encounters can lead to personal connections, and this was certainly the case with Jason. Before this podcast episode, our paths had never crossed. What started as a conversation about his trailblazing paper morphed into learning about his personal journey from the Bay Area to Pittsburgh. The exchange was so natural, so comfortable, that the thought of wrapping up the conversation seemed almost preposterous. It’s these fascinating encounters and path-breaking research like Jason’s that keeps the intellectual flame burning, and I eagerly look forward to his future works. Stay tuned with Talking Papers Podcast and  ICLR2024 for more such enriching experiences.</p>

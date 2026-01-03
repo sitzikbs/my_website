@@ -7,6 +7,9 @@ permalink: "/blog/posts/2017-01-30-helping-out-a-friend-with-processing.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>My best friend’s girlfriend studies design. As part of her studies, they learned some programming using <a href="https://processing.org/">Processing</a>.  As a designer (and not a programmer) she had a hard time getting things to work. Even though I don’t know processing at all I figured my experience in programming might come in handy.</p>
@@ -92,4 +95,5 @@ class bigBall{ float radious; float noiseScale;float timeScale;
 <p>Credit: She told me that for the center circle she adapted a code snippet by "aa_debdeb" shown <a href="https://www.openprocessing.org/sketch/375003">here</a>.</p>
  
 
+{% endraw %}
 </div>

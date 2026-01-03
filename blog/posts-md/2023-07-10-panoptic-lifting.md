@@ -7,6 +7,9 @@ permalink: "/blog/posts/2023-07-10-panoptic-lifting.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted Yawar Siddiqui to chat about his CVPR 2023 highlight paper “Panoptic Lifting for 3D Scene Understanding with Neural Fields”.</p>
@@ -15,7 +18,8 @@ permalink: "/blog/posts/2023-07-10-panoptic-lifting.html"
 <p>Yawar is currently a PhD student at the Technical University of Munich (TUM) under the supervision of Prof. Matthias Niessner. This work was done as part of his latest internship with Meta Zurich. Funnily, he shares an office with onther guest of the podcast – <a href="https://talking.papers.podcast.itzikbs.com/1914034/10004179" rel="noreferrer noopener" target="_blank">Guy Gafni</a>. I first met Yawar at ECCV 2022 in Israel and then again at CVPR 2023. I have been following his works for a while now and it is amazing how much his research has grown over the years. It was a pleasure chatting with him and I can’t wait to see what he cooks up next. </p>
 <p></p>
 <p></p>
-<div id="buzzsprout-player-13188478"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/13188478-panoptic-lifting-yawar-siddiqui.js?container_id=buzzsprout-player-13188478&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-13188478">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/13188478-panoptic-lifting-yawar-siddiqui.js?container_id=buzzsprout-player-13188478&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><em><a href="https://niessnerlab.org/members/yawar_siddiqui/profile.html">Yawar Siddiqui</a>, <a href="https://scholar.google.com/citations?user=vW1gaVEAAAAJ">Lorenzo Porzi</a>, <a href="https://scholar.google.com/citations?hl=de&amp;user=484sccEAAAAJ">Samuel Rota Bulò</a>, <a href="https://niessnerlab.org/members/norman_mueller/profile.html">Norman Müller</a>, <a href="https://niessnerlab.org/members/matthias_niessner/profile.html">Matthias Nießner</a>, <a href="https://www.3dunderstanding.org/team.html">Angela Dai</a>, <a href="https://scholar.google.com/citations?user=CxbDDRMAAAAJ&amp;hl=en">Peter Kontschieder</a></em></p>
 <p></p>

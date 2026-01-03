@@ -7,6 +7,9 @@ permalink: "/blog/posts/2023-05-17-iaw_dataset.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted Jiahao Zhang to chat about our CVPR 2023 paper “Aligning Step-by-Step Instructional Diagrams to Video Demonstrations”.</p>
@@ -15,7 +18,8 @@ permalink: "/blog/posts/2023-05-17-iaw_dataset.html"
 <p>Jiahao is currently a PhD student at the Australian National University. His research focus is on human action recognition and multi-modal representation alignment. We first met (virtually) when Jiahao did his Honours project, where he developed an amazing (and super useful) video annotation tool <a href="https://github.com/anucvml/vidat" rel="noreferrer noopener" target="_blank">ViDaT</a>. His strong software engineering and web development background gives him a strong advantage when working on his research projects. Even though we never met in person (yet), we are actively collaborating and I already know what he is cooking up next. I hope to share it with the world soon.</p>
 <p></p>
 <p></p>
-<div id="buzzsprout-player-12858311"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/12858311-iaw-dataset-jiahao-zhang.js?container_id=buzzsprout-player-12858311&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-12858311">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/12858311-iaw-dataset-jiahao-zhang.js?container_id=buzzsprout-player-12858311&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><em>Jiahao Zhang, Anoop Cherian, Yanbin Liu, Yizhak Ben-Shabat, Cristian Rodriguez, Stephen Gould</em></p>
 <p><br/></p>

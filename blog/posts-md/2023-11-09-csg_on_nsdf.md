@@ -7,9 +7,13 @@ permalink: "/blog/posts/2023-11-09-csg_on_nsdf.html"
 ---
 
 <div class="post-content">
+{% raw %}
 
 
-<div id="buzzsprout-player-13932902"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/13932902.js?container_id=buzzsprout-player-13932902&amp;player=small" type="text/javascript"></script>
+
+
+<div id="buzzsprout-player-13932902">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/13932902.js?container_id=buzzsprout-player-13932902&amp;player=small" type="text/javascript"></script>
 <p>In our latest episode of the Talking Papers Podcast, I had the pleasure of hosting Zoë Marschner, a first-year PhD student at Carnegie Mellon University. We delved into her research paper titled “Constructive Solid Geometry on Neural Signed Distance Fields,” which was published in SIGGRAPH Asia 2023. The topic revolves around the challenge of editing shapes encoded by neural SDFs, a popular geometric representation.</p>
 <p>Zoë and her co-authors tackled the issue of incorrect non-Signed Distance Fields (SDFs) outputs resulting from common geometric operations. These outputs, referred to as Pseudo-SDFs, hinder their usability for downstream tasks. To address this, they characterized the space of Pseudo-SDFs and introduced the closest point loss, a novel regularizer that ensures an exact SDF as the output. This regularization technique has wide applicability in several operations, such as CSG and swept volumes.</p>
 <p>As a former mechanical engineer, I find the combination of Constructive Solid Geometry (CSG) and Neural Signed Distance Fields intriguing, especially considering its potential in computer-aided design (CAD) applications. The seamless integration of traditional methods with the power of neural networks opens up new possibilities in shape editing and content creation.</p>

@@ -7,10 +7,17 @@ permalink: "/blog/posts/2017-01-30-mlcoursecompletion.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>Just finished my first online course on Machine Learning ! ! !</p>
-<p>{% responsiveImage "../../assets/images/blog/Capture.jpg", "Machine Learning Course cetrtificate" %}
+<p>{% endraw %}
+{% responsiveImage "../../assets/images/blog/Capture.jpg", "Machine Learning Course cetrtificate" %}
+{% raw %}
+
+
 </p>
 <p> </p>
 <p>If you are new to this topic or find it interesting I totally recommend it.</p>
@@ -21,4 +28,5 @@ permalink: "/blog/posts/2017-01-30-mlcoursecompletion.html"
 <p>Now I’m going to try and learn something about these Deep Neural Networks that everyone is buzzing about…</p>
  
 
+{% endraw %}
 </div>

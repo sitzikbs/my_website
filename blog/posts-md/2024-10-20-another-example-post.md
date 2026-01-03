@@ -7,9 +7,13 @@ permalink: "/blog/posts/2024-10-20-another-example-post.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 <p>
                 This is another example blog post showing the structure for a longer, 
                 more research-focused article. Replace with actual WordPress content.
             </p>
 <!-- Actual WordPress content goes here -->
+{% endraw %}
 </div>

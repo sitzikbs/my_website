@@ -7,10 +7,14 @@ permalink: "/blog/posts/2022-02-05-dori-discovering-object-relationships-for-mom
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted Cristian Rodriguez-Opazo to chat about his paper “DORi: Discovering Object Relationships for Moment Localization of a Natural Language Query in a Video”, published in WACV 2021. Cristian is currently a Research Fellow at the Australian Institute of Machine Learning (AIML) and before that (where I first met him) a PhD student at the Australian National University (ANU). Cristian is a good friend and an amazing researcher. His perspective on video processing is so unique and grounded in hands-on experience. Recording this first episode with him was a pleasure. DORi takes on the task of temporal moment localization in untrimmed videos using a natural language query. The major player here is the Spatio-temporal graph.</p>
-<div id="buzzsprout-player-9836386"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/9836386-cristian-rodriguez-opazo-dori.js?container_id=buzzsprout-player-9836386&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-9836386">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/9836386-cristian-rodriguez-opazo-dori.js?container_id=buzzsprout-player-9836386&amp;player=small" type="text/javascript"></script>
 <p></p>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p><a href="https://crodriguezo.github.io/" rel="noreferrer noopener" target="_blank">Cristian Rodriguez-Opazo</a>, Edison Marrese-Taylor, Basura Fernando, Hongdong Li, Stephen Gould</p>

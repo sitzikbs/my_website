@@ -7,6 +7,9 @@ permalink: "/blog/posts/2024-11-15-example-blog-post.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 <section>
 <h2>Introduction</h2>
 <p>
@@ -80,4 +83,5 @@ def process_point_cloud(points):
                     all original content, formatting, and media from the WordPress export.
                 </p>
 </section>
+{% endraw %}
 </div>

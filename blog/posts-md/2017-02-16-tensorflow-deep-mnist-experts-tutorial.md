@@ -7,6 +7,9 @@ permalink: "/blog/posts/2017-02-16-tensorflow-deep-mnist-experts-tutorial.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>The second step in my quest for deep learning for 3D point clouds was to try recognizing MNIST digits using a deep convolutional network (The first step can be found <a href="https://www.itzikbs.com/first-steps-deep-learning-using-tensorflow" target="_blank">here</a>).</p>
@@ -61,4 +64,5 @@ print("Prediction : %d, Actual : %d"% (prediction, digit))
 <p>I’m not sure if this is the best way of doing this but it works. The final version (with exporting) can be found <a href="https://github.com/sitzikbs/TensorFlow-Tutorials/blob/master/MNIST4Experts.py" target="_blank">here</a> and the importing code can be found <a href="https://github.com/sitzikbs/TensorFlow-Tutorials/blob/master/ImportModel.py" target="_blank">here</a>.</p>
  
 
+{% endraw %}
 </div>

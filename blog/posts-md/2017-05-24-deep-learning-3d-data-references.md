@@ -7,6 +7,9 @@ permalink: "/blog/posts/2017-05-24-deep-learning-3d-data-references.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>Deep learning (DL) using convolution neural networks (CNN) architectures is now a standard for solving classification tasks in images. When dealing with 3D data the problem becomes more complex. First, 3D data may be represented using various structures which include:</p>
@@ -48,4 +51,5 @@ permalink: "/blog/posts/2017-05-24-deep-learning-3d-data-references.html"
 <p> </p>
  
 
+{% endraw %}
 </div>

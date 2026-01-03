@@ -7,10 +7,14 @@ permalink: "/blog/posts/2022-07-18-shape-as-points-a-differentiable-poisson-solv
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted <a href="https://pengsongyou.github.io/" rel="noreferrer noopener" target="_blank">Songyou Peng</a> to chat about his paper “Shape As Points: A Differentiable Poisson Solver”, published in NeurIPS 2021. In this paper, they take on the task of surface reconstruction and propose a hybrid representation that unifies explicit and implicit representation in addition to a differentiable solver for the classic Poisson surface reconstruction. I have been following Songyou’s work for a while and was very surprised to discover that he is just about midway through his PhD (with so many good papers, I thought he is about to finish!). We first met online at the ICCV 2021 workshop on “<a href="http://ivl.cs.brown.edu/3DReps/posters.html" rel="noopener" target="_blank">Learning 3D Representations for Shape and Appearance</a>” and I immediately flagged him as one of the next guests on the podcast.<br/>It was a pleasure recording this episode with him.</p>
-<div id="buzzsprout-player-10135005"> </div>
+<div id="buzzsprout-player-10135005"> {% endraw %}
+</div>
 <p><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10135005-songyou-peng-shape-as-points.js?container_id=buzzsprout-player-10135005&amp;player=small" type="text/javascript"></script></p>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell">Songyou Peng, Chiyu Jiang, Yiyi Liao, Michael Niemeyer, Marc Pollefeys, Andreas Geiger</p>

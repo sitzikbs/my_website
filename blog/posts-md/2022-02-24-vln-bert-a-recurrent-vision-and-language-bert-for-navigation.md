@@ -7,10 +7,14 @@ permalink: "/blog/posts/2022-02-24-vln-bert-a-recurrent-vision-and-language-bert
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted<a href="http://www.yiconghong.me/" rel="noreferrer noopener" target="_blank"> Yicong Hong</a> to chat about his paper “VLN BERT: A Recurrent Vision-and-Language BERT for Navigation”, published in CVPR 2021. In this paper, they take on the task of vision and language navigation (VLN) and propose a time-aware recurrent BERT model. The recurrent function maintains the cross-modal state information for the agent, enabling them to achieve state-of-the-art results. When I started my postdoc position at ANU, Yicong was in the first year of his PhD. Since then, it was a delight to see him grow as a researcher. One of the things I love most about his style is his relentlessness, he won’t let it go until he figures it out (reminds me of someone…). Yicong is a great early career researcher (soon to complete his PhD) and it was a pleasure recording this episode with him.</p>
-<div id="buzzsprout-player-10091519"> </div>
+<div id="buzzsprout-player-10091519"> {% endraw %}
+</div>
 <p><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10091519-yicong-hong-vln-bert.js?container_id=buzzsprout-player-10091519&amp;player=small" type="text/javascript"></script></p>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell">Yicong Hong, Qi Wu, Yuankai Qi, Cristian Rodriguez-Opazo, Stephen Gould</p>

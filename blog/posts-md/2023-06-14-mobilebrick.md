@@ -7,6 +7,9 @@ permalink: "/blog/posts/2023-06-14-mobilebrick.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted Kejie Li to chat about his CVPR 2023 paper “MobileBrick: Building LEGO for 3D Reconstruction on Mobile Devices”.</p>
@@ -15,7 +18,8 @@ permalink: "/blog/posts/2023-06-14-mobilebrick.html"
 <p>Kejie is currently a research scientist at ByteDance/ TikTok. When writing this paper he was a postdoc at Kejie is currently a research scientist at ByteDance/ TikTok. When writing this paper he was a postdoc at Oxford, working with Professor Philip Torr and Professor Victor Prisacariu. Prior to this, he successfully obtained his PhD from the University of Adelaide, under the guidance of Professor Ian Reid. Although we hadn’t crossed paths until this episode, we both have some common ground in our CVs, having been affiliated with different nodes of the ACRV (Adelaide for him and ANU for me). I’m excited to see what he comes up with next, and eagerly await his future endeavours.</p>
 <p></p>
 <p></p>
-<div id="buzzsprout-player-13033756"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/13033756-mobilebrick-kejie-li.js?container_id=buzzsprout-player-13033756&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-13033756">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/13033756-mobilebrick-kejie-li.js?container_id=buzzsprout-player-13033756&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><em>Kejie Li, Jia-Wang Bian, Robert Castle, Philip H.S. Torr, Victor Adrian Prisacariu</em></p>
 <p></p>
