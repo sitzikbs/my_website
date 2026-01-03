@@ -37,7 +37,7 @@ permalink: "/blog/posts/2021-03-10-fisher-vector-for-3d-point-clouds-classificat
 <div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "assets/images/blog/fv_0.png", "Point fisher vector example" %}
 </figure></div>
 <p>Now let’s see what happens when we move the point (hint FV changes)</p>
-<div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "assets/images/blog/fv_34-300x225.png", "Point fisher vector example" %}
+<div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "assets/images/blog/2018-09-fv_34.png", "Point fisher vector example" %}
 </figure></div>
 <p>Finally, we can see what happens when we move the point all around.</p>
 <div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "assets/images/blog/fv_smaller-compressor.gif", "Point fisher vector animation" %}</figure></div>
