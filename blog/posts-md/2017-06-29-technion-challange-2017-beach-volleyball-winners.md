@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "Technion Challange 2017 – Beach Volleyball Winners"
-date: 2021-03-10
+date: "2017-06-29"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2021-03-10-technion-challange-2017-beach-volleyball-winners.html"
 ---

@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "Nesti-Net: Normal estimation for 3D Point Clouds"
-date: 2021-03-10
+date: "2019-03-22"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2021-03-10-nesti-net-normal-estimation-for-3d-point-clouds.html"
 ---

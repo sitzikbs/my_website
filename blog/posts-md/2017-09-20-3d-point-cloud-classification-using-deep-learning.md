@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "3D Point Cloud Classification using Deep Learning – Recent Works"
-date: 2021-03-10
+date: "2017-09-20"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2021-03-10-3d-point-cloud-classification-using-deep-learning.html"
 ---

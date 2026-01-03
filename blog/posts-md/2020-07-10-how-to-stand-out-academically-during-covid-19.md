@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "How to stand out (in academia) during COVID-19?"
-date: 2021-03-10
+date: "2020-07-10"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2021-03-10-how-to-stand-out-academically-during-covid-19.html"
 ---

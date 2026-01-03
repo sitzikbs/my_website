@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "Part Validation using Kinect and Augmented Reality"
-date: 2021-03-10
+date: "2017-08-21"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2021-03-10-part-validation-dan-and-raz.html"
 ---

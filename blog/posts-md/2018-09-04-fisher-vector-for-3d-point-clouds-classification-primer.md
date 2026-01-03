@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "What is a Fisher Vector for 3D point clouds – 3D Point Cloud Classification Primer"
-date: 2021-03-10
+date: "2018-09-04"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2021-03-10-fisher-vector-for-3d-point-clouds-classification-primer.html"
 ---

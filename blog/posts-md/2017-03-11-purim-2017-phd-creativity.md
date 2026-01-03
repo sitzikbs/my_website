@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "Purim – PhD in creativity"
-date: 2021-03-10
+date: "2017-03-11"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2021-03-10-purim-2017-phd-creativity.html"
 ---

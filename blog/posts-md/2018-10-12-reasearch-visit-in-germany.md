@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "Reasearch visit in Germany – Prof. Matthias Niessner’s Visual Computing Group (TUM)"
-date: 2018-10-19
+date: "2018-10-12"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2018-10-19-reasearch-visit-in-germany.html"
 ---

@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "What is 3D modified Fisher Vector (3DmFV) representation for 3D point clouds"
-date: 2021-03-10
+date: "2018-09-08"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2021-03-10-what-is-3d-modified-fisher-vector-3dmfv-representation-for-3d-point-clouds.html"
 ---

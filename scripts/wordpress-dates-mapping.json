@@ -1,0 +1,149 @@
+{
+  "mlcoursecompletion": {
+    "wordpress_date": "2016-12-27",
+    "current_date": "2017-01-30",
+    "title": "Completed Stanford's Machine Learning Course on Coursera",
+    "file_path": "blog/posts-md/2017-01-30-mlcoursecompletion.md",
+    "needs_update": true
+  },
+  "tensorflow-deep-mnist-experts-tutorial": {
+    "wordpress_date": "2017-02-15",
+    "current_date": "2017-02-16",
+    "title": "TensorFlow - Deep MNIST for Experts tutorial",
+    "file_path": "blog/posts-md/2017-02-16-tensorflow-deep-mnist-experts-tutorial.md",
+    "needs_update": true
+  },
+  "purim-2017-phd-creativity": {
+    "wordpress_date": "2017-03-11",
+    "current_date": "2021-03-10",
+    "title": "Purim - PhD in creativity",
+    "file_path": "blog/posts-md/2021-03-10-purim-2017-phd-creativity.md",
+    "needs_update": true
+  },
+  "technion-challange-2017-beach-volleyball-winners": {
+    "wordpress_date": "2017-06-29",
+    "current_date": "2021-03-10",
+    "title": "Technion Challange 2017 - Beach Volleyball Winners",
+    "file_path": "blog/posts-md/2021-03-10-technion-challange-2017-beach-volleyball-winners.md",
+    "needs_update": true
+  },
+  "part-validation-dan-and-raz": {
+    "wordpress_date": "2017-08-21",
+    "current_date": "2021-03-10",
+    "title": "Part Validation using Kinect and Augmented Reality",
+    "file_path": "blog/posts-md/2021-03-10-part-validation-dan-and-raz.md",
+    "needs_update": true
+  },
+  "3d-point-cloud-classification-using-deep-learning": {
+    "wordpress_date": "2017-09-20",
+    "current_date": "2021-03-10",
+    "title": "3D Point Cloud Classification using Deep Learning - Recent Works",
+    "file_path": "blog/posts-md/2021-03-10-3d-point-cloud-classification-using-deep-learning.md",
+    "needs_update": true
+  },
+  "write-paper-using-latex": {
+    "wordpress_date": "2017-11-16",
+    "current_date": "2018-09-08",
+    "title": "How to write a paper using LaTeX",
+    "file_path": "blog/posts-md/2018-09-08-write-paper-using-latex.md",
+    "needs_update": true
+  },
+  "gaussian-mixture-model-gmm-3d-point-cloud-classification-primer": {
+    "wordpress_date": "2017-11-25",
+    "current_date": "2021-03-10",
+    "title": "What is a Gaussian Mixture Model (GMM) - 3D Point Cloud Classification Primer",
+    "file_path": "blog/posts-md/2021-03-10-gaussian-mixture-model-gmm-3d-point-cloud-classification-primer.md",
+    "needs_update": true
+  },
+  "3d-point-cloud-classification-segmentation-using-modified-fisher-vector-cnn-omek-3d-academia-conference": {
+    "wordpress_date": "2017-12-29",
+    "current_date": "2021-03-10",
+    "title": "3D Point Cloud Classification and Segmentation using Modified Fisher Vector for CNN - Omek 3D Academia Conference",
+    "file_path": "blog/posts-md/2021-03-10-3d-point-cloud-classification-segmentation-using-modified-fisher-vector-cnn-omek-3d-academia-conference.md",
+    "needs_update": true
+  },
+  "fisher-vector-for-3d-point-clouds-classification-primer": {
+    "wordpress_date": "2018-09-04",
+    "current_date": "2021-03-10",
+    "title": "What is a Fisher Vector for 3D point clouds - 3D Point Cloud Classification Primer",
+    "file_path": "blog/posts-md/2021-03-10-fisher-vector-for-3d-point-clouds-classification-primer.md",
+    "needs_update": true
+  },
+  "what-is-3d-modified-fisher-vector-3dmfv-representation-for-3d-point-clouds": {
+    "wordpress_date": "2018-09-08",
+    "current_date": "2021-03-10",
+    "title": "What is 3D modified Fisher Vector (3DmFV) representation for 3D point clouds",
+    "file_path": "blog/posts-md/2021-03-10-what-is-3d-modified-fisher-vector-3dmfv-representation-for-3d-point-clouds.md",
+    "needs_update": true
+  },
+  "3dmfv-net-3d-point-cloud-classification-using-cnns": {
+    "wordpress_date": "2018-09-09",
+    "current_date": "2021-03-10",
+    "title": "3DmFV-Net - 3D Point Cloud Classification in Real time using 3DmFV and CNNs",
+    "file_path": "blog/posts-md/2021-03-10-3dmfv-net-3d-point-cloud-classification-using-cnns.md",
+    "needs_update": true
+  },
+  "3d-point-cloud-classification-a-summary-of-useful-links": {
+    "wordpress_date": "2018-09-10",
+    "current_date": "2018-10-01",
+    "title": "3D point cloud classification - a summary of useful links",
+    "file_path": "blog/posts-md/2018-10-01-3d-point-cloud-classification-a-summary-of-useful-links.md",
+    "needs_update": true
+  },
+  "reasearch-visit-in-germany": {
+    "wordpress_date": "2018-10-12",
+    "current_date": "2018-10-19",
+    "title": "Reasearch visit in Germany - Prof. Matthias Niessner's Visual Computing Group (TUM)",
+    "file_path": "blog/posts-md/2018-10-19-reasearch-visit-in-germany.md",
+    "needs_update": true
+  },
+  "nesti-net-normal-estimation-for-3d-point-clouds": {
+    "wordpress_date": "2019-03-22",
+    "current_date": "2021-03-10",
+    "title": "Nesti-Net: Normal estimation for 3D Point Clouds",
+    "file_path": "blog/posts-md/2021-03-10-nesti-net-normal-estimation-for-3d-point-clouds.md",
+    "needs_update": true
+  },
+  "israel-machine-vision-conference-imvc-2019": {
+    "wordpress_date": "2019-04-07",
+    "current_date": "2019-05-02",
+    "title": "Israel Machine Vision Conference (IMVC) 2019",
+    "file_path": "blog/posts-md/2019-05-02-israel-machine-vision-conference-imvc-2019.md",
+    "needs_update": true
+  },
+  "how-to-stand-out-academically-during-covid-19": {
+    "wordpress_date": "2020-07-10",
+    "current_date": "2021-03-10",
+    "title": "How to stand out (in academia) during COVID-19?",
+    "file_path": "blog/posts-md/2021-03-10-how-to-stand-out-academically-during-covid-19.md",
+    "needs_update": true
+  },
+  "beyond-periodicity": {
+    "wordpress_date": "2022-11-15",
+    "current_date": "2022-12-06",
+    "title": "Beyond Periodicity: Towards a Unifying Framework for Activations in Coordinate-MLPs",
+    "file_path": "blog/posts-md/2022-12-06-beyond-periodicity.md",
+    "needs_update": true
+  },
+  "cvpr-2023": {
+    "wordpress_date": "2023-06-18",
+    "current_date": "2023-07-19",
+    "title": "CVPR 2023",
+    "file_path": "blog/posts-md/2023-07-19-cvpr-2023.md",
+    "needs_update": true
+  },
+  "hmdnemo": {
+    "wordpress_date": "2023-09-29",
+    "current_date": "2023-11-01",
+    "title": "HMD-NeMo: Online 3D Avatar Motion Generation From Sparse Observations",
+    "file_path": "blog/posts-md/2023-11-01-hmdnemo.md",
+    "needs_update": true
+  },
+  "cvpr2024": {
+    "wordpress_date": "2024-06-18",
+    "current_date": "2024-06-26",
+    "title": "Highlights and Insights from CVPR 2024",
+    "file_path": "blog/posts-md/2024-06-26-cvpr2024.md",
+    "needs_update": true
+  }
+}

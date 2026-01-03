@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "Completed Stanford’s Machine Learning Course on Coursera"
-date: 2017-01-30
+date: "2016-12-27"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2017-01-30-mlcoursecompletion.html"
 ---

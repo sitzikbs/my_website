@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "What is a Gaussian Mixture Model (GMM) – 3D Point Cloud Classification Primer"
-date: 2021-03-10
+date: "2017-11-25"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2021-03-10-gaussian-mixture-model-gmm-3d-point-cloud-classification-primer.html"
 ---

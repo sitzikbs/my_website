@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "TensorFlow – Deep MNIST for Experts tutorial"
-date: 2017-02-16
+date: "2017-02-15"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2017-02-16-tensorflow-deep-mnist-experts-tutorial.html"
 ---

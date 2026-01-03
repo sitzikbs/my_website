@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "3D Point Cloud Classification and Segmentation using Modified Fisher Vector for CNN – Omek 3D Academia Conference"
-date: 2021-03-10
+date: "2017-12-29"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2021-03-10-3d-point-cloud-classification-segmentation-using-modified-fisher-vector-cnn-omek-3d-academia-conference.html"
 ---

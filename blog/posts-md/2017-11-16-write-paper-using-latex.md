@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "How to write a paper using LaTeX"
-date: 2018-09-08
+date: "2017-11-16"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2018-09-08-write-paper-using-latex.html"
 ---

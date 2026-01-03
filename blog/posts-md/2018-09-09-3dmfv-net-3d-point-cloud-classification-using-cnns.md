@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "3DmFV-Net – 3D Point Cloud Classification in Real time using 3DmFV and CNNs"
-date: 2021-03-10
+date: "2018-09-09"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2021-03-10-3dmfv-net-3d-point-cloud-classification-using-cnns.html"
 ---

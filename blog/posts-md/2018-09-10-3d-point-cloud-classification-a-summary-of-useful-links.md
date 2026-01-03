@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "3D point cloud classification – a summary of useful links"
-date: 2018-10-01
+date: "2018-09-10"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2018-10-01-3d-point-cloud-classification-a-summary-of-useful-links.html"
 ---

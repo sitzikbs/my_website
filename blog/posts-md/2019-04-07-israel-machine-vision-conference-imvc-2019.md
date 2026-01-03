@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "Israel Machine Vision Conference (IMVC) 2019"
-date: 2019-05-02
+date: "2019-04-07"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2019-05-02-israel-machine-vision-conference-imvc-2019.html"
 ---

@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog-post.njk
 title: "Beyond Periodicity: Towards a Unifying Framework for Activations in Coordinate-MLPs"
-date: 2022-12-06
+date: "2022-11-15"
 author: Itzik Ben-Shabat
 permalink: "/blog/posts/2022-12-06-beyond-periodicity.html"
 ---
