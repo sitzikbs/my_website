@@ -59,7 +59,7 @@ def process_point_cloud(points):
                     Images within the content should be properly referenced:
                 </p>
 <figure>
-{% responsiveImage "/assets/images/blog/example-inline-image.jpg", "Example inline image" %}
+{# responsiveImage "/assets/images/blog/example-inline-image.jpg", "Example inline image" #}
 <figcaption>Example caption for inline image</figcaption>
 </figure>
 </section>
