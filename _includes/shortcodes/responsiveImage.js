@@ -40,8 +40,8 @@ async function responsiveImageShortcode(src, alt = "", sizes = "(min-width: 800p
   let lowsrc = metadata.webp[0];
   let highsrc = metadata.webp[metadata.webp.length - 1];
   
-  // Generate picture element with sources wrapped in a centering div
-  return `<div class="image-wrapper"><picture class="responsive-image">
+  // Generate picture element with sources
+  return `<picture>
     ${Object.values(metadata)
       // Generate source tags for each format
       .map(imageFormat => {
@@ -58,7 +58,7 @@ async function responsiveImageShortcode(src, alt = "", sizes = "(min-width: 800p
       alt="${alt}"
       loading="lazy"
       decoding="async">
-  </picture></div>`;
+  </picture>`;
 }
 
 module.exports = responsiveImageShortcode;
