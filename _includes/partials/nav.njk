@@ -1,21 +1,21 @@
-<nav class="navbar">
+<nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
         <div class="nav-brand">
             <a href="/">Itzik Ben-Shabat</a>
         </div>
-        <button class="nav-toggle" aria-label="Toggle navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <ul class="nav-menu">
-            <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
-            <li><a href="/about/" {% if page.url == "/about/" %}class="active"{% endif %}>About</a></li>
-            <li><a href="/publications/" {% if page.url == "/publications/" %}class="active"{% endif %}>Publications</a></li>
-            <li><a href="/podcast/" {% if page.url == "/podcast/" %}class="active"{% endif %}>Podcast</a></li>
-            <li><a href="/blog/" {% if page.url == "/blog/" %}class="active"{% endif %}>Blog</a></li>
-            <li><a href="/code/" {% if page.url == "/code/" %}class="active"{% endif %}>Code</a></li>
-            <li><a href="/contact/" {% if page.url == "/contact/" %}class="active"{% endif %}>Contact</a></li>
+        <ul class="nav-menu" role="menubar">
+            <li role="none"><a href="/" {% if page.url == "/" %}class="active" aria-current="page"{% endif %} role="menuitem">Home</a></li>
+            <li role="none"><a href="/about/" {% if page.url == "/about/" %}class="active" aria-current="page"{% endif %} role="menuitem">About</a></li>
+            <li role="none"><a href="/publications/" {% if page.url == "/publications/" %}class="active" aria-current="page"{% endif %} role="menuitem">Publications</a></li>
+            <li role="none"><a href="/podcast/" {% if page.url == "/podcast/" %}class="active" aria-current="page"{% endif %} role="menuitem">Podcast</a></li>
+            <li role="none"><a href="/blog/" {% if page.url == "/blog/" %}class="active" aria-current="page"{% endif %} role="menuitem">Blog</a></li>
+            <li role="none"><a href="/code/" {% if page.url == "/code/" %}class="active" aria-current="page"{% endif %} role="menuitem">Code</a></li>
+            <li role="none"><a href="/contact/" {% if page.url == "/contact/" %}class="active" aria-current="page"{% endif %} role="menuitem">Contact</a></li>
         </ul>
     </div>
 </nav>
