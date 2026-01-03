@@ -25,10 +25,7 @@ permalink: "/blog/posts/2018-02-11-first-steps-deep-learning-using-tensorflow.ht
 </ul>
 <p>When I felt that I had a better understanding of this “magic” I immediately wanted to apply it to my engineering problems – a relatively unharvested field of research. I found (based on recommendations from several colleagues) that the best tool for implementation would be to use Google’s <a href="https://www.tensorflow.org/" rel="noopener" target="_blank">TensorFlow</a> with <a href="https://www.python.org/" rel="noopener" target="_blank">Python</a>.</p>
 <p> </p>
-<p><picture>
-<source srcset="../../assets/images/blog/TensorFlow-Logo-300x54-200.webp" type="image/webp"/>
-<img alt="TensorFlow logo - Library includes Neural Network tools" class="size-medium wp-image-368 aligncenter" height="54" loading="lazy" src="../../assets/images/blog/TensorFlow-Logo-300x54.png" width="300"/>
-</picture>
+<p>{% responsiveImage "assets/images/blog/TensorFlow-Logo.png", "TensorFlow logo - Library includes Neural Network tools" %}
 </p>
 <p> </p>
 <p>Confession: I have not worked with python before + I work on a windows machine.</p>

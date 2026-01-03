@@ -12,11 +12,7 @@ permalink: "/blog/posts/2020-07-27-surface-fitting-for-3d-point-cloud-deepfit.ht
 <p></p>
 <h2 class="wp-block-heading">ABSTRACT</h2>
 <p>We propose a method for 3D point cloud surface fitting. This method, called DeepFit, incorporates a neural network to learn point-wise weights for weighted least squares polynomial surface fitting. The learned weights act as a soft selection for the neighborhood of surface points thus avoiding the scale selection required of previous methods. To train the network we propose a novel surface consistency loss that improves point weight estimation. The method enables extracting normal vectors and other geometrical properties, such as principal curvatures, the latter were not presented as ground truth during training. We achieve state-of-the-art results on a benchmark normal and curvature estimation dataset, demonstrate robustness to noise, outliers and density variations, and show its application on noise removal.</p>
-<figure class="wp-block-image size-large"><picture>
-<source media="(min-width: 400px)" srcset="../../assets/images/blog/DeepFit_Pipeline-1024x410-400.webp" type="image/webp"/>
-<source media="(max-width: 399px)" srcset="../../assets/images/blog/DeepFit_Pipeline-1024x410-200.webp" type="image/webp"/>
-<img alt="" class="wp-image-1093" height="320" loading="lazy" src="../../assets/images/blog/DeepFit_Pipeline-1024x410.png" width="799"/>
-</picture>
+<figure class="wp-block-image size-large">{% responsiveImage "assets/images/blog/2020-07-DeepFit_Pipeline.png", "" %}
 <figcaption>DeepFit 3D point cloud surface fitting pipeline </figcaption></figure>
 <h3 class="wp-block-heading">Cite</h3>
 <p>arXiv (preprint):</p>
