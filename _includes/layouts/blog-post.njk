@@ -1,5 +1,31 @@
 ---
 layout: layouts/base.njk
+customSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ title }}",
+    "datePublished": "{{ date | formatDate }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ author or 'Itzik Ben-Shabat' }}",
+      "url": "https://www.itzikbs.com"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Itzik Ben-Shabat",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.itzikbs.com{{ page.url }}"
+    },
+    "image": "https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg",
+    "description": "{{ description or title }}"
+  }
 ---
 
 <style>
