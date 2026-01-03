@@ -22,12 +22,7 @@ permalink: "/blog/posts/2022-01-15-the-talking-papers-podcast.html"
 <ul class="wp-block-list"><li>YouTube channel: </li><li>Podcast RSS feed: <a href="https://talking.papers.podcast.itzikbs.com/?fbclid=IwAR1FRwFDzZrd_9DuGCjii4rgNHnHXBS--4l1CVu-uai0gx14HK-8_TWUigA" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></li><li>Twitter: <a href="https://twitter.com/talking_papers?fbclid=IwAR1bK-ipEOgTiwtphpi7AA9FRbtGlweUdtPp07_geQyzrpbklWkxHFlH2k0" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></li></ul>
 <p></p>
 <p>At the time of writing this blog post, only two episodes came out. Episodes are published weekly. </p>
-<div class="wp-block-image"><figure class="aligncenter size-large"><picture>
-<source media="(min-width: 800px)" srcset="../../assets/images/publications/Talking_papers_cover-800.webp" type="image/webp"/>
-<source media="(max-width: 799px)" srcset="../../assets/images/icons/talking-papers-logo.webp" type="image/webp"/>
-<source media="(max-width: 399px)" srcset="../../assets/images/publications/Talking_papers_cover-200.webp" type="image/webp"/>
-<img alt="Talking Papers Podcast" class="wp-image-1567" height="341" loading="lazy" src="../../assets/images/publications/Talking_papers_cover.png" width="1024"/>
-</picture></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large">{% responsiveImage "assets/images/publications/Talking_papers_cover.png", "Talking Papers Podcast" %}</figure></div>
  
 
 </div>

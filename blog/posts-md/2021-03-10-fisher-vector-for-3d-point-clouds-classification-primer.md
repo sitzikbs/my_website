@@ -34,19 +34,13 @@ permalink: "/blog/posts/2021-03-10-fisher-vector-for-3d-point-clouds-classificat
 <h2 class="wp-block-heading">The Intuition</h2>
 <p>It is much easier to understand the FV for points with some nice visualizations.</p>
 <p>Let’s take a single 2D point in a single Gaussian and show its FV next to it. In the image below, the Gaussian is qualitatively visualized with a dashed circle with a radius of a single standard deviation.</p>
-<div class="wp-block-image"><figure class="aligncenter"><picture>
-<source srcset="../../assets/images/blog/fv_0-300x225-200.webp" type="image/webp"/>
-<img alt="Point fisher vector example" class="wp-image-776" height="225" loading="lazy" src="../../assets/images/blog/fv_0-300x225.png" width="300"/>
-</picture>
+<div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "assets/images/blog/fv_0.png", "Point fisher vector example" %}
 </figure></div>
 <p>Now let’s see what happens when we move the point (hint FV changes)</p>
-<div class="wp-block-image"><figure class="aligncenter"><picture>
-<source srcset="../../assets/images/blog/fv_34-300x225-200.webp" type="image/webp"/>
-<img alt="Point fisher vector example" class="wp-image-777" height="225" loading="lazy" src="../../assets/images/blog/fv_34-300x225.png" width="300"/>
-</picture>
+<div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "assets/images/blog/2018-09-fv_34.png", "Point fisher vector example" %}
 </figure></div>
 <p>Finally, we can see what happens when we move the point all around.</p>
-<div class="wp-block-image"><figure class="aligncenter"><img alt="Point fisher vector animation" class="wp-image-800" height="352" loading="lazy" src="../../assets/images/blog/fv_smaller-compressor.gif" width="496"/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "assets/images/blog/fv_smaller-compressor.gif", "Point fisher vector animation" %}</figure></div>
 <h2 class="wp-block-heading">The Code</h2>
 <p>A great implementation of fisher vectors is available in <a href="https://gist.github.cnsom/danoneata/9927923" rel="noopener noreferrer" target="_blank">this link </a></p>
 <p>In order to recreate the images above you can use my repository for this <a href="https://github.com/sitzikbs/3DmFV-Tutorial" rel="noopener noreferrer" target="_blank">FV tutorial on my GitHub</a>.</p>

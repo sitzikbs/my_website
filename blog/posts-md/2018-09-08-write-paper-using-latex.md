@@ -24,31 +24,22 @@ permalink: "/blog/posts/2018-09-08-write-paper-using-latex.html"
 <p>So, install <a href="http://www.xm1math.net/texmaker/download.html" rel="noopener">Texmaker</a>.</p>
 <p>After you install it I recommend doing the following:</p>
 <ol>
-<li>Create a build subdirectory automatically:  Options -&gt; Configure Texmaker – &gt;  check the box “use a “build” subdirectory for output files”.   When you compile a TeX file it creates the pdf file but it also creates some other files and it becomes a mess very fast. working with a build subdirectory will automatically put the pdf (and the other files) there.<picture>
-<source srcset="../../assets/images/blog/built_in_option-200.webp" type="image/webp"/>
-<img alt="" class="wp-image-592 aligncenter" height="32" loading="lazy" src="../../assets/images/blog/built_in_option.jpg" width="248"/>
-</picture>
+<li>Create a build subdirectory automatically:  Options -&gt; Configure Texmaker – &gt;  check the box “use a “build” subdirectory for output files”.   When you compile a TeX file it creates the pdf file but it also creates some other files and it becomes a mess very fast. working with a build subdirectory will automatically put the pdf (and the other files) there.{% responsiveImage "assets/images/blog/built_in_option.jpg", "" %}
 </li>
 <li>Built-in pdf viewer:  If you are working with one screen you will find the embedded built-in viewer very efficient. If you are working with two screens (like me) then make sure that the “embed” checkbox is unchecked and drag the viewer window to the secondary screen.<br/>
-<picture>
-<source srcset="../../assets/images/blog/pdf_viewer-300x164-200.webp" type="image/webp"/>
-<img alt="" class="wp-image-593 aligncenter" height="121" loading="lazy" src="../../assets/images/blog/pdf_viewer-300x164.jpg" width="221"/>
-</picture>
+{% responsiveImage "assets/images/blog/pdf_viewer.jpg", "" %}
 </li>
 <li>External viewer: If you want to preview your pdf using an external viewer, and you followed step 1, you need to change the external viewer path to ” “Path to your viewer” .\build\%.pdf”. I use Adobe pdf reader so for me its :   “C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe” .\build\%.pdf. Just remember to close it before you recompile the document (you will get an error unless you use a reader that allows updates and refreshes)<br/>
-<picture>
-<source srcset="../../assets/images/blog/built_in_viewer-300x123-200.webp" type="image/webp"/>
-<img alt="" class="wp-image-594 aligncenter" height="94" loading="lazy" src="../../assets/images/blog/built_in_viewer-300x123.jpg" width="229"/>
-</picture>
+{% responsiveImage "assets/images/blog/built_in_viewer.jpg", "" %}
 </li>
 <li>Adjust font size:   options -&gt; Configure Texmaker,-&gt;  editor (on the left) -&gt;  editor font size. I like 11.</li>
 </ol>
 <h2>Step 2:  The Paper</h2>
 <p>Now that you have everything set up you can start working on your paper.</p>
 <p>Before you do, I highly recommend watching these<a href="https://www.youtube.com/watch?v=SoDv0qhyysQ&amp;list=PL1D4EAB31D3EBC449" rel="noopener"> youtube tutorials </a>by Michelle Krummel. It will help you understand the basics.</p>
-<p>Now that you know the basics you can simply download <a href="https://www.itzikbs.com/wp-content/uploads/2017/11/LaTeX-General-Template.zip" rel="noopener">this template</a> and read the following explanations without actually having to do anything.</p>
+<p>Now that you know the basics you can simply download <a href="/assets/images/blog/LaTeX-General-Template.zip" rel="noopener">this template</a> and read the following explanations without actually having to do anything.</p>
 <ol>
-<li>Download <a href="https://www.itzikbs.com/wp-content/uploads/2017/11/LaTeX-General-Template.zip" rel="noopener">this template</a>.</li>
+<li>Download <a href="/assets/images/blog/LaTeX-General-Template.zip" rel="noopener">this template</a>.</li>
 <li>Extract the template files into your working directory (keep the zip file for future papers).</li>
 <li>Open “<em>main.tex</em>” in TexMaker.</li>
 <li>Run a quick build.</li>
@@ -93,7 +84,9 @@ permalink: "/blog/posts/2018-09-08-write-paper-using-latex.html"
 <h2>Assets</h2>
 <p>Assets are valuable things (by definition). In our case, it usually refers to images and figures but can include any other type of file that your .tex file uses.  In the template, I created an assets folder. You can simply place all your images in it.</p>
 <p>The line</p>
+{% raw %}
 <pre>\graphicspath{{assets/}}</pre>
+{% endraw %}
 <p>makes sure that the compiler will know where to find our images.</p>
 <h2>Figures and Tables</h2>
 <p>To insert a figure into the document you can use :</p>
@@ -128,7 +121,9 @@ permalink: "/blog/posts/2018-09-08-write-paper-using-latex.html"
 	\label{table:example_table}
 \end{table}</pre>
 <p>Make sure that you have the following line in the preamble</p>
+{% raw %}
 <pre>\newcolumntype{M}[1]{&gt;{\centering\arraybackslash}m{#1}}</pre>
+{% endraw %}
 <p>I won’t go into detail here. I refer the interested reader<a href="https://en.wikibooks.org/wiki/LaTeX/Tables" rel="noopener"> to this page</a>.</p>
 <p>If you find yourself lost, you can try this <a href="https://www.tablesgenerator.com/" rel="noopener">online LaTeX table generator</a>.</p>
 <h2>Math</h2>
@@ -177,7 +172,7 @@ year={2017}
 <ul>
 <li>Install <a href="https://miktex.org/download" rel="noopener" target="_blank">MiKTeX.</a></li>
 <li>Install <a href="http://www.xm1math.net/texmaker/download.html" rel="noopener" target="_blank">TexMaker.</a></li>
-<li>Download the <a href="https://www.itzikbs.com/wp-content/uploads/2017/11/LaTeX-General-Template.zip" rel="noopener" target="_blank">template</a>.</li>
+<li>Download the <a href="/assets/images/blog/LaTeX-General-Template.zip" rel="noopener" target="_blank">template</a>.</li>
 <li>Good luck!</li>
 </ul>
  
