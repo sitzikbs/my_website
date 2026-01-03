@@ -503,11 +503,14 @@ select:focus-visible {
 /* Responsive Images    */
 /* ==================== */
 
-.responsive-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.image-wrapper {
   text-align: center;
+  margin: 1rem 0;
+}
+
+.responsive-image {
+  display: inline-block;
+  max-width: 100%;
 }
 
 .responsive-image img {
@@ -518,7 +521,8 @@ select:focus-visible {
 }
 
 /* Center paragraphs containing only responsive images */
-p:has(.responsive-image) {
+p:has(.responsive-image),
+p:has(.image-wrapper) {
   text-align: center;
 }
 
