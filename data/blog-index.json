@@ -1,6 +1,20 @@
 {
   "posts": [
     {
+      "id": "migrating-from-wordpress-with-ai-coding-agents",
+      "title": "New Year, New Website: How I Migrated from WordPress Using AI Coding Agents",
+      "date": "2026-01-03",
+      "updated": "2026-01-03",
+      "author": "Itzik Ben-Shabat",
+      "excerpt": "Happy 2026! As the new year kicks off, I'm excited to share something I've been working on: a complete redesign and migration of my website. But here's the twist—I didn't do it alone. I had help from an army of AI coding agents, and the experience was equal parts enlightening and nostalgic.",
+      "content": "/blog/posts/2026-01-03-migrating-from-wordpress-with-ai-coding-agents.html",
+      "categories": [
+        "Personal",
+        "Technical"
+      ],
+      "tags": ["ai", "coding-agents", "copilot", "web-development", "wordpress", "migration", "eleventy"]
+    },
+    {
       "id": "why-i-left-social-media-and-what-brought-me-back",
       "title": "Why I Left Social Media, and What Brought Me Back",
       "date": "2025-10-14",
