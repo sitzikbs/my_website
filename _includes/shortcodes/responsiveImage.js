@@ -8,9 +8,13 @@ module.exports = async function responsiveImage(src, alt = "", sizes = "(min-wid
     imagePath = src;
   } else if (src.startsWith("/")) {
     imagePath = `.${src}`;
+  } else if (src.startsWith("../") || src.startsWith("./")) {
+    // Relative path with ../ or ./ - resolve from project root
+    // Convert ../../assets/images/blog/image.jpg to assets/images/blog/image.jpg
+    imagePath = path.normalize(src).replace(/^(\.\.\/)+/, "");
   } else {
-    // Relative path - resolve from project root
-    imagePath = path.join(".", src);
+    // Direct path like assets/images/blog/image.jpg
+    imagePath = src;
   }
 
   const metadata = await Image(imagePath, {
