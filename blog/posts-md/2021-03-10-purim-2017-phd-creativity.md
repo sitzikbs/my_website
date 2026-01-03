@@ -37,7 +37,7 @@ permalink: "/blog/posts/2021-03-10-purim-2017-phd-creativity.html"
 <p>Here is the result:</p>
 <p style="text-align: center;">{% responsiveImage "assets/images/blog/Shaked_Dinosaur_costume_3.jpg", "" %}
  {% responsiveImage "assets/images/blog/Shaked_Dinosaur_costume_2.jpg", "" %}
- {% responsiveImage "assets/images/blog/Shaked_Dinosaur_costume_1-200x300.jpg", "" %}
+ {% responsiveImage "assets/images/blog/2017-03-Shaked_Dinosaur_costume_1.jpg", "" %}
 </p>
 <p>Big thanks to my mom for the sewing advice. Huge thanks to my dear wife Anna which was a great (and very patient) partner in the making of this masterpiece.</p>
 <p>This blog didn’t exist a year ago (2017), therefore the costumes of 2014-2016 were not so well documented. However, I thought this post is the right spot to post them anyway. I think we are improving over the years.</p>
@@ -45,7 +45,7 @@ permalink: "/blog/posts/2021-03-10-purim-2017-phd-creativity.html"
 <p>{% responsiveImage "assets/images/blog/very-hungry-catterpilar-costume.jpg", "" %}
 </p>
 <p><strong>2015: Lion</strong></p>
-<p>{% responsiveImage "assets/images/blog/knit-lion-costume-2-200x300.jpg", "" %}
+<p>{% responsiveImage "assets/images/blog/knit-lion-costume-2.jpg", "" %}
 </p>
 <p><strong>2014: Minion</strong></p>
 <p>He actually really likes them now (2017).</p>

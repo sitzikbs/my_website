@@ -40,7 +40,7 @@ permalink: "/blog/posts/2021-03-10-what-is-3d-modified-fisher-vector-3dmfv-repre
 <h2>Reconstruction from 3DmFV</h2>
 <p>Some may argue that 3DmFV is simply another handcrafted feature. However, we argue that it is simply another form to represent the data and therefore, the process is reversible. It is possible to show analytically that for simple cases it is reversible (single point, single Gaussian, points on a plane in a Gaussian). It gets a bit more complex in the general case when more points and more Gaussians are present. Therefore, we trained a simple 3DmFV decoder that is able to take a 3DmFV representation as input and produce a 3D point cloud as output.</p>
 <p>Here is an image of a reconstructed point cloud of an airplane:</p>
-<p>{% responsiveImage "assets/images/blog/decoder_original_vs_reconstruction-01.png", "" %}
+<p>{% responsiveImage "assets/images/blog/decoder_original_vs_reconstruction.png", "" %}
 </p>
 <h2>The Code</h2>
 <p>In order to recreate the images above you can use my repository for this <a href="https://github.com/sitzikbs/3DmFV-Tutorial" rel="noopener" target="_blank">3DmFV tutorial on my GitHub</a>.</p>
