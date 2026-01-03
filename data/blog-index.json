@@ -53,7 +53,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "https://www.itzikbs.com/wp-content/uploads/2024/06/GQnCrcMbwAAsM-M.jpeg"
+      "image": "assets/images/blog/GQnCrcMbwAAsM-M.jpeg"
     },
     {
       "id": "career_update_2024",
@@ -123,7 +123,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "https://www.itzikbs.com/wp-content/uploads/2024/01/GDYdcKJXEAA_mPB.jpeg"
+      "image": "assets/images/blog/GDYdcKJXEAA_mPB.jpeg"
     },
     {
       "id": "variational-barycentric-coordinates",
@@ -417,7 +417,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "https://www.itzikbs.com/wp-content/uploads/2022/06/20220619_0743072-scaled.jpg"
+      "image": "assets/images/blog/20220619_0743072-scaled.jpg"
     },
     {
       "id": "digs",
@@ -613,7 +613,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2020/07/Itzik_Portrait_befoer_and_after_v2.jpg?fit=707%2C532&ssl=1"
+      "image": "assets/images/profile/Itzik_Portrait_befoer_and_after_v2.jpg"
     },
     {
       "id": "technion-challange-2017-beach-volleyball-winners",
@@ -725,7 +725,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2017/11/3D_GMM_demonstration.png?fit=800%2C800&ssl=1"
+      "image": "assets/images/blog/3D_GMM_demonstration.png"
     },
     {
       "id": "3d-point-cloud-classification-using-deep-learning",
@@ -851,7 +851,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "https://i0.wp.com/www.itzikbs.com/wp-content/uploads/2019/02/group_photo_edited_small.jpg?fit=1200%2C645&ssl=1"
+      "image": "assets/images/blog/group_photo_edited_small.jpg"
     },
     {
       "id": "reasearch-visit-in-germany",
@@ -892,7 +892,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "http://www.itzikbs.com/wp-content/uploads/2017/11/built_in_option.jpg"
+      "image": "assets/images/blog/built_in_option.jpg"
     },
     {
       "id": "first-steps-deep-learning-using-tensorflow",
@@ -906,7 +906,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "http://www.itzikbs.com/wp-content/uploads/2017/02/TensorFlow-Logo-300x54.png"
+      "image": "assets/images/blog/TensorFlow-Logo-300x54.png"
     },
     {
       "id": "feature-aggregatoin-using-vlad-netvlad",
@@ -920,7 +920,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "http://www.itzikbs.com/wp-content/uploads/2017/06/netVLAD_Architecture-1024x197.png"
+      "image": "assets/images/blog/netVLAD_Architecture-1024x197.png"
     },
     {
       "id": "deep-learning-3d-data-references",
@@ -974,7 +974,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "http://www.itzikbs.com/wp-content/uploads/2016/12/Capture-1024x380.jpg"
+      "image": "assets/images/blog/Capture-1024x380.jpg"
     },
     {
       "id": "helping-out-a-friend-with-processing",
