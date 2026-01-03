@@ -20,7 +20,7 @@ module.exports = async function responsiveImage(src, alt = "", sizes = "(min-wid
   const metadata = await Image(imagePath, {
     widths: [400, 800, 1200],
     formats: ["webp", null], // null = original format
-    outputDir: "./assets/images/generated/",
+    outputDir: "./_site/assets/images/generated/",
     urlPath: "/assets/images/generated/",
     filenameFormat: function (id, src, width, format, options) {
       const extension = format;

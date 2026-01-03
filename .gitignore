@@ -50,9 +50,6 @@ __pycache__/
 # 11ty output
 _site/
 
-# Build-time generated images
-assets/images/generated/
-
 # Build artifacts
 *.min.css.map
 *.min.js.map
