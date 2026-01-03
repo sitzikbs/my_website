@@ -1,4 +1,11 @@
+const responsiveImageShortcode = require("./_includes/shortcodes/responsiveImage.js");
+
 module.exports = function(eleventyConfig) {
+  
+  // Register responsive image shortcode
+  eleventyConfig.addNunjucksAsyncShortcode("responsiveImage", responsiveImageShortcode);
+  eleventyConfig.addLiquidShortcode("responsiveImage", responsiveImageShortcode);
+  eleventyConfig.addJavaScriptFunction("responsiveImage", responsiveImageShortcode);
   
   // Ignore unnecessary directories and files
   eleventyConfig.ignores.add("blog/posts/**");
