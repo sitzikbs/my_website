@@ -52,6 +52,17 @@ img {
     display: block;
 }
 
+/* Center responsive images */
+picture {
+    display: block;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+picture img {
+    margin: 0 auto;
+}
+
 a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -569,6 +580,44 @@ a:hover {
 .blog-content pre code {
     background: none;
     padding: 0;
+}
+
+/* Blog content image centering */
+.blog-content picture,
+.blog-content img,
+.post-content picture,
+.post-content img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Handle images in paragraphs with inline text-align: center */
+.blog-content p[style*="text-align: center"] picture,
+.blog-content p[style*="text-align: center"] img,
+.blog-content div[align="center"] picture,
+.blog-content div[align="center"] img,
+.post-content p[style*="text-align: center"] picture,
+.post-content p[style*="text-align: center"] img,
+.post-content div[align="center"] picture,
+.post-content div[align="center"] img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Handle figure elements */
+.blog-content figure,
+.post-content figure {
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.blog-content figure picture,
+.blog-content figure img,
+.post-content figure picture,
+.post-content figure img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Contact */
