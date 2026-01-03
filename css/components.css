@@ -504,26 +504,27 @@ select:focus-visible {
 /* ==================== */
 
 .image-wrapper {
+  display: block;
   text-align: center;
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
 
 .responsive-image {
   display: inline-block;
   max-width: 100%;
+  vertical-align: middle;
 }
 
 .responsive-image img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 0 auto;
 }
 
 /* Center paragraphs containing only responsive images */
 p:has(.responsive-image),
 p:has(.image-wrapper) {
-  text-align: center;
+  text-align: center !important;
 }
 
 /* Ensure sufficient touch target sizes (WCAG 2.1 AA) */
