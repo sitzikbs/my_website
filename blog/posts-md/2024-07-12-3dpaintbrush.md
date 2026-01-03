@@ -7,9 +7,13 @@ permalink: "/blog/posts/2024-07-12-3dpaintbrush.html"
 ---
 
 <div class="post-content">
+{% raw %}
 
 
-<div id="buzzsprout-player-15398198"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/15398198.js?container_id=buzzsprout-player-15398198&amp;player=small" type="text/javascript"></script>
+
+
+<div id="buzzsprout-player-15398198">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/15398198.js?container_id=buzzsprout-player-15398198&amp;player=small" type="text/javascript"></script>
 <p>I am thrilled to share the latest episode of the Talking Papers Podcast where I had the pleasure of hosting Dale Decatur, a brilliant 3rd year PhD student from the University of Chicago’s 3DL lab. Together, we delved into the intricate details of his paper titled “3D Paintbrush: Local Stylization of 3D Shapes with Cascaded Score Distillation,” recently published in CVPR 2024. The paper introduces an innovative technique, 3D Paintbrush, which allows for the automatic texturing of local semantic regions on meshes through text descriptions.</p>
 <p>One of the key contributions of Dale’s paper is the development of Cascaded Score Distillation (CSD), a technique that employs multiple stages of a cascaded diffusion model to enhance the details and resolution of textured areas on 3D shapes. The approach of simultaneously generating localization maps and conforming texture maps not only refines the quality of editing but also streamlines the integration of textured areas into standard graphics pipelines. This advancement marks a significant stride in simplifying the process of editing 3D assets, particularly through text prompts, thus making it more accessible to a broader audience.</p>
 <p>As I delved deeper into the paper, I was truly impressed by the clever utilization of generative priors learned from images at different resolutions to supervise the local editing technique. This not only showcases the depth of research conducted by Dale but also highlights the potential impact of his work on the broader research community. It is fascinating to witness the evolution of techniques that leverage the synergy between machine learning and 3D modeling, ultimately pushing the boundaries of what is achievable in the realm of computer graphics.</p>

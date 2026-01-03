@@ -7,12 +7,16 @@ permalink: "/blog/posts/2022-07-18-panoptic-3d-scene-reconstruction-from-a-singl
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted <em><a href="http://manuel-dahnert.com/" rel="noreferrer noopener" target="_blank">Manuel Dahnert</a></em> to chat about his paper “Panoptic 3D Scene Reconstruction From a Single RGB Image”, published in NeurIPS 2021. </p>
 <p>In this paper, they unify the task of reconstruction, semantic segmentation and instance segmentation in 3D from a single RGB image. They propose a holistic approach to lift the 2D features into a 3D grid. </p>
 <p>Manuel is a good friend and colleague. We first met in my <a href="https://www.itzikbs.com/reasearch-visit-in-germany" rel="noreferrer noopener" target="_blank">research visit at TUM during my PhD</a>, we spent some long evenings together at the office. We have both come a long way since then and I am really looking forward to seeing what he will cook up next. I have a feeling it is not his last visit in the podcast. </p>
-<div id="buzzsprout-player-10202187"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10202187-manuel-dahnert-panoptic-3d-scene-reconstruction.js?container_id=buzzsprout-player-10202187&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-10202187">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10202187-manuel-dahnert-panoptic-3d-scene-reconstruction.js?container_id=buzzsprout-player-10202187&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><em>Manuel Dahnert, Ji Hou, Matthias Niessner, Angela Dai</em></p>
 <p> </p>

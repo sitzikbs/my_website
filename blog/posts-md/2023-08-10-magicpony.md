@@ -7,13 +7,17 @@ permalink: "/blog/posts/2023-08-10-magicpony.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted Tomas Jakab. We had a great chat about his paper “MagicPony: Learning Articulated 3D Animals in the Wild”, published in CVPR 2023. </p>
 <p>The motivation behind the MagicPony methodology stems from the challenge posed by the scarcity of labeled data, particularly when dealing with real-world scenarios involving freely moving articulated 3D animals. In response, the authors propose an innovative solution that addresses this issue. This novel approach takes an ordinary RGB image as input and produces a sophisticated 3D model with detailed shape, texture, and lighting characteristics. The method’s uniqueness lies in its ability to learn from diverse images captured in natural settings, effectively deciphering the inherent differences between them. This enables the system to establish a foundational average shape while accounting for specific deformations that vary from instance to instance. To achieve this, the researchers blend the strengths of two techniques, radiance fields and meshes, which together contribute to the comprehensive representation of the object’s attributes. Additionally, the method employs a strategic viewpoint sampling technique to enhance computational speed. While the current results may not be suitable for practical applications just yet, this endeavor constitutes a substantial advancement in the field, as demonstrated by the tangible improvements showcased both quantitatively and qualitatively.</p>
 <p></p>
 <p>Tom is a postdoc in the VGG lab at Oxford University, where he recently completed his PhD with Andrea Vedaldi.  His research focuses on single-view 3D reconstruction, 2D/3D object representations, and self-supervised learning. We crossed paths at CVPR 2023, introduced by Despoina Paschalidou (of the <a href="https://www.itzikbs.com/neural-parts-learning-expressive-3d-shape-abstractions-with-invertible-neural-networks" rel="noreferrer noopener" target="_blank">Neural Parts episode</a>). Upon learning he’s one of the author of MagicPony, I invited him to the podcast. Our conversation was delightful, and I’m excited about his future projects.<br/></p>
-<div id="buzzsprout-player-13379828"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/13379828-magicpony-tomas-jakab.js?container_id=buzzsprout-player-13379828&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-13379828">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/13379828-magicpony-tomas-jakab.js?container_id=buzzsprout-player-13379828&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p>Shangzhe Wu*<em>, Ruining Li*</em>, Tomas Jakab*, Christian Rupprecht, Andrea Vedaldi<br/></p>
 <h2 class="wp-block-heading" id="abstract">ABSTRACT</h2>

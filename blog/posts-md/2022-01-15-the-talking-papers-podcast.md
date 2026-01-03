@@ -7,6 +7,9 @@ permalink: "/blog/posts/2022-01-15-the-talking-papers-podcast.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>I am very excited to finally share something that I have been working on for quite a while and is finally ready to come out. <br/><br/>Do you know that pile of papers that just lies at the edge of your desk (or in a folder on your computer) labelled “To read when I get the time”?  Remember how you never get the time? I know this problem very well and found a creative way to solve it and help others in the process. </p>
@@ -22,7 +25,13 @@ permalink: "/blog/posts/2022-01-15-the-talking-papers-podcast.html"
 <ul class="wp-block-list"><li>YouTube channel: </li><li>Podcast RSS feed: <a href="https://talking.papers.podcast.itzikbs.com/?fbclid=IwAR1FRwFDzZrd_9DuGCjii4rgNHnHXBS--4l1CVu-uai0gx14HK-8_TWUigA" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></li><li>Twitter: <a href="https://twitter.com/talking_papers?fbclid=IwAR1bK-ipEOgTiwtphpi7AA9FRbtGlweUdtPp07_geQyzrpbklWkxHFlH2k0" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></li></ul>
 <p></p>
 <p>At the time of writing this blog post, only two episodes came out. Episodes are published weekly. </p>
-<div class="wp-block-image"><figure class="aligncenter size-large">{% responsiveImage "../../assets/images/publications/Talking_papers_cover.png", "Talking Papers Podcast" %}</figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large">{% endraw %}
+{% responsiveImage "../../assets/images/publications/Talking_papers_cover.png", "Talking Papers Podcast" %}
+{% raw %}
+
+
+</figure>{% endraw %}
+</div>
  
 
 </div>

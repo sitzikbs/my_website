@@ -7,12 +7,16 @@ permalink: "/blog/posts/2022-07-29-lipschitz-mlp.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted <a href="https://www.dgp.toronto.edu/~hsuehtil/" rel="noreferrer noopener" target="_blank">Hsueh-Ti Derek Liu</a> to chat about his paper “<a href="https://arxiv.org/abs/2202.08345" rel="noreferrer noopener" target="_blank">Learning Smooth Neural Functions via Lipschitz Regularization</a>”, published in SIGGRAPH 2022. </p>
 <p>In this paper, they took on the unique task of enforcing smoothness on Neural Fields (modelled as a neural network). They do this by introducing a regularization term that forces the Lipschitz constant of the network to be very small. They show the performance of their method on shape interpolation, extrapolation and partial shape reconstruction from 3D point clouds. I mostly like the fact that it is implemented in only 4 lines of code. <br/> </p>
 <p>Derek will soon complete his PhD at the University of Toronto and will start a research scientist position at <a href="https://corp.roblox.com/research/" rel="noreferrer noopener" target="_blank">Roblox Research</a>. This work was done when he was interning at NVIDIA. During our chat, I discovered that Derek is one of the few humans on the plant that has the ability to take a complicated idea and explain it in a simple and easy-to-follow way. His strong background in geometry processing makes this paper, which is well within the learning domain, very unique in the current paper landscape. It was a pleasure recording this episode with him. </p>
-<div id="buzzsprout-player-10981175"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10981175-lipschitz-mlp-hsueh-ti-derek-liu.js?container_id=buzzsprout-player-10981175&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-10981175">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/10981175-lipschitz-mlp-hsueh-ti-derek-liu.js?container_id=buzzsprout-player-10981175&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><a href="https://www.itzikbs.com/" rel="noreferrer noopener" target="_blank">Hsueh-Ti Derek Liu, Francis Williams, Alec Jacobson, Sanja Fidler, Or Litany</a></p>
 <p> </p>

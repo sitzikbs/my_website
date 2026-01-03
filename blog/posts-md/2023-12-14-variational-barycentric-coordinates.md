@@ -7,9 +7,13 @@ permalink: "/blog/posts/2023-12-14-variational-barycentric-coordinates.html"
 ---
 
 <div class="post-content">
+{% raw %}
 
 
-<div id="buzzsprout-player-14140945"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/14140945.js?container_id=buzzsprout-player-14140945&amp;player=small" type="text/javascript"></script>
+
+
+<div id="buzzsprout-player-14140945">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/14140945.js?container_id=buzzsprout-player-14140945&amp;player=small" type="text/javascript"></script>
 <p>In the latest episode of Talking Papers Podcast, we dive into the world of geometry and neural networks with the guidance of insightful early-career researcher, Ana Dodik. An MIT second-year Ph.D. student, Ana sheds light on her latest paper titled “Variational Barycentric Coordinates”, freshly published at SIGGRAPH Asia, 2023. The research paper proposes a novel variational approach, quite different from the conventional mesh or formula-based models, acting as a game-changer in optimizing generalized barycentric coordinates. A fascinating blend of theoretical characterization and neural fields has been put to work to evoke a more comprehensive parameterization. Interestingly, the authors also demonstrate the use of their method, presenting a robust validation of this algorithm.</p>
 <p>Ana’s innovative work is a compelling fusion of traditional geometry processing methods and the emerging wave of Neural-X methods. A powerful tool in the hands of artists, the concept is targeted not only at increasing control but also at enhancing the innate creativity the users can bring to the table. I personally find the potential of the model in this domain intriguing and eagerly await the artists’ feedback on its performance. This research substantiates how classical disciplines can happily marry modern techniques to conjure promising new methods.</p>
 <p>I must mention that although Ana and I have never met in person, the recording session was nothing short of illuminating and enjoyable. Amidst all the technical talk, we found ourselves discussing the current landscape for pursuing a Ph.D. With research like this coming from early career academics and Ph.D. students, I am convinced that we are headed towards exciting times and I look forward to following Ana’s future research.</p>

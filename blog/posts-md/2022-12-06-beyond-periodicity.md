@@ -7,13 +7,17 @@ permalink: "/blog/posts/2022-12-06-beyond-periodicity.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted Sameera Ranasinghe. We had a great chat about his paper “<a href="https://arxiv.org/pdf/2111.15135.pdf" rel="noreferrer noopener" target="_blank">Beyond Periodicity: Towards a Unifying Framework for Activations in Coordinate-MLPs</a>”, published in ECCV 2022 as an oral presentation. </p>
 <p>In this paper, they propose a new family of activation functions for coordinate MLPs and provide a theoretical analysis of their effectiveness. Their main proposition is that the stable rank is a good measure and design tool for such activation functions. They show that their proposed activations outperform the traditional ReLU and Sine activations for image parametrization and novel view synthesis. They further show that while the proposed family of activations does not require positional encoding they can benefit from using it by reducing the number of layers significantly.</p>
 <p>Sameera is currently an applied scientist at Amazon and the CTO and co-founder of <a href="https://conscient.ai/" rel="noreferrer noopener" target="_blank">ConscientAI</a>. His research focus is theoretical machine learning and computer vision. This work was done when he was a postdoc at the Australian Institute of Machine Learning (AIML). He completed his PhD at the Australian National University (ANU). We first met back in 2019 when I was a research fellow at ANU and he was still doing his PhD. I immediately noticed we share research interests and after a short period of time, I flagged him as a rising star in the field. It was a pleasure to chat with Sameera and I am looking forward to reading his future papers. </p>
 <p></p>
-<div id="buzzsprout-player-11693097"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/11693097-beyond-periodicity-sameera-ramasinghe.js?container_id=buzzsprout-player-11693097&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-11693097">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/11693097-beyond-periodicity-sameera-ramasinghe.js?container_id=buzzsprout-player-11693097&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><em>Sameera Ramasinghe, Simon Lucey</em></p>
 <p> </p>

@@ -7,9 +7,13 @@ permalink: "/blog/posts/2025-02-17-phd-guide-advisor-hunt.html"
 ---
 
 <div class="post-content">
+{% raw %}
 
 
-<div id="buzzsprout-player-16628375"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/episodes/16628375-the-phd-advisor-hunt-a-student-s-perspective.js?container_id=buzzsprout-player-16628375&amp;player=small" type="text/javascript"></script>
+
+
+<div id="buzzsprout-player-16628375">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/episodes/16628375-the-phd-advisor-hunt-a-student-s-perspective.js?container_id=buzzsprout-player-16628375&amp;player=small" type="text/javascript"></script>
 <div class="wp-block-image">
 <figure class="aligncenter size-full is-resized">{% responsiveImage "../../assets/images/blog/PhD-advisor-hunt-illustration.png", "Flat design illustration of a PhD student’s survival kit, featuring a toolbox with essential tools labeled " %}
 </figure></div>

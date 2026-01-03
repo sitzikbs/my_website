@@ -7,6 +7,9 @@ permalink: "/blog/posts/2018-09-08-write-paper-using-latex.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>*<strong>UPDATE</strong> (8.9.18)  – I recently discovered a wonderful online LaTex writing tool called <a href="https://www.overleaf.com/" rel="noopener" target="_blank">overleaf.</a> I strongly recommend it over TeXMaker (presented below). It offers a nice and clean user interface along with a great platform for collaborating with coauthors which includes change tracking,  .git, and more. Nonetheless, the template provided here can be uploaded and used there as well. Here is a <a href="https://www.overleaf.com/signup?ref=1cc2f114ccdf" rel="noopener" target="_blank">registration link to overleaf</a>.</p>
@@ -24,13 +27,25 @@ permalink: "/blog/posts/2018-09-08-write-paper-using-latex.html"
 <p>So, install <a href="http://www.xm1math.net/texmaker/download.html" rel="noopener">Texmaker</a>.</p>
 <p>After you install it I recommend doing the following:</p>
 <ol>
-<li>Create a build subdirectory automatically:  Options -&gt; Configure Texmaker – &gt;  check the box “use a “build” subdirectory for output files”.   When you compile a TeX file it creates the pdf file but it also creates some other files and it becomes a mess very fast. working with a build subdirectory will automatically put the pdf (and the other files) there.{% responsiveImage "../../assets/images/blog/built_in_option.jpg", "" %}
+<li>Create a build subdirectory automatically:  Options -&gt; Configure Texmaker – &gt;  check the box “use a “build” subdirectory for output files”.   When you compile a TeX file it creates the pdf file but it also creates some other files and it becomes a mess very fast. working with a build subdirectory will automatically put the pdf (and the other files) there.{% endraw %}
+{% responsiveImage "../../assets/images/blog/built_in_option.jpg", "" %}
+{% raw %}
+
+
 </li>
 <li>Built-in pdf viewer:  If you are working with one screen you will find the embedded built-in viewer very efficient. If you are working with two screens (like me) then make sure that the “embed” checkbox is unchecked and drag the viewer window to the secondary screen.<br/>
+{% endraw %}
 {% responsiveImage "../../assets/images/blog/pdf_viewer.jpg", "" %}
+{% raw %}
+
+
 </li>
 <li>External viewer: If you want to preview your pdf using an external viewer, and you followed step 1, you need to change the external viewer path to ” “Path to your viewer” .\build\%.pdf”. I use Adobe pdf reader so for me its :   “C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe” .\build\%.pdf. Just remember to close it before you recompile the document (you will get an error unless you use a reader that allows updates and refreshes)<br/>
+{% endraw %}
 {% responsiveImage "../../assets/images/blog/built_in_viewer.jpg", "" %}
+{% raw %}
+
+
 </li>
 <li>Adjust font size:   options -&gt; Configure Texmaker,-&gt;  editor (on the left) -&gt;  editor font size. I like 11.</li>
 </ol>
@@ -173,4 +188,5 @@ year={2017}
 </ul>
  
 
+{% endraw %}
 </div>

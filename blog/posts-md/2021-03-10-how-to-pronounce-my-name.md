@@ -7,6 +7,9 @@ permalink: "/blog/posts/2021-03-10-how-to-pronounce-my-name.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p><strong>TL;DR</strong>: Do you know the “<a href="https://www.youtube.com/watch?v=w_lCi8U49mY" rel="noreferrer noopener" target="_blank">Itsy bitsy spider</a>” song? so it is like the Itsy part, with a k’ at the end: Itsy+k. </p>
@@ -23,4 +26,5 @@ permalink: "/blog/posts/2021-03-10-how-to-pronounce-my-name.html"
 <p> How hard can it be to say it right? </p>
  
 
+{% endraw %}
 </div>

@@ -7,6 +7,9 @@ permalink: "/blog/posts/2021-03-10-gaussian-mixture-model-gmm-3d-point-cloud-cla
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>Recently we finished a paper about 3d point cloud classification and segmentation using our proposed 3D modified Fisher Vector (3DmFV) representation and convolutional neural networks (CNNs).  It is currently <a href="https://arxiv.org/abs/1711.08241" rel="noopener" target="_blank">available on ArXiv</a>.  I believe in making research accessible to everyone and I realized that this paper requires some level of familiarity with two main topics:</p>
@@ -31,10 +34,18 @@ permalink: "/blog/posts/2021-03-10-gaussian-mixture-model-gmm-3d-point-cloud-cla
 <p>We can imagine a more intuitive (and adventurous) problem:</p>
 <p>Once upon a time, there was a rich man with a lot of gold in his pockets. He also had a hole in one of them and whenever he walked around his garden some coins fell to the ground. What you want to do is draw a treasure map for adventurers and let them know where are they most likely to find gold.</p>
 <p>In the image below you can see the coins that fell out as points ( each coin has a different color corresponding to the Gaussian that was used to generate it) and a treasure map overlay that shows four different areas to finding gold (the lines transparency indicates the probability – close to the center of each Gaussian the probability is higher to find gold and as you go farther away it reduces.</p>
-<p>{% responsiveImage "../../assets/images/blog/2D_GMM_demonstration.png", "2D Gaussian Mixrure Model example" %}
+<p>{% endraw %}
+{% responsiveImage "../../assets/images/blog/2D_GMM_demonstration.png", "2D Gaussian Mixrure Model example" %}
+{% raw %}
+
+
 </p>
 <p>We can do something very similar for 3D points (abandoning the rich man example). In the image below you can see the generated 3D points and a semi-transparent surface representing the Gaussian location and scale ( 3 standard deviations in each axis).</p>
-<p>{% responsiveImage "../../assets/images/blog/3D_GMM_demonstration.png", "3D GMM example" %}
+<p>{% endraw %}
+{% responsiveImage "../../assets/images/blog/3D_GMM_demonstration.png", "3D GMM example" %}
+{% raw %}
+
+
 </p>
 <p> </p>
 <p>You can see how we can basically represent all of these 4000 points using only 4 Gaussians.  Each points gets a likelihood value (<img alt="u_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=u_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002">) for each Gaussian.  In our paper, we show that we can use a GMM with Gaussians on a grid (and not using EM algorithm) to represent 3D point clouds for the classification and part segmentation task. But, more on that in a later post.</img></p>
@@ -103,4 +114,5 @@ elif D == 3:
 <p> </p>
  
 
+{% endraw %}
 </div>

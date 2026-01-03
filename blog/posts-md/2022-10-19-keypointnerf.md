@@ -7,13 +7,17 @@ permalink: "/blog/posts/2022-10-19-keypointnerf.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted <a href="https://www.research-collection.ethz.ch/discover?filtertype_1=contributors&amp;filter_relational_operator_1=authority&amp;filter_1=354592b81cfc3f244b7970316f2887c3">Marko</a> <a href="https://markomih.github.io/" rel="noreferrer noopener" target="_blank"><a href="https://www.research-collection.ethz.ch/discover?filtertype_1=contributors&amp;filter_relational_operator_1=authority&amp;filter_1=354592b81cfc3f244b7970316f2887c3">Mihajlovic</a></a><a href="https://www.dgp.toronto.edu/~hsuehtil/" rel="noreferrer noopener" target="_blank"> </a>. We had a great chat about his paper “<a href="https://www.research-collection.ethz.ch/handle/20.500.11850/563568" rel="noreferrer noopener" target="_blank">KeypointNeRF: Generalizing Image-based Volumetric Avatars using Relative Spatial Encoding of Keypoints</a>”, published in ECCV 2022. </p>
 <p>In this paper, they create a generalizable NeRF for virtual avatars. To get a high-fidelity reconstruction of humans (from sparse observations), they leverage an off-the-shelf keypoint detector in order to condition the NeRF. Given as input two or three RGB images they generate a volumetric radiance representation that can be rendered from novel views. In other words, take a few selfies and get your own personal avatar. </p>
 <p>Marko is a 2nd year PhD student at ETH, supervised by Siyu Tang. His research focuses on photorealistic reconstruction of static and dynamic scenes and also modeling of parametric human bodies. This work was done mainly during his internship at Meta Reality Labs. Marko and I met at <a href="https://www.itzikbs.com/shape-as-points-a-differentiable-poisson-solver" rel="noreferrer noopener" target="_blank">CVPR 2022</a>. In fact, <a href="https://www.itzikbs.com/shape-as-points-a-differentiable-poisson-solver" rel="noreferrer noopener" target="_blank">Songyou Peng</a> (who was also a guest on the podcast) introduced us. It was a pleasure to chat with Marko and I am looking forward to reading his future papers. </p>
 <p></p>
-<div id="buzzsprout-player-11527637"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/11527637-keypointnerf-marko-mihajlovic.js?container_id=buzzsprout-player-11527637&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-11527637">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/11527637-keypointnerf-marko-mihajlovic.js?container_id=buzzsprout-player-11527637&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p id="stephen-gould-richard-hartleydylan-campbell"><em>Marko</em> <em>Mihajlovic, <em>Aayush</em></em> <em>Bansal, <em>Michael</em></em> <em>Zollhoefer, <em>Siyu</em></em> <em>Tang, <em>Shunsuke</em></em> <em>Saito</em></p>
 <p> </p>

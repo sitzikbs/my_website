@@ -7,6 +7,9 @@ permalink: "/blog/posts/2022-12-14-random-walks-for-adversarial-meshes.html"
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, we hosted <a href="https://www.linkedin.com/in/amir-belder-89889b103/" rel="noreferrer noopener" target="_blank">Amir Belder</a>. We had a great chat about his paper “<a href="https://arxiv.org/abs/2202.07453">Random Walks for Adversarial Meshes</a>”, published in SIGGRAPH 2022. </p>
@@ -15,7 +18,8 @@ permalink: "/blog/posts/2022-12-14-random-walks-for-adversarial-meshes.html"
 <p>Amir is currently a PhD student at the <a href="https://cgm.technion.ac.il/" rel="noreferrer noopener" target="_blank">Computer Graphics and Multimedia Lab at the Technion Israel Institute of Technology</a>.  His research focus is on computer graphics and geometric processing and machine learning. We spend a lot of time together at the lab and chat often about science, papers and where the field is headed. Having this paper published was a great opportunity to share one of these conversations with you.</p>
 <p></p>
 <p></p>
-<div id="buzzsprout-player-11869506"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/11869506-random-walks-for-adversarial-meshes-amir-belder.js?container_id=buzzsprout-player-11869506&amp;player=small" type="text/javascript"></script>
+<div id="buzzsprout-player-11869506">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/11869506-random-walks-for-adversarial-meshes-amir-belder.js?container_id=buzzsprout-player-11869506&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
 <p>Amir Belder<a href="https://dl.acm.org/profile/99660532511"></a>, Gal Yefet<a href="https://dl.acm.org/profile/99660533514"></a>, Ran Ben-Itzhak<a href="https://dl.acm.org/profile/99660533358"></a>, Ayellet Tal<a href="https://dl.acm.org/profile/81100507022"></a></p>
 <p><br/></p>

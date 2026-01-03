@@ -7,9 +7,13 @@ permalink: "/blog/posts/2023-11-22-revenge_ssl.html"
 ---
 
 <div class="post-content">
+{% raw %}
 
 
-<div id="buzzsprout-player-14009896"></div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/14009896.js?container_id=buzzsprout-player-14009896&amp;player=small" type="text/javascript"></script>
+
+
+<div id="buzzsprout-player-14009896">{% endraw %}
+</div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/14009896.js?container_id=buzzsprout-player-14009896&amp;player=small" type="text/javascript"></script>
 <p>In the latest episode of the Talking Papers Podcast, I had the pleasure of hosting Ravid Shwartz-Ziv, a brilliant early career academic, to discuss his recent research paper titled “Reverse Engineering Self-Supervised Learning,” which was published at NeurIPS 2023. Coming from a background in machine learning, I was particularly excited about this paper as it delves into understanding the mechanisms and representations learned through self-supervised learning (SSL).</p>
 <p>The paper presents an extensive empirical analysis of SSL-trained representations, exploring different models, architectures, and hyperparameters. One of the intriguing findings is that SSL inherently facilitates the clustering of samples based on semantic labels, driven by the regularization term of the SSL objective. This clustering process not only enhances downstream classification but also showcases the compression power of SSL-trained representations. Additionally, the study establishes that these representations align more closely with semantic classes as compared to random classes, across various hierarchical levels. Importantly, this alignment increases during training and as the network goes deeper.</p>
 <p>What makes this paper unique is that it focuses on understanding the semantic clustering effect of SSL methods rather than solely showcasing superior performance on benchmark datasets. This deeper exploration provides valuable insights into the representation learning mechanisms of SSL and their impact on performance with different sets of classes. Furthermore, it highlights the potential for compression in SSL representations, which can have significant implications in practical applications.</p>

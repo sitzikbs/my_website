@@ -7,6 +7,9 @@ permalink: "/blog/posts/2021-03-10-3dmfv-net-3d-point-cloud-classification-using
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>Recently we published a paper on 3D point cloud classification (and segmentation) using our proposed 3D modified Fisher Vector (3DmFV) representation and convolutional neural networks (CNNs).  The preprint is <a href="https://arxiv.org/abs/1711.08241" rel="noopener noreferrer" target="_blank">available on ArXiv</a> and the final version is available in <a href="https://ieeexplore.ieee.org/abstract/document/8394990/" rel="noopener noreferrer" target="_blank">Robotics and Automation Letters (RA-L)</a> journal.</p>
@@ -18,8 +21,13 @@ permalink: "/blog/posts/2021-03-10-3dmfv-net-3d-point-cloud-classification-using
 <h2 class="wp-block-heading">3DmFV Representation</h2>
 <p>Recall that the 3DmFV representation converts the 3D point cloud  (which is unstructured, unordered and may have a variable number of points) into a special kind of statistical representation on a 3D grid of Gaussians with constant size.</p>
 <p>The image below shows a visualization (in 2D, the representation is actually 4D: 3D grid with 20 channels) of the 3DmFV representation for several 3D point clouds. Each column in the image represents a single Gaussian and each row represents a symmetric function over derivative with respects to a Gaussian parameter over the points.</p>
-<div class="wp-block-image"><figure class="aligncenter">{% responsiveImage "../../assets/images/blog/fv_pc_3models.png", "Visualization of the 3DmFV representation and its corresponding 3D point clouds" %}
-<figcaption>3D point clouds  and their corresponding 3DmFV visualizations</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter">{% endraw %}
+{% responsiveImage "../../assets/images/blog/2018-09-fv_pc_3models.png", "Visualization of the 3DmFV representation and its corresponding 3D point clouds" %}
+{% raw %}
+
+
+<figcaption>3D point clouds  and their corresponding 3DmFV visualizations</figcaption></figure>{% endraw %}
+</div>
 <h2 class="wp-block-heading">The Architecture</h2>
 <p>Input:  A 3D point cloud (a matrix with n rows and 3 columns representing the XYZ coordinates.</p>
 <p>Output: Classification score</p>

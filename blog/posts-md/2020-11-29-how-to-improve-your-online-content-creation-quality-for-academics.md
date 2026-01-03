@@ -7,6 +7,9 @@ permalink: "/blog/posts/2020-11-29-how-to-improve-your-online-content-creation-q
 ---
 
 <div class="post-content">
+{% raw %}
+
+
 
 
 <p>COVID hit planet earth a few months ago and everything has gone online. Research group meetings, reading group meetings, tutorials, and even conferences are all conducted in some form of virtual format (mostly via zoom).  I was creating online content since before the pandemic as an extra way to make my research accessible. Now it has become the only way. </p>
@@ -17,8 +20,13 @@ permalink: "/blog/posts/2020-11-29-how-to-improve-your-online-content-creation-q
 <p>Here is the story:   I was starting to get annoyed by the zoom disconnects and latency when my contract with my internet service provider was about to end. I decided its time to increase my speeds (It was for about the same price as before anyway). After the upgrade, I checked to see that the speeds were indeed updated. I used <a href="https://www.speedtest.net/">speedtest.net</a> to check and got a very poor result. Immediately I called up my service provider to say they forgot to upgrade my speed. The representative was very nice and asked me to go with a laptop and connect it using a physical cable to the modem-router itself. I did. The speed was fine, great actually. She mentioned that, although my modem-router has Wi-Fi capabilities, it is not the best at it. </p>
 <p>I did some homework and it turns out ISP modem-routers are notoriously bad at providing high-quality Wi-Fi. I used <a href="https://play.google.com/store/apps/details?id=com.farproc.wifi.analyzer&amp;hl=en_US" rel="noreferrer noopener" target="_blank">Wi-Fi analyser app</a> and realized the modem-router signal drops significantly after 3 steps. After some additional homework, I decided to buy a used Netgear N750 from the FaceBook marketplace. </p>
 <p>The speed boost is presented below:</p>
-<div class="wp-block-image"><figure class="aligncenter size-large">{% responsiveImage "../../assets/images/blog/image.png", "" %}
-</figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large">{% endraw %}
+{% responsiveImage "../../assets/images/blog/image.png", "" %}
+{% raw %}
+
+
+</figure>{% endraw %}
+</div>
 <p>Yes. The numbers are correct. I got a huge speed boost for 20$ (I got a really good deal). I am using the 5Ghz option, but there is also a 2.4Ghz one available if the router is located a few walls away (it’s a bit slower in my case). Another nice feature is the vertical stand that comes with the router. It reduces dust accumulation and takes up less space on the table.</p>
 <p></p>
 <div class="wp-block-image"><figure class="aligncenter size-large is-resized">{% responsiveImage "../../assets/images/blog/netgear_n750.jpg", "" %}
@@ -58,12 +66,13 @@ permalink: "/blog/posts/2020-11-29-how-to-improve-your-online-content-creation-q
 <figcaption><a href="https://www.amazon.com/gp/product/B01M72N0GT/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B01M72N0GT&amp;linkCode=as2&amp;tag=itzikbs-20&amp;linkId=a856355f37d9c6fc3fcb6ef0dac68283">Neewer camera bag</a></figcaption></figure></div>
 <p>For improving video quality, lighting is even more important than the camera. I am currently using this <a href="https://amzn.to/2FSIw7V"> Neewer 18 inch LED ring light</a>. It has a white and orange lighting options and you can continuously adjust the light intensity. If you are a bit far from the camera, it might not be enough so consider adding a studio light. I recommend watching this <a href="https://www.youtube.com/watch?v=G6W5wbPqzPw&amp;ab_channel=ThinkMedia" rel="noreferrer noopener" target="_blank">tutorial on three-point lighting</a> before you buy. </p>
 <p></p>
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized">{% responsiveImage "../../assets/images/blog/Edfp1jGUcAAhM2w-1.jpg", "" %}
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized">{% responsiveImage "../../assets/images/blog/2020-09-Edfp1jGUcAAhM2w-1.jpg", "" %}
 </figure></div>
 <p>Anna is working on a new project so she got a small <a href="https://amzn.to/305OrgH">Teleprompter</a> (we got a cheaper knockoff from Aliexpress than the one in the link, it does the job just the same). I initially thought it’s a useless toy. But then, when recording my latest video I found it to be super useful. No need to memorize anything anymore! Forget about looking down at the text. No more forgetting the text and starting over. Just read it from the teleprompter. Not a must have, but definitely a workflow upgrade.   </p>
 <h3 class="wp-block-heading">Ergonomics (How to avoid back pain and wrist pain when spending a long time on a laptop?)</h3>
 <p>Before transferring my PC home, I worked on my laptop (a lot!). It turns out that working long hours on a laptop can cause some back pain, mainly because of the monitor height. I noticed that placing it on a pile of books helps a lot so I decided to get this nice <a href="https://amzn.to/33nqCCU" rel="noreferrer noopener" target="_blank">foldable and adjustable laptop stand by Nexstand</a>.  The problem it created was that the keyboard is uncomfortably elevated. So I also purchased this <a href="https://amzn.to/3neSXDm" rel="noreferrer noopener" target="_blank">wireless keyboard (Microsoft 850)</a>. This keyboard is a bit on the large side and has a dongle (that takes up one of the few USBs available on the laptop). In retrospect, I should probably have gotten this <a href="https://amzn.to/2GlPMcn" rel="noreferrer noopener" target="_blank">Bluetooth keyboard</a>. </p>
-<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "../../assets/images/general/s-l500.jpg", "AU-NEXSTAND-Adjustable-Portable-Folding-Laptop-Notebook-Desk-Stand-Mounts-Holder" %}<figcaption><a href="https://www.amazon.com/gp/product/B01HHYQBB8/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B01HHYQBB8&amp;linkCode=as2&amp;tag=itzikbs-20&amp;linkId=d98f1ce00024ec5576315f775a2e431d" rel="noreferrer noopener" target="_blank">Nexstand</a> adjustable laptop stand</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter is-resized">{% responsiveImage "../../assets/images/general/s-l500.jpg", "AU-NEXSTAND-Adjustable-Portable-Folding-Laptop-Notebook-Desk-Stand-Mounts-Holder" %}
+<figcaption><a href="https://www.amazon.com/gp/product/B01HHYQBB8/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B01HHYQBB8&amp;linkCode=as2&amp;tag=itzikbs-20&amp;linkId=d98f1ce00024ec5576315f775a2e431d" rel="noreferrer noopener" target="_blank">Nexstand</a> adjustable laptop stand</figcaption></figure></div>
 <p>If you care about your ergonomics I also recommend a high-quality vertical mouse. It helped me a lot with wrist pain. Admittedly, it takes time to get used to and you will probably knock it over several times until you get a better sense of its size. However, it worked amazing for me and my wrist pain was gone. I personally own this <a href="https://amzn.to/3cXb0cv" rel="noreferrer noopener" target="_blank">ANKER vertical mouse</a> and its <a href="https://amzn.to/30utuvV" rel="noreferrer noopener" target="_blank">wireless version</a>.</p>
 <div class="wp-block-image"><figure class="aligncenter is-resized"><img alt="" data-recalc-dims="1" decoding="async" height="224" loading="lazy" src="https://i0.wp.com/images-na.ssl-images-amazon.com/images/I/61KDtOc39AL._AC_SL1500_.jpg?resize=221%2C224&amp;ssl=1" width="221"><figcaption><a href="https://amzn.to/3cXb0cv" rel="noreferrer noopener" target="_blank">ANKER vertical ergonomic mouse</a></figcaption></img></figure></div>
 <h3 class="wp-block-heading"><strong>Software (What software to use for screen capture and video editing?)</strong></h3>
