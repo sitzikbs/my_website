@@ -13,8 +13,6 @@
     "watch:css": "csso css/style.css -o css/style.min.css --watch",
     "dev": "npm run serve:11ty",
     "serve": "python3 -m http.server 8000 --directory _site",
-    "test:performance": "npx lighthouse http://localhost:8000/index.html --output=html --output-path=./reports/index-performance.html",
-    "test:accessibility": "npx axe http://localhost:8000/index.html",
     "prebuild": "echo '🔨 Starting build process...'",
     "postbuild": "echo '✅ Build complete!'"
   },
