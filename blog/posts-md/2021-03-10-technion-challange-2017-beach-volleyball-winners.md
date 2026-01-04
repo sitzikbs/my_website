@@ -34,7 +34,7 @@ permalink: "/blog/posts/2021-03-10-technion-challange-2017-beach-volleyball-winn
 
 </p>
 <p>The competition is in an elimination format, meaning – you lose = you are out. We had some very hard matchups, especially in the quarter-finals against Computer Science and Semi-finals against Civil Engineering. Fortunately, we won them all and achieved 1st place.</p>
-<p><img alt="" class="size-medium wp-image-495 aligncenter" height="225" loading="lazy" src="../../assets/images/blog/IMG_20170503_134915-ANIMATION-300x225.gif" width="300"/></p>
+<p><img alt="" class="size-medium wp-image-495 aligncenter" height="225" loading="lazy" src="../../assets/images/blog/IMG_20170503_134915-ANIMATION.gif" width="300"/></p>
 <p> </p>
 <p>I am very proud to have been a part of this team and representing our department, and I cant wait for next year.  I also wish to thank all of the people who take part in organizing this event.</p>
 <p>{% endraw %}

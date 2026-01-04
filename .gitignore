@@ -57,3 +57,5 @@ _site/
 # Archives (kept in git for reference but marked)
 # scripts/archive/
 # docs/archive/
+backup/
+temp_image_backup/
