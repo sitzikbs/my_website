@@ -80,8 +80,7 @@ The homepage (`index.html`) now implements **multiple schemas** using the `@grap
   "sameAs": [
     "https://github.com/sitzikbs",
     "https://twitter.com/sitzikbs",
-    "https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/",
-    "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID"
+    "https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/"
   ],
   "knowsAbout": [
     "Computer Vision",
@@ -99,6 +98,10 @@ The homepage (`index.html`) now implements **multiple schemas** using the `@grap
 - Links to social profiles and credentials
 - Displays areas of expertise
 - Enhanced credibility and authority
+
+**Note**: Additional social/academic profiles can be added to `sameAs` array, such as:
+- Google Scholar: `https://scholar.google.com/citations?user=YOUR_ID`
+- ResearchGate, ORCID, etc.
 
 ### Blog Post Structured Data
 
