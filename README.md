@@ -135,9 +135,21 @@ The **HTML Validation** workflow (`.github/workflows/html-validate.yml`) automat
 - ✅ Provides detailed error reports in the Actions tab
 
 **Configuration:**
-- The workflow uses a predefined `html-validate` configuration with recommended rules
-- Custom rules can be adjusted in the workflow file
+- The workflow uses the `.htmlvalidate.json` configuration file in the repository root
+- Custom rules can be adjusted in `.htmlvalidate.json`
 - Only validates HTML files in the `_site/` directory after build
+
+**Running validation locally:**
+```bash
+# Install html-validate globally or as a dev dependency
+npm install --save-dev html-validate
+
+# Build the site first
+npm run build
+
+# Run HTML validation
+npx html-validate "_site/**/*.html"
+```
 
 ## Adding Blog Posts
 

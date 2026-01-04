@@ -49,33 +49,6 @@ jobs:
       - name: Build site
         run: npm run build
       
-      - name: Create html-validate config
-        run: |
-          cat > .htmlvalidate.json << 'EOF'
-          {
-            "extends": ["html-validate:recommended"],
-            "rules": {
-              "void-style": "off",
-              "no-trailing-whitespace": "off",
-              "require-sri": "off",
-              "no-inline-style": "warn",
-              "attribute-boolean-style": "off",
-              "no-raw-characters": ["error", {
-                "relaxed": true
-              }],
-              "element-required-attributes": "error",
-              "element-permitted-content": "error",
-              "attr-quotes": ["error", {
-                "style": "double",
-                "unquoted": false
-              }]
-            },
-            "elements": [
-              "html5"
-            ]
-          }
-          EOF
-      
       - name: Validate HTML files
         id: html-validate
         run: |
