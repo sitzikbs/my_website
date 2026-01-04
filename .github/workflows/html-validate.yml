@@ -28,6 +28,9 @@ jobs:
     name: Validate HTML and Accessibility
     runs-on: ubuntu-latest
     
+    permissions:
+      contents: read
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
