@@ -115,6 +115,9 @@ A clean, responsive academic website built with Eleventy (11ty) static site gene
 - `npm run build:11ty` - Build site with Eleventy only
 - `npm run build:js` - Minify JavaScript files
 - `npm run build:css` - Minify CSS files
+- `npm run test:html` - Validate HTML files in `_site/` directory
+- `npm run test:accessibility` - Run accessibility checks with axe
+- `npm run test:performance` - Run Lighthouse performance audit
 
 ## Automated Quality Checks
 
@@ -141,13 +144,13 @@ The **HTML Validation** workflow (`.github/workflows/html-validate.yml`) automat
 
 **Running validation locally:**
 ```bash
-# Install html-validate globally or as a dev dependency
-npm install --save-dev html-validate
-
 # Build the site first
 npm run build
 
 # Run HTML validation
+npm run test:html
+
+# Or use npx directly
 npx html-validate "_site/**/*.html"
 ```
 

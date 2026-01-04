@@ -15,6 +15,7 @@
     "serve": "python3 -m http.server 8000 --directory _site",
     "test:performance": "npx lighthouse http://localhost:8000/index.html --output=html --output-path=./reports/index-performance.html",
     "test:accessibility": "npx axe http://localhost:8000/index.html",
+    "test:html": "html-validate \"_site/**/*.html\"",
     "prebuild": "echo '🔨 Starting build process...'",
     "postbuild": "echo '✅ Build complete!'"
   },
@@ -36,6 +37,7 @@
     "@11ty/eleventy-img": "^5.0.0",
     "@axe-core/cli": "^4.11.0",
     "csso-cli": "^4.0.2",
+    "html-validate": "^8.24.1",
     "lighthouse": "^12.8.2",
     "pa11y": "^9.0.1",
     "terser": "^5.44.1"

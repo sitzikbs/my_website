@@ -43,9 +43,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      - name: Install html-validate
-        run: npm install --no-save html-validate
-      
       - name: Build site
         run: npm run build
       
@@ -60,7 +57,6 @@ jobs:
         continue-on-error: true
         run: |
           echo "Running accessibility checks on key pages..."
-          npm run build
           npm run serve &
           SERVER_PID=$!
           sleep 5
@@ -87,7 +83,7 @@ jobs:
         run: |
           echo "### HTML Validation Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          if [ ${{ steps.html-validate.outcome }} == 'success' ]; then
+          if [[ "${{ steps.html-validate.outcome }}" == "success" ]]; then
             echo "✅ HTML validation passed - no errors found" >> $GITHUB_STEP_SUMMARY
           else
             echo "❌ HTML validation failed - please check the logs above" >> $GITHUB_STEP_SUMMARY
