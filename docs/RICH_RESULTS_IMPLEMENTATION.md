@@ -26,7 +26,7 @@ Rich Results are enhanced search results displayed by Google that include additi
 The homepage (`index.html`) now implements **multiple schemas** using the `@graph` approach for comprehensive rich results:
 
 #### 1. WebSite Schema
-**Purpose**: Enables sitelinks search box in Google search results
+**Purpose**: Provides site-level metadata for Google
 
 ```json
 {
@@ -37,22 +37,16 @@ The homepage (`index.html`) now implements **multiple schemas** using the `@grap
   "description": "Personal website and research portfolio...",
   "publisher": {
     "@id": "https://www.itzikbs.com/#person"
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://www.itzikbs.com/blog/?s={search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
   }
 }
 ```
 
 **Benefits**:
-- Users can search your site directly from Google
-- Increased engagement and traffic
-- Better user experience
+- Establishes site identity for Google
+- Links site to publisher (Person schema)
+- Better understanding of site structure
+
+**Note**: SearchAction for sitelinks search box was not included since the site doesn't currently implement search functionality. This can be added in the future if search is implemented.
 
 #### 2. Person + ProfilePage Schema
 **Purpose**: Creates knowledge panel and rich person information in search results
@@ -379,7 +373,7 @@ Article description text...
 ### Long-Term Benefits
 1. 📈 **Increased Traffic**
    - Higher CTR → More visitors
-   - Sitelinks search box → Direct content access
+   - Better visibility in search results
 
 2. 🎯 **Better Targeting**
    - `knowsAbout` helps Google understand expertise
@@ -468,9 +462,9 @@ The website now has comprehensive structured data implementation that:
 4. ✅ Improves SEO and visibility
 
 The homepage is now **compliant with Google Rich Results requirements** and should display enhanced search results including:
-- Sitelinks search box
 - Person/knowledge panel (for branded searches)
-- Enhanced metadata
+- Enhanced metadata and site identity
+- Better understanding of content by Google
 
 Blog posts continue to be eligible for article rich results with proper BlogPosting schema.
 
