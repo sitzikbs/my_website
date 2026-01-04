@@ -116,6 +116,29 @@ A clean, responsive academic website built with Eleventy (11ty) static site gene
 - `npm run build:js` - Minify JavaScript files
 - `npm run build:css` - Minify CSS files
 
+## Automated Quality Checks
+
+The repository includes automated GitHub Actions workflows to ensure code quality:
+
+### HTML Validation Workflow
+
+The **HTML Validation** workflow (`.github/workflows/html-validate.yml`) automatically runs on:
+- Pull requests to the `main` branch
+- Pushes to the `main` branch
+- Manual trigger via workflow dispatch
+
+**What it does:**
+- ✅ Validates HTML syntax using `html-validate` tool
+- ✅ Checks for HTML5 compliance and semantic correctness
+- ✅ Optionally runs accessibility checks with `pa11y` (WCAG 2.1 AA standard)
+- ✅ Fails the build if validation errors are found
+- ✅ Provides detailed error reports in the Actions tab
+
+**Configuration:**
+- The workflow uses a predefined `html-validate` configuration with recommended rules
+- Custom rules can be adjusted in the workflow file
+- Only validates HTML files in the `_site/` directory after build
+
 ## Adding Blog Posts
 
 Blog posts are written in Markdown and automatically converted to HTML by Eleventy.

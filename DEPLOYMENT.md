@@ -10,6 +10,7 @@ Before deploying:
 3. **Commit changes:** Ensure all changes are committed to git
 4. **Update data:** Verify `data/publications.json`, `data/news.json`, etc. are current
 5. **Check assets:** Ensure all images and assets are properly placed in `assets/`
+6. **HTML validation:** Automated HTML validation runs on pull requests via GitHub Actions
 
 ---
 

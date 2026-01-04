@@ -1,0 +1,121 @@
+name: HTML Validation
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '**.html'
+      - '**.njk'
+      - '**.md'
+      - 'blog/posts-md/**'
+      - '_includes/**'
+      - '.eleventy.js'
+      - '.github/workflows/html-validate.yml'
+  push:
+    branches: [ main ]
+    paths:
+      - '**.html'
+      - '**.njk'
+      - '**.md'
+      - 'blog/posts-md/**'
+      - '_includes/**'
+      - '.eleventy.js'
+      - '.github/workflows/html-validate.yml'
+  workflow_dispatch:
+
+jobs:
+  html-validation:
+    name: Validate HTML and Accessibility
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Install html-validate
+        run: npm install --no-save html-validate
+      
+      - name: Build site
+        run: npm run build
+      
+      - name: Create html-validate config
+        run: |
+          cat > .htmlvalidate.json << 'EOF'
+          {
+            "extends": ["html-validate:recommended"],
+            "rules": {
+              "void-style": "off",
+              "no-trailing-whitespace": "off",
+              "require-sri": "off",
+              "no-inline-style": "warn",
+              "attribute-boolean-style": "off",
+              "no-raw-characters": ["error", {
+                "relaxed": true
+              }],
+              "element-required-attributes": "error",
+              "element-permitted-content": "error",
+              "attr-quotes": ["error", {
+                "style": "double",
+                "unquoted": false
+              }]
+            },
+            "elements": [
+              "html5"
+            ]
+          }
+          EOF
+      
+      - name: Validate HTML files
+        id: html-validate
+        run: |
+          echo "Running HTML validation on _site/ directory..."
+          npx html-validate "_site/**/*.html" --config .htmlvalidate.json || exit 1
+      
+      - name: Run accessibility checks with pa11y
+        if: always()
+        continue-on-error: true
+        run: |
+          echo "Running accessibility checks on key pages..."
+          npm run build
+          npm run serve &
+          SERVER_PID=$!
+          sleep 5
+          
+          # Test key pages
+          npx pa11y http://localhost:8000/index.html --standard WCAG2AA --reporter cli || true
+          npx pa11y http://localhost:8000/about.html --standard WCAG2AA --reporter cli || true
+          npx pa11y http://localhost:8000/publications.html --standard WCAG2AA --reporter cli || true
+          npx pa11y http://localhost:8000/blog.html --standard WCAG2AA --reporter cli || true
+          
+          kill $SERVER_PID
+        
+      - name: Upload validation results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-results
+          path: |
+            .htmlvalidate.json
+          retention-days: 30
+      
+      - name: Validation summary
+        if: always()
+        run: |
+          echo "### HTML Validation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ ${{ steps.html-validate.outcome }} == 'success' ]; then
+            echo "✅ HTML validation passed - no errors found" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ HTML validation failed - please check the logs above" >> $GITHUB_STEP_SUMMARY
+          fi
