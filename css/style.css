@@ -52,6 +52,27 @@ img {
     display: block;
 }
 
+/* Center responsive images in blog posts (individual images, not galleries) */
+figure.wp-block-image,
+figure.aligncenter {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.wp-block-image picture,
+figure.wp-block-image img,
+figure.aligncenter picture,
+figure.aligncenter img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.wp-block-image figcaption,
+figure.aligncenter figcaption {
+    text-align: center;
+}
+
 a {
     color: var(--secondary-color);
     text-decoration: none;
