@@ -223,6 +223,27 @@ figcaption {
   margin-top: var(--spacing-2);
 }
 
+/* Center responsive images in blog posts (individual images, not galleries) */
+div.wp-block-image {
+  text-align: center;
+}
+
+div.wp-block-image figure {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+div.wp-block-image figcaption {
+  text-align: center;
+}
+
+div.wp-block-image picture,
+div.wp-block-image img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ==================== */
 /* Tables */
 /* ==================== */
