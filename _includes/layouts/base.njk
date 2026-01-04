@@ -52,6 +52,32 @@
     <script type="application/ld+json">
     {{ customSchema | safe }}
     </script>
+    {% elif layout == "layouts/blog-post.njk" or page.url.startsWith('/blog/posts/') %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ title }}",
+      "datePublished": "{{ date | formatDate }}",
+      "dateModified": "{{ date | formatDate }}",
+      "author": {
+        "@type": "Person",
+        "name": "{% if author %}{{ author }}{% else %}Itzik Ben-Shabat{% endif %}",
+        "url": "https://www.itzikbs.com"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Itzik Ben-Shabat",
+        "url": "https://www.itzikbs.com"
+      },
+      "description": "{{ description or title }}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.itzikbs.com{{ page.url }}"
+      },
+      "image": "https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg"
+    }
+    </script>
     {% else %}
     <script type="application/ld+json">
     {
