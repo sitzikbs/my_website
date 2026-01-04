@@ -1,13 +1,52 @@
 # Performance Optimization Progress Report
 
 ## Executive Summary
-Successfully completed foundational performance optimizations for the static website. Achieved **78.3% image size reduction** (saved 84.41MB) and implemented modern web performance best practices.
+Successfully completed foundational performance optimizations for the static website. Achieved **78.3% image size reduction** (saved 84.41MB) and implemented modern web performance best practices. **Latest: Homepage Core Web Vitals optimization with critical CSS inlining and deferred JavaScript loading.**
 
 ---
 
 ## ✅ Completed Tasks
 
-### 1. Image Optimization (Phase 7.1)
+### 1. Homepage Core Web Vitals Optimization (Phase 7.5 - Issue #40)
+**Status:** COMPLETE ✓  
+**Impact:** CRITICAL - Targets LCP under 2.5s
+
+**Optimizations Applied:**
+- [x] **Replaced Font Awesome CDN with inline SVGs** - Eliminated ~100KB render-blocking CSS
+  - Removed Font Awesome 6.4.0 CDN link
+  - Added inline SVG icons (4 icons: envelope, github, linkedin, twitter) 
+  - Reduced external dependencies from 2 to 1
+  
+- [x] **Deferred all JavaScript** - Moved script execution after initial render
+  - Added `defer` attribute to `analytics.min.js` in `<head>`
+  - Added `defer` to all footer scripts (`security-utils.min.js`, `main.min.js`, `navigation.min.js`)
+  - JavaScript now executes in order but after HTML parsing completes
+
+- [x] **Extracted and inlined critical CSS** - Eliminated render-blocking stylesheet
+  - Manually extracted ~2.5KB of critical above-the-fold CSS (minified)
+  - Inlined critical styles for navbar, hero, container, reset, and responsive layout
+  - Deferred load of `style.min.css` using `<link rel="preload">` with `onload` trick
+  - Added `<noscript>` fallback for users with JavaScript disabled
+
+**Expected Performance Gains:**
+- **LCP Improvement:** 250-750ms faster (target: < 2.5s)
+- **FCP Improvement:** 100-200ms faster
+- **TBT Reduction:** 50-150ms less blocking time
+- **Network Savings:** ~100KB (Font Awesome CDN eliminated)
+
+**Files Modified:**
+- `_includes/layouts/base.njk` - Inlined critical CSS, deferred scripts, removed Font Awesome
+- `_includes/partials/footer.njk` - Replaced Font Awesome icons with inline SVGs
+
+**Testing:**
+- Local build verified ✓
+- Visual appearance confirmed ✓
+- JavaScript functionality tested ✓
+- Awaiting Lighthouse audit for exact LCP metrics
+
+---
+
+### 2. Image Optimization (Phase 7.1)
 **Status:** COMPLETE ✓  
 **Impact:** CRITICAL - 78.3% bandwidth savings
 
