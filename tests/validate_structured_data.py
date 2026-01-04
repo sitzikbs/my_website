@@ -59,7 +59,6 @@ def validate_person_schema(data: Dict) -> Tuple[bool, List[str]]:
 def validate_website_schema(data: Dict) -> Tuple[bool, List[str]]:
     """Validate WebSite schema requirements."""
     issues = []
-    warnings = []
     
     if "name" not in data:
         issues.append("Missing required property: name")
@@ -68,9 +67,8 @@ def validate_website_schema(data: Dict) -> Tuple[bool, List[str]]:
         issues.append("Missing required property: url")
     
     # Check for SearchAction (optional - enables sitelinks search box)
-    if "potentialAction" not in data:
-        warnings.append("Optional: potentialAction (enables sitelinks search box) - only add if search is implemented")
-    else:
+    # Not including this is valid - only add if search functionality is implemented
+    if "potentialAction" in data:
         action = data["potentialAction"]
         if action.get("@type") != "SearchAction":
             issues.append("potentialAction should be SearchAction type")
@@ -82,9 +80,6 @@ def validate_website_schema(data: Dict) -> Tuple[bool, List[str]]:
             issues.append("SearchAction missing query-input property")
     
     # Return only actual issues, not warnings
-    return len(issues) == 0, issues
-
-    
     return len(issues) == 0, issues
 
 
