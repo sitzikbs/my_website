@@ -241,7 +241,12 @@ def main():
     print("🔍 Validating Blog Post Structured Data")
     print("=" * 70)
     
-    blog_posts = list((site_dir / "blog" / "posts").glob("*.html"))
+    blog_posts_dir = site_dir / "blog" / "posts"
+    if blog_posts_dir.exists():
+        blog_posts = list(blog_posts_dir.glob("*.html"))
+    else:
+        blog_posts = []
+    
     if blog_posts:
         sample_post = blog_posts[0]
         result = validate_structured_data(sample_post)
@@ -268,6 +273,9 @@ def main():
             print("\n✅ Blog post structured data is valid!")
         else:
             print("\n⚠️  Blog post has some issues that should be addressed.")
+    else:
+        print("\nℹ️  No blog posts found or blog directory doesn't exist.")
+        print("   This is OK if blog posts haven't been generated yet.")
     
     print("\n" + "=" * 70)
     print("📊 Validation Summary")
