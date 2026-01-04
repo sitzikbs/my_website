@@ -3,7 +3,7 @@
 <head>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EC0BTHZ23"></script>
-    <script src="/js/analytics.min.js"></script>
+    <script defer src="/js/analytics.min.js"></script>
 
     <!-- Resource Hints for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,8 +37,12 @@
 
     <title>{{ title or 'Itzik Ben-Shabat - Researcher • Educator • Engineer' }}</title>
     
-    <link rel="stylesheet" href="/css/style.min.css?v=5">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Critical CSS - Above-the-fold styles -->
+    <style>*{margin:0;padding:0;box-sizing:border-box}:root{--primary-color:#111827;--secondary-color:#2563eb;--secondary-hover:#1d4ed8;--text-color:#374151;--text-light:#6b7280;--bg-color:#fff;--bg-light:#f9fafb;--border-color:#e5e7eb;--shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);--shadow-hover:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);--transition:all .2s ease-in-out;--max-width:1000px;--spacing:2rem;--radius:8px}html{scroll-behavior:smooth}body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.7;color:var(--text-color);background-color:var(--bg-color);-webkit-font-smoothing:antialiased}.container{max-width:var(--max-width);margin:0 auto;padding:0 1.5rem}img{max-width:100%;height:auto;display:block}a{color:var(--secondary-color);text-decoration:none;transition:var(--transition)}a:hover{color:var(--primary-color)}.navbar{background-color:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border-color);position:sticky;top:0;z-index:1000;padding:1rem 0}.navbar .container{display:flex;justify-content:space-between;align-items:center}.nav-brand a{font-size:1.25rem;font-weight:700;color:var(--primary-color);letter-spacing:-.02em}.nav-menu{display:flex;list-style:none;gap:2.5rem}.nav-menu a{color:var(--text-light);font-weight:500;font-size:.95rem;padding:.5rem 0;border-bottom:2px solid transparent;transition:var(--transition)}.nav-menu a:hover,.nav-menu a.active{color:var(--primary-color);border-bottom-color:var(--primary-color)}.nav-toggle{display:none;flex-direction:column;background:none;border:none;cursor:pointer;padding:.5rem}.nav-toggle span{width:25px;height:3px;background-color:var(--primary-color);margin:3px 0;transition:var(--transition)}.hero{padding:2.5rem 0 1.5rem}.hero-content{display:flex;align-items:center;gap:3rem;flex-wrap:wrap}.profile-image{flex-shrink:0}.profile-image img{width:200px;height:200px;border-radius:50%;object-fit:cover;box-shadow:var(--shadow)}.hero-text h1{font-size:3rem;color:var(--primary-color);margin-bottom:.5rem}.subtitle{font-size:1.3rem;color:var(--text-light)}.skip-link{position:absolute;top:-40px;left:0;background:var(--primary-color);color:#fff;padding:.5rem 1rem;text-decoration:none;z-index:100}.skip-link:focus{top:0}@media(max-width:768px){.nav-menu{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(255,255,255,.98);backdrop-filter:blur(10px);flex-direction:column;padding:1rem;gap:1rem;border-bottom:1px solid var(--border-color)}.nav-menu.active{display:flex}.nav-toggle{display:flex}.hero-text h1{font-size:2rem}.profile-image img{width:150px;height:150px}}</style>
+    
+    <!-- Non-critical CSS - Deferred -->
+    <link rel="preload" href="/css/style.min.css?v=5" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/style.min.css?v=5"></noscript>
 
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -104,9 +108,9 @@
     
     {% include "partials/footer.njk" %}
     
-    <script src="/js/security-utils.min.js"></script>
-    <script src="/js/main.min.js"></script>
-    <script src="/js/navigation.min.js"></script>
+    <script defer src="/js/security-utils.min.js"></script>
+    <script defer src="/js/main.min.js"></script>
+    <script defer src="/js/navigation.min.js"></script>
     {% block scripts %}{% endblock %}
 </body>
 </html>
