@@ -3,6 +3,21 @@ layout: layouts/base.njk
 title: Talking Papers Podcast - Itzik Ben-Shabat
 description: Podcast episodes discussing research papers
 permalink: /podcast/
+customSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    "name": "Talking Papers Podcast",
+    "description": "Deep dives into cutting-edge research papers with their authors",
+    "url": "https://www.itzikbs.com/podcast/",
+    "author": {
+      "@type": "Person",
+      "name": "Itzik Ben-Shabat",
+      "url": "https://www.itzikbs.com"
+    },
+    "webFeed": "https://www.itzikbs.com/podcast/",
+    "genre": ["Technology", "Science", "Education", "Computer Vision", "Machine Learning"]
+  }
 ---
 
 <section class="page-header">
