@@ -1,0 +1,120 @@
+SEO & ACCESSIBILITY AUDIT - Issue #15
+=======================================
+Date: January 4, 2026
+Branch: feat/seo-accessibility-compliance
+
+BASELINE VALIDATION RESULTS
+============================
+
+1. HEADING HIERARCHY CHECK (check_heading_hierarchy.py)
+--------------------------------------------------------
+✅ STATUS: PASSED
+- All 7 main pages have perfect heading hierarchy
+- No skipped levels detected
+- All pages have proper h1 tags
+
+Files checked:
+- about.html
+- blog.html
+- code.html
+- contact.html
+- index.html
+- podcast.html
+- publications.html
+
+2. ACCESSIBILITY CHECK (check_accessibility.py)
+------------------------------------------------
+⚠️ NOTE: Script checks root template files (.html), not built _site/ output
+- Root templates are Nunjucks with frontmatter (not full HTML)
+- Need to verify built files in _site/ directory instead
+
+Built HTML verification needed for:
+- _site/index.html ✅ (verified - has lang, title, viewport, skip link, main)
+- _site/about/index.html
+- _site/blog/index.html
+- _site/publications/index.html
+- _site/podcast/index.html
+- _site/code/index.html
+- _site/contact/index.html
+- _site/blog/posts/**/*.html (75+ blog posts)
+
+3. BUILT HTML SPOT CHECK (_site/index.html)
+--------------------------------------------
+✅ All critical accessibility elements present:
+- <html lang="en"> ✅
+- <title> tag ✅
+- <meta name="viewport"> ✅
+- Skip link ✅ (href="#main-content", .skip-link class)
+- <main> landmark - NEEDS VERIFICATION
+- Schema.org Person markup ✅
+- Open Graph tags ✅
+- Twitter Card tags ✅
+- Canonical URL ✅
+
+IDENTIFIED ISSUES TO FIX
+========================
+
+1. SITEMAP COVERAGE
+-------------------
+❌ Blog posts not included in sitemap.xml
+- Current: Only 7 main pages
+- Needed: Add ~75 blog posts from blog/posts-md/
+- File to modify: scripts/generate_sitemap.py
+
+2. SCHEMA.ORG EXPANSION
+-----------------------
+❌ Blog posts need BlogPosting schema
+- Modify: _includes/layouts/blog-post.njk
+- Extract from frontmatter: title, date, description
+- Add: author, datePublished, headline
+
+❌ Publications page needs ScholarlyArticle schema
+- Modify: publications.html
+- Use data from: data/publications.json
+
+❌ Podcast page needs PodcastEpisode schema
+- Modify: podcast.html
+- If applicable
+
+3. MAIN LANDMARK VERIFICATION
+------------------------------
+❓ Need to verify <main id="main-content"> on all pages
+- Check if skip link target exists
+- Verify semantic HTML structure
+
+4. ARIA LIVE REGIONS
+--------------------
+❌ Dynamic content loaders need aria-live
+- js/blog-loader.js
+- js/publications-loader.js
+- js/podcast-loader.js
+
+5. COLOR CONTRAST DOCUMENTATION
+--------------------------------
+❓ Document WCAG AA compliance (4.5:1) in css/variables.css
+- Primary: #2563eb
+- Text: #374151
+- Need to calculate and document all color pairs
+
+6. ALT TEXT AUDIT
+-----------------
+❓ Systematic audit needed
+- Focus on main pages (not individual blog posts per user request)
+- Check images in: index, about, publications, podcast, code, contact
+
+TESTING PLAN
+============
+
+Next steps:
+1. ✅ Build complete - site built with 82 files
+2. ✅ Local server running on port 8000
+3. ⏳ Run npm test:accessibility
+4. ⏳ Run Lighthouse audit
+5. ⏳ Verify main landmarks in built HTML
+6. ⏳ Test keyboard navigation manually
+
+NOTES
+=====
+- User preference: Template-level changes only (no individual post edits)
+- Testing philosophy: Warnings only, never block builds
+- Keep separate tools for granular issue tracking

@@ -21,9 +21,14 @@
 ---
 
 ## Git Workflow
+- **gh CLI**: Use the GitHub CLI (`gh`) for managing issues and pull requests from the command line.
 - **Branch Naming**: When suggesting git commands, name new branches using the `type/short-description` format (e.g., `feat/user-auth`, `fix/api-bug`).
 - **Commit Messages**: Follow the Conventional Commits specification. [Image of Conventional Commits examples chart] Start with a type (`feat`, `fix`, `docs`, `refactor`, `test`) and link to related issues if applicable.
 - **Example Commit**: `feat: add user authentication endpoint (closes #42)`
+- **Opening Issues**: When creating issues, provide a clear title, detailed description, steps to reproduce (if applicable), and any relevant screenshots or logs.
+- **Working on Issues**: When working on an issue, first pull the latest main, then create a new branch with an informative name. Reference it in your commit messages and pull requests using `#issue-number` to create a link.
+- **Closing Issues** : When your code resolves an issue, include `closes #issue-number` in your commit message to automatically close it upon merging and open a PR.
+- **Pull Requests**: When opening a pull request, provide a clear title and description of the changes made. Reference any related issues using `#issue-number`. Ensure all tests pass before requesting a review.
 
 ---
 
