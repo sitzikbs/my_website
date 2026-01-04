@@ -417,7 +417,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "/assets/images/blog/20220619_0743072-scaled.jpg"
+      "image": "/assets/images/blog/20220619_0743072.jpg"
     },
     {
       "id": "digs",
@@ -906,7 +906,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "/assets/images/blog/TensorFlow-Logo-300x54.png"
+      "image": "/assets/images/blog/TensorFlow-Logo.png"
     },
     {
       "id": "feature-aggregatoin-using-vlad-netvlad",
@@ -920,7 +920,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "/assets/images/blog/netVLAD_Architecture-1024x197.png"
+      "image": "/assets/images/blog/netVLAD_Architecture.png"
     },
     {
       "id": "deep-learning-3d-data-references",
@@ -974,7 +974,7 @@
         "Research"
       ],
       "tags": [],
-      "image": "/assets/images/blog/Capture-1024x380.jpg"
+      "image": "/assets/images/blog/Capture.jpg"
     },
     {
       "id": "helping-out-a-friend-with-processing",
