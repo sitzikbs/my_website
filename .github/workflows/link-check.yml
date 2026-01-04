@@ -15,6 +15,9 @@ jobs:
   link-check:
     name: Check Links
     runs-on: ubuntu-latest
+    permissions:
+      contents: read  # Required to checkout the repository
+      issues: write  # Required to create issues on failure
 
     steps:
       - name: Checkout repository
