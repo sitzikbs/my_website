@@ -4,12 +4,15 @@ This directory contains utility scripts for maintaining and improving the websit
 
 ## 📁 Directory Structure
 
-- **`/scripts/`** - Active, reusable maintenance scripts
-- **`/scripts/archive/`** - One-time scripts (migration, fixes) - see archive/README.md
+- **`/scripts/`** - Active, reusable maintenance scripts (5 scripts)
+- **`/scripts/archive/`** - Archived 11ty migration scripts - see [archive/README.md](archive/README.md)
+- **`/scripts/one-time/`** - One-time WordPress migration scripts - see [one-time/README.md](one-time/README.md)
 
 ---
 
 ## Active Utility Scripts
+
+These 5 scripts are maintained for ongoing website maintenance:
 
 ### Accessibility & Quality
 
@@ -18,19 +21,13 @@ This directory contains utility scripts for maintaining and improving the websit
   - Checks: skip links, main landmarks, alt text, h1 presence, lang attribute, etc.
   - Usage: `uv run python scripts/check_accessibility.py`
 
-- **`improve_accessibility.py`** - Systematic accessibility enhancement
-  - Adds skip-to-main-content links to all pages
-  - Adds semantic `<main>` landmarks
-  - Fixes empty links and missing titles
-  - Usage: `uv run python scripts/improve_accessibility.py`
-
 - **`check_heading_hierarchy.py`** - Heading structure validator
   - Checks for proper h1-h6 heading hierarchy
   - Identifies skipped heading levels and multiple h1 tags
   - Usage: `uv run python scripts/check_heading_hierarchy.py`
 
 - **`validate-content.py`** - Content validation tool
-  - Validates JSON data files
+  - Validates JSON data files (publications.json, blog-index.json)
   - Checks for required fields and data integrity
   - Usage: `uv run python scripts/validate-content.py`
 
@@ -39,19 +36,31 @@ This directory contains utility scripts for maintaining and improving the websit
 - **`generate_sitemap.py`** - Sitemap generator
   - Creates XML sitemap from all HTML pages
   - Sets priority and lastmod dates
+  - Used in: `npm run build:sitemap`
   - Usage: `uv run python scripts/generate_sitemap.py`
-  - **Note:** May need updates for 11ty build structure
 
 ---
 
-## Archived Scripts
+## Historical Scripts
 
-See **`archive/README.md`** for information about:
-- Migration scripts (11ty conversion)
-- Image optimization scripts (initial setup)
-- One-time fixes and updates
+### One-Time WordPress Migration Scripts
+See **`one-time/README.md`** for 30 scripts used during WordPress-to-static-site migration:
+- WordPress URL fixing and content migration
+- Initial image downloads from WordPress
+- Image cleanup and consolidation
+- Image quality upgrades and comparisons
+- Content fixes and conversions
 
-These scripts are preserved for reference but are no longer needed for regular maintenance.
+✅ **Migration complete** - These scripts are preserved for reference only.
+
+### Archived 11ty Migration Scripts
+See **`archive/README.md`** for 12 scripts from the 11ty conversion:
+- Blog post migration to Markdown
+- Responsive image fixes
+- Styling updates
+- WebP conversion
+
+✅ **All completed** - These scripts have served their purpose.
 
 ---
 

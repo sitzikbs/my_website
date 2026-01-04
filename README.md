@@ -47,9 +47,14 @@ A clean, responsive academic website built with Eleventy (11ty) static site gene
 │   └── podcast-loader.js
 ├── data/
 │   ├── publications.json  # Publications data
-│   └── blog-index.json    # Blog metadata (auto-generated)
+│   ├── blog-index.json    # Blog metadata (auto-generated)
+│   └── archive/           # Historical migration data
 ├── assets/
 │   └── images/            # Optimized images (WebP + fallbacks)
+├── scripts/               # Maintenance scripts
+│   ├── archive/           # Archived 11ty migration scripts
+│   └── one-time/          # Archived WordPress migration scripts
+├── docs/                  # Project documentation
 ├── .eleventy.js           # Eleventy configuration
 └── package.json           # Dependencies and scripts
 ```
@@ -153,6 +158,22 @@ Blog posts are written in Markdown and automatically converted to HTML by Eleven
    - Have proper styling and navigation
 
 **No manual HTML editing needed!** Just write Markdown and build.
+
+## Maintenance Scripts
+
+The repository includes Python scripts for ongoing maintenance tasks (see [scripts/README.md](scripts/README.md)):
+
+- **`check_accessibility.py`** - WCAG 2.1 AA compliance checker
+- **`check_heading_hierarchy.py`** - Validate heading structure
+- **`validate-content.py`** - Validate JSON data files
+- **`generate_sitemap.py`** - Generate XML sitemap (used in build)
+
+Run scripts with `uv` for better cross-platform compatibility:
+```bash
+uv run python scripts/check_accessibility.py
+```
+
+**Historical scripts** from WordPress migration and 11ty conversion are archived in `scripts/one-time/` and `scripts/archive/` for reference.
 
 ## Deployment
 
