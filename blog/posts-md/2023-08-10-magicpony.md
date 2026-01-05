@@ -49,7 +49,7 @@ permalink: "/blog/posts/2023-08-10-magicpony.html"
 <p>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="f387929f989a9d94dd839283968180dd839c9790928087b3949e929a9fdd909c9e" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
 <p></p>
 <h2 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h2>
-<p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
+<p>🎧Subscribe on your favourite podcast app: <a href="/podcast/" rel="noreferrer noopener" target="_blank">/podcast/</a></p>
 <p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
 <p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
 <p>🎥YouTube Channel: </p>

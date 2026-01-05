@@ -52,7 +52,7 @@ permalink: "/blog/posts/2022-12-14-random-walks-for-adversarial-meshes.html"
 <p>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="3145505d5a585f561f4150415443421f415e555250424571565c50585d1f525e5c" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
 <p></p>
 <h2 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h2>
-<p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
+<p>🎧Subscribe on your favourite podcast app: <a href="/podcast/" rel="noreferrer noopener" target="_blank">/podcast/</a></p>
 <p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
 <p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
 <p>🎥YouTube Channel: </p>

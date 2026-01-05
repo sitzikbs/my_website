@@ -40,7 +40,7 @@ permalink: "/blog/posts/2024-03-14-cameras-as-rays.html"
 <h2 class="wp-block-heading">CONTACT</h2>
 <p><br/>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="0a7e6b666163646d247a6b7a6f7879247a656e696b797e4a6d676b636624696567" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
 <h2 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h2>
-<p><br/>🎧Subscribe on your favourite <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">podcast app</a></p>
+<p><br/>🎧Subscribe on your favourite <a href="/podcast/" rel="noreferrer noopener" target="_blank">podcast app</a></p>
 <p>📧Subscribe to our <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">mailing list</a></p>
 <p>🐦Follow us on <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">Twitter</a></p>
 <p>🎥Subscribe to our </p>

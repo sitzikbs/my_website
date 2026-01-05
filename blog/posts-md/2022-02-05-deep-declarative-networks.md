@@ -43,7 +43,7 @@ permalink: "/blog/posts/2022-02-05-deep-declarative-networks.html"
 <h2 class="wp-block-heading" id="contact"> CONTACT</h2>
 <p>If you would like to be a guest, sponsor or just share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="8bffeae7e0e2e5eca5fbeafbeef9f8a5fbe4efe8eaf8ffcbece6eae2e7a5e8e4e6" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
 <h2 class="wp-block-heading" id="subscribe-and-follow"><br/>SUBSCRIBE AND FOLLOW</h2>
-<p> 🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
+<p> 🎧Subscribe on your favourite podcast app: <a href="/podcast/" rel="noreferrer noopener" target="_blank">/podcast/</a></p>
 <p> 📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
 <p> 🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a> </p>
 <p>🎥YouTube Channel: </p>
