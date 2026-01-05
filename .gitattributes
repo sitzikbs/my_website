@@ -2,14 +2,9 @@
 *.{cmd,[cC][mM][dD]} text eol=crlf
 *.{bat,[bB][aA][tT]} text eol=crlf
 
-# Git LFS - Track image files
-assets/images/**/*.jpg filter=lfs diff=lfs merge=lfs -text
-assets/images/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
-assets/images/**/*.png filter=lfs diff=lfs merge=lfs -text
-assets/images/**/*.webp filter=lfs diff=lfs merge=lfs -text
-assets/images/**/*.gif filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.webp filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
+# Mark image files as binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.gif binary
