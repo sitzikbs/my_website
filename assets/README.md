@@ -2,34 +2,13 @@
 
 This directory contains all static assets for the website including images, documents, and videos.
 
-## Important: Git LFS
+## Image Storage
 
-**All image files in this directory are tracked with Git LFS (Large File Storage).**
+**All image files in this directory are stored as binary files in the git repository.**
 
-- Image files (`.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`) are stored as lightweight pointers in git
-- Actual image data is stored in LFS and downloaded on-demand
-- This keeps the repository fast and clone times reasonable
-
-### Setting Up Git LFS
-
-If you're a new contributor, install Git LFS before cloning:
-
-```bash
-# Ubuntu/Debian
-sudo apt-get install git-lfs
-
-# macOS
-brew install git-lfs
-
-# Windows - Download from https://git-lfs.github.com/
-
-# Initialize in your repository
-git lfs install
-```
-
-## Directory Structure
-
-```
+- Image files (`.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`) are committed directly to git
+- Eleventy's `@11ty/eleventy-img` plugin generates optimized responsive variants during build
+- Generated images are output to `_site/assets/images/generated/` (gitignored)
 assets/
 ├── images/
 │   ├── profile/          # Profile photos and headshots
