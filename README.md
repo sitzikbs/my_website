@@ -176,3 +176,25 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 5. Deploy!
 
 Your site will automatically rebuild and deploy on every push to main.
+
+## Automated Link Checking
+
+This repository uses GitHub Actions to automatically check for broken links:
+
+- **Runs on Pull Requests:** Validates links before merging to main branch
+- **Weekly Schedule:** Runs every Monday at 9:00 AM UTC
+- **Manual Trigger:** Can be triggered manually from the Actions tab
+
+The workflow:
+1. Builds the site using `npm run build`
+2. Uses [lychee](https://github.com/lycheeverse/lychee) to check all links in HTML files
+3. Excludes social media sites (LinkedIn, Twitter/X, Facebook, Instagram, YouTube)
+4. Excludes academic profile sites prone to rate limiting (ResearchGate, Google Scholar, ORCID)
+5. Fails the workflow if broken links are found
+6. Automatically creates an issue when broken links are detected
+
+**To view link check results:**
+- Go to the "Actions" tab in GitHub
+- Click on "Link Checker" workflow
+- View the latest run for detailed results
+
