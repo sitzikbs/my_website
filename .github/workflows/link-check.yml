@@ -43,8 +43,9 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --accept 200,204,206,301,302,307,308,429
+            --accept 200,204,206,301,302,307,308,403,429
             --exclude-mail
+            --exclude-path '_site/blog/posts/assets'
             --exclude 'linkedin\.com'
             --exclude 'twitter\.com'
             --exclude 'x\.com'
@@ -54,6 +55,20 @@ jobs:
             --exclude 'researchgate\.net'
             --exclude 'scholar\.google'
             --exclude 'orcid\.org'
+            --exclude 'googletagmanager\.com'
+            --exclude 'fonts\.googleapis\.com'
+            --exclude 'fonts\.gstatic\.com'
+            --exclude 'tensorflow\.org'
+            --exclude 'mathworks\.com'
+            --exclude 'udacity\.com'
+            --exclude 'coursera\.org'
+            --exclude 'techrepublic\.com'
+            --exclude 'tesla\.com'
+            --exclude 'uber\.com'
+            --exclude 'staff\.qut\.edu\.au'
+            --exclude 'services\.anu\.edu\.au'
+            --exclude 'dmi\.usherb\.ca'
+            --exclude '^file://'
             --timeout 20
             --max-retries 3
             --user-agent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)
