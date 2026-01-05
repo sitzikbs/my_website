@@ -15,7 +15,7 @@ permalink: "/blog/posts/2023-07-10-panoptic-lifting.html"
 <p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted Yawar Siddiqui to chat about his CVPR 2023 highlight paper “Panoptic Lifting for 3D Scene Understanding with Neural Fields”.</p>
 <p>In this paper, they proposed a new method for “lifting” 2D panoptic segmentation into a 3D volume represented as neural fields using in-the-wild scene images.  While the semantic segmentation part is simply represented as an MLP, the instance indices are very difficult to keep track of inbetween the different frames. This is solved using a Hungarian algorithm and a set of custom losses. </p>
 <p></p>
-<p>Yawar is currently a PhD student at the Technical University of Munich (TUM) under the supervision of Prof. Matthias Niessner. This work was done as part of his latest internship with Meta Zurich. Funnily, he shares an office with onther guest of the podcast – <a href="/podcast/1914034/10004179" rel="noreferrer noopener" target="_blank">Guy Gafni</a>. I first met Yawar at ECCV 2022 in Israel and then again at CVPR 2023. I have been following his works for a while now and it is amazing how much his research has grown over the years. It was a pleasure chatting with him and I can’t wait to see what he cooks up next. </p>
+<p>Yawar is currently a PhD student at the Technical University of Munich (TUM) under the supervision of Prof. Matthias Niessner. This work was done as part of his latest internship with Meta Zurich. Funnily, he shares an office with onther guest of the podcast – <a href="https://talking.papers.podcast.itzikbs.com/1914034/10004179" rel="noreferrer noopener" target="_blank">Guy Gafni</a>. I first met Yawar at ECCV 2022 in Israel and then again at CVPR 2023. I have been following his works for a while now and it is amazing how much his research has grown over the years. It was a pleasure chatting with him and I can’t wait to see what he cooks up next. </p>
 <p></p>
 <p></p>
 <div id="buzzsprout-player-13188478">{% endraw %}
@@ -52,7 +52,7 @@ permalink: "/blog/posts/2023-07-10-panoptic-lifting.html"
 <p>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: talking (dor) papers (dot) podcast(at) gmail (dot) com</p>
 <p></p>
 <h2 class="wp-block-heading">SUBSCRIBE AND FOLLOW</h2>
-<p>🎧Subscribe on your favourite podcast app: <a href="/podcast/" rel="noreferrer noopener" target="_blank">/podcast/</a></p>
+<p>🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
 <p>📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
 <p>🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a></p>
 <p>🎥YouTube Channel: </p>

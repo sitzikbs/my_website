@@ -39,7 +39,7 @@ permalink: "/blog/posts/2022-02-05-dori-discovering-object-relationships-for-mom
 <h2 class="wp-block-heading" id="contact"> CONTACT</h2>
 <p>If you would like to be a guest, sponsor or just share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="a6d2c7cacdcfc8c188d6c7d6c3d4d588d6c9c2c5c7d5d2e6c1cbc7cfca88c5c9cb" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
 <h2 class="wp-block-heading" id="subscribe-and-follow"><br/>SUBSCRIBE AND FOLLOW</h2>
-<p> 🎧Subscribe on your favourite podcast app: <a href="/podcast/" rel="noreferrer noopener" target="_blank">/podcast/</a></p>
+<p> 🎧Subscribe on your favourite podcast app: <a href="https://talking.papers.podcast.itzikbs.com" rel="noreferrer noopener" target="_blank">https://talking.papers.podcast.itzikbs.com</a></p>
 <p> 📧Subscribe to our mailing list: <a href="http://eepurl.com/hRznqb" rel="noreferrer noopener" target="_blank">http://eepurl.com/hRznqb</a></p>
 <p> 🐦Follow us on Twitter: <a href="https://twitter.com/talking_papers" rel="noreferrer noopener" target="_blank">https://twitter.com/talking_papers</a> </p>
 <p>🎥YouTube Channel: </p>
