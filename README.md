@@ -97,11 +97,22 @@ A clean, responsive academic website built with Eleventy (11ty) static site gene
 
 ## NPM Scripts
 
+### Development
 - `npm run serve` - Start development server with hot reload (port 8080)
+- `npm run dev` - Alias for `npm run serve`
+
+### Building
 - `npm run build` - Build production site (outputs to `_site/`)
 - `npm run build:11ty` - Build site with Eleventy only
 - `npm run build:js` - Minify JavaScript files
 - `npm run build:css` - Minify CSS files
+
+### Testing & Validation
+- `npm run validate` - Run all validation checks (HTML + accessibility)
+- `npm run validate:html` - Validate HTML syntax in `_site/` directory
+- `npm run validate:accessibility` - Check accessibility with pa11y-ci
+- `npm run test:performance` - Run Lighthouse performance audit
+- `npm run test:accessibility` - Run axe accessibility test
 
 ## Adding Blog Posts
 
@@ -161,6 +172,39 @@ uv run python scripts/check_accessibility.py
 ```
 
 **Historical scripts** from WordPress migration and 11ty conversion are archived in `scripts/one-time/` and `scripts/archive/` for reference.
+
+## Automated Quality Checks
+
+### GitHub Actions CI/CD
+
+The repository includes automated validation in the CI/CD pipeline:
+
+**HTML Validation Workflow** (`.github/workflows/html-validate.yml`):
+- ✅ Runs automatically on pull requests and pushes to main
+- ✅ Validates HTML syntax using `html-validate`
+- ✅ Checks accessibility with `pa11y` using axe-core
+- ✅ Fails the build if validation errors are found
+
+**Configuration**:
+- HTML validation rules: `.htmlvalidate.json`
+- Follows WCAG 2.1 AA accessibility standards
+- Validates all HTML files in `_site/` after build
+
+**Local validation**:
+```bash
+# Build the site first
+npm run build
+
+# Run HTML validation
+npm run validate:html
+
+# Run accessibility checks (requires local server)
+npm run serve  # In one terminal
+npm run validate:accessibility  # In another terminal
+
+# Or run all validation checks
+npm run validate
+```
 
 ## Deployment
 
