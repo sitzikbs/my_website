@@ -183,7 +183,7 @@ The repository includes automated validation in the CI/CD pipeline:
 - ✅ Runs automatically on pull requests and pushes to main
 - ✅ Validates HTML syntax using `html-validate`
 - ✅ Checks accessibility with `pa11y` using axe-core
-- ✅ Fails the build if validation errors are found
+- ✅ Reports issues without blocking (to allow gradual improvement)
 
 **Configuration**:
 - HTML validation rules: `.htmlvalidate.json`
@@ -195,14 +195,17 @@ The repository includes automated validation in the CI/CD pipeline:
 # Build the site first
 npm run build
 
-# Run HTML validation
+# Run HTML validation (no server needed)
 npm run validate:html
 
-# Run accessibility checks (requires local server)
-npm run serve  # In one terminal
-npm run validate:accessibility  # In another terminal
+# Run accessibility checks (requires local server in separate terminal)
+# Terminal 1: Start server
+npm run serve
 
-# Or run all validation checks
+# Terminal 2: Run accessibility checks
+npm run validate:accessibility
+
+# Quick validation (HTML only, no server needed)
 npm run validate
 ```
 
