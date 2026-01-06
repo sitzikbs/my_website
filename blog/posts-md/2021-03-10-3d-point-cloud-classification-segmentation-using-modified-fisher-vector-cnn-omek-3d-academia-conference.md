@@ -25,7 +25,7 @@ permalink: "/blog/posts/2021-03-10-3d-point-cloud-classification-segmentation-us
 <p>The conference had many great talks. I personally liked the following talks</p>
 <ul>
 <li>“Modifying Non-Local Variations Across Multiple Views”  given by the always fascinating <a href="http://lihi.eew.technion.ac.il/" rel="noopener" target="_blank">Prof. Lihi Zelnik-Manor</a> from Technion IIT.</li>
-<li>“Convolutional Neural Nets on Surfaces” given by <a href="http://www.weizmann.ac.il/math/meirav/" rel="noopener" target="_blank">Dr. Meirav Galun</a> from Weizmann Institute (<a href="http://www.wisdom.weizmann.ac.il/~haggaim/projects/geometry_learning/paper_low_res.pdf" rel="noopener" target="_blank">link to paper</a>).</li>
+<li>“Convolutional Neural Nets on Surfaces” given by <a href="http://www.weizmann.ac.il/math/meirav/" rel="noopener" target="_blank">Dr. Meirav Galun</a> from Weizmann Institute.</li>
 <li>“Point Cloud Registration using Large Triangles” given by <a href="https://is-web.hevra.haifa.ac.il/index.php/en/website-ilan-shimshoni" rel="noopener" target="_blank">Prof. Ilan Shimshoni</a> From Haifa University (<a href="https://is-web.hevra.haifa.ac.il/images/lecturers_files/ishimshoni_files/3dV_15.pdf" rel="noopener" target="_blank">link to paper</a>).</li>
 </ul>
 <p>We signed off the day with an amazing view of a Mediterranean sunset.</p>
