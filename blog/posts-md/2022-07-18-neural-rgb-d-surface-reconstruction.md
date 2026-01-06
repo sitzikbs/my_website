@@ -12,7 +12,7 @@ permalink: "/blog/posts/2022-07-18-neural-rgb-d-surface-reconstruction.html"
 
 
 
-<p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted<a href="http://niessnerlab.org/members/dejan_azinovic/profile.html" rel="noreferrer noopener" target="_blank"> Dejan Azinović </a>to chat about his paper “<a href="https://dazinovic.github.io/neural-rgbd-surface-reconstruction/" rel="noreferrer noopener" target="_blank">Neural RGB-D Surface Reconstruction</a>”, published in CVPR 2022. </p>
+<p>In this episode of the <a href="https://www.itzikbs.com/the-talking-papers-podcast" rel="noreferrer noopener" target="_blank">Talking Papers Podcast</a>, I hosted<a href="https://scholar.google.com/citations?user=HHuii4cAAAAJ" rel="noreferrer noopener" target="_blank"> Dejan Azinović </a>to chat about his paper “<a href="https://dazinovic.github.io/neural-rgbd-surface-reconstruction/" rel="noreferrer noopener" target="_blank">Neural RGB-D Surface Reconstruction</a>”, published in CVPR 2022. </p>
 <p>In this paper, they take on the task of RGBD surface reconstruction by using novel view synthesis.  They incorporate depth measurements into the radiance field formulation by learning a neural network that stores a truncated signed distance field. This formulation is particularly useful in regions where depth is missing and the color information can help fill in the gaps. </p>
 <p>I first met Dejan during <a href="https://www.itzikbs.com/reasearch-visit-in-germany" rel="noreferrer noopener" target="_blank">my research visit to TUM during my PhD</a>.  We spent some long evenings at the office but also managed to play a little bit of volleyball (until someone nearly broke a finger).  I am looking forward to catching up in person at CVPR 2022. It was a pleasure hosting him on the podcast. </p>
 <div id="buzzsprout-player-10568898">{% endraw %}
@@ -34,7 +34,7 @@ permalink: "/blog/posts/2022-07-18-neural-rgb-d-surface-reconstruction.html"
 <p>🎥<a href="https://www.youtube.com/watch?v=iWuSowPsC3g&amp;ab_channel=MatthiasNiessner" rel="noreferrer noopener" target="_blank">Video</a></p>
 <p></p>
 <p>To stay up to date with Dejan’s latest research, follow him on:</p>
-<p>👨🏻‍🎓<a href="http://niessnerlab.org/members/dejan_azinovic/profile.html" rel="noreferrer noopener" target="_blank">Dejan’s homepage</a></p>
+<p>👨🏻‍🎓<a href="https://scholar.google.com/citations?user=HHuii4cAAAAJ" rel="noreferrer noopener" target="_blank">Dejan’s homepage</a></p>
 <p>🎓<a href="https://scholar.google.com/citations?user=XEeGe_Bcwg4C&amp;hl=en&amp;oi=ao">Google Scholar</a></p>
 <p>🐦<a href="https://twitter.com/DejanAzinovic">Twitter</a></p>
 <p>👨🏻‍🎓<a href="https://www.linkedin.com/in/dejan-azinovi%C4%87-8b3430101">LinkedIn</a></p>
