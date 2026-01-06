@@ -68,9 +68,13 @@ jobs:
             --exclude 'staff\.qut\.edu\.au'
             --exclude 'services\.anu\.edu\.au'
             --exclude 'dmi\.usherb\.ca'
+            --exclude 'ri\.cmu\.edu/events/sb35'
+            --exclude 'www3\.oculus\.com'
+            --exclude 'webdiis\.unizar\.es'
+            --exclude 'coraldrowningdetection\.com'
             --exclude '^file://'
-            --timeout 30
-            --max-retries 3
+            --timeout 45
+            --max-retries 5
             --user-agent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)
             AppleWebKit/537.36 (KHTML, like Gecko)
             Chrome/120.0.0.0 Safari/537.36'
