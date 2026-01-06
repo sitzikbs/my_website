@@ -117,7 +117,7 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 
 </p>
 <p> </p>
-<p>After the tour, we went to visit Intel in the Perceptual computing group. They presented fun demos of applications that use their <a href="http://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html">RealSense </a>RGBD camera. The demos included<a href="https://zenbo.asus.com/"> Asus zenbo</a>, <a href="https://newsroom.intel.com/chip-shots/intel-unveils-project-alloy/">Project alloy</a> (which I didn’t get to try because the line was sooooo long, I can only guess how awesome it was) and a fun balloon popping game using <a href="https://www3.oculus.com/en-us/rift/">oculus Rift</a>. Here is a picture of me trying to pop some balloons:</p>
+<p>After the tour, we went to visit Intel in the Perceptual computing group. They presented fun demos of applications that use their <a href="http://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html">RealSense </a>RGBD camera. The demos included<a href="https://zenbo.asus.com/"> Asus zenbo</a>, Project Alloy (which I didn’t get to try because the line was sooooo long, I can only guess how awesome it was) and a fun balloon popping game using <a href="https://www3.oculus.com/en-us/rift/">oculus Rift</a>. Here is a picture of me trying to pop some balloons:</p>
 <p>{% endraw %}
 {% responsiveImage "../../assets/images/blog/OculusRiftRealSenseDemo.jpg", "Intel Oculus Rift Realsense Demo" %}
 {% raw %}
