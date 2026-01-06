@@ -138,7 +138,7 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 <li>Virtual viewpoint video</li>
 <li>360 video</li>
 <li>Immersive video stabilizer</li>
-<li>Large scale environmental capture (<a href="http://phototour.cs.washington.edu/">Photo Tourism</a>, <a href="https://photosynth.net/">PhotoSynth</a>)</li>
+<li>Large scale environmental capture (<a href="http://phototour.cs.washington.edu/">Photo Tourism</a>, PhotoSynth)</li>
 <li>Reflection and transparency</li>
 </ul>
 <p>He also mentioned the state-of-the-art in 3D reconstruction:</p>
