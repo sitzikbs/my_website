@@ -12,7 +12,7 @@ permalink: "/blog/posts/2021-03-10-3d-point-cloud-classification-using-deep-lear
 
 
 
-<p>Last week I gave a talk in the <a href="https://www.omek3d.org/about-omek">Omek-3D</a> forum. The title of the talk was (the same as the title of this post) “<strong>3D Point Cloud Classification using Deep Learning</strong>“.</p>
+<p>Last week I gave a talk in the Omek-3D forum. The title of the talk was (the same as the title of this post) “<strong>3D Point Cloud Classification using Deep Learning</strong>“.</p>
 <p>Here is a short summary ( that came out a little longer than expected) about what I presented there.</p>
 <p><strong>UPDATE 1</strong> (February 2018): We recently uploaded to arXiv a new paper on <a href="https://arxiv.org/abs/1711.08241" rel="noopener" target="_blank">3D point cloud classification</a>. Check it out, we introduced a new representation which enables using CNNs. Our code will be available after publication. I am also working on additional posts on this subject.</p>
 <p><strong>UPDATE 2</strong> (April 2018): I am starting to actively search for a post-doc position (to start summer 2019). If you know a professor that might be looking for someone that knows his way around deep learning applied to point clouds (preferably with a robotics / CAD/engineering orientation), please<a href="https://www.itzikbs.com/contact"> contact me</a>.</p>

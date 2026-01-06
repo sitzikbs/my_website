@@ -47,9 +47,6 @@ permalink: "/blog/posts/2023-06-14-mobilebrick.html"
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mpQiLEm955s?feature=oembed" title="MobileBrick  (CVPR 2023) with Kejie Li on Talking papers" width="800"></iframe>
 </div></figure>
 <p>Recorded on May 8th 2023.</p>
-<h3 class="wp-block-heading">SPONSOR</h3>
-<p>This episode was sponsored by YOOM. YOOM is an Israeli startup dedicated to volumetric video creation. They were voted as the 2022 best start-up to work for by Dun’s 100.<br/><a href="https://www.yoom.com/careers" rel="noreferrer noopener" target="_blank">Join their team</a> that works on geometric deep learning research, implicit representations of 3D humans, NeRFs, and 3D/4D generative models.</p>
-<p><br/>Visit <a href="https://www.yoom.com/" rel="noreferrer noopener" target="_blank">YOOM.com</a>.</p>
 <h2 class="wp-block-heading"><br/>CONTACT</h2>
 <p>If you would like to be a guest, sponsor or share your thoughts, feel free to reach out via email: talking (dor) papers (dot) podcast(at) gmail (dot) com</p>
 <p></p>
