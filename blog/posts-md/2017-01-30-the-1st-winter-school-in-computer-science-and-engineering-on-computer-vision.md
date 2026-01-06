@@ -12,7 +12,7 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 
 
 
-<p>As the title implies, on 8-13 of January 2017 I attended “<a href="http://ias.huji.ac.il/cse">The 1st Winter School in Computer Science and Engineering on Computer Vision</a>” At the<a href="https://www.google.com/maps/place/The+Institute+for+Advanced+Studies/"> Israel Institute for Advanced Studies</a> in Givat Ram Campus in Jerusalem, Israel.</p>
+<p>As the title implies, on 8-13 of January 2017 I attended “The 1st Winter School in Computer Science and Engineering on Computer Vision” At the<a href="https://www.google.com/maps/place/The+Institute+for+Advanced+Studies/"> Israel Institute for Advanced Studies</a> in Givat Ram Campus in Jerusalem, Israel.</p>
 <p>{% endraw %}
 {% responsiveImage "../../assets/images/blog/IMG_20170108_091832.jpg", "img_20170108_091832" %}
 {% raw %}
@@ -44,7 +44,7 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 </p>
 <p>Best poster of the day (in my opinion) was <a href="http://people.eecs.berkeley.edu/~shiry/">Shiry Ginosar</a> “<a href="https://people.eecs.berkeley.edu/~shiry/projects/yearbooks/yearbooks.html">Century of Portraits: A Visual Historical Record of American High School Yearbooks</a>“. Here is a small teaser: she made an Afro haircut classifier (those who knew me during 2001-2002 know why this is very <a href="/assets/images/blog/ItzikAfro.jpg" target="_blank">sentimental </a>🙂 ).</p>
 <h2><strong>Day 2</strong></h2>
-<p><a href="http://www.cs.huji.ac.il/~yweiss/">Prof. Yair Weiss</a> from The Hebrew University of Jerusalem opened the day with a very interesting talk titled ” Neural Networks, Graphical Models, and Image Restoration”. He presented his work on denoising and the <a href="http://www.cs.tut.fi/~foi/GCF-BM3D/">BM3D</a>. He emphasized that graphical models have the advantage of being interpretable and modular. Looking into the future he said that intelligent system should perform unsupervised learning and incorporate between neural networks and graphical models because we now expect papers that do more than just improve the performance of a single task.</p>
+<p>Prof. Yair Weiss from The Hebrew University of Jerusalem opened the day with a very interesting talk titled ” Neural Networks, Graphical Models, and Image Restoration”. He presented his work on denoising and the <a href="http://www.cs.tut.fi/~foi/GCF-BM3D/">BM3D</a>. He emphasized that graphical models have the advantage of being interpretable and modular. Looking into the future he said that intelligent system should perform unsupervised learning and incorporate between neural networks and graphical models because we now expect papers that do more than just improve the performance of a single task.</p>
 <p>Selected quote: “In 1998, the keywords that were most likely to predict rejection from NIPS were: Neural Networks”</p>
 <p>Prof. <a href="http://www.wisdom.weizmann.ac.il/mathusers/irani/">Michal Irani</a> gave a talk about ” “Blind” visual inference”. She presented several works on the following topics</p>
 <ul>
