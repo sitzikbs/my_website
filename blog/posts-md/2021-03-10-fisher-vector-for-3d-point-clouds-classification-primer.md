@@ -20,7 +20,7 @@ permalink: "/blog/posts/2021-03-10-fisher-vector-for-3d-point-clouds-classificat
 <p>The shortest answer is a feature aggregation method.  For an in-depth answer make sure to read Perronnin’s papers – I personally like <a href="https://link.springer.com/article/10.1007/s11263-013-0636-x" rel="noopener noreferrer" target="_blank">this one</a>.  Intuitively, FV describes points by their deviation from a GMM.</p>
 <p>I will start with some mathematical definitions but will also give a more intuitive example at the bottom.</p>
 <h2 class="wp-block-heading">The Math</h2>
-<p>Remember that the likelihood of every point <img alt="p" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=p&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"> associated with the GMM is given by</img></p>
+<p>Remember that the likelihood of every point <img alt="p" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=p&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"> associated with the GMM is given by</p>
 <img alt="u_\lambda(p) = \sum_{k=1}^{K}w_ku_k(p)" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=u_%5Clambda%28p%29+%3D+%5Csum_%7Bk%3D1%7D%5E%7BK%7Dw_ku_k%28p%29&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/>
 <p>The Fisher Vector may be written as the sum of normalized gradient statistics for each point</p>
 <img alt="FV_\lambda^X = \sum_{t=1}^TL_\lambda\nabla_\lambda\log u_\lambda(p_t)" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=FV_%5Clambda%5EX+%3D+%5Csum_%7Bt%3D1%7D%5ETL_%5Clambda%5Cnabla_%5Clambda%5Clog+u_%5Clambda%28p_t%29&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/>
