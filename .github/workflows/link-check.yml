@@ -74,6 +74,8 @@ jobs:
             --exclude 'coraldrowningdetection\.com'
             --exclude 'talking\.papers\.podcast\.itzikbs\.com'
             --exclude 'jiajunwu\.com'
+            --exclude 'people\.lu\.usi\.ch'
+            --exclude 'cs\.ox\.ac\.uk/people/nando\.defreitas'
             --exclude '^file://'
             --timeout 45
             --max-retries 5
@@ -101,6 +103,8 @@ jobs:
             --include 'coraldrowningdetection\.com'
             --include 'talking\.papers\.podcast\.itzikbs\.com'
             --include 'jiajunwu\.com'
+            --include 'people\.lu\.usi\.ch'
+            --include 'cs\.ox\.ac\.uk/people/nando\.defreitas'
             --timeout 45
             --max-retries 5
             --user-agent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)
