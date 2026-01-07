@@ -73,6 +73,7 @@ jobs:
             --exclude 'webdiis\.unizar\.es'
             --exclude 'coraldrowningdetection\.com'
             --exclude 'talking\.papers\.podcast\.itzikbs\.com'
+            --exclude 'jiajunwu\.com'
             --exclude '^file://'
             --timeout 45
             --max-retries 5
