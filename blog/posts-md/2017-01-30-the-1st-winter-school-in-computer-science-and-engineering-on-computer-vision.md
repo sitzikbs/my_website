@@ -12,7 +12,7 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 
 
 
-<p>As the title implies, on 8-13 of January 2017 I attended “<a href="http://ias.huji.ac.il/cse">The 1st Winter School in Computer Science and Engineering on Computer Vision</a>” At the<a href="https://www.google.com/maps/place/The+Institute+for+Advanced+Studies/"> Israel Institute for Advanced Studies</a> in Givat Ram Campus in Jerusalem, Israel.</p>
+<p>As the title implies, on 8-13 of January 2017 I attended “The 1st Winter School in Computer Science and Engineering on Computer Vision” At the<a href="https://www.google.com/maps/place/The+Institute+for+Advanced+Studies/"> Israel Institute for Advanced Studies</a> in Givat Ram Campus in Jerusalem, Israel.</p>
 <p>{% endraw %}
 {% responsiveImage "../../assets/images/blog/IMG_20170108_091832.jpg", "img_20170108_091832" %}
 {% raw %}
@@ -44,7 +44,7 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 </p>
 <p>Best poster of the day (in my opinion) was <a href="http://people.eecs.berkeley.edu/~shiry/">Shiry Ginosar</a> “<a href="https://people.eecs.berkeley.edu/~shiry/projects/yearbooks/yearbooks.html">Century of Portraits: A Visual Historical Record of American High School Yearbooks</a>“. Here is a small teaser: she made an Afro haircut classifier (those who knew me during 2001-2002 know why this is very <a href="/assets/images/blog/ItzikAfro.jpg" target="_blank">sentimental </a>🙂 ).</p>
 <h2><strong>Day 2</strong></h2>
-<p><a href="http://www.cs.huji.ac.il/~yweiss/">Prof. Yair Weiss</a> from The Hebrew University of Jerusalem opened the day with a very interesting talk titled ” Neural Networks, Graphical Models, and Image Restoration”. He presented his work on denoising and the <a href="http://www.cs.tut.fi/~foi/GCF-BM3D/">BM3D</a>. He emphasized that graphical models have the advantage of being interpretable and modular. Looking into the future he said that intelligent system should perform unsupervised learning and incorporate between neural networks and graphical models because we now expect papers that do more than just improve the performance of a single task.</p>
+<p>Prof. Yair Weiss from The Hebrew University of Jerusalem opened the day with a very interesting talk titled ” Neural Networks, Graphical Models, and Image Restoration”. He presented his work on denoising and the <a href="http://www.cs.tut.fi/~foi/GCF-BM3D/">BM3D</a>. He emphasized that graphical models have the advantage of being interpretable and modular. Looking into the future he said that intelligent system should perform unsupervised learning and incorporate between neural networks and graphical models because we now expect papers that do more than just improve the performance of a single task.</p>
 <p>Selected quote: “In 1998, the keywords that were most likely to predict rejection from NIPS were: Neural Networks”</p>
 <p>Prof. <a href="http://www.wisdom.weizmann.ac.il/mathusers/irani/">Michal Irani</a> gave a talk about ” “Blind” visual inference”. She presented several works on the following topics</p>
 <ul>
@@ -80,7 +80,7 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 <p>Next, <a href="http://thoth.inrialpes.fr/~schmid/">Cordelia Schmidt</a> from INRIA Grenoble gave a talk about “Action Recognition and automatic video understanding”. she explained that the main difficulties are in large variations in appearance, manual collection of training data and that action vocabulary is not well defined. She then presented work on the subject.</p>
 <p>After lunch, <a href="http://thoth.inrialpes.fr/~schmid/">Cordelia Schmidt</a>, <a href="http://cs.nyu.edu/~fergus/pmwiki/pmwiki.php">Rob Fergus</a> and <a href="https://people.eecs.berkeley.edu/~efros/">Alexei (Alyosha) Efros</a> held a panel about “Deep Learning in Computer Vision” in which Alyosha emphasized the importance of data and Rob presented a predictive model of a simple world “Physnet” to predict falling cubes. During the Q&amp;A  portion of the panel, Yair Weiss said (when asked about the future of deep learning) ” Neural nets would be like matrix multiplication – a tool like many tools”</p>
 <p>Selected quotes (by Alyosha): “The Revolution will not be Supervised”, “ConvNets is a particular useful black box”.</p>
-<p>Best poster of the day (in my opinion) was by <a href="https://scholar.google.co.il/citations?user=XqHYn7EAAAAJ&amp;hl=en">Tal Remez</a> titled “Deep Class Aware Denoising” where he used convolutional networks to denoise images according to their class – very simple with some interpretation of what the layers are doing. A close second best was <a href="http://www.cs.technion.ac.il/~royorel/">Roy Or-El</a> with a poster titled “Learning Detailed Face Reconstruction from a Single Image”.</p>
+<p>Best poster of the day (in my opinion) was by <a href="https://scholar.google.co.il/citations?user=XqHYn7EAAAAJ&amp;hl=en">Tal Remez</a> titled “Deep Class Aware Denoising” where he used convolutional networks to denoise images according to their class – very simple with some interpretation of what the layers are doing. A close second best was Roy Or-El with a poster titled “Learning Detailed Face Reconstruction from a Single Image”.</p>
 <h2><strong>Day 4</strong></h2>
 <p>The day started with a MIND BLOWING (!!!) talk by Prof. <a href="http://www.cs.columbia.edu/~nayar/">Shree K. Nayar</a> titled “Computational imaging”. He said that there is a paradigm shift from traditional imaging to computational imaging which uses optics that encode additional useful information with new functionality and reduced complexity. During the talk, Shree answered the following questions (the answers to all of the questions is yes and a link to each his paper\ product in brackets)</p>
 <ul>
@@ -117,7 +117,7 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 
 </p>
 <p> </p>
-<p>After the tour, we went to visit Intel in the Perceptual computing group. They presented fun demos of applications that use their <a href="http://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html">RealSense </a>RGBD camera. The demos included<a href="https://zenbo.asus.com/"> Asus zenbo</a>, <a href="https://newsroom.intel.com/chip-shots/intel-unveils-project-alloy/">Project alloy</a> (which I didn’t get to try because the line was sooooo long, I can only guess how awesome it was) and a fun balloon popping game using <a href="https://www3.oculus.com/en-us/rift/">oculus Rift</a>. Here is a picture of me trying to pop some balloons:</p>
+<p>After the tour, we went to visit Intel in the Perceptual computing group. They presented fun demos of applications that use their <a href="http://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html">RealSense </a>RGBD camera. The demos included<a href="https://zenbo.asus.com/"> Asus zenbo</a>, Project Alloy (which I didn’t get to try because the line was sooooo long, I can only guess how awesome it was) and a fun balloon popping game using <a href="https://www3.oculus.com/en-us/rift/">oculus Rift</a>. Here is a picture of me trying to pop some balloons:</p>
 <p>{% endraw %}
 {% responsiveImage "../../assets/images/blog/OculusRiftRealSenseDemo.jpg", "Intel Oculus Rift Realsense Demo" %}
 {% raw %}
@@ -138,7 +138,7 @@ permalink: "/blog/posts/2017-01-30-the-1st-winter-school-in-computer-science-and
 <li>Virtual viewpoint video</li>
 <li>360 video</li>
 <li>Immersive video stabilizer</li>
-<li>Large scale environmental capture (<a href="http://phototour.cs.washington.edu/">Photo Tourism</a>, <a href="https://photosynth.net/">PhotoSynth</a>)</li>
+<li>Large scale environmental capture (<a href="http://phototour.cs.washington.edu/">Photo Tourism</a>, PhotoSynth)</li>
 <li>Reflection and transparency</li>
 </ul>
 <p>He also mentioned the state-of-the-art in 3D reconstruction:</p>

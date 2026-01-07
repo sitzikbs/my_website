@@ -136,7 +136,7 @@ permalink: "/blog/posts/2018-09-08-write-paper-using-latex.html"
 <p>Make sure that you have the following line in the preamble</p>
 <pre>\newcolumntype{M}[1]{&gt;{\centering\arraybackslash}m{#1}}</pre>
 <p>I won’t go into detail here. I refer the interested reader<a href="https://en.wikibooks.org/wiki/LaTeX/Tables" rel="noopener"> to this page</a>.</p>
-<p>If you find yourself lost, you can try this <a href="https://www.tablesgenerator.com/" rel="noopener">online LaTeX table generator</a>.</p>
+<p>If you find yourself lost, you can try this online LaTeX table generator.</p>
 <h2>Math</h2>
 <p>You will mostly insert math into the text using equations but sometimes you will want to insert math inline into the text.</p>
 <p>For inline text, simply use the $ sign to open and close the math you wish to write, like this:</p>

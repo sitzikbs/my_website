@@ -34,7 +34,7 @@ permalink: "/blog/posts/2023-05-17-iaw_dataset.html"
 <p>📚<a href="https://arxiv.org/abs/1812.03982" rel="noreferrer noopener" target="_blank">SlowFast </a></p>
 <h2 class="wp-block-heading">LINKS AND RESOURCES</h2>
 <p>📚 <a href="https://arxiv.org/pdf/2303.13800.pdf" rel="noreferrer noopener" target="_blank">Paper</a></p>
-<p>💻<a href="https://academic.davidz.cn/en/publication/zhang-cvpr-2023/" rel="noreferrer noopener" target="_blank">Project page</a></p>
+<p>💻<a href="https://iaw.davidz.cn/" rel="noreferrer noopener" target="_blank">Project page</a></p>
 <p>💻<a href="https://iaw.davidz.cn/" rel="noreferrer noopener" target="_blank">Dataset page</a></p>
 <p>💻<a href="https://github.com/DavidZhang73/AssemblyVideoManualAlignment">Code</a></p>
 <p>To stay up to date with Jiahao’s latest research, follow him on:</p>

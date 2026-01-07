@@ -50,7 +50,7 @@ permalink: "/blog/posts/2021-03-10-fisher-vector-for-3d-point-clouds-classificat
 <p>Finally, we can see what happens when we move the point all around.</p>
 <div class="wp-block-image"><figure class="aligncenter"><img alt="Point fisher vector animation" class="wp-image-800" height="352" loading="lazy" src="../../assets/images/blog/fv_smaller-compressor.gif" width="496"/></figure></div>
 <h2 class="wp-block-heading">The Code</h2>
-<p>A great implementation of fisher vectors is available in <a href="https://gist.github.cnsom/danoneata/9927923" rel="noopener noreferrer" target="_blank">this link </a></p>
+<p>A great implementation of fisher vectors is available in <a href="https://gist.github.com/danoneata/9927923" rel="noopener noreferrer" target="_blank">this link </a></p>
 <p>In order to recreate the images above you can use my repository for this <a href="https://github.com/sitzikbs/3DmFV-Tutorial" rel="noopener noreferrer" target="_blank">FV tutorial on my GitHub</a>.</p>
 <p>Make sure to check out the next post in this series about our 3D modified Fisher Vectors (3DmFV) for point cloud classification.</p>
  
