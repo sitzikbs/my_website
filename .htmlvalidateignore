@@ -1,0 +1,38 @@
+# HTML Validation Exclusions
+#
+# Files listed here are excluded from HTML validation.
+# These files have known issues that should be fixed, but are temporarily excluded
+# to allow the validation workflow to be introduced without blocking development.
+#
+# TODO: Fix these files and remove them from this exclusion list
+
+# Blog posts with embedded HTML issues
+_site/blog/posts/2024-11-15-example-blog-post.html
+
+# Files with deprecated attributes (YouTube embeds)
+# TODO: Update iframe embeds to remove frameborder attribute
+_site/blog/posts/2022-09-09-fve.html
+_site/blog/posts/2022-09-14-samplenet.html
+_site/blog/posts/2022-09-19-convpoint.html
+_site/blog/posts/2022-09-20-deepfit.html
+_site/blog/posts/2022-09-21-pointcleannet.html
+_site/blog/posts/2022-09-22-nesti_net.html
+_site/blog/posts/2022-09-26-pconv.html
+_site/blog/posts/2022-10-07-convolutional_occupancy_networks.html
+_site/blog/posts/2022-10-14-dip.html
+_site/blog/posts/2022-10-30-3d-frontnet.html
+_site/blog/posts/2022-11-21-dpf_net.html
+_site/blog/posts/2022-11-30-divnoising.html
+_site/blog/posts/2023-03-29-inr2vec.html
+_site/blog/posts/2023-06-14-mobilebrick.html
+_site/blog/posts/2023-07-19-cvpr-2023.html
+_site/blog/posts/2023-08-10-magicpony.html
+_site/blog/posts/2023-11-01-hmdnemo.html
+_site/blog/posts/2023-11-09-csg_on_nsdf.html
+_site/blog/posts/2023-11-22-revenge_ssl.html
+_site/blog/posts/2024-01-10-wacv2024.html
+_site/blog/posts/2024-02-16-instant3d.html
+_site/blog/posts/2024-03-14-cameras-as-rays.html
+_site/blog/posts/2024-06-03-3dinaction.html
+_site/blog/posts/2024-07-12-3dpaintbrush.html
+_site/blog/posts/2025-02-17-phd-guide-advisor-hunt.html

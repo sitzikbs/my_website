@@ -1,0 +1,111 @@
+name: HTML Validation
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  html-validate:
+    name: Validate HTML & Accessibility
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+      
+      - name: Build site with Eleventy
+        run: npm run build
+      
+      - name: Validate HTML syntax
+        id: html-validate
+        run: |
+          echo "Running HTML validation..."
+          npx html-validate "_site/**/*.html"
+        continue-on-error: true
+      
+      - name: Check accessibility with pa11y
+        id: accessibility-check
+        run: |
+          # Start local server in background
+          npm run serve &
+          SERVER_PID=$!
+          
+          # Wait for server to start
+          echo "Waiting for server to start..."
+          sleep 5
+          
+          # Check if server is running
+          if ! curl -f http://localhost:8000 > /dev/null 2>&1; then
+            echo "Error: Server failed to start"
+            kill $SERVER_PID 2>/dev/null || true
+            exit 1
+          fi
+          
+          # Run accessibility checks on main pages
+          # Threshold of 5 allows minor issues while catching critical accessibility problems
+          echo "Running accessibility checks with pa11y..."
+          FAILED=0
+          
+          for page in index.html about.html publications.html blog.html contact.html; do
+            echo "Checking http://localhost:8000/$page"
+            if npx pa11y http://localhost:8000/$page --threshold 5 --runner axe 2>&1; then
+              echo "✅ $page passed"
+            else
+              echo "⚠️  $page has accessibility issues"
+              FAILED=$((FAILED + 1))
+            fi
+          done
+          
+          # Stop server
+          kill $SERVER_PID 2>/dev/null || true
+          
+          if [ $FAILED -eq 0 ]; then
+            echo "✅ All accessibility checks passed!"
+            exit 0
+          else
+            echo "⚠️  $FAILED page(s) have accessibility issues"
+            exit 1
+          fi
+        continue-on-error: true
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "=========================================="
+          echo "HTML Validation & Accessibility Summary"
+          echo "=========================================="
+          echo ""
+          echo "✨ This workflow validates HTML syntax and accessibility standards."
+          echo ""
+          echo "📝 Issues found should be addressed to improve:"
+          echo "   - Site quality and standards compliance"
+          echo "   - Accessibility for all users"
+          echo "   - Cross-browser compatibility"
+          echo ""
+          echo "🔧 For local testing:"
+          echo "   npm run build"
+          echo "   npm run validate:html"
+          echo ""
+          echo "⚙️  Configuration:"
+          echo "   - HTML validation rules: .htmlvalidate.json"
+          echo "   - Exclusions: .htmlvalidateignore"
+          echo "   - Based on WCAG 2.1 AA standards"
+          echo ""
+          echo "Note: This workflow currently reports issues but does not fail the build."
+          echo "This allows gradual improvement while maintaining visibility of issues."
+          echo ""

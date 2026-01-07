@@ -15,6 +15,9 @@
     "serve": "python3 -m http.server 8000 --directory _site",
     "test:performance": "npx lighthouse http://localhost:8000/index.html --output=html --output-path=./reports/index-performance.html",
     "test:accessibility": "npx axe http://localhost:8000/index.html",
+    "validate:html": "npx html-validate \"_site/**/*.html\"",
+    "validate:accessibility": "echo 'Note: This requires a local server running on port 8000. Run npm run serve first.' && npx pa11y-ci --sitemap http://localhost:8000/sitemap.xml",
+    "validate": "npm run validate:html",
     "prebuild": "echo '🔨 Starting build process...'",
     "postbuild": "echo '✅ Build complete!'"
   },
@@ -36,8 +39,10 @@
     "@11ty/eleventy-img": "^5.0.0",
     "@axe-core/cli": "^4.11.0",
     "csso-cli": "^4.0.2",
+    "html-validate": "^8.29.0",
     "lighthouse": "^12.8.2",
     "pa11y": "^9.0.1",
+    "pa11y-ci": "^3.1.0",
     "terser": "^5.44.1"
   }
 }
