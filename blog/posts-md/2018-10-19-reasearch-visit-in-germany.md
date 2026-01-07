@@ -88,13 +88,13 @@ permalink: "/blog/posts/2018-10-19-reasearch-visit-in-germany.html"
 <li><a href="https://en.wikipedia.org/wiki/Sukkot" rel="noopener" target="_blank">Sukkot</a> – Feast of Tabernacles (lets build a hut outside holiday 🙂 )</li>
 </ul>
 <p>I  was lucky to have some Israeli friends around for Rosh Hashanah to have some traditional apple with honey with me (and beer).</p>
-<div align="center">{% endraw %}
+<div style="text-align: center;">{% endraw %}
 {% responsiveImage "../../assets/images/blog/IMG-20180909-WA0012.jpg", "" %}
 {% responsiveImage "../../assets/images/blog/IMG-20180909-WA0014.jpg", "" %}
 </div>
 <h2>Oktoberfest</h2>
 <p>During my stay I took only one full day off, it was the Sunday I visited the Oktoberfest (which had the opening ceremony the day before). It was the perfect time to meet my old friend<a href="https://www.linkedin.com/in/dan-weimer/" rel="noopener" target="_blank"> Daniel Weimer, </a>and his better half Beate. Daniel is now Head of Artificial Intelligence at Volkswagen Group in the Americas region. He recently moved to the US and happened to come to Munich for some final arrangements. Daniel spent 8 months at our lab 3 years ago. He is actually the guy who introduced the field of deep learning to me (more precisely, he introduced its amazing strengths and results on images).  After a few beers, we realized the butterfly effect some people have on your life. Daniel is one of those butterfly people for me. Thank you, my friend, hope we meet again soon.</p>
-<div align="center">{% responsiveImage "../../assets/images/blog/IMG_20180923_171414.jpg", "" %}
+<div style="text-align: center;">{% responsiveImage "../../assets/images/blog/IMG_20180923_171414.jpg", "" %}
 {% responsiveImage "../../assets/images/blog/IMG_20180923_203528.jpg", "" %}
 </div>
 <h2>Research</h2>

@@ -15,7 +15,7 @@ permalink: "/blog/posts/2019-05-02-israel-machine-vision-conference-imvc-2019.ht
 <p>This was my first visit to IMVC which just celebrated 10 years of activity.  I found it to be a very interesting combination of academia and industry work which provides a great platform for disseminating knowledge and fostering future collaborations. Personally, I presented a poster on our recent point cloud classification method.</p>
 <p>I would like to thank the committee, IMVC organizers and Nexar for the <strong>graduate student award</strong>.</p>
 <p>The full program and list of speakers can be found on the event website and I will shortly summarize here some of the sessions I attended. Here is also a link to all the videos and presentations.</p>
-<p align="center">{% endraw %}
+<p style="text-align: center;">{% endraw %}
 {% responsiveImage "../../assets/images/blog/imvc2019_Entrance.jpg", "" %}
 {% responsiveImage "../../assets/images/blog/IMVC2019_Name_tag.jpg", "" %}
 {% raw %}
