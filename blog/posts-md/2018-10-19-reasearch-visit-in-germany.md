@@ -12,12 +12,9 @@ permalink: "/blog/posts/2018-10-19-reasearch-visit-in-germany.html"
 
 
 
-<h2>{% endraw %}
+{% endraw %}
 {% responsiveImage "../../assets/images/blog/2018-10-img.jpg", "" %}
 {% raw %}
-
-
-</h2>
 <p> </p>
 <p>When I started writing this post I thought it would be a chronologically ordered technical documentation of my research visit. Eventually, I found it much more coherent when divided into major events and it came out much less technical than I immagined.</p>
 <h2>How it all came to be?</h2>
@@ -64,8 +61,6 @@ permalink: "/blog/posts/2018-10-19-reasearch-visit-in-germany.html"
 
 
 </p>
-<h2></h2>
-<p> </p>
 <h2>ECCV 2018</h2>
 <p>ECCV 2018 was conveniently located in Munich during my stay. I could not lose a full week of work but I was able to attend some very interesting talks and workshops.</p>
 <p>The first one was on <a href="https://eccv18-vlease.github.io/" rel="noopener" target="_blank">Visual Learning and Embodied Agents in Simulation Environments</a>, where the speakers discussed the pros, cons, and challenges of using simulated data vs real date. My takeaway from this talk was that ultimately it will probably be a mix of both. My favorite talk was <a href="http://www.cs.cmu.edu/~abhinavg/" rel="noopener" target="_blank">Abhinav Gupta</a> which presented how they <a href="https://arxiv.org/pdf/1704.05588.pdf" rel="noopener" target="_blank">trained a quadcopter to avoid walls</a> by, well…. letting him crash against the wall and penalizing whenever that happened. In addition, he talked about how they <a href="https://arxiv.org/pdf/1807.07049.pdf" rel="noopener" target="_blank">collect real-world environments by placing their low-cost robot</a> in cheap Airbnb apartments in Pitsburg (nice to know that it is only 70$ a night :)).</p>
