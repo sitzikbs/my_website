@@ -41,7 +41,7 @@ permalink: "/blog/posts/2022-07-18-neural-rgb-d-surface-reconstruction.html"
 <p></p>
 <p></p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Brd-8Sdtqrs?feature=oembed" title="Neural RGB-D Surface Reconstruction (CVPR2022) - Dejan Azinović on Talking Papers" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Brd-8Sdtqrs?feature=oembed" title="Neural RGB-D Surface Reconstruction (CVPR2022) - Dejan Azinović on Talking Papers" width="800"></iframe>
 </div></figure>
 <p>Recorded on April 4th 2022.</p>
 <h2 class="wp-block-heading"><br/>CONTACT</h2>

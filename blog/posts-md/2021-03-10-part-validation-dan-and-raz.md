@@ -69,7 +69,7 @@ permalink: "/blog/posts/2021-03-10-part-validation-dan-and-raz.html"
 <p> </p>
 <p>Remember how a picture is worth a thousand words? So how many words is a demo?</p>
 <p><strong>Demo: </strong> The video below shows each of the stages of the solution (prototype)</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bA0NUccz3BM?start=11&amp;feature=oembed" title="Part Validation for Demonstration" width="800"></iframe></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bA0NUccz3BM?start=11&amp;feature=oembed" title="Part Validation for Demonstration" width="800"></iframe></p>
 <p> </p>
 <p>Disclaimer: I must say that Dan and Raz built a great prototype but, as in any other system, there are some drawbacks. We all agreed that the overall accuracy of the system can be improved. Each of the steps contributes to inaccuracy, starting from the Kinect itself which has a limited depth resolution and ending with the registration that may be inaccurate (especially in scenarios of high deformation).  In addition, when projecting the error map on the part some manual alignment is performed. All of these issues are solvable but when squeezed into an undergraduate project we just didn’t get to them ( future work anyone?).</p>
 <p> </p>

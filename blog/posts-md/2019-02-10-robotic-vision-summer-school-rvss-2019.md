@@ -64,7 +64,7 @@ In the evening we chilled by the fire. One of the special things about Australia
 
 </p>
 <p>After that little show, the robot steering competition began.  The best robots were definitely the ones with the most creative solutions. First place included reducing the latency by hacking the robot image capturing setup, and second place an 11 class classification method. Out robot was ranked somewhere in the middle.</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0D_0ulzdu-M?feature=oembed" title="RVSS 2019 - steerNet performance" width="800"></iframe></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0D_0ulzdu-M?feature=oembed" title="RVSS 2019 - steerNet performance" width="800"></iframe></p>
 <p>The day ended with a talk by Qi Wu on reinforcement learning in vision and language.</p>
 <p>Then, we all got on the bus and drove back to Canberra.</p>
 <p>Quote of the day: “Don’t worry if you didn’t understand everything that was presented, networking is also a very important part of your professional life”, Peter Corke.</p>

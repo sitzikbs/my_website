@@ -45,7 +45,7 @@ permalink: "/blog/posts/2022-12-14-random-walks-for-adversarial-meshes.html"
 <p></p>
 <p></p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/pzWFE6F-4bI?feature=oembed" title="Random Walks for Adversarial Meshes (SIGGRAPH 2022) with Amir Belder on Talking papers" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/pzWFE6F-4bI?feature=oembed" title="Random Walks for Adversarial Meshes (SIGGRAPH 2022) with Amir Belder on Talking papers" width="800"></iframe>
 </div></figure>
 <p>Recorded on November 23rd 2022.</p>
 <h2 class="wp-block-heading"><br/>CONTACT</h2>

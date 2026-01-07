@@ -34,7 +34,7 @@ permalink: "/blog/posts/2022-02-11-neural-parts-learning-expressive-3d-shape-abs
 <p>📚 <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Paschalidou_Neural_Parts_Learning_Expressive_3D_Shape_Abstractions_With_Invertible_Neural_CVPR_2021_paper.html" rel="noreferrer noopener" target="_blank">Paper Link</a>: “Neural Parts: Learning Expressive 3D Shape Abstractions with Invertible Neural Networks”</p>
 <p><a href="https://www.youtube.com/watch?v=6WK3B0IZJsw&amp;ab_channel=AndreasGeiger" rel="noreferrer noopener" target="_blank">🎥</a> <a href="https://www.youtube.com/watch?v=6WK3B0IZJsw&amp;ab_channel=AndreasGeiger" rel="noreferrer noopener" target="_blank">Paper video</a></p>
 <figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/XEeGIHaXsik?feature=oembed" title="Talking Papers Podcast with  Despoina Paschalidou - Neural Parts" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/XEeGIHaXsik?feature=oembed" title="Talking Papers Podcast with  Despoina Paschalidou - Neural Parts" width="800"></iframe>
 </div></figure>
 <p></p>
 <p>This episode was recorded on April, 25th 2021.</p>

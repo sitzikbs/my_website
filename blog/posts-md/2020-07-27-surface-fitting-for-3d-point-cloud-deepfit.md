@@ -33,7 +33,7 @@ permalink: "/blog/posts/2020-07-27-surface-fitting-for-3d-point-cloud-deepfit.ht
 <pre class="wp-block-code"><code></code></pre>
 <h3 class="wp-block-heading">Video</h3>
 <figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/jwZDU6hVUzA?start=9&amp;feature=oembed" title="DeepFit : 3D Surface Fitting via Neural Network Weighted Least Squares (ECCV 2020 Oral) - 2 minutes" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/jwZDU6hVUzA?start=9&amp;feature=oembed" title="DeepFit : 3D Surface Fitting via Neural Network Weighted Least Squares (ECCV 2020 Oral) - 2 minutes" width="800"></iframe>
 {% endraw %}
 </div></figure>
 <p></p>

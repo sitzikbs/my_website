@@ -36,7 +36,7 @@ author={Ben-Shabat, Yizhak and Lindenbaum, Michael and Fischer, Anath},   bookti
 pages={},   
 year={2019} }</code></pre>
 <h3 class="wp-block-heading"><strong>Summary video</strong></h3>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/E7PudeA4XvM?feature=oembed" title="Nesti-Net: Normal Estimation for Unstructured 3D Point Clouds using Convolutional Neural Networks" width="800"></iframe></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/E7PudeA4XvM?feature=oembed" title="Nesti-Net: Normal Estimation for Unstructured 3D Point Clouds using Convolutional Neural Networks" width="800"></iframe></p>
 <p>Additional tutorials: </p>
 <p><a aria-label="How to visualize normal vectors on 3D point clouds ? (opens in a new tab)" href="https://www.itzikbs.com/how-to-visualize-normal-vectors-on-3d-point-clouds" rel="noreferrer noopener" target="_blank">How to visualize normal vectors on 3D point clouds ?</a></p>
  

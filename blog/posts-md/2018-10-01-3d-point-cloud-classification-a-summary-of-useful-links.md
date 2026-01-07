@@ -25,7 +25,7 @@ permalink: "/blog/posts/2018-10-01-3d-point-cloud-classification-a-summary-of-us
 <li><a href="https://github.com/sitzikbs/3DmFV-Net" rel="noopener" target="_blank">Code for 3DmFV-Net</a></li>
 </ol>
 <p>Video:</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/jLNxXNChwdk?start=180&amp;feature=oembed" title="3DmFV: 3D Point Cloud Classification in Real-Time using Convolutional Neural Networks" width="800"></iframe></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/jLNxXNChwdk?start=180&amp;feature=oembed" title="3DmFV: 3D Point Cloud Classification in Real-Time using Convolutional Neural Networks" width="800"></iframe></p>
 <p>I hope you find the information brought here useful. Don’t forget to cite my paper 🙂</p>
  
 

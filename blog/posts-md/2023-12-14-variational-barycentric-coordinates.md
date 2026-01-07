@@ -33,7 +33,7 @@ permalink: "/blog/posts/2023-12-14-variational-barycentric-coordinates.html"
 <p>🐦<a href="https://twitter.com/ana_dodik" rel="noreferrer noopener" target="_blank">Twitter</a></p>
 <p>👨🏻‍🎓<a href="https://www.linkedin.com/in/ana-dodik-246bb0150/" rel="noreferrer noopener" target="_blank">LinkedIn</a></p>
 <figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/F4naJWRtOsw?feature=oembed" title="Variational  barycentric coordinates (SIGGRAPH Asia, 2023) with Ana Dodik on Talking Papers Podcast" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/F4naJWRtOsw?feature=oembed" title="Variational  barycentric coordinates (SIGGRAPH Asia, 2023) with Ana Dodik on Talking Papers Podcast" width="800"></iframe>
 </div></figure>
 <p>This episode was recorded on November 20th 2023</p>
 <h2 class="wp-block-heading">CONTACT</h2>

@@ -38,7 +38,7 @@ permalink: "/blog/posts/2022-07-18-shape-as-points-a-differentiable-poisson-solv
 <p>👨🏻‍🎓<a href="https://www.linkedin.com/in/songyou-peng-53717648/" rel="noreferrer noopener" target="_blank">LinkedIn</a></p>
 <p></p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1bZaKno2FFg?feature=oembed" title="Talking Papers Podcast with Songyou Peng - Shape as points" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1bZaKno2FFg?feature=oembed" title="Talking Papers Podcast with Songyou Peng - Shape as points" width="800"></iframe>
 </div></figure>
 <h2 class="wp-block-heading"><br/>CONTACT</h2>
 <p>If you would like to be a guest, sponsor or just share your thoughts, feel free to reach out via email: <a class="__cf_email__" data-cfemail="f286939e999b9c95dc829382978081dc829d9691938186b2959f939b9edc919d9f" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
