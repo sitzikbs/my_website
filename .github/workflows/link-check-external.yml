@@ -41,11 +41,10 @@ jobs:
         uses: lycheeverse/lychee-action@v1.10.0
         with:
           # Check external links only, excluding known problematic domains
+          # Uses include-local flag to exclude relative/local links
           args: >-
             --config lychee.toml
             --exclude 'itzikbs\.com'
-            --exclude '^/'
-            --exclude '^\.'
             --exclude 'tensorflow\.org'
             --exclude 'mathworks\.com'
             --exclude 'udacity\.com'
@@ -57,6 +56,8 @@ jobs:
             --exclude 'services\.anu\.edu\.au'
             --exclude 'dmi\.usherb\.ca'
             --exclude-path '_site/blog/posts/assets'
+            --exclude-file
+            --exclude-localhost
             '_site/**/*.html'
           fail: true  # Fail if external links are broken
         env:
