@@ -41,22 +41,14 @@ In the evening we chilled by the fire. One of the special things about Australia
 <h4><strong>Day 3</strong>:</h4>
 <p>The first talk of the day was a “deep dive”  by<a href="https://scholar.google.com.au/citations?user=scoMbR8AAAAJ&amp;hl=en&amp;oi=ao"> Prof. Jose Neira</a> who presented his and others’  work on Simultaneous Localization and Mapping (SLAM) including ORB-SLAM and Dyna-SLAM. Next, <a href="https://scholar.google.com.au/citations?user=0zujL5MAAAAJ&amp;hl=en&amp;oi=ao">Ben Harwood</a> gave a technical talk about accelerating visual systems using the nearest neighbor search where we learned that there are no free lunches. Next, Silver Bonnabel gave a technical talk about invariant Kalman filtering for visual SLAM.  After that we grabbed a packed lunch and went on a bush walk, it was a bit challenging but definitely worth it.</p>
 <p> </p>
-<<<<<<< HEAD
 <div style="text-align: center;"><br/>
-=======
-<p><div style="text-align: center;"><br/>
->>>>>>> f2dadae59a9d2003d7bc928ac93debd5a5b49ab9
 {% endraw %}
 {% responsiveImage "../../assets/images/blog/pretty-beach.jpg", "Pretty beach" %}
 {% responsiveImage "../../assets/images/blog/drive_to_pretty_beach.jpg", "Drive to mount Durras" %}
 {% raw %}
 
 
-<<<<<<< HEAD
 </div>
-=======
-</div> </p>
->>>>>>> f2dadae59a9d2003d7bc928ac93debd5a5b49ab9
 <p>On the walk, I got to talk to <a href="https://scholar.google.com.au/citations?user=mzZy2NMAAAAJ&amp;hl=en">Juxi Leitner</a> who, up until recently I only knew from his <a href="https://twitter.com/Juxi">twitter account.</a> After we got back and had a nice dinner, I had my first real conversation with my future supervisor <a href="http://users.cecs.anu.edu.au/~sgould/" rel="noopener" target="_blank">Stephen Gould</a>. We started off with research topics and then continued to invaluable info and advice for moving to Canberra with my family and accelerating my academic career. I can’t wait to start working with him.</p>
 <p>Quote of the day: “Everything should be as simple as possible but not simpler”, Albert Einstein (as part of Jose’s talk, Albi wasn’t really there… )</p>
 <h4><strong>Day 4</strong>:</h4>
