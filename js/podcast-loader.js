@@ -38,7 +38,7 @@ function renderPodcastEpisodes(episodes) {
             ${episode.image ? `<img src="${episode.image}" alt="${episode.title}" class="blog-card-image">` : ''}
             <div class="blog-card-content">
                 <span class="blog-category"><i class="fas fa-microphone"></i> Podcast</span>
-                <h3>${episode.title}</h3>
+                <h2>${episode.title}</h2>
                 <p class="blog-date">${episode.date}</p>
                 <p class="blog-excerpt">${episode.excerpt || ''}</p>
                 <span class="read-more">Listen →</span>
