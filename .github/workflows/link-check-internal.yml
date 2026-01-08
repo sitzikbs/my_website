@@ -40,15 +40,36 @@ jobs:
         uses: lycheeverse/lychee-action@v1.10.0
         with:
           # Check internal links only (relative paths and same-domain links)
-          # Strategy: Exclude all external HTTP/HTTPS URLs except our domain
-          # This will check relative paths and itzikbs.com links only
+          # Strategy: Exclude common external domains explicitly
+          # Most excludes are in lychee.toml, but we add more here for blog content
           args: >-
             --verbose
             --no-progress
             --config lychee.toml
             --exclude-path '_site/blog/posts/assets'
             --exclude-all-private
-            --exclude 'https?://(?!itzikbs\.com)'
+            --exclude 'github\.com'
+            --exclude 'arxiv\.org'
+            --exclude 'openaccess\.thecvf\.com'
+            --exclude 'papers\.nips\.cc'
+            --exclude 'proceedings\.mlr\.press'
+            --exclude 'ieeexplore\.ieee\.org'
+            --exclude 'dl\.acm\.org'
+            --exclude 'springer\.com'
+            --exclude 'nature\.com'
+            --exclude 'science\.org'
+            --exclude 'mit\.edu'
+            --exclude 'stanford\.edu'
+            --exclude 'berkeley\.edu'
+            --exclude 'cmu\.edu'
+            --exclude 'ox\.ac\.uk'
+            --exclude '\.edu/'
+            --exclude 'youtube\.com'
+            --exclude 'youtu\.be'
+            --exclude 'medium\.com'
+            --exclude 'towardsdatascience\.com'
+            --exclude 'wikipedia\.org'
+            --exclude 'doi\.org'
             --base https://itzikbs.com
             '_site/**/*.html'
           fail: true  # Fail the PR if broken internal links are found
