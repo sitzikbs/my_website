@@ -39,12 +39,16 @@ jobs:
         uses: lycheeverse/lychee-action@v1.10.0
         with:
           # Check internal links only (relative paths and same-domain links)
-          # Strategy: Check all links but exclude external domains
-          # This catches: /path/to/page.html, ../relative/path.html, https://itzikbs.com/page.html
+          # Strategy: Use --scheme to check only http/https, exclude all external domains
           args: >-
             --config lychee.toml
             --exclude-path '_site/blog/posts/assets'
-            --exclude 'https?://(?!itzikbs\.com).*'
+            --scheme http
+            --scheme https
+            --exclude-all-private
+            --include 'itzikbs\.com'
+            --exclude 'github\.com'
+            --exclude 'arxiv\.org'
             --base https://itzikbs.com
             '_site/**/*.html'
           fail: true  # Fail the PR if broken internal links are found

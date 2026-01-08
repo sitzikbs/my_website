@@ -134,4 +134,3 @@ Potential enhancements for the future:
 ## References
 - [Lychee Documentation](https://lychee.cli.rs/)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- Original issue: #[issue_number]
