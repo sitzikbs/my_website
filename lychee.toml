@@ -1,0 +1,71 @@
+# Lychee Link Checker Configuration
+# This file centralizes common settings for link checking workflows
+# Documentation: https://lychee.cli.rs/
+
+# Accept these HTTP status codes as valid
+accept = [200, 204, 206, 301, 302, 307, 308, 403, 429, 503]
+
+# Request timeout in seconds
+timeout = 45
+
+# Maximum number of retries per link
+max_retries = 5
+
+# Maximum number of concurrent network requests (reduce to avoid rate limiting)
+# Lower value = slower but more stable, less likely to trigger rate limiters
+max_concurrency = 2
+
+# Spoof user agent to mimic a real browser
+# Many sites block or rate-limit requests from bot user agents
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+# Don't check email addresses (they often trigger false positives)
+exclude_mail = true
+
+# Verbose output for debugging
+verbose = true
+
+# Disable progress bar (better for CI logs)
+no_progress = true
+
+# Domains that consistently cause issues due to bot detection, rate limiting, or timeouts
+# These will be excluded from all checks
+[[exclude]]
+regex = 'linkedin\.com'
+
+[[exclude]]
+regex = 'twitter\.com'
+
+[[exclude]]
+regex = 'x\.com'
+
+[[exclude]]
+regex = 'facebook\.com'
+
+[[exclude]]
+regex = 'instagram\.com'
+
+[[exclude]]
+regex = 'youtube\.com'
+
+[[exclude]]
+regex = 'researchgate\.net'
+
+[[exclude]]
+regex = 'scholar\.google'
+
+[[exclude]]
+regex = 'orcid\.org'
+
+[[exclude]]
+regex = 'googletagmanager\.com'
+
+[[exclude]]
+regex = 'fonts\.googleapis\.com'
+
+[[exclude]]
+regex = 'fonts\.gstatic\.com'
+
+# Exclude file:// protocol links
+[[exclude]]
+regex = '^file://'

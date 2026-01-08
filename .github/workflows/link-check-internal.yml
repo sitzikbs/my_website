@@ -1,0 +1,72 @@
+---
+name: Link Checker (Internal) - PR
+
+# This workflow checks ONLY internal links (relative paths and same-domain links)
+# It runs on pull requests to catch broken internal links before merging
+# External links are checked separately in the nightly workflow to avoid blocking PRs
+
+'on':
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  internal-link-check:
+    name: Check Internal Links Only
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read  # Required to checkout the repository
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Check Internal Links
+        uses: lycheeverse/lychee-action@v1.10.0
+        with:
+          # Check internal links only (relative paths and same-domain links)
+          args: >-
+            --config lychee.toml
+            --include 'itzikbs\.com'
+            --exclude-path '_site/blog/posts/assets'
+            --include '^/'
+            --include '^\.'
+            '_site/**/*.html'
+          fail: true  # Fail the PR if broken internal links are found
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Comment on PR
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const workflowUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## 🔗 Internal Link Check Failed\n\n` +
+                    `Broken internal links were detected in this PR.\n\n` +
+                    `**These must be fixed before merging.**\n\n` +
+                    `**Workflow Run:** ${workflowUrl}\n\n` +
+                    `Please review the workflow logs for details about the broken links.\n\n` +
+                    `💡 **Tip:** Internal links include:\n` +
+                    `- Relative paths (e.g., \`/blog/post.html\`, \`../about.html\`)\n` +
+                    `- Same-domain links (e.g., \`https://itzikbs.com/contact.html\`)\n\n` +
+                    `External links are checked separately in nightly builds.`
+            });
