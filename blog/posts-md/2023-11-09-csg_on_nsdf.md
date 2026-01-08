@@ -34,7 +34,7 @@ permalink: "/blog/posts/2023-11-09-csg_on_nsdf.html"
 <p>👨🏻‍🎓<a href="https://scholar.google.com/citations?user=HqL4J0MAAAAJ&amp;hl=en&amp;oi=ao" rel="noreferrer noopener" target="_blank">Google scholar</a></p>
 <p>👨🏻‍🎓<a href="https://www.linkedin.com/in/zoemarschner/" rel="noreferrer noopener" target="_blank">LinkedIn</a></p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/vUaauuw4Si8?feature=oembed" title="CSG on Neural SDFs (SIGGRAPH Asia 2023) with Zoë Marschner on Talking Papers Podcast" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/vUaauuw4Si8?feature=oembed" title="CSG on Neural SDFs (SIGGRAPH Asia 2023) with Zoë Marschner on Talking Papers Podcast" width="800"></iframe>
 </div></figure>
 <p>This episode was recorded on October 24th 2023</p>
 <h2 class="wp-block-heading">CONTACT</h2>

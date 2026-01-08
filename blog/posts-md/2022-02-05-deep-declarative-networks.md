@@ -35,7 +35,7 @@ permalink: "/blog/posts/2022-02-05-deep-declarative-networks.html"
 <p> <a href="https://anucvml.github.io/ddn-cvprw2020/" rel="noreferrer noopener" target="_blank">CVPR 2020 Workshop</a></p>
 <p></p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/TcbErocpnak?feature=oembed" title="Talking Papers Podcast with Dylan Campbell - Deep Declarative Networks" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/TcbErocpnak?feature=oembed" title="Talking Papers Podcast with Dylan Campbell - Deep Declarative Networks" width="800"></iframe>
 </div></figure>
 <p></p>
 <p>This episode was recorded on March, 31th 2021.</p>

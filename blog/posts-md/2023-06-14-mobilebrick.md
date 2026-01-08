@@ -44,7 +44,7 @@ permalink: "/blog/posts/2023-06-14-mobilebrick.html"
 <p></p>
 <p></p>
 <figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mpQiLEm955s?feature=oembed" title="MobileBrick  (CVPR 2023) with Kejie Li on Talking papers" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mpQiLEm955s?feature=oembed" title="MobileBrick  (CVPR 2023) with Kejie Li on Talking papers" width="800"></iframe>
 </div></figure>
 <p>Recorded on May 8th 2023.</p>
 <h2 class="wp-block-heading"><br/>CONTACT</h2>

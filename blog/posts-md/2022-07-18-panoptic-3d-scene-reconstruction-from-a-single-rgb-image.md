@@ -39,7 +39,7 @@ permalink: "/blog/posts/2022-07-18-panoptic-3d-scene-reconstruction-from-a-singl
 <p></p>
 <p></p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PomlbdBmFMU?feature=oembed" title="Talking Papers Podcast: Manuel Dahnert  - Panoptic 3D Scene Reconstruction From a Single RGB Image" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PomlbdBmFMU?feature=oembed" title="Talking Papers Podcast: Manuel Dahnert  - Panoptic 3D Scene Reconstruction From a Single RGB Image" width="800"></iframe>
 </div></figure>
 <p>Recorded on February 11th 2022.</p>
 <h2 class="wp-block-heading"><br/>CONTACT</h2>

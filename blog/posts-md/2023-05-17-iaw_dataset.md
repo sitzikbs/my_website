@@ -44,7 +44,7 @@ permalink: "/blog/posts/2023-05-17-iaw_dataset.html"
 <p></p>
 <p></p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/CIkLsrTC7eY?feature=oembed" title="IAW Dataset (CVPR 2023) with Jiahao Zhang on Talking papers" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/CIkLsrTC7eY?feature=oembed" title="IAW Dataset (CVPR 2023) with Jiahao Zhang on Talking papers" width="800"></iframe>
 </div></figure>
 <p>Recorded on May 1st 2023.</p>
 <h2 class="wp-block-heading"><br/>CONTACT</h2>

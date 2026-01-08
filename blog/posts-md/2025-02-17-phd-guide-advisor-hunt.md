@@ -268,7 +268,7 @@ permalink: "/blog/posts/2025-02-17-phd-guide-advisor-hunt.html"
 <p>If you’d like to reach out, you can leave comments on the various platforms, or you can email us directly — we love hearing from our listeners and helping where we can.</p>
 <p>Thanks for joining us on this episode of <em>Talking Papers</em>, and remember: whether you’re just starting your journey or are in the midst of it, take the time to choose wisely. And as always, let your papers do the talking.</p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/wJLZwTMqEsk?feature=oembed" title="The PhD Advisor Hunt - A Student's Perspective with Derek Liu on the Talking Papers Podcast" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/wJLZwTMqEsk?feature=oembed" title="The PhD Advisor Hunt - A Student's Perspective with Derek Liu on the Talking Papers Podcast" width="800"></iframe>
 </div></figure>
 <p>This episode was recorded in April 2024</p>
 <h2 class="wp-block-heading">CONTACT</h2>
