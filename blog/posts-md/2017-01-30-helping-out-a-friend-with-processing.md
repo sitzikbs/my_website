@@ -14,8 +14,12 @@ permalink: "/blog/posts/2017-01-30-helping-out-a-friend-with-processing.html"
 
 <p>My best friend’s girlfriend studies design. As part of her studies, they learned some programming using <a href="https://processing.org/">Processing</a>.  As a designer (and not a programmer) she had a hard time getting things to work. Even though I don’t know processing at all I figured my experience in programming might come in handy.</p>
 <p>And here is the result (I think it turned out quite well):</p>
+<<<<<<< HEAD
 
 <div style="text-align: center;">
+=======
+<p><div style="text-align: center;"><br/>
+>>>>>>> f2dadae59a9d2003d7bc928ac93debd5a5b49ab9
 <script data-processing-target="MySketch" type="text/processing">
 ball[] balls;
 int numBalls = 7;
@@ -37,10 +41,16 @@ lights();
  }
 }
 </script><br/>
+<<<<<<< HEAD
 <canvas id="MySketch"></canvas></div>
 <p>The next day she sent me this result (Notice what happens when you click, hold and release):</p>
 
 <div style="text-align: center;">
+=======
+<canvas id="MySketch"></canvas></div><br/>
+The next day she sent me this result (Notice what happens when you click, hold and release):</p>
+<p><div style="text-align: center;"><br/>
+>>>>>>> f2dadae59a9d2003d7bc928ac93debd5a5b49ab9
 <script data-processing-target="MySketch2" type="text/processing">
 ball[] balls;
 int numBalls =20;bigBall bigB= new bigBall(75,0.01,0.09);
