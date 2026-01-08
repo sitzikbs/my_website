@@ -23,11 +23,8 @@ user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 # Don't check email addresses (they often trigger false positives)
 exclude_mail = true
 
-# Verbose output for debugging
-verbose = true
-
-# Disable progress bar (better for CI logs)
-no_progress = true
+# Note: verbose and no_progress are command-line flags, not config file options
+# They should be passed as --verbose and --no-progress in the workflow args
 
 # Domains that consistently cause issues due to bot detection, rate limiting, or timeouts
 # These will be excluded from all checks

@@ -43,6 +43,8 @@ jobs:
           # Check external links only, excluding known problematic domains
           # Excludes: internal domain, relative paths, localhost, file links
           args: >-
+            --verbose
+            --no-progress
             --config lychee.toml
             --exclude 'itzikbs\.com'
             --exclude '^/'
@@ -76,6 +78,8 @@ jobs:
           # Note: talking.papers.podcast.itzikbs.com is a subdomain that's actually external
           # (hosted separately) and known to have reliability issues
           args: >-
+            --verbose
+            --no-progress
             --config lychee.toml
             --include 'ri\.cmu\.edu/events/sb35'
             --include 'www3\.oculus\.com'

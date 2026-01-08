@@ -42,6 +42,8 @@ jobs:
           # Check internal links only (relative paths and same-domain links)
           # Strategy: Use --scheme to check only http/https, exclude all external domains
           args: >-
+            --verbose
+            --no-progress
             --config lychee.toml
             --exclude-path '_site/blog/posts/assets'
             --scheme http
