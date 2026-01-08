@@ -34,7 +34,7 @@ permalink: "/blog/posts/2024-03-14-cameras-as-rays.html"
 <p>👨🏻‍🎓<a href="https://scholar.google.com/citations?authuser=2&amp;user=j56HgqYAAAAJ" rel="noreferrer noopener" target="_blank">Google scholar</a></p>
 <p>🐦<a href="https://twitter.com/jasonyzhang2" rel="noreferrer noopener" target="_blank">Twitter</a></p>
 <figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/KgHwv3Nf8rg?feature=oembed" title="Cameras as Rays (ICLR 2024 Oral) with Jason Y. Zhang on Talking Papers Podcast" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/KgHwv3Nf8rg?feature=oembed" title="Cameras as Rays (ICLR 2024 Oral) with Jason Y. Zhang on Talking Papers Podcast" width="800"></iframe>
 </div></figure>
 <p>This episode was recorded on March 13th 2024</p>
 <h2 class="wp-block-heading">CONTACT</h2>

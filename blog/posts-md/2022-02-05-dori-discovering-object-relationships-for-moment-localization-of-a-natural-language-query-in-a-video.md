@@ -31,7 +31,7 @@ permalink: "/blog/posts/2022-02-05-dori-discovering-object-relationships-for-mom
 <p><a href="https://www.youtube.com/watch?v=7m4CifNKlus&amp;ab_channel=ComputerVisionFoundationVideos" rel="noreferrer noopener" target="_blank">DoRi’s WACV talk on YouTube</a> </p>
 <p></p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/dHFfx_pZ7UI?feature=oembed" title="Talking Papers Podcast with Cristian Rodriguez-Opazo - DORi" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/dHFfx_pZ7UI?feature=oembed" title="Talking Papers Podcast with Cristian Rodriguez-Opazo - DORi" width="800"></iframe>
 </div></figure>
 <p></p>
 <p>This episode was recorded on March, 26th 2021.</p>

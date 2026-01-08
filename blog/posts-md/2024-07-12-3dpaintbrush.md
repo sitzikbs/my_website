@@ -37,7 +37,7 @@ permalink: "/blog/posts/2024-07-12-3dpaintbrush.html"
 <p>🐦<a href="https://x.com/DecaturDale" rel="noreferrer noopener" target="_blank">Twitter</a></p>
 <p>👨🏻‍🎓<a href="https://www.linkedin.com/in/dale-decatur-246a38192/" rel="noreferrer noopener" target="_blank">LinkedIn</a></p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BU8gbf0zml0?feature=oembed" title="3D Paintbrush (CVPR 2024) with Dale Decatur on Talking Papers Podcast" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/BU8gbf0zml0?feature=oembed" title="3D Paintbrush (CVPR 2024) with Dale Decatur on Talking Papers Podcast" width="800"></iframe>
 </div></figure>
 <p>This episode was recorded on July 10th 2024</p>
 <h2 class="wp-block-heading">CONTACT</h2>

@@ -29,7 +29,7 @@ permalink: "/blog/posts/2022-02-24-vln-bert-a-recurrent-vision-and-language-bert
 <p>💻 Project Page and CODE: <a href="https://github.com/YicongHong/Recurrent-VLN-BERT" rel="noreferrer noopener" target="_blank">https://github.com/YicongHong/Recurrent-VLN-BERT</a></p>
 <p>📚 <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Hong_VLN_BERT_A_Recurrent_Vision-and-Language_BERT_for_Navigation_CVPR_2021_paper.pdf" rel="noreferrer noopener" target="_blank">Paper</a></p>
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ecwurlUBAkc?feature=oembed" title="Talking Papers Podcast with Yicong Hong - VLN BERT" width="800"></iframe>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="border: none;" height="450" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ecwurlUBAkc?feature=oembed" title="Talking Papers Podcast with Yicong Hong - VLN BERT" width="800"></iframe>
 </div></figure>
 <p> </p>
 <p>This episode was recorded on April, 16th 2021.</p>
