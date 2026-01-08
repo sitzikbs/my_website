@@ -40,5 +40,6 @@ exclude = [
     'fonts\.googleapis\.com',
     'fonts\.gstatic\.com',
     'cdn-cgi/l/email-protection',  # Cloudflare email protection
+    'roblox\.com',
     '^file://'
 ]

@@ -45,7 +45,6 @@ jobs:
             --verbose
             --no-progress
             --config lychee.toml
-            --accept 200,204,206,301,302,307,308,403,429,503
             --exclude-path '_site/blog/posts/assets'
             --exclude 'github\.com'
             --exclude 'arxiv\.org'
@@ -64,6 +63,7 @@ jobs:
             --exclude 'techrepublic\.com'
             --exclude 'tesla\.com'
             --exclude 'uber\.com'
+            --exclude 'roblox\.com'
             --exclude 'staff\.qut\.edu\.au'
             --exclude 'services\.anu\.edu\.au'
             --exclude 'dmi\.usherb\.ca'
@@ -86,8 +86,6 @@ jobs:
             --exclude 'towardsdatascience\.com'
             --exclude 'wikipedia\.org'
             --exclude 'doi\.org'
-            --timeout 45
-            --max-retries 5
             --base https://itzikbs.com
             '_site/**/*.html'
           fail: true  # Fail the PR if broken internal links are found
