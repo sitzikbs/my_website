@@ -41,5 +41,6 @@ exclude = [
     'googletagmanager\.com',
     'fonts\.googleapis\.com',
     'fonts\.gstatic\.com',
+    'cdn-cgi/l/email-protection',  # Cloudflare email protection
     '^file://'
 ]
