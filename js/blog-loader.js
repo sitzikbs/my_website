@@ -33,16 +33,18 @@ function renderPosts(posts) {
     }
     
     const postsHTML = posts.map(post => `
-        <a href="${post.content}" class="blog-card">
-            ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-card-image">` : ''}
-            <div class="blog-card-content">
-                <span class="blog-category">${(post.categories && post.categories.length > 0) ? post.categories[0] : 'General'}</span>
-                <h3>${post.title}</h3>
-                <p class="blog-date">${post.date}</p>
-                <p class="blog-excerpt">${post.excerpt || ''}</p>
-                <span class="read-more">Read more →</span>
-            </div>
-        </a>
+        <article>
+            <a href="${post.content}" class="blog-card">
+                ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-card-image">` : ''}
+                <div class="blog-card-content">
+                    <span class="blog-category">${(post.categories && post.categories.length > 0) ? post.categories[0] : 'General'}</span>
+                    <h3>${post.title}</h3>
+                    <p class="blog-date">${post.date}</p>
+                    <p class="blog-excerpt">${post.excerpt || ''}</p>
+                    <span class="read-more">Read more →</span>
+                </div>
+            </a>
+        </article>
     `).join('');
     
     container.innerHTML = postsHTML;

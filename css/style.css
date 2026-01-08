@@ -439,6 +439,10 @@ a:hover {
     gap: 2rem;
 }
 
+.blog-grid article {
+    margin: 0;
+}
+
 .blog-card {
     display: block;
     background-color: var(--bg-color);
