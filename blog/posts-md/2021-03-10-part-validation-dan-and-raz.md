@@ -52,7 +52,7 @@ permalink: "/blog/posts/2021-03-10-part-validation-dan-and-raz.html"
 <p>Once the two point clouds are aligned we compute the distances between every two closest points between the two point clouds. To do this efficiently we use a <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm" rel="noopener" target="_blank">K nearest neighbor algorithm</a> (K=1 in this case) which uses the<a href="https://en.wikipedia.org/wiki/K-d_tree" rel="noopener" target="_blank"> K-d tree data structure.</a>  If there are no manufacturing errors all of the computed distances should be zero (or a very small number) but, if there is a defect the distance will spike. For <em>visualization</em> purposes, we now map all of the distances to a color map (from blue=acurate to red=high error).    Next, we project these points onto a plane and display it on screen. At this point we realized that just looking at it on the screen is simply not enough anymore (in the world where augmented reality is a great buzz word) so we connected a projector and projected the error map onto the part .  Now we could really see the errors on the part.</p>
 <p> </p>
 <p>The approach is summarized visually in the flowchart below (click on it to see full-size).  For further details, you can read their full report <a href="/assets/images/blog/Part-Validation-Dan-and-Raz.pdf" rel="noopener" target="_blank">here </a>(Hebrew)</p>
-<p><a href="assets/images/blog/FLOW-CHART.png" rel="noopener" target="_blank">{% endraw %}
+<p><a href="assets/images/blog/FLOW-CHART.png" rel="noopener" target="_blank" aria-label="View full-size flowchart">{% endraw %}
 {% responsiveImage "../../assets/images/blog/FLOW-CHART.png", "" %}
 {% raw %}
 

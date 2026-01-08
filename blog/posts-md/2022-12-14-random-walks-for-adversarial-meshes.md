@@ -21,7 +21,7 @@ permalink: "/blog/posts/2022-12-14-random-walks-for-adversarial-meshes.html"
 <div id="buzzsprout-player-11869506">{% endraw %}
 </div><script charset="utf-8" src="https://www.buzzsprout.com/1914034/11869506-random-walks-for-adversarial-meshes-amir-belder.js?container_id=buzzsprout-player-11869506&amp;player=small" type="text/javascript"></script>
 <h2 class="wp-block-heading" id="authors">AUTHORS</h2>
-<p>Amir Belder<a href="https://dl.acm.org/profile/99660532511"></a>, Gal Yefet<a href="https://dl.acm.org/profile/99660533514"></a>, Ran Ben-Itzhak<a href="https://dl.acm.org/profile/99660533358"></a>, Ayellet Tal<a href="https://dl.acm.org/profile/81100507022"></a></p>
+<p>Amir Belder, Gal Yefet, Ran Ben-Itzhak, Ayellet Tal</p>
 <p><br/></p>
 <h2 class="wp-block-heading" id="abstract">ABSTRACT</h2>
 <p> </p>
