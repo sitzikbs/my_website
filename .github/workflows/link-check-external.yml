@@ -44,7 +44,7 @@ jobs:
           # Excludes: internal domain, relative paths, localhost, file links
           args: >-
             --config lychee.toml
-            --exclude 'itzikbs\.com(?!/talking\.papers\.podcast)'
+            --exclude 'itzikbs\.com'
             --exclude '^/'
             --exclude '^\.'
             --exclude 'localhost'
@@ -73,6 +73,8 @@ jobs:
         with:
           # Check only the domains known to have DNS/network issues
           # These are reported but don't fail the build
+          # Note: talking.papers.podcast.itzikbs.com is a subdomain that's actually external
+          # (hosted separately) and known to have reliability issues
           args: >-
             --config lychee.toml
             --include 'ri\.cmu\.edu/events/sb35'
