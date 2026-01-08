@@ -28,42 +28,18 @@ exclude_mail = true
 
 # Domains that consistently cause issues due to bot detection, rate limiting, or timeouts
 # These will be excluded from all checks
-[[exclude]]
-regex = 'linkedin\.com'
-
-[[exclude]]
-regex = 'twitter\.com'
-
-[[exclude]]
-regex = 'x\.com'
-
-[[exclude]]
-regex = 'facebook\.com'
-
-[[exclude]]
-regex = 'instagram\.com'
-
-[[exclude]]
-regex = 'youtube\.com'
-
-[[exclude]]
-regex = 'researchgate\.net'
-
-[[exclude]]
-regex = 'scholar\.google'
-
-[[exclude]]
-regex = 'orcid\.org'
-
-[[exclude]]
-regex = 'googletagmanager\.com'
-
-[[exclude]]
-regex = 'fonts\.googleapis\.com'
-
-[[exclude]]
-regex = 'fonts\.gstatic\.com'
-
-# Exclude file:// protocol links
-[[exclude]]
-regex = '^file://'
+exclude = [
+    'linkedin\.com',
+    'twitter\.com',
+    'x\.com',
+    'facebook\.com',
+    'instagram\.com',
+    'youtube\.com',
+    'researchgate\.net',
+    'scholar\.google',
+    'orcid\.org',
+    'googletagmanager\.com',
+    'fonts\.googleapis\.com',
+    'fonts\.gstatic\.com',
+    '^file://'
+]
