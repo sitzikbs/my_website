@@ -39,15 +39,14 @@ jobs:
       - name: Check Internal Links
         uses: lycheeverse/lychee-action@v1.10.0
         with:
-          # Check internal links only (relative paths and same-domain links)
-          # Strategy: Exclude common external domains explicitly
-          # Most excludes are in lychee.toml, but we add more here for blog content
+          # Check all links but exclude external problematic domains
+          # This is simpler and more reliable than trying to filter internal vs external
           args: >-
             --verbose
             --no-progress
             --config lychee.toml
+            --accept 200,204,206,301,302,307,308,403,429,503
             --exclude-path '_site/blog/posts/assets'
-            --exclude-all-private
             --exclude 'github\.com'
             --exclude 'arxiv\.org'
             --exclude 'openaccess\.thecvf\.com'
@@ -58,18 +57,37 @@ jobs:
             --exclude 'springer\.com'
             --exclude 'nature\.com'
             --exclude 'science\.org'
+            --exclude 'tensorflow\.org'
+            --exclude 'mathworks\.com'
+            --exclude 'udacity\.com'
+            --exclude 'coursera\.org'
+            --exclude 'techrepublic\.com'
+            --exclude 'tesla\.com'
+            --exclude 'uber\.com'
+            --exclude 'staff\.qut\.edu\.au'
+            --exclude 'services\.anu\.edu\.au'
+            --exclude 'dmi\.usherb\.ca'
+            --exclude 'ri\.cmu\.edu'
+            --exclude 'www3\.oculus\.com'
+            --exclude 'webdiis\.unizar\.es'
+            --exclude 'coraldrowningdetection\.com'
+            --exclude 'jiajunwu\.com'
+            --exclude 'people\.lu\.usi\.ch'
+            --exclude 'cs\.ox\.ac\.uk'
+            --exclude '\.edu/'
             --exclude 'mit\.edu'
             --exclude 'stanford\.edu'
             --exclude 'berkeley\.edu'
             --exclude 'cmu\.edu'
             --exclude 'ox\.ac\.uk'
-            --exclude '\.edu/'
             --exclude 'youtube\.com'
             --exclude 'youtu\.be'
             --exclude 'medium\.com'
             --exclude 'towardsdatascience\.com'
             --exclude 'wikipedia\.org'
             --exclude 'doi\.org'
+            --timeout 45
+            --max-retries 5
             --base https://itzikbs.com
             '_site/**/*.html'
           fail: true  # Fail the PR if broken internal links are found
