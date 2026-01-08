@@ -22,7 +22,7 @@ permalink: "/blog/posts/2021-03-10-gaussian-mixture-model-gmm-3d-point-cloud-cla
 <p>The shortest answer is a probability distribution composed of several Gaussians.</p>
 <p>I will start with some mathematical definitions but will also give a more intuitive example at the bottom.</p>
 <h2>The Math</h2>
-<p>The Gaussian (also known as a multivariate normal distribution) of a random D dimensional point <img alt="p" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=p&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"> can be specified using <img alt="\mu" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=%5Cmu&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> and <img alt="\Sigma" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=%5CSigma&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> , which are its expected value (mean), and covariance matrix  respectively.  Therefore the likelihood of a single point <img alt="p" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=p&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> with respects to the k<sup>th </sup>Gaussian is given by</img></p>
+<p>The Gaussian (also known as a multivariate normal distribution) of a random D dimensional point <img alt="p" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=p&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"> can be specified using <img alt="\mu" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=%5Cmu&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> and <img alt="\Sigma" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=%5CSigma&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> , which are its expected value (mean), and covariance matrix  respectively.  Therefore the likelihood of a single point <img alt="p" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=p&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> with respects to the k<sup>th </sup>Gaussian is given by</p>
 <p style="text-align: center;"><img alt="u_k(p) = \frac{1}{(2\pi)^{D/2}|\Sigma_k|^{1/2}}\exp\left\{-\frac{1}{2}(p-\mu_k)'\Sigma_k^{-1}(p-\mu_k)\right\}" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=u_k%28p%29+%3D%26nbsp%3B%5Cfrac%7B1%7D%7B%282%5Cpi%29%5E%7BD%2F2%7D%7C%5CSigma_k%7C%5E%7B1%2F2%7D%7D%5Cexp%5Cleft%5C%7B-%5Cfrac%7B1%7D%7B2%7D%28p-%5Cmu_k%29%27%5CSigma_k%5E%7B-1%7D%28p-%5Cmu_k%29%5Cright%5C%7D&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/>,</p>
 <p>and the likelihood of <img alt="p" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=p&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/> associated with the GMM</p>
 <p style="text-align: center;"><img alt="u_\lambda(p) = \sum_{k=1}^{K}w_ku_k(p)" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=u_%5Clambda%28p%29+%3D+%5Csum_%7Bk%3D1%7D%5E%7BK%7Dw_ku_k%28p%29&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"/></p>
@@ -48,7 +48,7 @@ permalink: "/blog/posts/2021-03-10-gaussian-mixture-model-gmm-3d-point-cloud-cla
 
 </p>
 <p> </p>
-<p>You can see how we can basically represent all of these 4000 points using only 4 Gaussians.  Each points gets a likelihood value (<img alt="u_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=u_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002">) for each Gaussian.  In our paper, we show that we can use a GMM with Gaussians on a grid (and not using EM algorithm) to represent 3D point clouds for the classification and part segmentation task. But, more on that in a later post.</img></p>
+<p>You can see how we can basically represent all of these 4000 points using only 4 Gaussians.  Each points gets a likelihood value (<img alt="u_k" class="latex" decoding="async" src="https://s0.wp.com/latex.php?latex=u_k&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002">) for each Gaussian.  In our paper, we show that we can use a GMM with Gaussians on a grid (and not using EM algorithm) to represent 3D point clouds for the classification and part segmentation task. But, more on that in a later post.</p>
 <p> </p>
 <h2>The Code</h2>
 <p>The code used for generating the images above is available on <a href="https://github.com/sitzikbs/gmm_tutorial" rel="noopener" target="_blank">github</a>.</p>
@@ -62,7 +62,6 @@ permalink: "/blog/posts/2021-03-10-gaussian-mixture-model-gmm-3d-point-cloud-cla
 <p>First, we specify the number of points to generate in each Gaussian,  the problems dimensionality (2/3), and the parameters for the Gaussians that we will use to generate the data.</p>
 <pre>## Generate synthetic data
 N,D = 1000, 2 # number of points and dimenstinality
-
 if D == 2:
     #set gaussian ceters and covariances in 2D
     means = np.array([[0.5, 0.0],

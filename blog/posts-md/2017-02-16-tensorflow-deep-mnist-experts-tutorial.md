@@ -55,7 +55,6 @@ keep_prob =  tf.get_collection("keep_prob")[0]
 <pre><code class="language-python">ImageIndex = 3
 InputImage = mnist.test.images[ImageIndex].reshape(1,784)
 CorrectLabel = mnist.test.labels[ImageIndex].reshape(1,10)
-
 logit = sess.run(y_conv,feed_dict={ x: InputImage, y_: CorrectLabel, keep_prob: 1.0})
 prediction = sess.run(tf.argmax(logit,1))
 digit = sess.run(tf.argmax(CorrectLabel,1))
