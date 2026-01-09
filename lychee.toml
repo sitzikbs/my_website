@@ -39,8 +39,11 @@ exclude = [
     'googletagmanager\.com',
     'fonts\.googleapis\.com',
     'fonts\.gstatic\.com',
-    'cdn-cgi/l/email-protection',  # Cloudflare email protection
+    'gstatic\.com',  # CDN for Google fonts
+    'googleapis\.com',  # Google APIs CDN
+    'cdn-cgi',  # Cloudflare CDN paths including email protection
     'roblox\.com',
+    'corp\.roblox\.com',  # Roblox corporate site
     'tensorflow\.org',
     'mathworks\.com',
     'udacity\.com',
@@ -53,6 +56,7 @@ exclude = [
     'dmi\.usherb\.ca',
     'ri\.cmu\.edu',
     'www3\.oculus\.com',
+    'oculus\.com',  # All Oculus domains
     'webdiis\.unizar\.es',
     'coraldrowningdetection\.com',
     'talking\.papers\.podcast\.itzikbs\.com',
