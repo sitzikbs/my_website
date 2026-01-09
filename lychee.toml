@@ -27,6 +27,12 @@ user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 # Domains that consistently cause issues due to bot detection, rate limiting, or timeouts
 # These will be excluded from all checks
 exclude = [
+    # Exact URLs that are preconnect/dns-prefetch hints (not actual links to check)
+    '^https://www\.googletagmanager\.com/$',
+    '^https://fonts\.googleapis\.com/$',
+    '^https://fonts\.gstatic\.com/$',
+    '^https://www\.googletagmanager\.com/gtag/js',
+    # Social media and research platforms
     'linkedin\.com',
     'twitter\.com',
     'x\.com',
@@ -36,12 +42,14 @@ exclude = [
     'researchgate\.net',
     'scholar\.google',
     'orcid\.org',
+    # Google CDN and analytics (general patterns)
     'googletagmanager\.com',
     'fonts\.googleapis\.com',
     'fonts\.gstatic\.com',
     'gstatic\.com',  # CDN for Google fonts
     'googleapis\.com',  # Google APIs CDN
     'cdn-cgi',  # Cloudflare CDN paths including email protection
+    # Problematic external domains
     'roblox\.com',
     'corp\.roblox\.com',  # Roblox corporate site
     'tensorflow\.org',
@@ -51,10 +59,12 @@ exclude = [
     'techrepublic\.com',
     'tesla\.com',
     'uber\.com',
+    # Academic/university sites
     'staff\.qut\.edu\.au',
     'services\.anu\.edu\.au',
     'dmi\.usherb\.ca',
     'ri\.cmu\.edu',
+    # Other problematic sites
     'www3\.oculus\.com',
     'oculus\.com',  # All Oculus domains
     'webdiis\.unizar\.es',
