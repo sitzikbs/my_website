@@ -39,8 +39,8 @@ jobs:
       - name: Check Internal Links
         uses: lycheeverse/lychee-action@v1.10.0
         with:
-          # Check all links but exclude external problematic domains
-          # This is simpler and more reliable than trying to filter internal vs external
+          # Check all links using centralized lychee.toml configuration
+          # Plus additional academic/external domain exclusions to avoid false positives
           args: >-
             --verbose
             --no-progress
@@ -56,31 +56,12 @@ jobs:
             --exclude 'springer\.com'
             --exclude 'nature\.com'
             --exclude 'science\.org'
-            --exclude 'tensorflow\.org'
-            --exclude 'mathworks\.com'
-            --exclude 'udacity\.com'
-            --exclude 'coursera\.org'
-            --exclude 'techrepublic\.com'
-            --exclude 'tesla\.com'
-            --exclude 'uber\.com'
-            --exclude 'roblox\.com'
-            --exclude 'staff\.qut\.edu\.au'
-            --exclude 'services\.anu\.edu\.au'
-            --exclude 'dmi\.usherb\.ca'
-            --exclude 'ri\.cmu\.edu'
-            --exclude 'www3\.oculus\.com'
-            --exclude 'webdiis\.unizar\.es'
-            --exclude 'coraldrowningdetection\.com'
-            --exclude 'jiajunwu\.com'
-            --exclude 'people\.lu\.usi\.ch'
-            --exclude 'cs\.ox\.ac\.uk'
             --exclude '\.edu/'
             --exclude 'mit\.edu'
             --exclude 'stanford\.edu'
             --exclude 'berkeley\.edu'
             --exclude 'cmu\.edu'
             --exclude 'ox\.ac\.uk'
-            --exclude 'youtube\.com'
             --exclude 'youtu\.be'
             --exclude 'medium\.com'
             --exclude 'towardsdatascience\.com'

@@ -41,5 +41,25 @@ exclude = [
     'fonts\.gstatic\.com',
     'cdn-cgi/l/email-protection',  # Cloudflare email protection
     'roblox\.com',
-    '^file://'
+    'tensorflow\.org',
+    'mathworks\.com',
+    'udacity\.com',
+    'coursera\.org',
+    'techrepublic\.com',
+    'tesla\.com',
+    'uber\.com',
+    'staff\.qut\.edu\.au',
+    'services\.anu\.edu\.au',
+    'dmi\.usherb\.ca',
+    'ri\.cmu\.edu',
+    'www3\.oculus\.com',
+    'webdiis\.unizar\.es',
+    'coraldrowningdetection\.com',
+    'talking\.papers\.podcast\.itzikbs\.com',
+    'jiajunwu\.com',
+    'people\.lu\.usi\.ch',
+    'cs\.ox\.ac\.uk',
+    'mic\.net\.technion\.ac\.il',  # Redirects to 404 page
+    'ai\.facebook\.com',  # Returns 400 errors
+    '^file://'  # Exclude file:// URLs
 ]
