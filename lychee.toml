@@ -1,0 +1,80 @@
+# Lychee Link Checker Configuration
+# This file centralizes common settings for link checking workflows
+# Documentation: https://lychee.cli.rs/
+
+# Accept these HTTP status codes as valid
+accept = [200, 204, 206, 301, 302, 307, 308, 403, 429, 503]
+
+# Request timeout in seconds
+timeout = 45
+
+# Maximum number of retries per link
+max_retries = 5
+
+# Maximum number of concurrent network requests (reduce to avoid rate limiting)
+# Lower value = slower but more stable, less likely to trigger rate limiters
+max_concurrency = 2
+
+# Spoof user agent to mimic a real browser
+# Many sites block or rate-limit requests from bot user agents
+# Note: Update Chrome version periodically to maintain effectiveness
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+
+# Note: verbose and no_progress are command-line flags, not config file options
+# They should be passed as --verbose and --no-progress in the workflow args
+# Note: exclude_mail is deprecated - email links are no longer checked by default
+
+# Domains that consistently cause issues due to bot detection, rate limiting, or timeouts
+# These will be excluded from all checks
+exclude = [
+    # Exact URLs that are preconnect/dns-prefetch hints (not actual links to check)
+    '^https://www\.googletagmanager\.com/$',
+    '^https://fonts\.googleapis\.com/$',
+    '^https://fonts\.gstatic\.com/$',
+    '^https://www\.googletagmanager\.com/gtag/js',
+    # Social media and research platforms
+    'linkedin\.com',
+    'twitter\.com',
+    'x\.com',
+    'facebook\.com',
+    'instagram\.com',
+    'youtube\.com',
+    'researchgate\.net',
+    'scholar\.google',
+    'orcid\.org',
+    # Google CDN and analytics (general patterns)
+    'googletagmanager\.com',
+    'fonts\.googleapis\.com',
+    'fonts\.gstatic\.com',
+    'gstatic\.com',  # CDN for Google fonts
+    'googleapis\.com',  # Google APIs CDN
+    'cdn-cgi',  # Cloudflare CDN paths including email protection
+    # Problematic external domains
+    'roblox\.com',
+    'corp\.roblox\.com',  # Roblox corporate site
+    'tensorflow\.org',
+    'mathworks\.com',
+    'udacity\.com',
+    'coursera\.org',
+    'techrepublic\.com',
+    'tesla\.com',
+    'uber\.com',
+    # Academic/university sites
+    'staff\.qut\.edu\.au',
+    'services\.anu\.edu\.au',
+    'dmi\.usherb\.ca',
+    'ri\.cmu\.edu',
+    'cs\.ucl\.ac\.uk',  # UCL Computer Science staff pages (timeouts)
+    # Other problematic sites
+    'www3\.oculus\.com',
+    'oculus\.com',  # All Oculus domains
+    'webdiis\.unizar\.es',
+    'coraldrowningdetection\.com',
+    'talking\.papers\.podcast\.itzikbs\.com',
+    'jiajunwu\.com',
+    'people\.lu\.usi\.ch',
+    'cs\.ox\.ac\.uk',
+    'mic\.net\.technion\.ac\.il',  # Redirects to 404 page
+    'ai\.facebook\.com',  # Returns 400 errors
+    '^file://'  # Exclude file:// URLs
+]
