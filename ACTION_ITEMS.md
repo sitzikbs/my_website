@@ -48,8 +48,16 @@ Replace `YOUR_GOOGLE_SCHOLAR_ID` with your actual Google Scholar user ID.
 
 3. Copy the output and test at:
    - https://search.google.com/test/rich-results
+   - https://validator.schema.org/ (to verify syntax)
 
-4. Expected result: Homepage should pass with "Person" rich result type
+4. **Expected result**: 
+   - **Schema.org Validator**: Should show valid Person and WebSite schemas ✅
+   - **Google Rich Results Test**: May show "No items detected" - **this is normal for homepage Person schemas**
+   - Google doesn't typically show Person rich results for homepages, but the data is still valuable for:
+     * Knowledge Graph eligibility
+     * Search engine understanding
+     * Entity recognition
+     * Potential future rich results
 
 ### 3. Deploy and Monitor
 
@@ -98,7 +106,9 @@ See `docs/RICH_RESULTS_TESTING_GUIDE.md` for comprehensive testing instructions.
 - ✅ Added URL to worksFor organization
 - ✅ Changed alumniOf from Organization to CollegeOrUniversity
 - ✅ Added WebSite schema using @graph structure
-- ⏳ **Needs**: Google Scholar ID update
+- ✅ **Google Scholar ID updated** (FNn1MBMAAAAJ)
+
+**Note**: Google Rich Results Test may show "no items detected" for homepage Person schema - this is expected. The structured data is still valuable for Knowledge Graph, search understanding, and entity recognition.
 
 ### All Sub-Pages
 - ✅ Added BreadcrumbList schema for better navigation understanding
@@ -112,10 +122,15 @@ See `docs/RICH_RESULTS_TESTING_GUIDE.md` for comprehensive testing instructions.
 
 After completing the pending actions:
 
-1. **Homepage**: Should pass Google Rich Results Test with Person rich result
-2. **Search Results**: May show enhanced snippet with photo, job title, and organization
-3. **SEO Improvement**: Better understanding of site structure by search engines
-4. **No Errors**: Clean structured data report in Search Console
+1. **Homepage Schema**: Valid Person and WebSite structured data (confirmed by Schema.org validator)
+2. **Google Rich Results**: May not show "rich result" in test tool for homepage Person schema (this is normal)
+3. **Actual Benefits**:
+   - Improved entity recognition by Google
+   - Potential Knowledge Graph eligibility
+   - Better search engine understanding of site structure
+   - Enhanced social media previews
+4. **Blog Posts**: Continue to show as rich results (Article/BlogPosting type)
+5. **Search Console**: Clean structured data report with no errors
 
 ## Future Enhancements (Optional)
 
