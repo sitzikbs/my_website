@@ -6,19 +6,35 @@ permalink: /publications/
 customSchema: >
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Publications",
-    "description": "Research papers and academic contributions by Itzik Ben-Shabat",
-    "url": "https://www.itzikbs.com/publications/",
-    "author": {
-      "@type": "Person",
-      "name": "Itzik Ben-Shabat",
-      "url": "https://www.itzikbs.com"
-    },
-    "mainEntity": {
-      "@type": "ItemList",
-      "itemListElement": []
-    }
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "Publications",
+        "description": "Research papers and academic contributions by Itzik Ben-Shabat",
+        "url": "https://www.itzikbs.com/publications/",
+        "author": {
+          "@type": "Person",
+          "name": "Itzik Ben-Shabat",
+          "url": "https://www.itzikbs.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.itzikbs.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Publications"
+          }
+        ]
+      }
+    ]
   }
 ---
 

@@ -3,6 +3,39 @@ layout: layouts/base.njk
 title: Code - Itzik Ben-Shabat
 description: Open source code and projects
 permalink: /code/
+customSchema: >
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "Code and Projects",
+        "description": "Open source code repositories and research projects by Itzik Ben-Shabat",
+        "url": "https://www.itzikbs.com/code/",
+        "author": {
+          "@type": "Person",
+          "name": "Itzik Ben-Shabat",
+          "url": "https://www.itzikbs.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.itzikbs.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Code"
+          }
+        ]
+      }
+    ]
+  }
 ---
 
 <section class="page-header">

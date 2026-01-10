@@ -6,25 +6,61 @@ canonicalUrl: https://www.itzikbs.com/
 customSchema: |
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Itzik Ben-Shabat",
-    "url": "https://www.itzikbs.com",
-    "image": "https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg",
-    "jobTitle": "Research Scientist",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Roblox"
-    },
-    "alumniOf": [
+    "@graph": [
       {
-        "@type": "Organization",
-        "name": "Technion - Israel Institute of Technology"
+        "@type": "Person",
+        "name": "Itzik Ben-Shabat",
+        "alternateName": "Yizhak Ben-Shabat",
+        "description": "Research Scientist at Roblox specializing in 3D computer vision, point cloud processing, and deep learning for 3D understanding. PhD from Technion.",
+        "url": "https://www.itzikbs.com",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.itzikbs.com/assets/images/profile/Itzik_Ben_Shabat_portrait.jpg",
+          "width": "800",
+          "height": "800"
+        },
+        "jobTitle": "Research Scientist",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Roblox",
+          "url": "https://www.roblox.com"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Technion - Israel Institute of Technology",
+            "url": "https://www.technion.ac.il"
+          }
+        ],
+        "knowsAbout": [
+          "Computer Vision",
+          "3D Computer Vision",
+          "Machine Learning",
+          "Deep Learning",
+          "Point Cloud Processing",
+          "3D Reconstruction",
+          "Neural Networks",
+          "Implicit Neural Representations"
+        ],
+        "sameAs": [
+          "https://github.com/sitzikbs",
+          "https://bsky.app/profile/sitzikbs.bsky.social",
+          "https://twitter.com/sitzikbs",
+          "https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/",
+          "https://scholar.google.com/citations?user=FNn1MBMAAAAJ"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Itzik Ben-Shabat",
+        "alternateName": "Yizhak Ben-Shabat - Research Portfolio",
+        "url": "https://www.itzikbs.com",
+        "description": "Personal website and research portfolio featuring publications, blog posts, and podcast episodes on 3D computer vision and machine learning",
+        "author": {
+          "@type": "Person",
+          "name": "Itzik Ben-Shabat"
+        }
       }
-    ],
-    "sameAs": [
-      "https://github.com/sitzikbs",
-      "https://twitter.com/sitzikbs",
-      "https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/"
     ]
   }
 ---

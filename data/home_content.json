@@ -27,6 +27,11 @@
         "email": "",
         "social": [
             {
+                "name": "Bluesky",
+                "url": "https://bsky.app/profile/sitzikbs.bsky.social",
+                "icon": "fas fa-cloud"
+            },
+            {
                 "name": "Twitter",
                 "url": "https://twitter.com/sitzikbs",
                 "icon": "fab fa-twitter"
