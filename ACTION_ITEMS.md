@@ -10,9 +10,9 @@
 
 ## Pending Action Required 🔴
 
-### 1. Update Google Scholar ID
+### 1. Update Google Scholar ID (REQUIRED)
 
-**File**: `index.html` (line with Google Scholar URL)
+**File**: `index.html` (line 49) and optionally `tests/homepage_schema_sample.json`
 
 **Current**:
 ```json
@@ -116,6 +116,19 @@ After completing the pending actions:
 2. **Search Results**: May show enhanced snippet with photo, job title, and organization
 3. **SEO Improvement**: Better understanding of site structure by search engines
 4. **No Errors**: Clean structured data report in Search Console
+
+## Future Enhancements (Optional)
+
+### Publications Page Enhancement
+The publications page currently uses `CollectionPage` schema, which is not eligible for rich results. For better rich results support, consider enhancing it to use `ItemList` with individual `ScholarlyArticle` items. This would require:
+- Dynamic generation of schema from publications data
+- Individual markup for each publication
+- More complex implementation
+
+This is documented in `docs/RICH_RESULTS_ENHANCEMENT_PLAN.md` but is marked as a future enhancement (Priority 2).
+
+### Podcast RSS Feed
+If you add an RSS/Atom feed for the podcast in the future, add the `webFeed` property to the PodcastSeries schema in `podcast.html`.
 
 ## Questions?
 
