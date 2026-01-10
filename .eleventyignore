@@ -1,0 +1,13 @@
+# Documentation and development files - not part of the website
+ACTION_ITEMS.md
+DEPLOYMENT.md
+DUPLICATE_ID_INVESTIGATION_README.md
+HTML_VALIDATION_ISSUES.md
+IMPLEMENTATION_SUMMARY.md
+INVESTIGATION_DUPLICATE_ID_HOME.md
+MANUAL_TEST_PLAN.md
+RICH_RESULTS_STATUS.md
+TODO.md
+
+# Keep README for GitHub
+# README.md is already ignored by default in Eleventy
