@@ -113,7 +113,7 @@ a:hover {
     font-size: 0.85rem;
     font-weight: 400;
     color: var(--text-light);
-    margin-top: 0.1rem;
+    margin-top: 0.05rem;
 }
 
 .nav-menu {
@@ -214,7 +214,7 @@ a:hover {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
     flex-wrap: wrap;
 }
 
@@ -235,15 +235,15 @@ a:hover {
 
 /* News Section */
 .news {
-    margin: 2rem 0 0 0;
-    padding-top: 1.5rem;
+    margin: 1rem 0 0 0;
+    padding-top: 1rem;
     border-top: 1px solid var(--border-color);
 }
 
 .news h3 {
     font-size: 1.3rem;
     color: var(--primary-color);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .news-list {
@@ -251,7 +251,7 @@ a:hover {
 }
 
 .news-list li {
-    padding: 0.5rem 0;
+    padding: 0.35rem 0;
     border-bottom: 1px solid var(--border-color);
     font-size: 0.9rem;
 }
