@@ -202,18 +202,29 @@ a:hover {
 }
 
 .hero-bio p {
-    margin-bottom: 0;
+    margin-bottom: 0.75rem;
+}
+
+.hero-name-note {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
 }
 
 .hero-social-links {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .hero-social-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
     transition: var(--transition);
 }
 
@@ -224,33 +235,44 @@ a:hover {
 
 /* News Section */
 .news {
-    margin: 1rem 0 0 0;
+    margin: 2rem 0 0 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .news h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--primary-color);
-    margin-bottom: 0.6rem;
+    margin-bottom: 1rem;
 }
 
 .news-list {
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
 .news-list li {
-    padding: 0.4rem 0;
-    border-bottom: 1px solid var(--border-color);
-    font-size: 0.9rem;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    background-color: var(--bg-light);
+    transition: var(--transition);
 }
 
-.news-list li:last-child {
-    border-bottom: none;
+.news-list li:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow);
 }
 
 .news-date {
     color: var(--text-light);
     font-size: 0.85rem;
-    margin-right: 1rem;
+    font-weight: 600;
+    margin-right: 0.75rem;
+    display: inline-block;
 }
 
 /* Recent Blog Section */
@@ -855,6 +877,10 @@ footer p {
 
     .hero-social-links {
         justify-content: center;
+    }
+
+    .news-list {
+        grid-template-columns: 1fr;
     }
 
     .subtitle {
