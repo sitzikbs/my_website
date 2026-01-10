@@ -108,6 +108,14 @@ a:hover {
     letter-spacing: -0.02em;
 }
 
+.nav-title {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-top: 0.25rem;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -148,12 +156,12 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    padding: 2.5rem 0 1.5rem;
+    padding: 2.5rem 0 1rem;
 }
 
 .hero-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 3rem;
     flex-wrap: wrap;
 }
@@ -170,6 +178,11 @@ a:hover {
     box-shadow: var(--shadow);
 }
 
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
 .hero-text h1 {
     font-size: 3rem;
     color: var(--primary-color);
@@ -179,73 +192,45 @@ a:hover {
 .subtitle {
     font-size: 1.3rem;
     color: var(--text-light);
-}
-
-/* About Section */
-.about {
-    padding: 2rem 0;
-}
-
-.about h2 {
-    font-size: 1.75rem;
-    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
-.about-content {
+.hero-bio {
     font-size: 1.05rem;
     line-height: 1.65;
+    margin-bottom: 1.25rem;
+}
+
+.hero-bio p {
+    margin-bottom: 0;
+}
+
+.hero-social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.about-content p {
-    margin-bottom: 0.75rem;
-}
-
-.highlights {
-    margin: 2rem 0 1.5rem 0;
-}
-
-.highlights h3 {
-    font-size: 1.1rem;
+.hero-social-links a {
     color: var(--text-light);
-    margin-bottom: 0.75rem;
-    font-weight: 500;
-}
-
-.interests-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    list-style: none;
-}
-
-.interests-list li {
-    padding: 0.4rem 1rem;
-    background-color: var(--bg-light);
-    border: 1px solid var(--border-color);
-    border-radius: 2rem; /* Pill shape */
-    font-size: 0.95rem;
-    color: var(--text-color);
-    font-weight: 500;
     transition: var(--transition);
 }
 
-.interests-list li:hover {
-    border-color: var(--primary-color); /* Changed from blue to black */
+.hero-social-links a:hover {
     color: var(--primary-color);
-    background-color: #e5e7eb; /* Darker gray for better contrast */
+    transform: translateY(-2px);
 }
 
 /* News Section */
 .news {
-    margin: 1.5rem 0 2rem 0;
+    margin: 1rem 0 0 0;
 }
 
 .news h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--primary-color);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
 }
 
 .news-list {
@@ -253,8 +238,9 @@ a:hover {
 }
 
 .news-list li {
-    padding: 0.6rem 0;
+    padding: 0.4rem 0;
     border-bottom: 1px solid var(--border-color);
+    font-size: 0.9rem;
 }
 
 .news-list li:last-child {
@@ -263,7 +249,7 @@ a:hover {
 
 .news-date {
     color: var(--text-light);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-right: 1rem;
 }
 
@@ -810,6 +796,10 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-title {
+        display: none;
+    }
+
     .nav-menu {
         display: none;
         position: absolute;
@@ -852,10 +842,19 @@ footer p {
     .hero-content {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+    }
+
+    .hero-text {
+        text-align: center;
     }
 
     .hero-text h1 {
         font-size: 2rem;
+    }
+
+    .hero-social-links {
+        justify-content: center;
     }
 
     .subtitle {
@@ -894,13 +893,25 @@ footer p {
         font-size: 1.75rem;
     }
 
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
     .profile-image img {
         width: 150px;
         height: 150px;
     }
 
-    .interests-list {
-        grid-template-columns: 1fr;
+    .hero-bio {
+        font-size: 1rem;
+    }
+
+    .news h3 {
+        font-size: 1.2rem;
+    }
+
+    .news-list li {
+        font-size: 0.85rem;
     }
 }
 
