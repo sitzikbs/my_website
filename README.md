@@ -226,22 +226,42 @@ Your site will automatically rebuild and deploy on every push to main.
 
 ## Automated Link Checking
 
-This repository uses GitHub Actions to automatically check for broken links:
+This repository uses a **two-tier link checking strategy** to ensure reliability without blocking development:
 
-- **Runs on Pull Requests:** Validates links before merging to main branch
-- **Weekly Schedule:** Runs every Monday at 9:00 AM UTC
-- **Manual Trigger:** Can be triggered manually from the Actions tab
+### 🔒 Internal Links (PR Checks)
+**Workflow:** `Link Checker (Internal) - PR`
+- **Runs on Pull Requests:** Validates internal links before merging
+- **Scope:** Checks only internal/relative links and same-domain links
+- **Behavior:** **Fails PRs** if broken internal links are found
+- **Why:** Internal links are under your control and must always work
 
-The workflow:
-1. Builds the site using `npm run build`
-2. Uses [lychee](https://github.com/lycheeverse/lychee) to check all links in HTML files
-3. Excludes social media sites (LinkedIn, Twitter/X, Facebook, Instagram, YouTube)
-4. Excludes academic profile sites prone to rate limiting (ResearchGate, Google Scholar, ORCID)
-5. Fails the workflow if broken links are found
-6. Automatically creates an issue when broken links are detected
+### 🌐 External Links (Nightly Checks)
+**Workflow:** `Link Checker (External) - Nightly`
+- **Schedule:** Runs daily at 2:00 AM UTC (off-peak hours)
+- **Scope:** Checks only external third-party links
+- **Behavior:** Creates/updates GitHub issues but **doesn't block PRs**
+- **Why:** External sites may have temporary downtime, rate limiting, or timeouts
 
-**To view link check results:**
-- Go to the "Actions" tab in GitHub
-- Click on "Link Checker" workflow
-- View the latest run for detailed results
+### 🔧 Configuration & Features
+
+Both workflows use [lychee](https://github.com/lycheeverse/lychee) with shared configuration in `lychee.toml`:
+
+- ✅ **Browser Spoofing:** User-agent set to Chrome to avoid bot detection
+- ✅ **Rate Limit Protection:** Max concurrency set to 2 to prevent triggering rate limiters
+- ✅ **Smart Retries:** Up to 5 retries with 45-second timeout per link
+- ✅ **Automatic Exclusions:** Social media and other known problematic domains excluded
+- ✅ **Flaky Domain Handling:** Known unreliable domains checked with warn-only mode
+
+### 📊 Viewing Results
+
+**For PR checks:**
+- Results appear directly in the PR status checks
+- Failed internal links block merging
+
+**For nightly external checks:**
+- Go to the "Actions" tab → "Link Checker (External) - Nightly"
+- Issues are automatically created/updated when external links break
+- Issues are automatically closed when links are fixed
+
+**Manual trigger:** Both workflows can be triggered manually from the Actions tab
 

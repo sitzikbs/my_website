@@ -1,0 +1,176 @@
+---
+name: Link Checker (External) - Nightly
+
+# This workflow checks ONLY external links (third-party websites)
+# It runs on a schedule to avoid blocking PRs due to temporary external site issues
+# External sites may have timeouts, rate limiting, or temporary downtime
+
+'on':
+  schedule:
+    # Run every day at 2:00 AM UTC (off-peak hours)
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  external-link-check:
+    name: Check External Links
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read  # Required to checkout the repository
+      issues: write  # Required to create issues on failure
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Check External Links
+        id: external-check-strict
+        uses: lycheeverse/lychee-action@v1.10.0
+        with:
+          # Check external links only using centralized lychee.toml configuration
+          # Excludes: internal domain, relative paths, localhost, file links
+          # All other exclusions are defined in lychee.toml
+          args: >-
+            --verbose
+            --no-progress
+            --config lychee.toml
+            --exclude 'itzikbs\.com'
+            --exclude '^/'
+            --exclude '^\.'
+            --exclude 'localhost'
+            --exclude '127\.0\.0\.1'
+            --exclude-file
+            --exclude-path '_site/blog/posts/assets'
+            '_site/**/*.html'
+          fail: true  # Fail if external links are broken
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        continue-on-error: true  # Don't stop the workflow, continue to issue creation
+
+      - name: Create or Update Issue on Failure
+        if: steps.external-check-strict.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const workflowUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            
+            // Check if there's already an open issue for broken external links
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'broken-links,automated',
+              per_page: 100
+            });
+            
+            const existingIssue = issues.data.find(issue => 
+              issue.title.includes('Broken External Links Detected')
+            );
+            
+            const issueBody = `## 🔗 Broken External Links Detected\n\n` +
+              `Automated link checking has detected broken external links in the website.\n\n` +
+              `**Latest Workflow Run:** ${workflowUrl}\n\n` +
+              `**When:** ${new Date().toISOString()}\n\n` +
+              `Please review the workflow logs for details about the broken links.\n\n` +
+              `💡 **Note:** This is from the nightly external link check. ` +
+              `External links are checked separately to avoid blocking PRs due to ` +
+              `temporary issues with third-party websites.\n\n` +
+              `---\n` +
+              `*This issue is automatically managed. It will be updated on subsequent failures ` +
+              `and closed when all external links are working.*`;
+            
+            if (existingIssue) {
+              // Update existing issue with new run information
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existingIssue.number,
+                body: `🔄 **Update:** External links are still broken as of ${new Date().toISOString()}\n\n` +
+                      `**Latest Run:** ${workflowUrl}`
+              });
+              console.log(`Updated existing issue #${existingIssue.number}`);
+            } else {
+              // Create new issue
+              const issue = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: '🔗 Broken External Links Detected',
+                body: issueBody,
+                labels: ['bug', 'broken-links', 'automated']
+              });
+              console.log(`Created issue #${issue.data.number}`);
+            }
+
+      - name: Close Issue on Success
+        if: steps.external-check-strict.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Check if there's an open issue for broken external links
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'broken-links,automated',
+              per_page: 100
+            });
+            
+            const existingIssue = issues.data.find(issue => 
+              issue.title.includes('Broken External Links Detected')
+            );
+            
+            if (existingIssue) {
+              // Close the issue since links are now working
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existingIssue.number,
+                body: `✅ **Resolved:** All external links are now working as of ${new Date().toISOString()}\n\n` +
+                      `Closing this issue automatically.`
+              });
+              
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existingIssue.number,
+                state: 'closed'
+              });
+              
+              console.log(`Closed issue #${existingIssue.number}`);
+            }
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "=========================================="
+          echo "External Link Check Summary"
+          echo "=========================================="
+          echo ""
+          echo "✨ This nightly workflow checks external links only."
+          echo ""
+          echo "📊 Results:"
+          echo "   - External Link Check: ${{ steps.external-check-strict.outcome }}"
+          echo ""
+          echo "💡 Strategy:"
+          echo "   - External links are checked nightly to avoid blocking PRs"
+          echo "   - Known problematic domains are excluded in lychee.toml"
+          echo "   - Internal links are checked separately in PR workflows"
+          echo ""
+          echo "🔧 Configuration:"
+          echo "   - Settings: lychee.toml"
+          echo "   - Max concurrency: 2 (prevents rate limiting)"
+          echo "   - User-agent: Spoofed as Chrome browser"
+          echo ""
