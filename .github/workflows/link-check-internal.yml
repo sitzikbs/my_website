@@ -41,9 +41,11 @@ jobs:
         with:
           # Check all links using centralized lychee.toml configuration
           # All exclusions are defined in lychee.toml for consistency
+          # Using --offline mode for fast filesystem-only validation (no network overhead)
           args: >-
             --verbose
             --no-progress
+            --offline
             --config lychee.toml
             --exclude-path '_site/blog/posts/assets'
             '_site/**/*.html'
