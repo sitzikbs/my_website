@@ -3,6 +3,34 @@ layout: layouts/base.njk
 title: Contact - Itzik Ben-Shabat
 description: Get in touch
 permalink: /contact/
+customSchema: >
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "name": "Contact Itzik Ben-Shabat",
+        "description": "Contact information for Itzik Ben-Shabat",
+        "url": "https://www.itzikbs.com/contact/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.itzikbs.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact"
+          }
+        ]
+      }
+    ]
+  }
 ---
 
 <section class="page-header">
