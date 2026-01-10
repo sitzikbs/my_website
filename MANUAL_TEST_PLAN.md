@@ -577,9 +577,9 @@ After deploying to production:
   - [JSON Validator](https://jsonlint.com/)
 
 - **Google Documentation**:
-  - [Person Rich Results](https://developers.google.com/search/docs/appearance/structured-data/person)
-  - [Article Rich Results](https://developers.google.com/search/docs/appearance/structured-data/article)
-  - [Breadcrumb Rich Results](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb)
+  - [Person Rich Results](https://developers.google.com/search/docs/data-types/person)
+  - [Article Rich Results](https://developers.google.com/search/docs/data-types/article)
+  - [Breadcrumb Rich Results](https://developers.google.com/search/docs/data-types/breadcrumb)
 
 - **Local Validation**:
   ```bash

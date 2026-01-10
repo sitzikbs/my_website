@@ -255,7 +255,7 @@ This implementation addresses the issue raised about Google Rich Results complia
 
 ### Google Documentation
 - [Structured Data Guidelines](https://developers.google.com/search/docs/appearance/structured-data)
-- [Person Rich Results](https://developers.google.com/search/docs/appearance/structured-data/person)
+- [Person Rich Results](https://developers.google.com/search/docs/data-types/person)
 - [Rich Results Test](https://search.google.com/test/rich-results)
 
 ### Schema.org

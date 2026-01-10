@@ -166,8 +166,8 @@ Legend:
   ```
 
 - **Documentation**:
-  - [Google Person Rich Results](https://developers.google.com/search/docs/appearance/structured-data/person)
-  - [Google Article Rich Results](https://developers.google.com/search/docs/appearance/structured-data/article)
+  - [Google Person Rich Results](https://developers.google.com/search/docs/data-types/person)
+  - [Google Article Rich Results](https://developers.google.com/search/docs/data-types/article)
   - [Schema.org Documentation](https://schema.org/)
 
 ---
