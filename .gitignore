@@ -60,3 +60,6 @@ backup/
 temp_image_backup/
 uploads/
 .merge-completed-*
+.merge-resolved
+*INVESTIGATION*.md
+verify-*.sh
