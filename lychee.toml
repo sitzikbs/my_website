@@ -64,6 +64,7 @@ exclude = [
     'services\.anu\.edu\.au',
     'dmi\.usherb\.ca',
     'ri\.cmu\.edu',
+    'cs\.ucl\.ac\.uk',  # UCL Computer Science staff pages (timeouts)
     # Other problematic sites
     'www3\.oculus\.com',
     'oculus\.com',  # All Oculus domains
