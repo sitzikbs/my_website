@@ -3,6 +3,39 @@ layout: layouts/base.njk
 title: About - Itzik Ben-Shabat
 description: About Itzik Ben-Shabat - Research Scientist specializing in 3D computer vision
 permalink: /about/
+customSchema: >
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "name": "About Itzik Ben-Shabat",
+        "description": "Academic background, research interests, and professional experience of Itzik Ben-Shabat",
+        "url": "https://www.itzikbs.com/about/",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Itzik Ben-Shabat",
+          "url": "https://www.itzikbs.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.itzikbs.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About"
+          }
+        ]
+      }
+    ]
+  }
 ---
 
 <section class="page-header">

@@ -3,6 +3,39 @@ layout: layouts/base.njk
 title: Blog - Itzik Ben-Shabat
 description: Blog posts about research, 3D vision, and technology
 permalink: /blog/
+customSchema: >
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "name": "Itzik Ben-Shabat Blog",
+        "description": "Blog posts about research, 3D computer vision, and technology",
+        "url": "https://www.itzikbs.com/blog/",
+        "author": {
+          "@type": "Person",
+          "name": "Itzik Ben-Shabat",
+          "url": "https://www.itzikbs.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.itzikbs.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog"
+          }
+        ]
+      }
+    ]
+  }
 ---
 
 <section class="page-header">

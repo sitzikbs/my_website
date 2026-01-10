@@ -6,17 +6,36 @@ permalink: /podcast/
 customSchema: >
   {
     "@context": "https://schema.org",
-    "@type": "PodcastSeries",
-    "name": "Talking Papers Podcast",
-    "description": "Deep dives into cutting-edge research papers with their authors",
-    "url": "https://www.itzikbs.com/podcast/",
-    "author": {
-      "@type": "Person",
-      "name": "Itzik Ben-Shabat",
-      "url": "https://www.itzikbs.com"
-    },
-    "webFeed": "https://www.itzikbs.com/podcast/",
-    "genre": ["Technology", "Science", "Education", "Computer Vision", "Machine Learning"]
+    "@graph": [
+      {
+        "@type": "PodcastSeries",
+        "name": "Talking Papers Podcast",
+        "description": "Deep dives into cutting-edge research papers with their authors",
+        "url": "https://www.itzikbs.com/podcast/",
+        "author": {
+          "@type": "Person",
+          "name": "Itzik Ben-Shabat",
+          "url": "https://www.itzikbs.com"
+        },
+        "genre": ["Technology", "Science", "Education", "Computer Vision", "Machine Learning"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.itzikbs.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Podcast"
+          }
+        ]
+      }
+    ]
   }
 ---
 
