@@ -50,6 +50,11 @@
                 "name": "LinkedIn",
                 "url": "https://www.linkedin.com/in/yizhak-itzik-ben-shabat-67b3b1b7/",
                 "icon": "fab fa-linkedin"
+            },
+            {
+                "name": "Google Scholar",
+                "url": "https://scholar.google.com/citations?user=FNn1MBMAAAAJ&hl=en&oi=ao",
+                "icon": "fas fa-graduation-cap"
             }
         ]
     }
