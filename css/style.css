@@ -488,6 +488,7 @@ a:hover {
     padding: 1.5rem;
 }
 
+.blog-card h2,
 .blog-card h3 {
     font-size: 1.3rem;
     color: var(--primary-color);
