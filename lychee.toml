@@ -18,7 +18,7 @@ max_concurrency = 2
 # Spoof user agent to mimic a real browser
 # Many sites block or rate-limit requests from bot user agents
 # Note: Update Chrome version periodically to maintain effectiveness
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
 
 # Note: verbose and no_progress are command-line flags, not config file options
 # They should be passed as --verbose and --no-progress in the workflow args

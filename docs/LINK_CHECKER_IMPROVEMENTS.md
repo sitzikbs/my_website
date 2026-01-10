@@ -37,7 +37,6 @@ The original link checker had issues with:
 **Behavior:**
 - Checks ONLY external third-party links
 - **DOES NOT block PRs** - creates/updates GitHub issues instead
-- Separates strict checks from known flaky domains
 - Auto-creates issues when links break
 - Auto-updates issues on continued failures
 - Auto-closes issues when links are fixed
@@ -49,7 +48,7 @@ The original link checker had issues with:
 ### Central Configuration File
 **File:** `lychee.toml`
 
-All link checking settings are now centralized in this file:
+**All link checking settings are centralized in this single file as the source of truth:**
 
 ```toml
 max_concurrency = 2        # Prevents rate limiting (was unlimited)
@@ -59,23 +58,25 @@ user_agent = "Mozilla..."  # Spoof Chrome browser (prevents bot blocking)
 ```
 
 **Key Improvements:**
-1. **Rate Limit Protection:** `max_concurrency = 2` prevents triggering rate limiters by checking at most 2 links simultaneously (slower but more stable)
-2. **Browser Spoofing:** User-agent set to Chrome to avoid bot detection/blocking
-3. **Smart Retries:** Up to 5 retries with proper timeout handling
-4. **Centralized Exclusions:** Common problematic domains (social media, Google Fonts) excluded once
+1. **Single Source of Truth:** All exclusions and settings defined in `lychee.toml` - no duplication in workflow files
+2. **Rate Limit Protection:** `max_concurrency = 2` prevents triggering rate limiters by checking at most 2 links simultaneously (slower but more stable)
+3. **Browser Spoofing:** User-agent set to Chrome 132 to avoid bot detection/blocking
+4. **Smart Retries:** Up to 5 retries with proper timeout handling
+5. **Centralized Exclusions:** All problematic domains (social media, CDNs, academic sites) excluded in one place
 
 ### Excluded Domains
 Permanently excluded from ALL checks (in `lychee.toml`):
-- Social media: LinkedIn, Twitter/X, Facebook, Instagram, YouTube
-- Academic profiles: ResearchGate, Google Scholar, ORCID
-- CDNs: Google Fonts, Google Tag Manager
-- File protocol links
+- **Social media:** LinkedIn, Twitter/X, Facebook, Instagram, YouTube
+- **Academic profiles:** ResearchGate, Google Scholar, ORCID
+- **CDNs:** Google Fonts, Google Tag Manager, Cloudflare cdn-cgi
+- **Problematic external sites:** TensorFlow, Uber, Coursera, Roblox, Mathworks, etc.
+- **Academic/university sites:** Various .edu domains and university-specific sites
+- **File protocol links:** All file:// URLs
+- **Performance hints:** Exact URLs for preconnect/dns-prefetch (not actual links)
 
 ## Migration from Old Workflow
 
-The old combined workflow (`.github/workflows/link-check.yml`) has been:
-- Renamed to `link-check.yml.old` (archived for reference)
-- Replaced by two new focused workflows
+The old combined workflow (`.github/workflows/link-check.yml`) has been replaced by two new focused workflows with centralized configuration.
 
 ## Benefits
 
@@ -104,24 +105,29 @@ Both workflows can be triggered manually:
 
 ## Implementation Details
 
-### Internal Link Detection
-The internal link check uses these patterns to identify internal links:
-- `--include '^/'` - Relative paths starting with `/`
-- `--include '^\.'` - Relative paths starting with `.` (e.g., `../`)
-- `--include 'itzikbs\.com'` - Same-domain absolute URLs
+### Workflow Configuration Strategy
 
-### External Link Detection
-The external link check excludes internal patterns:
-- `--exclude 'itzikbs\.com'` - Exclude same-domain links
-- `--exclude '^/'` - Exclude relative paths
-- `--exclude '^\.'` - Exclude relative paths with `.`
+Both workflows use the centralized `lychee.toml` configuration file and only add workflow-specific arguments:
 
-### Known Flaky Domains
-These domains are checked in warn-only mode (don't fail the build):
-- CMU Robotics Institute event pages
-- Oculus developer documentation
-- Various university personal pages
-- Personal project domains
+**Internal Workflow:** 
+- Uses `lychee.toml` for all exclusions and settings
+- No additional exclusions needed (all handled centrally)
+- Simple and maintainable
+
+**External Workflow:**
+- Uses `lychee.toml` for all exclusions and settings
+- Adds only internal domain exclusion patterns to define what counts as "external":
+  - `--exclude 'itzikbs\.com'` - Exclude same-domain links
+  - `--exclude '^/'` - Exclude relative paths starting with `/`
+  - `--exclude '^\.'` - Exclude relative paths starting with `.` (e.g., `../`)
+
+### Known Problematic Domains
+
+All problematic domains are excluded globally in `lychee.toml`:
+- Bot-detecting sites (LinkedIn, Facebook, Instagram, etc.)
+- Rate-limiting sites (academic publishers, university sites)
+- Unreliable sites (personal domains, broken redirects)
+- CDN/performance hints (Google Fonts, Tag Manager base URLs)
 
 ## Future Improvements
 

@@ -36,12 +36,13 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Check External Links (Strict)
+      - name: Check External Links
         id: external-check-strict
         uses: lycheeverse/lychee-action@v1.10.0
         with:
-          # Check external links only, excluding known problematic domains
+          # Check external links only using centralized lychee.toml configuration
           # Excludes: internal domain, relative paths, localhost, file links
+          # All other exclusions are defined in lychee.toml
           args: >-
             --verbose
             --no-progress
@@ -52,49 +53,12 @@ jobs:
             --exclude 'localhost'
             --exclude '127\.0\.0\.1'
             --exclude-file
-            --exclude 'tensorflow\.org'
-            --exclude 'mathworks\.com'
-            --exclude 'udacity\.com'
-            --exclude 'coursera\.org'
-            --exclude 'techrepublic\.com'
-            --exclude 'tesla\.com'
-            --exclude 'uber\.com'
-            --exclude 'staff\.qut\.edu\.au'
-            --exclude 'services\.anu\.edu\.au'
-            --exclude 'dmi\.usherb\.ca'
             --exclude-path '_site/blog/posts/assets'
             '_site/**/*.html'
           fail: true  # Fail if external links are broken
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        continue-on-error: true  # Don't stop the workflow, continue to flaky check
-
-      - name: Check Known Flaky External Links (Warn Only)
-        id: external-check-flaky
-        uses: lycheeverse/lychee-action@v1.10.0
-        with:
-          # Check only the domains known to have DNS/network issues
-          # These are reported but don't fail the build
-          # Note: talking.papers.podcast.itzikbs.com is a subdomain that's actually external
-          # (hosted separately) and known to have reliability issues
-          args: >-
-            --verbose
-            --no-progress
-            --config lychee.toml
-            --include 'ri\.cmu\.edu/events/sb35'
-            --include 'www3\.oculus\.com'
-            --include 'webdiis\.unizar\.es'
-            --include 'coraldrowningdetection\.com'
-            --include 'talking\.papers\.podcast\.itzikbs\.com'
-            --include 'jiajunwu\.com'
-            --include 'people\.lu\.usi\.ch'
-            --include 'cs\.ox\.ac\.uk/people/nando\.defreitas'
-            --exclude-path '_site/blog/posts/assets'
-            '_site/**/*.html'
-          fail: false  # Only log warnings, don't fail
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        continue-on-error: true  # Never fail on flaky domains
+        continue-on-error: true  # Don't stop the workflow, continue to issue creation
 
       - name: Create or Update Issue on Failure
         if: steps.external-check-strict.outcome == 'failure'
@@ -198,12 +162,11 @@ jobs:
           echo "✨ This nightly workflow checks external links only."
           echo ""
           echo "📊 Results:"
-          echo "   - Strict Check: ${{ steps.external-check-strict.outcome }}"
-          echo "   - Flaky Domains Check: ${{ steps.external-check-flaky.outcome }} (warn-only)"
+          echo "   - External Link Check: ${{ steps.external-check-strict.outcome }}"
           echo ""
           echo "💡 Strategy:"
           echo "   - External links are checked nightly to avoid blocking PRs"
-          echo "   - Known flaky domains are checked but don't fail the build"
+          echo "   - Known problematic domains are excluded in lychee.toml"
           echo "   - Internal links are checked separately in PR workflows"
           echo ""
           echo "🔧 Configuration:"
